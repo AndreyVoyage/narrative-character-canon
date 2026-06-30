@@ -6,14 +6,14 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-06-30 20:37:58
+2026-06-30 21:27:11
 
 ---
 
 # Folder and file tree
 
 Folder PATH listing for volume Windows-SSD
-Volume serial number is 0000020B 8805:94C6
+Volume serial number is 0000014E 8805:94C6
 C:\DEV\NARRATIVE\NARRATIVE-CHARACTER-CANON\AI_CHARACTERS
 +---ANDREY
 |   +---01_refs_raw
