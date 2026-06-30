@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-06-30 21:48:54
+2026-06-30 22:01:43
 
 ---
 
@@ -15,10 +15,11 @@ Generated:
 C:\DEV\NARRATIVE\NARRATIVE-CHARACTER-CANON\AI_CHARACTERS
 +---ANDREY
 |   +---01_refs_raw
-|   |           ANDREY_RAW_01_face_closeup_blue_shirt.png.png
-|   |           ANDREY_RAW_02_yacht_sunset_blue_shirt.png.png
-|   |           ANDREY_RAW_03_fullbody_studio_blue_shirt.png.png
-|   |           ANDREY_RAW_04_bar_portrait_blue_shirt.png.png
+|   |           ANDREY_RAW_01_face_closeup_blue_shirt.png
+|   |           ANDREY_RAW_02_yacht_sunset_blue_shirt.png
+|   |           ANDREY_RAW_03_fullbody_studio_blue_shirt.png
+|   |           ANDREY_RAW_04_bar_portrait_blue_shirt.png
+|   |           ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
 |   |           ANDREY_RAW_06_formal_suit_walking.png
 |   |           ANDREY_RAW_07_formal_suit_standing.png
 |   |           ANDREY_RAW_08_expressions_sheet_A.png
@@ -26,7 +27,6 @@ C:\DEV\NARRATIVE\NARRATIVE-CHARACTER-CANON\AI_CHARACTERS
 |   |           ANDREY_RAW_10_sports_gym_black.png
 |   |           ANDREY_RAW_11_body_identity_sheet_blue_shirt.png
 |   |           ANDREY_RAW_12_kling_face_closeup_REFERENCE_ONLY.jpg
-|   |           ANDREY_ref_raw_main_sheet_v1.png.png
 |   |          
 |   +---02_best_refs
 |   |           ANDREY_best_main_identity_sheet_v1.png.png
@@ -89,7 +89,7 @@ C:\DEV\NARRATIVE\NARRATIVE-CHARACTER-CANON\AI_CHARACTERS
 |               ANDREY_CANON_INDEX.md
 |               ANDREY_CANON_INDEX.md.backup_20260630_085458
 |               ANDREY_IDENTITY.txt
-|               ANDREY_RAW_FILE_MAP.txt
+|               ANDREY_RAW_FILE_MAP.md
 |              
 +---EGOR
 |   +---01_refs_raw
@@ -573,18 +573,19 @@ Total files: 193
 (no ext) : 140
 .backup_20260630_085458 : 1
 .jpg : 1
-.md : 1
+.md : 2
 .png : 36
-.txt : 14
+.txt : 13
 
 ---
 
 # Files
 
-- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_01_face_closeup_blue_shirt.png.png | 2118.89 KB | modified 2026-06-25 21:12:14
-- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_02_yacht_sunset_blue_shirt.png.png | 2002.36 KB | modified 2026-06-25 21:51:52
-- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_03_fullbody_studio_blue_shirt.png.png | 1863.70 KB | modified 2026-06-25 20:54:30
-- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_04_bar_portrait_blue_shirt.png.png | 1937.10 KB | modified 2026-06-26 08:11:40
+- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_01_face_closeup_blue_shirt.png | 2118.89 KB | modified 2026-06-25 21:12:14
+- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_02_yacht_sunset_blue_shirt.png | 2002.36 KB | modified 2026-06-25 21:51:52
+- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_03_fullbody_studio_blue_shirt.png | 1863.70 KB | modified 2026-06-25 20:54:30
+- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_04_bar_portrait_blue_shirt.png | 1937.10 KB | modified 2026-06-26 08:11:40
+- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_05_main_identity_sheet_blue_shirt.png | 2010.29 KB | modified 2026-06-20 22:19:34
 - AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_06_formal_suit_walking.png | 1721.12 KB | modified 2026-06-25 21:08:30
 - AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_07_formal_suit_standing.png | 1743.76 KB | modified 2026-06-25 20:54:36
 - AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_08_expressions_sheet_A.png | 2297.16 KB | modified 2026-06-25 21:24:00
@@ -592,7 +593,6 @@ Total files: 193
 - AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_10_sports_gym_black.png | 2144.01 KB | modified 2026-06-26 12:43:12
 - AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_11_body_identity_sheet_blue_shirt.png | 1976.28 KB | modified 2026-06-25 21:02:34
 - AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_RAW_12_kling_face_closeup_REFERENCE_ONLY.jpg | 96.14 KB | modified 2026-06-20 20:20:44
-- AI_CHARACTERS\ANDREY\01_refs_raw\ANDREY_ref_raw_main_sheet_v1.png.png | 2010.29 KB | modified 2026-06-20 22:19:34
 - AI_CHARACTERS\ANDREY\02_best_refs\ANDREY_best_main_identity_sheet_v1.png.png | 1976.28 KB | modified 2026-06-25 21:02:34
 - AI_CHARACTERS\ANDREY\03_face_sheet\expressions\.gitkeep | 0.00 KB | modified 2026-06-30 20:37:52
 - AI_CHARACTERS\ANDREY\04_body_sheet\candidates\.gitkeep | 0.00 KB | modified 2026-06-30 20:37:52
@@ -614,7 +614,7 @@ Total files: 193
 - AI_CHARACTERS\ANDREY\10_notes\ANDREY_CANON_INDEX.md | 9.21 KB | modified 2026-06-30 08:55:02
 - AI_CHARACTERS\ANDREY\10_notes\ANDREY_CANON_INDEX.md.backup_20260630_085458 | 9.20 KB | modified 2026-06-30 08:48:46
 - AI_CHARACTERS\ANDREY\10_notes\ANDREY_IDENTITY.txt | 9.09 KB | modified 2026-06-30 08:23:04
-- AI_CHARACTERS\ANDREY\10_notes\ANDREY_RAW_FILE_MAP.txt | 6.44 KB | modified 2026-06-30 08:14:52
+- AI_CHARACTERS\ANDREY\10_notes\ANDREY_RAW_FILE_MAP.md | 6.44 KB | modified 2026-06-30 08:14:52
 - AI_CHARACTERS\EGOR\01_refs_raw\.gitkeep | 0.00 KB | modified 2026-06-30 20:37:52
 - AI_CHARACTERS\EGOR\02_best_refs\.gitkeep | 0.00 KB | modified 2026-06-30 20:37:52
 - AI_CHARACTERS\EGOR\03_face_sheet\expressions\.gitkeep | 0.00 KB | modified 2026-06-30 20:37:52
