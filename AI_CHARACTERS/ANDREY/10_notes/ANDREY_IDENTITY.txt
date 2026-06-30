@@ -1,0 +1,458 @@
+# ANDREY_IDENTITY.txt
+
+Character: Andrey Senior
+Status: ACTIVE TEXT CANON
+Version: v1.0
+Last updated: 2026-06-30
+
+---
+
+# PURPOSE
+
+This file defines the cleaned visual identity canon for Andrey Senior.
+
+Use this file as the main text identity reference before generating new images of Andrey.
+
+This file resolves differences between repository data and generated references.
+
+---
+
+# SOURCE BASIS
+
+Repository persona:
+
+personas/andrey_senior/
+
+Important source modules:
+
+core/IDENTITY.json
+visual/PROMPT_BASE.json
+visual/VISUAL_ANCHORS.json
+
+Source interpretation:
+
+- Core identity gives Andrey Senior as 38 years old, 180 cm, 85 kg.
+- Visual anchors sometimes describe him as 92–95 kg athletic build.
+- For image generation, use 85–90 kg visual range.
+- He must look athletic, strong, broad-shouldered and mature.
+- Do not make him bulky, overweight, stocky, powerlifter-like, or excessively muscular.
+
+---
+
+# CORE IDENTITY
+
+Andrey Senior is an adult man, 38 years old.
+
+Height:
+
+180 cm
+
+Visual weight range:
+
+85–90 kg
+
+Body type:
+
+Athletic strong build, broad shoulders, muscular chest, strong upper body, thick muscular neck, visible masculine strength, but not bulky and not heavyset.
+
+General impression:
+
+Mature, calm, confident, masculine, strong, protective, emotionally controlled, with warm inner confidence.
+
+He should feel like a strong adult man in his late 30s, not a boy, not an old man, not a bodybuilder, not a fashion model.
+
+---
+
+# FACE CANON
+
+Face shape:
+
+Rounded oval broad face with soft contours and broad forehead.
+
+Jaw:
+
+Soft rounded jawline, not square, not sharp, not overly masculine-blocky. Gentle transition into thick neck.
+
+Eyes:
+
+Bright blue eyes with subtle grey undertones.
+Almond-shaped.
+Clear and expressive.
+Medium-set / natural spacing.
+Not close-set.
+Not wide-set.
+Warm but focused gaze.
+
+Eyebrows:
+
+Dark blonde eyebrows.
+Straight to slightly arched.
+Medium thickness.
+Natural spacing above brow ridge.
+
+Nose:
+
+Straight bridge.
+Subtle width.
+Rounded tip, slightly turned down.
+No prominent hump.
+No sharp narrow fashion-model nose.
+
+Lips:
+
+Medium fullness.
+Natural pale pink tone.
+Upper lip proportional to lower lip.
+Warm restrained smile.
+
+Skin:
+
+Fair smooth skin.
+Fine realistic texture.
+Minimal visible pores.
+Slight natural oily sheen on forehead.
+Faint barely visible freckles on cheeks and nose bridge.
+Natural early maturity signs.
+
+Age details:
+
+Faint horizontal forehead wrinkles.
+Faint crow's feet at outer eye corners.
+Mature but not old.
+Healthy skin elasticity.
+
+Facial hair:
+
+Light stubble, 2–3 days growth.
+Covers jawline, upper lip and chin.
+Not full beard.
+Not clean-shaven.
+Not heavy beard.
+
+Ears:
+
+Medium-sized ears, close to head, well-defined helix.
+
+---
+
+# HAIR CANON
+
+Hair color:
+
+Short light blonde / dark blonde hair.
+
+Hair style:
+
+Evenly cropped short hair.
+Natural male pattern.
+Slight natural recession at temples.
+Short textured top.
+Natural density.
+
+Important:
+
+Andrey must not look bald.
+Do not make him shaved-headed.
+Do not make severe receding hairline.
+Do not make sparse hair.
+Do not make dense thick model hair either.
+
+Correct hair target:
+
+Short light blonde hair with natural early maturity, slight temple recession, still clearly present and believable.
+
+---
+
+# BODY CANON
+
+Height impression:
+
+180 cm.
+
+Build:
+
+Athletic strong build.
+Broad muscular shoulders.
+Muscular chest.
+Strong upper body.
+Thick muscular neck.
+Strong trapezius.
+Visible Adam's apple.
+Strong arms but not oversized.
+Firm torso, not belly-heavy.
+Masculine athletic proportions.
+
+Weight interpretation:
+
+Use 85–90 kg visual range.
+
+Avoid:
+
+- 95+ kg bulky look
+- heavyset body
+- stocky body
+- overweight torso
+- thick waist
+- large belly
+- powerlifter build
+- bodybuilder mass
+- oversized muscles
+- skinny build
+- fragile body
+- narrow shoulders
+
+Correct body feeling:
+
+Strong, mature, athletic, broad-shouldered, physically capable, but still elegant and realistic.
+
+---
+
+# CLOTHING SIGNATURE
+
+Primary casual signature:
+
+Unbuttoned blue dress shirt.
+Rolled-up sleeves.
+Dark navy trousers.
+Brown leather belt.
+Brown leather shoes.
+Casual elegant masculine style.
+
+Blue shirt notes:
+
+The blue shirt is a core visual anchor.
+It should look fitted but not painted-on.
+It can be slightly open at the collar.
+It can show collarbone / upper chest subtly.
+It should feel relaxed, mature and masculine.
+
+Formal look:
+
+Dark navy suit.
+White open-collar shirt.
+Brown or dark leather shoes.
+Elegant evening / luxury interior style.
+
+Sports look:
+
+Black fitted athletic T-shirt or training top.
+Black sports pants or joggers.
+Gym / training setting.
+Strong athletic body.
+Do not make him too aggressive or excessively muscular.
+
+---
+
+# EXPRESSION CANON
+
+Default expression:
+
+Calm, confident, emotionally controlled.
+
+Common expressions:
+
+- neutral focused look
+- warm restrained smile
+- slight confident smirk
+- serious protective look
+- attentive observant gaze
+- mature calm intensity
+- playful but controlled expression
+
+Avoid:
+
+- blank mannequin face
+- dead eyes
+- exaggerated grin
+- cartoon anger
+- villain look
+- overly soft feminine expression
+- teenage expression
+
+---
+
+# CHARACTER MOOD
+
+Andrey Senior feels:
+
+- protective
+- confident
+- warm
+- mature
+- emotionally grounded
+- slightly playful
+- physically strong
+- observant
+- masculine but not brutal
+
+He should not feel:
+
+- childish
+- weak
+- arrogant caricature
+- violent
+- overly aggressive
+- plastic
+- generic stock-photo male
+- fashion model only
+- bodybuilder only
+
+---
+
+# PRIMARY VISUAL TARGET
+
+Photorealistic adult man in his late 30s, 38 years old, 180 cm, 85–90 kg visual range, athletic strong build, broad shoulders, muscular chest, thick muscular neck, visible Adam's apple, rounded oval broad face with soft contours and broad forehead, bright blue almond-shaped eyes, straight nose with rounded tip, medium full natural lips, soft rounded jawline, light stubble 2–3 days, short light blonde hair with slight natural temple recession, fair skin with faint freckles and early mature lines, wearing blue dress shirt with rolled sleeves and dark trousers.
+
+---
+
+# GENERATION RULES
+
+Always preserve:
+
+- 38 years old
+- adult man
+- 180 cm
+- 85–90 kg visual range
+- athletic strong build
+- broad shoulders
+- muscular chest
+- thick muscular neck
+- bright blue eyes
+- short light blonde / dark blonde hair
+- slight temple recession
+- light stubble 2–3 days
+- rounded oval broad face
+- soft rounded jawline
+- fair skin
+- faint freckles
+- subtle forehead lines
+- faint crow's feet
+- blue shirt signature when casual
+
+For casual scenes:
+
+Use blue shirt, rolled sleeves, dark trousers, brown belt, brown shoes.
+
+For formal scenes:
+
+Use dark navy suit, open-collar white shirt, elegant evening lighting.
+
+For sports scenes:
+
+Use black athletic outfit, gym setting, strong athletic body, but avoid powerlifter or bodybuilder exaggeration.
+
+---
+
+# NEGATIVE RULES
+
+Do not make Andrey:
+
+- underage
+- teen-looking
+- older than 45
+- bald
+- shaved head
+- severe receding hairline
+- sparse hair
+- dense thick model hair
+- black hair
+- dark brown hair
+- platinum hair
+- close-set eyes
+- wide-set eyes
+- wrong eye color
+- skinny
+- fragile
+- feminine
+- overweight
+- bulky
+- stocky
+- heavyset
+- thick waist
+- large belly
+- powerlifter body
+- bodybuilder body
+- oversized muscles
+- plastic skin
+- CGI
+- anime
+- cartoon
+- mannequin
+- generic model
+- wrong identity
+
+Anatomy errors to avoid:
+
+- bad hands
+- extra fingers
+- fused fingers
+- distorted face
+- warped eyes
+- broken wrists
+- twisted arms
+- deformed body
+- wrong proportions
+- stretched torso
+- oversized head
+- tiny head
+
+Image errors to avoid:
+
+- low quality
+- blurry
+- pixelated
+- watermark
+- logo
+- text
+- duplicated character
+- bad crop
+- artificial skin
+- excessive retouching
+
+---
+
+# RAW REFERENCE PRIORITY
+
+Most important raw references:
+
+01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
+01_refs_raw/ANDREY_RAW_11_body_identity_sheet_blue_shirt.png
+01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png
+01_refs_raw/ANDREY_RAW_08_expressions_sheet_A.png
+01_refs_raw/ANDREY_RAW_09_expressions_sheet_B.png
+
+Useful secondary references:
+
+01_refs_raw/ANDREY_RAW_03_fullbody_studio_blue_shirt.png
+01_refs_raw/ANDREY_RAW_04_bar_portrait_blue_shirt.png
+01_refs_raw/ANDREY_RAW_06_formal_suit_walking.png
+01_refs_raw/ANDREY_RAW_07_formal_suit_standing.png
+01_refs_raw/ANDREY_RAW_10_sports_gym_black.png
+
+Scene / mood reference:
+
+01_refs_raw/ANDREY_RAW_02_yacht_sunset_blue_shirt.png
+
+Reference only / not canon:
+
+01_refs_raw/ANDREY_RAW_12_kling_face_closeup_REFERENCE_ONLY.png
+
+Reason:
+
+KlingAI close-up can be useful for rough face comparison, but should not be used as primary canon because it may push the character toward sparse hair / almost bald look and contains a watermark.
+
+---
+
+# FINAL CANON DECISION
+
+Active visual interpretation:
+
+Andrey Senior is a 38-year-old, 180 cm, 85–90 kg athletic strong adult man with broad shoulders, muscular chest, thick neck, short light blonde hair with slight temple recession, bright blue eyes, rounded oval broad face, light stubble, fair skin, faint freckles, subtle maturity lines, calm confident expression, and signature blue dress shirt.
+
+Status:
+
+ACTIVE / APPROVED TEXT CANON
+
+Next step:
+
+Create ANDREY_CANON_INDEX.md after selecting active face, body, outfit and expression files.

@@ -1,0 +1,539 @@
+# KIRA_CANON_INDEX.md
+
+Character: Kira
+Status: ACTIVE VISUAL CANON
+Version: v1.0
+Last updated: 2026-06-29
+
+---
+
+# PURPOSE
+
+This file is the canon map for Kira.
+
+It defines which files are active references for:
+
+* body canon
+* face canon
+* sports look
+* evening dress look
+* expressions
+* prompt kit
+
+Files listed here are considered the main approved references for future image generation.
+
+---
+
+# TEXT IDENTITY
+
+ACTIVE FILE:
+
+```text
+10_notes/KIRA_IDENTITY.txt
+```
+
+Status:
+
+```text
+ACTIVE / APPROVED TEXT CANON
+```
+
+Purpose:
+
+Primary text identity file for Kira.
+Use it as the main character description before generating any new image of Kira.
+
+---
+
+# BODY CANON
+
+ACTIVE FILES:
+
+```text
+04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
+04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png
+```
+
+Purpose:
+
+Main body reference for Kira.
+
+Canon:
+
+* 26-year-old adult woman
+* 168 cm
+* athletic slender feminine body
+* former hurdler / track athlete
+* natural final visual 3+ bust target
+* prompt may use natural 4+ when the model visually reduces bust
+* narrow waist
+* strong hurdler legs
+* firm glutes
+* feminine hips
+* not bodybuilder
+* not skinny fashion model
+* not crossfit-heavy
+* not fragile
+
+Status:
+
+```text
+ACTIVE / APPROVED BODY CANON
+```
+
+Use for:
+
+* body proportions
+* height impression
+* waist
+* hips
+* glutes
+* legs
+* athletic silhouette
+* 3D body proxy
+* sports scenes
+* evening scenes
+
+---
+
+# FACE CANON
+
+ACTIVE FILES:
+
+```text
+03_face_sheet/KIRA_face_canon_sheet_A.png
+03_face_sheet/KIRA_face_canon_sheet_B.png
+```
+
+Purpose:
+
+Main face reference for Kira.
+
+Canon:
+
+* oval face
+* high cheekbones
+* expressive brown / amber eyes
+* dark blonde / light brown shoulder-length wavy hair
+* light freckles
+* beauty mark above left upper lip
+* full lower lip
+* slight asymmetrical smile
+* warm confident gaze
+* emotionally alive expression
+
+Status:
+
+```text
+ACTIVE / APPROVED FACE CANON
+```
+
+Use for:
+
+* facial identity
+* eyes
+* lips
+* nose
+* cheekbones
+* freckles
+* hair
+* close-up portraits
+* image-to-image consistency
+* expression generation
+
+---
+
+# SPORTS LOOK CANON
+
+ACTIVE FILES:
+
+```text
+05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png
+05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png
+```
+
+Purpose:
+
+Main sports outfit and athletic-context reference.
+
+Use for:
+
+* gym
+* yoga
+* running
+* stretching
+* training
+* warm-up scenes
+* athletic portraits
+
+Canon:
+
+* black fitted sports top
+* fitted shorts or leggings
+* strong hurdler legs
+* firm glutes
+* narrow waist
+* athletic feminine body
+* sports top may compress bust but must not make her flat-chested
+* functional athletic beauty
+* not bodybuilder
+* not crossfit-heavy
+* not weak-legged
+
+Status:
+
+```text
+ACTIVE / APPROVED SPORTS LOOK CANON
+```
+
+---
+
+# EVENING DRESS CANON
+
+ACTIVE FILES:
+
+```text
+05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png
+05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png
+```
+
+Purpose:
+
+Main evening / glamour / romantic outfit reference.
+
+Use for:
+
+* bars
+* evening scenes
+* embankment walks
+* romantic scenes
+* luxury interiors
+* cinematic portraits
+* group evening scenes
+
+Canon:
+
+* fitted red evening dress
+* elegant adult cinematic look
+* refined open neckline
+* high slit can reveal one strong athletic leg
+* narrow waist and feminine hips must remain visible
+* bust should visually read as natural 3+
+* for generation, prompt may specify natural 4+ because the model often reduces size
+* tasteful
+* natural
+* elegant
+* not vulgar
+* not artificial
+* not cheap glamour
+
+Status:
+
+```text
+ACTIVE / APPROVED EVENING DRESS CANON
+```
+
+---
+
+# EXPRESSIONS CANON
+
+ACTIVE FILES:
+
+```text
+03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+03_face_sheet/expressions/KIRA_expressions_v1_sheet_B_emotional.png
+```
+
+Purpose:
+
+Main expression and emotional-character reference.
+
+Expressions:
+
+* neutral
+* soft smile
+* playful smile
+* confident look
+* seductive but restrained
+* thoughtful
+* amused
+* slightly emotional / vulnerable
+
+Canon notes:
+
+* Kira should look emotionally alive.
+* She should not look blank or mannequin-like.
+* Expressions must remain natural and photorealistic.
+* Seductive expression must be restrained, adult, elegant, not vulgar.
+
+Status:
+
+```text
+ACTIVE / APPROVED EXPRESSIONS CANON
+```
+
+---
+
+# PROMPT KIT
+
+ACTIVE FILES:
+
+```text
+06_prompts/KIRA_BASE_PROMPT.txt
+06_prompts/KIRA_EVENING_SCENE_PROMPT.txt
+06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt
+06_prompts/KIRA_NEGATIVE_PROMPT.txt
+```
+
+Purpose:
+
+Reusable text prompt blocks for future Kira generations.
+
+Use these instead of rewriting Kira from scratch every time.
+
+Status:
+
+```text
+ACTIVE / APPROVED PROMPT KIT
+```
+
+---
+
+# DRAFTS / NON-CANON
+
+Folder:
+
+```text
+07_generated/
+```
+
+Use this folder for:
+
+* failed generations
+* wrong age
+* wrong face
+* wrong body
+* wrong bust size
+* weak legs
+* face drift
+* non-approved moodboards
+* experiments
+* old candidates
+* images that are useful but not canon
+
+Status:
+
+```text
+DRAFT / DO NOT USE AS PRIMARY CANON
+```
+
+Important rule:
+
+Files in `07_generated/` are not active canon unless they are manually moved into a canon folder and listed in this index.
+
+---
+
+# CANDIDATES
+
+Candidate files are useful intermediate versions.
+
+They may be stored in folders like:
+
+```text
+05_outfits/evening_dress/candidates/
+04_body_sheet/candidates/
+```
+
+Candidate status means:
+
+* good enough to keep
+* not necessarily final
+* may be used for comparison
+* should not override final canon unless manually approved
+
+Current evening dress candidates were promoted to final:
+
+```text
+05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png
+05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png
+```
+
+---
+
+# GENERATION PRIORITY ORDER
+
+## For evening scenes use:
+
+```text
+1. 10_notes/KIRA_IDENTITY.txt
+2. 03_face_sheet/KIRA_face_canon_sheet_A.png
+3. 04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
+4. 05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png
+5. 05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png
+6. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+7. 06_prompts/KIRA_EVENING_SCENE_PROMPT.txt
+8. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
+```
+
+## For sports / yoga scenes use:
+
+```text
+1. 10_notes/KIRA_IDENTITY.txt
+2. 03_face_sheet/KIRA_face_canon_sheet_A.png
+3. 04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
+4. 05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png
+5. 05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png
+6. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+7. 06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt
+8. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
+```
+
+## For close-up portraits use:
+
+```text
+1. 10_notes/KIRA_IDENTITY.txt
+2. 03_face_sheet/KIRA_face_canon_sheet_A.png
+3. 03_face_sheet/KIRA_face_canon_sheet_B.png
+4. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+5. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_B_emotional.png
+6. 06_prompts/KIRA_BASE_PROMPT.txt
+7. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
+```
+
+## For full-body scenes use:
+
+```text
+1. 10_notes/KIRA_IDENTITY.txt
+2. 03_face_sheet/KIRA_face_canon_sheet_A.png
+3. 04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
+4. relevant outfit canon
+5. relevant prompt kit file
+6. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
+```
+
+---
+
+# ACTIVE PROMPT RULES
+
+Always preserve:
+
+* Kira is 26
+* adult woman
+* 168 cm
+* athletic slender feminine body
+* former hurdler / track athlete
+* strong legs
+* firm glutes
+* narrow waist
+* feminine hips
+* natural final visual 3+ bust target
+* dark blonde / light brown wavy shoulder-length hair
+* brown / amber eyes
+* freckles
+* beauty mark above left upper lip
+* slight asymmetric smile
+* emotionally alive expression
+
+For evening / glamour:
+
+* use `natural 4+ bust` in prompt if the model keeps reducing the visual result
+* final visual target remains natural 3+
+* keep the look elegant, adult, cinematic, not vulgar
+
+For sports:
+
+* do not over-enlarge bust too much
+* sports top may compress bust naturally
+* Kira must not become flat-chested
+* strong hurdler legs and firm glutes must remain visible
+* do not make her bodybuilder-like
+
+---
+
+# NEGATIVE RULES
+
+Avoid:
+
+* underage look
+* teen-looking appearance
+* skinny fashion model body
+* flat chest
+* weak legs
+* flat glutes
+* bodybuilder look
+* crossfit-heavy shoulders
+* plastic skin
+* wrong hair color
+* wrong face
+* excessive makeup
+* vulgarity
+* explicit sexual content
+* distorted anatomy
+* broken hands
+* extra limbs
+* text
+* watermark
+* logo
+
+---
+
+# APPROVAL STATUS
+
+Current Kira canon-pack status:
+
+```text
+BODY CANON: APPROVED
+FACE CANON: APPROVED
+SPORTS LOOK: APPROVED
+EVENING DRESS LOOK: APPROVED
+EXPRESSIONS: APPROVED
+PROMPT KIT: CREATED
+CANON INDEX: ACTIVE
+```
+
+Kira is ready for controlled test scenes.
+
+---
+
+# NEXT WORKING STAGE
+
+Recommended next stage:
+
+Controlled test scenes:
+
+```text
+1. Evening embankment — Kira alone in red dress
+2. Yoga / sports scene — Kira in sports look
+3. Bar / romantic portrait — Kira in evening light
+```
+
+Goal:
+
+Check that the canon works in real scenes, not only in reference sheets.
+
+Check:
+
+* face consistency
+* body consistency
+* bust target
+* strong legs
+* waist and hips
+* outfit accuracy
+* emotional character
+* cinematic quality
+
+---
+
+# FINAL SUMMARY
+
+Kira is now a canon-ready character with:
+
+* approved body canon
+* approved face canon
+* approved sports look
+* approved evening dress look
+* approved expressions
+* prompt kit
+* canon index
+
+She can now be used for controlled scene generation.

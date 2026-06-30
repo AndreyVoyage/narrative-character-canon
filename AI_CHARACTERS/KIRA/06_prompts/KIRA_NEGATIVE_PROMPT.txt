@@ -1,0 +1,23 @@
+﻿KIRA NEGATIVE PROMPT
+Use for: all Kira image generations
+
+Do not make Kira:
+underage, teen-looking, childlike, too young, older than 26, wrong face, different woman, wrong identity, wrong hair color, platinum blonde hair, black hair, straight flat hair, short hair, excessive makeup, plastic skin, doll skin, anime, cartoon, 3d render, CGI look, mannequin look.
+
+Body errors:
+flat-chested, tiny-busted, too small bust, exaggerated artificial bust, implant-like bust, balloon-like bust, weak legs, thin fashion-model legs, flat glutes, narrow boyish hips, boxy torso, thick waist, fragile body, underweight body, bodybuilder body, crossfit-heavy body, huge shoulders, bulky arms, overly dry six-pack, harsh competition fitness look.
+
+Face errors:
+square masculine jaw, overfilled lips, distorted nose, wrong eye color, dead eyes, blank expression, missing freckles, missing beauty mark, overly perfect symmetrical fake face, old-looking face, excessive retouching.
+
+Anatomy errors:
+bad anatomy, distorted anatomy, extra limbs, missing limbs, bad hands, bad fingers, extra fingers, fused fingers, twisted arms, broken wrists, deformed legs, incorrect proportions, warped face, asymmetrical eyes, stretched body, unnatural pose.
+
+Image errors:
+low quality, blurry, pixelated, overexposed, underexposed, bad crop, duplicated character, text, logo, watermark, signature, frame, UI elements.
+
+Tone errors:
+vulgar, explicit, pornographic, cheap erotic look, fetish look, tasteless pose, overly aggressive sexuality, objectified mannequin pose.
+
+Keep:
+adult, tasteful, cinematic, photorealistic, elegant, natural, emotionally alive, athletic feminine Kira.

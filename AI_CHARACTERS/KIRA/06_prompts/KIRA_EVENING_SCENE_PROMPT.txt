@@ -1,0 +1,19 @@
+﻿KIRA EVENING SCENE PROMPT
+Use for: bars, evening streets, embankment, romantic scenes, glamour scenes, cinematic portraits
+
+Kira, 26-year-old adult woman, 168 cm, athletic slender feminine body, former hurdler / track athlete, narrow waist, strong athletic legs, firm glutes, feminine hips, natural full bust.
+
+Important bust rule:
+Final visual target is natural 3+ bust. If the image model visually reduces volume, write natural 4+ bust in the prompt to achieve final 3+ result. Bust must remain natural, proportional, elegant, not exaggerated, not artificial.
+
+Face:
+oval face, high cheekbones, expressive brown almond eyes with warm amber undertones, straight refined nose, full lower lip, defined cupid's bow, light freckles across nose and cheeks, small beauty mark above left upper lip, slightly asymmetrical smile, dark blonde shoulder-length natural wavy hair.
+
+Outfit:
+fitted red evening dress, elegant and cinematic, refined open neckline or strapless neckline, fabric emphasizing narrow waist, feminine hips, strong athletic legs, and natural full bust. High slit may reveal one strong athletic leg. The dress must look tasteful, adult, luxurious, and romantic, not vulgar.
+
+Mood:
+warm, cinematic, elegant, confident, playful, slightly mysterious, emotionally alive. Kira should look like an independent woman with soft fire in her eyes, not a passive model.
+
+Lighting and scene:
+golden hour, evening city lights, luxury bar, warm amber interior, romantic street, embankment, cinematic bokeh, natural skin texture, realistic anatomy, editorial photorealism.

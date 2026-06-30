@@ -1,0 +1,189 @@
+# KIRA_APPROVAL_CRITERIA.md
+
+Path:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\10_notes\KIRA_APPROVAL_CRITERIA.md
+
+Purpose:
+Quick checklist for deciding whether a generated Kira image should be approved, kept as candidate, or regenerated.
+
+---
+
+# 1. SIMPLE DECISION RULE
+
+## APPROVE
+
+Approve image if:
+
+* she clearly looks like Kira;
+* face matches Kira face canon;
+* body matches Kira body canon;
+* hair, eyes, freckles and general beauty type are preserved;
+* body proportions are natural;
+* outfit matches the intended canon;
+* no serious anatomy errors.
+
+## KEEP AS CANDIDATE
+
+Keep as candidate if:
+
+* image is good but not perfect;
+* one part is useful, for example outfit, pose, dress or lighting;
+* face is slightly weaker but body/outfit is good;
+* body is slightly weaker but face/mood is good.
+
+Candidate files should be stored in:
+
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\candidates\
+
+or another relevant candidates folder.
+
+## REGENERATE
+
+Regenerate if:
+
+* she looks like a different woman;
+* face is wrong;
+* body is wrong;
+* bust becomes too small;
+* legs become weak or too thin;
+* glutes become flat;
+* hair color changes too much;
+* freckles / beauty mark disappear completely;
+* anatomy is broken;
+* image looks vulgar, fake, plastic, or not like Kira.
+
+Bad or rejected files should be stored in:
+
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\07_generated\
+
+---
+
+# 2. BODY CHECK
+
+Approve body if:
+
+* athletic slender feminine body;
+* natural final visual 3+ bust target;
+* narrow waist;
+* feminine hips;
+* strong hurdler legs;
+* firm glutes;
+* not skinny fashion model;
+* not bodybuilder;
+* not crossfit-heavy.
+
+Regenerate body if:
+
+* bust is too small;
+* legs are weak or thin;
+* glutes are flat;
+* waist becomes thick or boxy;
+* body becomes too muscular;
+* body becomes too dry fitness-stage look.
+
+---
+
+# 3. FACE CHECK
+
+Approve face if:
+
+* oval face;
+* high cheekbones;
+* expressive brown / amber eyes;
+* dark blonde / light brown wavy shoulder-length hair;
+* light freckles;
+* small beauty mark above left upper lip;
+* full lower lip;
+* slight asymmetrical smile;
+* warm, alive expression.
+
+Regenerate face if:
+
+* she looks like another woman;
+* eyes are wrong color;
+* hair becomes black, platinum, or flat straight;
+* face becomes too plastic;
+* freckles and beauty mark disappear;
+* expression is dead or mannequin-like.
+
+---
+
+# 4. EVENING DRESS CHECK
+
+Approve evening dress if:
+
+* red fitted evening dress;
+* elegant and tasteful;
+* neckline is refined;
+* waist, hips and bust read correctly;
+* strong athletic leg is visible through slit;
+* image is adult, cinematic, romantic, not vulgar.
+
+Regenerate evening dress if:
+
+* dress makes body flat;
+* bust is reduced too much;
+* waist/hips disappear;
+* image becomes cheap glamour;
+* face stops looking like Kira.
+
+---
+
+# 5. SPORTS CHECK
+
+Approve sports look if:
+
+* black fitted sports outfit;
+* strong hurdler legs;
+* firm glutes;
+* narrow waist;
+* athletic posture;
+* face still looks like Kira;
+* sports top compresses bust naturally but does not make her flat.
+
+Regenerate sports look if:
+
+* she becomes flat-chested;
+* legs are too thin;
+* glutes disappear;
+* body becomes too bodybuilder-like;
+* face becomes another woman.
+
+---
+
+# 6. FINAL STATUS TERMS
+
+Use these labels:
+
+APPROVED:
+Good enough to be used as canon.
+
+APPROVED CANDIDATE:
+Good, but keep in candidates until final selection.
+
+DRAFT:
+Useful idea, but not canon.
+
+REGENERATE:
+Do not use. Generate again.
+
+REJECTED:
+Bad result. Store only in 07_generated if needed.
+
+---
+
+# 7. CURRENT EVENING DRESS FILES
+
+Sheet A candidate:
+
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\candidates\KIRA_evening_dress_v2_sheet_A_fullbody_4plus_candidate.png
+
+Sheet B candidate:
+
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\candidates\KIRA_evening_dress_v2_sheet_B_portraits_4plus_candidate.png
+
+Status:
+APPROVED CANDIDATES
+
+Next action:
+After reviewing both together, either approve them as final evening dress canon or generate one final polished version.

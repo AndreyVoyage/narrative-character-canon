@@ -1,0 +1,422 @@
+# KIRA_IDENTITY.txt
+
+Path:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\10_notes\KIRA_IDENTITY.txt
+
+Version: local visual canon v1.0
+Persona source: voyage-narrative-engine/personas/kira
+Local visual update: BODY CANON / FACE CANON / SPORTS LOOK / EVENING DRESS LOOK / EXPRESSIONS
+
+---
+
+# 1. CORE IDENTITY
+
+Name: Kira
+Age: 26
+Height: 168 cm
+
+General type:
+Kira is a young adult woman with an athletic slender body, feminine proportions, expressive face, warm brown eyes, and dark blonde shoulder-length wavy hair.
+
+Core visual archetype:
+Athletic feminine woman, former hurdler / track athlete, graceful but strong, emotionally expressive, confident, warm, playful, with a subtle inner tension.
+
+Main visual signature:
+Oval face, high cheekbones, expressive brown almond eyes with warm amber undertones, straight refined nose, full lower lip, dark blonde natural waves, athletic slender body, strong legs and glutes, narrow waist, red dress as signature evening piece.
+
+---
+
+# 2. FACE CANON
+
+Face shape:
+Oval face with slightly angular but feminine jawline. High cheekbones. Defined but soft jaw. Not square, not heavy, not overly sharp.
+
+Eyes:
+Expressive brown eyes with warm amber undertones.
+Almond shape, slightly upturned outer corners.
+Average spacing, about one eye width apart.
+Double eyelids with visible natural crease.
+Warm, observant, emotionally reactive gaze.
+
+Eyebrows:
+Natural arch, medium thickness.
+Dark blonde / light brown, slightly lighter than hair.
+Not overly thin, not overly stylized.
+
+Nose:
+Straight bridge.
+Refined rounded tip.
+Natural nostrils, slightly more visible when emotional.
+No exaggerated narrow nose, no plastic-surgery look.
+
+Lips:
+Natural pink-peach tone.
+Full lower lip.
+Defined cupid’s bow.
+Slight natural upturn at the corners.
+Not overfilled, not glossy plastic, not artificial.
+
+Skin:
+Smooth skin with natural texture.
+Minimal visible pores.
+Light freckles across nose and cheekbones, especially visible in warm light.
+Healthy warm skin tone.
+No under-eye bags.
+Youthful skin elasticity.
+Faint laugh lines near eyes when smiling.
+Subtle nasolabial folds only when smiling.
+
+Distinguishing features:
+Small beauty mark above the left side of upper lip.
+Slightly asymmetrical smile — right corner lifts higher.
+Expressive forehead wrinkles when surprised, thinking, or emotionally engaged.
+Natural, lived-in facial expression; not a blank fashion mannequin.
+
+Hair:
+Dark blonde / light brown.
+Shoulder-length.
+Natural waves, slightly messy but beautiful.
+Volume around face.
+Warm highlights in golden or cinematic light.
+Do not make hair platinum blonde, black, straight-flat, or too salon-perfect.
+
+Face vibe:
+Warm, feminine, alert, athletic, playful, emotionally alive.
+She can look soft, teasing, confident, thoughtful, amused, or vulnerable depending on scene.
+
+---
+
+# 3. BODY CANON
+
+Body type:
+Athletic slender, feminine, toned, graceful.
+Former hurdler / track athlete body.
+Functional athletic body, not bodybuilding, not crossfit-heavy, not fragile.
+
+Height:
+168 cm.
+
+Build:
+Narrow waist.
+Strong athletic legs.
+Firm glutes.
+Developed hips and thighs.
+Toned but feminine upper body.
+Balanced shoulders, not broad masculine shoulders.
+Defined but not over-dried abdomen.
+
+Bust:
+Target visual result: natural 3+ size.
+Important generation rule: if the model visually reduces bust size, prompt may say 4+ to achieve final 3+ look.
+Bust must look natural, medium-full, proportional to her athletic slender body.
+Do not make her flat-chested.
+Do not make her tiny-busted.
+Do not make bust exaggerated, artificial, balloon-like, or implant-like.
+
+Waist:
+Narrow, athletic, feminine.
+Visible waist-to-hip contrast.
+No boxy torso.
+No thick waist.
+
+Hips and glutes:
+Feminine athletic hips.
+Firm, developed glutes from track training.
+Strong but natural.
+Do not make hips too narrow.
+Do not make glutes flat.
+Do not make glutes cartoonishly oversized.
+
+Legs:
+Strong legs from hurdling and sprint training.
+Firm thighs.
+Developed quadriceps but not bodybuilding mass.
+Strong hamstrings and calves.
+Athletic, springy, functional legs.
+Legs should look powerful enough for running, jumping, stretching, yoga, and athletic movement.
+Do not make legs thin, weak, fashion-model skinny, or overly dry bodybuilder legs.
+
+Arms and shoulders:
+Toned but feminine.
+Athletic but not bulky.
+No large bodybuilder arms.
+No oversized deltoids.
+Upper body should remain softer than the powerful lower body.
+
+Abdomen:
+Toned, athletic, healthy.
+Visible fitness, but not extreme six-pack stage dryness.
+No exaggerated bodybuilder abs.
+No harsh competition-cut look.
+
+Posture:
+Confident, graceful, grounded.
+Athletic posture.
+Relaxed but alert.
+Natural balance in standing poses.
+Movement should feel controlled and coordinated.
+
+---
+
+# 4. SPORTS BACKGROUND
+
+Kira used to train in hurdles / track athletics.
+This affects her visual body canon:
+
+* strong legs;
+* firm glutes;
+* powerful but feminine lower body;
+* athletic waist;
+* good posture;
+* natural physical confidence;
+* ability to stretch, run, balance, and move with precision.
+
+Sports look must show:
+functional athletic beauty, not bodybuilding, not fragile slimness.
+
+---
+
+# 5. SIGNATURE OUTFITS
+
+## 5.1 Evening red dress
+
+Signature outfit:
+Fitted red evening dress.
+Elegant, feminine, cinematic.
+Used for bars, evening streets, embankment walks, romantic scenes, glamour scenes.
+
+Dress features:
+Red fitted dress.
+Strapless or elegant open neckline.
+High slit can reveal strong athletic leg.
+Fabric should emphasize waist, hips, and feminine athletic silhouette.
+Bust should read visually as natural 3+ final result.
+If generation reduces bust, prompt can specify 4+ to achieve desired 3+ look.
+
+Evening vibe:
+Warm, cinematic, elegant, romantic, slightly playful.
+Not vulgar.
+Not pornographic.
+Not costume-like.
+
+## 5.2 Sports look
+
+Base sports outfit:
+Black fitted sports top.
+Black fitted shorts or athletic leggings.
+Neutral shoes or barefoot depending on context.
+Used for gym, yoga, running, stretching, training.
+
+Sports look must show:
+athletic slender body, strong legs, firm glutes, narrow waist, natural 3+ bust compressed by sports top but still visible.
+
+Avoid:
+overly small bust, weak legs, flat glutes, bodybuilding dryness, huge shoulders.
+
+## 5.3 Casual elegance
+
+Casual look:
+Simple fitted top, jeans, light blouse, streetwear, natural daylight.
+Should preserve the same face, hair, body, and warm athletic femininity.
+
+## 5.4 Sauna / spa variant
+
+Sauna look:
+Hair slightly damp and naturally messy.
+Warm flushed cheeks from heat.
+Relaxed confident expression.
+Warm amber lighting, wooden interior, steam.
+Tasteful, non-explicit, natural poses.
+
+---
+
+# 6. PERSONALITY / CHARACTER CANON
+
+Core psychological image:
+“Steel butterfly” — soft and feminine on the surface, but internally strong, independent, and emotionally complex.
+
+Core traits:
+Independent.
+Athletic.
+Emotionally reactive but controlled.
+Warm but not naive.
+Playful but not silly.
+Feminine but not fragile.
+Confident but not cold.
+She can hide vulnerability behind humor, movement, or physical composure.
+
+Autonomy:
+Kira should not feel passive or mannequin-like.
+She has her own initiative, reactions, glances, posture, and emotional state.
+She should look like a person making choices, not a decorative object.
+
+Typical emotional tones:
+calm confidence;
+soft smile;
+playful curiosity;
+confident look;
+restrained sensuality;
+thoughtfulness;
+amusement;
+slightly vulnerable emotional openness.
+
+Internal tension:
+She dislikes feeling trapped, controlled, dependent, or emotionally pressured.
+Physical activity is a natural coping mechanism.
+Movement, posture, and body control help her regulate emotion.
+
+---
+
+# 7. EXPRESSION CANON
+
+Required expression set:
+
+1. Neutral:
+   calm, direct, observant, emotionally controlled.
+
+2. Soft smile:
+   warm, open, feminine, subtle asymmetry.
+
+3. Playful smile:
+   teasing, alive, with warm eyes and slight right-corner smile lift.
+
+4. Confident look:
+   steady gaze, controlled posture, inner strength.
+
+5. Seductive but restrained:
+   adult, elegant, controlled, not vulgar, not explicit.
+
+6. Thoughtful:
+   eyes slightly distant, quiet emotional processing.
+
+7. Amused:
+   small smile, knowing eyes, playful inner reaction.
+
+8. Slightly emotional / vulnerable:
+   softened eyes, lips relaxed, inner feeling visible but not melodramatic.
+
+---
+
+# 8. VISUAL STYLE
+
+Primary style:
+Photorealistic.
+Cinematic.
+Natural skin texture.
+Realistic anatomy.
+High-detail editorial realism.
+Warm natural or cinematic lighting.
+No plastic skin.
+No anime.
+No cartoon.
+No 3D render look.
+
+Preferred lighting:
+Warm natural light.
+Golden hour.
+Soft studio light.
+Warm amber interior.
+Cinematic bar light.
+Evening city bokeh.
+Spa/sauna warm wood lighting.
+
+Preferred camera:
+Natural portrait lens.
+Realistic human proportions.
+No extreme wide-angle distortion.
+No stretched legs unless intentionally cinematic and still natural.
+Face must remain recognizable.
+
+---
+
+# 9. POSITIVE PROMPT BLOCK
+
+Use this block in future image prompts:
+
+Kira, 26-year-old adult woman, 168 cm, athletic slender feminine body, former hurdler / track athlete, narrow waist, strong athletic legs, firm glutes, developed feminine hips, natural medium-full bust with final visual target around 3+ size, dark blonde shoulder-length natural wavy hair, expressive brown almond eyes with warm amber undertones, oval face with high cheekbones and slightly angular feminine jawline, straight refined nose, full lower lip with defined cupid’s bow, natural pink-peach lips, light freckles across nose and cheekbones, small beauty mark above left side of upper lip, slightly asymmetrical smile with right corner lifting higher, warm confident expressive gaze, natural skin texture, photorealistic cinematic realism.
+
+---
+
+# 10. EVENING / GLAMOUR PROMPT ADD-ON
+
+Use for evening dress, bar, romantic, embankment, glamour scenes:
+
+Kira wears a fitted red evening dress, elegant and cinematic, strapless or refined open neckline, fabric emphasizing narrow waist, feminine hips, strong athletic legs and natural full bust. If the model tends to reduce body volume, specify natural 4+ bust in prompt to achieve final 3+ visual result. The look must remain natural, elegant, proportional, adult, tasteful, not vulgar.
+
+---
+
+# 11. SPORTS PROMPT ADD-ON
+
+Use for gym, yoga, running, stretching, training scenes:
+
+Kira wears a fitted black sports top and fitted shorts or leggings. Her body reads as former hurdler / track athlete: strong thighs, firm glutes, narrow waist, athletic calves, toned abdomen, feminine upper body, natural 3+ bust slightly compressed by sports top but still visible. Functional athletic beauty, not bodybuilding, not crossfit-heavy, not fragile.
+
+---
+
+# 12. NEGATIVE PROMPT / DO NOT
+
+Do not make Kira:
+
+* underage;
+* teen-looking;
+* too young;
+* older than 26;
+* flat-chested;
+* tiny-busted;
+* weak-legged;
+* skinny fashion-model body;
+* fragile or underweight;
+* bodybuilder;
+* crossfit-heavy;
+* huge shoulders;
+* bulky arms;
+* overly dry six-pack fitness-stage look;
+* plastic skin;
+* excessive makeup;
+* blonde/platinum hair;
+* black hair;
+* straight flat hair;
+* square masculine jaw;
+* overfilled lips;
+* distorted anatomy;
+* extra limbs;
+* bad hands;
+* warped face;
+* anime;
+* cartoon;
+* 3D render;
+* text;
+* watermark;
+* vulgar;
+* explicit;
+* pornographic.
+
+---
+
+# 13. FILE CANON REFERENCES
+
+BODY CANON:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\04_body_sheet\
+
+FACE CANON:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\03_face_sheet\
+
+SPORTS LOOK:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\sports_look\
+
+EVENING DRESS LOOK:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\
+
+EXPRESSIONS:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\03_face_sheet\expressions\
+
+DRAFTS / NON-CANON:
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\07_generated\
+
+---
+
+# 14. FINAL CANON SUMMARY
+
+Kira is a 26-year-old adult woman, 168 cm, athletic slender and feminine, with the body of a former hurdler: strong legs, firm glutes, narrow waist, toned but not bodybuilding physique, and natural 3+ bust. She has dark blonde shoulder-length natural wavy hair, expressive brown almond eyes with amber undertones, an oval face with high cheekbones, straight refined nose, full lower lip, light freckles, a beauty mark above the left side of the upper lip, and a slightly asymmetrical smile.
+
+Her signature look is a fitted red evening dress, elegant and cinematic. Her sports look is a fitted black sports top and shorts/leggings, showing functional athletic strength. Her emotional signature is warm confidence, playful control, independence, and subtle vulnerability.

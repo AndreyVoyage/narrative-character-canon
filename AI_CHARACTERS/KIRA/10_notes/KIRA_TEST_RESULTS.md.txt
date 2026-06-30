@@ -1,0 +1,149 @@
+# KIRA_TEST_RESULTS.md
+
+Character: Kira  
+Status: CANON TESTS PASSED  
+Last updated: 2026-06-29
+
+---
+
+# TEST 1 — EVENING EMBANKMENT
+
+Folder:
+
+```text
+07_generated/canon_tests/01_evening_embankment/
+
+Files:
+
+KIRA_test01_evening_embankment_v1.png
+KIRA_test01_evening_embankment_v2_MAIN.png
+KIRA_test01_evening_embankment_v3_ALT_cinematic.png
+
+Result:
+
+PASS
+
+Main selected file:
+
+KIRA_test01_evening_embankment_v2_MAIN.png
+
+Alternate cinematic file:
+
+KIRA_test01_evening_embankment_v3_ALT_cinematic.png
+
+Notes:
+
+Kira face is stable.
+Evening dress works.
+Natural 4+ prompt rule gives final visual 3+ effect.
+Strong romantic evening mood.
+v2 is cleaner as main reference.
+v3 is stronger as cinematic mood variant.
+TEST 2 — SPORTS / YOGA
+
+Folder:
+
+07_generated/canon_tests/02_sports_yoga/
+
+Files:
+
+KIRA_test02_sports_yoga_v1.png
+KIRA_test02_sports_yoga_v2_MAIN.png
+KIRA_test02_sports_yoga_v3_ALT_stretch.png
+
+Result:
+
+PASS
+
+Main selected file:
+
+KIRA_test02_sports_yoga_v2_MAIN.png
+
+Alternate file:
+
+KIRA_test02_sports_yoga_v3_ALT_stretch.png
+
+Notes:
+
+Kira face is stable.
+Sports outfit works.
+Strong hurdler legs are visible.
+Waist and athletic body read correctly.
+Sports top compresses bust naturally but does not make her flat.
+v2 is the strongest sports/yoga test.
+TEST 3 — PORTRAIT / EXPRESSION
+
+Folder:
+
+07_generated/canon_tests/03_portrait_expression/
+
+Files:
+
+KIRA_test03_portrait_expression_v1_APPROVED.png
+
+Result:
+
+PASS
+
+Main selected file:
+
+KIRA_test03_portrait_expression_v1_APPROVED.png
+
+Notes:
+
+Face is close to Kira canon.
+Hair, freckles, eyes and expression are good.
+Bar / romantic atmosphere works.
+Red dress and evening mood work.
+This is approved as a scene result, not as main identity reference.
+FINAL RESULT
+KIRA CANON TESTS: PASSED
+
+Kira is ready for controlled scene generation.
+
+Approved folders:
+
+01_evening_embankment
+02_sports_yoga
+03_portrait_expression
+
+Do not rename these folders.
+
+NEXT CHARACTER STAGE
+
+Recommended next character:
+
+ANDREY
+
+Reason:
+
+Kira is now stable. Andrey is the main partner character for group scenes, romantic scenes, yoga scenes, bar scenes and embankment scenes.
+
+Next work:
+
+C:\DEV\Narrative\AI_CHARACTERS\ANDREY\
+
+Needed stages:
+
+01_refs_raw
+02_best_refs
+03_face_sheet
+04_body_sheet
+05_outfits
+06_prompts
+07_generated
+08_masks
+09_blender
+10_notes
+
+## После сохранения
+
+Кира считается закрытой как **canon-ready character**.
+
+Следующий логичный шаг — начать **ANDREY canon pack**, чтобы потом делать стабильные сцены:
+
+```text
+Андрей + Кира
+Андрей + Кира + Сергей
+Андрей + Кира + Марина
+групповые сцены на набережной / в баре / йоге

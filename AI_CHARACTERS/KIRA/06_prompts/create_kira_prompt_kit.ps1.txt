@@ -1,0 +1,141 @@
+# create_kira_prompt_kit.ps1
+# Creates Kira Prompt Kit files in UTF-8
+
+$Root = "C:\DEV\Narrative\AI_CHARACTERS\KIRA\06_prompts"
+
+New-Item -Path $Root -ItemType Directory -Force | Out-Null
+
+# ------------------------------------------------------------
+# 1. KIRA_BASE_PROMPT.txt
+# ------------------------------------------------------------
+
+$KiraBasePrompt = @'
+KIRA BASE PROMPT
+Version: v1.0
+Use for: any image generation with Kira
+
+Kira, 26-year-old adult woman, 168 cm height, athletic slender feminine body, former hurdler / track athlete, narrow waist, strong athletic legs, firm glutes, developed feminine hips, toned but not bulky body, functional athletic beauty, graceful posture, natural medium-full bust with final visual target around 3+ size, proportional and natural.
+
+Face canon:
+oval face with high cheekbones, slightly angular but feminine jawline, expressive brown almond eyes with warm amber undertones, double eyelids with natural crease, natural arched medium-thickness eyebrows, straight refined nose with rounded tip, full lower lip, defined cupid's bow, natural pink-peach lips, smooth skin with natural texture, light freckles across nose and cheekbones, small beauty mark above left side of upper lip, slightly asymmetrical smile with right corner lifting higher.
+
+Hair:
+dark blonde / light brown shoulder-length natural wavy hair, soft volume around the face, warm highlights in cinematic light, not platinum blonde, not black, not flat straight hair.
+
+Character vibe:
+warm, confident, athletic, feminine, emotionally expressive, independent, playful but not silly, soft but internally strong, “steel butterfly” energy, alive gaze, natural human expression, not a mannequin.
+
+Visual style:
+photorealistic, cinematic, natural skin texture, realistic anatomy, high-detail editorial realism, warm natural light, realistic human proportions.
+
+Core preservation rules:
+preserve same face, same eyes, same hair, same freckles, same beauty mark, same athletic feminine body, same strong hurdler legs, same narrow waist, same natural 3+ bust target, same warm confident emotional presence.
+'@
+
+Set-Content -Path (Join-Path $Root "KIRA_BASE_PROMPT.txt") -Value $KiraBasePrompt -Encoding UTF8
+
+
+# ------------------------------------------------------------
+# 2. KIRA_EVENING_SCENE_PROMPT.txt
+# ------------------------------------------------------------
+
+$KiraEveningPrompt = @'
+KIRA EVENING SCENE PROMPT
+Version: v1.0
+Use for: bars, evening streets, embankment, romantic scenes, glamour scenes, cinematic portraits
+
+Kira, 26-year-old adult woman, 168 cm, athletic slender feminine body, former hurdler / track athlete, narrow waist, strong athletic legs, firm glutes, feminine hips, natural full bust. Final visual target is natural 3+ bust; if the image model visually reduces volume, write natural 4+ bust in the prompt to achieve final 3+ result. Bust must remain natural, proportional, elegant, not exaggerated, not artificial.
+
+Face:
+oval face, high cheekbones, expressive brown almond eyes with warm amber undertones, straight refined nose, full lower lip, defined cupid's bow, light freckles across nose and cheeks, small beauty mark above left upper lip, slightly asymmetrical smile, dark blonde shoulder-length natural wavy hair.
+
+Outfit:
+fitted red evening dress, elegant and cinematic, refined open neckline or strapless neckline, fabric emphasizing narrow waist, feminine hips, strong athletic legs, and natural full bust. High slit may reveal one strong athletic leg. The dress must look tasteful, adult, luxurious, and romantic, not vulgar.
+
+Mood:
+warm, cinematic, elegant, confident, playful, slightly mysterious, emotionally alive. Kira should look like an independent woman with soft fire in her eyes, not a passive model.
+
+Lighting and scene:
+golden hour, evening city lights, luxury bar, warm amber interior, romantic street, embankment, cinematic bokeh, natural skin texture, realistic anatomy, editorial photorealism.
+
+Composition rules:
+keep her face recognizable, preserve body canon, preserve strong legs and narrow waist, avoid making her too thin, avoid reducing bust, avoid weak legs, avoid plastic skin, avoid excessive makeup.
+'@
+
+Set-Content -Path (Join-Path $Root "KIRA_EVENING_SCENE_PROMPT.txt") -Value $KiraEveningPrompt -Encoding UTF8
+
+
+# ------------------------------------------------------------
+# 3. KIRA_SPORTS_SCENE_PROMPT.txt
+# ------------------------------------------------------------
+
+$KiraSportsPrompt = @'
+KIRA SPORTS SCENE PROMPT
+Version: v1.0
+Use for: gym, yoga, running, stretching, hurdles, warm-up, training scenes
+
+Kira, 26-year-old adult woman, 168 cm, former hurdler / track athlete, athletic slender feminine body, narrow waist, strong functional legs, firm glutes, developed athletic thighs, toned calves, feminine hips, toned abdomen, athletic but not bulky upper body, natural medium-full bust with final visual target around 3+ size.
+
+Important body rule:
+sports top may compress the bust, but Kira must not become flat-chested or tiny-busted. Keep natural 3+ visual target while preserving believable athletic proportions.
+
+Sports outfit:
+fitted black sports top, fitted athletic shorts or leggings, clean training look, gym / yoga / running / stretching context. Clothing should show athletic form clearly without exaggeration.
+
+Sports body:
+strong hurdler legs, powerful but feminine thighs, firm glutes, narrow waist, functional athletic posture, coordinated movement, graceful body control, springy runner’s legs, not bodybuilding, not crossfit-heavy, not fragile.
+
+Face and hair:
+same Kira face, expressive brown / amber eyes, oval face, high cheekbones, freckles, beauty mark above left upper lip, dark blonde natural wavy shoulder-length hair, warm confident gaze. Hair may be tied back or slightly messy for training, but identity must stay recognizable.
+
+Mood:
+focused, confident, playful, alive, athletic, disciplined, warm. She should look like a woman who knows how to move, stretch, run, and control her body.
+
+Lighting and style:
+photorealistic, natural skin texture, realistic anatomy, premium gym / yoga studio / track atmosphere, soft natural or studio light, editorial realism.
+
+Avoid:
+weak legs, thin fashion-model legs, flat glutes, flat chest, bodybuilding legs, huge shoulders, bulky arms, harsh competition-body dryness, plastic skin, wrong face, wrong hair color.
+'@
+
+Set-Content -Path (Join-Path $Root "KIRA_SPORTS_SCENE_PROMPT.txt") -Value $KiraSportsPrompt -Encoding UTF8
+
+
+# ------------------------------------------------------------
+# 4. KIRA_NEGATIVE_PROMPT.txt
+# ------------------------------------------------------------
+
+$KiraNegativePrompt = @'
+KIRA NEGATIVE PROMPT
+Version: v1.0
+Use for: all Kira image generations
+
+Do not make Kira:
+underage, teen-looking, childlike, too young, older than 26, wrong face, different woman, wrong identity, wrong hair color, platinum blonde hair, black hair, straight flat hair, short hair, excessive makeup, plastic skin, doll skin, anime, cartoon, 3d render, CGI look, mannequin look.
+
+Body errors:
+flat-chested, tiny-busted, too small bust, exaggerated artificial bust, implant-like bust, balloon-like bust, weak legs, thin fashion-model legs, flat glutes, narrow boyish hips, boxy torso, thick waist, fragile body, underweight body, bodybuilder body, crossfit-heavy body, huge shoulders, bulky arms, overly dry six-pack, harsh competition fitness look.
+
+Face errors:
+square masculine jaw, overfilled lips, distorted nose, wrong eye color, dead eyes, blank expression, missing freckles, missing beauty mark, overly perfect symmetrical fake face, old-looking face, excessive retouching.
+
+Anatomy errors:
+bad anatomy, distorted anatomy, extra limbs, missing limbs, bad hands, bad fingers, extra fingers, fused fingers, twisted arms, broken wrists, deformed legs, incorrect proportions, warped face, asymmetrical eyes, stretched body, unnatural pose.
+
+Image errors:
+low quality, blurry, pixelated, overexposed, underexposed, bad crop, duplicated character, text, logo, watermark, signature, frame, UI elements.
+
+Tone errors:
+vulgar, explicit, pornographic, cheap erotic look, fetish look, tasteless pose, overly aggressive sexuality, objectified mannequin pose.
+
+Keep:
+adult, tasteful, cinematic, photorealistic, elegant, natural, emotionally alive, athletic feminine Kira.
+'@
+
+Set-Content -Path (Join-Path $Root "KIRA_NEGATIVE_PROMPT.txt") -Value $KiraNegativePrompt -Encoding UTF8
+
+
+Write-Host ""
+Write-Host "KIRA PROMPT KIT created successfully:" -ForegroundColor Green
+Get-ChildItem -Path $Root -Filter "KIRA_*.txt" | Sort-Object Name | Select-Object Name, FullName
+Write-Host ""
