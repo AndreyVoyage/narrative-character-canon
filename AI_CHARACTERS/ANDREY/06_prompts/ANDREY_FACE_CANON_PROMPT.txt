@@ -1,0 +1,64 @@
+ANDREY FACE CANON PROMPT KIT
+================================
+
+Purpose:
+--------
+This prompt kit is used to generate a consistent photorealistic face canon reference sheet for Andrey Senior, the adult male lead character. It produces two output sheets:
+- Sheet A: basic expression grid (8 head-and-shoulders portraits)
+- Sheet B: multi-angle head reference grid (8 angles)
+
+Output Files:
+-------------
+AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png
+AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png
+
+Reference Files:
+----------------
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_08_expressions_sheet_A.png
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_09_expressions_sheet_B.png
+
+Text Canon:
+-----------
+AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt
+AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md
+
+
+SHEET A PROMPT:
+---------------
+Photorealistic character face canon sheet of the same adult man, Andrey Senior, 38 years old, 180 cm, athletic strong build, mature masculine appearance.
+Create a clean studio face reference sheet with 8 consistent head-and-shoulders portraits of the same man in one image.
+Layout: 2 rows x 4 columns, neutral grey background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark.
+Identity: rounded oval broad face, soft contours, broad forehead, bright blue almond-shaped eyes with subtle grey undertones, clear expressive gaze, straight nose bridge with subtle width and rounded tip slightly turned down, medium full natural pale pink lips, soft rounded jawline, light stubble 2-3 days, short light blonde / dark blonde hair, slight natural temple recession, still clearly visible hair coverage, not bald, not shaved head, fair smooth skin with realistic texture, faint freckles on cheeks and nose bridge, faint forehead lines, faint crow's feet, medium-sized ears close to head.
+Body framing: head and shoulders only, thick muscular neck, visible Adam's apple, broad shoulders partly visible, blue dress shirt collar visible.
+Expression range:
+1. neutral calm
+2. warm restrained smile
+3. confident slight smirk
+4. serious focused look
+5. attentive observant gaze
+6. soft protective expression
+7. relaxed mature smile
+8. calm direct look
+Style: photorealistic, realistic skin texture, natural anatomy, consistent identity, editorial studio reference, sharp eyes, detailed face, natural male maturity, not stylized, not plastic, not CGI.
+Important: all 8 portraits must clearly be the same person.
+
+
+SHEET B PROMPT:
+---------------
+Photorealistic multi-angle face canon sheet of the same adult man, Andrey Senior, 38 years old, mature athletic masculine appearance.
+Create a clean studio head reference sheet with multiple angles of the same man in one image.
+Layout: 2 rows x 4 columns, neutral grey background, soft even studio lighting, no text labels, no numbers, no watermark.
+Angles:
+1. front view, neutral expression
+2. front view, soft smile
+3. 3/4 left view
+4. 3/4 right view
+5. left profile
+6. right profile
+7. slight downward gaze
+8. slight upward gaze
+Identity: adult man, 38 years old, rounded oval broad face, broad forehead, bright blue almond-shaped eyes, straight nose with rounded slightly downturned tip, medium full lips, soft rounded jawline, light 2-3 day stubble, short light blonde / dark blonde hair with slight natural temple recession, fair skin, faint freckles, subtle forehead lines, faint crow's feet, thick masculine neck, calm confident mature expression.
+Hair rule: short light blonde / dark blonde hair, slight natural temple recession, still clearly present hair coverage, not bald, not shaved, not severe recession, not sparse hair, not overly thick model hair.
+Important: all angles must preserve the same person.
