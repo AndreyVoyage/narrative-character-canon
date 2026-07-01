@@ -1,0 +1,13 @@
+{
+  "character": "OLGA",
+  "version": "v1.0",
+  "last_updated": "2026-07-01",
+  "root": "AI_CHARACTERS/OLGA",
+  "text_sources": {
+    "identity": null,
+    "canon_index": null,
+    "base_prompt": null,
+    "negative_prompt": null
+  },
+  "scene_presets": {}
+}

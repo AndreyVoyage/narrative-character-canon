@@ -108,7 +108,22 @@ python .\tools\build_scene_reference_pack.py --characters KIRA,ANDREY --scene sa
 
 Ключевой принцип остаётся прежним: repository canon сначала, генерация потом.
 
-## 11. Правила для sensitive/adult scenes
+## 11. Supported characters
+
+Current character preset coverage:
+
+* ANDREY — active GitHub-first presets with tracked face/expression/body/raw references.
+* KIRA — active GitHub-first presets with tracked face/body/outfit/test references.
+* MARINA — preset file exists, scene presets pending tracked image references.
+* NIKA — preset file exists, scene presets pending tracked image references.
+* OLGA — preset file exists, scene presets pending tracked image references.
+* SERGEY — preset file exists, scene presets pending tracked image references.
+* MAKSIM — preset file exists, scene presets pending tracked image references.
+* EGOR — preset file exists, scene presets pending tracked image references.
+
+Presets are GitHub-first and should only use tracked files available on GitHub. Do not add untracked image files, guessed paths, placeholder names, or `.gitkeep` files as image references.
+
+## 12. Правила для sensitive/adult scenes
 
 * использовать только adult characters;
 * core canon оставлять нейтральным;
@@ -117,9 +132,9 @@ python .\tools\build_scene_reference_pack.py --characters KIRA,ANDREY --scene sa
 * в публичный или потенциально публичный repo не коммитить private outputs;
 * reusable face/body/outfit canon должен оставаться production-safe.
 
-## 12. Immediate next step
+## 13. Immediate next step
 
-Создать presets для Kira и Andrey и протестировать sauna-scene pack:
+Сделать первый реальный рабочий сценарий через tool: KIRA + ANDREY / sauna / towel conversation, загрузить refs по raw links и сгенерировать тестовое изображение.
 
 ```powershell
 python .\tools\build_scene_reference_pack.py --characters KIRA,ANDREY --scene sauna --description "Кира и Андрей в сауне разговаривают, укрытые по пояс полотенцем"

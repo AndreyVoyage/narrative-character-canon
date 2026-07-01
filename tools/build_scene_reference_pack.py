@@ -255,6 +255,7 @@ def main() -> int:
         if warning:
             warnings.append(f"{character}: {warning}")
         if not preset or not selected_name:
+            missing.append(f"AI_CHARACTERS/{character}/10_notes/{character}_REFERENCE_PRESETS.json has no usable preset for scene '{scene}'")
             continue
 
         image_entries = []
