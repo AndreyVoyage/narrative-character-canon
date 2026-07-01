@@ -1,0 +1,69 @@
+{
+  "character": "KIRA",
+  "version": "v1.0",
+  "last_updated": "2026-07-01",
+  "root": "AI_CHARACTERS/KIRA",
+  "text_sources": {
+    "identity": "AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt",
+    "canon_index": "AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt",
+    "base_prompt": "AI_CHARACTERS/KIRA/06_prompts/KIRA_BASE_PROMPT.txt",
+    "negative_prompt": "AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt"
+  },
+  "scene_presets": {
+    "portrait": {
+      "description": "Face-focused portrait generation.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png",
+        "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_B.png",
+        "AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png"
+      ],
+      "prompt_goal": "Generate a stable portrait of Kira preserving face canon and identity."
+    },
+    "body_canon": {
+      "description": "Body canon and proportions.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
+        "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png",
+        "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png"
+      ],
+      "prompt_goal": "Generate Kira preserving athletic feminine body canon."
+    },
+    "sports": {
+      "description": "Gym, yoga, running, stretching scenes.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png",
+        "AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png",
+        "AI_CHARACTERS/KIRA/07_generated/canon_tests/02_sports_yoga/KIRA_test02_sports_yoga_v2_MAIN.png"
+      ],
+      "prompt_goal": "Generate Kira in athletic contexts preserving sports canon."
+    },
+    "evening": {
+      "description": "Bar, evening, embankment, romantic scenes.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png",
+        "AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png"
+      ],
+      "prompt_goal": "Generate Kira in evening elegant scenes preserving evening canon."
+    },
+    "bar": {
+      "description": "Bar, lounge, warm evening conversation scenes.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png",
+        "AI_CHARACTERS/KIRA/07_generated/canon_tests/03_portrait_expression/KIRA_test02_bar_romance_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Generate Kira in an evening bar or lounge scene preserving face, expression, and elegant mood."
+    },
+    "sauna": {
+      "description": "Sauna / bathhouse scenes with towel or spa atmosphere.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png",
+        "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
+        "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png",
+        "AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png"
+      ],
+      "prompt_goal": "Generate Kira in sauna or spa scenes preserving adult identity, natural body canon, and visual consistency."
+    }
+  }
+}

@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-01 09:37:45
+2026-07-01 11:05:10
 
 ---
 
@@ -75,6 +75,7 @@ AI_CHARACTERS/
     - ANDREY_CANON_INDEX.md.backup_20260630_085458
     - ANDREY_IDENTITY.txt
     - ANDREY_RAW_FILE_MAP.md
+    - ANDREY_REFERENCE_PRESETS.json
 - EGOR/
   - 01_refs_raw/
     - .gitkeep
@@ -189,6 +190,7 @@ AI_CHARACTERS/
     - KIRA_APPROVAL_CRITERIA_ENG.md.txt
     - KIRA_CANON_INDEX.md.txt
     - KIRA_IDENTITY.txt.txt
+    - KIRA_REFERENCE_PRESETS.json
     - KIRA_TEST_RESULTS.md.txt
 - MAKSIM/
   - 01_refs_raw/
@@ -414,7 +416,7 @@ AI_CHARACTERS/
 
 # Total file count
 
-195
+197
 
 # File type summary
 
@@ -423,6 +425,7 @@ AI_CHARACTERS/
 | .backup_20260630_085458 | 1 |
 | .gitkeep | 140 |
 | .jpg | 1 |
+| .json | 2 |
 | .md | 2 |
 | .png | 38 |
 | .txt | 13 |
@@ -467,6 +470,7 @@ AI_CHARACTERS/
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260630_085458 | 9425 | 2026-06-30 08:48:46 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt | 9304 | 2026-06-30 08:23:04 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_RAW_FILE_MAP.md | 6599 | 2026-06-30 08:14:52 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 3577 | 2026-07-01 11:03:58 |
 | AI_CHARACTERS/EGOR/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -530,6 +534,7 @@ AI_CHARACTERS/
 | AI_CHARACTERS/KIRA/10_notes/KIRA_APPROVAL_CRITERIA_ENG.md.txt | 4209 | 2026-06-29 21:08:48 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10102 | 2026-06-29 22:14:06 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt | 13022 | 2026-06-29 18:47:46 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 3564 | 2026-07-01 11:03:58 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 2916 | 2026-06-30 06:18:16 |
 | AI_CHARACTERS/MAKSIM/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
