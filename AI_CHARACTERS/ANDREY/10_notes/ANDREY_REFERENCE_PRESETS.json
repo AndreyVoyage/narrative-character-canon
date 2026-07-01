@@ -14,6 +14,8 @@
       "description": "Face-focused portrait generation.",
       "reference_images": [
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png"
       ],
@@ -33,7 +35,9 @@
       "reference_images": [
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_10_sports_gym_black.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_11_body_identity_sheet_blue_shirt.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png"
       ],
       "prompt_goal": "Generate Andrey in athletic contexts preserving body canon and mature masculine identity."
     },
@@ -42,7 +46,9 @@
       "reference_images": [
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_06_formal_suit_walking.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_07_formal_suit_standing.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png"
       ],
       "prompt_goal": "Generate Andrey in formal scenes preserving confident mature masculine canon."
     },
@@ -51,7 +57,9 @@
       "reference_images": [
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_04_bar_portrait_blue_shirt.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png"
       ],
       "prompt_goal": "Generate Andrey in warm bar or lounge scenes preserving calm confident identity."
     },
@@ -59,6 +67,8 @@
       "description": "Sauna / bathhouse scenes with towel or spa atmosphere.",
       "reference_images": [
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_11_body_identity_sheet_blue_shirt.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_03_fullbody_studio_blue_shirt.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png"

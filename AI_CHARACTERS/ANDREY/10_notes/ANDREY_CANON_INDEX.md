@@ -63,9 +63,17 @@ Explains what each raw Andrey reference file contains.
 
 ---
 
-# FACE CANON - TEMPORARY RAW-BASED
+# FACE CANON - ACTIVE
 
-Active face references:
+Active face canon sheets:
+
+03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png
+Status: ACTIVE FACE CANON / BASIC EXPRESSIONS
+
+03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png
+Status: ACTIVE FACE CANON / MULTI-ANGLE
+
+Supporting raw references (legacy, use only as needed):
 
 01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
 01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png
@@ -74,7 +82,7 @@ Active face references:
 
 Purpose:
 
-Temporary face canon references until dedicated face sheets are created.
+Primary face canon references for Andrey Senior.
 
 Use for:
 
@@ -86,6 +94,7 @@ Use for:
 * jawline
 * expression range
 * close-up identity
+* multi-angle head consistency
 
 Canon notes:
 
@@ -101,11 +110,7 @@ Canon notes:
 
 Status:
 
-ACTIVE / TEMPORARY FACE CANON
-
-Next needed stage:
-
-Create ANDREY_FACE_CANON sheets.
+ACTIVE FACE CANON
 
 ---
 
@@ -275,16 +280,21 @@ Create sports outfit canon sheet.
 
 ---
 
-# EXPRESSIONS CANON - TEMPORARY RAW-BASED
+# EXPRESSIONS CANON - ACTIVE
 
-Active expression references:
+Active expression canon sheet:
+
+03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png
+Status: ACTIVE EXPRESSIONS CANON / REFINED
+
+Supporting raw expression references (legacy):
 
 01_refs_raw/ANDREY_RAW_08_expressions_sheet_A.png
 01_refs_raw/ANDREY_RAW_09_expressions_sheet_B.png
 
 Purpose:
 
-Temporary expression canon.
+Primary refined expression canon for Andrey Senior.
 
 Use for:
 
@@ -306,15 +316,7 @@ Canon notes:
 
 Status:
 
-ACTIVE / TEMPORARY EXPRESSIONS CANON
-
-Future folder:
-
-03_face_sheet/expressions/
-
-Next needed stage:
-
-Create ANDREY_EXPRESSIONS final sheets.
+ACTIVE EXPRESSIONS CANON
 
 ---
 
@@ -519,12 +521,12 @@ Avoid:
 TEXT IDENTITY: APPROVED
 RAW FILE MAP: CREATED
 CANON INDEX: ACTIVE
-FACE CANON: TEMPORARY RAW-BASED
-BODY CANON: TEMPORARY RAW-BASED
+FACE CANON: ACTIVE
+EXPRESSIONS: ACTIVE
+BODY CANON: TEMPORARY RAW-BASED / PENDING DEDICATED BODY SHEETS
 CASUAL BLUE SHIRT LOOK: ACTIVE RAW-BASED
 FORMAL LOOK: CANDIDATE
 SPORTS LOOK: CANDIDATE
-EXPRESSIONS: TEMPORARY RAW-BASED
 
 ---
 
@@ -532,23 +534,23 @@ EXPRESSIONS: TEMPORARY RAW-BASED
 
 Recommended next stages:
 
-1. ANDREY_FACE_CANON
-2. ANDREY_BODY_CANON
-3. ANDREY_EXPRESSIONS
-4. ANDREY_FORMAL_LOOK
-5. ANDREY_SPORTS_LOOK
-6. ANDREY_PROMPT_KIT
-7. ANDREY_TEST_RESULTS
+1. ANDREY_BODY_CANON
+2. ANDREY_FORMAL_LOOK
+3. ANDREY_SPORTS_LOOK
+4. ANDREY_CONTROL_TESTS
+5. ANDREY_TEST_RESULTS
+6. ANDREY_3D_REFERENCE_PACK
+7. ANDREY_3D_MODEL_SPEC
 
 Immediate next step:
 
-Create ANDREY_FACE_CANON sheets.
+Create ANDREY_BODY_CANON sheets.
 
 Target folder:
 
-03_face_sheet/
+04_body_sheet/
 
 Expected files:
 
-ANDREY_face_canon_v1_sheet_A_basic.png
-ANDREY_face_canon_v1_sheet_B_angles.png
+ANDREY_body_canon_v1_sheet_A_front_side_back.png
+ANDREY_body_canon_v1_sheet_B_angles.png
