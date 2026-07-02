@@ -31,19 +31,34 @@ Note: A duplicate candidate of Sheet A (`candidates/ANDREY_body_canon_v1_sheet_A
 
 Andrey is **not** marked `CANON_READY_2D` — control tests and `ANDREY_TEST_RESULTS.md` are still pending.
 
-## Next — NCC-ANDREY-CONTROL-TESTS
+## Current — NCC-ANDREY-CONTROL-TESTS
 
-Status: NEXT (not started)
+Status: SETUP_DONE / GENERATION_PENDING
 
-Goal: Run controlled test generations using active face canon (`03_face_sheet/`) and active body canon (`04_body_sheet/`) before marking Andrey as `CANON_READY_2D`.
+Goal: Prepare controlled test structure using active face canon (`03_face_sheet/`) and active body canon (`04_body_sheet/`) before marking Andrey as `CANON_READY_2D`.
 
-Per [SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md), preparing test prompts/structure does not authorize generation — actual control-test image generation starts only when the user explicitly requests it.
+Completed:
 
-Suggested first step (structure only, no generation): create `ANDREY_TEST_RESULTS.md` skeleton in `10_notes/` and control-test prompts in `06_prompts/`, mirroring the structure already used for KIRA (`KIRA_TEST_RESULTS.md.txt`, `canon_tests/01_evening_embankment/`, `02_sports_yoga/`, `03_portrait_expression/`).
+* Test prompt document created: `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_CONTROL_TEST_PROMPTS.txt`.
+* Test results tracking document created: `AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md`.
+* Control test folders created:
+  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/`
+  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/`
+  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/`
+  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/`
+  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/`
+  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/`
+
+Next:
+
+Generate TEST 01 only after explicit user request.
 
 Forbidden:
 
 * do not generate the KIRA + ANDREY sauna scene — it is EXAMPLE, not REQUESTED (see [SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md))
+* do not generate tests automatically
+* do not mark Andrey CANON_READY_2D before review
+* do not create image placeholders
 * do not modify, rename, move, or delete existing active canon images without explicit request
 * do not create fake refs or mark placeholders/drafts as approved canon without explicit user approval
 * do not regenerate/duplicate body canon sheets unless the user explicitly requests candidate variants

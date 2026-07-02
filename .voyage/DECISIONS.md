@@ -109,3 +109,16 @@ Reason: Prevents confusion between active canon, candidates, and local-only dupl
 Result: Repository prepared for `NCC-ANDREY-CONTROL-TESTS`.
 
 Next action: Create `ANDREY_TEST_RESULTS.md` structure and control test prompts, without generating images.
+
+## DECISION-0008 — Andrey control tests require explicit generation requests
+
+Date: 2026-07-02
+
+Context:
+Andrey face canon and body canon are active. Control test structure is being created.
+
+Decision:
+Create prompts, tracking document and folders first. Do not generate control test images automatically.
+
+Result:
+Control tests remain pending until the user explicitly requests each generation.

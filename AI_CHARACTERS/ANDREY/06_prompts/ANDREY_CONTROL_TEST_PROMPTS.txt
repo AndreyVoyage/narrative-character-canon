@@ -1,0 +1,144 @@
+# ANDREY_CONTROL_TEST_PROMPTS
+
+Status: DRAFT / READY FOR REVIEW
+Purpose: Control-test prompts for verifying Andrey Senior after face canon and body canon activation.
+
+Important:
+These prompts do not authorize generation by themselves.
+Generation requires explicit user request according to .voyage/SCENE_REQUEST_RULES.md.
+
+Active canon references:
+- AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png
+- AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png
+- AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png
+- AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png
+- AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png
+
+Global identity lock:
+Andrey Senior, adult man, 38 years old, 180 cm, 85-90 kg visual range, athletic strong build, broad shoulders, muscular chest, thick muscular neck, visible Adam's apple, rounded oval broad face, bright blue almond-shaped eyes, straight nose with rounded slightly downturned tip, medium full natural lips, soft rounded jawline, light 2-3 day stubble, short light blonde / dark blonde hair with slight natural temple recession, fair skin with faint freckles, mature calm confident masculine presence.
+
+Global negative constraints:
+Do not change identity. Do not make him younger, older, bald, dark-haired, skinny, overweight, bulky, stocky, bodybuilder-like, powerlifter-like, generic, cartoon, CGI, plastic, waxy, distorted, inconsistent between views. No text, watermark, logo, labels.
+
+---
+
+## CONTROL TEST 01 - Neutral studio portrait
+
+Target folder:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/
+
+Goal:
+Verify face identity, eyes, hairline, stubble, maturity, and calm masculine expression.
+
+Prompt:
+Photorealistic studio portrait of Andrey Senior, adult man 38 years old, head-and-shoulders portrait, neutral dark grey studio background, soft even lighting, wearing blue dress shirt, calm direct gaze, mature confident expression, realistic skin texture, bright blue almond-shaped eyes, short light blonde / dark blonde hair with slight natural temple recession, light 2-3 day stubble, rounded oval broad face, broad forehead, straight nose with rounded slightly downturned tip, medium full natural lips, soft rounded jawline, thick masculine neck visible. Preserve exact identity from approved face canon sheets.
+
+Expected output filename:
+ANDREY_test01_neutral_studio_portrait_v1.png
+
+Acceptance:
+APPROVE only if face identity matches active face canon.
+
+---
+
+## CONTROL TEST 02 - Full body blue shirt studio
+
+Target folder:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/
+
+Goal:
+Verify body proportions, height impression, shoulders, torso, waist, legs, and casual blue shirt look.
+
+Prompt:
+Photorealistic full-body studio image of Andrey Senior, adult man 38 years old, 180 cm, 85-90 kg visual range, athletic strong build, broad shoulders, muscular but not bulky, wearing blue fitted dress shirt with sleeves rolled to forearms, dark navy trousers, brown leather belt, brown leather shoes, neutral standing pose, mature confident posture, dark grey studio background, soft even lighting. Preserve face identity and body proportions from approved face canon and body canon sheets.
+
+Expected output filename:
+ANDREY_test02_full_body_blue_shirt_v1.png
+
+Acceptance:
+APPROVE only if body matches active Sheet A and Sheet B.
+
+---
+
+## CONTROL TEST 03 - Warm bar portrait
+
+Target folder:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/
+
+Goal:
+Verify identity in warm indoor cinematic light.
+
+Prompt:
+Photorealistic cinematic warm bar portrait of Andrey Senior, adult man 38 years old, wearing blue dress shirt, relaxed mature confident expression, warm amber indoor lighting, shallow depth of field, upscale bar atmosphere, seated or standing naturally, calm masculine presence, realistic skin texture, bright blue eyes, light stubble, short light blonde / dark blonde hair, athletic strong body proportions visible through shirt. Preserve exact identity from approved face/body canon.
+
+Expected output filename:
+ANDREY_test03_warm_bar_portrait_v1.png
+
+Acceptance:
+APPROVE only if warm lighting does not change identity.
+
+---
+
+## CONTROL TEST 04 - Formal evening look
+
+Target folder:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/
+
+Goal:
+Verify identity when changing from blue shirt casual look to formal look.
+
+Prompt:
+Photorealistic formal evening portrait of Andrey Senior, adult man 38 years old, mature athletic masculine appearance, wearing dark navy suit or elegant formal jacket, white or pale blue shirt, no tie or subtle elegant styling, warm cinematic evening atmosphere, confident calm posture, realistic skin, bright blue eyes, light stubble, short light blonde / dark blonde hair. Preserve exact face identity, age, body proportions, neck thickness, shoulder width and masculine maturity from active canon.
+
+Expected output filename:
+ANDREY_test04_formal_evening_look_v1.png
+
+Acceptance:
+APPROVE only if formal styling does not create a different man.
+
+---
+
+## CONTROL TEST 05 - Sports / gym identity test
+
+Target folder:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/
+
+Goal:
+Verify body canon under sports clothing without drifting into bodybuilder or powerlifter body.
+
+Prompt:
+Photorealistic sports/gym identity test of Andrey Senior, adult man 38 years old, athletic strong build, broad shoulders, muscular chest, thick neck, realistic masculine frame, not bulky, not bodybuilder, not powerlifter, wearing fitted dark athletic shirt and training pants or simple gym outfit, standing naturally in clean gym environment, calm focused expression, bright blue eyes, short light blonde / dark blonde hair, light stubble. Preserve approved face and body canon.
+
+Expected output filename:
+ANDREY_test05_sports_gym_identity_v1.png
+
+Acceptance:
+APPROVE only if athletic body remains realistic and not exaggerated.
+
+---
+
+## CONTROL TEST 06 - Sea / yacht mood scene
+
+Target folder:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/
+
+Goal:
+Verify identity outdoors in sea/yacht/sunset environment.
+
+Prompt:
+Photorealistic cinematic sea or yacht mood scene with Andrey Senior, adult man 38 years old, wearing blue dress shirt with sleeves rolled, dark navy trousers, standing on yacht deck or near sea at sunset, calm mature confident expression, warm natural light, wind slightly affecting shirt, realistic atmosphere, athletic strong body proportions, broad shoulders, thick neck, bright blue eyes, light stubble, short light blonde / dark blonde hair. Preserve exact identity from active face and body canon.
+
+Expected output filename:
+ANDREY_test06_sea_yacht_mood_v1.png
+
+Acceptance:
+APPROVE only if outdoor lighting and mood do not alter identity.
+
+---
+
+Review verdicts:
+APPROVE
+APPROVE AS ALT
+HOLD
+REGENERATE
+REJECT

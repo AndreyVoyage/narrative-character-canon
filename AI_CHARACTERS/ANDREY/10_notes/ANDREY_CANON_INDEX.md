@@ -527,6 +527,33 @@ Avoid:
 
 ---
 
+# CONTROL TESTS
+
+Status:
+PENDING / NOT GENERATED
+
+Test results file:
+AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md
+
+Prompt source:
+AI_CHARACTERS/ANDREY/06_prompts/ANDREY_CONTROL_TEST_PROMPTS.txt
+
+Planned tests:
+1. neutral studio portrait
+2. full body blue shirt studio
+3. warm bar portrait
+4. formal evening look
+5. sports/gym identity
+6. sea/yacht mood
+
+Current canon-ready status:
+NOT CANON_READY_2D YET
+
+Reason:
+Control tests have not been generated and reviewed yet.
+
+---
+
 # CURRENT STATUS
 
 TEXT IDENTITY: APPROVED
