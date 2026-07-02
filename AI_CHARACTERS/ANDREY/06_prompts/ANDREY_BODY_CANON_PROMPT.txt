@@ -1,0 +1,86 @@
+ANDREY BODY CANON PROMPT KIT
+================================
+
+Purpose:
+--------
+This prompt kit is used to generate a consistent photorealistic body canon reference sheet for Andrey Senior, the adult male lead character. It produces two output sheets:
+- Sheet A: front / side / back / 3/4 body reference grid (4 views)
+- Sheet B: natural posture grid (walking, relaxed standing, seated, 3/4 pose)
+
+Output Files:
+-------------
+AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png
+AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variants.png
+
+Reference Files:
+----------------
+AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png
+AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_11_body_identity_sheet_blue_shirt.png
+AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_03_fullbody_studio_blue_shirt.png
+
+Text Canon:
+-----------
+AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt
+AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md
+
+
+SHEET A PROMPT:
+---------------
+Photorealistic full-body canon sheet of the same adult man, Andrey Senior, 38 years old, 180 cm, 85-90 kg visual range, athletic strong build, mature masculine appearance.
+Create a clean studio full-body reference sheet with 4 consistent views of the same man in one image.
+Layout: 1 row x 4 columns, neutral grey background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark.
+Views:
+1. front view, full body, standing neutral
+2. side (profile) view, full body, standing neutral
+3. back view, full body, standing neutral
+4. 3/4 view, full body, standing neutral
+Identity continuity: rounded oval broad face, bright blue almond-shaped eyes, straight nose with rounded slightly downturned tip, soft rounded jawline, light stubble 2-3 days, short light blonde / dark blonde hair with slight natural temple recession, fair skin with faint freckles, thick muscular neck, visible Adam's apple.
+Body: athletic strong build, broad muscular shoulders, muscular chest, strong upper body, strong trapezius, strong arms but not oversized, firm torso not belly-heavy, masculine athletic proportions, elegant and realistic, not bulky, not stocky, not powerlifter, not bodybuilder, not skinny, not fragile.
+Clothing: unbuttoned blue dress shirt with rolled-up sleeves, dark navy trousers, brown leather belt, brown leather shoes, casual elegant masculine style, shirt fitted but not painted-on, can be slightly open at collar.
+Style: photorealistic, realistic skin texture, natural anatomy, consistent identity, editorial studio reference, natural male maturity, not stylized, not plastic, not CGI.
+Important: all 4 views must clearly be the same person and the same body proportions as the face canon sheets.
+
+
+SHEET B PROMPT:
+---------------
+Photorealistic natural posture canon sheet of the same adult man, Andrey Senior, 38 years old, mature athletic masculine appearance.
+Create a clean studio/neutral-environment reference sheet with 4 natural poses of the same man in one image.
+Layout: 1 row x 4 columns (or 2x2 if aspect ratio requires), neutral grey or softly lit neutral background, no text labels, no numbers, no watermark.
+Poses:
+1. walking, mid-stride, relaxed confident posture
+2. relaxed standing, weight on one leg, hands loose or one hand in pocket
+3. seated, relaxed mature posture, forearms resting on knees or armrest
+4. 3/4 turn standing pose, calm confident stance
+Identity continuity: same face canon as Sheet A, rounded oval broad face, bright blue eyes, short light blonde hair with slight temple recession, thick muscular neck, visible Adam's apple, light stubble 2-3 days.
+Body continuity: athletic strong build, broad shoulders, muscular chest, strong upper body, masculine athletic proportions, not bulky, not stocky, not powerlifter, not bodybuilder, not skinny.
+Clothing: same blue dress shirt casual signature as Sheet A (rolled sleeves, dark navy trousers, brown belt, brown shoes), relaxed mature masculine style.
+Mood: calm, confident, protective, emotionally grounded, physically capable.
+Style: photorealistic, realistic skin texture, natural anatomy, consistent identity across all 4 poses, natural male maturity, not stylized, not plastic, not CGI.
+Important: all 4 poses must preserve the same person, same body proportions, and the same clothing signature.
+
+
+Acceptance Criteria:
+---------------------
+- Same identity as approved face canon (Sheet A / Sheet B / expression Sheet C).
+- Body proportions match AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt BODY CANON section: 180 cm, 85-90 kg visual range, broad shoulders, muscular chest, thick neck, firm torso, not bulky/stocky/powerlifter/bodybuilder/skinny/fragile.
+- No anatomy errors (bad hands, extra fingers, distorted proportions, warped torso).
+- No text, watermark, logo, or duplicate character artifacts.
+- All views/poses in a sheet depict the same person with consistent clothing.
+
+Save Paths:
+-----------
+Draft outputs (before approval): AI_CHARACTERS/ANDREY/07_generated/drafts/
+Approved outputs: AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png
+                  AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variants.png
+Rejected candidates: AI_CHARACTERS/ANDREY/07_generated/rejected/
+
+Review Criteria:
+----------------
+Before marking a generated sheet as GENERATED_DRAFT -> APPROVED_AS_CANON (see .voyage/SCENE_REQUEST_RULES.md status vocabulary):
+1. Compare face against approved face canon sheets for identity drift.
+2. Compare body build against ANDREY_IDENTITY.txt BODY CANON section for weight/build drift.
+3. Check for anatomy errors on hands, arms, neck, torso.
+4. Check clothing matches the blue-shirt casual signature (or explicitly note if a different documented outfit was requested).
+5. Only after explicit user approval, move the file into 04_body_sheet/, update ANDREY_CANON_INDEX.md and ANDREY_REFERENCE_PRESETS.json, and regenerate INVENTORY.md.

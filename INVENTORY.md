@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-02 09:20:29
+2026-07-02 10:20:45
 
 ---
 
@@ -52,6 +52,8 @@ AI_CHARACTERS/
     - sports_look/
       - .gitkeep
   - 06_prompts/
+    - ANDREY_BODY_CANON_NEGATIVE_PROMPT.txt
+    - ANDREY_BODY_CANON_PROMPT.txt
     - ANDREY_FACE_CANON_NEGATIVE_PROMPT.txt
     - ANDREY_FACE_CANON_PROMPT.txt
   - 07_generated/
@@ -424,7 +426,7 @@ AI_CHARACTERS/
 
 # Total file count
 
-204
+206
 
 # File type summary
 
@@ -437,7 +439,7 @@ AI_CHARACTERS/
 | .json | 8 |
 | .md | 2 |
 | .png | 39 |
-| .txt | 13 |
+| .txt | 15 |
 
 # File list
 
@@ -466,6 +468,8 @@ AI_CHARACTERS/
 | AI_CHARACTERS/ANDREY/05_outfits/formal/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/ANDREY/06_prompts/ANDREY_BODY_CANON_NEGATIVE_PROMPT.txt | 975 | 2026-07-02 10:19:06 |
+| AI_CHARACTERS/ANDREY/06_prompts/ANDREY_BODY_CANON_PROMPT.txt | 6139 | 2026-07-02 10:18:54 |
 | AI_CHARACTERS/ANDREY/06_prompts/ANDREY_FACE_CANON_NEGATIVE_PROMPT.txt | 1016 | 2026-06-30 21:47:29 |
 | AI_CHARACTERS/ANDREY/06_prompts/ANDREY_FACE_CANON_PROMPT.txt | 3934 | 2026-06-30 21:47:29 |
 | AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |

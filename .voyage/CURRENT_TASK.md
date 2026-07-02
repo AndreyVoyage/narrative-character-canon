@@ -1,6 +1,6 @@
 # CURRENT_TASK
 
-## Just completed — NCC-KIRA-PRESET-AUDIT
+## Completed — NCC-KIRA-PRESET-AUDIT
 
 Status: DONE (2026-07-02)
 
@@ -8,20 +8,42 @@ Goal was: verify and fix `KIRA_REFERENCE_PRESETS.json` before using KIRA in GitH
 
 Result: file is already valid — all `text_sources` and all `reference_images` across 7 `scene_presets` resolve to existing tracked files. No fix required. See [DECISIONS.md#decision-0004](DECISIONS.md).
 
-## Next — NCC-ANDREY-BODY-CANON
+## Completed — AGENTS.md audit
 
-Status: NEXT (not started)
+Status: DONE (2026-07-02)
 
-Goal: Create ANDREY body canon so ANDREY moves from FACE_CANON_ACTIVE/BODY_PENDING to CANON_READY_2D (per ROADMAP.md §9 "Immediate next actions").
+Goal was: decide whether the untracked `AGENTS.md` should be committed. Result: EDIT_BEFORE_COMMIT — file was safe and useful, two stale/ambiguous spots fixed (KIRA status line, sauna example cross-reference), then committed and pushed. See [DECISIONS.md#decision-0005](DECISIONS.md).
 
-Allowed files for next task:
+## In progress — NCC-ANDREY-BODY-CANON
 
-* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_BODY_CANON_PROMPT.txt` (new)
-* `AI_CHARACTERS/ANDREY/04_body_sheet/` (new generated sheets, once approved)
-* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md`
-* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json`
+Status: STEP 1 DONE, STEP 2 NOT STARTED
 
-Optional docs to update after:
+Goal: Create ANDREY body canon so ANDREY moves from `FACE_CANON_ACTIVE / BODY_PENDING` to `CANON_READY_2D` (per ROADMAP.md §9 "Immediate next actions").
+
+### Step 1 — Prompt kit (DONE, 2026-07-02)
+
+Created, no images generated:
+
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_BODY_CANON_PROMPT.txt` — Sheet A (front/side/back/3-4 view) and Sheet B (walking/relaxed standing/seated/3-4 pose) prompts, built from `ANDREY_IDENTITY.txt` BODY CANON section.
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_BODY_CANON_NEGATIVE_PROMPT.txt`.
+
+### Step 2 — Generate and review body canon sheets (NEXT, requires explicit request)
+
+Per [SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md), having a prompt kit ready does not authorize generation — this step starts only when the user explicitly asks to generate the body canon sheets.
+
+Target outputs (status GENERATED_DRAFT until approved):
+
+* `AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png`
+* `AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variants.png`
+
+Allowed files once generation is requested:
+
+* `AI_CHARACTERS/ANDREY/07_generated/drafts/` (draft outputs first)
+* `AI_CHARACTERS/ANDREY/04_body_sheet/` (only after explicit approval)
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md` (update after approval)
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json` (`body_canon` preset, update after approval)
+
+Optional docs to update after approval:
 
 * `.voyage/PROJECT_STATE.md`
 * `.voyage/CHARACTER_REGISTRY.md`
@@ -31,13 +53,12 @@ Forbidden:
 
 * do not generate the KIRA + ANDREY sauna scene — it is EXAMPLE, not REQUESTED (see [SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md))
 * do not modify, rename, move, or delete existing images
-* do not create fake refs or mark placeholders as complete
-* do not edit `AGENTS.md`
+* do not create fake refs or mark placeholders/drafts as approved canon without explicit user approval
 
-Expected next report when this task is picked up:
+Expected next report when Step 2 is picked up:
 
-* `ANDREY_BODY_CANON_PROMPT.txt` created or confirmed
-* body canon sheets generated and reviewed (draft vs approved status noted)
-* `ANDREY_CANON_INDEX.md` updated if body canon approved
-* `ANDREY_REFERENCE_PRESETS.json` `body_canon` preset updated with new approved refs
+* draft body canon sheets generated and reviewed against `ANDREY_IDENTITY.txt` BODY CANON section and face canon for identity drift
+* explicit APPROVED_AS_CANON / REJECTED decision per [SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md) status vocabulary
+* `ANDREY_CANON_INDEX.md` and `ANDREY_REFERENCE_PRESETS.json` updated only if approved
+* `INVENTORY.md` regenerated
 * git status after
