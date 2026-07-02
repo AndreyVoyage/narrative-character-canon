@@ -1,0 +1,64 @@
+{
+  "pair": "KIRA_ANDREY",
+  "version": "1.0.0",
+  "last_updated": "2026-07-02",
+  "status": "SETUP_DONE_GENERATION_PENDING",
+  "pair_status": "JOINT_CONTROL_TESTS_APPROVED",
+  "reference_presets": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_REFERENCE_PRESETS.json",
+  "prompt_pack": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt",
+  "index": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md",
+  "results": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md",
+  "scene_packs": [
+    {
+      "id": "SCENE_PACK_01",
+      "title": "Evening embankment walk",
+      "status": "NOT_GENERATED",
+      "target_folder": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk",
+      "expected_filename": "KIRA_ANDREY_scene01_evening_embankment_walk_v1.png"
+    },
+    {
+      "id": "SCENE_PACK_02",
+      "title": "Warm bar dialogue",
+      "status": "NOT_GENERATED",
+      "target_folder": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue",
+      "expected_filename": "KIRA_ANDREY_scene02_warm_bar_dialogue_v1.png"
+    },
+    {
+      "id": "SCENE_PACK_03",
+      "title": "Yacht sunset",
+      "status": "NOT_GENERATED",
+      "target_folder": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset",
+      "expected_filename": "KIRA_ANDREY_scene03_yacht_sunset_v1.png"
+    },
+    {
+      "id": "SCENE_PACK_04",
+      "title": "Studio character poster",
+      "status": "NOT_GENERATED",
+      "target_folder": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster",
+      "expected_filename": "KIRA_ANDREY_scene04_studio_character_poster_v1.png"
+    },
+    {
+      "id": "SCENE_PACK_05",
+      "title": "Rainy city street",
+      "status": "NOT_GENERATED",
+      "target_folder": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street",
+      "expected_filename": "KIRA_ANDREY_scene05_rainy_city_street_v1.png"
+    },
+    {
+      "id": "SCENE_PACK_06",
+      "title": "Cozy interior conversation",
+      "status": "NOT_GENERATED",
+      "target_folder": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation",
+      "expected_filename": "KIRA_ANDREY_scene06_cozy_interior_conversation_v1.png"
+    }
+  ],
+  "rules": [
+    "No images are generated in setup step.",
+    "Generation requires explicit user request.",
+    "Do not include sauna unless explicitly requested.",
+    "Do not use rejected/wrong-scene outputs as canon.",
+    "Kira barefoot height remains 168 cm.",
+    "Andrey remains 180 cm.",
+    "Record approved/rejected scene outputs via voyage_memory_record.py, then export snapshot."
+  ]
+}

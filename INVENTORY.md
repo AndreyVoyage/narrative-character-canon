@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-03 01:57:55
+2026-07-03 02:19:09
 
 ---
 
@@ -33,21 +33,43 @@ AI_CHARACTERS/
 - AI_CHARACTERS/
   ├── _JOINT_SCENES
   │   └── KIRA_ANDREY
+  │       ├── 06_prompts
+  │       │   └── KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt
   │       ├── 07_generated
-  │       │   └── canon_tests
-  │       │       ├── 01_neutral_studio_duo
-  │       │       │   ├── .gitkeep
-  │       │       │   └── KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png
-  │       │       ├── 02_evening_embankment_duo
-  │       │       │   ├── .gitkeep
-  │       │       │   └── KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png
-  │       │       ├── 03_warm_bar_conversation
-  │       │       │   ├── .gitkeep
-  │       │       │   └── KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png
-  │       │       └── 04_sea_yacht_mood_duo
-  │       │           ├── .gitkeep
-  │       │           └── KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png
+  │       │   ├── canon_tests
+  │       │   │   ├── 01_neutral_studio_duo
+  │       │   │   │   ├── .gitkeep
+  │       │   │   │   └── KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png
+  │       │   │   ├── 02_evening_embankment_duo
+  │       │   │   │   ├── .gitkeep
+  │       │   │   │   └── KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png
+  │       │   │   ├── 03_warm_bar_conversation
+  │       │   │   │   ├── .gitkeep
+  │       │   │   │   └── KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png
+  │       │   │   └── 04_sea_yacht_mood_duo
+  │       │   │       ├── .gitkeep
+  │       │   │       └── KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png
+  │       │   └── scene_packs
+  │       │       ├── 01_evening_embankment_walk
+  │       │       │   └── .gitkeep
+  │       │       ├── 02_warm_bar_dialogue
+  │       │       │   └── .gitkeep
+  │       │       ├── 03_yacht_sunset
+  │       │       │   └── .gitkeep
+  │       │       ├── 04_studio_character_poster
+  │       │       │   └── .gitkeep
+  │       │       ├── 05_rainy_city_street
+  │       │       │   └── .gitkeep
+  │       │       ├── 06_cozy_interior_conversation
+  │       │       │   └── .gitkeep
+  │       │       ├── candidates
+  │       │       │   └── .gitkeep
+  │       │       └── rejected
+  │       │           └── .gitkeep
   │       └── 10_notes
+  │           ├── KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md
+  │           ├── KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md
+  │           ├── KIRA_ANDREY_DUO_SCENE_PACKS.json
   │           ├── KIRA_ANDREY_JOINT_CANON_INDEX.md
   │           ├── KIRA_ANDREY_JOINT_TEST_RESULTS.md
   │           └── KIRA_ANDREY_REFERENCE_PRESETS.json
@@ -502,24 +524,24 @@ AI_CHARACTERS/
 
 # Total file count
 
-263
+275
 
 # File type summary
 
 | Extension | Count |
 |---|---:|
-| (no extension) | 151 |
+| (no extension) | 159 |
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
 | .jpg | 1 |
-| .json | 10 |
+| .json | 11 |
 | .jsonl | 1 |
-| .md | 23 |
+| .md | 25 |
 | .png | 51 |
 | .ps1 | 1 |
 | .py | 5 |
-| .txt | 17 |
+| .txt | 18 |
 
 # File list
 
@@ -527,19 +549,20 @@ AI_CHARACTERS/
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 2875 | 2026-07-03 01:57:39 |
-| .voyage/CONTEXT_SNAPSHOT.md | 2266 | 2026-07-03 01:55:31 |
-| .voyage/CURRENT_TASK.md | 5293 | 2026-07-03 01:57:23 |
-| .voyage/DECISIONS.md | 13392 | 2026-07-03 01:57:32 |
+| .voyage/CHARACTER_REGISTRY.md | 2920 | 2026-07-03 02:18:19 |
+| .voyage/CONTEXT_SNAPSHOT.md | 2327 | 2026-07-03 02:18:50 |
+| .voyage/CURRENT_TASK.md | 6168 | 2026-07-03 02:18:04 |
+| .voyage/DECISIONS.md | 14008 | 2026-07-03 02:18:12 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
-| .voyage/EVENTS_EXPORT.jsonl | 1266 | 2026-07-03 01:55:31 |
+| .voyage/EVENTS_EXPORT.jsonl | 2222 | 2026-07-03 02:18:50 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 772 | 2026-07-03 01:57:13 |
-| .voyage/STATE_EXPORT.json | 15966 | 2026-07-03 01:55:31 |
+| .voyage/STATE_EXPORT.json | 17893 | 2026-07-03 02:18:50 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png | 2148429 | 2026-07-03 00:05:04 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/02_evening_embankment_duo/.gitkeep | 0 | 2026-07-02 22:42:55 |
@@ -548,6 +571,17 @@ AI_CHARACTERS/
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/03_warm_bar_conversation/KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png | 2145535 | 2026-07-03 00:41:53 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/.gitkeep | 0 | 2026-07-02 22:42:57 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png | 2108540 | 2026-07-03 01:06:45 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/.gitkeep | 0 | 2026-07-03 02:15:48 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/.gitkeep | 0 | 2026-07-03 02:15:50 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/.gitkeep | 0 | 2026-07-03 02:15:51 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/.gitkeep | 0 | 2026-07-03 02:15:52 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/.gitkeep | 0 | 2026-07-03 02:15:53 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/.gitkeep | 0 | 2026-07-03 02:15:54 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/candidates/.gitkeep | 0 | 2026-07-03 02:15:56 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/rejected/.gitkeep | 0 | 2026-07-03 02:15:55 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md | 2367 | 2026-07-03 02:16:44 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md | 1521 | 2026-07-03 02:16:51 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACKS.json | 2849 | 2026-07-03 02:17:07 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_JOINT_CANON_INDEX.md | 2457 | 2026-07-03 01:21:35 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_JOINT_TEST_RESULTS.md | 3694 | 2026-07-03 01:21:20 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_REFERENCE_PRESETS.json | 3093 | 2026-07-03 01:21:51 |
@@ -777,7 +811,7 @@ AI_CHARACTERS/
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 45331 | 2026-07-03 01:40:24 |
+| INVENTORY.md | 44953 | 2026-07-03 01:57:55 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |

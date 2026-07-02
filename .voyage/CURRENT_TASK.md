@@ -110,22 +110,48 @@ Completed:
 Result:
 Voyage-lite SQLite memory can now be updated incrementally after future workflows.
 
-## Current — NEXT DIRECTION
+## Completed — NCC-VOYAGE-SQLITE-RECORD-COMMAND
 
-Status: PENDING DECISION
+Status: DONE / RECORD_COMMAND_READY (2026-07-02)
 
-Next options:
+Completed:
 
-1. Duo scene packs for `KIRA_ANDREY`
-2. `NCC-ANDREY-3D-REFERENCE-PACK`
-3. `NCC-KIRA-3D-REFERENCE-PACK`
-4. Next character canon pack
-5. Add higher-level memory automation helper
+* `tools/voyage_memory_record.py` created.
+* Record command supports `event`/`task`/`decision`/`commit`/`character`/`pair`/`artifact`.
+* Dry-run verified.
+* Test `MEMORY_RECORD_TOOL_ADDED` event recorded.
+* `NCC-VOYAGE-SQLITE-RECORD-COMMAND` task recorded.
+* `DECISION-0015` recorded in SQLite.
+* Memory exports regenerated.
+
+Result:
+Voyage-lite SQLite memory can now be updated incrementally after future workflows.
+
+## Current — NCC-KIRA-ANDREY-DUO-SCENE-PACKS
+
+Status: SETUP_DONE / GENERATION_PENDING
+
+Completed:
+
+* Duo scene pack prompt file created.
+* Duo scene pack index created.
+* Duo scene pack result tracker created.
+* Duo scene pack JSON spec created.
+* Scene pack folders created with `.gitkeep`.
+* No images generated.
+
+Result:
+KIRA + ANDREY duo scene pack workflow is ready for explicit generation requests.
+
+Next:
+Generate SCENE PACK 01 — Evening embankment walk only after explicit user request.
 
 Forbidden:
 
-* do not use rejected/wrong-scene joint outputs as canon;
-* do not overwrite approved joint tests;
+* do not generate scenes automatically;
+* do not include sauna unless explicitly requested;
+* do not use rejected/wrong-scene outputs as canon;
+* do not overwrite approved joint control tests;
 * do not treat Kira heels as changing barefoot canon height.
 
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK

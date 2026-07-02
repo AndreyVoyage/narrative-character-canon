@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-02T22:55:31.515378+00:00
+Generated at: 2026-07-02T23:18:50.325797+00:00
 
 Project: narrative-character-canon
 
@@ -40,6 +40,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - DECISION-0012 — Fix Kira test result filename reference
 - DECISION-0013 — Approve Kira and Andrey joint control tests
 - DECISION-0015 — Add Voyage SQLite record command
+- DECISION-0016 — Prepare Kira and Andrey duo scene packs
 
 ## Recent commits
 

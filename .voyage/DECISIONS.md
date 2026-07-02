@@ -226,6 +226,22 @@ Future workflows can record approved artifacts, rejected outputs, task changes, 
 Important:
 The SQLite DB remains local runtime memory and must not be committed. Only tools, docs and exports are tracked.
 
+## DECISION-0016 — Prepare Kira and Andrey duo scene packs
+
+Date: 2026-07-02
+
+Context:
+Kira and Andrey both reached CANON_READY_2D, and KIRA_ANDREY pair reached JOINT_CONTROL_TESTS_APPROVED. Voyage SQLite memory and record command are available.
+
+Decision:
+Prepare duo scene pack structure, prompts, index, result tracker and JSON spec before generating any new duo scenes.
+
+Result:
+NCC-KIRA-ANDREY-DUO-SCENE-PACKS becomes ready for explicit generation requests.
+
+Important:
+No images are generated in this setup step. Sauna remains EXAMPLE / NOT REQUESTED unless the user explicitly requests it as a real scene.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

@@ -1,0 +1,169 @@
+# KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS
+
+Status: DRAFT / READY_FOR_GENERATION_REQUESTS
+
+Purpose:
+Prompt pack for future KIRA + ANDREY duo scene generation after pair reached JOINT_CONTROL_TESTS_APPROVED.
+
+Important:
+This file does not authorize generation by itself.
+Generation requires explicit user request.
+Sauna remains EXAMPLE / NOT REQUESTED unless user explicitly requests it as a real scene.
+
+Current pair status:
+KIRA_ANDREY = JOINT_CONTROL_TESTS_APPROVED
+
+Character anchors:
+
+KIRA:
+- CANON_READY_2D
+- barefoot height 168 cm
+- athletic slender build
+- dark-blonde / brown wavy shoulder-length hair
+- brown almond eyes with warm amber undertones
+- light freckles across nose and cheekbones
+- small beauty mark above left upper lip when visible
+- feminine athletic silhouette
+- evening look often uses fitted red dress
+- when wearing heels, apparent height may be 176–178 cm, but canon barefoot height remains 168 cm
+
+ANDREY:
+- CANON_READY_2D
+- height 180 cm
+- adult man, 38 years old
+- athletic strong build, not bodybuilder
+- blue eyes
+- short light blonde / dark blonde hair
+- light 2–3 day stubble
+- mature calm confident presence
+- casual primary look: blue dress shirt, dark navy trousers, brown belt, brown shoes
+
+Global duo constraints:
+- preserve both identities
+- do not blend faces
+- do not swap identities
+- do not change ages
+- keep realistic scale
+- Kira can appear taller in heels, but barefoot canon remains 168 cm
+- Andrey remains 180 cm
+- no text, watermark, logo, collage, infographic
+- rejected/wrong-scene outputs must not be used as canon
+- approved joint control tests are the primary pair references
+
+Approved pair references:
+- Neutral studio duo
+- Evening embankment duo
+- Warm bar conversation
+- Sea/yacht mood duo
+
+---
+
+## SCENE PACK 01 — Evening embankment walk
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/
+
+Goal:
+Cinematic outdoor walking scene with Kira and Andrey, based on approved embankment duo control.
+
+Prompt:
+Photorealistic cinematic evening embankment walk with Kira and Andrey Senior walking together near ornate railings and warm city lights, soft reflections, shallow depth of field, natural mature chemistry. Kira wears fitted red evening dress and heels, dark-blonde/brown wavy hair, brown eyes, athletic slender silhouette, freckles/skin texture preserved. Andrey wears blue dress shirt and dark navy trousers, 38 years old, 180 cm, blue eyes, short light blonde/dark blonde hair, light stubble, athletic strong build. Keep both faces visible, identities distinct, realistic scale, no face blending, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_scene01_evening_embankment_walk_v1.png
+
+---
+
+## SCENE PACK 02 — Warm bar dialogue
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/
+
+Goal:
+Warm indoor bar conversation scene with visible relationship chemistry.
+
+Prompt:
+Photorealistic warm upscale bar dialogue scene with Kira and Andrey Senior seated or standing near a bar counter, warm amber light, glasses and soft bokeh, natural eye contact and relaxed conversation. Kira keeps approved evening/bar identity: red dress, dark-blonde/brown wavy shoulder-length hair, brown eyes, freckles/real skin texture. Andrey keeps approved identity: blue dress shirt, dark trousers, blue eyes, short light blonde/dark blonde hair, light stubble, mature calm expression. Both faces visible enough for identity check, no blending, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_scene02_warm_bar_dialogue_v1.png
+
+---
+
+## SCENE PACK 03 — Yacht sunset
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/
+
+Goal:
+Cinematic yacht / sea sunset scene, based on approved sea/yacht joint test.
+
+Prompt:
+Photorealistic cinematic yacht deck sunset scene with Kira and Andrey Senior standing together near railing, sea in background, warm golden light, gentle wind, calm romantic but non-explicit mood. Kira wears fitted red dress or elegant evening sea look, dark-blonde/brown wavy hair, brown eyes, athletic slender body, freckles/skin texture preserved. Andrey wears blue dress shirt, dark navy trousers, blue eyes, short light blonde/dark blonde hair, light stubble, athletic strong build, mature confident presence. Keep realistic height scale, no identity blending, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_scene03_yacht_sunset_v1.png
+
+---
+
+## SCENE PACK 04 — Studio character poster
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/
+
+Goal:
+Clean poster-like duo reference, useful for future scene planning.
+
+Prompt:
+Photorealistic studio character poster of Kira and Andrey Senior standing together against a clean dark neutral background, cinematic editorial lighting, both full body or three-quarter body visible. Kira: 26 years old, 168 cm barefoot, athletic slender build, dark-blonde/brown wavy hair, brown eyes, freckles, fitted red dress, natural confident expression. Andrey: 38 years old, 180 cm, athletic strong build, blue eyes, short light blonde/dark blonde hair, light stubble, blue dress shirt, dark navy trousers, mature calm expression. Clear identities, realistic scale, no face blending, no text, no typography, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_scene04_studio_character_poster_v1.png
+
+---
+
+## SCENE PACK 05 — Rainy city street
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/
+
+Goal:
+Cinematic rainy city scene to test identity under reflections and moody lighting.
+
+Prompt:
+Photorealistic cinematic rainy evening city street scene with Kira and Andrey Senior walking together under soft rain, wet pavement reflections, street lights, subtle mist, natural protective mature interaction. Kira keeps approved identity: dark-blonde/brown wavy hair, brown eyes, athletic slender silhouette, red dress with coat or elegant evening layer, freckles/skin texture when visible. Andrey keeps approved identity: blue shirt under dark coat or jacket, blue eyes, short light blonde/dark blonde hair, light stubble, 38 years old, 180 cm, athletic strong build. Keep both faces visible, identities distinct, realistic height scale, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_scene05_rainy_city_street_v1.png
+
+---
+
+## SCENE PACK 06 — Cozy interior conversation
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/
+
+Goal:
+Warm non-explicit interior conversation scene, not to be confused with rejected living-room output for JOINT TEST 04.
+
+Prompt:
+Photorealistic cozy upscale interior conversation scene with Kira and Andrey Senior sitting together in a warm living room or lounge, soft lamps, city lights through window, relaxed non-explicit conversation, emotional warmth. Kira keeps approved identity: dark-blonde/brown wavy hair, brown eyes, freckles/skin texture, athletic slender figure, elegant red or warm-toned dress. Andrey keeps approved identity: blue eyes, short light blonde/dark blonde hair, light stubble, blue shirt or casual evening shirt, 38 years old, 180 cm, athletic strong build. Both faces visible, no identity blending, no text, no watermark. This is a new requested interior scene pack only when explicitly generated; do not reuse rejected JOINT TEST 04 living room output.
+
+Expected output filename:
+KIRA_ANDREY_scene06_cozy_interior_conversation_v1.png
+
+---
+
+Review verdicts:
+APPROVE
+APPROVE AS ALT
+HOLD
+REGENERATE
+REJECT
+
+Approved save rule:
+Only approved outputs go into the matching scene_packs folder.
+Rejected/wrong-scene outputs go to LOCAL_STORAGE or scene_packs/rejected only if explicitly instructed.
+
+Memory rule:
+After each approved or rejected scene, record it via tools/voyage_memory_record.py, then export snapshot.

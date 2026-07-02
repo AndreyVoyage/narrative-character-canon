@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | ANDREY | `AI_CHARACTERS/ANDREY` | CANON_READY_2D | WORKING / FACE + BODY + CONTROL TESTS INCLUDED | Prepare ANDREY_3D_REFERENCE_PACK when requested; KIRA + ANDREY joint tests pending |
 | KIRA | `AI_CHARACTERS/KIRA` | CANON_READY_2D | WORKING — 7 scene presets (incl. `sauna`), verified 2026-07-02, all referenced files exist and text_sources resolve | Prepare 3D reference pack when requested |
-| KIRA + ANDREY | `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY` | JOINT_CONTROL_TESTS_APPROVED | WORKING — 4 approved joint tests, reference preset ready | Duo scene packs / 3D reference packs / SQLite memory |
+| KIRA + ANDREY | `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY` | JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_READY | WORKING — 4 approved joint tests, 6 planned scene packs, reference preset ready | Generate SCENE PACK 01 after explicit user request |
 | MARINA | `AI_CHARACTERS/MARINA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |
 | NIKA | `AI_CHARACTERS/NIKA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; base canon must stay tasteful/non-explicit per ROADMAP Priority 4 |
 | OLGA | `AI_CHARACTERS/OLGA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |
