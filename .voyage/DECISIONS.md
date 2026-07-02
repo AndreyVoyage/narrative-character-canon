@@ -115,6 +115,22 @@ Next stage: 3D reference pack or next character canon.
 Important:
 Do not regenerate approved control tests unless explicitly requested. New variants should be saved as candidates or alternatives, not overwrite approved files.
 
+## DECISION-0011 — Run Kira and Andrey joint control tests before 3D stage
+
+Date: 2026-07-02
+
+Context:
+Kira and Andrey both reached CANON_READY_2D. Before moving directly to 3D reference packs, duo scenes should be tested.
+
+Decision:
+Create KIRA + ANDREY joint control test structure and prompts before 3D stage.
+
+Result:
+NCC-KIRA-ANDREY-JOINT-CONTROL-TESTS becomes the current task. Andrey 3D reference pack is postponed until joint tests are prepared/reviewed.
+
+Important:
+The sauna scene remains an example unless explicitly requested as a real generation task.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

@@ -2,7 +2,7 @@
 
 | Character | Folder | Current status | Reference preset status | Next step |
 |---|---|---|---|---|
-| ANDREY | `AI_CHARACTERS/ANDREY` | CANON_READY_2D | WORKING / FACE + BODY + CONTROL TESTS INCLUDED | Prepare ANDREY_3D_REFERENCE_PACK when requested |
+| ANDREY | `AI_CHARACTERS/ANDREY` | CANON_READY_2D | WORKING / FACE + BODY + CONTROL TESTS INCLUDED | Prepare ANDREY_3D_REFERENCE_PACK when requested; KIRA + ANDREY joint tests pending |
 | KIRA | `AI_CHARACTERS/KIRA` | CANON_READY_2D | WORKING — 7 scene presets (incl. `sauna`), verified 2026-07-02, all referenced files exist and text_sources resolve | Prepare 3D reference pack when requested |
 | MARINA | `AI_CHARACTERS/MARINA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |
 | NIKA | `AI_CHARACTERS/NIKA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; base canon must stay tasteful/non-explicit per ROADMAP Priority 4 |

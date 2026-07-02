@@ -1,0 +1,111 @@
+ANDREY_KIRA_JOINT_CONTROL_TEST_PROMPTS
+
+Status: DRAFT / READY FOR REVIEW
+
+Purpose:
+Control-test prompts for verifying KIRA and ANDREY together in the same scene after both characters reached CANON_READY_2D.
+
+Important:
+These prompts do not authorize generation by themselves.
+Generation requires explicit user request according to .voyage/SCENE_REQUEST_RULES.md.
+
+Characters:
+
+KIRA:
+Use active Kira canon and approved Kira control tests.
+Preserve Kira identity, age, face shape, hair, eyes, body type, outfit style and emotional tone from active canon.
+
+ANDREY:
+Use active Andrey canon and approved Andrey control tests.
+Preserve Andrey identity, 38 years old, 180 cm, 85-90 kg visual range, athletic strong build, blue eyes, light blonde/dark blonde hair, light stubble, blue shirt casual identity unless scene requires otherwise.
+
+Global joint constraints:
+
+keep both characters recognizable;
+do not merge faces;
+do not swap identities;
+do not change age;
+do not make Andrey too young/old;
+do not make Kira look like another woman;
+keep realistic height and body scale;
+keep natural interaction;
+no text, watermark, logo;
+no infographic/collage unless explicitly requested.
+
+---
+
+JOINT TEST 01 — Neutral studio duo
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/
+
+Goal:
+Verify both characters together in a clean neutral studio setup.
+
+Prompt:
+Photorealistic neutral studio duo portrait of Kira and Andrey Senior standing together, full or three-quarter body, neutral dark grey studio background, soft even lighting. Kira must preserve her approved canon identity. Andrey Senior must preserve his approved face and body canon identity: adult man 38 years old, 180 cm, athletic strong build, blue eyes, short light blonde/dark blonde hair, light stubble, blue dress shirt, dark navy trousers. Keep realistic scale, natural posture, calm mature interaction, both faces clearly visible, no identity blending.
+
+Expected output filename:
+KIRA_ANDREY_joint_test01_neutral_studio_duo_v1.png
+
+---
+
+JOINT TEST 02 — Evening embankment duo
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/02_evening_embankment_duo/
+
+Goal:
+Verify both characters in cinematic outdoor city light.
+
+Prompt:
+Photorealistic cinematic evening embankment scene with Kira and Andrey Senior walking or standing together near ornate railings, warm city lights, soft reflections, natural mature interaction. Kira must preserve approved canon identity. Andrey must preserve approved face/body canon identity, blue shirt casual style, athletic strong build, mature calm expression. Keep both faces visible and consistent, realistic height scale, no identity blending, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_joint_test02_evening_embankment_duo_v1.png
+
+---
+
+JOINT TEST 03 — Warm bar conversation
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/03_warm_bar_conversation/
+
+Goal:
+Verify both characters in warm indoor lighting and conversational pose.
+
+Prompt:
+Photorealistic warm upscale bar conversation scene with Kira and Andrey Senior sitting or standing near bar counter, warm amber lighting, shallow depth of field, relaxed natural conversation. Kira keeps approved canon identity. Andrey keeps approved canon identity: adult man 38, blue eyes, light stubble, short light blonde/dark blonde hair, blue dress shirt, athletic strong body. Natural chemistry, calm mature mood, both faces visible, no face mixing, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_joint_test03_warm_bar_conversation_v1.png
+
+---
+
+JOINT TEST 04 — Sea / yacht mood duo
+
+Target folder:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/
+
+Goal:
+Verify both characters outdoors in sea/yacht sunset lighting.
+
+Prompt:
+Photorealistic cinematic sea or yacht deck scene with Kira and Andrey Senior standing together near railing at sunset, warm golden light, sea background, natural wind, calm intimate but non-explicit mood. Kira preserves approved canon identity. Andrey preserves approved face/body canon identity, blue shirt casual look, dark navy trousers, athletic strong build, mature confident expression. Keep both characters distinct, realistic height scale, both faces visible, no identity blending, no text, no watermark.
+
+Expected output filename:
+KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1.png
+
+---
+
+Review verdicts:
+APPROVE
+APPROVE AS ALT
+HOLD
+REGENERATE
+REJECT
+
+Completion target:
+At least 3 generated joint tests.
+At least 2 APPROVE / APPROVE AS ALT.
+No identity blending.

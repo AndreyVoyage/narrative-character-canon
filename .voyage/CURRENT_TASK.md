@@ -52,9 +52,33 @@ Completed:
 Result:
 ANDREY is now CANON_READY_2D.
 
-## Current — NCC-ANDREY-3D-REFERENCE-PACK
+## Current — NCC-KIRA-ANDREY-JOINT-CONTROL-TESTS
 
-Status: PENDING
+Status: SETUP_DONE / GENERATION_PENDING
+
+Goal:
+Verify KIRA and ANDREY together after both reached CANON_READY_2D.
+
+Completed:
+
+* Joint control test prompt document created.
+* Joint test result tracking document created.
+* Joint test folders created.
+
+Next:
+Generate JOINT TEST 01 only after explicit user request.
+
+Forbidden:
+
+* do not generate sauna scene automatically;
+* do not treat old sauna example as requested;
+* do not blend identities;
+* do not mark joint tests approved before review;
+* do not create image placeholders.
+
+## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
+
+Status: POSTPONED
 
 Next goal:
 Prepare 3D reference pack structure and requirements using active face canon, body canon and approved control tests.
