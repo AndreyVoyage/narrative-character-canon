@@ -1,7 +1,7 @@
 {
   "character": "KIRA",
   "version": "v1.0",
-  "last_updated": "2026-07-01",
+  "last_updated": "2026-07-02",
   "root": "AI_CHARACTERS/KIRA",
   "text_sources": {
     "identity": "AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt",
@@ -64,6 +64,16 @@
         "AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png"
       ],
       "prompt_goal": "Generate Kira in sauna or spa scenes preserving adult identity, natural body canon, and visual consistency."
+    },
+    "outdoor": {
+      "description": "Outdoor cinematic scenes with natural light.",
+      "reference_images": [
+        "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png",
+        "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
+        "AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png"
+      ],
+      "prompt_goal": "Generate Kira in outdoor cinematic scenes preserving face canon, body canon, and approved evening/outdoor visual consistency."
     }
   }
 }
