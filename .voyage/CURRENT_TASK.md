@@ -52,29 +52,43 @@ Completed:
 Result:
 ANDREY is now CANON_READY_2D.
 
-## Current — NCC-KIRA-ANDREY-JOINT-CONTROL-TESTS
+## Completed — NCC-KIRA-ANDREY-JOINT-CONTROL-TESTS
 
-Status: SETUP_DONE / GENERATION_PENDING
+Status: DONE / JOINT_CONTROL_TESTS_APPROVED (2026-07-02)
 
 Goal:
 Verify KIRA and ANDREY together after both reached CANON_READY_2D.
 
 Completed:
 
-* Joint control test prompt document created.
-* Joint test result tracking document created.
-* Joint test folders created.
+* JOINT TEST 01 generated and approved.
+* JOINT TEST 02 generated and approved.
+* JOINT TEST 03 generated and approved after wrong gym scene rejection.
+* JOINT TEST 04 generated and approved after wrong living room scene rejection.
+* `KIRA_ANDREY_JOINT_TEST_RESULTS.md` updated.
+* `KIRA_ANDREY_JOINT_CANON_INDEX.md` created.
+* `KIRA_ANDREY_REFERENCE_PRESETS.json` created.
 
-Next:
-Generate JOINT TEST 01 only after explicit user request.
+Result:
+KIRA + ANDREY joint control tests are approved.
+
+## Current — NEXT DIRECTION
+
+Status: PENDING DECISION
+
+Next options:
+
+1. `NCC-VOYAGE-SQLITE-MEMORY`
+2. `NCC-ANDREY-3D-REFERENCE-PACK`
+3. `NCC-KIRA-3D-REFERENCE-PACK`
+4. Duo scene packs for `KIRA_ANDREY`
+5. Next character canon pack
 
 Forbidden:
 
-* do not generate sauna scene automatically;
-* do not treat old sauna example as requested;
-* do not blend identities;
-* do not mark joint tests approved before review;
-* do not create image placeholders.
+* do not use rejected/wrong-scene joint outputs as canon;
+* do not overwrite approved joint tests;
+* do not treat Kira heels as changing barefoot canon height.
 
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 

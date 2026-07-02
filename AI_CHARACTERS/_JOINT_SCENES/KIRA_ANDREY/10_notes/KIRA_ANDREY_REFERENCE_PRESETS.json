@@ -1,0 +1,64 @@
+{
+  "pair": "KIRA_ANDREY",
+  "version": "1.0.0",
+  "last_updated": "2026-07-02",
+  "status": "JOINT_CONTROL_TESTS_APPROVED",
+  "characters": {
+    "KIRA": {
+      "status": "CANON_READY_2D",
+      "height_barefoot_cm": 168
+    },
+    "ANDREY": {
+      "status": "CANON_READY_2D",
+      "height_cm": 180
+    }
+  },
+  "root": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY",
+  "scene_presets": {
+    "joint_control_tests": {
+      "description": "Approved KIRA + ANDREY joint control test outputs.",
+      "reference_images": [
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/02_evening_embankment_duo/KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/03_warm_bar_conversation/KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved duo outputs to verify Kira and Andrey identity stability, scale, interaction and scene compatibility."
+    },
+    "neutral_studio_duo": {
+      "description": "Approved neutral studio duo control test.",
+      "reference_images": [
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png"
+      ],
+      "prompt_goal": "Use for neutral duo scale and identity checks."
+    },
+    "evening_embankment_duo": {
+      "description": "Approved evening embankment duo scene.",
+      "reference_images": [
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/02_evening_embankment_duo/KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for cinematic evening city duo scenes."
+    },
+    "warm_bar_conversation": {
+      "description": "Approved warm bar conversation duo scene.",
+      "reference_images": [
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/03_warm_bar_conversation/KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for warm indoor bar conversation scenes."
+    },
+    "sea_yacht_mood_duo": {
+      "description": "Approved sea/yacht sunset duo scene.",
+      "reference_images": [
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for sea/yacht duo scenes with sunset lighting."
+    }
+  },
+  "rules": [
+    "Do not use rejected/wrong-scene outputs as canon.",
+    "Do not overwrite approved joint test files.",
+    "Kira barefoot height remains 168 cm even when heels make her appear taller.",
+    "Andrey height remains 180 cm.",
+    "Preserve both identities; do not blend faces."
+  ]
+}

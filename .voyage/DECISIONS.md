@@ -150,6 +150,41 @@ Result:
 Important:
 Do not rename Kira `.md.txt` notes to `.md` in this cleanup. Any naming convention migration should be a separate explicit task.
 
+## DECISION-0013 — Approve Kira and Andrey joint control tests
+
+Date: 2026-07-02
+
+Context:
+Kira and Andrey both reached CANON_READY_2D. Joint control tests were generated to verify identity stability, scale, scene compatibility and duo interaction.
+
+Decision:
+Approve four KIRA + ANDREY joint control tests:
+
+* JOINT TEST 01 — Neutral studio duo
+* JOINT TEST 02 — Evening embankment duo
+* JOINT TEST 03 — Warm bar conversation
+* JOINT TEST 04 — Sea / yacht mood duo
+
+Approved files:
+
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/02_evening_embankment_duo/KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/03_warm_bar_conversation/KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png`
+
+Rejected / ignored:
+
+* first JOINT TEST 01 version with Kira identity drift;
+* wrong gym outputs generated for JOINT TEST 03;
+* wrong living room output generated for JOINT TEST 04;
+* any composite/infographic/collage outputs.
+
+Result:
+KIRA_ANDREY pair becomes JOINT_CONTROL_TESTS_APPROVED and ready for duo scene workflows.
+
+Important:
+Kira barefoot height remains 168 cm. Heels may make her apparent height 176–178 cm in some scenes. Andrey remains 180 cm.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02
