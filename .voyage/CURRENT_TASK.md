@@ -27,7 +27,7 @@ Completed steps:
 * Step 3: body canon Sheet B generated and saved — `AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png` (file was saved on disk as `..._pose_set.png`; renamed to `..._pose_variations.png` with explicit user approval to match the canon filename convention).
 * Step 4: `ANDREY_CANON_INDEX.md` and `ANDREY_REFERENCE_PRESETS.json` updated — body canon marked ACTIVE, `body_canon` preset points at the two new sheets + face canon, and the sheets were added to `sports`, `formal`, `bar`, `sauna` presets. `portrait` preset intentionally left face-only.
 
-Note: A duplicate candidate of Sheet A (`candidates/ANDREY_body_canon_v1_sheet_A_front_side_back_candidate_02.png`) exists but was **not** added to active canon or presets, per instruction. Do not regenerate the same body sheet type unless the user explicitly requests candidate variants.
+Note: The duplicate candidate of Sheet A was moved to LOCAL_STORAGE during housekeeping and is not part of active repo canon or presets. Do not regenerate the same body sheet type unless the user explicitly requests candidate variants.
 
 Andrey is **not** marked `CANON_READY_2D` — control tests and `ANDREY_TEST_RESULTS.md` are still pending.
 
