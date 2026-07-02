@@ -2,9 +2,9 @@
 # ANDREY_CANON_INDEX.md
 
 Character: Andrey Senior
-Status: ACTIVE CANON MAP / RAW-BASED STAGE
-Version: v1.0
-Last updated: 2026-06-30
+Status: ACTIVE CANON MAP / FACE + BODY CANON ACTIVE
+Version: v1.1
+Last updated: 2026-07-02
 
 ---
 
@@ -114,9 +114,17 @@ ACTIVE FACE CANON
 
 ---
 
-# BODY CANON - TEMPORARY RAW-BASED
+# BODY CANON - ACTIVE
 
-Active body references:
+Active body canon files:
+
+04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png
+Status: ACTIVE BODY CANON / TECHNICAL FRONT SIDE BACK 3Q
+
+04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png
+Status: ACTIVE BODY CANON / POSE VARIATIONS
+
+Supporting raw references (legacy, use only as needed):
 
 01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
 01_refs_raw/ANDREY_RAW_11_body_identity_sheet_blue_shirt.png
@@ -124,18 +132,17 @@ Active body references:
 
 Purpose:
 
-Temporary body canon references until dedicated body sheets are created.
-
 Use for:
 
+* full body proportions
 * height impression
-* body proportions
 * shoulder width
-* neck thickness
 * chest volume
+* waist/torso control
 * posture
-* front / side / back silhouette
-* casual blue shirt proportions
+* side/back silhouette
+* pose consistency
+* future 3D reference pack
 
 Canon notes:
 
@@ -146,18 +153,22 @@ Canon notes:
 * broad shoulders
 * muscular chest
 * thick muscular neck
-* strong but not bulky
-* not bodybuilder
-* not heavyset
+* strong upper body
+* not bulky
+* not stocky
+* not overweight
 * not powerlifter
+* not bodybuilder-heavy
+* not skinny
+* not fragile
 
 Status:
 
-ACTIVE / TEMPORARY BODY CANON
+ACTIVE BODY CANON
 
-Next needed stage:
+Note:
 
-Create ANDREY_BODY_CANON sheets.
+A duplicate candidate of Sheet A exists in 04_body_sheet/candidates/ANDREY_body_canon_v1_sheet_A_front_side_back_candidate_02.png. It is not part of active canon. Do not regenerate the same body sheet type unless explicitly requested; duplicates are stored as candidates only.
 
 ---
 
@@ -522,11 +533,13 @@ TEXT IDENTITY: APPROVED
 RAW FILE MAP: CREATED
 CANON INDEX: ACTIVE
 FACE CANON: ACTIVE
-EXPRESSIONS: ACTIVE
-BODY CANON: TEMPORARY RAW-BASED / PENDING DEDICATED BODY SHEETS
-CASUAL BLUE SHIRT LOOK: ACTIVE RAW-BASED
+BODY CANON: ACTIVE
+CASUAL BLUE SHIRT LOOK: ACTIVE RAW-BASED / BODY CANON SUPPORTED
 FORMAL LOOK: CANDIDATE
 SPORTS LOOK: CANDIDATE
+EXPRESSIONS: ACTIVE
+
+Note: Andrey is not yet CANON_READY_2D — control tests and ANDREY_TEST_RESULTS.md are still pending (see NEXT STAGES below).
 
 ---
 
@@ -534,23 +547,13 @@ SPORTS LOOK: CANDIDATE
 
 Recommended next stages:
 
-1. ANDREY_BODY_CANON
-2. ANDREY_FORMAL_LOOK
-3. ANDREY_SPORTS_LOOK
-4. ANDREY_CONTROL_TESTS
-5. ANDREY_TEST_RESULTS
-6. ANDREY_3D_REFERENCE_PACK
-7. ANDREY_3D_MODEL_SPEC
+1. ANDREY_FORMAL_LOOK
+2. ANDREY_SPORTS_LOOK
+3. ANDREY_CONTROL_TESTS
+4. ANDREY_TEST_RESULTS
+5. ANDREY_3D_REFERENCE_PACK
+6. ANDREY_3D_MODEL_SPEC
 
 Immediate next step:
 
-Create ANDREY_BODY_CANON sheets.
-
-Target folder:
-
-04_body_sheet/
-
-Expected files:
-
-ANDREY_body_canon_v1_sheet_A_front_side_back.png
-ANDREY_body_canon_v1_sheet_B_angles.png
+Run Andrey control tests using active face canon and active body canon before marking Andrey CANON_READY_2D.

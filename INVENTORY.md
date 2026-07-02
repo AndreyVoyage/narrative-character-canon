@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-02 10:20:45
+2026-07-02 16:15:19
 
 ---
 
@@ -36,8 +36,11 @@ AI_CHARACTERS/
     - expressions/
       - ANDREY_expressions_v1_sheet_C_refined.png
   - 04_body_sheet/
+    - ANDREY_body_canon_v1_sheet_A_front_side_back.png
+    - ANDREY_body_canon_v1_sheet_B_pose_variations.png
     - candidates/
       - .gitkeep
+      - ANDREY_body_canon_v1_sheet_A_front_side_back_candidate_02.png
   - 05_outfits/
     - candidates/
       - .gitkeep
@@ -75,9 +78,11 @@ AI_CHARACTERS/
   - 10_notes/
     - ANDREY_CANON_INDEX.md
     - ANDREY_CANON_INDEX.md.backup_20260630_085458
+    - ANDREY_CANON_INDEX.md.backup_20260702_160852
     - ANDREY_IDENTITY.txt
     - ANDREY_RAW_FILE_MAP.md
     - ANDREY_REFERENCE_PRESETS.json
+    - ANDREY_REFERENCE_PRESETS.json.backup_20260702_160852
 - EGOR/
   - 01_refs_raw/
     - .gitkeep
@@ -426,7 +431,7 @@ AI_CHARACTERS/
 
 # Total file count
 
-206
+211
 
 # File type summary
 
@@ -434,11 +439,12 @@ AI_CHARACTERS/
 |---|---:|
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_082208 | 1 |
+| .backup_20260702_160852 | 2 |
 | .gitkeep | 139 |
 | .jpg | 1 |
 | .json | 8 |
 | .md | 2 |
-| .png | 39 |
+| .png | 42 |
 | .txt | 15 |
 
 # File list
@@ -461,7 +467,10 @@ AI_CHARACTERS/
 | AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png | 2365284 | 2026-06-30 22:22:05 |
 | AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png | 2366781 | 2026-06-30 23:12:12 |
 | AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png | 2372255 | 2026-07-01 12:36:42 |
+| AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png | 1752758 | 2026-07-02 13:49:29 |
+| AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png | 1807220 | 2026-07-02 14:00:01 |
 | AI_CHARACTERS/ANDREY/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/ANDREY/04_body_sheet/candidates/ANDREY_body_canon_v1_sheet_A_front_side_back_candidate_02.png | 1758924 | 2026-07-02 15:28:23 |
 | AI_CHARACTERS/ANDREY/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -479,11 +488,13 @@ AI_CHARACTERS/
 | AI_CHARACTERS/ANDREY/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md | 9691 | 2026-07-01 13:55:23 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md | 10212 | 2026-07-02 16:09:29 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260630_085458 | 9425 | 2026-06-30 08:48:46 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260702_160852 | 9691 | 2026-07-02 16:08:53 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt | 9304 | 2026-06-30 08:23:04 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_RAW_FILE_MAP.md | 6599 | 2026-06-30 08:14:52 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 4514 | 2026-07-01 13:56:41 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 5443 | 2026-07-02 16:10:56 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json.backup_20260702_160852 | 4514 | 2026-07-02 16:08:54 |
 | AI_CHARACTERS/EGOR/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
