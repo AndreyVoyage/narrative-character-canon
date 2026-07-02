@@ -1,12 +1,12 @@
 # ANDREY_TEST_RESULTS
 
-Status: NOT STARTED
+Status: CONTROL TESTS GENERATED
 Character: ANDREY
-Current stage: CONTROL_TESTS_PENDING
+Current stage: CONTROL_TESTS_REVIEWED / APPROVED
 
 Important:
-No control test images have been generated yet.
-This file is a tracking document for future test results.
+All six control test images have been generated and reviewed.
+This file tracks approved outputs and verdicts.
 
 Active canon before tests:
 
@@ -42,13 +42,16 @@ Expected file:
 ANDREY_test01_neutral_studio_portrait_v1.png
 
 Status:
-NOT GENERATED
+GENERATED
 
 Verdict:
-PENDING
+APPROVE
+
+Approved file:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png
 
 Notes:
-Pending generation.
+Face identity matches active face canon. Blue eyes, light stubble, short light blonde/dark blonde hair, mature calm confident expression and blue shirt look are preserved.
 
 ---
 
@@ -58,16 +61,19 @@ Target folder:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/
 
 Expected file:
-ANDREY_test02_full_body_blue_shirt_v1.png
+ANDREY_test02_full_body_blue_shirt_studio_v1.png
 
 Status:
-NOT GENERATED
+GENERATED
 
 Verdict:
-PENDING
+APPROVE
+
+Approved file:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/ANDREY_test02_full_body_blue_shirt_studio_v1.png
 
 Notes:
-Pending generation.
+Full-body proportions match active body canon. Blue shirt, dark navy trousers, brown belt and shoes are consistent. Athletic strong build preserved without bodybuilder/powerlifter drift.
 
 ---
 
@@ -80,13 +86,16 @@ Expected file:
 ANDREY_test03_warm_bar_portrait_v1.png
 
 Status:
-NOT GENERATED
+GENERATED
 
 Verdict:
-PENDING
+APPROVE
+
+Approved file:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/ANDREY_test03_warm_bar_portrait_v1.png
 
 Notes:
-Pending generation.
+Warm bar lighting preserves Andrey identity. Face, eyes, stubble, hairline and mature confident expression remain consistent. Approved as warm indoor cinematic control test.
 
 ---
 
@@ -99,13 +108,16 @@ Expected file:
 ANDREY_test04_formal_evening_look_v1.png
 
 Status:
-NOT GENERATED
+GENERATED
 
 Verdict:
-PENDING
+APPROVE
+
+Approved file:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/ANDREY_test04_formal_evening_look_v1.png
 
 Notes:
-Pending generation.
+Formal styling preserves Andrey identity. Dark suit, shirt and tie work as formal evening look. Face, age, hair, stubble and body proportions remain consistent.
 
 ---
 
@@ -118,13 +130,16 @@ Expected file:
 ANDREY_test05_sports_gym_identity_v1.png
 
 Status:
-NOT GENERATED
+GENERATED
 
 Verdict:
-PENDING
+APPROVE
+
+Approved file:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png
 
 Notes:
-Pending generation.
+Sports/gym outfit preserves identity. Athletic body remains realistic and does not drift into exaggerated bodybuilder/powerlifter type.
 
 ---
 
@@ -134,40 +149,45 @@ Target folder:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/
 
 Expected file:
-ANDREY_test06_sea_yacht_mood_v1.png
+ANDREY_test06_sea_yacht_mood_scene_v1.png
 
 Status:
-NOT GENERATED
+GENERATED
 
 Verdict:
-PENDING
+APPROVE
+
+Approved file:
+AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/ANDREY_test06_sea_yacht_mood_scene_v1.png
 
 Notes:
-Pending generation.
+Sea/yacht sunset mood preserves identity. Blue shirt, mature confident expression, face, eyes, hair and body proportions remain consistent.
 
 ---
 
 # Completion criteria
 
-Andrey can be considered CANON_READY_2D only when:
+Andrey can be considered CANON_READY_2D because:
 
 - face canon is active;
 - body canon is active;
-- at least 3 control tests are generated;
-- at least 2 control tests are APPROVE or APPROVE AS ALT;
+- 6 control tests are generated;
+- 6 control tests are APPROVE;
 - ANDREY_TEST_RESULTS.md is updated with actual outputs and verdicts;
 - ANDREY_CANON_INDEX.md marks current test status;
 - INVENTORY.md is updated;
-- git status is clean.
+- git status is clean after commit.
 
 ---
 
 # Current conclusion
 
-Andrey is not CANON_READY_2D yet.
+Andrey can now be considered:
+
+CANON_READY_2D
 
 Current status:
-FACE_CANON_ACTIVE / BODY_CANON_ACTIVE / CONTROL_TESTS_PENDING
+FACE_CANON_ACTIVE / BODY_CANON_ACTIVE / CONTROL_TESTS_APPROVED / CANON_READY_2D
 
 Next action:
-Generate TEST 01 only after explicit user request.
+Prepare ANDREY_3D_REFERENCE_PACK or continue with next character canon pack.

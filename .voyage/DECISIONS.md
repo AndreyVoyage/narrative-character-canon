@@ -89,6 +89,32 @@ Result: Andrey moves from `BODY_PENDING` to `BODY_CANON_ACTIVE / CONTROL_TESTS_P
 
 Next action: `NCC-ANDREY-CONTROL-TESTS` (see `.voyage/CURRENT_TASK.md`).
 
+## DECISION-0010 — Andrey control tests approved
+
+Date: 2026-07-02
+
+Context:
+Andrey face canon and body canon were active. Six control tests were generated and reviewed.
+
+Decision:
+Approve all six control tests and mark Andrey as CANON_READY_2D.
+
+Approved files:
+
+* `AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png`
+* `AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/ANDREY_test02_full_body_blue_shirt_studio_v1.png`
+* `AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/ANDREY_test03_warm_bar_portrait_v1.png`
+* `AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/ANDREY_test04_formal_evening_look_v1.png`
+* `AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png`
+* `AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/ANDREY_test06_sea_yacht_mood_scene_v1.png`
+
+Result:
+Andrey moves to CANON_READY_2D.
+Next stage: 3D reference pack or next character canon.
+
+Important:
+Do not regenerate approved control tests unless explicitly requested. New variants should be saved as candidates or alternatives, not overwrite approved files.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

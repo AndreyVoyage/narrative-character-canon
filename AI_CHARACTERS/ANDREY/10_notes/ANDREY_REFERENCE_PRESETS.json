@@ -1,6 +1,6 @@
 {
   "character": "ANDREY",
-  "version": "v1.1",
+  "version": "v1.2",
   "last_updated": "2026-07-02",
   "root": "AI_CHARACTERS/ANDREY",
   "text_sources": {
@@ -17,7 +17,8 @@
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png",
-        "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png"
+        "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_05_main_identity_sheet_blue_shirt.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png"
       ],
       "prompt_goal": "Generate a stable portrait of Andrey preserving mature face canon and blue-eye identity."
     },
@@ -27,7 +28,8 @@
         "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png",
         "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/ANDREY_test02_full_body_blue_shirt_studio_v1.png"
       ],
       "prompt_goal": "Generate or evaluate full-body Andrey Senior references preserving approved body proportions, posture, broad shoulders, athletic strong build, and stable face identity."
     },
@@ -40,7 +42,8 @@
         "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png"
       ],
       "prompt_goal": "Generate Andrey in athletic contexts preserving body canon and mature masculine identity."
     },
@@ -53,7 +56,8 @@
         "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/ANDREY_test04_formal_evening_look_v1.png"
       ],
       "prompt_goal": "Generate Andrey in formal scenes preserving confident mature masculine canon."
     },
@@ -66,7 +70,8 @@
         "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
         "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png",
-        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png"
+        "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/ANDREY_test03_warm_bar_portrait_v1.png"
       ],
       "prompt_goal": "Generate Andrey in warm bar or lounge scenes preserving calm confident identity."
     },
@@ -83,6 +88,18 @@
         "AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png"
       ],
       "prompt_goal": "Generate Andrey in sauna or spa scenes preserving mature adult identity, athletic strong build, and natural proportions."
+    },
+    "control_tests": {
+      "description": "Approved Andrey Senior control test outputs after face and body canon activation.",
+      "reference_images": [
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/ANDREY_test02_full_body_blue_shirt_studio_v1.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/ANDREY_test03_warm_bar_portrait_v1.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/ANDREY_test04_formal_evening_look_v1.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png",
+        "AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/ANDREY_test06_sea_yacht_mood_scene_v1.png"
+      ],
+      "prompt_goal": "Use approved control test outputs to verify Andrey Senior identity stability across studio, bar, formal, sports and sea/yacht contexts."
     }
   }
 }

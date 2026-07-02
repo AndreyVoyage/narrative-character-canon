@@ -530,7 +530,7 @@ Avoid:
 # CONTROL TESTS
 
 Status:
-PENDING / NOT GENERATED
+GENERATED / APPROVED
 
 Test results file:
 AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md
@@ -538,19 +538,43 @@ AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md
 Prompt source:
 AI_CHARACTERS/ANDREY/06_prompts/ANDREY_CONTROL_TEST_PROMPTS.txt
 
-Planned tests:
-1. neutral studio portrait
-2. full body blue shirt studio
-3. warm bar portrait
-4. formal evening look
-5. sports/gym identity
-6. sea/yacht mood
+Approved tests:
+
+1. TEST 01 — Neutral studio portrait
+   File:
+   AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png
+   Verdict: APPROVE
+
+2. TEST 02 — Full body blue shirt studio
+   File:
+   AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/ANDREY_test02_full_body_blue_shirt_studio_v1.png
+   Verdict: APPROVE
+
+3. TEST 03 — Warm bar portrait
+   File:
+   AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/ANDREY_test03_warm_bar_portrait_v1.png
+   Verdict: APPROVE
+
+4. TEST 04 — Formal evening look
+   File:
+   AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/ANDREY_test04_formal_evening_look_v1.png
+   Verdict: APPROVE
+
+5. TEST 05 — Sports / gym identity test
+   File:
+   AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png
+   Verdict: APPROVE
+
+6. TEST 06 — Sea / yacht mood scene
+   File:
+   AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/ANDREY_test06_sea_yacht_mood_scene_v1.png
+   Verdict: APPROVE
 
 Current canon-ready status:
-NOT CANON_READY_2D YET
+CANON_READY_2D
 
 Reason:
-Control tests have not been generated and reviewed yet.
+Face canon active, body canon active, six control tests generated and approved.
 
 ---
 
@@ -561,12 +585,13 @@ RAW FILE MAP: CREATED
 CANON INDEX: ACTIVE
 FACE CANON: ACTIVE
 BODY CANON: ACTIVE
-CASUAL BLUE SHIRT LOOK: ACTIVE RAW-BASED / BODY CANON SUPPORTED
-FORMAL LOOK: CANDIDATE
-SPORTS LOOK: CANDIDATE
 EXPRESSIONS: ACTIVE
-
-Note: Andrey is not yet CANON_READY_2D — control tests and ANDREY_TEST_RESULTS.md are still pending (see NEXT STAGES below).
+CONTROL TESTS: APPROVED
+CANON_READY_2D: YES
+CASUAL BLUE SHIRT LOOK: ACTIVE
+FORMAL LOOK: APPROVED CONTROL TEST
+SPORTS LOOK: APPROVED CONTROL TEST
+SEA/YACHT LOOK: APPROVED CONTROL TEST
 
 ---
 
@@ -574,13 +599,13 @@ Note: Andrey is not yet CANON_READY_2D — control tests and ANDREY_TEST_RESULTS
 
 Recommended next stages:
 
-1. ANDREY_FORMAL_LOOK
-2. ANDREY_SPORTS_LOOK
-3. ANDREY_CONTROL_TESTS
-4. ANDREY_TEST_RESULTS
-5. ANDREY_3D_REFERENCE_PACK
-6. ANDREY_3D_MODEL_SPEC
+1. ANDREY_3D_REFERENCE_PACK
+2. ANDREY_3D_MODEL_SPEC
+3. ANDREY_FORMAL_LOOK_CANON_SHEET
+4. ANDREY_SPORTS_LOOK_CANON_SHEET
+5. ANDREY_SCENE_PACKS
+6. NEXT_CHARACTER_CANON
 
 Immediate next step:
 
-Run Andrey control tests using active face canon and active body canon before marking Andrey CANON_READY_2D.
+Prepare ANDREY_3D_REFERENCE_PACK or continue with next character canon pack.

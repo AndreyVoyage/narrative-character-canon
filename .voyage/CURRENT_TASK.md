@@ -31,34 +31,36 @@ Note: The duplicate candidate of Sheet A was moved to LOCAL_STORAGE during house
 
 Andrey is **not** marked `CANON_READY_2D` — control tests and `ANDREY_TEST_RESULTS.md` are still pending.
 
-## Current — NCC-ANDREY-CONTROL-TESTS
+## Completed — NCC-ANDREY-CONTROL-TESTS
 
-Status: SETUP_DONE / GENERATION_PENDING
+Status: DONE (2026-07-02)
 
-Goal: Prepare controlled test structure using active face canon (`03_face_sheet/`) and active body canon (`04_body_sheet/`) before marking Andrey as `CANON_READY_2D`.
+Goal: Run controlled tests using active face canon (`03_face_sheet/`) and active body canon (`04_body_sheet/`) before marking Andrey as `CANON_READY_2D`.
 
 Completed:
 
-* Test prompt document created: `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_CONTROL_TEST_PROMPTS.txt`.
-* Test results tracking document created: `AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md`.
-* Control test folders created:
-  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/`
-  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/`
-  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/`
-  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/`
-  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/`
-  * `AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/`
+* TEST 01 generated and approved.
+* TEST 02 generated and approved.
+* TEST 03 generated and approved.
+* TEST 04 generated and approved.
+* TEST 05 generated and approved.
+* TEST 06 generated and approved.
+* `ANDREY_TEST_RESULTS.md` updated.
+* `ANDREY_CANON_INDEX.md` updated.
+* `ANDREY_REFERENCE_PRESETS.json` updated.
 
-Next:
+Result:
+ANDREY is now CANON_READY_2D.
 
-Generate TEST 01 only after explicit user request.
+## Current — NCC-ANDREY-3D-REFERENCE-PACK
+
+Status: PENDING
+
+Next goal:
+Prepare 3D reference pack structure and requirements using active face canon, body canon and approved control tests.
 
 Forbidden:
 
-* do not generate the KIRA + ANDREY sauna scene — it is EXAMPLE, not REQUESTED (see [SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md))
-* do not generate tests automatically
-* do not mark Andrey CANON_READY_2D before review
-* do not create image placeholders
-* do not modify, rename, move, or delete existing active canon images without explicit request
-* do not create fake refs or mark placeholders/drafts as approved canon without explicit user approval
-* do not regenerate/duplicate body canon sheets unless the user explicitly requests candidate variants
+* do not regenerate approved control tests unless user explicitly requests candidate variants;
+* do not change active canon images;
+* do not mark private/local-only outputs as public canon.
