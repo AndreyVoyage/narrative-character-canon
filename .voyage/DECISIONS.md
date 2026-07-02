@@ -88,3 +88,24 @@ Affected files: `AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B
 Result: Andrey moves from `BODY_PENDING` to `BODY_CANON_ACTIVE / CONTROL_TESTS_PENDING`. Not marked `CANON_READY_2D` until control tests and `ANDREY_TEST_RESULTS.md` exist.
 
 Next action: `NCC-ANDREY-CONTROL-TESTS` (see `.voyage/CURRENT_TASK.md`).
+
+## DECISION-0007 — Remove duplicate body candidate from active repo area
+
+Date: 2026-07-02
+
+Context: A duplicate Andrey body Sheet A candidate remained untracked after active body canon was committed.
+
+Decision: Keep only two active body canon files in repository:
+
+* Sheet A — `AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png`
+* Sheet B — `AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png`
+
+Duplicate candidate outputs should be stored in `LOCAL_STORAGE` or discarded, not left as untracked repo files.
+
+Affected files: `AI_CHARACTERS/ANDREY/04_body_sheet/candidates/ANDREY_body_canon_v1_sheet_A_front_side_back_candidate_02.png` (moved to `LOCAL_STORAGE/narrative-character-canon/duplicate_candidates/ANDREY/body_sheet/`), `INVENTORY.md`, `.voyage/DECISIONS.md`.
+
+Reason: Prevents confusion between active canon, candidates, and local-only duplicate outputs before control tests.
+
+Result: Repository prepared for `NCC-ANDREY-CONTROL-TESTS`.
+
+Next action: Create `ANDREY_TEST_RESULTS.md` structure and control test prompts, without generating images.
