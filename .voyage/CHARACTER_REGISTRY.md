@@ -17,3 +17,8 @@
 Не отмечать персонажа как preset-ready, пока его `REFERENCE_PRESETS.json` не содержит непустой `scene_presets` со ссылками на реально существующие tracked-файлы. Статус в этой таблице должен сверяться с фактическим содержимым JSON, а не переноситься автоматически из старых отчётов (`AGENTS.md`, `ROADMAP.md`).
 
 Статусы соответствуют определениям из [docs/VOYAGE_INTEGRATION_WORKFLOW.md](../docs/VOYAGE_INTEGRATION_WORKFLOW.md#6-статусы-персонажей).
+
+## Voyage SQLite memory
+
+Enabled via local runtime DB and tracked exports.
+Use `.voyage/CONTEXT_SNAPSHOT.md` for compact ChatGPT handoff.

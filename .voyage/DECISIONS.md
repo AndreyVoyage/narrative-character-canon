@@ -185,6 +185,31 @@ KIRA_ANDREY pair becomes JOINT_CONTROL_TESTS_APPROVED and ready for duo scene wo
 Important:
 Kira barefoot height remains 168 cm. Heels may make her apparent height 176–178 cm in some scenes. Andrey remains 180 cm.
 
+## DECISION-0014 — Add Voyage-lite SQLite memory layer
+
+Date: 2026-07-02
+
+Context:
+Kira, Andrey and KIRA_ANDREY joint tests reached approved states. The project accumulated many canon statuses, approved outputs, rejected outputs, decisions and commit references.
+
+Decision:
+Add a local SQLite memory layer outside the repo and export compact project memory into tracked `.voyage` files.
+
+Result:
+SQLite DB becomes local runtime memory. GitHub stores only tools, docs and exports.
+
+DB path:
+`C:\DEV\Narrative\LOCAL_STORAGE\narrative-character-canon\voyage_memory\narrative_character_canon.sqlite`
+
+Tracked exports:
+
+* `.voyage/CONTEXT_SNAPSHOT.md`
+* `.voyage/STATE_EXPORT.json`
+* `.voyage/EVENTS_EXPORT.jsonl`
+
+Important:
+Do not commit `.sqlite`, `.sqlite3` or `.db` files. Use exports for ChatGPT/context handoff.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

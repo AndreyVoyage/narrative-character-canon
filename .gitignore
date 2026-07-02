@@ -3,3 +3,10 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Voyage local runtime memory
+*.sqlite
+*.sqlite3
+*.db
+LOCAL_STORAGE/
+voyage_memory/

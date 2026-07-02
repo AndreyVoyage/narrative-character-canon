@@ -1,0 +1,1 @@
+{"event_id": "MEMORY_INIT", "event_type": "MEMORY_INIT", "subject_type": "project", "subject_id": "narrative-character-canon", "summary": "Voyage memory initialized with current known facts.", "payload_json": "{\"source\": \"voyage_memory_init.py\"}", "commit_hash": null, "created_at": "2026-07-02T22:37:22.864963+00:00"}

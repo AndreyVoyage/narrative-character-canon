@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-03 01:22:42
+2026-07-03 01:40:24
 
 ---
 
@@ -14,17 +14,25 @@ Generated:
 
 ```text
 AI_CHARACTERS/
+- ..voyage/
+  ├── CONTEXT_SNAPSHOT.md
+  ├── EVENTS_EXPORT.jsonl
+  └── STATE_EXPORT.json
 - .gitattributes/
 - .gitignore/
 - .voyage/
   ├── CHARACTER_REGISTRY.md
+  ├── CONTEXT_SNAPSHOT.md
   ├── CURRENT_TASK.md
   ├── DECISIONS.md
   ├── DECISIONS.md.backup_20260702_231625
+  ├── EVENTS_EXPORT.jsonl
   ├── LOCATION_REGISTRY.md
   ├── PROJECT_STATE.md
   ├── README.md
-  └── SCENE_REQUEST_RULES.md
+  ├── SCENE_REQUEST_RULES.md
+  ├── SQLITE_MEMORY_STATUS.md
+  └── STATE_EXPORT.json
 - AGENTS.md/
 - AI_CHARACTERS/
   ├── _JOINT_SCENES
@@ -479,21 +487,27 @@ AI_CHARACTERS/
           └── SERGEY_REFERENCE_PRESETS.json
 - docs/
   ├── GITHUB_REFERENCE_PACK_WORKFLOW.md
-  └── VOYAGE_INTEGRATION_WORKFLOW.md
+  ├── VOYAGE_INTEGRATION_WORKFLOW.md
+  └── VOYAGE_SQLITE_MEMORY_WORKFLOW.md
 - INVENTORY.md/
 - PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md/
 - PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md/
 - README.md/
 - ROADMAP.md/
 - tools/
+  ├── __pycache__
+  │   └── voyage_memory_status.cpython-314.pyc
   ├── build_scene_reference_pack.ps1
-  └── build_scene_reference_pack.py
+  ├── build_scene_reference_pack.py
+  ├── voyage_memory_export.py
+  ├── voyage_memory_init.py
+  └── voyage_memory_status.py
 
 ```
 
 # Total file count
 
-254
+266
 
 # File type summary
 
@@ -504,27 +518,36 @@ AI_CHARACTERS/
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
 | .jpg | 1 |
-| .json | 9 |
-| .md | 20 |
+| .json | 11 |
+| .jsonl | 2 |
+| .md | 24 |
 | .png | 51 |
 | .ps1 | 1 |
-| .py | 1 |
+| .py | 4 |
+| .pyc | 1 |
 | .txt | 17 |
 
 # File list
 
 | Path | Size bytes | Modified |
 |---|---:|---|
+| ..voyage/CONTEXT_SNAPSHOT.md | 2212 | 2026-07-03 01:37:38 |
+| ..voyage/EVENTS_EXPORT.jsonl | 324 | 2026-07-03 01:37:38 |
+| ..voyage/STATE_EXPORT.json | 14135 | 2026-07-03 01:37:38 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
-| .gitignore | 54 | 2026-06-30 21:38:06 |
-| .voyage/CHARACTER_REGISTRY.md | 2642 | 2026-07-03 01:22:14 |
-| .voyage/CURRENT_TASK.md | 4178 | 2026-07-03 01:22:07 |
-| .voyage/DECISIONS.md | 11859 | 2026-07-03 01:22:26 |
+| .gitignore | 134 | 2026-07-03 01:35:10 |
+| .voyage/CHARACTER_REGISTRY.md | 2781 | 2026-07-03 01:40:09 |
+| .voyage/CONTEXT_SNAPSHOT.md | 2212 | 2026-07-03 01:37:58 |
+| .voyage/CURRENT_TASK.md | 4754 | 2026-07-03 01:39:47 |
+| .voyage/DECISIONS.md | 12676 | 2026-07-03 01:39:56 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
+| .voyage/EVENTS_EXPORT.jsonl | 324 | 2026-07-03 01:37:58 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
+| .voyage/SQLITE_MEMORY_STATUS.md | 523 | 2026-07-03 01:37:17 |
+| .voyage/STATE_EXPORT.json | 14135 | 2026-07-03 01:37:58 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png | 2148429 | 2026-07-03 00:05:04 |
@@ -762,10 +785,15 @@ AI_CHARACTERS/
 | AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 263 | 2026-07-01 17:18:12 |
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
-| INVENTORY.md | 42523 | 2026-07-02 23:17:02 |
+| docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 2734 | 2026-07-03 01:37:14 |
+| INVENTORY.md | 44031 | 2026-07-03 01:22:42 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |
 | ROADMAP.md | 7084 | 2026-07-01 09:37:30 |
+| tools/__pycache__/voyage_memory_status.cpython-314.pyc | 4702 | 2026-07-03 01:38:31 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
+| tools/voyage_memory_export.py | 5803 | 2026-07-03 01:36:48 |
+| tools/voyage_memory_init.py | 19032 | 2026-07-03 01:36:25 |
+| tools/voyage_memory_status.py | 2099 | 2026-07-03 01:38:25 |

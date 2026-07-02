@@ -72,17 +72,38 @@ Completed:
 Result:
 KIRA + ANDREY joint control tests are approved.
 
+## Completed — NCC-VOYAGE-SQLITE-MEMORY
+
+Status: DONE / SQLITE_MEMORY_SETUP_DONE (2026-07-02)
+
+Completed:
+
+* Local SQLite memory schema created.
+* Local SQLite DB initialized outside repo.
+* Memory status tool created.
+* Memory export tool created.
+* `CONTEXT_SNAPSHOT.md` exported.
+* `STATE_EXPORT.json` exported.
+* `EVENTS_EXPORT.jsonl` exported.
+* SQLite workflow documented.
+
+Result:
+Voyage-lite structured memory is available for future character, pair, scene, 3D and decision workflows.
+
+DB policy:
+SQLite DB is local runtime memory and must not be committed.
+
 ## Current — NEXT DIRECTION
 
 Status: PENDING DECISION
 
 Next options:
 
-1. `NCC-VOYAGE-SQLITE-MEMORY`
+1. Duo scene packs for `KIRA_ANDREY`
 2. `NCC-ANDREY-3D-REFERENCE-PACK`
 3. `NCC-KIRA-3D-REFERENCE-PACK`
-4. Duo scene packs for `KIRA_ANDREY`
-5. Next character canon pack
+4. Next character canon pack
+5. Continue SQLite memory automation
 
 Forbidden:
 
