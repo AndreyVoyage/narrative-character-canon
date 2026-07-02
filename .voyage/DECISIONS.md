@@ -210,6 +210,22 @@ Tracked exports:
 Important:
 Do not commit `.sqlite`, `.sqlite3` or `.db` files. Use exports for ChatGPT/context handoff.
 
+## DECISION-0015 — Add Voyage SQLite record command
+
+Date: 2026-07-02
+
+Context:
+Voyage-lite SQLite memory was initialized, but future workflows needed an incremental way to record events, tasks, decisions, commits, characters, pairs and artifacts without rebuilding the DB.
+
+Decision:
+Add `tools/voyage_memory_record.py` as a local CLI for recording/updating structured memory facts.
+
+Result:
+Future workflows can record approved artifacts, rejected outputs, task changes, decisions and pair/character status changes directly into local SQLite memory, then export `.voyage` handoff files.
+
+Important:
+The SQLite DB remains local runtime memory and must not be committed. Only tools, docs and exports are tracked.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

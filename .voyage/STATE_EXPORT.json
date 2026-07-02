@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-02T22:37:58.552838+00:00",
+  "generated_at": "2026-07-02T22:55:31.515378+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -299,6 +299,15 @@
       "next_action": "Create local SQLite DB and exports",
       "notes": "Build structured local memory without committing DB file.",
       "updated_at": "2026-07-02T22:37:22.814279+00:00"
+    },
+    {
+      "task_id": "NCC-VOYAGE-SQLITE-RECORD-COMMAND",
+      "title": "Voyage SQLite record command",
+      "status": "DONE",
+      "current_stage": "RECORD_TOOL_ADDED",
+      "next_action": "Use record command after future workflow steps",
+      "notes": "Added structured memory record/update command.",
+      "updated_at": "2026-07-02T22:55:17.969367+00:00"
     }
   ],
   "decisions": [
@@ -333,6 +342,14 @@
       "summary": "Approved four KIRA + ANDREY joint control tests.",
       "commit_hash": "e6df873",
       "updated_at": "2026-07-02T22:37:22.823108+00:00"
+    },
+    {
+      "decision_id": "DECISION-0015",
+      "title": "Add Voyage SQLite record command",
+      "date": "2026-07-02",
+      "summary": "Added a local CLI command to record/update SQLite memory facts.",
+      "commit_hash": null,
+      "updated_at": "2026-07-02T22:55:20.336339+00:00"
     }
   ],
   "commits": [
@@ -371,6 +388,36 @@
       "payload_json": "{\"source\": \"voyage_memory_init.py\"}",
       "commit_hash": null,
       "created_at": "2026-07-02T22:37:22.864963+00:00"
+    },
+    {
+      "event_id": "EVT-20260702-225516-64c89716",
+      "event_type": "MEMORY_RECORD_TOOL_ADDED",
+      "subject_type": "tool",
+      "subject_id": "voyage_memory_record",
+      "summary": "Voyage memory record tool added",
+      "payload_json": "{}",
+      "commit_hash": null,
+      "created_at": "2026-07-02T22:55:16.308618+00:00"
+    },
+    {
+      "event_id": "EVT-20260702-225517-3caa40e8",
+      "event_type": "TASK_RECORDED",
+      "subject_type": "task",
+      "subject_id": "NCC-VOYAGE-SQLITE-RECORD-COMMAND",
+      "summary": "Task recorded/updated: Voyage SQLite record command",
+      "payload_json": "{\"status\": \"DONE\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-02T22:55:17.972878+00:00"
+    },
+    {
+      "event_id": "EVT-20260702-225520-250fd13a",
+      "event_type": "DECISION_RECORDED",
+      "subject_type": "decision",
+      "subject_id": "DECISION-0015",
+      "summary": "Decision recorded: Add Voyage SQLite record command",
+      "payload_json": "{\"date\": \"2026-07-02\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-02T22:55:20.339777+00:00"
     }
   ]
 }

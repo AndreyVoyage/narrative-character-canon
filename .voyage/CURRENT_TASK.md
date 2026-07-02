@@ -93,6 +93,23 @@ Voyage-lite structured memory is available for future character, pair, scene, 3D
 DB policy:
 SQLite DB is local runtime memory and must not be committed.
 
+## Completed — NCC-VOYAGE-SQLITE-RECORD-COMMAND
+
+Status: DONE / RECORD_COMMAND_READY (2026-07-02)
+
+Completed:
+
+* `tools/voyage_memory_record.py` created.
+* Record command supports `event`/`task`/`decision`/`commit`/`character`/`pair`/`artifact`.
+* Dry-run verified.
+* Test `MEMORY_RECORD_TOOL_ADDED` event recorded.
+* `NCC-VOYAGE-SQLITE-RECORD-COMMAND` task recorded.
+* `DECISION-0015` recorded in SQLite.
+* Memory exports regenerated.
+
+Result:
+Voyage-lite SQLite memory can now be updated incrementally after future workflows.
+
 ## Current — NEXT DIRECTION
 
 Status: PENDING DECISION
@@ -103,7 +120,7 @@ Next options:
 2. `NCC-ANDREY-3D-REFERENCE-PACK`
 3. `NCC-KIRA-3D-REFERENCE-PACK`
 4. Next character canon pack
-5. Continue SQLite memory automation
+5. Add higher-level memory automation helper
 
 Forbidden:
 

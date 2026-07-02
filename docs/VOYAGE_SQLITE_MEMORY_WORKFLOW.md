@@ -81,6 +81,64 @@ python .\tools\voyage_memory_export.py --repo-root . --db "C:\DEV\Narrative\LOCA
 * rejected/wrong-scene outputs must not be used as canon
 * Kira canon docs exist as `.md.txt`, not missing
 
+## Record/update command
+
+Tool:
+
+```text
+tools/voyage_memory_record.py
+```
+
+Purpose:
+
+Adds or updates structured facts in the local SQLite memory without recreating the DB.
+
+Supported commands:
+
+* `event`
+* `task`
+* `decision`
+* `commit`
+* `character`
+* `pair`
+* `artifact`
+
+Standard examples:
+
+Record event:
+
+```powershell
+python .\tools\voyage_memory_record.py --db "C:\DEV\Narrative\LOCAL_STORAGE\narrative-character-canon\voyage_memory\narrative_character_canon.sqlite" event --event-type ARTIFACT_APPROVED --subject-type artifact --subject-id EXAMPLE --summary "Example artifact approved"
+```
+
+Record task:
+
+```powershell
+python .\tools\voyage_memory_record.py --db "C:\DEV\Narrative\LOCAL_STORAGE\narrative-character-canon\voyage_memory\narrative_character_canon.sqlite" task --task-id TASK-ID --title "Task title" --status DONE --current-stage "STAGE" --next-action "Next action"
+```
+
+Record decision:
+
+```powershell
+python .\tools\voyage_memory_record.py --db "C:\DEV\Narrative\LOCAL_STORAGE\narrative-character-canon\voyage_memory\narrative_character_canon.sqlite" decision --decision-id DECISION-XXXX --title "Decision title" --date YYYY-MM-DD --summary "Decision summary"
+```
+
+Record artifact:
+
+```powershell
+python .\tools\voyage_memory_record.py --repo-root . --db "C:\DEV\Narrative\LOCAL_STORAGE\narrative-character-canon\voyage_memory\narrative_character_canon.sqlite" artifact --artifact-id ARTIFACT-ID --character-id KIRA --artifact-type solo_control_test --file-path "AI_CHARACTERS/..." --status APPROVED --verdict APPROVE --is-active-canon 1 --is-approved 1
+```
+
+After recording:
+
+Always run export:
+
+```powershell
+python .\tools\voyage_memory_export.py --repo-root . --db "C:\DEV\Narrative\LOCAL_STORAGE\narrative-character-canon\voyage_memory\narrative_character_canon.sqlite" --out-dir .\.voyage
+```
+
+Then commit tracked exports, not the SQLite DB.
+
 ## Workflow with ChatGPT
 
 1. Local agent updates SQLite.

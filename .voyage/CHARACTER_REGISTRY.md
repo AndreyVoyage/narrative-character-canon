@@ -22,3 +22,6 @@
 
 Enabled via local runtime DB and tracked exports.
 Use `.voyage/CONTEXT_SNAPSHOT.md` for compact ChatGPT handoff.
+
+Record command:
+`tools/voyage_memory_record.py` is available for incremental memory updates.
