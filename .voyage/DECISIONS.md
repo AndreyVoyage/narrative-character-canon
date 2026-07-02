@@ -131,6 +131,25 @@ NCC-KIRA-ANDREY-JOINT-CONTROL-TESTS becomes the current task. Andrey 3D referenc
 Important:
 The sauna scene remains an example unless explicitly requested as a real generation task.
 
+## DECISION-0012 — Fix Kira test result filename reference
+
+Date: 2026-07-02
+
+Context:
+Kira audit confirmed KIRA as CANON_READY_2D. Kira canon/test documents exist as tracked `.md.txt` files. One nonblocking inconsistency was found in `KIRA_TEST_RESULTS.md.txt`: TEST 3 referenced an outdated filename.
+
+Decision:
+Keep the existing `.md.txt` document names for now and fix only the outdated TEST 3 image filename reference.
+
+Change:
+Replaced `KIRA_test03_portrait_expression_v1_APPROVED.png` with `KIRA_test02_bar_romance_v1_APPROVED.png`.
+
+Result:
+`KIRA_TEST_RESULTS.md.txt` now matches the actual tracked approved image file used by `KIRA_REFERENCE_PRESETS.json`.
+
+Important:
+Do not rename Kira `.md.txt` notes to `.md` in this cleanup. Any naming convention migration should be a separate explicit task.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

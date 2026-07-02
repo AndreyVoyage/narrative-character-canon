@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-02 22:44:37
+2026-07-02 23:17:02
 
 ---
 
@@ -20,6 +20,7 @@ AI_CHARACTERS/
   ├── CHARACTER_REGISTRY.md
   ├── CURRENT_TASK.md
   ├── DECISIONS.md
+  ├── DECISIONS.md.backup_20260702_231625
   ├── LOCATION_REGISTRY.md
   ├── PROJECT_STATE.md
   ├── README.md
@@ -243,7 +244,8 @@ AI_CHARACTERS/
   │       ├── KIRA_CANON_INDEX.md.txt
   │       ├── KIRA_IDENTITY.txt.txt
   │       ├── KIRA_REFERENCE_PRESETS.json
-  │       └── KIRA_TEST_RESULTS.md.txt
+  │       ├── KIRA_TEST_RESULTS.md.txt
+  │       └── KIRA_TEST_RESULTS.md.txt.backup_20260702_231620
   ├── MAKSIM
   │   ├── 01_refs_raw
   │   │   └── .gitkeep
@@ -485,7 +487,7 @@ AI_CHARACTERS/
 
 # Total file count
 
-246
+248
 
 # File type summary
 
@@ -493,6 +495,8 @@ AI_CHARACTERS/
 |---|---:|
 | (no extension) | 151 |
 | .backup_20260630_085458 | 1 |
+| .backup_20260702_231620 | 1 |
+| .backup_20260702_231625 | 1 |
 | .jpg | 1 |
 | .json | 8 |
 | .md | 19 |
@@ -509,7 +513,8 @@ AI_CHARACTERS/
 | .gitignore | 54 | 2026-06-30 21:38:06 |
 | .voyage/CHARACTER_REGISTRY.md | 2433 | 2026-07-02 22:44:03 |
 | .voyage/CURRENT_TASK.md | 3726 | 2026-07-02 22:43:54 |
-| .voyage/DECISIONS.md | 9474 | 2026-07-02 22:44:16 |
+| .voyage/DECISIONS.md | 10284 | 2026-07-02 23:16:42 |
+| .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
@@ -641,7 +646,8 @@ AI_CHARACTERS/
 | AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10102 | 2026-06-29 22:14:06 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt | 13022 | 2026-06-29 18:47:46 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 4217 | 2026-07-02 08:22:17 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 2916 | 2026-06-30 06:18:16 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 2752 | 2026-07-02 23:16:33 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260702_231620 | 2916 | 2026-07-02 23:16:20 |
 | AI_CHARACTERS/MAKSIM/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -744,7 +750,7 @@ AI_CHARACTERS/
 | AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 263 | 2026-07-01 17:18:12 |
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
-| INVENTORY.md | 40695 | 2026-07-02 21:30:12 |
+| INVENTORY.md | 42148 | 2026-07-02 22:44:37 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |

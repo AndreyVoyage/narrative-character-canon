@@ -79,7 +79,7 @@ Folder:
 
 Files:
 
-KIRA_test03_portrait_expression_v1_APPROVED.png
+KIRA_test02_bar_romance_v1_APPROVED.png
 
 Result:
 
@@ -87,7 +87,7 @@ PASS
 
 Main selected file:
 
-KIRA_test03_portrait_expression_v1_APPROVED.png
+KIRA_test02_bar_romance_v1_APPROVED.png
 
 Notes:
 
