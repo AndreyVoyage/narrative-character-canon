@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-02 08:26:29
+2026-07-02 09:20:29
 
 ---
 
@@ -192,6 +192,7 @@ AI_CHARACTERS/
     - KIRA_CANON_INDEX.md.txt
     - KIRA_IDENTITY.txt.txt
     - KIRA_REFERENCE_PRESETS.json
+    - KIRA_REFERENCE_PRESETS.json.backup_20260702_082208
     - KIRA_TEST_RESULTS.md.txt
 - MAKSIM/
   - 01_refs_raw/
@@ -418,17 +419,19 @@ AI_CHARACTERS/
   - 10_notes/
     - .gitkeep
     - SERGEY_REFERENCE_PRESETS.json
+
 ```
 
 # Total file count
 
-203
+204
 
 # File type summary
 
 | Extension | Count |
 |---|---:|
 | .backup_20260630_085458 | 1 |
+| .backup_20260702_082208 | 1 |
 | .gitkeep | 139 |
 | .jpg | 1 |
 | .json | 8 |
@@ -542,6 +545,7 @@ AI_CHARACTERS/
 | AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10102 | 2026-06-29 22:14:06 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt | 13022 | 2026-06-29 18:47:46 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 4217 | 2026-07-02 08:22:17 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json.backup_20260702_082208 | 3564 | 2026-07-01 11:03:58 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 2916 | 2026-06-30 06:18:16 |
 | AI_CHARACTERS/MAKSIM/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |

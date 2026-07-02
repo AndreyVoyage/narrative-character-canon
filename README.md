@@ -32,3 +32,4 @@ Repository purpose:
 * [PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md](PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md) — текущий pipeline: слабый ноутбук + облачные сервисы.
 * [PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md](PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md) — будущий pipeline: мощный ПК + локальные нейросети + 3D/video/text production.
 * [docs/GITHUB_REFERENCE_PACK_WORKFLOW.md](docs/GITHUB_REFERENCE_PACK_WORKFLOW.md) — workflow and automation for GitHub-based scene reference pack generation.
+* [docs/VOYAGE_INTEGRATION_WORKFLOW.md](docs/VOYAGE_INTEGRATION_WORKFLOW.md) — Voyage-lite memory/control workflow for preserving project context.
