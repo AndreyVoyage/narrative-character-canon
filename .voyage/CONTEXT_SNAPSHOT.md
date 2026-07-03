@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-03T09:54:13.874275+00:00
+Generated at: 2026-07-03T12:59:56.820031+00:00
 
 Project: narrative-character-canon
 
@@ -12,6 +12,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 
 - KIRA: CANON_READY_2D, height 168 cm
 - ANDREY: CANON_READY_2D, height 180 cm
+- ANDREY_JUNIOR: CANON_PENDING, height 153 cm
 
 ## Pair statuses
 
@@ -42,6 +43,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - DECISION-0015 — Add Voyage SQLite record command
 - DECISION-0016 — Prepare Kira and Andrey duo scene packs
 - DECISION-0017 — Approve Kira and Andrey duo scene packs
+- DECISION-0018 — Start Andrey Junior canon workflow
 
 ## Recent commits
 

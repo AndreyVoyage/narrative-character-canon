@@ -168,6 +168,37 @@ Forbidden:
 * do not treat Kira heels as changing barefoot canon height;
 * do not include sauna unless explicitly requested.
 
+## Current — NCC-ANDREY-JUNIOR-CANON-SETUP
+
+Status: SETUP_DONE / GENERATION_PENDING
+
+Character:
+ANDREY_JUNIOR
+
+Completed:
+
+* ANDREY_JUNIOR folder structure created.
+* Identity draft created.
+* Canon index created.
+* Test result tracker created.
+* Reference presets JSON created.
+* Canon generation prompt pack created.
+* Planned solo control test folders created.
+* No images generated.
+
+Result:
+ANDREY_JUNIOR canon workflow is ready.
+
+Next:
+Generate ANDREY_JUNIOR FACE CANON SHEET only after explicit user request.
+
+Forbidden:
+
+* do not confuse ANDREY_JUNIOR with ANDREY Senior;
+* do not portray ANDREY_JUNIOR as minor/teen/child;
+* do not make him tall or bulky;
+* do not start Olga until ANDREY_JUNIOR base canon setup is committed.
+
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 
 Status: POSTPONED

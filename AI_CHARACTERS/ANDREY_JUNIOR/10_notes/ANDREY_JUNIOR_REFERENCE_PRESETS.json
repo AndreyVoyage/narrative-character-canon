@@ -1,0 +1,22 @@
+{
+  "character": "ANDREY_JUNIOR",
+  "version": "0.1.0",
+  "last_updated": "2026-07-03",
+  "status": "CANON_PENDING",
+  "root": "AI_CHARACTERS/ANDREY_JUNIOR",
+  "identity": {
+    "age_rule": "adult 20+",
+    "height_cm": 153,
+    "weight_kg": 53,
+    "build": "compact athletic swimmer/wrestler build",
+    "important": "Do not portray as child, teen or minor."
+  },
+  "scene_presets": {},
+  "rules": [
+    "No active canon refs yet.",
+    "Generate face canon first.",
+    "Do not confuse ANDREY_JUNIOR with ANDREY Senior.",
+    "Do not make him tall or bulky.",
+    "Do not make him childlike."
+  ]
+}

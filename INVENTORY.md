@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-03 12:55:39
+2026-07-03 16:00:11
 
 ---
 
@@ -16,12 +16,15 @@ Generated:
 ├── .voyage/
 │   ├── CHARACTER_REGISTRY.md
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_124946
+│   ├── CHARACTER_REGISTRY.md.backup_20260703_155641
 │   ├── CONTEXT_SNAPSHOT.md
 │   ├── CURRENT_TASK.md
 │   ├── CURRENT_TASK.md.backup_20260703_124946
+│   ├── CURRENT_TASK.md.backup_20260703_155641
 │   ├── DECISIONS.md
 │   ├── DECISIONS.md.backup_20260702_231625
 │   ├── DECISIONS.md.backup_20260703_124946
+│   ├── DECISIONS.md.backup_20260703_155641
 │   ├── EVENTS_EXPORT.jsonl
 │   ├── LOCATION_REGISTRY.md
 │   ├── PROJECT_STATE.md
@@ -169,6 +172,51 @@ Generated:
 │   │       ├── ANDREY_RAW_FILE_MAP.md
 │   │       ├── ANDREY_REFERENCE_PRESETS.json
 │   │       └── ANDREY_TEST_RESULTS.md
+│   ├── ANDREY_JUNIOR/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_refs_selected/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   ├── expressions/
+│   │   │   │   └── .gitkeep
+│   │   │   └── .gitkeep
+│   │   ├── 04_body_sheet/
+│   │   │   └── .gitkeep
+│   │   ├── 05_outfits/
+│   │   │   └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   ├── .gitkeep
+│   │   │   └── ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_neutral_studio_portrait/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 02_full_body_studio/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 03_athletic_gym_identity/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 04_casual_outfit/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 05_scale_compact_body_check/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── .gitkeep
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── rejected/
+│   │   │   │   └── .gitkeep
+│   │   │   └── .gitkeep
+│   │   ├── 08_video_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   ├── 10_notes/
+│   │   │   ├── .gitkeep
+│   │   │   ├── ANDREY_JUNIOR_CANON_INDEX.md
+│   │   │   ├── ANDREY_JUNIOR_IDENTITY_DRAFT.md
+│   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json
+│   │   │   └── ANDREY_JUNIOR_TEST_RESULTS.md
+│   │   └── .gitkeep
 │   ├── EGOR/
 │   │   ├── 01_refs_raw/
 │   │   │   └── .gitkeep
@@ -529,6 +577,7 @@ Generated:
 ├── AGENTS.md
 ├── INVENTORY.md
 ├── INVENTORY.md.backup_20260703_125505
+├── INVENTORY.md.backup_20260703_160011
 ├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
 ├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
 ├── README.md
@@ -537,26 +586,28 @@ Generated:
 
 # Total file count
 
-290
+319
 
 # File type summary
 
 | Extension | Count |
 |---|---:|
-| (no extension) | 159 |
+| (no extension) | 179 |
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
 | .backup_20260703_124946 | 7 |
 | .backup_20260703_125505 | 1 |
+| .backup_20260703_155641 | 3 |
+| .backup_20260703_160011 | 1 |
 | .jpg | 1 |
-| .json | 11 |
+| .json | 12 |
 | .jsonl | 1 |
-| .md | 25 |
+| .md | 28 |
 | .png | 57 |
 | .ps1 | 1 |
 | .py | 6 |
-| .txt | 18 |
+| .txt | 19 |
 
 # File list
 
@@ -564,21 +615,24 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 2956 | 2026-07-03 12:52:55 |
+| .voyage/CHARACTER_REGISTRY.md | 3142 | 2026-07-03 15:57:42 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
-| .voyage/CONTEXT_SNAPSHOT.md | 2415 | 2026-07-03 12:54:13 |
-| .voyage/CURRENT_TASK.md | 6572 | 2026-07-03 12:51:36 |
+| .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
+| .voyage/CONTEXT_SNAPSHOT.md | 2518 | 2026-07-03 15:59:56 |
+| .voyage/CURRENT_TASK.md | 7311 | 2026-07-03 15:57:30 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
-| .voyage/DECISIONS.md | 15978 | 2026-07-03 12:52:48 |
+| .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
+| .voyage/DECISIONS.md | 16517 | 2026-07-03 15:59:30 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
-| .voyage/EVENTS_EXPORT.jsonl | 6698 | 2026-07-03 12:54:13 |
+| .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
+| .voyage/EVENTS_EXPORT.jsonl | 7990 | 2026-07-03 15:59:56 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 772 | 2026-07-03 01:57:13 |
-| .voyage/STATE_EXPORT.json | 27119 | 2026-07-03 12:54:13 |
+| .voyage/STATE_EXPORT.json | 29820 | 2026-07-03 15:59:56 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
@@ -669,6 +723,31 @@ Generated:
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_RAW_FILE_MAP.md | 6599 | 2026-06-30 08:14:52 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 7232 | 2026-07-02 21:29:07 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md | 4739 | 2026-07-02 21:28:17 |
+| AI_CHARACTERS/ANDREY_JUNIOR/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/01_refs_raw/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/02_refs_selected/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/05_outfits/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt | 3933 | 2026-07-03 15:56:25 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/drafts/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/rejected/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/08_video_refs/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/09_blender/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_CANON_INDEX.md | 684 | 2026-07-03 15:55:49 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md | 1261 | 2026-07-03 15:55:44 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json | 602 | 2026-07-03 15:56:02 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md | 903 | 2026-07-03 15:55:56 |
 | AI_CHARACTERS/EGOR/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -839,8 +918,9 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 47598 | 2026-07-03 02:19:09 |
+| INVENTORY.md | 53201 | 2026-07-03 12:55:39 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
+| INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |

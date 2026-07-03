@@ -1,0 +1,99 @@
+# ANDREY_JUNIOR_CANON_GENERATION_PROMPTS
+
+Status:
+DRAFT / READY_FOR_REVIEW
+
+Important:
+These prompts do not authorize generation by themselves.
+Generation requires explicit user request.
+
+Character:
+ANDREY_JUNIOR
+
+Identity anchor:
+Adult compact young man, 20+ years old, 153 cm, 53 kg, compact athletic swimmer/wrestler build, lean defined muscles, small but fit frame, blue eyes, light blond hair, youthful adult face, clean-shaven or minimal facial hair.
+
+Do not:
+
+* do not portray as minor;
+* do not portray as teenager;
+* do not portray as child;
+* do not make him tall;
+* do not make him bulky;
+* do not make him bodybuilder;
+* do not make him look like ANDREY Senior;
+* do not make him broad-shouldered heroic male.
+
+---
+
+## FACE CANON SHEET PROMPT
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/
+
+Expected filename:
+ANDREY_JUNIOR_face_canon_v1_sheet_A.png
+
+Prompt:
+Photorealistic face canon sheet of ANDREY_JUNIOR, adult compact young man 20+ years old, youthful adult face, blue eyes, light blond hair, clean-shaven, small compact facial proportions, realistic skin texture, neutral grey studio background, soft even studio lighting. Multiple views: front, three-quarter, side profile, slight smile, neutral expression. He must look clearly adult 20+, not a child, not a teenager. Do not make him look like Andrey Senior. No text, no watermark, no collage labels.
+
+---
+
+## BODY CANON SHEET PROMPT
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/
+
+Expected filename:
+ANDREY_JUNIOR_body_canon_v1_sheet_A_front_side_back.png
+
+Prompt:
+Photorealistic full body canon sheet of ANDREY_JUNIOR, adult compact young man 20+ years old, 153 cm, 53 kg, compact athletic swimmer/wrestler build, small but fit frame, lean defined muscles, narrow compact shoulders, slim waist, proportionally lean arms and legs, not tall, not bulky, not bodybuilder. Neutral grey studio background, soft even lighting. Views: front, side, back, three-quarter. Wearing simple fitted athletic shorts and plain fitted sleeveless athletic top or fitted T-shirt. Clearly adult 20+, not a child, not a teenager. No text, no watermark.
+
+---
+
+## EXPRESSION SHEET PROMPT
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/
+
+Expected filename:
+ANDREY_JUNIOR_expressions_v1_sheet_A.png
+
+Prompt:
+Photorealistic expression sheet of ANDREY_JUNIOR, adult compact young man 20+ years old, youthful adult face, blue eyes, light blond hair, clean-shaven, compact facial structure. Expressions: neutral, slight smile, focused, determined, surprised, relaxed. Soft studio lighting, neutral background, consistent identity across all expressions. Clearly adult, not teen, not child. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 01 — Neutral studio portrait
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/
+
+Expected filename:
+ANDREY_JUNIOR_test01_neutral_studio_portrait_v1.png
+
+Prompt:
+Photorealistic neutral studio portrait of ANDREY_JUNIOR, adult compact young man 20+ years old, blue eyes, light blond hair, clean-shaven, compact youthful adult face, calm confident expression, neutral grey background, soft studio lighting. Clearly adult, not teen, not child. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 02 — Full body studio
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/
+
+Expected filename:
+ANDREY_JUNIOR_test02_full_body_studio_v1.png
+
+Prompt:
+Photorealistic full body studio image of ANDREY_JUNIOR, adult compact young man 20+ years old, 153 cm, 53 kg, compact athletic swimmer/wrestler build, lean defined body, small but fit frame, narrow compact shoulders, slim waist, not tall, not bulky, not bodybuilder. Wearing simple fitted athletic casual outfit. Neutral studio background, soft light. Clearly adult, not teen, not child. No text, no watermark.
+
+---
+
+Review verdicts:
+APPROVE
+APPROVE AS ALT
+HOLD
+REGENERATE
+REJECT

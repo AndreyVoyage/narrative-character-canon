@@ -281,6 +281,22 @@ KIRA_ANDREY pair becomes DUO_SCENE_PACKS_APPROVED and ready for future story/vis
 Important:
 Do not overwrite approved scene pack outputs. New variants must be saved as alternatives/candidates. Kira barefoot height remains 168 cm; Andrey remains 180 cm.
 
+## DECISION-0018 — Start Andrey Junior canon workflow
+
+Date: 2026-07-03
+
+Context:
+KIRA, ANDREY Senior and KIRA_ANDREY duo scene packs reached approved states. The next character workflow starts with ANDREY_JUNIOR.
+
+Decision:
+Create ANDREY_JUNIOR canon setup before any image generation.
+
+Result:
+ANDREY_JUNIOR becomes CANON_PENDING / SETUP_DONE. Face canon generation requires explicit user request.
+
+Important:
+ANDREY_JUNIOR must be treated as an adult compact young man 20+, 153 cm, 53 kg. Do not portray him as minor, teen or child.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02
