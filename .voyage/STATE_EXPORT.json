@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-02T23:18:50.325797+00:00",
+  "generated_at": "2026-07-03T09:54:13.874275+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -43,9 +43,9 @@
       "pair_id": "KIRA_ANDREY",
       "character_a": "KIRA",
       "character_b": "ANDREY",
-      "status": "JOINT_CONTROL_TESTS_APPROVED",
-      "notes": "Four approved joint control tests committed. Kira barefoot height remains 168 cm; heels may make apparent height 176-178 cm. Andrey remains 180 cm.",
-      "updated_at": "2026-07-02T22:37:22.805222+00:00"
+      "status": "JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED",
+      "notes": "Six approved duo scene packs committed.",
+      "updated_at": "2026-07-03T09:54:08.307920+00:00"
     }
   ],
   "artifacts": [
@@ -288,6 +288,96 @@
       "notes": "Kira test results in .md.txt form. Not missing, just .md.txt naming.",
       "commit_hash": null,
       "updated_at": "2026-07-02T22:37:22.862579+00:00"
+    },
+    {
+      "artifact_id": "KIRA_ANDREY_SCENE_PACK_01",
+      "character_id": null,
+      "pair_id": "KIRA_ANDREY",
+      "artifact_type": "duo_scene_pack",
+      "file_path": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved evening embankment walk scene pack.",
+      "commit_hash": "PENDING",
+      "updated_at": "2026-07-03T09:53:45.786770+00:00"
+    },
+    {
+      "artifact_id": "KIRA_ANDREY_SCENE_PACK_02",
+      "character_id": null,
+      "pair_id": "KIRA_ANDREY",
+      "artifact_type": "duo_scene_pack",
+      "file_path": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved warm bar dialogue scene pack.",
+      "commit_hash": "PENDING",
+      "updated_at": "2026-07-03T09:53:46.397725+00:00"
+    },
+    {
+      "artifact_id": "KIRA_ANDREY_SCENE_PACK_03",
+      "character_id": null,
+      "pair_id": "KIRA_ANDREY",
+      "artifact_type": "duo_scene_pack",
+      "file_path": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved yacht sunset scene pack.",
+      "commit_hash": "PENDING",
+      "updated_at": "2026-07-03T09:53:47.304356+00:00"
+    },
+    {
+      "artifact_id": "KIRA_ANDREY_SCENE_PACK_04",
+      "character_id": null,
+      "pair_id": "KIRA_ANDREY",
+      "artifact_type": "duo_scene_pack",
+      "file_path": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved studio character poster scene pack.",
+      "commit_hash": "PENDING",
+      "updated_at": "2026-07-03T09:53:47.960241+00:00"
+    },
+    {
+      "artifact_id": "KIRA_ANDREY_SCENE_PACK_05",
+      "character_id": null,
+      "pair_id": "KIRA_ANDREY",
+      "artifact_type": "duo_scene_pack",
+      "file_path": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved rainy city street scene pack.",
+      "commit_hash": "PENDING",
+      "updated_at": "2026-07-03T09:53:49.074659+00:00"
+    },
+    {
+      "artifact_id": "KIRA_ANDREY_SCENE_PACK_06",
+      "character_id": null,
+      "pair_id": "KIRA_ANDREY",
+      "artifact_type": "duo_scene_pack",
+      "file_path": "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved cozy interior conversation scene pack v4. v1/v2/v3 are not final canon.",
+      "commit_hash": "PENDING",
+      "updated_at": "2026-07-03T09:53:49.853041+00:00"
     }
   ],
   "tasks": [
@@ -312,11 +402,11 @@
     {
       "task_id": "NCC-KIRA-ANDREY-DUO-SCENE-PACKS",
       "title": "Kira Andrey duo scene packs",
-      "status": "SETUP_DONE",
-      "current_stage": "GENERATION_PENDING",
-      "next_action": "Generate SCENE PACK 01 after explicit user request",
-      "notes": "Created prompts, index, result tracker, JSON spec and folders for six KIRA_ANDREY duo scene packs.",
-      "updated_at": "2026-07-02T23:18:31.035901+00:00"
+      "status": "DONE",
+      "current_stage": "DUO_SCENE_PACKS_APPROVED",
+      "next_action": "Choose additional duo scene packs, body/wardrobe/context refs, 3D reference packs, or next character canon",
+      "notes": "Six KIRA_ANDREY duo scene packs approved and prepared for commit.",
+      "updated_at": "2026-07-03T09:53:50.659810+00:00"
     }
   ],
   "decisions": [
@@ -367,6 +457,14 @@
       "summary": "Prepared setup for six KIRA_ANDREY duo scene packs without generating images.",
       "commit_hash": null,
       "updated_at": "2026-07-02T23:18:35.478488+00:00"
+    },
+    {
+      "decision_id": "DECISION-0017",
+      "title": "Approve Kira and Andrey duo scene packs",
+      "date": "2026-07-02",
+      "summary": "Approved six KIRA_ANDREY duo scene pack outputs; SCENE PACK 06 final approved version is v4.",
+      "commit_hash": null,
+      "updated_at": "2026-07-03T09:53:51.459870+00:00"
     }
   ],
   "commits": [
@@ -465,6 +563,106 @@
       "payload_json": "{}",
       "commit_hash": null,
       "created_at": "2026-07-02T23:18:39.884116+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095345-447095f5",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "KIRA_ANDREY_SCENE_PACK_01",
+      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_01 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:53:45.794732+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095346-3af97e00",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "KIRA_ANDREY_SCENE_PACK_02",
+      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_02 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:53:46.402818+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095347-69635c84",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "KIRA_ANDREY_SCENE_PACK_03",
+      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_03 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:53:47.310234+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095347-c82eb4dc",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "KIRA_ANDREY_SCENE_PACK_04",
+      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_04 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:53:47.966300+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095349-41032a8a",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "KIRA_ANDREY_SCENE_PACK_05",
+      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_05 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:53:49.079403+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095349-722ee101",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "KIRA_ANDREY_SCENE_PACK_06",
+      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_06 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:53:49.857967+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095350-6580e726",
+      "event_type": "TASK_RECORDED",
+      "subject_type": "task",
+      "subject_id": "NCC-KIRA-ANDREY-DUO-SCENE-PACKS",
+      "summary": "Task recorded/updated: Kira Andrey duo scene packs",
+      "payload_json": "{\"status\": \"DONE\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-03T09:53:50.664886+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095351-a14ffa0e",
+      "event_type": "DECISION_RECORDED",
+      "subject_type": "decision",
+      "subject_id": "DECISION-0017",
+      "summary": "Decision recorded: Approve Kira and Andrey duo scene packs",
+      "payload_json": "{\"date\": \"2026-07-02\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-03T09:53:51.465843+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095352-d7ca7e1f",
+      "event_type": "DUO_SCENE_PACKS_APPROVED",
+      "subject_type": "pair",
+      "subject_id": "KIRA_ANDREY",
+      "summary": "Six KIRA_ANDREY duo scene packs approved",
+      "payload_json": "{}",
+      "commit_hash": null,
+      "created_at": "2026-07-03T09:53:52.110408+00:00"
+    },
+    {
+      "event_id": "EVT-20260703-095408-906e25b2",
+      "event_type": "PAIR_STATUS_RECORDED",
+      "subject_type": "pair",
+      "subject_id": "KIRA_ANDREY",
+      "summary": "Pair recorded/updated: KIRA_ANDREY -> JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED",
+      "payload_json": "{\"status\": \"JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED\"}",
+      "commit_hash": "PENDING",
+      "created_at": "2026-07-03T09:54:08.312786+00:00"
     }
   ]
 }

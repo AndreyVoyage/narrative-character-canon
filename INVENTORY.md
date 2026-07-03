@@ -6,525 +6,538 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-03 02:19:09
+2026-07-03 12:55:39
 
 ---
 
 # Folder and file tree
 
 ```text
-AI_CHARACTERS/
-- .gitattributes/
-- .gitignore/
-- .voyage/
-  ├── CHARACTER_REGISTRY.md
-  ├── CONTEXT_SNAPSHOT.md
-  ├── CURRENT_TASK.md
-  ├── DECISIONS.md
-  ├── DECISIONS.md.backup_20260702_231625
-  ├── EVENTS_EXPORT.jsonl
-  ├── LOCATION_REGISTRY.md
-  ├── PROJECT_STATE.md
-  ├── README.md
-  ├── SCENE_REQUEST_RULES.md
-  ├── SQLITE_MEMORY_STATUS.md
-  └── STATE_EXPORT.json
-- AGENTS.md/
-- AI_CHARACTERS/
-  ├── _JOINT_SCENES
-  │   └── KIRA_ANDREY
-  │       ├── 06_prompts
-  │       │   └── KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt
-  │       ├── 07_generated
-  │       │   ├── canon_tests
-  │       │   │   ├── 01_neutral_studio_duo
-  │       │   │   │   ├── .gitkeep
-  │       │   │   │   └── KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png
-  │       │   │   ├── 02_evening_embankment_duo
-  │       │   │   │   ├── .gitkeep
-  │       │   │   │   └── KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png
-  │       │   │   ├── 03_warm_bar_conversation
-  │       │   │   │   ├── .gitkeep
-  │       │   │   │   └── KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png
-  │       │   │   └── 04_sea_yacht_mood_duo
-  │       │   │       ├── .gitkeep
-  │       │   │       └── KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png
-  │       │   └── scene_packs
-  │       │       ├── 01_evening_embankment_walk
-  │       │       │   └── .gitkeep
-  │       │       ├── 02_warm_bar_dialogue
-  │       │       │   └── .gitkeep
-  │       │       ├── 03_yacht_sunset
-  │       │       │   └── .gitkeep
-  │       │       ├── 04_studio_character_poster
-  │       │       │   └── .gitkeep
-  │       │       ├── 05_rainy_city_street
-  │       │       │   └── .gitkeep
-  │       │       ├── 06_cozy_interior_conversation
-  │       │       │   └── .gitkeep
-  │       │       ├── candidates
-  │       │       │   └── .gitkeep
-  │       │       └── rejected
-  │       │           └── .gitkeep
-  │       └── 10_notes
-  │           ├── KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md
-  │           ├── KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md
-  │           ├── KIRA_ANDREY_DUO_SCENE_PACKS.json
-  │           ├── KIRA_ANDREY_JOINT_CANON_INDEX.md
-  │           ├── KIRA_ANDREY_JOINT_TEST_RESULTS.md
-  │           └── KIRA_ANDREY_REFERENCE_PRESETS.json
-  ├── ANDREY
-  │   ├── 01_refs_raw
-  │   │   ├── ANDREY_RAW_01_face_closeup_blue_shirt.png
-  │   │   ├── ANDREY_RAW_02_yacht_sunset_blue_shirt.png
-  │   │   ├── ANDREY_RAW_03_fullbody_studio_blue_shirt.png
-  │   │   ├── ANDREY_RAW_04_bar_portrait_blue_shirt.png
-  │   │   ├── ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
-  │   │   ├── ANDREY_RAW_06_formal_suit_walking.png
-  │   │   ├── ANDREY_RAW_07_formal_suit_standing.png
-  │   │   ├── ANDREY_RAW_08_expressions_sheet_A.png
-  │   │   ├── ANDREY_RAW_09_expressions_sheet_B.png
-  │   │   ├── ANDREY_RAW_10_sports_gym_black.png
-  │   │   ├── ANDREY_RAW_11_body_identity_sheet_blue_shirt.png
-  │   │   └── ANDREY_RAW_12_kling_face_closeup_REFERENCE_ONLY.jpg
-  │   ├── 02_best_refs
-  │   │   └── ANDREY_best_main_identity_sheet_v1.png.png
-  │   ├── 03_face_sheet
-  │   │   ├── ANDREY_face_canon_v1_sheet_A_basic.png
-  │   │   ├── ANDREY_face_canon_v1_sheet_B_angles.png
-  │   │   └── expressions
-  │   │       └── ANDREY_expressions_v1_sheet_C_refined.png
-  │   ├── 04_body_sheet
-  │   │   ├── ANDREY_body_canon_v1_sheet_A_front_side_back.png
-  │   │   ├── ANDREY_body_canon_v1_sheet_B_pose_variations.png
-  │   │   └── candidates
-  │   │       └── .gitkeep
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   └── .gitkeep
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       └── .gitkeep
-  │   ├── 06_prompts
-  │   │   ├── ANDREY_BODY_CANON_NEGATIVE_PROMPT.txt
-  │   │   ├── ANDREY_BODY_CANON_PROMPT.txt
-  │   │   ├── ANDREY_CONTROL_TEST_PROMPTS.txt
-  │   │   ├── ANDREY_FACE_CANON_NEGATIVE_PROMPT.txt
-  │   │   ├── ANDREY_FACE_CANON_PROMPT.txt
-  │   │   └── ANDREY_KIRA_JOINT_CONTROL_TEST_PROMPTS.txt
-  │   ├── 07_generated
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 01_neutral_studio_portrait
-  │   │   │   │   ├── .gitkeep
-  │   │   │   │   └── ANDREY_test01_neutral_studio_portrait_v1.png
-  │   │   │   ├── 02_full_body_blue_shirt
-  │   │   │   │   ├── .gitkeep
-  │   │   │   │   └── ANDREY_test02_full_body_blue_shirt_studio_v1.png
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 03_portrait_expression
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 03_warm_bar_portrait
-  │   │   │   │   ├── .gitkeep
-  │   │   │   │   └── ANDREY_test03_warm_bar_portrait_v1.png
-  │   │   │   ├── 04_formal_evening_look
-  │   │   │   │   ├── .gitkeep
-  │   │   │   │   └── ANDREY_test04_formal_evening_look_v1.png
-  │   │   │   ├── 05_sports_gym_identity
-  │   │   │   │   ├── .gitkeep
-  │   │   │   │   └── ANDREY_test05_sports_gym_identity_v1.png
-  │   │   │   └── 06_sea_yacht_mood
-  │   │   │       ├── .gitkeep
-  │   │   │       └── ANDREY_test06_sea_yacht_mood_scene_v1.png
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── ANDREY_CANON_INDEX.md
-  │       ├── ANDREY_CANON_INDEX.md.backup_20260630_085458
-  │       ├── ANDREY_IDENTITY.txt
-  │       ├── ANDREY_RAW_FILE_MAP.md
-  │       ├── ANDREY_REFERENCE_PRESETS.json
-  │       └── ANDREY_TEST_RESULTS.md
-  ├── EGOR
-  │   ├── 01_refs_raw
-  │   │   └── .gitkeep
-  │   ├── 02_best_refs
-  │   │   └── .gitkeep
-  │   ├── 03_face_sheet
-  │   │   └── expressions
-  │   │       └── .gitkeep
-  │   ├── 04_body_sheet
-  │   │   └── candidates
-  │   │       └── .gitkeep
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   └── .gitkeep
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       └── .gitkeep
-  │   ├── 06_prompts
-  │   │   └── .gitkeep
-  │   ├── 07_generated
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   └── .gitkeep
-  │   │   │   └── 03_portrait_expression
-  │   │   │       └── .gitkeep
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── .gitkeep
-  │       └── EGOR_REFERENCE_PRESETS.json
-  ├── KIRA
-  │   ├── 01_refs_raw
-  │   │   └── .gitkeep
-  │   ├── 02_best_refs
-  │   │   └── .gitkeep
-  │   ├── 03_face_sheet
-  │   │   ├── expressions
-  │   │   │   ├── KIRA_expressions_v1_sheet_A_emotional.png
-  │   │   │   └── KIRA_expressions_v1_sheet_B_emotional.png
-  │   │   ├── KIRA_face_canon_sheet_A.png
-  │   │   └── KIRA_face_canon_sheet_B.png
-  │   ├── 04_body_sheet
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── KIRA_BODY_CANON_v4_sheet_A_4views.png
-  │   │   └── KIRA_BODY_CANON_v4_sheet_B_4views.png
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   ├── candidates
-  │   │   │   │   ├── KIRA_evening_dress_v2_sheet_A_fullbody_4plus_candidate.png
-  │   │   │   │   └── KIRA_evening_dress_v2_sheet_B_portraits_4plus_candidate.png
-  │   │   │   ├── KIRA_evening_dress_FINAL_sheet_A_fullbody.png
-  │   │   │   ├── KIRA_evening_dress_FINAL_sheet_B_portraits.png
-  │   │   │   ├── KIRA_evening_dress_v1_sheet_A_fullbody.png
-  │   │   │   └── KIRA_evening_dress_v1_sheet_B_fullbody.png
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       ├── KIRA_sports_look_v1_sheet_A_front_side_back.png
-  │   │       └── KIRA_sports_look_v1_sheet_B_3q_action_portrait.png
-  │   ├── 06_prompts
-  │   │   ├── create_kira_prompt_kit.ps1.txt
-  │   │   ├── KIRA_BASE_PROMPT.txt
-  │   │   ├── KIRA_EVENING_SCENE_PROMPT.txt
-  │   │   ├── KIRA_NEGATIVE_PROMPT.txt
-  │   │   └── KIRA_SPORTS_SCENE_PROMPT.txt
-  │   ├── 07_generated
-  │   │   ├── 317946af-4d80-4e9a-8b97-c469551e0235.png
-  │   │   ├── 9f28dfea-0aaa-4dee-831a-0a18004e2a7e.png
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   ├── KIRA_test01_evening_embankment_v1.png
-  │   │   │   │   ├── KIRA_test01_evening_embankment_v2_MAIN.png
-  │   │   │   │   └── KIRA_test01_evening_embankment_v3_ALT_cinematic.png
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   ├── KIRA_test02_sports_yoga_v1.png
-  │   │   │   │   ├── KIRA_test02_sports_yoga_v2_MAIN.png
-  │   │   │   │   └── KIRA_test02_sports_yoga_v3_ALT_stretch.png
-  │   │   │   └── 03_portrait_expression
-  │   │   │       └── KIRA_test02_bar_romance_v1_APPROVED.png
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   ├── f7d3091b-c9ce-4ccc-878a-596980ce5231.png
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── KIRA_APPROVAL_CRITERIA.md.txt
-  │       ├── KIRA_APPROVAL_CRITERIA_ENG.md.txt
-  │       ├── KIRA_CANON_INDEX.md.txt
-  │       ├── KIRA_IDENTITY.txt.txt
-  │       ├── KIRA_REFERENCE_PRESETS.json
-  │       ├── KIRA_TEST_RESULTS.md.txt
-  │       └── KIRA_TEST_RESULTS.md.txt.backup_20260702_231620
-  ├── MAKSIM
-  │   ├── 01_refs_raw
-  │   │   └── .gitkeep
-  │   ├── 02_best_refs
-  │   │   └── .gitkeep
-  │   ├── 03_face_sheet
-  │   │   └── expressions
-  │   │       └── .gitkeep
-  │   ├── 04_body_sheet
-  │   │   └── candidates
-  │   │       └── .gitkeep
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   └── .gitkeep
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       └── .gitkeep
-  │   ├── 06_prompts
-  │   │   └── .gitkeep
-  │   ├── 07_generated
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   └── .gitkeep
-  │   │   │   └── 03_portrait_expression
-  │   │   │       └── .gitkeep
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── .gitkeep
-  │       └── MAKSIM_REFERENCE_PRESETS.json
-  ├── MARINA
-  │   ├── 01_refs_raw
-  │   │   └── .gitkeep
-  │   ├── 02_best_refs
-  │   │   └── .gitkeep
-  │   ├── 03_face_sheet
-  │   │   └── expressions
-  │   │       └── .gitkeep
-  │   ├── 04_body_sheet
-  │   │   └── candidates
-  │   │       └── .gitkeep
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   └── .gitkeep
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       └── .gitkeep
-  │   ├── 06_prompts
-  │   │   └── .gitkeep
-  │   ├── 07_generated
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   └── .gitkeep
-  │   │   │   └── 03_portrait_expression
-  │   │   │       └── .gitkeep
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── .gitkeep
-  │       └── MARINA_REFERENCE_PRESETS.json
-  ├── NIKA
-  │   ├── 01_refs_raw
-  │   │   └── .gitkeep
-  │   ├── 02_best_refs
-  │   │   └── .gitkeep
-  │   ├── 03_face_sheet
-  │   │   └── expressions
-  │   │       └── .gitkeep
-  │   ├── 04_body_sheet
-  │   │   └── candidates
-  │   │       └── .gitkeep
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   └── .gitkeep
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       └── .gitkeep
-  │   ├── 06_prompts
-  │   │   └── .gitkeep
-  │   ├── 07_generated
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   └── .gitkeep
-  │   │   │   └── 03_portrait_expression
-  │   │   │       └── .gitkeep
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── .gitkeep
-  │       └── NIKA_REFERENCE_PRESETS.json
-  ├── OLGA
-  │   ├── 01_refs_raw
-  │   │   └── .gitkeep
-  │   ├── 02_best_refs
-  │   │   └── .gitkeep
-  │   ├── 03_face_sheet
-  │   │   └── expressions
-  │   │       └── .gitkeep
-  │   ├── 04_body_sheet
-  │   │   └── candidates
-  │   │       └── .gitkeep
-  │   ├── 05_outfits
-  │   │   ├── candidates
-  │   │   │   └── .gitkeep
-  │   │   ├── casual
-  │   │   │   └── .gitkeep
-  │   │   ├── evening_dress
-  │   │   │   └── .gitkeep
-  │   │   ├── formal
-  │   │   │   └── .gitkeep
-  │   │   ├── scene_outfits
-  │   │   │   └── .gitkeep
-  │   │   └── sports_look
-  │   │       └── .gitkeep
-  │   ├── 06_prompts
-  │   │   └── .gitkeep
-  │   ├── 07_generated
-  │   │   ├── canon_tests
-  │   │   │   ├── 01_evening_embankment
-  │   │   │   │   └── .gitkeep
-  │   │   │   ├── 02_sports_yoga
-  │   │   │   │   └── .gitkeep
-  │   │   │   └── 03_portrait_expression
-  │   │   │       └── .gitkeep
-  │   │   ├── drafts
-  │   │   │   └── .gitkeep
-  │   │   └── rejected
-  │   │       └── .gitkeep
-  │   ├── 08_masks
-  │   │   └── .gitkeep
-  │   ├── 09_blender
-  │   │   └── .gitkeep
-  │   └── 10_notes
-  │       ├── .gitkeep
-  │       └── OLGA_REFERENCE_PRESETS.json
-  └── SERGEY
-      ├── 01_refs_raw
-      │   └── .gitkeep
-      ├── 02_best_refs
-      │   └── .gitkeep
-      ├── 03_face_sheet
-      │   └── expressions
-      │       └── .gitkeep
-      ├── 04_body_sheet
-      │   └── candidates
-      │       └── .gitkeep
-      ├── 05_outfits
-      │   ├── candidates
-      │   │   └── .gitkeep
-      │   ├── casual
-      │   │   └── .gitkeep
-      │   ├── evening_dress
-      │   │   └── .gitkeep
-      │   ├── formal
-      │   │   └── .gitkeep
-      │   ├── scene_outfits
-      │   │   └── .gitkeep
-      │   └── sports_look
-      │       └── .gitkeep
-      ├── 06_prompts
-      │   └── .gitkeep
-      ├── 07_generated
-      │   ├── canon_tests
-      │   │   ├── 01_evening_embankment
-      │   │   │   └── .gitkeep
-      │   │   ├── 02_sports_yoga
-      │   │   │   └── .gitkeep
-      │   │   └── 03_portrait_expression
-      │   │       └── .gitkeep
-      │   ├── drafts
-      │   │   └── .gitkeep
-      │   └── rejected
-      │       └── .gitkeep
-      ├── 08_masks
-      │   └── .gitkeep
-      ├── 09_blender
-      │   └── .gitkeep
-      └── 10_notes
-          ├── .gitkeep
-          └── SERGEY_REFERENCE_PRESETS.json
-- docs/
-  ├── GITHUB_REFERENCE_PACK_WORKFLOW.md
-  ├── VOYAGE_INTEGRATION_WORKFLOW.md
-  └── VOYAGE_SQLITE_MEMORY_WORKFLOW.md
-- INVENTORY.md/
-- PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md/
-- PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md/
-- README.md/
-- ROADMAP.md/
-- tools/
-  ├── build_scene_reference_pack.ps1
-  ├── build_scene_reference_pack.py
-  ├── voyage_memory_export.py
-  ├── voyage_memory_init.py
-  ├── voyage_memory_record.py
-  └── voyage_memory_status.py
-
+├── .voyage/
+│   ├── CHARACTER_REGISTRY.md
+│   ├── CHARACTER_REGISTRY.md.backup_20260703_124946
+│   ├── CONTEXT_SNAPSHOT.md
+│   ├── CURRENT_TASK.md
+│   ├── CURRENT_TASK.md.backup_20260703_124946
+│   ├── DECISIONS.md
+│   ├── DECISIONS.md.backup_20260702_231625
+│   ├── DECISIONS.md.backup_20260703_124946
+│   ├── EVENTS_EXPORT.jsonl
+│   ├── LOCATION_REGISTRY.md
+│   ├── PROJECT_STATE.md
+│   ├── README.md
+│   ├── SCENE_REQUEST_RULES.md
+│   ├── SQLITE_MEMORY_STATUS.md
+│   └── STATE_EXPORT.json
+├── AI_CHARACTERS/
+│   ├── _JOINT_SCENES/
+│   │   └── KIRA_ANDREY/
+│   │       ├── 06_prompts/
+│   │       │   └── KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt
+│   │       ├── 07_generated/
+│   │       │   ├── canon_tests/
+│   │       │   │   ├── 01_neutral_studio_duo/
+│   │       │   │   │   ├── .gitkeep
+│   │       │   │   │   └── KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png
+│   │       │   │   ├── 02_evening_embankment_duo/
+│   │       │   │   │   ├── .gitkeep
+│   │       │   │   │   └── KIRA_ANDREY_joint_test02_evening_embankment_duo_v1_APPROVED.png
+│   │       │   │   ├── 03_warm_bar_conversation/
+│   │       │   │   │   ├── .gitkeep
+│   │       │   │   │   └── KIRA_ANDREY_joint_test03_warm_bar_conversation_v1_APPROVED.png
+│   │       │   │   └── 04_sea_yacht_mood_duo/
+│   │       │   │       ├── .gitkeep
+│   │       │   │       └── KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png
+│   │       │   └── scene_packs/
+│   │       │       ├── 01_evening_embankment_walk/
+│   │       │       │   ├── .gitkeep
+│   │       │       │   └── KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png
+│   │       │       ├── 02_warm_bar_dialogue/
+│   │       │       │   ├── .gitkeep
+│   │       │       │   └── KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png
+│   │       │       ├── 03_yacht_sunset/
+│   │       │       │   ├── .gitkeep
+│   │       │       │   └── KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png
+│   │       │       ├── 04_studio_character_poster/
+│   │       │       │   ├── .gitkeep
+│   │       │       │   └── KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png
+│   │       │       ├── 05_rainy_city_street/
+│   │       │       │   ├── .gitkeep
+│   │       │       │   └── KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png
+│   │       │       ├── 06_cozy_interior_conversation/
+│   │       │       │   ├── .gitkeep
+│   │       │       │   └── KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png
+│   │       │       ├── candidates/
+│   │       │       │   └── .gitkeep
+│   │       │       └── rejected/
+│   │       │           └── .gitkeep
+│   │       └── 10_notes/
+│   │           ├── KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md
+│   │           ├── KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md.backup_20260703_124946
+│   │           ├── KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md
+│   │           ├── KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md.backup_20260703_124946
+│   │           ├── KIRA_ANDREY_DUO_SCENE_PACKS.json
+│   │           ├── KIRA_ANDREY_DUO_SCENE_PACKS.json.backup_20260703_124946
+│   │           ├── KIRA_ANDREY_JOINT_CANON_INDEX.md
+│   │           ├── KIRA_ANDREY_JOINT_TEST_RESULTS.md
+│   │           ├── KIRA_ANDREY_REFERENCE_PRESETS.json
+│   │           └── KIRA_ANDREY_REFERENCE_PRESETS.json.backup_20260703_124946
+│   ├── ANDREY/
+│   │   ├── 01_refs_raw/
+│   │   │   ├── ANDREY_RAW_01_face_closeup_blue_shirt.png
+│   │   │   ├── ANDREY_RAW_02_yacht_sunset_blue_shirt.png
+│   │   │   ├── ANDREY_RAW_03_fullbody_studio_blue_shirt.png
+│   │   │   ├── ANDREY_RAW_04_bar_portrait_blue_shirt.png
+│   │   │   ├── ANDREY_RAW_05_main_identity_sheet_blue_shirt.png
+│   │   │   ├── ANDREY_RAW_06_formal_suit_walking.png
+│   │   │   ├── ANDREY_RAW_07_formal_suit_standing.png
+│   │   │   ├── ANDREY_RAW_08_expressions_sheet_A.png
+│   │   │   ├── ANDREY_RAW_09_expressions_sheet_B.png
+│   │   │   ├── ANDREY_RAW_10_sports_gym_black.png
+│   │   │   ├── ANDREY_RAW_11_body_identity_sheet_blue_shirt.png
+│   │   │   └── ANDREY_RAW_12_kling_face_closeup_REFERENCE_ONLY.jpg
+│   │   ├── 02_best_refs/
+│   │   │   └── ANDREY_best_main_identity_sheet_v1.png.png
+│   │   ├── 03_face_sheet/
+│   │   │   ├── expressions/
+│   │   │   │   └── ANDREY_expressions_v1_sheet_C_refined.png
+│   │   │   ├── ANDREY_face_canon_v1_sheet_A_basic.png
+│   │   │   └── ANDREY_face_canon_v1_sheet_B_angles.png
+│   │   ├── 04_body_sheet/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── ANDREY_body_canon_v1_sheet_A_front_side_back.png
+│   │   │   └── ANDREY_body_canon_v1_sheet_B_pose_variations.png
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   ├── ANDREY_BODY_CANON_NEGATIVE_PROMPT.txt
+│   │   │   ├── ANDREY_BODY_CANON_PROMPT.txt
+│   │   │   ├── ANDREY_CONTROL_TEST_PROMPTS.txt
+│   │   │   ├── ANDREY_FACE_CANON_NEGATIVE_PROMPT.txt
+│   │   │   ├── ANDREY_FACE_CANON_PROMPT.txt
+│   │   │   └── ANDREY_KIRA_JOINT_CONTROL_TEST_PROMPTS.txt
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 01_neutral_studio_portrait/
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_test01_neutral_studio_portrait_v1.png
+│   │   │   │   ├── 02_full_body_blue_shirt/
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_test02_full_body_blue_shirt_studio_v1.png
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 03_portrait_expression/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 03_warm_bar_portrait/
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_test03_warm_bar_portrait_v1.png
+│   │   │   │   ├── 04_formal_evening_look/
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_test04_formal_evening_look_v1.png
+│   │   │   │   ├── 05_sports_gym_identity/
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_test05_sports_gym_identity_v1.png
+│   │   │   │   └── 06_sea_yacht_mood/
+│   │   │   │       ├── .gitkeep
+│   │   │   │       └── ANDREY_test06_sea_yacht_mood_scene_v1.png
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   └── rejected/
+│   │   │       └── .gitkeep
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── ANDREY_CANON_INDEX.md
+│   │       ├── ANDREY_CANON_INDEX.md.backup_20260630_085458
+│   │       ├── ANDREY_IDENTITY.txt
+│   │       ├── ANDREY_RAW_FILE_MAP.md
+│   │       ├── ANDREY_REFERENCE_PRESETS.json
+│   │       └── ANDREY_TEST_RESULTS.md
+│   ├── EGOR/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_best_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   └── expressions/
+│   │   │       └── .gitkeep
+│   │   ├── 04_body_sheet/
+│   │   │   └── candidates/
+│   │   │       └── .gitkeep
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   └── .gitkeep
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── 03_portrait_expression/
+│   │   │   │       └── .gitkeep
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   └── rejected/
+│   │   │       └── .gitkeep
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── .gitkeep
+│   │       └── EGOR_REFERENCE_PRESETS.json
+│   ├── KIRA/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_best_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   ├── expressions/
+│   │   │   │   ├── KIRA_expressions_v1_sheet_A_emotional.png
+│   │   │   │   └── KIRA_expressions_v1_sheet_B_emotional.png
+│   │   │   ├── KIRA_face_canon_sheet_A.png
+│   │   │   └── KIRA_face_canon_sheet_B.png
+│   │   ├── 04_body_sheet/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── KIRA_BODY_CANON_v4_sheet_A_4views.png
+│   │   │   └── KIRA_BODY_CANON_v4_sheet_B_4views.png
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   ├── candidates/
+│   │   │   │   │   ├── KIRA_evening_dress_v2_sheet_A_fullbody_4plus_candidate.png
+│   │   │   │   │   └── KIRA_evening_dress_v2_sheet_B_portraits_4plus_candidate.png
+│   │   │   │   ├── KIRA_evening_dress_FINAL_sheet_A_fullbody.png
+│   │   │   │   ├── KIRA_evening_dress_FINAL_sheet_B_portraits.png
+│   │   │   │   ├── KIRA_evening_dress_v1_sheet_A_fullbody.png
+│   │   │   │   └── KIRA_evening_dress_v1_sheet_B_fullbody.png
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       ├── KIRA_sports_look_v1_sheet_A_front_side_back.png
+│   │   │       └── KIRA_sports_look_v1_sheet_B_3q_action_portrait.png
+│   │   ├── 06_prompts/
+│   │   │   ├── create_kira_prompt_kit.ps1.txt
+│   │   │   ├── KIRA_BASE_PROMPT.txt
+│   │   │   ├── KIRA_EVENING_SCENE_PROMPT.txt
+│   │   │   ├── KIRA_NEGATIVE_PROMPT.txt
+│   │   │   └── KIRA_SPORTS_SCENE_PROMPT.txt
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   ├── KIRA_test01_evening_embankment_v1.png
+│   │   │   │   │   ├── KIRA_test01_evening_embankment_v2_MAIN.png
+│   │   │   │   │   └── KIRA_test01_evening_embankment_v3_ALT_cinematic.png
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   ├── KIRA_test02_sports_yoga_v1.png
+│   │   │   │   │   ├── KIRA_test02_sports_yoga_v2_MAIN.png
+│   │   │   │   │   └── KIRA_test02_sports_yoga_v3_ALT_stretch.png
+│   │   │   │   └── 03_portrait_expression/
+│   │   │   │       └── KIRA_test02_bar_romance_v1_APPROVED.png
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── rejected/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── 317946af-4d80-4e9a-8b97-c469551e0235.png
+│   │   │   ├── 9f28dfea-0aaa-4dee-831a-0a18004e2a7e.png
+│   │   │   └── f7d3091b-c9ce-4ccc-878a-596980ce5231.png
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── KIRA_APPROVAL_CRITERIA.md.txt
+│   │       ├── KIRA_APPROVAL_CRITERIA_ENG.md.txt
+│   │       ├── KIRA_CANON_INDEX.md.txt
+│   │       ├── KIRA_IDENTITY.txt.txt
+│   │       ├── KIRA_REFERENCE_PRESETS.json
+│   │       ├── KIRA_TEST_RESULTS.md.txt
+│   │       └── KIRA_TEST_RESULTS.md.txt.backup_20260702_231620
+│   ├── MAKSIM/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_best_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   └── expressions/
+│   │   │       └── .gitkeep
+│   │   ├── 04_body_sheet/
+│   │   │   └── candidates/
+│   │   │       └── .gitkeep
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   └── .gitkeep
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── 03_portrait_expression/
+│   │   │   │       └── .gitkeep
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   └── rejected/
+│   │   │       └── .gitkeep
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── .gitkeep
+│   │       └── MAKSIM_REFERENCE_PRESETS.json
+│   ├── MARINA/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_best_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   └── expressions/
+│   │   │       └── .gitkeep
+│   │   ├── 04_body_sheet/
+│   │   │   └── candidates/
+│   │   │       └── .gitkeep
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   └── .gitkeep
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── 03_portrait_expression/
+│   │   │   │       └── .gitkeep
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   └── rejected/
+│   │   │       └── .gitkeep
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── .gitkeep
+│   │       └── MARINA_REFERENCE_PRESETS.json
+│   ├── NIKA/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_best_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   └── expressions/
+│   │   │       └── .gitkeep
+│   │   ├── 04_body_sheet/
+│   │   │   └── candidates/
+│   │   │       └── .gitkeep
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   └── .gitkeep
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── 03_portrait_expression/
+│   │   │   │       └── .gitkeep
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   └── rejected/
+│   │   │       └── .gitkeep
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── .gitkeep
+│   │       └── NIKA_REFERENCE_PRESETS.json
+│   ├── OLGA/
+│   │   ├── 01_refs_raw/
+│   │   │   └── .gitkeep
+│   │   ├── 02_best_refs/
+│   │   │   └── .gitkeep
+│   │   ├── 03_face_sheet/
+│   │   │   └── expressions/
+│   │   │       └── .gitkeep
+│   │   ├── 04_body_sheet/
+│   │   │   └── candidates/
+│   │   │       └── .gitkeep
+│   │   ├── 05_outfits/
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── casual/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── evening_dress/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── formal/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── scene_outfits/
+│   │   │   │   └── .gitkeep
+│   │   │   └── sports_look/
+│   │   │       └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   └── .gitkeep
+│   │   ├── 07_generated/
+│   │   │   ├── canon_tests/
+│   │   │   │   ├── 01_evening_embankment/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── 02_sports_yoga/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── 03_portrait_expression/
+│   │   │   │       └── .gitkeep
+│   │   │   ├── drafts/
+│   │   │   │   └── .gitkeep
+│   │   │   └── rejected/
+│   │   │       └── .gitkeep
+│   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 09_blender/
+│   │   │   └── .gitkeep
+│   │   └── 10_notes/
+│   │       ├── .gitkeep
+│   │       └── OLGA_REFERENCE_PRESETS.json
+│   └── SERGEY/
+│       ├── 01_refs_raw/
+│       │   └── .gitkeep
+│       ├── 02_best_refs/
+│       │   └── .gitkeep
+│       ├── 03_face_sheet/
+│       │   └── expressions/
+│       │       └── .gitkeep
+│       ├── 04_body_sheet/
+│       │   └── candidates/
+│       │       └── .gitkeep
+│       ├── 05_outfits/
+│       │   ├── candidates/
+│       │   │   └── .gitkeep
+│       │   ├── casual/
+│       │   │   └── .gitkeep
+│       │   ├── evening_dress/
+│       │   │   └── .gitkeep
+│       │   ├── formal/
+│       │   │   └── .gitkeep
+│       │   ├── scene_outfits/
+│       │   │   └── .gitkeep
+│       │   └── sports_look/
+│       │       └── .gitkeep
+│       ├── 06_prompts/
+│       │   └── .gitkeep
+│       ├── 07_generated/
+│       │   ├── canon_tests/
+│       │   │   ├── 01_evening_embankment/
+│       │   │   │   └── .gitkeep
+│       │   │   ├── 02_sports_yoga/
+│       │   │   │   └── .gitkeep
+│       │   │   └── 03_portrait_expression/
+│       │   │       └── .gitkeep
+│       │   ├── drafts/
+│       │   │   └── .gitkeep
+│       │   └── rejected/
+│       │       └── .gitkeep
+│       ├── 08_masks/
+│       │   └── .gitkeep
+│       ├── 09_blender/
+│       │   └── .gitkeep
+│       └── 10_notes/
+│           ├── .gitkeep
+│           └── SERGEY_REFERENCE_PRESETS.json
+├── docs/
+│   ├── GITHUB_REFERENCE_PACK_WORKFLOW.md
+│   ├── VOYAGE_INTEGRATION_WORKFLOW.md
+│   └── VOYAGE_SQLITE_MEMORY_WORKFLOW.md
+├── tools/
+│   ├── build_scene_reference_pack.ps1
+│   ├── build_scene_reference_pack.py
+│   ├── generate_inventory.py
+│   ├── voyage_memory_export.py
+│   ├── voyage_memory_init.py
+│   ├── voyage_memory_record.py
+│   └── voyage_memory_status.py
+├── .gitattributes
+├── .gitignore
+├── AGENTS.md
+├── INVENTORY.md
+├── INVENTORY.md.backup_20260703_125505
+├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
+├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
+├── README.md
+└── ROADMAP.md
 ```
 
 # Total file count
 
-275
+290
 
 # File type summary
 
@@ -534,13 +547,15 @@ AI_CHARACTERS/
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
+| .backup_20260703_124946 | 7 |
+| .backup_20260703_125505 | 1 |
 | .jpg | 1 |
 | .json | 11 |
 | .jsonl | 1 |
 | .md | 25 |
-| .png | 51 |
+| .png | 57 |
 | .ps1 | 1 |
-| .py | 5 |
+| .py | 6 |
 | .txt | 18 |
 
 # File list
@@ -549,18 +564,21 @@ AI_CHARACTERS/
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 2920 | 2026-07-03 02:18:19 |
-| .voyage/CONTEXT_SNAPSHOT.md | 2327 | 2026-07-03 02:18:50 |
-| .voyage/CURRENT_TASK.md | 6168 | 2026-07-03 02:18:04 |
-| .voyage/DECISIONS.md | 14008 | 2026-07-03 02:18:12 |
+| .voyage/CHARACTER_REGISTRY.md | 2956 | 2026-07-03 12:52:55 |
+| .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
+| .voyage/CONTEXT_SNAPSHOT.md | 2415 | 2026-07-03 12:54:13 |
+| .voyage/CURRENT_TASK.md | 6572 | 2026-07-03 12:51:36 |
+| .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
+| .voyage/DECISIONS.md | 15978 | 2026-07-03 12:52:48 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
-| .voyage/EVENTS_EXPORT.jsonl | 2222 | 2026-07-03 02:18:50 |
+| .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
+| .voyage/EVENTS_EXPORT.jsonl | 6698 | 2026-07-03 12:54:13 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 772 | 2026-07-03 01:57:13 |
-| .voyage/STATE_EXPORT.json | 17893 | 2026-07-03 02:18:50 |
+| .voyage/STATE_EXPORT.json | 27119 | 2026-07-03 12:54:13 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
@@ -572,19 +590,29 @@ AI_CHARACTERS/
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/.gitkeep | 0 | 2026-07-02 22:42:57 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png | 2108540 | 2026-07-03 01:06:45 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/.gitkeep | 0 | 2026-07-03 02:15:48 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png | 2266427 | 2026-07-03 07:20:27 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/.gitkeep | 0 | 2026-07-03 02:15:50 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png | 2082012 | 2026-07-03 07:37:27 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/.gitkeep | 0 | 2026-07-03 02:15:51 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png | 2136480 | 2026-07-03 07:48:11 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/.gitkeep | 0 | 2026-07-03 02:15:52 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png | 1893562 | 2026-07-03 08:38:13 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/.gitkeep | 0 | 2026-07-03 02:15:53 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png | 2450287 | 2026-07-03 08:49:12 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/.gitkeep | 0 | 2026-07-03 02:15:54 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png | 2126855 | 2026-07-03 11:41:24 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/candidates/.gitkeep | 0 | 2026-07-03 02:15:56 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/rejected/.gitkeep | 0 | 2026-07-03 02:15:55 |
-| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md | 2367 | 2026-07-03 02:16:44 |
-| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md | 1521 | 2026-07-03 02:16:51 |
-| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACKS.json | 2849 | 2026-07-03 02:17:07 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md | 3366 | 2026-07-03 12:50:29 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_INDEX.md.backup_20260703_124946 | 2367 | 2026-07-03 12:49:46 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md | 4033 | 2026-07-03 12:50:08 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACK_RESULTS.md.backup_20260703_124946 | 1521 | 2026-07-03 12:49:46 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACKS.json | 3971 | 2026-07-03 12:50:53 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_DUO_SCENE_PACKS.json.backup_20260703_124946 | 2849 | 2026-07-03 12:49:47 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_JOINT_CANON_INDEX.md | 2457 | 2026-07-03 01:21:35 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_JOINT_TEST_RESULTS.md | 3694 | 2026-07-03 01:21:20 |
-| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_REFERENCE_PRESETS.json | 3093 | 2026-07-03 01:21:51 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_REFERENCE_PRESETS.json | 4398 | 2026-07-03 12:51:20 |
+| AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/10_notes/KIRA_ANDREY_REFERENCE_PRESETS.json.backup_20260703_124946 | 3093 | 2026-07-03 12:49:47 |
 | AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_01_face_closeup_blue_shirt.png | 2169748 | 2026-06-25 21:12:14 |
 | AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_02_yacht_sunset_blue_shirt.png | 2050416 | 2026-06-25 21:51:52 |
 | AI_CHARACTERS/ANDREY/01_refs_raw/ANDREY_RAW_03_fullbody_studio_blue_shirt.png | 1908427 | 2026-06-25 20:54:30 |
@@ -811,13 +839,15 @@ AI_CHARACTERS/
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 44953 | 2026-07-03 01:57:55 |
+| INVENTORY.md | 47598 | 2026-07-03 02:19:09 |
+| INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |
 | ROADMAP.md | 7084 | 2026-07-01 09:37:30 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
+| tools/generate_inventory.py | 4231 | 2026-07-03 12:55:34 |
 | tools/voyage_memory_export.py | 5803 | 2026-07-03 01:36:48 |
 | tools/voyage_memory_init.py | 19032 | 2026-07-03 01:36:25 |
 | tools/voyage_memory_record.py | 17623 | 2026-07-03 01:54:56 |

@@ -127,32 +127,46 @@ Completed:
 Result:
 Voyage-lite SQLite memory can now be updated incrementally after future workflows.
 
-## Current — NCC-KIRA-ANDREY-DUO-SCENE-PACKS
+## Completed — NCC-KIRA-ANDREY-DUO-SCENE-PACKS
 
-Status: SETUP_DONE / GENERATION_PENDING
+Status: DONE / DUO_SCENE_PACKS_APPROVED (2026-07-02)
+
+Goal:
+Generate and approve six KIRA + ANDREY duo scene packs after joint control tests passed.
 
 Completed:
 
-* Duo scene pack prompt file created.
-* Duo scene pack index created.
-* Duo scene pack result tracker created.
-* Duo scene pack JSON spec created.
-* Scene pack folders created with `.gitkeep`.
-* No images generated.
+* SCENE PACK 01 generated and approved.
+* SCENE PACK 02 generated and approved.
+* SCENE PACK 03 generated and approved.
+* SCENE PACK 04 generated and approved.
+* SCENE PACK 05 generated and approved.
+* SCENE PACK 06 generated across versions; v4 selected and approved.
+* Scene pack results updated.
+* Scene pack index updated.
+* Scene pack JSON spec updated.
+* `KIRA_ANDREY_REFERENCE_PRESETS.json` updated with `duo_scene_packs` preset.
+* SQLite memory records added.
+* Memory exports regenerated.
 
 Result:
-KIRA + ANDREY duo scene pack workflow is ready for explicit generation requests.
+KIRA + ANDREY duo scene packs are approved.
 
 Next:
-Generate SCENE PACK 01 — Evening embankment walk only after explicit user request.
+Choose one:
+
+1. Additional KIRA_ANDREY duo scene packs
+2. KIRA_ANDREY body/wardrobe/context refs
+3. ANDREY 3D reference pack
+4. KIRA 3D reference pack
+5. Next character canon pack
 
 Forbidden:
 
-* do not generate scenes automatically;
-* do not include sauna unless explicitly requested;
-* do not use rejected/wrong-scene outputs as canon;
-* do not overwrite approved joint control tests;
-* do not treat Kira heels as changing barefoot canon height.
+* do not use SCENE PACK 06 v1/v2/v3 as canon;
+* do not overwrite approved scene pack outputs;
+* do not treat Kira heels as changing barefoot canon height;
+* do not include sauna unless explicitly requested.
 
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 

@@ -1,20 +1,19 @@
 # KIRA_ANDREY_DUO_SCENE_PACK_INDEX
 
 Status:
-SETUP_DONE / GENERATION_PENDING
+SCENE_PACKS_APPROVED
 
 Pair:
 KIRA_ANDREY
 
 Pair status:
-JOINT_CONTROL_TESTS_APPROVED
+JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED
 
 Purpose:
-Index for future KIRA + ANDREY duo scene packs.
+Index of approved KIRA + ANDREY duo scene packs.
 
 Important:
-No duo scene pack images have been generated in this setup step.
-Approved joint control tests are already committed and should be used as pair references.
+Six duo scene pack outputs are approved and tracked. Approved joint control tests remain available as pair references.
 
 ---
 
@@ -32,68 +31,83 @@ Approved joint control tests are already committed and should be used as pair re
 ### SCENE PACK 01 — Evening embankment walk
 
 Status:
-NOT GENERATED
+GENERATED / APPROVED
 
 Target folder:
 AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/
 
-Expected filename:
-KIRA_ANDREY_scene01_evening_embankment_walk_v1.png
+Approved file:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png
+
+Verdict: APPROVE
 
 ### SCENE PACK 02 — Warm bar dialogue
 
 Status:
-NOT GENERATED
+GENERATED / APPROVED
 
 Target folder:
 AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/
 
-Expected filename:
-KIRA_ANDREY_scene02_warm_bar_dialogue_v1.png
+Approved file:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png
+
+Verdict: APPROVE
 
 ### SCENE PACK 03 — Yacht sunset
 
 Status:
-NOT GENERATED
+GENERATED / APPROVED
 
 Target folder:
 AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/
 
-Expected filename:
-KIRA_ANDREY_scene03_yacht_sunset_v1.png
+Approved file:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png
+
+Verdict: APPROVE
 
 ### SCENE PACK 04 — Studio character poster
 
 Status:
-NOT GENERATED
+GENERATED / APPROVED
 
 Target folder:
 AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/
 
-Expected filename:
-KIRA_ANDREY_scene04_studio_character_poster_v1.png
+Approved file:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png
+
+Verdict: APPROVE
 
 ### SCENE PACK 05 — Rainy city street
 
 Status:
-NOT GENERATED
+GENERATED / APPROVED
 
 Target folder:
 AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/
 
-Expected filename:
-KIRA_ANDREY_scene05_rainy_city_street_v1.png
+Approved file:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png
+
+Verdict: APPROVE
 
 ### SCENE PACK 06 — Cozy interior conversation
 
 Status:
-NOT GENERATED
+GENERATED / APPROVED
 
 Target folder:
 AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/
 
-Expected filename:
-KIRA_ANDREY_scene06_cozy_interior_conversation_v1.png
+Approved file:
+AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png
+
+Verdict: APPROVE
+
+Notes:
+v4 is the final approved output. v1/v2/v3 are not canon.
 
 ---
 
@@ -108,6 +122,17 @@ KIRA_ANDREY_scene06_cozy_interior_conversation_v1.png
 
 ---
 
+## Current conclusion
+
+KIRA_ANDREY duo scene packs are approved and ready for future story/visual workflows.
+
+---
+
 ## Next action
 
-Generate SCENE PACK 01 only after explicit user request.
+Choose next workflow after commit:
+
+* continue with additional duo scene packs;
+* prepare body/wardrobe/context refs;
+* prepare 3D reference packs;
+* start next character canon.

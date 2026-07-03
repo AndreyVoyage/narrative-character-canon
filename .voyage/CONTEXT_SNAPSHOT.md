@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-02T23:18:50.325797+00:00
+Generated at: 2026-07-03T09:54:13.874275+00:00
 
 Project: narrative-character-canon
 
@@ -15,7 +15,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 
 ## Pair statuses
 
-- KIRA_ANDREY: JOINT_CONTROL_TESTS_APPROVED
+- KIRA_ANDREY: JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED
 
 ## Approved KIRA + ANDREY joint tests
 
@@ -41,6 +41,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - DECISION-0013 — Approve Kira and Andrey joint control tests
 - DECISION-0015 — Add Voyage SQLite record command
 - DECISION-0016 — Prepare Kira and Andrey duo scene packs
+- DECISION-0017 — Approve Kira and Andrey duo scene packs
 
 ## Recent commits
 

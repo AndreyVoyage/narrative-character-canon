@@ -2,7 +2,7 @@
   "pair": "KIRA_ANDREY",
   "version": "1.0.0",
   "last_updated": "2026-07-02",
-  "status": "JOINT_CONTROL_TESTS_APPROVED",
+  "status": "JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED",
   "characters": {
     "KIRA": {
       "status": "CANON_READY_2D",
@@ -52,11 +52,23 @@
         "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/04_sea_yacht_mood_duo/KIRA_ANDREY_joint_test04_sea_yacht_mood_duo_v1_APPROVED.png"
       ],
       "prompt_goal": "Use for sea/yacht duo scenes with sunset lighting."
+    },
+    "duo_scene_packs": {
+      "description": "Approved KIRA + ANDREY duo scene pack outputs.",
+      "reference_images": [
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png",
+        "AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved duo scene pack outputs for cinematic Kira and Andrey scene generation while preserving identity, scale, interaction and context."
     }
   },
   "rules": [
     "Do not use rejected/wrong-scene outputs as canon.",
-    "Do not overwrite approved joint test files.",
+    "Do not overwrite approved joint test files or approved scene pack outputs.",
     "Kira barefoot height remains 168 cm even when heels make her appear taller.",
     "Andrey height remains 180 cm.",
     "Preserve both identities; do not blend faces."

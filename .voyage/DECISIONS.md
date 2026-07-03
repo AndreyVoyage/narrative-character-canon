@@ -242,6 +242,45 @@ NCC-KIRA-ANDREY-DUO-SCENE-PACKS becomes ready for explicit generation requests.
 Important:
 No images are generated in this setup step. Sauna remains EXAMPLE / NOT REQUESTED unless the user explicitly requests it as a real scene.
 
+## DECISION-0017 — Approve Kira and Andrey duo scene packs
+
+Date: 2026-07-02
+
+Context:
+KIRA_ANDREY pair reached JOINT_CONTROL_TESTS_APPROVED and the duo scene pack workflow was prepared. Six scene packs were generated and reviewed.
+
+Decision:
+Approve six KIRA + ANDREY duo scene pack outputs:
+
+* SCENE PACK 01 — Evening embankment walk
+* SCENE PACK 02 — Warm bar dialogue
+* SCENE PACK 03 — Yacht sunset
+* SCENE PACK 04 — Studio character poster
+* SCENE PACK 05 — Rainy city street
+* SCENE PACK 06 — Cozy interior conversation v4
+
+Approved files:
+
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png`
+* `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png`
+
+Rejected / ignored:
+
+* SCENE PACK 06 v1 was not selected;
+* SCENE PACK 06 v2 was held/candidate due to Kira leg/pose issue;
+* SCENE PACK 06 v3 was rejected due to Andrey identity drift;
+* only SCENE PACK 06 v4 is final approved.
+
+Result:
+KIRA_ANDREY pair becomes DUO_SCENE_PACKS_APPROVED and ready for future story/visual workflows.
+
+Important:
+Do not overwrite approved scene pack outputs. New variants must be saved as alternatives/candidates. Kira barefoot height remains 168 cm; Andrey remains 180 cm.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02
