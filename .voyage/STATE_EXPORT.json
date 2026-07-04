@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-04T12:14:01.619307+00:00",
+  "generated_at": "2026-07-04T13:08:22.063886+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -45,6 +45,15 @@
       "height_cm": null,
       "notes": "Son-version of ANDREY Senior. Short compact build, about 47 kg, slim youthful physique, fair skin, bright blue eyes, light blonde/dark blonde messy hair, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks. Active_version: son_version. Old adult/20+ direction superseded.",
       "updated_at": "2026-07-04T12:13:40.215667+00:00"
+    },
+    {
+      "character_id": "OLGA",
+      "display_name": "Olga",
+      "status": "CANON_PENDING",
+      "canon_status": "SETUP_DONE",
+      "height_cm": 187,
+      "notes": "Mature adult woman character. Very tall around 187 cm, athletic-curvy build, strong but feminine silhouette, realistic adult proportions, elegant dominant cinematic presence. Non-explicit generation direction.",
+      "updated_at": "2026-07-04T13:08:02.098126+00:00"
     }
   ],
   "pairs": [
@@ -582,6 +591,81 @@
       "notes": "Approved control test 09 father_son_training_coaching",
       "commit_hash": "PENDING",
       "updated_at": "2026-07-04T12:13:50.174978+00:00"
+    },
+    {
+      "artifact_id": "OLGA_identity_draft",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "setup_doc",
+      "file_path": "AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "OLGA identity draft",
+      "commit_hash": null,
+      "updated_at": "2026-07-04T13:08:05.048099+00:00"
+    },
+    {
+      "artifact_id": "OLGA_canon_index",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "setup_doc",
+      "file_path": "AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "OLGA canon index",
+      "commit_hash": null,
+      "updated_at": "2026-07-04T13:08:05.731689+00:00"
+    },
+    {
+      "artifact_id": "OLGA_test_results",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "setup_doc",
+      "file_path": "AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "OLGA test results tracker",
+      "commit_hash": null,
+      "updated_at": "2026-07-04T13:08:06.299231+00:00"
+    },
+    {
+      "artifact_id": "OLGA_reference_presets",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "setup_doc",
+      "file_path": "AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "OLGA reference presets JSON",
+      "commit_hash": null,
+      "updated_at": "2026-07-04T13:08:07.112993+00:00"
+    },
+    {
+      "artifact_id": "OLGA_prompt_pack",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "setup_doc",
+      "file_path": "AI_CHARACTERS/OLGA/06_prompts/OLGA_CANON_GENERATION_PROMPTS.txt",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "OLGA generation prompt pack",
+      "commit_hash": null,
+      "updated_at": "2026-07-04T13:08:08.381555+00:00"
     }
   ],
   "tasks": [
@@ -629,6 +713,15 @@
       "next_action": "Start OLGA canon setup only after explicit user request",
       "notes": "Son-version base canon and control tests 01-09 approved locally.",
       "updated_at": "2026-07-04T12:13:40.671860+00:00"
+    },
+    {
+      "task_id": "NCC-OLGA-CANON-SETUP",
+      "title": "Olga canon setup",
+      "status": "DONE",
+      "current_stage": "GENERATION_PENDING",
+      "next_action": "Generate OLGA face canon sheet after explicit user approval",
+      "notes": "Created OLGA folder structure, identity draft, canon index, test tracker, reference presets and prompt pack. No images generated.",
+      "updated_at": "2026-07-04T13:08:02.898091+00:00"
     }
   ],
   "decisions": [
@@ -703,6 +796,14 @@
       "summary": "Approved son-version ANDREY_JUNIOR base canon and control tests 01-09; old adult/20+ direction superseded.",
       "commit_hash": null,
       "updated_at": "2026-07-04T12:13:41.300650+00:00"
+    },
+    {
+      "decision_id": "DECISION-0020",
+      "title": "Start OLGA canon setup",
+      "date": "2026-07-04",
+      "summary": "Created OLGA canon setup; no images generated.",
+      "commit_hash": null,
+      "updated_at": "2026-07-04T13:08:03.597283+00:00"
     }
   ],
   "commits": [
@@ -1111,6 +1212,96 @@
       "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png\"}",
       "commit_hash": "PENDING",
       "created_at": "2026-07-04T12:13:50.182369+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130802-75c53730",
+      "event_type": "CHARACTER_STATUS_RECORDED",
+      "subject_type": "character",
+      "subject_id": "OLGA",
+      "summary": "Character recorded/updated: Olga -> CANON_PENDING",
+      "payload_json": "{\"status\": \"CANON_PENDING\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:02.103984+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130802-5f7b4963",
+      "event_type": "TASK_RECORDED",
+      "subject_type": "task",
+      "subject_id": "NCC-OLGA-CANON-SETUP",
+      "summary": "Task recorded/updated: Olga canon setup",
+      "payload_json": "{\"status\": \"DONE\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:02.904086+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130803-4fb9d942",
+      "event_type": "DECISION_RECORDED",
+      "subject_type": "decision",
+      "subject_id": "DECISION-0020",
+      "summary": "Decision recorded: Start OLGA canon setup",
+      "payload_json": "{\"date\": \"2026-07-04\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:03.604230+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130804-f55048b3",
+      "event_type": "OLGA_CANON_SETUP_DONE",
+      "subject_type": "character",
+      "subject_id": "OLGA",
+      "summary": "OLGA canon setup completed",
+      "payload_json": "{}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:04.313528+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130805-ba490bde",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_identity_draft",
+      "summary": "Artifact recorded/updated: OLGA_identity_draft -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:05.053852+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130805-13b21233",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_canon_index",
+      "summary": "Artifact recorded/updated: OLGA_canon_index -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:05.738081+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130806-76711173",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_test_results",
+      "summary": "Artifact recorded/updated: OLGA_test_results -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:06.305849+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130807-4493d70a",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_reference_presets",
+      "summary": "Artifact recorded/updated: OLGA_reference_presets -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:07.118690+00:00"
+    },
+    {
+      "event_id": "EVT-20260704-130808-0651befe",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_prompt_pack",
+      "summary": "Artifact recorded/updated: OLGA_prompt_pack -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_CANON_GENERATION_PROMPTS.txt\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-04T13:08:08.387684+00:00"
     }
   ]
 }

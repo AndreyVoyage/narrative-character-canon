@@ -1,0 +1,111 @@
+# OLGA Canon Generation Prompts
+
+Status:
+SETUP_DONE / READY_FOR_REVIEW
+
+Important:
+These prompts do not authorize generation by themselves.
+Generation requires explicit user request.
+
+## OLGA Prompt Principles
+
+* Keep OLGA clearly a mature adult woman.
+* Use phrases like “mature adult woman”, “tall athletic-curvy build”, “realistic adult proportions”.
+* Avoid sexualized wording.
+* Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
+* Avoid exaggerating body proportions.
+* Avoid bodybuilder drift.
+* Avoid making her look too young.
+* Preserve the small beauty mark above the left side of the upper lip.
+* Preserve dark brown hair and fiery dark brown eyes.
+* Preserve the confident mature asymmetrical smile.
+* Use photorealistic studio or cinematic reference language.
+
+---
+
+## Face Canon Sheet Prompt Skeleton
+
+Target folder:
+AI_CHARACTERS/OLGA/03_face_sheet/
+
+Expected filename:
+OLGA_face_canon_v1_sheet_A_APPROVED.png
+
+Prompt:
+Photorealistic face canon reference sheet of a mature adult woman, same identity across all panels, neutral grey studio background, soft even studio lighting, realistic skin texture, dark brown straight hair, fiery dark brown eyes, arched well-groomed eyebrows, refined straight nose with rounded tip, full natural pink-peach lips, small beauty mark above the left side of the upper lip, defined cheekbones, strong but feminine jawline, mature well-maintained skin, faint laugh lines near eyes and mouth, slight upper eyelid hooding, confident calm expression, elegant mature presence, no text, no numbers, no watermark, no logo.
+
+---
+
+## Expression Sheet Prompt Skeleton
+
+Target folder:
+AI_CHARACTERS/OLGA/03_face_sheet/expressions/
+
+Expected filename:
+OLGA_expressions_v1_sheet_A_APPROVED.png
+
+Prompt:
+Photorealistic expression sheet of the same mature adult woman, consistent identity, dark brown straight hair, fiery dark brown eyes, small beauty mark above the left side of the upper lip, defined cheekbones, strong but feminine jawline. Expressions: neutral, calm confident smile with right corner slightly higher, focused, slightly amused, soft dominant gaze. Soft studio lighting, neutral background, elegant mature presence. No text, no numbers, no watermark, no logo.
+
+---
+
+## Body Canon Sheet Prompt Skeleton
+
+Target folder:
+AI_CHARACTERS/OLGA/04_body_sheet/
+
+Expected filenames:
+OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png
+OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png
+
+Prompt:
+Photorealistic full-body canon reference sheet of a mature adult woman, same identity across all panels, very tall around 187 cm, athletic curvy build, strong but feminine silhouette, realistic adult proportions, confident commanding posture, dark brown straight hair, mature face, elegant presence, wearing safe fitted reference clothing, neutral studio background, soft even lighting, front view, side view, back view, no text, no numbers, no watermark, no logo.
+
+---
+
+## Control Test Prompt Skeleton
+
+Target folder:
+AI_CHARACTERS/OLGA/07_generated/canon_tests/<test_name>/
+
+Prompt structure:
+Photorealistic control-test image of the same mature adult woman [context], very tall athletic-curvy build, realistic adult proportions, dark brown hair, fiery dark brown eyes, small beauty mark above the left side of the upper lip, confident calm expression, elegant mature presence, [clothing/setting], [lighting], no text, no watermark, no logo.
+
+Safe contexts:
+- neutral studio portrait
+- full body studio reference
+- elegant dark outfit / fashion setting
+- sports/training outfit in gym or studio
+- tall body scale check near a doorway or height reference
+- cinematic indoor portrait
+- confident outdoor lifestyle / city park
+- character poster framing
+
+No joint scenes until base canon is approved.
+
+---
+
+## Negative Prompt Guidance
+
+Avoid in generated outputs:
+
+* childlike or teenage face;
+* exaggerated body proportions;
+* bodybuilder muscular mass;
+* generic runway-model proportions;
+* nude, lingerie, or transparent clothing;
+* fetish framing;
+* erotic posing;
+* cartoonish or stylized rendering;
+* inconsistent hair or eye color;
+* missing beauty mark;
+* text, watermarks, logos, collage labels.
+
+---
+
+Review verdicts:
+APPROVE
+APPROVE AS ALT
+HOLD
+REGENERATE
+REJECT

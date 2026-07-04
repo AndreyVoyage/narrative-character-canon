@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-04 15:14:12
+2026-07-04 16:08:32
 
 ---
 
@@ -18,16 +18,19 @@ Generated:
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_124946
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_155641
 │   ├── CHARACTER_REGISTRY.md.backup_20260704_151046
+│   ├── CHARACTER_REGISTRY.md.backup_20260704_160529
 │   ├── CONTEXT_SNAPSHOT.md
 │   ├── CURRENT_TASK.md
 │   ├── CURRENT_TASK.md.backup_20260703_124946
 │   ├── CURRENT_TASK.md.backup_20260703_155641
 │   ├── CURRENT_TASK.md.backup_20260704_151046
+│   ├── CURRENT_TASK.md.backup_20260704_160529
 │   ├── DECISIONS.md
 │   ├── DECISIONS.md.backup_20260702_231625
 │   ├── DECISIONS.md.backup_20260703_124946
 │   ├── DECISIONS.md.backup_20260703_155641
 │   ├── DECISIONS.md.backup_20260704_151046
+│   ├── DECISIONS.md.backup_20260704_160529
 │   ├── EVENTS_EXPORT.jsonl
 │   ├── LOCATION_REGISTRY.md
 │   ├── PROJECT_STATE.md
@@ -500,12 +503,16 @@ Generated:
 │   │   │   └── .gitkeep
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
+│   │   ├── 02_refs_selected/
+│   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
-│   │   │   └── expressions/
-│   │   │       └── .gitkeep
+│   │   │   ├── expressions/
+│   │   │   │   └── .gitkeep
+│   │   │   └── .gitkeep
 │   │   ├── 04_body_sheet/
-│   │   │   └── candidates/
-│   │   │       └── .gitkeep
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   └── .gitkeep
 │   │   ├── 05_outfits/
 │   │   │   ├── candidates/
 │   │   │   │   └── .gitkeep
@@ -517,29 +524,41 @@ Generated:
 │   │   │   │   └── .gitkeep
 │   │   │   ├── scene_outfits/
 │   │   │   │   └── .gitkeep
-│   │   │   └── sports_look/
-│   │   │       └── .gitkeep
-│   │   ├── 06_prompts/
+│   │   │   ├── sports_look/
+│   │   │   │   └── .gitkeep
 │   │   │   └── .gitkeep
+│   │   ├── 06_prompts/
+│   │   │   ├── .gitkeep
+│   │   │   └── OLGA_CANON_GENERATION_PROMPTS.txt
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
 │   │   │   │   │   └── .gitkeep
 │   │   │   │   ├── 02_sports_yoga/
 │   │   │   │   │   └── .gitkeep
-│   │   │   │   └── 03_portrait_expression/
-│   │   │   │       └── .gitkeep
+│   │   │   │   ├── 03_portrait_expression/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   └── .gitkeep
 │   │   │   ├── drafts/
 │   │   │   │   └── .gitkeep
-│   │   │   └── rejected/
-│   │   │       └── .gitkeep
+│   │   │   ├── rejected/
+│   │   │   │   └── .gitkeep
+│   │   │   └── .gitkeep
 │   │   ├── 08_masks/
+│   │   │   └── .gitkeep
+│   │   ├── 08_rejected/
 │   │   │   └── .gitkeep
 │   │   ├── 09_blender/
 │   │   │   └── .gitkeep
-│   │   └── 10_notes/
-│   │       ├── .gitkeep
-│   │       └── OLGA_REFERENCE_PRESETS.json
+│   │   ├── 09_exports/
+│   │   │   └── .gitkeep
+│   │   ├── 10_notes/
+│   │   │   ├── .gitkeep
+│   │   │   ├── OLGA_CANON_INDEX.md
+│   │   │   ├── OLGA_IDENTITY_DRAFT.md
+│   │   │   ├── OLGA_REFERENCE_PRESETS.json
+│   │   │   └── OLGA_TEST_RESULTS.md
+│   │   └── .gitkeep
 │   └── SERGEY/
 │       ├── 01_refs_raw/
 │       │   └── .gitkeep
@@ -604,6 +623,7 @@ Generated:
 ├── INVENTORY.md.backup_20260703_125505
 ├── INVENTORY.md.backup_20260703_160011
 ├── INVENTORY.md.backup_20260704_151411
+├── INVENTORY.md.backup_20260704_160831
 ├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
 ├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
 ├── README.md
@@ -612,13 +632,13 @@ Generated:
 
 # Total file count
 
-341
+358
 
 # File type summary
 
 | Extension | Count |
 |---|---:|
-| (no extension) | 179 |
+| (no extension) | 188 |
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
@@ -629,14 +649,16 @@ Generated:
 | .backup_20260704_150852 | 5 |
 | .backup_20260704_151046 | 3 |
 | .backup_20260704_151411 | 1 |
+| .backup_20260704_160529 | 3 |
+| .backup_20260704_160831 | 1 |
 | .jpg | 1 |
 | .json | 12 |
 | .jsonl | 1 |
-| .md | 28 |
+| .md | 31 |
 | .png | 70 |
 | .ps1 | 1 |
 | .py | 6 |
-| .txt | 19 |
+| .txt | 20 |
 
 # File list
 
@@ -644,27 +666,30 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 3189 | 2026-07-04 15:11:14 |
+| .voyage/CHARACTER_REGISTRY.md | 3394 | 2026-07-04 16:05:50 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
-| .voyage/CONTEXT_SNAPSHOT.md | 2596 | 2026-07-04 15:14:01 |
-| .voyage/CURRENT_TASK.md | 8013 | 2026-07-04 15:11:01 |
+| .voyage/CHARACTER_REGISTRY.md.backup_20260704_160529 | 3189 | 2026-07-04 16:05:29 |
+| .voyage/CONTEXT_SNAPSHOT.md | 2678 | 2026-07-04 16:08:22 |
+| .voyage/CURRENT_TASK.md | 8743 | 2026-07-04 16:05:41 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
-| .voyage/DECISIONS.md | 19455 | 2026-07-04 15:12:45 |
+| .voyage/CURRENT_TASK.md.backup_20260704_160529 | 8013 | 2026-07-04 16:05:29 |
+| .voyage/DECISIONS.md | 20295 | 2026-07-04 16:07:40 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
 | .voyage/DECISIONS.md.backup_20260704_151046 | 16517 | 2026-07-04 15:10:46 |
-| .voyage/EVENTS_EXPORT.jsonl | 15818 | 2026-07-04 15:14:01 |
+| .voyage/DECISIONS.md.backup_20260704_160529 | 19455 | 2026-07-04 16:05:29 |
+| .voyage/EVENTS_EXPORT.jsonl | 19051 | 2026-07-04 16:08:22 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 772 | 2026-07-03 01:57:13 |
-| .voyage/STATE_EXPORT.json | 47707 | 2026-07-04 15:14:01 |
+| .voyage/STATE_EXPORT.json | 55163 | 2026-07-04 16:08:22 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
@@ -925,26 +950,39 @@ Generated:
 | AI_CHARACTERS/NIKA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/10_notes/NIKA_REFERENCE_PRESETS.json | 259 | 2026-07-01 17:18:12 |
-| AI_CHARACTERS/OLGA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/05_outfits/formal/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/07_generated/drafts/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 259 | 2026-07-01 17:18:12 |
+| AI_CHARACTERS/OLGA/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/01_refs_raw/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/02_best_refs/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/02_refs_selected/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/03_face_sheet/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/03_face_sheet/expressions/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/04_body_sheet/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/04_body_sheet/candidates/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/candidates/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/casual/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/evening_dress/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/formal/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/05_outfits/sports_look/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/06_prompts/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_CANON_GENERATION_PROMPTS.txt | 4260 | 2026-07-04 16:05:17 |
+| AI_CHARACTERS/OLGA/07_generated/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/.gitkeep | 0 | 2026-07-04 16:04:15 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/07_generated/drafts/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/07_generated/rejected/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/08_masks/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/08_rejected/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/09_blender/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/09_exports/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/10_notes/.gitkeep | 0 | 2026-07-04 16:04:16 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md | 987 | 2026-07-04 16:04:41 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md | 2358 | 2026-07-04 16:04:35 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 2127 | 2026-07-04 16:04:56 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 1146 | 2026-07-04 16:04:46 |
 | AI_CHARACTERS/SERGEY/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -968,10 +1006,11 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 58158 | 2026-07-03 16:00:11 |
+| INVENTORY.md | 63538 | 2026-07-04 15:14:12 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
+| INVENTORY.md.backup_20260704_160831 | 63538 | 2026-07-04 16:08:31 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |

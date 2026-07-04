@@ -1,13 +1,55 @@
 {
   "character": "OLGA",
-  "version": "v1.0",
-  "last_updated": "2026-07-01",
-  "root": "AI_CHARACTERS/OLGA",
-  "text_sources": {
-    "identity": null,
-    "canon_index": null,
-    "base_prompt": null,
-    "negative_prompt": null
+  "active_version": "setup_pending_generation",
+  "status": "SETUP_DONE_GENERATION_PENDING",
+  "identity_summary": {
+    "role": "mature adult woman character",
+    "height_direction": "very tall, around 187 cm",
+    "body_direction": "athletic curvy, strong but feminine, realistic adult proportions",
+    "face_direction": "mature dark-brown-eyed woman with defined cheekbones, strong feminine jawline, beauty mark above left side of upper lip",
+    "hair_direction": "dark brown straight hair, shoulder-blade length or clean ponytail depending on scene",
+    "style_direction": "elegant, dominant, mature, cinematic, realistic, non-explicit"
   },
-  "scene_presets": {}
+  "active_canon": {
+    "face_canon": null,
+    "expression_canon": null,
+    "body_canon_a": null,
+    "body_canon_b": null
+  },
+  "planned_canon_paths": {
+    "face_canon": "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+  },
+  "scene_presets": {
+    "neutral_face_reference": {
+      "status": "planned",
+      "purpose": "face identity canon"
+    },
+    "full_body_reference": {
+      "status": "planned",
+      "purpose": "body scale and silhouette"
+    },
+    "elegant_lifestyle": {
+      "status": "planned",
+      "purpose": "mature elegant identity"
+    },
+    "sports_training": {
+      "status": "planned",
+      "purpose": "athletic-curvy realism"
+    },
+    "cinematic_portrait": {
+      "status": "planned",
+      "purpose": "cinematic identity stability"
+    }
+  },
+  "safety_rules": [
+    "fully adult character only",
+    "non-explicit generation contexts only",
+    "avoid nude, lingerie, transparent clothing, fetish framing, erotic posing",
+    "avoid exaggerated body proportions",
+    "avoid bodybuilder drift",
+    "avoid making the character look too young"
+  ]
 }

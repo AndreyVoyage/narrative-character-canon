@@ -337,6 +337,22 @@ ANDREY_JUNIOR becomes BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED.
 Important:
 ANDREY_JUNIOR is the son-version of ANDREY Senior: short compact build, about 47 kg, slim youthful physique, fair skin, bright blue eyes, light blonde / dark blonde messy hair, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks. Keep prompts family-neutral, non-sexual and age-appropriate. Avoid explicit age numbers and avoid writing “Andrey Junior” inside image prompts when possible.
 
+## DECISION-0020 — Start OLGA canon setup
+
+Date: 2026-07-04
+
+Context:
+KIRA, ANDREY Senior, KIRA_ANDREY duo scene packs, and ANDREY_JUNIOR son-version canon have reached approved states. A new mature adult woman character, OLGA, is being introduced.
+
+Decision:
+Create OLGA canon setup files and folder structure before any image generation.
+
+Result:
+OLGA becomes CANON_PENDING / SETUP_DONE. Face canon generation requires explicit user approval.
+
+Important:
+OLGA is a mature adult woman character: very tall around 187 cm, athletic-curvy build, strong but feminine silhouette, realistic adult proportions, elegant dominant cinematic presence. Generation must remain non-explicit: avoid nude, lingerie, transparent clothing, fetish framing, or erotic posing; avoid exaggerated proportions, bodybuilder drift, or making her look too young.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

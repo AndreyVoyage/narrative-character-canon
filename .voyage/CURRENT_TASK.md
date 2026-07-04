@@ -222,6 +222,38 @@ Forbidden:
 * do not make him tall or bulky;
 * do not start Olga until explicitly requested.
 
+## Current — NCC-OLGA-CANON-SETUP
+
+Status: SETUP_DONE / GENERATION_PENDING
+
+Character:
+OLGA
+
+Completed:
+
+* OLGA folder structure created.
+* Identity draft created.
+* Canon index created.
+* Test result tracker created.
+* Reference presets JSON created.
+* Prompt pack created.
+* No images generated.
+
+Result:
+OLGA canon setup is complete and ready for controlled generation.
+
+Next:
+Generate OLGA face canon sheet only after user approval.
+
+Forbidden:
+
+* do not generate images automatically;
+* do not start joint scenes before base canon approval;
+* do not use nude, lingerie, transparent, fetish or erotic contexts;
+* do not make OLGA look too young;
+* do not exaggerate body proportions;
+* do not drift into bodybuilder build.
+
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 
 Status: POSTPONED
