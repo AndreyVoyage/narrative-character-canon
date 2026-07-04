@@ -1,28 +1,37 @@
 # ANDREY_JUNIOR_CANON_GENERATION_PROMPTS
 
 Status:
-DRAFT / READY_FOR_REVIEW
+APPROVED / ACTIVE
 
 Important:
-These prompts do not authorize generation by themselves.
-Generation requires explicit user request.
+These prompts are for reference and generation context only.
+Generation still requires explicit user request.
 
 Character:
 ANDREY_JUNIOR
 
+Active version:
+son-version of ANDREY Senior
+
 Identity anchor:
-Adult compact young man, 20+ years old, 153 cm, 53 kg, compact athletic swimmer/wrestler build, lean defined muscles, small but fit frame, blue eyes, light blond hair, youthful adult face, clean-shaven or minimal facial hair.
+Younger family character, son of Andrey Senior, short compact build, about 47 kg, slim youthful physique, fair skin, bright blue eyes, light blonde / dark blonde messy hair with natural tousled texture, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks. Youthful, natural and age-appropriate.
+
+Prompt style rules:
+
+* Avoid writing “Andrey Junior” inside image-generation prompts when possible.
+* Avoid explicit age numbers inside image-generation prompts.
+* Use phrases like “younger character”, “same boy”, “approved face canon sheet”, “approved body canon sheet”, “youthful, natural and age-appropriate”.
+* Keep contexts family-neutral: portrait, school, lifestyle, training, home, outdoor.
+* Keep content non-sexual.
 
 Do not:
 
-* do not portray as minor;
-* do not portray as teenager;
-* do not portray as child;
 * do not make him tall;
-* do not make him bulky;
-* do not make him bodybuilder;
+* do not make him bulky or bodybuilder;
 * do not make him look like ANDREY Senior;
-* do not make him broad-shouldered heroic male.
+* do not merge identities with Andrey Senior;
+* do not use romantic or adult-lead contexts;
+* do not use unsafe/triggering negative prompt terms where avoidable.
 
 ---
 
@@ -32,10 +41,10 @@ Target folder:
 AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/
 
 Expected filename:
-ANDREY_JUNIOR_face_canon_v1_sheet_A.png
+ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png
 
 Prompt:
-Photorealistic face canon sheet of ANDREY_JUNIOR, adult compact young man 20+ years old, youthful adult face, blue eyes, light blond hair, clean-shaven, small compact facial proportions, realistic skin texture, neutral grey studio background, soft even studio lighting. Multiple views: front, three-quarter, side profile, slight smile, neutral expression. He must look clearly adult 20+, not a child, not a teenager. Do not make him look like Andrey Senior. No text, no watermark, no collage labels.
+Photorealistic face canon sheet of the younger character, son of Andrey Senior, short compact build, fair skin, bright blue eyes, light blonde / dark blonde messy tousled hair, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks. Neutral grey studio background, soft even lighting. Multiple views: front, three-quarter, side profile, slight smile, neutral expression. Youthful, natural and age-appropriate. Use approved face canon sheet for consistency. No text, no watermark, no collage labels.
 
 ---
 
@@ -45,10 +54,10 @@ Target folder:
 AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/
 
 Expected filename:
-ANDREY_JUNIOR_body_canon_v1_sheet_A_front_side_back.png
+ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png
 
 Prompt:
-Photorealistic full body canon sheet of ANDREY_JUNIOR, adult compact young man 20+ years old, 153 cm, 53 kg, compact athletic swimmer/wrestler build, small but fit frame, lean defined muscles, narrow compact shoulders, slim waist, proportionally lean arms and legs, not tall, not bulky, not bodybuilder. Neutral grey studio background, soft even lighting. Views: front, side, back, three-quarter. Wearing simple fitted athletic shorts and plain fitted sleeveless athletic top or fitted T-shirt. Clearly adult 20+, not a child, not a teenager. No text, no watermark.
+Photorealistic full body canon sheet of the younger character, son of Andrey Senior, short compact build, about 47 kg, slim youthful physique, fair skin, lean youthful muscle tone, small frame, narrow compact shoulders, slim waist, not tall, not bulky, not bodybuilder. Neutral grey studio background, soft even lighting. Views: front, side, back, three-quarter. Wearing simple fitted athletic shorts and plain fitted T-shirt or sleeveless top. Youthful, natural and age-appropriate. Use approved body canon sheet for consistency. No text, no watermark.
 
 ---
 
@@ -58,10 +67,10 @@ Target folder:
 AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/
 
 Expected filename:
-ANDREY_JUNIOR_expressions_v1_sheet_A.png
+ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png
 
 Prompt:
-Photorealistic expression sheet of ANDREY_JUNIOR, adult compact young man 20+ years old, youthful adult face, blue eyes, light blond hair, clean-shaven, compact facial structure. Expressions: neutral, slight smile, focused, determined, surprised, relaxed. Soft studio lighting, neutral background, consistent identity across all expressions. Clearly adult, not teen, not child. No text, no watermark.
+Photorealistic expression sheet of the same younger character, son of Andrey Senior, fair skin, bright blue eyes, light blonde / dark blonde messy tousled hair, soft oval youthful face, gentle narrow jawline, clean-shaven. Expressions: neutral, slight smile, focused, determined, surprised, relaxed. Soft studio lighting, neutral background, consistent identity across all expressions. Youthful, natural and age-appropriate. No text, no watermark.
 
 ---
 
@@ -71,10 +80,10 @@ Target folder:
 AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/
 
 Expected filename:
-ANDREY_JUNIOR_test01_neutral_studio_portrait_v1.png
+ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png
 
 Prompt:
-Photorealistic neutral studio portrait of ANDREY_JUNIOR, adult compact young man 20+ years old, blue eyes, light blond hair, clean-shaven, compact youthful adult face, calm confident expression, neutral grey background, soft studio lighting. Clearly adult, not teen, not child. No text, no watermark.
+Photorealistic neutral studio portrait of the younger character, son of Andrey Senior, fair skin, bright blue eyes, light blonde / dark blonde messy tousled hair, soft oval youthful face, gentle narrow jawline, clean-shaven, calm confident expression, neutral grey background, soft studio lighting. Youthful, natural and age-appropriate. No text, no watermark.
 
 ---
 
@@ -84,10 +93,101 @@ Target folder:
 AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/
 
 Expected filename:
-ANDREY_JUNIOR_test02_full_body_studio_v1.png
+ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png
 
 Prompt:
-Photorealistic full body studio image of ANDREY_JUNIOR, adult compact young man 20+ years old, 153 cm, 53 kg, compact athletic swimmer/wrestler build, lean defined body, small but fit frame, narrow compact shoulders, slim waist, not tall, not bulky, not bodybuilder. Wearing simple fitted athletic casual outfit. Neutral studio background, soft light. Clearly adult, not teen, not child. No text, no watermark.
+Photorealistic full body studio image of the younger character, son of Andrey Senior, short compact build, about 47 kg, slim youthful physique, fair skin, lean youthful muscle tone, small frame, narrow compact shoulders, slim waist, not tall, not bulky, not bodybuilder. Wearing simple fitted athletic casual outfit. Neutral studio background, soft light. Youthful, natural and age-appropriate. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 03 — Athletic / gym identity
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/
+
+Expected filename:
+ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png
+
+Prompt:
+Photorealistic gym identity image of the younger character, son of Andrey Senior, short compact build, slim youthful physique, fair skin, bright blue eyes, light blonde / dark blonde messy tousled hair, wearing fitted athletic sportswear, training context, confident focused expression. Youthful, natural and age-appropriate. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 04 — Casual outfit
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/
+
+Expected filename:
+ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png
+
+Prompt:
+Photorealistic casual outfit image of the younger character, son of Andrey Senior, short compact build, slim youthful physique, fair skin, bright blue eyes, light blonde / dark blonde messy tousled hair, wearing simple clean casual clothes, relaxed natural pose, neutral background. Youthful, natural and age-appropriate. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 05 — Scale / compact body check
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/
+
+Expected filename:
+ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png
+
+Prompt:
+Photorealistic scale check image of the younger character, son of Andrey Senior, short compact build, about 47 kg, slim youthful physique, standing next to a simple height reference or doorway, clearly smaller than average adult male, not tall, not bulky. Neutral background, soft light. Youthful, natural and age-appropriate. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 06 — Father-son scale check
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/06_father_son_scale_check/
+
+Expected filename:
+ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png
+
+Prompt:
+Photorealistic father-son scale check of the younger character standing next to Andrey Senior, clear height difference, son much shorter and slimmer, both wearing simple neutral clothing, neutral studio or home background, soft natural lighting. Maintain both identities; son youthful and compact, father taller adult. Family-neutral, non-sexual. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 07 — Father-son casual outdoor
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/07_father_son_casual_outdoor/
+
+Expected filename:
+ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png
+
+Prompt:
+Photorealistic casual outdoor scene of the younger character and Andrey Senior, walking or standing together in a park or street, natural daylight, casual clothing, clear father-son relationship through scale and interaction. Youthful, natural and age-appropriate. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 08 — Father-son home conversation
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/
+
+Expected filename:
+ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png
+
+Prompt:
+Photorealistic home conversation scene of the younger character and Andrey Senior, indoor living room or kitchen, natural window light, both seated or standing, talking, family-neutral mood. Use strong Andrey Senior face/body references to keep father identity stable. Youthful, natural and age-appropriate. No text, no watermark.
+
+---
+
+## SOLO CONTROL TEST 09 — Father-son training coaching
+
+Target folder:
+AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/
+
+Expected filename:
+ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png
+
+Prompt:
+Photorealistic training coaching scene of the younger character and Andrey Senior, gym or sports court, father coaching son, both in athletic wear, supportive family-neutral interaction. Preserve son’s short compact build and father’s taller adult build. Youthful, natural and age-appropriate. No text, no watermark.
 
 ---
 

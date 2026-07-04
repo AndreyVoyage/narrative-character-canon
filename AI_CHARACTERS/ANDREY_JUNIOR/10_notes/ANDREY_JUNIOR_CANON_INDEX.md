@@ -1,35 +1,32 @@
 # ANDREY_JUNIOR_CANON_INDEX
 
 Status:
-CANON_PENDING
+BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED
 
 Character:
 ANDREY_JUNIOR
 
 Current stage:
-SETUP_DONE / GENERATION_PENDING
+SOLO_CANON_READY
+
+Active version:
+son_version
 
 Active canon files:
-None yet.
 
-Face canon:
-NOT GENERATED
-
-Body canon:
-NOT GENERATED
-
-Expression canon:
-NOT GENERATED
-
-Outfit canon:
-NOT GENERATED
-
-Solo control tests:
-NOT GENERATED
+* Face canon:
+  AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png
+* Expression canon:
+  AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png
+* Body canon A:
+  AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png
+* Body canon B:
+  AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png
 
 Important:
-ANDREY_JUNIOR is an adult compact young man, 20+ years old, 153 cm, 53 kg.
-Do not portray as minor/teen/child.
+ANDREY_JUNIOR is the younger son-version of ANDREY Senior.
+Short compact build, about 47 kg, slim youthful physique.
+Do not use old adult/20+ direction as active canon.
 
 Folder structure:
 
@@ -45,4 +42,4 @@ Folder structure:
 * 10_notes
 
 Next action:
-Generate ANDREY_JUNIOR face canon sheet only after explicit user request.
+Start OLGA canon setup only after explicit user request.

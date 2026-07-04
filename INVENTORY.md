@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-03 16:00:11
+2026-07-04 15:14:12
 
 ---
 
@@ -17,14 +17,17 @@ Generated:
 │   ├── CHARACTER_REGISTRY.md
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_124946
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_155641
+│   ├── CHARACTER_REGISTRY.md.backup_20260704_151046
 │   ├── CONTEXT_SNAPSHOT.md
 │   ├── CURRENT_TASK.md
 │   ├── CURRENT_TASK.md.backup_20260703_124946
 │   ├── CURRENT_TASK.md.backup_20260703_155641
+│   ├── CURRENT_TASK.md.backup_20260704_151046
 │   ├── DECISIONS.md
 │   ├── DECISIONS.md.backup_20260702_231625
 │   ├── DECISIONS.md.backup_20260703_124946
 │   ├── DECISIONS.md.backup_20260703_155641
+│   ├── DECISIONS.md.backup_20260704_151046
 │   ├── EVENTS_EXPORT.jsonl
 │   ├── LOCATION_REGISTRY.md
 │   ├── PROJECT_STATE.md
@@ -179,27 +182,45 @@ Generated:
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
 │   │   │   ├── expressions/
-│   │   │   │   └── .gitkeep
-│   │   │   └── .gitkeep
+│   │   │   │   ├── .gitkeep
+│   │   │   │   └── ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png
+│   │   │   ├── .gitkeep
+│   │   │   └── ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 04_body_sheet/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   ├── ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png
+│   │   │   └── ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png
 │   │   ├── 05_outfits/
 │   │   │   └── .gitkeep
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
-│   │   │   └── ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt
+│   │   │   └── ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt.backup_20260704_150852
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_neutral_studio_portrait/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png
 │   │   │   │   ├── 02_full_body_studio/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png
 │   │   │   │   ├── 03_athletic_gym_identity/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png
 │   │   │   │   ├── 04_casual_outfit/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png
 │   │   │   │   ├── 05_scale_compact_body_check/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png
+│   │   │   │   ├── 06_father_son_scale_check/
+│   │   │   │   │   └── ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png
+│   │   │   │   ├── 07_father_son_casual_outdoor/
+│   │   │   │   │   └── ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png
+│   │   │   │   ├── 08_father_son_home_conversation/
+│   │   │   │   │   └── ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png
+│   │   │   │   ├── 09_father_son_training_coaching/
+│   │   │   │   │   └── ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png
 │   │   │   │   └── .gitkeep
 │   │   │   ├── drafts/
 │   │   │   │   └── .gitkeep
@@ -213,9 +234,13 @@ Generated:
 │   │   ├── 10_notes/
 │   │   │   ├── .gitkeep
 │   │   │   ├── ANDREY_JUNIOR_CANON_INDEX.md
+│   │   │   ├── ANDREY_JUNIOR_CANON_INDEX.md.backup_20260704_150852
 │   │   │   ├── ANDREY_JUNIOR_IDENTITY_DRAFT.md
+│   │   │   ├── ANDREY_JUNIOR_IDENTITY_DRAFT.md.backup_20260704_150852
 │   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json
-│   │   │   └── ANDREY_JUNIOR_TEST_RESULTS.md
+│   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260704_150852
+│   │   │   ├── ANDREY_JUNIOR_TEST_RESULTS.md
+│   │   │   └── ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260704_150852
 │   │   └── .gitkeep
 │   ├── EGOR/
 │   │   ├── 01_refs_raw/
@@ -578,6 +603,7 @@ Generated:
 ├── INVENTORY.md
 ├── INVENTORY.md.backup_20260703_125505
 ├── INVENTORY.md.backup_20260703_160011
+├── INVENTORY.md.backup_20260704_151411
 ├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
 ├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
 ├── README.md
@@ -586,7 +612,7 @@ Generated:
 
 # Total file count
 
-319
+341
 
 # File type summary
 
@@ -600,11 +626,14 @@ Generated:
 | .backup_20260703_125505 | 1 |
 | .backup_20260703_155641 | 3 |
 | .backup_20260703_160011 | 1 |
+| .backup_20260704_150852 | 5 |
+| .backup_20260704_151046 | 3 |
+| .backup_20260704_151411 | 1 |
 | .jpg | 1 |
 | .json | 12 |
 | .jsonl | 1 |
 | .md | 28 |
-| .png | 57 |
+| .png | 70 |
 | .ps1 | 1 |
 | .py | 6 |
 | .txt | 19 |
@@ -615,24 +644,27 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 3142 | 2026-07-03 15:57:42 |
+| .voyage/CHARACTER_REGISTRY.md | 3189 | 2026-07-04 15:11:14 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
-| .voyage/CONTEXT_SNAPSHOT.md | 2518 | 2026-07-03 15:59:56 |
-| .voyage/CURRENT_TASK.md | 7311 | 2026-07-03 15:57:30 |
+| .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
+| .voyage/CONTEXT_SNAPSHOT.md | 2596 | 2026-07-04 15:14:01 |
+| .voyage/CURRENT_TASK.md | 8013 | 2026-07-04 15:11:01 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
-| .voyage/DECISIONS.md | 16517 | 2026-07-03 15:59:30 |
+| .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
+| .voyage/DECISIONS.md | 19455 | 2026-07-04 15:12:45 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
-| .voyage/EVENTS_EXPORT.jsonl | 7990 | 2026-07-03 15:59:56 |
+| .voyage/DECISIONS.md.backup_20260704_151046 | 16517 | 2026-07-04 15:10:46 |
+| .voyage/EVENTS_EXPORT.jsonl | 15818 | 2026-07-04 15:14:01 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 772 | 2026-07-03 01:57:13 |
-| .voyage/STATE_EXPORT.json | 29820 | 2026-07-03 15:59:56 |
+| .voyage/STATE_EXPORT.json | 47707 | 2026-07-04 15:14:01 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
@@ -727,27 +759,45 @@ Generated:
 | AI_CHARACTERS/ANDREY_JUNIOR/01_refs_raw/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/02_refs_selected/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png | 2261340 | 2026-07-03 21:15:18 |
 | AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png | 2334285 | 2026-07-03 23:31:01 |
 | AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/.gitkeep | 0 | 2026-07-03 15:55:31 |
+| AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png | 1797398 | 2026-07-04 06:30:22 |
+| AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png | 1768630 | 2026-07-04 07:51:53 |
 | AI_CHARACTERS/ANDREY_JUNIOR/05_outfits/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/.gitkeep | 0 | 2026-07-03 15:55:31 |
-| AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt | 3933 | 2026-07-03 15:56:25 |
+| AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt | 8806 | 2026-07-04 15:10:36 |
+| AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt.backup_20260704_150852 | 3933 | 2026-07-04 15:08:52 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/.gitkeep | 0 | 2026-07-03 15:56:33 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png | 2097235 | 2026-07-03 21:16:26 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png | 1990651 | 2026-07-03 21:51:03 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png | 1929235 | 2026-07-03 22:01:40 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png | 2285922 | 2026-07-03 22:07:30 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/.gitkeep | 0 | 2026-07-03 15:56:33 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png | 2074779 | 2026-07-03 23:00:11 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/06_father_son_scale_check/ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png | 1892311 | 2026-07-04 08:34:37 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/07_father_son_casual_outdoor/ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png | 2286466 | 2026-07-04 09:47:55 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png | 2274479 | 2026-07-04 11:27:52 |
+| AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png | 1917670 | 2026-07-04 12:11:18 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/drafts/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/07_generated/rejected/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/08_video_refs/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/09_blender/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/.gitkeep | 0 | 2026-07-03 15:55:31 |
-| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_CANON_INDEX.md | 684 | 2026-07-03 15:55:49 |
-| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md | 1261 | 2026-07-03 15:55:44 |
-| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json | 602 | 2026-07-03 15:56:02 |
-| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md | 903 | 2026-07-03 15:55:56 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_CANON_INDEX.md | 1093 | 2026-07-04 15:09:12 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_CANON_INDEX.md.backup_20260704_150852 | 684 | 2026-07-04 15:08:52 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md | 1508 | 2026-07-04 15:09:06 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md.backup_20260704_150852 | 1261 | 2026-07-04 15:08:52 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json | 6295 | 2026-07-04 15:10:00 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260704_150852 | 602 | 2026-07-04 15:08:52 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md | 2982 | 2026-07-04 15:09:27 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260704_150852 | 903 | 2026-07-04 15:08:52 |
 | AI_CHARACTERS/EGOR/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -918,9 +968,10 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 53201 | 2026-07-03 12:55:39 |
+| INVENTORY.md | 58158 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
+| INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |

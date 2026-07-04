@@ -168,9 +168,9 @@ Forbidden:
 * do not treat Kira heels as changing barefoot canon height;
 * do not include sauna unless explicitly requested.
 
-## Current — NCC-ANDREY-JUNIOR-CANON-SETUP
+## Completed — NCC-ANDREY-JUNIOR-CANON-SETUP
 
-Status: SETUP_DONE / GENERATION_PENDING
+Status: DONE / SETUP_COMMITTED (2026-07-03)
 
 Character:
 ANDREY_JUNIOR
@@ -184,20 +184,43 @@ Completed:
 * Reference presets JSON created.
 * Canon generation prompt pack created.
 * Planned solo control test folders created.
-* No images generated.
+* No images generated in setup step.
 
 Result:
-ANDREY_JUNIOR canon workflow is ready.
+ANDREY_JUNIOR canon workflow is ready for generation.
+
+## Completed — NCC-ANDREY-JUNIOR-BASE-CANON-AND-CONTROL-TESTS
+
+Status: DONE / CONTROL_TESTS_APPROVED (2026-07-04)
+
+Character:
+ANDREY_JUNIOR
+
+Completed:
+
+* Son-version identity approved.
+* Face canon sheet generated and approved.
+* Expression sheet generated and approved.
+* Body canon sheets A and B generated and approved.
+* Solo control tests 01–09 generated and approved.
+* Test 06 v2 approved after v1 father proportion drift.
+* Test 08 approved with stronger Andrey Senior references.
+* Notes, prompts and reference presets updated to son-version.
+* SQLite memory updated.
+* Memory exports regenerated.
+
+Result:
+ANDREY_JUNIOR son-version base canon and control tests are approved locally.
 
 Next:
-Generate ANDREY_JUNIOR FACE CANON SHEET only after explicit user request.
+Start OLGA canon setup only after explicit user request.
 
 Forbidden:
 
 * do not confuse ANDREY_JUNIOR with ANDREY Senior;
-* do not portray ANDREY_JUNIOR as minor/teen/child;
+* do not revert to old adult/20+ direction as active canon;
 * do not make him tall or bulky;
-* do not start Olga until ANDREY_JUNIOR base canon setup is committed.
+* do not start Olga until explicitly requested.
 
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 

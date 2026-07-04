@@ -297,6 +297,46 @@ ANDREY_JUNIOR becomes CANON_PENDING / SETUP_DONE. Face canon generation requires
 Important:
 ANDREY_JUNIOR must be treated as an adult compact young man 20+, 153 cm, 53 kg. Do not portray him as minor, teen or child.
 
+## DECISION-0019 — Approve Andrey Junior son-version base canon and control tests
+
+Date: 2026-07-04
+
+Context:
+ANDREY_JUNIOR was first started with an adult/20+ direction, then restarted as the younger son of ANDREY Senior. New locally generated base canon and control tests were reviewed and approved.
+
+Decision:
+Approve the son-version of ANDREY_JUNIOR as the active canon. Old adult/20+ direction is superseded and must not be used as active canon.
+
+Approved base canon:
+
+* `AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png`
+
+Approved control tests:
+
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/06_father_son_scale_check/ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/07_father_son_casual_outdoor/ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png`
+* `AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png`
+
+Rejected / ignored:
+
+* Old adult/20+ direction text and any images tied to that direction are not active canon.
+* TEST 06 v1 was held/rejected due to Andrey Senior body proportion drift; v2 approved.
+
+Result:
+ANDREY_JUNIOR becomes BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED.
+
+Important:
+ANDREY_JUNIOR is the son-version of ANDREY Senior: short compact build, about 47 kg, slim youthful physique, fair skin, bright blue eyes, light blonde / dark blonde messy hair, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks. Keep prompts family-neutral, non-sexual and age-appropriate. Avoid explicit age numbers and avoid writing “Andrey Junior” inside image prompts when possible.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

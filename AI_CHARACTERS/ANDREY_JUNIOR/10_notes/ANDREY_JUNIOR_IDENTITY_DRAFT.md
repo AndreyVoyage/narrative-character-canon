@@ -1,32 +1,32 @@
 # ANDREY_JUNIOR_IDENTITY_DRAFT
 
 Status:
-DRAFT / CANON_PENDING
+CANON_APPROVED
 
 Character ID:
 ANDREY_JUNIOR
 
 Important:
-ANDREY_JUNIOR is an adult compact young man, 20+ years old.
-Do not portray him as a child, teenager or minor.
+ANDREY_JUNIOR is the younger son-version of ANDREY Senior.
+He must look age-appropriate, natural, family-neutral and non-sexual.
+Do not portray him as a child or adult romantic lead.
 
 Core identity:
 
-* adult compact young man, 20+ years old;
-* 153 cm height;
-* 53 kg;
-* compact athletic swimmer/wrestler build;
-* small but fit frame;
-* lean muscles, visible definition;
-* narrow/compact shoulders, not broad heroic V-shape;
-* slim waist;
-* proportionally lean arms and legs;
-* youthful adult face;
-* blue eyes;
-* light blond hair;
-* clean-shaven or minimal facial hair unless later changed;
+* son of Andrey Senior;
+* short compact build;
+* about 47 kg;
+* slim youthful physique;
+* fair skin;
+* bright blue eyes;
+* light blonde / dark blonde messy hair with natural tousled texture;
+* soft oval youthful face;
+* gentle narrow jawline;
+* clean-shaven;
+* natural pinkness in cheeks;
+* compact athletic swimmer/wrestler tone, small frame;
 * physically smaller than most adult male characters;
-* adult, confident, energetic, resilient.
+* youthful, energetic, resilient.
 
 Negative identity drift:
 
@@ -34,19 +34,21 @@ Negative identity drift:
 * do not make him bulky;
 * do not make him bodybuilder;
 * do not make him fragile;
-* do not make him childlike;
-* do not make him teenage-looking;
-* do not make him broad-shouldered heroic type;
 * do not make him look like ANDREY Senior;
-* do not merge him with Andrey Senior identity.
+* do not merge him with Andrey Senior identity;
+* do not add explicit age numbers to image prompts;
+* do not sexualize the character.
 
-Canon status:
-NOT GENERATED
+Active version:
+son_version
+
+Old direction superseded:
+The earlier adult/20+ direction (153 cm, 53 kg, “adult compact young man”) is no longer active canon.
 
 Next steps:
 
-1. Generate face canon sheet.
-2. Generate body canon sheet.
-3. Generate expression sheet.
-4. Generate solo control tests.
-5. Only then start joint tests with Olga.
+1. Use approved face canon sheet for future prompts.
+2. Use approved body canon sheets for scale checks.
+3. Use approved expression sheet for consistent expressions.
+4. Use approved control tests 01–09 as reference pack.
+5. Only then start joint tests with Olga after explicit user request.

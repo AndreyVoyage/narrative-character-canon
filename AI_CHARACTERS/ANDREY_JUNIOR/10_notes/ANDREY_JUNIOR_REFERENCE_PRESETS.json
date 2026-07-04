@@ -1,22 +1,88 @@
 {
   "character": "ANDREY_JUNIOR",
-  "version": "0.1.0",
-  "last_updated": "2026-07-03",
-  "status": "CANON_PENDING",
+  "version": "0.2.0",
+  "last_updated": "2026-07-04",
+  "status": "CONTROL_TESTS_APPROVED",
+  "active_version": "son_version",
   "root": "AI_CHARACTERS/ANDREY_JUNIOR",
   "identity": {
-    "age_rule": "adult 20+",
-    "height_cm": 153,
-    "weight_kg": 53,
-    "build": "compact athletic swimmer/wrestler build",
-    "important": "Do not portray as child, teen or minor."
+    "role": "son of ANDREY Senior",
+    "weight_kg": 47,
+    "build": "short compact build, slim youthful physique",
+    "appearance": "fair skin, bright blue eyes, light blonde / dark blonde messy hair, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks",
+    "important": "age-appropriate, natural, family-neutral, non-sexual; do not use old adult/20+ direction"
   },
-  "scene_presets": {},
+  "base_canon": {
+    "face_canon": "AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png",
+    "body_canon_A": "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_B": "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png"
+  },
+  "control_tests": [
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/06_father_son_scale_check/ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/07_father_son_casual_outdoor/ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png",
+    "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png"
+  ],
+  "scene_presets": {
+    "neutral_portrait": {
+      "description": "Approved neutral studio portrait of ANDREY_JUNIOR.",
+      "reference_images": [
+        "AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved face canon and neutral portrait to keep identity consistent."
+    },
+    "full_body_reference": {
+      "description": "Approved full body reference for ANDREY_JUNIOR.",
+      "reference_images": [
+        "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved body canon sheets to preserve short compact build and youthful proportions."
+    },
+    "casual_lifestyle": {
+      "description": "Approved casual lifestyle scenes for ANDREY_JUNIOR.",
+      "reference_images": [
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved casual and home conversation references for family-neutral lifestyle scenes."
+    },
+    "father_son_family": {
+      "description": "Approved father-son family scenes with Andrey Senior.",
+      "reference_images": [
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/06_father_son_scale_check/ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/07_father_son_casual_outdoor/ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved father-son references to preserve scale relationship and both identities."
+    },
+    "training_coaching": {
+      "description": "Approved training/coaching scenes for ANDREY_JUNIOR.",
+      "reference_images": [
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved athletic and coaching references for training contexts."
+    }
+  },
   "rules": [
-    "No active canon refs yet.",
-    "Generate face canon first.",
-    "Do not confuse ANDREY_JUNIOR with ANDREY Senior.",
+    "ANDREY_JUNIOR is the son-version of ANDREY Senior.",
+    "Use only approved son-version canon as active reference.",
+    "Do not use the old adult/20+ direction as active canon.",
     "Do not make him tall or bulky.",
-    "Do not make him childlike."
+    "Do not make him look like ANDREY Senior.",
+    "Keep prompts family-neutral, non-sexual and age-appropriate.",
+    "Avoid writing 'Andrey Junior' inside image-generation prompts when possible.",
+    "Avoid explicit age numbers inside image-generation prompts."
   ]
 }
