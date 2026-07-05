@@ -278,6 +278,42 @@ Forbidden:
 * do not drift into bodybuilder build;
 * do not record a generation without a prompt_id, reference map, output path and verdict.
 
+## Completed — NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG
+
+Status: DONE / CONTROL_TESTS_UPDATED (2026-07-05)
+
+Character: OLGA
+
+Completed:
+
+* Normalized OLGA test05/test06 filenames to match folder IDs.
+* Moved unlabeled raw `1.png` to `AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png`.
+* Updated `OLGA_PROMPT_INDEX.md` with prompt IDs `OLGA_TEST05_BUSINESS_INTERIOR_V1` and `OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1`.
+* Updated `OLGA_WORKING_SCENE_PROMPTS.md` with reconstructed prompts and reference maps.
+* Appended two valid JSONL records to `OLGA_PROMPT_RUN_LOG.jsonl`.
+* Updated `OLGA_CANON_INDEX.md`, `OLGA_TEST_RESULTS.md`, and `OLGA_REFERENCE_PRESETS.json`.
+* Fixed duplicate OLGA row in `.voyage/CHARACTER_REGISTRY.md`.
+* Recorded task, decision, event, and artifact updates in SQLite memory.
+* Regenerated `.voyage` memory exports.
+* Regenerated `INVENTORY.md`.
+
+Result:
+
+OLGA now has 6 approved control tests (01–06) with consistent IDs, prompt pipeline records, and reference presets.
+
+Next:
+
+Continue controlled scene testing with prompt_id logging.
+
+Forbidden:
+
+* Do not generate images automatically.
+* Do not use nude, lingerie, transparent, fetish or erotic contexts.
+* Do not make OLGA look too young.
+* Do not exaggerate body proportions.
+* Do not drift into bodybuilder build.
+* Do not record a generation without `prompt_id`, reference map, output path and verdict.
+
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 
 Status: POSTPONED

@@ -26,6 +26,8 @@ This folder stores prompt templates, working scene prompts, reference maps, and 
 | OLGA_TEST02_SPORTS_YOGA_V1 | sports yoga | APPROVED | exact_user_visible_prompt | `AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/OLGA_test02_sports_yoga_v1_APPROVED.png` |
 | OLGA_TEST03_PORTRAIT_EXPRESSION_V1 | portrait expression | APPROVED | exact_user_visible_prompt | `AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png` |
 | OLGA_TEST04_OUTDOOR_WALK_AJ_V1 | outdoor walk with ANDREY_JUNIOR | APPROVED | exact_user_visible_prompt | `AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png` |
+| OLGA_TEST05_BUSINESS_INTERIOR_V1 | business interior | APPROVED | reconstructed_from_conversation_and_approved_result | `AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png` |
+| OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1 | indoor lounge conversation with ANDREY_JUNIOR | APPROVED | reconstructed_from_conversation_and_approved_result | `AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png` |
 
 ## Reference Map
 

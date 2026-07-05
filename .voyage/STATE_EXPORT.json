@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-05T13:30:10.342117+00:00",
+  "generated_at": "2026-07-05T20:45:53.592788+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -806,46 +806,91 @@
       "artifact_id": "OLGA_PROMPT_INDEX",
       "character_id": "OLGA",
       "pair_id": null,
-      "artifact_type": "setup_doc",
+      "artifact_type": "prompt_index",
       "file_path": "AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md",
       "status": "ACTIVE",
       "verdict": null,
       "is_active_canon": 0,
       "is_approved": 0,
       "is_rejected": 0,
-      "notes": "OLGA prompt index",
+      "notes": "Updated with test05/test06 prompt IDs.",
       "commit_hash": null,
-      "updated_at": "2026-07-05T13:29:57.389657+00:00"
+      "updated_at": "2026-07-05T20:45:45.777165+00:00"
     },
     {
       "artifact_id": "OLGA_WORKING_SCENE_PROMPTS",
       "character_id": "OLGA",
       "pair_id": null,
-      "artifact_type": "setup_doc",
+      "artifact_type": "working_prompts",
       "file_path": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md",
       "status": "ACTIVE",
       "verdict": null,
       "is_active_canon": 0,
       "is_approved": 0,
       "is_rejected": 0,
-      "notes": "OLGA working scene prompts",
+      "notes": "Updated with test05/test06 reconstructed prompts.",
       "commit_hash": null,
-      "updated_at": "2026-07-05T13:29:57.827317+00:00"
+      "updated_at": "2026-07-05T20:45:46.338399+00:00"
     },
     {
       "artifact_id": "OLGA_PROMPT_RUN_LOG",
       "character_id": "OLGA",
       "pair_id": null,
-      "artifact_type": "setup_doc",
+      "artifact_type": "prompt_run_log",
       "file_path": "AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl",
       "status": "ACTIVE",
       "verdict": null,
       "is_active_canon": 0,
       "is_approved": 0,
       "is_rejected": 0,
-      "notes": "OLGA prompt run log JSONL",
+      "notes": "Appended test05/test06 JSONL records.",
       "commit_hash": null,
-      "updated_at": "2026-07-05T13:29:58.510608+00:00"
+      "updated_at": "2026-07-05T20:45:47.056612+00:00"
+    },
+    {
+      "artifact_id": "OLGA_TEST_05",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "canon_test",
+      "file_path": "AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved business interior control test after ID normalization.",
+      "commit_hash": null,
+      "updated_at": "2026-07-05T20:45:43.888264+00:00"
+    },
+    {
+      "artifact_id": "OLGA_TEST_06",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "canon_test",
+      "file_path": "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png",
+      "status": "APPROVED",
+      "verdict": "APPROVE",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Approved indoor lounge conversation with ANDREY_JUNIOR after ID normalization.",
+      "commit_hash": null,
+      "updated_at": "2026-07-05T20:45:44.388890+00:00"
+    },
+    {
+      "artifact_id": "OLGA_BUSINESS_INTERIOR_RAW_1_REJECTED",
+      "character_id": "OLGA",
+      "pair_id": null,
+      "artifact_type": "raw_reference",
+      "file_path": "AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png",
+      "status": "REJECTED",
+      "verdict": "REJECT",
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 1,
+      "notes": "Unlabeled raw candidate moved to rejected during test05 normalization.",
+      "commit_hash": null,
+      "updated_at": "2026-07-05T20:45:45.115704+00:00"
     }
   ],
   "tasks": [
@@ -911,6 +956,15 @@
       "next_action": "Continue OLGA controlled scene testing with prompt_id logging for every generation",
       "notes": "OLGA base canon images, control tests 01-04, prompt index, working prompts, and prompt run log created.",
       "updated_at": "2026-07-05T13:29:51.432434+00:00"
+    },
+    {
+      "task_id": "NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG",
+      "title": "Normalize OLga test05/test06 and prompt logs",
+      "status": "DONE",
+      "current_stage": "CONTROL_TESTS_UPDATED",
+      "next_action": "Continue controlled scene testing with prompt_id logging",
+      "notes": "Renamed swapped test IDs, moved raw 1.png to rejected, updated prompt pipeline and presets.",
+      "updated_at": "2026-07-05T20:45:42.036366+00:00"
     }
   ],
   "decisions": [
@@ -1001,6 +1055,14 @@
       "summary": "Approved OLGA base canon and control tests 01-04; normalized prompt logging with index, working prompts, and JSONL run log.",
       "commit_hash": null,
       "updated_at": "2026-07-05T13:29:51.990341+00:00"
+    },
+    {
+      "decision_id": "DECISION-0022",
+      "title": "Normalize OLGA test05/test06 and enforce prompt logging",
+      "date": "2026-07-05",
+      "summary": "Business interior is test05, indoor lounge with AJ is test06. Filenames and prompt IDs normalized; unlabeled raw moved to rejected.",
+      "commit_hash": null,
+      "updated_at": "2026-07-05T20:45:42.747351+00:00"
     }
   ],
   "commits": [
@@ -1659,6 +1721,96 @@
       "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl\"}",
       "commit_hash": null,
       "created_at": "2026-07-05T13:29:58.515332+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204542-a1b72db7",
+      "event_type": "TASK_RECORDED",
+      "subject_type": "task",
+      "subject_id": "NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG",
+      "summary": "Task recorded/updated: Normalize OLga test05/test06 and prompt logs",
+      "payload_json": "{\"status\": \"DONE\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:42.043044+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204542-3c83959f",
+      "event_type": "DECISION_RECORDED",
+      "subject_type": "decision",
+      "subject_id": "DECISION-0022",
+      "summary": "Decision recorded: Normalize OLGA test05/test06 and enforce prompt logging",
+      "payload_json": "{\"date\": \"2026-07-05\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:42.753686+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204543-5dbc0f07",
+      "event_type": "OLGA_TEST05_06_PROMPT_LOG_NORMALIZED",
+      "subject_type": "character",
+      "subject_id": "OLGA",
+      "summary": "OLGA test05/test06 IDs normalized and prompt pipeline records updated",
+      "payload_json": "{\"test05\":\"OLGA_TEST05_BUSINESS_INTERIOR_V1\",\"test06\":\"OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1\",\"raw_moved\":\"AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:43.355583+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204543-9c755e3c",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_TEST_05",
+      "summary": "Artifact recorded/updated: OLGA_TEST_05 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:43.896762+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204544-b7379ca0",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_TEST_06",
+      "summary": "Artifact recorded/updated: OLGA_TEST_06 -> APPROVED",
+      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:44.396881+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204545-96c51ca8",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_BUSINESS_INTERIOR_RAW_1_REJECTED",
+      "summary": "Artifact recorded/updated: OLGA_BUSINESS_INTERIOR_RAW_1_REJECTED -> REJECTED",
+      "payload_json": "{\"status\": \"REJECTED\", \"file_path\": \"AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:45.121895+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204545-4164edaa",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_PROMPT_INDEX",
+      "summary": "Artifact recorded/updated: OLGA_PROMPT_INDEX -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:45.782812+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204546-2128a637",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_WORKING_SCENE_PROMPTS",
+      "summary": "Artifact recorded/updated: OLGA_WORKING_SCENE_PROMPTS -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:46.347119+00:00"
+    },
+    {
+      "event_id": "EVT-20260705-204547-68aa513d",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "OLGA_PROMPT_RUN_LOG",
+      "summary": "Artifact recorded/updated: OLGA_PROMPT_RUN_LOG -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-05T20:45:47.062065+00:00"
     }
   ]
 }

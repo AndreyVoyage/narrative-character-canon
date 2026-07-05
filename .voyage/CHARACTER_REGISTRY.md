@@ -8,10 +8,9 @@
 | ANDREY_JUNIOR | `AI_CHARACTERS/ANDREY_JUNIOR` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED | son of ANDREY Senior, short compact build, about 47 kg, son-version active | Next: start OLGA canon setup after explicit user request |
 | MARINA | `AI_CHARACTERS/MARINA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |
 | NIKA | `AI_CHARACTERS/NIKA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; base canon must stay tasteful/non-explicit per ROADMAP Priority 4 |
-| OLGA | `AI_CHARACTERS/OLGA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |
 | SERGEY | `AI_CHARACTERS/SERGEY` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; secondary character pack |
 | MAKSIM | `AI_CHARACTERS/MAKSIM` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; secondary character pack |
-| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY | mature adult woman; very tall ~187 cm; athletic-curvy; dominant elegant posture | Next: continue controlled scene testing with prompt_id logging |
+| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY | WORKING — base canon + tests 01–06, prompt pipeline active | Continue controlled scene testing with prompt_id logging |
 | EGOR | `AI_CHARACTERS/EGOR` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; watch for drift into too-adult/muscular type per ROADMAP Priority 6 |
 
 ## Правило

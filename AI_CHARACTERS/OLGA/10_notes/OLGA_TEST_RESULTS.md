@@ -9,8 +9,8 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 | 02 | sports yoga | GENERATED | APPROVE | Approved athletic-curvy realism; legs proportionate |
 | 03 | portrait expression | GENERATED | APPROVE | Approved portrait; face identity and expression stable |
 | 04 | outdoor walk with ANDREY_JUNIOR | GENERATED | APPROVE | Approved joint walk; shoulder-guiding contact safer than hand-holding |
-| 05 | mature scale / tall body check | NOT GENERATED | PENDING | future standalone scale check |
-| 06 | cinematic indoor portrait | NOT GENERATED | PENDING | future face stability check |
+| 05 | business interior | GENERATED | APPROVE | Approved business/interior test; face identity stable, mature business styling |
+| 06 | indoor lounge conversation with ANDREY_JUNIOR | GENERATED | APPROVE | Approved indoor joint conversation; safe shoulder-guiding contact, scale contrast clear |
 | 07 | confident outdoor lifestyle | NOT GENERATED | PENDING | future natural lifestyle scene |
 | 08 | character poster | NOT GENERATED | PENDING | final poster-like reference |
 | 09 | interaction test | NOT GENERATED | PENDING | base canon approved; joint interaction may continue |

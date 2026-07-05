@@ -26,6 +26,10 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
   `AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png`
 * 04 outdoor walk with ANDREY_JUNIOR:
   `AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png`
+* 05 business interior:
+  `AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png`
+* 06 indoor lounge conversation with ANDREY_JUNIOR:
+  `AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png`
 
 ## Planned Future Tests
 

@@ -27,7 +27,9 @@
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/OLGA_test02_sports_yoga_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png",
-    "AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png"
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png"
   ],
   "scene_presets": {
     "neutral_face_reference": {
@@ -75,6 +77,22 @@
         "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png"
       ],
       "prompt_goal": "Use for family-neutral outdoor OLGA + ANDREY_JUNIOR scenes; prefer shoulder-guiding contact over hand-holding."
+    },
+    "business_interior": {
+      "description": "Approved OLGA business interior scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for professional business/interior OLGA scenes."
+    },
+    "indoor_lounge_conversation_with_andrey_junior": {
+      "description": "Approved OLGA and ANDREY_JUNIOR indoor lounge conversation scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png"
+      ],
+      "prompt_goal": "Use for family-neutral indoor OLGA + ANDREY_JUNIOR conversation scenes; prefer calm mentoring body language and clear scale contrast."
     }
   },
   "prompt_pipeline": {

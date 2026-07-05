@@ -244,3 +244,54 @@ Photorealistic lifestyle outdoor scene, based on the approved OLGA references an
 
 Result notes:
 Use this pattern for future family-neutral outdoor scenes. Avoid hand-holding framing that causes scale drift.
+
+
+---
+
+## OLGA_TEST05_BUSINESS_INTERIOR_V1
+
+Prompt ID:
+OLGA_TEST05_BUSINESS_INTERIOR_V1
+
+Status:
+APPROVED
+
+Output path:
+`AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png`
+
+Prompt source:
+reconstructed_from_conversation_and_approved_result
+
+Reference map:
+Use Image B for OLGA face identity. Use Image D for body/scale reference.
+
+Full prompt (reconstructed):
+Photorealistic interior business scene of the same mature adult woman, very tall athletic-curvy build, dark brown straight hair past shoulders or clean ponytail, fiery dark brown eyes, small beauty mark above the left side of the upper lip, defined cheekbones, strong but feminine jawline. She wears a dark burgundy fitted blouse and dark trousers. Modern office or business lounge setting, soft natural window light, calm confident expression, elegant mature presence, professional business styling. Full body or three-quarter view. No text, no watermark, no logo.
+
+Result notes:
+Approved business/interior control test. Face identity stable, mature business styling, burgundy top and dark trousers, safe interior reference.
+
+---
+
+## OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1
+
+Prompt ID:
+OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1
+
+Status:
+APPROVED
+
+Output path:
+`AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png`
+
+Prompt source:
+reconstructed_from_conversation_and_approved_result
+
+Reference map:
+Use Image A, B, C, D for OLGA identity and scale. Use Image E and Image F for ANDREY_JUNIOR identity and compact scale.
+
+Full prompt (reconstructed):
+Photorealistic indoor lounge scene with the same mature adult woman and a shorter compact slim youth. The woman is very tall, athletic-curvy, dark brown straight hair past shoulders or clean ponytail, fiery dark brown eyes, small beauty mark above the left side of the upper lip, wearing a dark burgundy fitted top and dark trousers. The youth has fair skin, bright blue eyes, light tousled blond hair, soft oval face, gentle narrow jawline, clean-shaven, wearing a grey casual hoodie and dark pants. They sit across from each other in a calm interior lounge or office conversation area, soft warm interior light, comfortable furniture, books or coffee table visible in the background. The woman is upright and composed; the youth is relaxed and attentive. Safe shoulder-guiding or mentoring body language, clear scale contrast, consistent identities, family-neutral mood. No text, no watermark, no logo.
+
+Result notes:
+Indoor lounge/office conversation with ANDREY_JUNIOR. Safe guiding contact via shoulder, calm mentor/guardian-like conversation, clear scale contrast, identities consistent.

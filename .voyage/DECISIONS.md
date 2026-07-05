@@ -423,3 +423,52 @@ Create prompts, tracking document and folders first. Do not generate control tes
 
 Result:
 Control tests remain pending until the user explicitly requests each generation.
+
+## DECISION-0022 — Normalize OLGA test05/test06 and enforce prompt logging
+
+Date: 2026-07-05
+
+Context:
+
+Read-only audit detected two new untracked OLGA test folders with swapped IDs:
+
+* Folder `05_business_interior/` contained `OLGA_test06_business_interior_v1_APPROVED.png`.
+* Folder `06_indoor_lounge_conversation_with_andrey_junior/` contained `OLGA_test05_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png`.
+* An unlabeled raw file `1.png` was present in the business interior folder.
+
+Decision:
+
+* Business interior image is approved as **test05**.
+* Indoor lounge conversation with ANDREY_JUNIOR is approved as **test06**.
+* Rename both approved files so folder ID and filename ID match.
+* Move unlabeled raw `1.png` to `AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png`.
+* Record prompt IDs `OLGA_TEST05_BUSINESS_INTERIOR_V1` and `OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1` in the prompt pipeline.
+* Update `OLGA_CANON_INDEX.md`, `OLGA_TEST_RESULTS.md`, and `OLGA_REFERENCE_PRESETS.json`.
+* Fix duplicate OLGA row in `.voyage/CHARACTER_REGISTRY.md`.
+
+Affected files:
+
+* `AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png`
+* `AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png`
+* `AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
+* `AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md`
+* `AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md`
+* `AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json`
+* `.voyage/CHARACTER_REGISTRY.md`
+* `.voyage/CURRENT_TASK.md`
+* `.voyage/DECISIONS.md`
+
+Reason:
+
+Prevents ID mismatch between folders, filenames, prompt_ids, and memory records. Keeps unlabeled raw outputs out of active canon. Enforces prompt logging for all future OLGA generations.
+
+Result:
+
+OLGA has 6 approved control tests (01–06) with consistent IDs and a complete prompt pipeline record.
+
+Next action:
+
+Continue controlled scene testing for OLGA with prompt_id logging.
