@@ -353,6 +353,43 @@ OLGA becomes CANON_PENDING / SETUP_DONE. Face canon generation requires explicit
 Important:
 OLGA is a mature adult woman character: very tall around 187 cm, athletic-curvy build, strong but feminine silhouette, realistic adult proportions, elegant dominant cinematic presence. Generation must remain non-explicit: avoid nude, lingerie, transparent clothing, fetish framing, or erotic posing; avoid exaggerated proportions, bodybuilder drift, or making her look too young.
 
+## DECISION-0021 — Approve OLGA base canon and normalize prompt pipeline
+
+Date: 2026-07-05
+
+Context:
+OLGA setup was committed, then local generations produced approved base canon sheets and control tests. Audit showed prompt logging was not normalized: only a setup skeleton existed, no prompt index, no working scene prompts, and no JSONL run log.
+
+Decision:
+Approve OLGA base canon and initial control tests locally. Normalize prompt logging by creating `OLGA_PROMPT_INDEX.md`, `OLGA_WORKING_SCENE_PROMPTS.md`, and `OLGA_PROMPT_RUN_LOG.jsonl`. Update OLGA canon index, test results, and reference presets to point to active approved files.
+
+Approved base canon:
+
+* `AI_CHARACTERS/OLGA/02_refs_selected/OLGA_ref_face_primary_v1_SELECTED.jpg`
+* `AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png`
+* `AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png`
+* `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png`
+* `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png`
+
+Approved control tests:
+
+* `AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png`
+* `AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/OLGA_test02_sports_yoga_v1_APPROVED.png`
+* `AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png`
+* `AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png`
+
+Prompt pipeline files:
+
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
+
+Result:
+OLGA becomes BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY. Future image generations must record `prompt_id`, references, output path, verdict, and notes.
+
+Important:
+Prompt sources are marked honestly: exact visible prompts are `exact_user_visible_prompt`; reconstructed/inferred prompts are `reconstructed_from_conversation_and_approved_result`. Do not claim unavailable hidden tool prompts are exact.
+
 ## DECISION-0007 — Remove duplicate body candidate from active repo area
 
 Date: 2026-07-02

@@ -222,9 +222,9 @@ Forbidden:
 * do not make him tall or bulky;
 * do not start Olga until explicitly requested.
 
-## Current — NCC-OLGA-CANON-SETUP
+## Completed — NCC-OLGA-CANON-SETUP
 
-Status: SETUP_DONE / GENERATION_PENDING
+Status: DONE / SETUP_COMMITTED (2026-07-04)
 
 Character:
 OLGA
@@ -237,22 +237,46 @@ Completed:
 * Test result tracker created.
 * Reference presets JSON created.
 * Prompt pack created.
-* No images generated.
+* No images generated in setup step.
 
 Result:
-OLGA canon setup is complete and ready for controlled generation.
+OLGA canon setup was complete and ready for controlled generation.
+
+## Completed — NCC-OLGA-BASE-CANON-CONTROL-TESTS-PROMPT-PIPELINE
+
+Status: DONE / BASE_CANON_APPROVED (2026-07-05)
+
+Character:
+OLGA
+
+Completed:
+
+* OLGA primary selected face reference added.
+* OLGA face canon sheet generated and approved.
+* OLGA expression sheet generated and approved.
+* OLGA body canon sheets A and B generated and approved.
+* OLGA control tests 01–04 generated and approved.
+* OLGA prompt index created.
+* OLGA working scene prompts file created.
+* OLGA prompt run log JSONL created.
+* OLGA canon index, test results and reference presets updated.
+* SQLite memory updated.
+* Memory exports regenerated.
+
+Result:
+OLGA base canon and initial control tests are approved locally. Prompt logging is normalized.
 
 Next:
-Generate OLGA face canon sheet only after user approval.
+Continue OLGA controlled scene testing only after prompt_id logging is active for every generation.
 
 Forbidden:
 
 * do not generate images automatically;
-* do not start joint scenes before base canon approval;
 * do not use nude, lingerie, transparent, fetish or erotic contexts;
 * do not make OLGA look too young;
 * do not exaggerate body proportions;
-* do not drift into bodybuilder build.
+* do not drift into bodybuilder build;
+* do not record a generation without a prompt_id, reference map, output path and verdict.
 
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 

@@ -1,7 +1,7 @@
 {
   "character": "OLGA",
-  "active_version": "setup_pending_generation",
-  "status": "SETUP_DONE_GENERATION_PENDING",
+  "active_version": "olga_base_canon_v1",
+  "status": "CONTROL_TESTS_APPROVED",
   "identity_summary": {
     "role": "mature adult woman character",
     "height_direction": "very tall, around 187 cm",
@@ -11,10 +11,11 @@
     "style_direction": "elegant, dominant, mature, cinematic, realistic, non-explicit"
   },
   "active_canon": {
-    "face_canon": null,
-    "expression_canon": null,
-    "body_canon_a": null,
-    "body_canon_b": null
+    "primary_face_reference": "AI_CHARACTERS/OLGA/02_refs_selected/OLGA_ref_face_primary_v1_SELECTED.jpg",
+    "face_canon": "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
   "planned_canon_paths": {
     "face_canon": "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
@@ -22,27 +23,64 @@
     "body_canon_a": "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
     "body_canon_b": "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
+  "control_tests": [
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/OLGA_test02_sports_yoga_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png"
+  ],
   "scene_presets": {
     "neutral_face_reference": {
-      "status": "planned",
-      "purpose": "face identity canon"
+      "description": "Approved OLGA face canon reference.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/02_refs_selected/OLGA_ref_face_primary_v1_SELECTED.jpg",
+        "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved face canon to keep OLGA identity stable."
     },
     "full_body_reference": {
-      "status": "planned",
-      "purpose": "body scale and silhouette"
+      "description": "Approved OLGA body and scale reference.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+      ],
+      "prompt_goal": "Use approved body canon to preserve tall athletic-curvy proportions."
     },
-    "elegant_lifestyle": {
-      "status": "planned",
-      "purpose": "mature elegant identity"
+    "evening_embankment": {
+      "description": "Approved OLGA evening embankment scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for cinematic evening OLGA scenes."
     },
-    "sports_training": {
-      "status": "planned",
-      "purpose": "athletic-curvy realism"
+    "sports_yoga": {
+      "description": "Approved OLGA sports yoga scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/OLGA_test02_sports_yoga_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for calm athletic/yoga contexts."
     },
-    "cinematic_portrait": {
-      "status": "planned",
-      "purpose": "cinematic identity stability"
+    "portrait_expression": {
+      "description": "Approved OLGA portrait expression scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Use for head-and-shoulders portrait contexts."
+    },
+    "outdoor_walk_with_andrey_junior": {
+      "description": "Approved OLGA and ANDREY_JUNIOR outdoor walk scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png"
+      ],
+      "prompt_goal": "Use for family-neutral outdoor OLGA + ANDREY_JUNIOR scenes; prefer shoulder-guiding contact over hand-holding."
     }
+  },
+  "prompt_pipeline": {
+    "prompt_index": "AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl"
   },
   "safety_rules": [
     "fully adult character only",
@@ -50,6 +88,7 @@
     "avoid nude, lingerie, transparent clothing, fetish framing, erotic posing",
     "avoid exaggerated body proportions",
     "avoid bodybuilder drift",
-    "avoid making the character look too young"
+    "avoid making the character look too young",
+    "record prompt_id, references, output path, verdict and notes for every generation"
   ]
 }

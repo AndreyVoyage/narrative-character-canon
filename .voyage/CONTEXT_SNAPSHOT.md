@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-04T13:08:22.063886+00:00
+Generated at: 2026-07-05T13:30:10.342117+00:00
 
 Project: narrative-character-canon
 
@@ -13,7 +13,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - KIRA: CANON_READY_2D, height 168 cm
 - ANDREY: CANON_READY_2D, height 180 cm
 - ANDREY_JUNIOR: CONTROL_TESTS_APPROVED
-- OLGA: CANON_PENDING, height 187 cm
+- OLGA: CONTROL_TESTS_APPROVED, height 187 cm
 
 ## Pair statuses
 
@@ -47,6 +47,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - DECISION-0018 — Start Andrey Junior canon workflow
 - DECISION-0019 — Approve Andrey Junior son-version base canon and control tests
 - DECISION-0020 — Start OLGA canon setup
+- DECISION-0021 — Approve OLGA base canon and normalize prompt pipeline
 
 ## Recent commits
 

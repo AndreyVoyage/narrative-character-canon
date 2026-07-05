@@ -1,23 +1,23 @@
 # OLGA Test Results
 
 ## Status
-SETUP_DONE / GENERATION_PENDING
+BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 
 | Test | Name | Status | Verdict | Notes |
 |---|---|---|---|---|
-| 01 | neutral studio portrait | NOT GENERATED | PENDING | first identity check |
-| 02 | full body studio reference | NOT GENERATED | PENDING | scale and proportions |
-| 03 | elegant outfit identity | NOT GENERATED | PENDING | mature elegance |
-| 04 | sports/training outfit identity | NOT GENERATED | PENDING | athletic-curvy realism |
-| 05 | mature scale / tall body check | NOT GENERATED | PENDING | height and silhouette |
-| 06 | cinematic indoor portrait | NOT GENERATED | PENDING | face stability |
-| 07 | confident outdoor lifestyle | NOT GENERATED | PENDING | natural lifestyle |
+| 01 | evening embankment | GENERATED | APPROVE | Approved environment test; identity and scale stable |
+| 02 | sports yoga | GENERATED | APPROVE | Approved athletic-curvy realism; legs proportionate |
+| 03 | portrait expression | GENERATED | APPROVE | Approved portrait; face identity and expression stable |
+| 04 | outdoor walk with ANDREY_JUNIOR | GENERATED | APPROVE | Approved joint walk; shoulder-guiding contact safer than hand-holding |
+| 05 | mature scale / tall body check | NOT GENERATED | PENDING | future standalone scale check |
+| 06 | cinematic indoor portrait | NOT GENERATED | PENDING | future face stability check |
+| 07 | confident outdoor lifestyle | NOT GENERATED | PENDING | future natural lifestyle scene |
 | 08 | character poster | NOT GENERATED | PENDING | final poster-like reference |
-| 09 | interaction test | NOT GENERATED | PENDING | only after base canon approval |
+| 09 | interaction test | NOT GENERATED | PENDING | base canon approved; joint interaction may continue |
 
 ## Approval Rules
 
 * Only files explicitly approved by the user receive `_APPROVED`.
 * Candidates without approval must not be treated as canon.
 * Rejected images go to `08_rejected` or remain outside active canon.
-* No joint scenes before base canon approval.
+* All approved generations must be recorded in `OLGA_PROMPT_RUN_LOG.jsonl`.

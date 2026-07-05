@@ -11,7 +11,7 @@
 | OLGA | `AI_CHARACTERS/OLGA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |
 | SERGEY | `AI_CHARACTERS/SERGEY` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; secondary character pack |
 | MAKSIM | `AI_CHARACTERS/MAKSIM` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; secondary character pack |
-| OLGA | `AI_CHARACTERS/OLGA` | CANON_PENDING / SETUP_DONE | mature adult woman; very tall ~187 cm; athletic-curvy; dominant elegant posture | Next: generate face canon sheet after explicit user request |
+| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY | mature adult woman; very tall ~187 cm; athletic-curvy; dominant elegant posture | Next: continue controlled scene testing with prompt_id logging |
 | EGOR | `AI_CHARACTERS/EGOR` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; watch for drift into too-adult/muscular type per ROADMAP Priority 6 |
 
 ## Правило

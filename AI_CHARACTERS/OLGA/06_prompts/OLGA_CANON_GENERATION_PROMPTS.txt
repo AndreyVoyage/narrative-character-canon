@@ -103,6 +103,14 @@ Avoid in generated outputs:
 
 ---
 
+Prompt pipeline:
+
+For the active prompt index, working scene prompts, and machine-readable run log, see:
+
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
+
 Review verdicts:
 APPROVE
 APPROVE AS ALT

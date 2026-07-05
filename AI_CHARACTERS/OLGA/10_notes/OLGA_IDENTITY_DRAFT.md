@@ -1,7 +1,7 @@
 # OLGA Identity Draft
 
 ## Status
-SETUP_DONE / GENERATION_PENDING
+BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 
 ## Character Role
 Mature adult woman character for future photorealistic canon generation.
