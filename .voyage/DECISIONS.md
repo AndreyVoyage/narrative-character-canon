@@ -519,3 +519,76 @@ ANDREY_JUNIOR becomes `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIP
 Next action:
 
 Backfill prompt pipeline for ANDREY Senior, then KIRA, before any large folder schema migration.
+
+---
+
+## DECISION-0024 — ANDREY Senior prompt pipeline normalized
+
+Date: 2026-07-06
+Task ID: NCC-ANDREY-SENIOR-PROMPT-PIPELINE-BACKFILL
+
+Decision:
+
+Create a canonical prompt pipeline for ANDREY Senior matching the OLGA / ANDREY_JUNIOR normalized pattern.
+
+Pipeline files:
+
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_INDEX.md` — canonical prompt ID index (11 active prompts: 5 base canon + 6 control tests).
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_WORKING_SCENE_PROMPTS.md` — full per-prompt text, reference map, output path, result notes.
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_RUN_LOG.jsonl` — machine-readable JSONL log (11 entries).
+
+Prompt IDs:
+
+Base canon:
+
+* `ANDREY_FACE_CANON_V1` -> `AI_CHARACTERS/ANDREY/02_face/ANDREY_FACE_CANON_5STARS_V2.png`
+* `ANDREY_FACE_CANON_V2` -> `AI_CHARACTERS/ANDREY/02_face/ANDREY_FACE_CANON_5STARS_V3.png`
+* `ANDREY_BODY_CANON_V1` -> `AI_CHARACTERS/ANDREY/03_body/ANDREY_BODY_CANON_V1.png`
+* `ANDREY_BODY_CANON_V2` -> `AI_CHARACTERS/ANDREY/03_body/ANDREY_BODY_CANON_V2.png`
+* `ANDREY_EXPRESSIONS_V1_C_REFINED` -> `AI_CHARACTERS/ANDREY/04_expressions/ANDREY_EXPRESSIONS_V1_C_REFINED.png` (reconstructed prompt from conversation + approved result)
+
+Control tests:
+
+* `ANDREY_TEST_01_DRAMATIC_LIGHT` -> `AI_CHARACTERS/ANDREY/05_tests/ANDREY_TEST_01_DRAMATIC_LIGHT.png`
+* `ANDREY_TEST_02_NEUTRAL_BG` -> `AI_CHARACTERS/ANDREY/05_tests/ANDREY_TEST_02_NEUTRAL_BG.png`
+* `ANDREY_TEST_03_OUTDOOR_SUN` -> `AI_CHARACTERS/ANDREY/05_tests/ANDREY_TEST_03_OUTDOOR_SUN.png`
+* `ANDREY_TEST_04_EYE_COLOR` -> `AI_CHARACTERS/ANDREY/05_tests/ANDREY_TEST_04_EYE_COLOR.png`
+* `ANDREY_TEST_05_HAIR_DETAIL` -> `AI_CHARACTERS/ANDREY/05_tests/ANDREY_TEST_05_HAIR_DETAIL.png`
+* `ANDREY_TEST_06_SMIRK` -> `AI_CHARACTERS/ANDREY/05_tests/ANDREY_TEST_06_SMIRK.png`
+
+Reference map for solo prompts:
+
+* `A` — `02_face/ANDREY_FACE_CANON_5STARS_V2.png`
+* `B` — `02_face/ANDREY_FACE_CANON_5STARS_V3.png`
+* `C` — `03_body/ANDREY_BODY_CANON_V1.png`
+* `D` — `03_body/ANDREY_BODY_CANON_V2.png`
+* `E` — `04_expressions/ANDREY_EXPRESSIONS_V1_C_REFINED.png`
+
+Approval status:
+
+* All 11 prompts and outputs are approved as canon/control tests.
+* Prompt source is `exact_user_visible_prompt` for 10 entries and `reconstructed_from_conversation_and_approved_result` for `ANDREY_EXPRESSIONS_V1_C_REFINED`.
+
+Affected files:
+
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_INDEX.md`
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_WORKING_SCENE_PROMPTS.md`
+* `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_RUN_LOG.jsonl`
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md`
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md`
+* `.voyage/CHARACTER_REGISTRY.md`
+* `.voyage/CURRENT_TASK.md`
+* `.voyage/DECISIONS.md`
+
+Reason:
+
+Brings ANDREY Senior to the same prompt-logging standard as OLGA and ANDREY_JUNIOR, making every approved image traceable to a `prompt_id`, reference map, output path, verdict, and notes.
+
+Result:
+
+ANDREY Senior becomes `CANON_READY_2D / PROMPT_PIPELINE_ACTIVE`.
+
+Next action:
+
+Backfill prompt pipeline for KIRA, then prepare ANDREY_3D_REFERENCE_PACK when requested.

@@ -50,6 +50,9 @@ APPROVE
 Approved file:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png
 
+Prompt ID:
+ANDREY_TEST01_NEUTRAL_STUDIO_PORTRAIT_V1
+
 Notes:
 Face identity matches active face canon. Blue eyes, light stubble, short light blonde/dark blonde hair, mature calm confident expression and blue shirt look are preserved.
 
@@ -71,6 +74,9 @@ APPROVE
 
 Approved file:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/02_full_body_blue_shirt/ANDREY_test02_full_body_blue_shirt_studio_v1.png
+
+Prompt ID:
+ANDREY_TEST02_FULL_BODY_BLUE_SHIRT_STUDIO_V1
 
 Notes:
 Full-body proportions match active body canon. Blue shirt, dark navy trousers, brown belt and shoes are consistent. Athletic strong build preserved without bodybuilder/powerlifter drift.
@@ -94,6 +100,9 @@ APPROVE
 Approved file:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/03_warm_bar_portrait/ANDREY_test03_warm_bar_portrait_v1.png
 
+Prompt ID:
+ANDREY_TEST03_WARM_BAR_PORTRAIT_V1
+
 Notes:
 Warm bar lighting preserves Andrey identity. Face, eyes, stubble, hairline and mature confident expression remain consistent. Approved as warm indoor cinematic control test.
 
@@ -115,6 +124,9 @@ APPROVE
 
 Approved file:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/04_formal_evening_look/ANDREY_test04_formal_evening_look_v1.png
+
+Prompt ID:
+ANDREY_TEST04_FORMAL_EVENING_LOOK_V1
 
 Notes:
 Formal styling preserves Andrey identity. Dark suit, shirt and tie work as formal evening look. Face, age, hair, stubble and body proportions remain consistent.
@@ -138,6 +150,9 @@ APPROVE
 Approved file:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png
 
+Prompt ID:
+ANDREY_TEST05_SPORTS_GYM_IDENTITY_V1
+
 Notes:
 Sports/gym outfit preserves identity. Athletic body remains realistic and does not drift into exaggerated bodybuilder/powerlifter type.
 
@@ -159,6 +174,9 @@ APPROVE
 
 Approved file:
 AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/ANDREY_test06_sea_yacht_mood_scene_v1.png
+
+Prompt ID:
+ANDREY_TEST06_SEA_YACHT_MOOD_V1
 
 Notes:
 Sea/yacht sunset mood preserves identity. Blue shirt, mature confident expression, face, eyes, hair and body proportions remain consistent.

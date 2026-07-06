@@ -101,5 +101,11 @@
       ],
       "prompt_goal": "Use approved control test outputs to verify Andrey Senior identity stability across studio, bar, formal, sports and sea/yacht contexts."
     }
+  },
+  "prompt_pipeline": {
+    "status": "PROMPT_PIPELINE_ACTIVE",
+    "prompt_index": "AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/ANDREY/06_prompts/ANDREY_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_RUN_LOG.jsonl"
   }
 }

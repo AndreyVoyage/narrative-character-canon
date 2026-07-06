@@ -2,7 +2,7 @@
 # ANDREY_CANON_INDEX.md
 
 Character: Andrey Senior
-Status: ACTIVE CANON MAP / FACE + BODY CANON ACTIVE
+Status: ACTIVE CANON MAP / FACE + BODY CANON ACTIVE / PROMPT_PIPELINE_ACTIVE
 Version: v1.1
 Last updated: 2026-07-02
 
@@ -69,9 +69,11 @@ Active face canon sheets:
 
 03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png
 Status: ACTIVE FACE CANON / BASIC EXPRESSIONS
+Prompt ID: `ANDREY_FACE_CANON_V1_A_BASIC`
 
 03_face_sheet/ANDREY_face_canon_v1_sheet_B_angles.png
 Status: ACTIVE FACE CANON / MULTI-ANGLE
+Prompt ID: `ANDREY_FACE_CANON_V1_B_ANGLES`
 
 Supporting raw references (legacy, use only as needed):
 
@@ -120,9 +122,11 @@ Active body canon files:
 
 04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png
 Status: ACTIVE BODY CANON / TECHNICAL FRONT SIDE BACK 3Q
+Prompt ID: `ANDREY_BODY_CANON_V1_A_FRONT_SIDE_BACK`
 
 04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png
 Status: ACTIVE BODY CANON / POSE VARIATIONS
+Prompt ID: `ANDREY_BODY_CANON_V1_B_POSE_VARIATIONS`
 
 Supporting raw references (legacy, use only as needed):
 
@@ -297,6 +301,7 @@ Active expression canon sheet:
 
 03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png
 Status: ACTIVE EXPRESSIONS CANON / REFINED
+Prompt ID: `ANDREY_EXPRESSIONS_V1_C_REFINED`
 
 Supporting raw expression references (legacy):
 
@@ -538,6 +543,11 @@ AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md
 Prompt source:
 AI_CHARACTERS/ANDREY/06_prompts/ANDREY_CONTROL_TEST_PROMPTS.txt
 
+Normalized prompt pipeline:
+* Prompt index: `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_INDEX.md`
+* Working scene prompts: `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_WORKING_SCENE_PROMPTS.md`
+* Prompt run log: `AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_RUN_LOG.jsonl`
+
 Approved tests:
 
 1. TEST 01 — Neutral studio portrait
@@ -599,12 +609,13 @@ SEA/YACHT LOOK: APPROVED CONTROL TEST
 
 Recommended next stages:
 
-1. ANDREY_3D_REFERENCE_PACK
-2. ANDREY_3D_MODEL_SPEC
-3. ANDREY_FORMAL_LOOK_CANON_SHEET
-4. ANDREY_SPORTS_LOOK_CANON_SHEET
-5. ANDREY_SCENE_PACKS
-6. NEXT_CHARACTER_CANON
+1. Backfill prompt pipeline for KIRA
+2. ANDREY_3D_REFERENCE_PACK
+3. ANDREY_3D_MODEL_SPEC
+4. ANDREY_FORMAL_LOOK_CANON_SHEET
+5. ANDREY_SPORTS_LOOK_CANON_SHEET
+6. ANDREY_SCENE_PACKS
+7. NEXT_CHARACTER_CANON
 
 Immediate next step:
 

@@ -348,6 +348,38 @@ Forbidden:
 * Do not make ANDREY_JUNIOR tall, bulky, or merge him with ANDREY Senior.
 * Do not record a generation without `prompt_id`, reference map, output path and verdict.
 
+## Completed — NCC-ANDREY-SENIOR-PROMPT-PIPELINE-BACKFILL
+
+Status: DONE / PROMPT_PIPELINE_ACTIVE (2026-07-06)
+
+Character: ANDREY Senior
+
+Completed:
+
+* Created `ANDREY_PROMPT_INDEX.md` with 11 active prompt IDs.
+* Created `ANDREY_WORKING_SCENE_PROMPTS.md` with 10 exact visible prompts and 1 reconstructed prompt (expression sheet C).
+* Created `ANDREY_PROMPT_RUN_LOG.jsonl` with 11 valid JSONL records.
+* Updated `ANDREY_REFERENCE_PRESETS.json` with `prompt_pipeline` section.
+* Updated `ANDREY_CANON_INDEX.md` and `ANDREY_TEST_RESULTS.md` with prompt IDs.
+* Updated `CHARACTER_REGISTRY.md` row for ANDREY.
+* Recorded task/decision/event/artifacts in SQLite memory.
+* Regenerated memory exports and `INVENTORY.md`.
+
+Result:
+
+ANDREY Senior now has a normalized prompt pipeline matching the OLGA / ANDREY_JUNIOR standard.
+
+Next:
+
+Backfill prompt pipeline for KIRA, then prepare ANDREY_3D_REFERENCE_PACK when requested.
+
+Forbidden:
+
+* Do not generate images automatically.
+* Do not rename approved ANDREY files in this step.
+* Do not use rejected/wrong-scene outputs as canon.
+* Do not record a generation without `prompt_id`, reference map, output path and verdict.
+
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 
 Status: POSTPONED

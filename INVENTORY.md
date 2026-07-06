@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-06 08:43:54
+2026-07-06 12:09:34
 
 ---
 
@@ -22,6 +22,7 @@ Generated:
 │   ├── CHARACTER_REGISTRY.md.backup_20260705_162559
 │   ├── CHARACTER_REGISTRY.md.backup_20260705_234357
 │   ├── CHARACTER_REGISTRY.md.backup_20260706_083029
+│   ├── CHARACTER_REGISTRY.md.backup_20260706_115144
 │   ├── CONTEXT_SNAPSHOT.md
 │   ├── CURRENT_TASK.md
 │   ├── CURRENT_TASK.md.backup_20260703_124946
@@ -31,6 +32,7 @@ Generated:
 │   ├── CURRENT_TASK.md.backup_20260705_162559
 │   ├── CURRENT_TASK.md.backup_20260705_234423
 │   ├── CURRENT_TASK.md.backup_20260706_083029
+│   ├── CURRENT_TASK.md.backup_20260706_115144
 │   ├── DECISIONS.md
 │   ├── DECISIONS.md.backup_20260702_231625
 │   ├── DECISIONS.md.backup_20260703_124946
@@ -40,6 +42,7 @@ Generated:
 │   ├── DECISIONS.md.backup_20260705_162559
 │   ├── DECISIONS.md.backup_20260705_234423
 │   ├── DECISIONS.md.backup_20260706_083029
+│   ├── DECISIONS.md.backup_20260706_115144
 │   ├── EVENTS_EXPORT.jsonl
 │   ├── LOCATION_REGISTRY.md
 │   ├── PROJECT_STATE.md
@@ -147,7 +150,10 @@ Generated:
 │   │   │   ├── ANDREY_CONTROL_TEST_PROMPTS.txt
 │   │   │   ├── ANDREY_FACE_CANON_NEGATIVE_PROMPT.txt
 │   │   │   ├── ANDREY_FACE_CANON_PROMPT.txt
-│   │   │   └── ANDREY_KIRA_JOINT_CONTROL_TEST_PROMPTS.txt
+│   │   │   ├── ANDREY_KIRA_JOINT_CONTROL_TEST_PROMPTS.txt
+│   │   │   ├── ANDREY_PROMPT_INDEX.md
+│   │   │   ├── ANDREY_PROMPT_RUN_LOG.jsonl
+│   │   │   └── ANDREY_WORKING_SCENE_PROMPTS.md
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -185,10 +191,13 @@ Generated:
 │   │   └── 10_notes/
 │   │       ├── ANDREY_CANON_INDEX.md
 │   │       ├── ANDREY_CANON_INDEX.md.backup_20260630_085458
+│   │       ├── ANDREY_CANON_INDEX.md.backup_20260706_115144
 │   │       ├── ANDREY_IDENTITY.txt
 │   │       ├── ANDREY_RAW_FILE_MAP.md
 │   │       ├── ANDREY_REFERENCE_PRESETS.json
-│   │       └── ANDREY_TEST_RESULTS.md
+│   │       ├── ANDREY_REFERENCE_PRESETS.json.backup_20260706_115144
+│   │       ├── ANDREY_TEST_RESULTS.md
+│   │       └── ANDREY_TEST_RESULTS.md.backup_20260706_115144
 │   ├── ANDREY_JUNIOR/
 │   │   ├── 01_refs_raw/
 │   │   │   └── .gitkeep
@@ -665,7 +674,7 @@ Generated:
 │   └── voyage_memory_status.py
 ├── .gitattributes
 ├── .gitignore
-├── .tmp_build_aj_pipeline.py
+├── .tmp_build_andrey_pipeline.py
 ├── AGENTS.md
 ├── INVENTORY.md
 ├── INVENTORY.md.backup_20260703_125505
@@ -681,7 +690,7 @@ Generated:
 
 # Total file count
 
-403
+412
 
 # File type summary
 
@@ -708,10 +717,11 @@ Generated:
 | .backup_20260705_234357 | 1 |
 | .backup_20260705_234423 | 2 |
 | .backup_20260706_083029 | 8 |
+| .backup_20260706_115144 | 6 |
 | .jpg | 2 |
 | .json | 13 |
-| .jsonl | 3 |
-| .md | 35 |
+| .jsonl | 4 |
+| .md | 37 |
 | .png | 81 |
 | .ps1 | 1 |
 | .py | 7 |
@@ -723,8 +733,8 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .tmp_build_aj_pipeline.py | 17048 | 2026-07-06 08:36:26 |
-| .voyage/CHARACTER_REGISTRY.md | 3268 | 2026-07-06 08:41:39 |
+| .tmp_build_andrey_pipeline.py | 13560 | 2026-07-06 11:54:20 |
+| .voyage/CHARACTER_REGISTRY.md | 3312 | 2026-07-06 12:03:34 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -732,8 +742,9 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260705_162559 | 3394 | 2026-07-05 16:25:59 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260705_234357 | 3423 | 2026-07-05 23:43:57 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_083029 | 3219 | 2026-07-06 08:30:30 |
+| .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CONTEXT_SNAPSHOT.md | 2899 | 2026-07-06 08:43:22 |
-| .voyage/CURRENT_TASK.md | 12381 | 2026-07-06 08:42:02 |
+| .voyage/CURRENT_TASK.md | 13548 | 2026-07-06 12:04:06 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -741,7 +752,8 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260705_162559 | 8743 | 2026-07-05 16:25:59 |
 | .voyage/CURRENT_TASK.md.backup_20260705_234423 | 9571 | 2026-07-05 23:44:23 |
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
-| .voyage/DECISIONS.md | 27453 | 2026-07-06 08:42:33 |
+| .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
+| .voyage/DECISIONS.md | 30636 | 2026-07-06 12:06:26 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -750,13 +762,14 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260705_162559 | 20295 | 2026-07-05 16:25:59 |
 | .voyage/DECISIONS.md.backup_20260705_234423 | 22526 | 2026-07-05 23:44:23 |
 | .voyage/DECISIONS.md.backup_20260706_083029 | 24849 | 2026-07-06 08:30:30 |
-| .voyage/EVENTS_EXPORT.jsonl | 32043 | 2026-07-06 08:43:22 |
+| .voyage/DECISIONS.md.backup_20260706_115144 | 27453 | 2026-07-06 11:51:44 |
+| .voyage/EVENTS_EXPORT.jsonl | 33194 | 2026-07-06 12:09:10 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
-| .voyage/SQLITE_MEMORY_STATUS.md | 772 | 2026-07-03 01:57:13 |
-| .voyage/STATE_EXPORT.json | 82852 | 2026-07-06 08:43:22 |
+| .voyage/SQLITE_MEMORY_STATUS.md | 4275 | 2026-07-06 12:09:10 |
+| .voyage/STATE_EXPORT.json | 48012 | 2026-07-06 12:09:10 |
 | .vscode/settings.json | 4 | 2026-07-06 08:21:01 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
@@ -823,6 +836,9 @@ Generated:
 | AI_CHARACTERS/ANDREY/06_prompts/ANDREY_FACE_CANON_NEGATIVE_PROMPT.txt | 1016 | 2026-06-30 21:47:29 |
 | AI_CHARACTERS/ANDREY/06_prompts/ANDREY_FACE_CANON_PROMPT.txt | 3934 | 2026-06-30 21:47:29 |
 | AI_CHARACTERS/ANDREY/06_prompts/ANDREY_KIRA_JOINT_CONTROL_TEST_PROMPTS.txt | 4628 | 2026-07-02 22:43:27 |
+| AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_INDEX.md | 4335 | 2026-07-06 11:55:05 |
+| AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_RUN_LOG.jsonl | 8646 | 2026-07-06 11:55:05 |
+| AI_CHARACTERS/ANDREY/06_prompts/ANDREY_WORKING_SCENE_PROMPTS.md | 16600 | 2026-07-06 11:55:05 |
 | AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/.gitkeep | 0 | 2026-07-02 17:22:37 |
 | AI_CHARACTERS/ANDREY/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_test01_neutral_studio_portrait_v1.png | 2095075 | 2026-07-02 18:46:10 |
@@ -842,12 +858,15 @@ Generated:
 | AI_CHARACTERS/ANDREY/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md | 11601 | 2026-07-02 21:28:47 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md | 12170 | 2026-07-06 12:02:11 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260630_085458 | 9425 | 2026-06-30 08:48:46 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260706_115144 | 11601 | 2026-07-06 11:51:44 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt | 9304 | 2026-06-30 08:23:04 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_RAW_FILE_MAP.md | 6599 | 2026-06-30 08:14:52 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 7232 | 2026-07-02 21:29:07 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md | 4739 | 2026-07-02 21:28:17 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 7562 | 2026-07-06 11:56:01 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json.backup_20260706_115144 | 7232 | 2026-07-06 11:51:44 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md | 5038 | 2026-07-06 12:02:51 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md.backup_20260706_115144 | 4739 | 2026-07-06 11:51:44 |
 | AI_CHARACTERS/ANDREY_JUNIOR/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/01_refs_raw/.gitkeep | 0 | 2026-07-03 15:55:31 |
 | AI_CHARACTERS/ANDREY_JUNIOR/02_refs_selected/.gitkeep | 0 | 2026-07-03 15:55:31 |
@@ -1107,7 +1126,7 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 72209 | 2026-07-05 23:46:19 |
+| INVENTORY.md | 74453 | 2026-07-06 08:43:54 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

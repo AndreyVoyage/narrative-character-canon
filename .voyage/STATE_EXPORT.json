@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-06T05:43:22.644582+00:00",
+  "generated_at": "2026-07-06T09:09:10.002607+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -32,10 +32,10 @@
       "character_id": "ANDREY",
       "display_name": "Andrey Senior",
       "status": "CANON_READY_2D",
-      "canon_status": "ACTIVE",
+      "canon_status": "PROMPT_PIPELINE_ACTIVE",
       "height_cm": 180,
-      "notes": "Andrey face canon, body canon and 6 solo control tests approved.",
-      "updated_at": "2026-07-02T22:37:22.802242+00:00"
+      "notes": "Andrey face canon, body canon, expression sheet and 6 solo control tests approved. Prompt pipeline active.",
+      "updated_at": "2026-07-06T09:07:41.372587+00:00"
     },
     {
       "character_id": "ANDREY_JUNIOR",
@@ -936,89 +936,51 @@
       "notes": "JSONL prompt run log for ANDREY_JUNIOR with 13 records.",
       "commit_hash": null,
       "updated_at": "2026-07-06T05:43:09.791848+00:00"
-    }
-  ],
-  "tasks": [
-    {
-      "task_id": "NCC-VOYAGE-SQLITE-MEMORY",
-      "title": "Voyage-lite SQLite memory layer",
-      "status": "IN_PROGRESS",
-      "current_stage": "SETUP",
-      "next_action": "Create local SQLite DB and exports",
-      "notes": "Build structured local memory without committing DB file.",
-      "updated_at": "2026-07-02T22:37:22.814279+00:00"
     },
     {
-      "task_id": "NCC-VOYAGE-SQLITE-RECORD-COMMAND",
-      "title": "Voyage SQLite record command",
-      "status": "DONE",
-      "current_stage": "RECORD_TOOL_ADDED",
-      "next_action": "Use record command after future workflow steps",
-      "notes": "Added structured memory record/update command.",
-      "updated_at": "2026-07-02T22:55:17.969367+00:00"
+      "artifact_id": "ART-ANDREY-PROMPT-INDEX",
+      "character_id": "ANDREY",
+      "pair_id": null,
+      "artifact_type": "prompt_index",
+      "file_path": "AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_INDEX.md",
+      "status": "active",
+      "verdict": "approved",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Canonical prompt ID index for ANDREY Senior (11 prompts).",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T09:07:41.372587+00:00"
     },
     {
-      "task_id": "NCC-KIRA-ANDREY-DUO-SCENE-PACKS",
-      "title": "Kira Andrey duo scene packs",
-      "status": "DONE",
-      "current_stage": "DUO_SCENE_PACKS_APPROVED",
-      "next_action": "Choose additional duo scene packs, body/wardrobe/context refs, 3D reference packs, or next character canon",
-      "notes": "Six KIRA_ANDREY duo scene packs approved and prepared for commit.",
-      "updated_at": "2026-07-03T09:53:50.659810+00:00"
+      "artifact_id": "ART-ANDREY-WORKING-PROMPTS",
+      "character_id": "ANDREY",
+      "pair_id": null,
+      "artifact_type": "working_prompts",
+      "file_path": "AI_CHARACTERS/ANDREY/06_prompts/ANDREY_WORKING_SCENE_PROMPTS.md",
+      "status": "active",
+      "verdict": "approved",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "Per-prompt full text and reference map for ANDREY Senior.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T09:07:41.372587+00:00"
     },
     {
-      "task_id": "NCC-ANDREY-JUNIOR-CANON-SETUP",
-      "title": "Andrey Junior canon setup",
-      "status": "SETUP_DONE",
-      "current_stage": "GENERATION_PENDING",
-      "next_action": "Generate ANDREY_JUNIOR face canon sheet after explicit user request",
-      "notes": "Created folder structure, identity draft, canon index, test tracker, prompts and presets for ANDREY_JUNIOR.",
-      "updated_at": "2026-07-03T12:59:47.039390+00:00"
-    },
-    {
-      "task_id": "NCC-ANDREY-JUNIOR-BASE-CANON-AND-CONTROL-TESTS",
-      "title": "Andrey Junior base canon and control tests",
-      "status": "DONE",
-      "current_stage": "CONTROL_TESTS_APPROVED",
-      "next_action": "Start OLGA canon setup only after explicit user request",
-      "notes": "Son-version base canon and control tests 01-09 approved locally.",
-      "updated_at": "2026-07-04T12:13:40.671860+00:00"
-    },
-    {
-      "task_id": "NCC-OLGA-CANON-SETUP",
-      "title": "Olga canon setup",
-      "status": "DONE",
-      "current_stage": "GENERATION_PENDING",
-      "next_action": "Generate OLGA face canon sheet after explicit user approval",
-      "notes": "Created OLGA folder structure, identity draft, canon index, test tracker, reference presets and prompt pack. No images generated.",
-      "updated_at": "2026-07-04T13:08:02.898091+00:00"
-    },
-    {
-      "task_id": "NCC-OLGA-BASE-CANON-CONTROL-TESTS-PROMPT-PIPELINE",
-      "title": "Olga base canon control tests and prompt pipeline",
-      "status": "DONE",
-      "current_stage": "BASE_CANON_APPROVED",
-      "next_action": "Continue OLGA controlled scene testing with prompt_id logging for every generation",
-      "notes": "OLGA base canon images, control tests 01-04, prompt index, working prompts, and prompt run log created.",
-      "updated_at": "2026-07-05T13:29:51.432434+00:00"
-    },
-    {
-      "task_id": "NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG",
-      "title": "Normalize OLga test05/test06 and prompt logs",
-      "status": "DONE",
-      "current_stage": "CONTROL_TESTS_UPDATED",
-      "next_action": "Continue controlled scene testing with prompt_id logging",
-      "notes": "Renamed swapped test IDs, moved raw 1.png to rejected, updated prompt pipeline and presets.",
-      "updated_at": "2026-07-05T20:45:42.036366+00:00"
-    },
-    {
-      "task_id": "NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL",
-      "title": "Backfill ANDREY_JUNIOR prompt pipeline",
-      "status": "DONE",
-      "current_stage": "PROMPT_PIPELINE_ACTIVE",
-      "next_action": "Backfill prompt pipeline for ANDREY Senior, then KIRA",
-      "notes": "Created prompt index, working prompts, JSONL run log for 13 approved ANDREY_JUNIOR images; updated presets and notes.",
-      "updated_at": "2026-07-06T05:43:07.177317+00:00"
+      "artifact_id": "ART-ANDREY-PROMPT-LOG",
+      "character_id": "ANDREY",
+      "pair_id": null,
+      "artifact_type": "prompt_log",
+      "file_path": "AI_CHARACTERS/ANDREY/06_prompts/ANDREY_PROMPT_RUN_LOG.jsonl",
+      "status": "active",
+      "verdict": "approved",
+      "is_active_canon": 1,
+      "is_approved": 1,
+      "is_rejected": 0,
+      "notes": "JSONL run log for ANDREY Senior prompt pipeline.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T09:07:41.372587+00:00"
     }
   ],
   "decisions": [
@@ -1125,6 +1087,106 @@
       "summary": "ANDREY_JUNIOR approved canon/tests now use normalized prompt pipeline. 13 prompt records created: 12 exact and 1 reconstructed.",
       "commit_hash": null,
       "updated_at": "2026-07-06T05:43:07.647025+00:00"
+    },
+    {
+      "decision_id": "DECISION-0024",
+      "title": "ANDREY Senior prompt pipeline normalized",
+      "date": "2026-07-06",
+      "summary": "Created ANDREY_PROMPT_INDEX.md, ANDREY_WORKING_SCENE_PROMPTS.md, ANDREY_PROMPT_RUN_LOG.jsonl for ANDREY Senior with 11 active prompt IDs. Status becomes CANON_READY_2D / PROMPT_PIPELINE_ACTIVE.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T09:07:41.372587+00:00"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "NCC-VOYAGE-SQLITE-MEMORY",
+      "title": "Voyage-lite SQLite memory layer",
+      "status": "IN_PROGRESS",
+      "current_stage": "SETUP",
+      "next_action": "Create local SQLite DB and exports",
+      "notes": "Build structured local memory without committing DB file.",
+      "updated_at": "2026-07-02T22:37:22.814279+00:00"
+    },
+    {
+      "task_id": "NCC-VOYAGE-SQLITE-RECORD-COMMAND",
+      "title": "Voyage SQLite record command",
+      "status": "DONE",
+      "current_stage": "RECORD_TOOL_ADDED",
+      "next_action": "Use record command after future workflow steps",
+      "notes": "Added structured memory record/update command.",
+      "updated_at": "2026-07-02T22:55:17.969367+00:00"
+    },
+    {
+      "task_id": "NCC-KIRA-ANDREY-DUO-SCENE-PACKS",
+      "title": "Kira Andrey duo scene packs",
+      "status": "DONE",
+      "current_stage": "DUO_SCENE_PACKS_APPROVED",
+      "next_action": "Choose additional duo scene packs, body/wardrobe/context refs, 3D reference packs, or next character canon",
+      "notes": "Six KIRA_ANDREY duo scene packs approved and prepared for commit.",
+      "updated_at": "2026-07-03T09:53:50.659810+00:00"
+    },
+    {
+      "task_id": "NCC-ANDREY-JUNIOR-CANON-SETUP",
+      "title": "Andrey Junior canon setup",
+      "status": "SETUP_DONE",
+      "current_stage": "GENERATION_PENDING",
+      "next_action": "Generate ANDREY_JUNIOR face canon sheet after explicit user request",
+      "notes": "Created folder structure, identity draft, canon index, test tracker, prompts and presets for ANDREY_JUNIOR.",
+      "updated_at": "2026-07-03T12:59:47.039390+00:00"
+    },
+    {
+      "task_id": "NCC-ANDREY-JUNIOR-BASE-CANON-AND-CONTROL-TESTS",
+      "title": "Andrey Junior base canon and control tests",
+      "status": "DONE",
+      "current_stage": "CONTROL_TESTS_APPROVED",
+      "next_action": "Start OLGA canon setup only after explicit user request",
+      "notes": "Son-version base canon and control tests 01-09 approved locally.",
+      "updated_at": "2026-07-04T12:13:40.671860+00:00"
+    },
+    {
+      "task_id": "NCC-OLGA-CANON-SETUP",
+      "title": "Olga canon setup",
+      "status": "DONE",
+      "current_stage": "GENERATION_PENDING",
+      "next_action": "Generate OLGA face canon sheet after explicit user approval",
+      "notes": "Created OLGA folder structure, identity draft, canon index, test tracker, reference presets and prompt pack. No images generated.",
+      "updated_at": "2026-07-04T13:08:02.898091+00:00"
+    },
+    {
+      "task_id": "NCC-OLGA-BASE-CANON-CONTROL-TESTS-PROMPT-PIPELINE",
+      "title": "Olga base canon control tests and prompt pipeline",
+      "status": "DONE",
+      "current_stage": "BASE_CANON_APPROVED",
+      "next_action": "Continue OLGA controlled scene testing with prompt_id logging for every generation",
+      "notes": "OLGA base canon images, control tests 01-04, prompt index, working prompts, and prompt run log created.",
+      "updated_at": "2026-07-05T13:29:51.432434+00:00"
+    },
+    {
+      "task_id": "NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG",
+      "title": "Normalize OLga test05/test06 and prompt logs",
+      "status": "DONE",
+      "current_stage": "CONTROL_TESTS_UPDATED",
+      "next_action": "Continue controlled scene testing with prompt_id logging",
+      "notes": "Renamed swapped test IDs, moved raw 1.png to rejected, updated prompt pipeline and presets.",
+      "updated_at": "2026-07-05T20:45:42.036366+00:00"
+    },
+    {
+      "task_id": "NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL",
+      "title": "Backfill ANDREY_JUNIOR prompt pipeline",
+      "status": "DONE",
+      "current_stage": "PROMPT_PIPELINE_ACTIVE",
+      "next_action": "Backfill prompt pipeline for ANDREY Senior, then KIRA",
+      "notes": "Created prompt index, working prompts, JSONL run log for 13 approved ANDREY_JUNIOR images; updated presets and notes.",
+      "updated_at": "2026-07-06T05:43:07.177317+00:00"
+    },
+    {
+      "task_id": "NCC-ANDREY-SENIOR-PROMPT-PIPELINE-BACKFILL",
+      "title": "Backfill ANDREY Senior prompt pipeline",
+      "status": "completed",
+      "current_stage": "PROMPT_PIPELINE_ACTIVE",
+      "next_action": "Backfill KIRA prompt pipeline",
+      "notes": "Normalized prompt pipeline created for ANDREY Senior (11 prompts).",
+      "updated_at": "2026-07-06T09:07:41.372587+00:00"
     }
   ],
   "commits": [
@@ -1151,788 +1213,6 @@
       "title": "Add approved Andrey control tests",
       "summary": "",
       "created_at": "2026-07-02T22:37:22.812340+00:00"
-    }
-  ],
-  "events": [
-    {
-      "event_id": "MEMORY_INIT",
-      "event_type": "MEMORY_INIT",
-      "subject_type": "project",
-      "subject_id": "narrative-character-canon",
-      "summary": "Voyage memory initialized with current known facts.",
-      "payload_json": "{\"source\": \"voyage_memory_init.py\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T22:37:22.864963+00:00"
-    },
-    {
-      "event_id": "EVT-20260702-225516-64c89716",
-      "event_type": "MEMORY_RECORD_TOOL_ADDED",
-      "subject_type": "tool",
-      "subject_id": "voyage_memory_record",
-      "summary": "Voyage memory record tool added",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T22:55:16.308618+00:00"
-    },
-    {
-      "event_id": "EVT-20260702-225517-3caa40e8",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-VOYAGE-SQLITE-RECORD-COMMAND",
-      "summary": "Task recorded/updated: Voyage SQLite record command",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T22:55:17.972878+00:00"
-    },
-    {
-      "event_id": "EVT-20260702-225520-250fd13a",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0015",
-      "summary": "Decision recorded: Add Voyage SQLite record command",
-      "payload_json": "{\"date\": \"2026-07-02\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T22:55:20.339777+00:00"
-    },
-    {
-      "event_id": "EVT-20260702-231831-c520b262",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-KIRA-ANDREY-DUO-SCENE-PACKS",
-      "summary": "Task recorded/updated: Kira Andrey duo scene packs",
-      "payload_json": "{\"status\": \"SETUP_DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T23:18:31.042265+00:00"
-    },
-    {
-      "event_id": "EVT-20260702-231835-58d3bd98",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0016",
-      "summary": "Decision recorded: Prepare Kira and Andrey duo scene packs",
-      "payload_json": "{\"date\": \"2026-07-02\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T23:18:35.485484+00:00"
-    },
-    {
-      "event_id": "EVT-20260702-231839-e7212f1f",
-      "event_type": "DUO_SCENE_PACK_SETUP_DONE",
-      "subject_type": "pair",
-      "subject_id": "KIRA_ANDREY",
-      "summary": "KIRA_ANDREY duo scene pack setup completed",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-02T23:18:39.884116+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095345-447095f5",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "KIRA_ANDREY_SCENE_PACK_01",
-      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_01 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/01_evening_embankment_walk/KIRA_ANDREY_scene01_evening_embankment_walk_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:53:45.794732+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095346-3af97e00",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "KIRA_ANDREY_SCENE_PACK_02",
-      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_02 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/02_warm_bar_dialogue/KIRA_ANDREY_scene02_warm_bar_dialogue_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:53:46.402818+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095347-69635c84",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "KIRA_ANDREY_SCENE_PACK_03",
-      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_03 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/03_yacht_sunset/KIRA_ANDREY_scene03_yacht_sunset_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:53:47.310234+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095347-c82eb4dc",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "KIRA_ANDREY_SCENE_PACK_04",
-      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_04 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/04_studio_character_poster/KIRA_ANDREY_scene04_studio_character_poster_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:53:47.966300+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095349-41032a8a",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "KIRA_ANDREY_SCENE_PACK_05",
-      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_05 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/05_rainy_city_street/KIRA_ANDREY_scene05_rainy_city_street_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:53:49.079403+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095349-722ee101",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "KIRA_ANDREY_SCENE_PACK_06",
-      "summary": "Artifact recorded/updated: KIRA_ANDREY_SCENE_PACK_06 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/scene_packs/06_cozy_interior_conversation/KIRA_ANDREY_scene_pack06_cozy_interior_conversation_v4_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:53:49.857967+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095350-6580e726",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-KIRA-ANDREY-DUO-SCENE-PACKS",
-      "summary": "Task recorded/updated: Kira Andrey duo scene packs",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T09:53:50.664886+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095351-a14ffa0e",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0017",
-      "summary": "Decision recorded: Approve Kira and Andrey duo scene packs",
-      "payload_json": "{\"date\": \"2026-07-02\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T09:53:51.465843+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095352-d7ca7e1f",
-      "event_type": "DUO_SCENE_PACKS_APPROVED",
-      "subject_type": "pair",
-      "subject_id": "KIRA_ANDREY",
-      "summary": "Six KIRA_ANDREY duo scene packs approved",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T09:53:52.110408+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-095408-906e25b2",
-      "event_type": "PAIR_STATUS_RECORDED",
-      "subject_type": "pair",
-      "subject_id": "KIRA_ANDREY",
-      "summary": "Pair recorded/updated: KIRA_ANDREY -> JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED",
-      "payload_json": "{\"status\": \"JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-03T09:54:08.312786+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-125946-6127437b",
-      "event_type": "CHARACTER_STATUS_RECORDED",
-      "subject_type": "character",
-      "subject_id": "ANDREY_JUNIOR",
-      "summary": "Character recorded/updated: Andrey Junior -> CANON_PENDING",
-      "payload_json": "{\"status\": \"CANON_PENDING\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T12:59:46.531949+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-125947-02877511",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-ANDREY-JUNIOR-CANON-SETUP",
-      "summary": "Task recorded/updated: Andrey Junior canon setup",
-      "payload_json": "{\"status\": \"SETUP_DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T12:59:47.043578+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-125947-8d8677fd",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0018",
-      "summary": "Decision recorded: Start Andrey Junior canon workflow",
-      "payload_json": "{\"date\": \"2026-07-03\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T12:59:47.524854+00:00"
-    },
-    {
-      "event_id": "EVT-20260703-125947-24b1f5e4",
-      "event_type": "CHARACTER_CANON_SETUP_DONE",
-      "subject_type": "character",
-      "subject_id": "ANDREY_JUNIOR",
-      "summary": "ANDREY_JUNIOR canon setup completed",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-03T12:59:47.978981+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121340-b1dfbf83",
-      "event_type": "CHARACTER_STATUS_RECORDED",
-      "subject_type": "character",
-      "subject_id": "ANDREY_JUNIOR",
-      "summary": "Character recorded/updated: Andrey Junior -> CONTROL_TESTS_APPROVED",
-      "payload_json": "{\"status\": \"CONTROL_TESTS_APPROVED\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T12:13:40.218917+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121340-35e5053f",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-ANDREY-JUNIOR-BASE-CANON-AND-CONTROL-TESTS",
-      "summary": "Task recorded/updated: Andrey Junior base canon and control tests",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T12:13:40.676663+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121341-18eea37d",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0019",
-      "summary": "Decision recorded: Approve Andrey Junior son-version base canon and control tests",
-      "payload_json": "{\"date\": \"2026-07-04\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T12:13:41.305404+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121341-6723b2cf",
-      "event_type": "CONTROL_TESTS_APPROVED",
-      "subject_type": "character",
-      "subject_id": "ANDREY_JUNIOR",
-      "summary": "ANDREY_JUNIOR son-version control tests approved",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T12:13:41.819838+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121342-39305481",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_face_canon",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_face_canon -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:42.322148+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121343-dfcc0ef9",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_expression_canon",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_expression_canon -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/expressions/ANDREY_JUNIOR_expressions_v2_sheet_A_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:43.053883+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121343-cc596bff",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_body_canon_A",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_body_canon_A -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:43.603856+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121344-0f338c7e",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_body_canon_B",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_body_canon_B -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_B_pose_variations_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:44.215789+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121344-b3d30770",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_01",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_01 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/01_neutral_studio_portrait/ANDREY_JUNIOR_test01_neutral_studio_portrait_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:44.878165+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121345-d3f14478",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_02",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_02 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/02_full_body_studio/ANDREY_JUNIOR_test02_full_body_studio_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:45.622429+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121346-e44341ea",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_03",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_03 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/03_athletic_gym_identity/ANDREY_JUNIOR_test03_athletic_gym_identity_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:46.243185+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121346-3bc0bee9",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_04",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_04 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/04_casual_outfit/ANDREY_JUNIOR_test04_casual_outfit_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:46.961157+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121347-fb62a69e",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_05",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_05 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/05_scale_compact_body_check/ANDREY_JUNIOR_test05_scale_compact_body_check_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:47.723356+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121348-c79fd079",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_06",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_06 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/06_father_son_scale_check/ANDREY_JUNIOR_test06_father_son_scale_check_v2_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:48.301210+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121348-d87958e8",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_07",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_07 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/07_father_son_casual_outdoor/ANDREY_JUNIOR_test07_father_son_casual_outdoor_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:48.876729+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121349-bc6527b9",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_08",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_08 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/08_father_son_home_conversation/ANDREY_JUNIOR_test08_father_son_home_conversation_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:49.498192+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-121350-64216ffe",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_TEST_09",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_TEST_09 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/07_generated/canon_tests/09_father_son_training_coaching/ANDREY_JUNIOR_test09_father_son_training_coaching_v1_APPROVED.png\"}",
-      "commit_hash": "PENDING",
-      "created_at": "2026-07-04T12:13:50.182369+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130802-75c53730",
-      "event_type": "CHARACTER_STATUS_RECORDED",
-      "subject_type": "character",
-      "subject_id": "OLGA",
-      "summary": "Character recorded/updated: Olga -> CANON_PENDING",
-      "payload_json": "{\"status\": \"CANON_PENDING\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:02.103984+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130802-5f7b4963",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-OLGA-CANON-SETUP",
-      "summary": "Task recorded/updated: Olga canon setup",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:02.904086+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130803-4fb9d942",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0020",
-      "summary": "Decision recorded: Start OLGA canon setup",
-      "payload_json": "{\"date\": \"2026-07-04\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:03.604230+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130804-f55048b3",
-      "event_type": "OLGA_CANON_SETUP_DONE",
-      "subject_type": "character",
-      "subject_id": "OLGA",
-      "summary": "OLGA canon setup completed",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:04.313528+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130805-ba490bde",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_identity_draft",
-      "summary": "Artifact recorded/updated: OLGA_identity_draft -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:05.053852+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130805-13b21233",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_canon_index",
-      "summary": "Artifact recorded/updated: OLGA_canon_index -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:05.738081+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130806-76711173",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_test_results",
-      "summary": "Artifact recorded/updated: OLGA_test_results -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:06.305849+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130807-4493d70a",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_reference_presets",
-      "summary": "Artifact recorded/updated: OLGA_reference_presets -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:07.118690+00:00"
-    },
-    {
-      "event_id": "EVT-20260704-130808-0651befe",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_prompt_pack",
-      "summary": "Artifact recorded/updated: OLGA_prompt_pack -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_CANON_GENERATION_PROMPTS.txt\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-04T13:08:08.387684+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132951-ad28870f",
-      "event_type": "CHARACTER_STATUS_RECORDED",
-      "subject_type": "character",
-      "subject_id": "OLGA",
-      "summary": "Character recorded/updated: Olga -> CONTROL_TESTS_APPROVED",
-      "payload_json": "{\"status\": \"CONTROL_TESTS_APPROVED\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:51.051038+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132951-1f3bf05d",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-OLGA-BASE-CANON-CONTROL-TESTS-PROMPT-PIPELINE",
-      "summary": "Task recorded/updated: Olga base canon control tests and prompt pipeline",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:51.436157+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132951-6869d486",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0021",
-      "summary": "Decision recorded: Approve OLGA base canon and normalize prompt pipeline",
-      "payload_json": "{\"date\": \"2026-07-05\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:51.996255+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132952-796e4b32",
-      "event_type": "OLGA_PROMPT_PIPELINE_NORMALIZED",
-      "subject_type": "character",
-      "subject_id": "OLGA",
-      "summary": "OLGA prompt pipeline normalized and base canon approved",
-      "payload_json": "{}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:52.393523+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132952-ca0e5994",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_PRIMARY_FACE_REF",
-      "summary": "Artifact recorded/updated: OLGA_PRIMARY_FACE_REF -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/02_refs_selected/OLGA_ref_face_primary_v1_SELECTED.jpg\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:52.790283+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132953-67acdb26",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_FACE_CANON_V1_A",
-      "summary": "Artifact recorded/updated: OLGA_FACE_CANON_V1_A -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:53.199686+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132954-6800a0c5",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_EXPRESSIONS_V1_A",
-      "summary": "Artifact recorded/updated: OLGA_EXPRESSIONS_V1_A -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:54.060887+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132954-6759fb5d",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_BODY_CANON_V1_A",
-      "summary": "Artifact recorded/updated: OLGA_BODY_CANON_V1_A -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:54.574684+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132954-cf358a7f",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_BODY_CANON_V1_B",
-      "summary": "Artifact recorded/updated: OLGA_BODY_CANON_V1_B -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:54.993763+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132955-d6b2a878",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_TEST_01",
-      "summary": "Artifact recorded/updated: OLGA_TEST_01 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:55.499270+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132955-6e08d2e5",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_TEST_02",
-      "summary": "Artifact recorded/updated: OLGA_TEST_02 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/02_sports_yoga/OLGA_test02_sports_yoga_v1_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:55.984705+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132956-e5581509",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_TEST_03",
-      "summary": "Artifact recorded/updated: OLGA_TEST_03 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:56.591321+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132956-6fa744cc",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_TEST_04",
-      "summary": "Artifact recorded/updated: OLGA_TEST_04 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:56.968411+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132957-f11d153e",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_PROMPT_INDEX",
-      "summary": "Artifact recorded/updated: OLGA_PROMPT_INDEX -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:57.393405+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132957-f91a7142",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_WORKING_SCENE_PROMPTS",
-      "summary": "Artifact recorded/updated: OLGA_WORKING_SCENE_PROMPTS -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:57.833377+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-132958-699853d0",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_PROMPT_RUN_LOG",
-      "summary": "Artifact recorded/updated: OLGA_PROMPT_RUN_LOG -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T13:29:58.515332+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204542-a1b72db7",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG",
-      "summary": "Task recorded/updated: Normalize OLga test05/test06 and prompt logs",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:42.043044+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204542-3c83959f",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0022",
-      "summary": "Decision recorded: Normalize OLGA test05/test06 and enforce prompt logging",
-      "payload_json": "{\"date\": \"2026-07-05\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:42.753686+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204543-5dbc0f07",
-      "event_type": "OLGA_TEST05_06_PROMPT_LOG_NORMALIZED",
-      "subject_type": "character",
-      "subject_id": "OLGA",
-      "summary": "OLGA test05/test06 IDs normalized and prompt pipeline records updated",
-      "payload_json": "{\"test05\":\"OLGA_TEST05_BUSINESS_INTERIOR_V1\",\"test06\":\"OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1\",\"raw_moved\":\"AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:43.355583+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204543-9c755e3c",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_TEST_05",
-      "summary": "Artifact recorded/updated: OLGA_TEST_05 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:43.896762+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204544-b7379ca0",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_TEST_06",
-      "summary": "Artifact recorded/updated: OLGA_TEST_06 -> APPROVED",
-      "payload_json": "{\"status\": \"APPROVED\", \"file_path\": \"AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:44.396881+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204545-96c51ca8",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_BUSINESS_INTERIOR_RAW_1_REJECTED",
-      "summary": "Artifact recorded/updated: OLGA_BUSINESS_INTERIOR_RAW_1_REJECTED -> REJECTED",
-      "payload_json": "{\"status\": \"REJECTED\", \"file_path\": \"AI_CHARACTERS/OLGA/08_rejected/OLGA_business_interior_raw_1_unlabeled_REJECTED.png\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:45.121895+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204545-4164edaa",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_PROMPT_INDEX",
-      "summary": "Artifact recorded/updated: OLGA_PROMPT_INDEX -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:45.782812+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204546-2128a637",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_WORKING_SCENE_PROMPTS",
-      "summary": "Artifact recorded/updated: OLGA_WORKING_SCENE_PROMPTS -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:46.347119+00:00"
-    },
-    {
-      "event_id": "EVT-20260705-204547-68aa513d",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "OLGA_PROMPT_RUN_LOG",
-      "summary": "Artifact recorded/updated: OLGA_PROMPT_RUN_LOG -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-05T20:45:47.062065+00:00"
-    },
-    {
-      "event_id": "EVT-20260706-054307-dbb34968",
-      "event_type": "TASK_RECORDED",
-      "subject_type": "task",
-      "subject_id": "NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL",
-      "summary": "Task recorded/updated: Backfill ANDREY_JUNIOR prompt pipeline",
-      "payload_json": "{\"status\": \"DONE\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-06T05:43:07.183486+00:00"
-    },
-    {
-      "event_id": "EVT-20260706-054307-ce5d4be5",
-      "event_type": "DECISION_RECORDED",
-      "subject_type": "decision",
-      "subject_id": "DECISION-0023",
-      "summary": "Decision recorded: Backfill ANDREY_JUNIOR prompt pipeline",
-      "payload_json": "{\"date\": \"2026-07-06\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-06T05:43:07.656417+00:00"
-    },
-    {
-      "event_id": "EVT-20260706-054308-2d709531",
-      "event_type": "ANDREY_JUNIOR_PROMPT_PIPELINE_BACKFILLED",
-      "subject_type": "character",
-      "subject_id": "ANDREY_JUNIOR",
-      "summary": "ANDREY_JUNIOR prompt pipeline backfilled with 13 prompt records",
-      "payload_json": "{\"pipeline_status\":\"PROMPT_PIPELINE_ACTIVE\",\"entries\":13,\"exact\":12,\"reconstructed\":1}",
-      "commit_hash": null,
-      "created_at": "2026-07-06T05:43:08.127350+00:00"
-    },
-    {
-      "event_id": "EVT-20260706-054308-cbfaefde",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_PROMPT_INDEX",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_PROMPT_INDEX -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_INDEX.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-06T05:43:08.640647+00:00"
-    },
-    {
-      "event_id": "EVT-20260706-054309-31f0b967",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_WORKING_SCENE_PROMPTS",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_WORKING_SCENE_PROMPTS -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-06T05:43:09.180678+00:00"
-    },
-    {
-      "event_id": "EVT-20260706-054309-e07f7c9c",
-      "event_type": "ARTIFACT_RECORDED",
-      "subject_type": "artifact",
-      "subject_id": "ANDREY_JUNIOR_PROMPT_RUN_LOG",
-      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_PROMPT_RUN_LOG -> ACTIVE",
-      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl\"}",
-      "commit_hash": null,
-      "created_at": "2026-07-06T05:43:09.804143+00:00"
     }
   ]
 }
