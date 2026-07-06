@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-05T20:45:53.592788+00:00",
+  "generated_at": "2026-07-06T05:43:22.644582+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -891,6 +891,51 @@
       "notes": "Unlabeled raw candidate moved to rejected during test05 normalization.",
       "commit_hash": null,
       "updated_at": "2026-07-05T20:45:45.115704+00:00"
+    },
+    {
+      "artifact_id": "ANDREY_JUNIOR_PROMPT_INDEX",
+      "character_id": "ANDREY_JUNIOR",
+      "pair_id": null,
+      "artifact_type": "prompt_index",
+      "file_path": "AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_INDEX.md",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "Normalized prompt index for ANDREY_JUNIOR.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T05:43:08.636877+00:00"
+    },
+    {
+      "artifact_id": "ANDREY_JUNIOR_WORKING_SCENE_PROMPTS",
+      "character_id": "ANDREY_JUNIOR",
+      "pair_id": null,
+      "artifact_type": "working_prompts",
+      "file_path": "AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "Normalized working scene prompts for ANDREY_JUNIOR.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T05:43:09.174500+00:00"
+    },
+    {
+      "artifact_id": "ANDREY_JUNIOR_PROMPT_RUN_LOG",
+      "character_id": "ANDREY_JUNIOR",
+      "pair_id": null,
+      "artifact_type": "prompt_run_log",
+      "file_path": "AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl",
+      "status": "ACTIVE",
+      "verdict": null,
+      "is_active_canon": 0,
+      "is_approved": 0,
+      "is_rejected": 0,
+      "notes": "JSONL prompt run log for ANDREY_JUNIOR with 13 records.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T05:43:09.791848+00:00"
     }
   ],
   "tasks": [
@@ -965,6 +1010,15 @@
       "next_action": "Continue controlled scene testing with prompt_id logging",
       "notes": "Renamed swapped test IDs, moved raw 1.png to rejected, updated prompt pipeline and presets.",
       "updated_at": "2026-07-05T20:45:42.036366+00:00"
+    },
+    {
+      "task_id": "NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL",
+      "title": "Backfill ANDREY_JUNIOR prompt pipeline",
+      "status": "DONE",
+      "current_stage": "PROMPT_PIPELINE_ACTIVE",
+      "next_action": "Backfill prompt pipeline for ANDREY Senior, then KIRA",
+      "notes": "Created prompt index, working prompts, JSONL run log for 13 approved ANDREY_JUNIOR images; updated presets and notes.",
+      "updated_at": "2026-07-06T05:43:07.177317+00:00"
     }
   ],
   "decisions": [
@@ -1063,6 +1117,14 @@
       "summary": "Business interior is test05, indoor lounge with AJ is test06. Filenames and prompt IDs normalized; unlabeled raw moved to rejected.",
       "commit_hash": null,
       "updated_at": "2026-07-05T20:45:42.747351+00:00"
+    },
+    {
+      "decision_id": "DECISION-0023",
+      "title": "Backfill ANDREY_JUNIOR prompt pipeline",
+      "date": "2026-07-06",
+      "summary": "ANDREY_JUNIOR approved canon/tests now use normalized prompt pipeline. 13 prompt records created: 12 exact and 1 reconstructed.",
+      "commit_hash": null,
+      "updated_at": "2026-07-06T05:43:07.647025+00:00"
     }
   ],
   "commits": [
@@ -1811,6 +1873,66 @@
       "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl\"}",
       "commit_hash": null,
       "created_at": "2026-07-05T20:45:47.062065+00:00"
+    },
+    {
+      "event_id": "EVT-20260706-054307-dbb34968",
+      "event_type": "TASK_RECORDED",
+      "subject_type": "task",
+      "subject_id": "NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL",
+      "summary": "Task recorded/updated: Backfill ANDREY_JUNIOR prompt pipeline",
+      "payload_json": "{\"status\": \"DONE\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-06T05:43:07.183486+00:00"
+    },
+    {
+      "event_id": "EVT-20260706-054307-ce5d4be5",
+      "event_type": "DECISION_RECORDED",
+      "subject_type": "decision",
+      "subject_id": "DECISION-0023",
+      "summary": "Decision recorded: Backfill ANDREY_JUNIOR prompt pipeline",
+      "payload_json": "{\"date\": \"2026-07-06\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-06T05:43:07.656417+00:00"
+    },
+    {
+      "event_id": "EVT-20260706-054308-2d709531",
+      "event_type": "ANDREY_JUNIOR_PROMPT_PIPELINE_BACKFILLED",
+      "subject_type": "character",
+      "subject_id": "ANDREY_JUNIOR",
+      "summary": "ANDREY_JUNIOR prompt pipeline backfilled with 13 prompt records",
+      "payload_json": "{\"pipeline_status\":\"PROMPT_PIPELINE_ACTIVE\",\"entries\":13,\"exact\":12,\"reconstructed\":1}",
+      "commit_hash": null,
+      "created_at": "2026-07-06T05:43:08.127350+00:00"
+    },
+    {
+      "event_id": "EVT-20260706-054308-cbfaefde",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "ANDREY_JUNIOR_PROMPT_INDEX",
+      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_PROMPT_INDEX -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_INDEX.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-06T05:43:08.640647+00:00"
+    },
+    {
+      "event_id": "EVT-20260706-054309-31f0b967",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "ANDREY_JUNIOR_WORKING_SCENE_PROMPTS",
+      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_WORKING_SCENE_PROMPTS -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-06T05:43:09.180678+00:00"
+    },
+    {
+      "event_id": "EVT-20260706-054309-e07f7c9c",
+      "event_type": "ARTIFACT_RECORDED",
+      "subject_type": "artifact",
+      "subject_id": "ANDREY_JUNIOR_PROMPT_RUN_LOG",
+      "summary": "Artifact recorded/updated: ANDREY_JUNIOR_PROMPT_RUN_LOG -> ACTIVE",
+      "payload_json": "{\"status\": \"ACTIVE\", \"file_path\": \"AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl\"}",
+      "commit_hash": null,
+      "created_at": "2026-07-06T05:43:09.804143+00:00"
     }
   ]
 }

@@ -314,6 +314,40 @@ Forbidden:
 * Do not drift into bodybuilder build.
 * Do not record a generation without `prompt_id`, reference map, output path and verdict.
 
+## Completed — NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL
+
+Status: DONE / PROMPT_PIPELINE_ACTIVE (2026-07-06)
+
+Character: ANDREY_JUNIOR
+
+Completed:
+
+* Created `ANDREY_JUNIOR_PROMPT_INDEX.md` with 13 active prompt IDs.
+* Created `ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md` with exact visible prompts (12) and one reconstructed prompt (body canon B).
+* Created `ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl` with 13 valid JSONL records.
+* Updated `ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt` with pointer to normalized pipeline.
+* Updated `ANDREY_JUNIOR_REFERENCE_PRESETS.json` with `prompt_pipeline` section.
+* Updated `ANDREY_JUNIOR_CANON_INDEX.md` and `ANDREY_JUNIOR_TEST_RESULTS.md` with prompt IDs.
+* Updated `ANDREY_JUNIOR_IDENTITY_DRAFT.md` with pipeline pointer.
+* Fixed `CHARACTER_REGISTRY.md` row for ANDREY_JUNIOR.
+* Recorded task/decision/event/artifacts in SQLite memory.
+* Regenerated memory exports and `INVENTORY.md`.
+
+Result:
+
+ANDREY_JUNIOR now has a normalized prompt pipeline matching the OLGA standard.
+
+Next:
+
+Backfill prompt pipeline for ANDREY Senior, then KIRA, before any folder schema migration.
+
+Forbidden:
+
+* Do not generate images automatically.
+* Do not use old adult/20+ direction as active canon.
+* Do not make ANDREY_JUNIOR tall, bulky, or merge him with ANDREY Senior.
+* Do not record a generation without `prompt_id`, reference map, output path and verdict.
+
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 
 Status: POSTPONED

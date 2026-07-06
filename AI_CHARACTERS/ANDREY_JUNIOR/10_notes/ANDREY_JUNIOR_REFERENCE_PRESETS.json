@@ -84,5 +84,11 @@
     "Keep prompts family-neutral, non-sexual and age-appropriate.",
     "Avoid writing 'Andrey Junior' inside image-generation prompts when possible.",
     "Avoid explicit age numbers inside image-generation prompts."
-  ]
+  ],
+  "prompt_pipeline": {
+    "status": "PROMPT_PIPELINE_ACTIVE",
+    "prompt_index": "AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl"
+  }
 }

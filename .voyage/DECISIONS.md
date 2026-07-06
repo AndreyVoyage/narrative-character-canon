@@ -472,3 +472,50 @@ OLGA has 6 approved control tests (01–06) with consistent IDs and a complete p
 Next action:
 
 Continue controlled scene testing for OLGA with prompt_id logging.
+
+## DECISION-0023 — Backfill ANDREY_JUNIOR prompt pipeline
+
+Date: 2026-07-06
+
+Context:
+
+ANDREY_JUNIOR base canon and 9 solo control tests were approved earlier (`DECISION-0019`). The character had a working prompt source file (`ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt`) but lacked the normalized prompt pipeline standard that OLGA now uses.
+
+Decision:
+
+* Create `ANDREY_JUNIOR_PROMPT_INDEX.md`, `ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md`, and `ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl`.
+* Record 13 prompt IDs covering the 4 base canon images and 9 approved control tests.
+* Mark 12 prompts as `exact_user_visible_prompt` copied from the existing working prompt source.
+* Mark 1 prompt (`ANDREY_JUNIOR_BODY_CANON_V2_B`) as `reconstructed_from_conversation_and_approved_result` because the exact body pose-variation prompt was not archived separately.
+* Update `ANDREY_JUNIOR_REFERENCE_PRESETS.json`, `ANDREY_JUNIOR_CANON_INDEX.md`, `ANDREY_JUNIOR_TEST_RESULTS.md`, and `ANDREY_JUNIOR_IDENTITY_DRAFT.md` to reference the new pipeline.
+* Update `.voyage/CHARACTER_REGISTRY.md` to show `PROMPT_PIPELINE_ACTIVE` for ANDREY_JUNIOR.
+
+Affected files:
+
+* `AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_INDEX.md`
+* `AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md`
+* `AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl`
+* `AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_CANON_GENERATION_PROMPTS.txt`
+* `AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_CANON_INDEX.md`
+* `AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md`
+* `AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md`
+* `.voyage/CHARACTER_REGISTRY.md`
+* `.voyage/CURRENT_TASK.md`
+* `.voyage/DECISIONS.md`
+
+Superseded historical wording:
+
+`DECISION-0018` described ANDREY_JUNIOR as an adult/20+ 153 cm/53 kg compact young man during initial setup. That direction was later superseded by the son-version canon in `DECISION-0019` and remains inactive. The active direction is son-version: short compact build, about 47 kg, slim youthful physique, family-neutral, non-sexual.
+
+Reason:
+
+Brings ANDREY_JUNIOR to the same prompt-logging standard as OLGA, making every approved image traceable to a `prompt_id`, reference map, output path, verdict, and notes.
+
+Result:
+
+ANDREY_JUNIOR becomes `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE`.
+
+Next action:
+
+Backfill prompt pipeline for ANDREY Senior, then KIRA, before any large folder schema migration.

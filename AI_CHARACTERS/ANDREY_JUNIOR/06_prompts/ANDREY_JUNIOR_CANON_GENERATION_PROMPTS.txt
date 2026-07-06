@@ -3,6 +3,11 @@
 Status:
 APPROVED / ACTIVE
 
+Normalized prompt pipeline:
+* Prompt index: AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_INDEX.md
+* Working scene prompts: AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md
+* Prompt run log: AI_CHARACTERS/ANDREY_JUNIOR/06_prompts/ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl
+
 Important:
 These prompts are for reference and generation context only.
 Generation still requires explicit user request.
@@ -197,3 +202,8 @@ APPROVE AS ALT
 HOLD
 REGENERATE
 REJECT
+
+---
+
+Normalized prompt pipeline for this character is now active.
+See ANDREY_JUNIOR_PROMPT_INDEX.md, ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md, and ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl.

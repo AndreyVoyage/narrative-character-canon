@@ -51,4 +51,5 @@ Next steps:
 2. Use approved body canon sheets for scale checks.
 3. Use approved expression sheet for consistent expressions.
 4. Use approved control tests 01–09 as reference pack.
-5. Only then start joint tests with Olga after explicit user request.
+5. Use normalized prompt pipeline: `ANDREY_JUNIOR_PROMPT_INDEX.md`, `ANDREY_JUNIOR_WORKING_SCENE_PROMPTS.md`, `ANDREY_JUNIOR_PROMPT_RUN_LOG.jsonl`.
+6. Only then start joint tests with Olga after explicit user request.

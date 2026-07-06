@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-05T20:45:53.592788+00:00
+Generated at: 2026-07-06T05:43:22.644582+00:00
 
 Project: narrative-character-canon
 
@@ -49,6 +49,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - DECISION-0020 — Start OLGA canon setup
 - DECISION-0021 — Approve OLGA base canon and normalize prompt pipeline
 - DECISION-0022 — Normalize OLGA test05/test06 and enforce prompt logging
+- DECISION-0023 — Backfill ANDREY_JUNIOR prompt pipeline
 
 ## Recent commits
 
