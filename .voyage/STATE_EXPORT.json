@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-06T09:09:10.002607+00:00",
+  "generated_at": "2026-07-06T09:12:44.932463+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -1213,6 +1213,12 @@
       "title": "Add approved Andrey control tests",
       "summary": "",
       "created_at": "2026-07-02T22:37:22.812340+00:00"
+    },
+    {
+      "commit_hash": "792169ad009dffd2a1062213f72aa36a1b695204",
+      "title": "Backfill Andrey Senior prompt pipeline",
+      "summary": "Normalized prompt pipeline for ANDREY Senior (11 prompts).",
+      "created_at": "2026-07-06T09:12:38.574360+00:00"
     }
   ]
 }
