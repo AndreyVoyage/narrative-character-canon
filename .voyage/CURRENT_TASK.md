@@ -380,6 +380,39 @@ Forbidden:
 * Do not use rejected/wrong-scene outputs as canon.
 * Do not record a generation without `prompt_id`, reference map, output path and verdict.
 
+## Completed — NCC-KIRA-PROMPT-PIPELINE-BACKFILL
+
+Status: DONE / PROMPT_PIPELINE_ACTIVE_CORE (2026-07-07)
+
+Character: KIRA
+
+Completed:
+
+* Created `KIRA_PROMPT_INDEX.md` with 6 core active prompt IDs.
+* Created `KIRA_WORKING_SCENE_PROMPTS.md` with exact reusable prompt-kit sources and reconstructed test prompts.
+* Created `KIRA_PROMPT_RUN_LOG.jsonl` with 6 validated JSONL records.
+* Updated `KIRA_REFERENCE_PRESETS.json` with `prompt_pipeline` section.
+* Updated `KIRA_CANON_INDEX.md.txt` and `KIRA_TEST_RESULTS.md.txt` with prompt IDs and corrected the stale `KIRA_expressions_v1_sheet_A_basic.png` reference.
+* Added pipeline pointer comments to the four original prompt-kit `.txt` files.
+* Updated `CHARACTER_REGISTRY.md` row for KIRA.
+* Recorded task/decision/event/artifacts in SQLite memory.
+* Regenerated memory exports and `INVENTORY.md`.
+
+Result:
+
+KIRA now has a normalized core prompt pipeline matching the OLGA / ANDREY_JUNIOR / ANDREY Senior standard. No KIRA files were renamed.
+
+Next:
+
+Backfill prompt pipeline for KIRA_ANDREY joint scenes, then prepare 3D reference packs when requested.
+
+Forbidden:
+
+* Do not generate images automatically.
+* Do not rename approved KIRA files in this step.
+* Do not use rejected/wrong-scene outputs as canon.
+* Do not record a generation without `prompt_id`, reference map, output path and verdict.
+
 ## Next-later — NCC-ANDREY-3D-REFERENCE-PACK
 
 Status: POSTPONED

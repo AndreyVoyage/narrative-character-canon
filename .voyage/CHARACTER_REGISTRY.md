@@ -3,7 +3,7 @@
 | Character | Folder | Current status | Reference preset status | Next step |
 |---|---|---|---|---|
 | ANDREY | `AI_CHARACTERS/ANDREY` | CANON_READY_2D / PROMPT_PIPELINE_ACTIVE | WORKING / FACE + BODY + CONTROL TESTS + PROMPT PIPELINE INCLUDED | Backfill KIRA prompt pipeline, then prepare ANDREY_3D_REFERENCE_PACK when requested |
-| KIRA | `AI_CHARACTERS/KIRA` | CANON_READY_2D | WORKING — 7 scene presets (incl. `sauna`), verified 2026-07-02, all referenced files exist and text_sources resolve | Prepare 3D reference pack when requested |
+| KIRA | `AI_CHARACTERS/KIRA` | CANON_READY_2D / PROMPT_PIPELINE_ACTIVE_CORE | WORKING — 7 scene presets + core prompt pipeline (6 active prompt IDs), verified 2026-07-07 | Backfill KIRA_ANDREY joint prompt pipeline, then prepare 3D reference pack when requested |
 | KIRA + ANDREY | `AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY` | JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED | WORKING — 4 approved joint tests, 6 approved scene packs, reference preset ready | Next: additional duo scene packs / body-wardrobe-context refs / 3D reference packs |
 | ANDREY_JUNIOR | `AI_CHARACTERS/ANDREY_JUNIOR` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE | son of ANDREY Senior, short compact build, about 47 kg, son-version active, prompt pipeline active | Continue controlled scene testing with prompt_id logging |
 | MARINA | `AI_CHARACTERS/MARINA` | EMPTY_STRUCTURE | PRESET_PLACEHOLDER — empty `scene_presets`, `text_sources` null | Audit actual refs before creating presets; create canon pack |

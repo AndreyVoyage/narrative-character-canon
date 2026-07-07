@@ -21,3 +21,5 @@ vulgar, explicit, pornographic, cheap erotic look, fetish look, tasteless pose, 
 
 Keep:
 adult, tasteful, cinematic, photorealistic, elegant, natural, emotionally alive, athletic feminine Kira.
+
+Normalized prompt pipeline is stored in KIRA_PROMPT_INDEX.md, KIRA_WORKING_SCENE_PROMPTS.md, and KIRA_PROMPT_RUN_LOG.jsonl. This file remains an original reusable prompt-kit source.

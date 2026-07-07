@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-06 12:09:34
+2026-07-07 15:42:14
 
 ---
 
@@ -23,6 +23,7 @@ Generated:
 │   ├── CHARACTER_REGISTRY.md.backup_20260705_234357
 │   ├── CHARACTER_REGISTRY.md.backup_20260706_083029
 │   ├── CHARACTER_REGISTRY.md.backup_20260706_115144
+│   ├── CHARACTER_REGISTRY.md.backup_20260707_154019
 │   ├── CONTEXT_SNAPSHOT.md
 │   ├── CURRENT_TASK.md
 │   ├── CURRENT_TASK.md.backup_20260703_124946
@@ -33,6 +34,7 @@ Generated:
 │   ├── CURRENT_TASK.md.backup_20260705_234423
 │   ├── CURRENT_TASK.md.backup_20260706_083029
 │   ├── CURRENT_TASK.md.backup_20260706_115144
+│   ├── CURRENT_TASK.md.backup_20260707_154019
 │   ├── DECISIONS.md
 │   ├── DECISIONS.md.backup_20260702_231625
 │   ├── DECISIONS.md.backup_20260703_124946
@@ -43,6 +45,7 @@ Generated:
 │   ├── DECISIONS.md.backup_20260705_234423
 │   ├── DECISIONS.md.backup_20260706_083029
 │   ├── DECISIONS.md.backup_20260706_115144
+│   ├── DECISIONS.md.backup_20260707_154019
 │   ├── EVENTS_EXPORT.jsonl
 │   ├── LOCATION_REGISTRY.md
 │   ├── PROJECT_STATE.md
@@ -357,9 +360,16 @@ Generated:
 │   │   ├── 06_prompts/
 │   │   │   ├── create_kira_prompt_kit.ps1.txt
 │   │   │   ├── KIRA_BASE_PROMPT.txt
+│   │   │   ├── KIRA_BASE_PROMPT.txt.backup_20260707_153812
 │   │   │   ├── KIRA_EVENING_SCENE_PROMPT.txt
+│   │   │   ├── KIRA_EVENING_SCENE_PROMPT.txt.backup_20260707_153812
 │   │   │   ├── KIRA_NEGATIVE_PROMPT.txt
-│   │   │   └── KIRA_SPORTS_SCENE_PROMPT.txt
+│   │   │   ├── KIRA_NEGATIVE_PROMPT.txt.backup_20260707_153812
+│   │   │   ├── KIRA_PROMPT_INDEX.md
+│   │   │   ├── KIRA_PROMPT_RUN_LOG.jsonl
+│   │   │   ├── KIRA_SPORTS_SCENE_PROMPT.txt
+│   │   │   ├── KIRA_SPORTS_SCENE_PROMPT.txt.backup_20260707_153812
+│   │   │   └── KIRA_WORKING_SCENE_PROMPTS.md
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -387,10 +397,14 @@ Generated:
 │   │       ├── KIRA_APPROVAL_CRITERIA.md.txt
 │   │       ├── KIRA_APPROVAL_CRITERIA_ENG.md.txt
 │   │       ├── KIRA_CANON_INDEX.md.txt
+│   │       ├── KIRA_CANON_INDEX.md.txt.backup_20260707_153909
 │   │       ├── KIRA_IDENTITY.txt.txt
+│   │       ├── KIRA_IDENTITY.txt.txt.backup_20260707_154006
 │   │       ├── KIRA_REFERENCE_PRESETS.json
+│   │       ├── KIRA_REFERENCE_PRESETS.json.backup_20260707_153832
 │   │       ├── KIRA_TEST_RESULTS.md.txt
-│   │       └── KIRA_TEST_RESULTS.md.txt.backup_20260702_231620
+│   │       ├── KIRA_TEST_RESULTS.md.txt.backup_20260702_231620
+│   │       └── KIRA_TEST_RESULTS.md.txt.backup_20260707_153909
 │   ├── MAKSIM/
 │   │   ├── 01_refs_raw/
 │   │   │   └── .gitkeep
@@ -674,7 +688,6 @@ Generated:
 │   └── voyage_memory_status.py
 ├── .gitattributes
 ├── .gitignore
-├── .tmp_build_andrey_pipeline.py
 ├── AGENTS.md
 ├── INVENTORY.md
 ├── INVENTORY.md.backup_20260703_125505
@@ -690,7 +703,7 @@ Generated:
 
 # Total file count
 
-412
+425
 
 # File type summary
 
@@ -718,13 +731,18 @@ Generated:
 | .backup_20260705_234423 | 2 |
 | .backup_20260706_083029 | 8 |
 | .backup_20260706_115144 | 6 |
+| .backup_20260707_153812 | 4 |
+| .backup_20260707_153832 | 1 |
+| .backup_20260707_153909 | 2 |
+| .backup_20260707_154006 | 1 |
+| .backup_20260707_154019 | 3 |
 | .jpg | 2 |
 | .json | 13 |
-| .jsonl | 4 |
-| .md | 37 |
+| .jsonl | 5 |
+| .md | 39 |
 | .png | 81 |
 | .ps1 | 1 |
-| .py | 7 |
+| .py | 6 |
 | .txt | 20 |
 
 # File list
@@ -733,8 +751,7 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .tmp_build_andrey_pipeline.py | 13560 | 2026-07-06 11:54:20 |
-| .voyage/CHARACTER_REGISTRY.md | 3312 | 2026-07-06 12:03:34 |
+| .voyage/CHARACTER_REGISTRY.md | 3367 | 2026-07-07 15:40:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -743,8 +760,9 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260705_234357 | 3423 | 2026-07-05 23:43:57 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_083029 | 3219 | 2026-07-06 08:30:30 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
-| .voyage/CONTEXT_SNAPSHOT.md | 2899 | 2026-07-06 08:43:22 |
-| .voyage/CURRENT_TASK.md | 13548 | 2026-07-06 12:04:06 |
+| .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
+| .voyage/CONTEXT_SNAPSHOT.md | 3104 | 2026-07-07 15:42:08 |
+| .voyage/CURRENT_TASK.md | 14901 | 2026-07-07 15:40:35 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -753,7 +771,8 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260705_234423 | 9571 | 2026-07-05 23:44:23 |
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
-| .voyage/DECISIONS.md | 30636 | 2026-07-06 12:06:26 |
+| .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
+| .voyage/DECISIONS.md | 34677 | 2026-07-07 15:41:24 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -763,13 +782,14 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260705_234423 | 22526 | 2026-07-05 23:44:23 |
 | .voyage/DECISIONS.md.backup_20260706_083029 | 24849 | 2026-07-06 08:30:30 |
 | .voyage/DECISIONS.md.backup_20260706_115144 | 27453 | 2026-07-06 11:51:44 |
-| .voyage/EVENTS_EXPORT.jsonl | 33194 | 2026-07-06 12:09:10 |
+| .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
+| .voyage/EVENTS_EXPORT.jsonl | 36404 | 2026-07-07 15:42:08 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
-| .voyage/SQLITE_MEMORY_STATUS.md | 4275 | 2026-07-06 12:09:10 |
-| .voyage/STATE_EXPORT.json | 48012 | 2026-07-06 12:09:10 |
+| .voyage/SQLITE_MEMORY_STATUS.md | 4275 | 2026-07-06 12:12:44 |
+| .voyage/STATE_EXPORT.json | 93161 | 2026-07-07 15:42:08 |
 | .vscode/settings.json | 4 | 2026-07-06 08:21:01 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
@@ -960,10 +980,17 @@ Generated:
 | AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png | 1912030 | 2026-06-29 15:37:52 |
 | AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png | 2072557 | 2026-06-29 15:38:18 |
 | AI_CHARACTERS/KIRA/06_prompts/create_kira_prompt_kit.ps1.txt | 8785 | 2026-06-29 19:00:54 |
-| AI_CHARACTERS/KIRA/06_prompts/KIRA_BASE_PROMPT.txt | 1662 | 2026-06-29 19:02:54 |
-| AI_CHARACTERS/KIRA/06_prompts/KIRA_EVENING_SCENE_PROMPT.txt | 1573 | 2026-06-29 19:02:54 |
-| AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt | 1653 | 2026-06-29 19:02:54 |
-| AI_CHARACTERS/KIRA/06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt | 1433 | 2026-06-29 19:02:54 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_BASE_PROMPT.txt | 1845 | 2026-07-07 15:38:19 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_BASE_PROMPT.txt.backup_20260707_153812 | 1662 | 2026-07-07 15:38:12 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_EVENING_SCENE_PROMPT.txt | 1756 | 2026-07-07 15:38:21 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_EVENING_SCENE_PROMPT.txt.backup_20260707_153812 | 1573 | 2026-07-07 15:38:12 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt | 1836 | 2026-07-07 15:38:25 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt.backup_20260707_153812 | 1653 | 2026-07-07 15:38:12 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md | 3732 | 2026-07-07 15:35:06 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl | 4323 | 2026-07-07 15:37:45 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt | 1616 | 2026-07-07 15:38:23 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt.backup_20260707_153812 | 1433 | 2026-07-07 15:38:12 |
+| AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md | 17631 | 2026-07-07 15:37:08 |
 | AI_CHARACTERS/KIRA/07_generated/317946af-4d80-4e9a-8b97-c469551e0235.png | 2097050 | 2026-06-29 20:28:22 |
 | AI_CHARACTERS/KIRA/07_generated/9f28dfea-0aaa-4dee-831a-0a18004e2a7e.png | 2433253 | 2026-06-29 17:03:04 |
 | AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v1.png | 2333289 | 2026-06-29 23:04:46 |
@@ -980,11 +1007,15 @@ Generated:
 | AI_CHARACTERS/KIRA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_APPROVAL_CRITERIA.md.txt | 13560 | 2026-06-29 21:03:18 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_APPROVAL_CRITERIA_ENG.md.txt | 4209 | 2026-06-29 21:08:48 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10102 | 2026-06-29 22:14:06 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt | 13022 | 2026-06-29 18:47:46 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 4217 | 2026-07-02 08:22:17 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 2752 | 2026-07-02 23:16:33 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10687 | 2026-07-07 15:39:38 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt.backup_20260707_153909 | 10102 | 2026-07-07 15:39:09 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt | 13272 | 2026-07-07 15:40:13 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt.backup_20260707_154006 | 13022 | 2026-07-07 15:40:06 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 4536 | 2026-07-07 15:38:43 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json.backup_20260707_153832 | 4217 | 2026-07-07 15:38:32 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 3581 | 2026-07-07 15:39:57 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260702_231620 | 2916 | 2026-07-02 23:16:20 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260707_153909 | 2752 | 2026-07-07 15:39:09 |
 | AI_CHARACTERS/MAKSIM/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1126,7 +1157,7 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 74453 | 2026-07-06 08:43:54 |
+| INVENTORY.md | 75928 | 2026-07-06 12:09:34 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

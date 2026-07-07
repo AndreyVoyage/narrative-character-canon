@@ -3,6 +3,12 @@
   "version": "v1.0",
   "last_updated": "2026-07-02",
   "root": "AI_CHARACTERS/KIRA",
+  "prompt_pipeline": {
+    "status": "PROMPT_PIPELINE_ACTIVE_CORE",
+    "prompt_index": "AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl"
+  },
   "text_sources": {
     "identity": "AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt",
     "canon_index": "AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt",

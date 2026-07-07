@@ -592,3 +592,88 @@ ANDREY Senior becomes `CANON_READY_2D / PROMPT_PIPELINE_ACTIVE`.
 Next action:
 
 Backfill prompt pipeline for KIRA, then prepare ANDREY_3D_REFERENCE_PACK when requested.
+
+---
+
+## DECISION-0025 — Backfill KIRA core prompt pipeline
+
+Date: 2026-07-07
+Task ID: NCC-KIRA-PROMPT-PIPELINE-BACKFILL
+
+Decision:
+
+Create a canonical prompt pipeline for KIRA matching the OLGA / ANDREY_JUNIOR / ANDREY Senior normalized pattern, using only the existing active canon images and prompt-kit files.
+
+Pipeline files:
+
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md` — canonical prompt ID index (6 core active prompts).
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md` — full per-prompt text, reference map, output path, result notes.
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl` — machine-readable JSONL log (6 entries).
+
+Prompt IDs:
+
+Base canon:
+
+* `KIRA_FACE_CANON_V1_A` -> `AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png`
+* `KIRA_BODY_CANON_V4_A` -> `AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png`
+* `KIRA_EXPRESSIONS_V1_A` -> `AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png`
+
+Control tests:
+
+* `KIRA_TEST01_EVENING_EMBANKMENT_V1_MAIN` -> `AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png`
+* `KIRA_TEST02_SPORTS_YOGA_V1_MAIN` -> `AI_CHARACTERS/KIRA/07_generated/canon_tests/02_sports_yoga/KIRA_test02_sports_yoga_v2_MAIN.png`
+* `KIRA_TEST03_PORTRAIT_EXPRESSION_V1` -> `AI_CHARACTERS/KIRA/07_generated/canon_tests/03_portrait_expression/KIRA_test02_bar_romance_v1_APPROVED.png`
+
+Reference map for solo prompts:
+
+* `A` — `03_face_sheet/KIRA_face_canon_sheet_A.png`
+* `B` — `04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png`
+* `C` — `03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png`
+* `D` — `05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png`
+* `E` — `05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png`
+
+Approval status:
+
+* All 6 prompts and outputs are approved as canon/control tests.
+* Base canon records are marked `unknown_requires_manual_input` because exact per-image generation prompts are not stored in repository files.
+* Control-test records are marked `reconstructed_from_conversation_and_approved_result` because best-effort prompts were reconstructed from the prompt-kit files and test-result notes.
+
+Corrections made:
+
+* `KIRA_CANON_INDEX.md.txt` previously referenced `KIRA_expressions_v1_sheet_A_basic.png`; corrected to the actual file `KIRA_expressions_v1_sheet_A_emotional.png`.
+* `KIRA_CANON_INDEX.md.txt` previously referenced `10_notes/KIRA_IDENTITY.txt`; corrected to the actual file `10_notes/KIRA_IDENTITY.txt.txt`.
+
+Preserved (deferred):
+
+* `.md.txt` and `.txt.txt` document extensions.
+* Mixed filename suffixes: `_MAIN`, `_ALT`, `_APPROVED`, `FINAL`, and no suffix.
+* KIRA folder/schema layout including `02_best_refs`, `08_masks`, `09_blender`, `07_generated/drafts`, `07_generated/rejected`.
+
+Affected files:
+
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md`
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md`
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl`
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_BASE_PROMPT.txt`
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_EVENING_SCENE_PROMPT.txt`
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt`
+* `AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt`
+* `AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt`
+* `AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt`
+* `AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt`
+* `.voyage/CHARACTER_REGISTRY.md`
+* `.voyage/CURRENT_TASK.md`
+* `.voyage/DECISIONS.md`
+
+Reason:
+
+Brings KIRA to the same prompt-logging standard as OLGA, ANDREY_JUNIOR, and ANDREY Senior, making every approved image traceable to a `prompt_id`, reference map, output path, verdict, and notes.
+
+Result:
+
+KIRA becomes `CANON_READY_2D / PROMPT_PIPELINE_ACTIVE_CORE`.
+
+Next action:
+
+Backfill prompt pipeline for KIRA_ANDREY joint scenes, then prepare 3D reference packs when requested.

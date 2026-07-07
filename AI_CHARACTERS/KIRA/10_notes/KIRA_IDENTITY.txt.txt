@@ -420,3 +420,8 @@ C:\DEV\Narrative\AI_CHARACTERS\KIRA\07_generated\
 Kira is a 26-year-old adult woman, 168 cm, athletic slender and feminine, with the body of a former hurdler: strong legs, firm glutes, narrow waist, toned but not bodybuilding physique, and natural 3+ bust. She has dark blonde shoulder-length natural wavy hair, expressive brown almond eyes with amber undertones, an oval face with high cheekbones, straight refined nose, full lower lip, light freckles, a beauty mark above the left side of the upper lip, and a slightly asymmetrical smile.
 
 Her signature look is a fitted red evening dress, elegant and cinematic. Her sports look is a fitted black sports top and shorts/leggings, showing functional athletic strength. Her emotional signature is warm confidence, playful control, independence, and subtle vulnerability.
+
+---
+PROMPT PIPELINE NOTE (2026-07-07)
+Normalized KIRA prompt pipeline is active: AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md, KIRA_WORKING_SCENE_PROMPTS.md, KIRA_PROMPT_RUN_LOG.jsonl.
+This identity file remains the primary text canon source.

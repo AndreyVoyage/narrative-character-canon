@@ -1,6 +1,6 @@
 # Voyage SQLite Memory Status
 
-Generated: 2026-07-06T09:12:44.942051+00:00
+Generated: 2026-07-07T12:42:36.715988+00:00
 
 ## Table counts
 
@@ -8,20 +8,21 @@ Generated: 2026-07-06T09:12:44.942051+00:00
 |-------|-------|
 | characters | 4 |
 | pairs | 1 |
-| artifacts | 61 |
-| approved_artifacts | 46 |
+| artifacts | 64 |
+| approved_artifacts | 49 |
 | rejected_artifacts | 4 |
-| active_canon_artifacts | 46 |
-| tasks | 10 |
-| completed_tasks | 1 |
-| decisions | 14 |
-| events | 79 |
+| active_canon_artifacts | 49 |
+| tasks | 11 |
+| completed_tasks | 2 |
+| decisions | 15 |
+| events | 86 |
 | commits | 5 |
 
 ## Recent tasks
 
 | task_id | title | status | current_stage | next_action | updated_at |
 |---------|-------|--------|---------------|-------------|------------|
+| NCC-KIRA-PROMPT-PIPELINE-BACKFILL | Backfill KIRA core prompt pipeline | completed | PROMPT_PIPELINE_ACTIVE_CORE | Backfill KIRA_ANDREY joint prompt pipeline | 2026-07-07T12:41:33.939121+00:00 |
 | NCC-ANDREY-SENIOR-PROMPT-PIPELINE-BACKFILL | Backfill ANDREY Senior prompt pipeline | completed | PROMPT_PIPELINE_ACTIVE | Backfill KIRA prompt pipeline | 2026-07-06T09:07:41.372587+00:00 |
 | NCC-ANDREY-JUNIOR-PROMPT-PIPELINE-BACKFILL | Backfill ANDREY_JUNIOR prompt pipeline | DONE | PROMPT_PIPELINE_ACTIVE | Backfill prompt pipeline for ANDREY Senior, then KIRA | 2026-07-06T05:43:07.177317+00:00 |
 | NCC-OLGA-TEST05-06-ID-FIX-AND-PROMPT-LOG | Normalize OLga test05/test06 and prompt logs | DONE | CONTROL_TESTS_UPDATED | Continue controlled scene testing with prompt_id logging | 2026-07-05T20:45:42.036366+00:00 |
@@ -37,6 +38,7 @@ Generated: 2026-07-06T09:12:44.942051+00:00
 
 | decision_id | title | date | updated_at |
 |-------------|-------|------|------------|
+| DECISION-0025 | Backfill KIRA core prompt pipeline | 2026-07-07 | 2026-07-07T12:41:37.477732+00:00 |
 | DECISION-0024 | ANDREY Senior prompt pipeline normalized | 2026-07-06 | 2026-07-06T09:07:41.372587+00:00 |
 | DECISION-0023 | Backfill ANDREY_JUNIOR prompt pipeline | 2026-07-06 | 2026-07-06T05:43:07.647025+00:00 |
 | DECISION-0022 | Normalize OLGA test05/test06 and enforce prompt logging | 2026-07-05 | 2026-07-05T20:45:42.747351+00:00 |

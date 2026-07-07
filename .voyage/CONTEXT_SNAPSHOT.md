@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-06T05:43:22.644582+00:00
+Generated at: 2026-07-07T12:42:08.886859+00:00
 
 Project: narrative-character-canon
 
@@ -50,6 +50,8 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - DECISION-0021 — Approve OLGA base canon and normalize prompt pipeline
 - DECISION-0022 — Normalize OLGA test05/test06 and enforce prompt logging
 - DECISION-0023 — Backfill ANDREY_JUNIOR prompt pipeline
+- DECISION-0024 — ANDREY Senior prompt pipeline normalized
+- DECISION-0025 — Backfill KIRA core prompt pipeline
 
 ## Recent commits
 
@@ -57,6 +59,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - 75f7aba — Add Kira Andrey joint control test setup
 - e6df873 — Add approved Kira Andrey joint tests
 - 2a23e6c — Add approved Andrey control tests
+- 792169ad009dffd2a1062213f72aa36a1b695204 — Backfill Andrey Senior prompt pipeline
 
 ## Next safe options
 

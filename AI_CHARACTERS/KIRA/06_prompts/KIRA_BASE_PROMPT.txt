@@ -17,3 +17,5 @@ photorealistic, cinematic, natural skin texture, realistic anatomy, high-detail 
 
 Core preservation rules:
 preserve same face, same eyes, same hair, same freckles, same beauty mark, same athletic feminine body, same strong hurdler legs, same narrow waist, same natural 3+ bust target, same warm confident emotional presence.
+
+Normalized prompt pipeline is stored in KIRA_PROMPT_INDEX.md, KIRA_WORKING_SCENE_PROMPTS.md, and KIRA_PROMPT_RUN_LOG.jsonl. This file remains an original reusable prompt-kit source.

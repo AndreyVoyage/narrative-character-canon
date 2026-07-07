@@ -17,3 +17,5 @@ same Kira face, expressive brown / amber eyes, oval face, high cheekbones, freck
 
 Mood:
 focused, confident, playful, alive, athletic, disciplined, warm.
+
+Normalized prompt pipeline is stored in KIRA_PROMPT_INDEX.md, KIRA_WORKING_SCENE_PROMPTS.md, and KIRA_PROMPT_RUN_LOG.jsonl. This file remains an original reusable prompt-kit source.

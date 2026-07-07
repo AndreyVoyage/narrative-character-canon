@@ -17,3 +17,5 @@ warm, cinematic, elegant, confident, playful, slightly mysterious, emotionally a
 
 Lighting and scene:
 golden hour, evening city lights, luxury bar, warm amber interior, romantic street, embankment, cinematic bokeh, natural skin texture, realistic anatomy, editorial photorealism.
+
+Normalized prompt pipeline is stored in KIRA_PROMPT_INDEX.md, KIRA_WORKING_SCENE_PROMPTS.md, and KIRA_PROMPT_RUN_LOG.jsonl. This file remains an original reusable prompt-kit source.

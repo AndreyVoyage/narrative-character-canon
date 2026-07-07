@@ -26,10 +26,12 @@ PASS
 Main selected file:
 
 KIRA_test01_evening_embankment_v2_MAIN.png
+(prompt_id: KIRA_TEST01_EVENING_EMBANKMENT_V1_MAIN)
 
 Alternate cinematic file:
 
 KIRA_test01_evening_embankment_v3_ALT_cinematic.png
+(approved alternate, not included in first core JSONL set)
 
 Notes:
 
@@ -58,10 +60,12 @@ PASS
 Main selected file:
 
 KIRA_test02_sports_yoga_v2_MAIN.png
+(prompt_id: KIRA_TEST02_SPORTS_YOGA_V1_MAIN)
 
 Alternate file:
 
 KIRA_test02_sports_yoga_v3_ALT_stretch.png
+(approved alternate, not included in first core JSONL set)
 
 Notes:
 
@@ -88,6 +92,8 @@ PASS
 Main selected file:
 
 KIRA_test02_bar_romance_v1_APPROVED.png
+(prompt_id: KIRA_TEST03_PORTRAIT_EXPRESSION_V1)
+(historical filename, preserved as-is)
 
 Notes:
 
@@ -100,6 +106,14 @@ FINAL RESULT
 KIRA CANON TESTS: PASSED
 
 Kira is ready for controlled scene generation.
+
+Prompt pipeline note:
+
+Control-test prompts are reconstructed from the prompt-kit files (`KIRA_BASE_PROMPT.txt`, `KIRA_EVENING_SCENE_PROMPT.txt`, `KIRA_SPORTS_SCENE_PROMPT.txt`, `KIRA_NEGATIVE_PROMPT.txt`) and the notes above. They are marked `reconstructed_from_conversation_and_approved_result` in `KIRA_PROMPT_RUN_LOG.jsonl`.
+
+Filename convention note:
+
+`_MAIN`, `_ALT`, and `_APPROVED` filenames are approved by this document and by `KIRA_REFERENCE_PRESETS.json` despite the mixed suffix convention. Renaming is deferred.
 
 Approved folders:
 

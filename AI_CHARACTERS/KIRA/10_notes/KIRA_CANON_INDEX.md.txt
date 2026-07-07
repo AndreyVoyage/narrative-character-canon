@@ -1,7 +1,7 @@
 # KIRA_CANON_INDEX.md
 
 Character: Kira
-Status: ACTIVE VISUAL CANON
+Status: ACTIVE VISUAL CANON / PROMPT_PIPELINE_ACTIVE_CORE
 Version: v1.0
 Last updated: 2026-06-29
 
@@ -29,7 +29,7 @@ Files listed here are considered the main approved references for future image g
 ACTIVE FILE:
 
 ```text
-10_notes/KIRA_IDENTITY.txt
+10_notes/KIRA_IDENTITY.txt.txt
 ```
 
 Status:
@@ -50,7 +50,7 @@ Use it as the main character description before generating any new image of Kira
 ACTIVE FILES:
 
 ```text
-04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
+04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png  (prompt_id: KIRA_BODY_CANON_V4_A)
 04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png
 ```
 
@@ -101,7 +101,7 @@ Use for:
 ACTIVE FILES:
 
 ```text
-03_face_sheet/KIRA_face_canon_sheet_A.png
+03_face_sheet/KIRA_face_canon_sheet_A.png  (prompt_id: KIRA_FACE_CANON_V1_A)
 03_face_sheet/KIRA_face_canon_sheet_B.png
 ```
 
@@ -240,9 +240,13 @@ ACTIVE / APPROVED EVENING DRESS CANON
 ACTIVE FILES:
 
 ```text
-03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png  (prompt_id: KIRA_EXPRESSIONS_V1_A)
 03_face_sheet/expressions/KIRA_expressions_v1_sheet_B_emotional.png
 ```
+
+Note:
+
+The active expression sheet filename is `KIRA_expressions_v1_sheet_A_emotional.png`. The previous reference to `KIRA_expressions_v1_sheet_A_emotional.png` was stale and has been corrected here.
 
 Purpose:
 
@@ -291,11 +295,23 @@ Reusable text prompt blocks for future Kira generations.
 
 Use these instead of rewriting Kira from scratch every time.
 
+Normalized prompt pipeline:
+
+```text
+06_prompts/KIRA_PROMPT_INDEX.md
+06_prompts/KIRA_WORKING_SCENE_PROMPTS.md
+06_prompts/KIRA_PROMPT_RUN_LOG.jsonl
+```
+
 Status:
 
 ```text
-ACTIVE / APPROVED PROMPT KIT
+ACTIVE / APPROVED PROMPT KIT / PROMPT_PIPELINE_ACTIVE_CORE
 ```
+
+Note:
+
+Exact per-image generation prompts for the base canon sheets are not stored in the repository. The prompt run log marks them as `unknown_requires_manual_input`. Control-test prompts are reconstructed from the prompt kit and test-result notes and marked `reconstructed_from_conversation_and_approved_result`.
 
 ---
 
@@ -370,7 +386,7 @@ Current evening dress candidates were promoted to final:
 3. 04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
 4. 05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png
 5. 05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png
-6. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+6. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png
 7. 06_prompts/KIRA_EVENING_SCENE_PROMPT.txt
 8. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
 ```
@@ -383,7 +399,7 @@ Current evening dress candidates were promoted to final:
 3. 04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png
 4. 05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png
 5. 05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png
-6. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+6. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png
 7. 06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt
 8. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
 ```
@@ -394,7 +410,7 @@ Current evening dress candidates were promoted to final:
 1. 10_notes/KIRA_IDENTITY.txt
 2. 03_face_sheet/KIRA_face_canon_sheet_A.png
 3. 03_face_sheet/KIRA_face_canon_sheet_B.png
-4. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_basic.png
+4. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png
 5. 03_face_sheet/expressions/KIRA_expressions_v1_sheet_B_emotional.png
 6. 06_prompts/KIRA_BASE_PROMPT.txt
 7. 06_prompts/KIRA_NEGATIVE_PROMPT.txt
@@ -535,5 +551,12 @@ Kira is now a canon-ready character with:
 * approved expressions
 * prompt kit
 * canon index
+* normalized core prompt pipeline
 
 She can now be used for controlled scene generation.
+
+Naming notes (deferred):
+
+* KIRA docs use `.md.txt` and `.txt.txt` extensions.
+* KIRA filenames use mixed suffixes: `_MAIN`, `_ALT`, `_APPROVED`, `FINAL`, and no suffix.
+* Cleanup of these naming conventions is deferred to a separate explicit task.
