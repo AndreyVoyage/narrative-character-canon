@@ -1,6 +1,6 @@
 # CONTEXT_SNAPSHOT
 
-Generated at: 2026-07-07T12:42:08.886859+00:00
+Generated at: 2026-07-07T12:44:38.669231+00:00
 
 Project: narrative-character-canon
 
@@ -60,6 +60,7 @@ NCC-VOYAGE-SQLITE-MEMORY complete. Choose next direction from options below.
 - e6df873 — Add approved Kira Andrey joint tests
 - 2a23e6c — Add approved Andrey control tests
 - 792169ad009dffd2a1062213f72aa36a1b695204 — Backfill Andrey Senior prompt pipeline
+- bb977ae8b226ec72f9510173a17c8345adc7f97f — Backfill Kira prompt pipeline
 
 ## Next safe options
 

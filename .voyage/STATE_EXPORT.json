@@ -1,6 +1,6 @@
 {
   "project": "narrative-character-canon",
-  "generated_at": "2026-07-07T12:42:08.886859+00:00",
+  "generated_at": "2026-07-07T12:44:38.669231+00:00",
   "meta": [
     {
       "key": "project_name",
@@ -1281,6 +1281,12 @@
       "title": "Backfill Andrey Senior prompt pipeline",
       "summary": "Normalized prompt pipeline for ANDREY Senior (11 prompts).",
       "created_at": "2026-07-06T09:12:38.574360+00:00"
+    },
+    {
+      "commit_hash": "bb977ae8b226ec72f9510173a17c8345adc7f97f",
+      "title": "Backfill Kira prompt pipeline",
+      "summary": "Normalized core prompt pipeline for KIRA (6 prompts).",
+      "created_at": "2026-07-07T12:44:23.032145+00:00"
     }
   ],
   "events": [
@@ -2143,6 +2149,16 @@
       "payload_json": "{\"task_id\":\"NCC-KIRA-PROMPT-PIPELINE-BACKFILL\",\"decision_id\":\"DECISION-0025\",\"prompt_count\":6,\"prompt_ids\":[\"KIRA_FACE_CANON_V1_A\",\"KIRA_BODY_CANON_V4_A\",\"KIRA_EXPRESSIONS_V1_A\",\"KIRA_TEST01_EVENING_EMBANKMENT_V1_MAIN\",\"KIRA_TEST02_SPORTS_YOGA_V1_MAIN\",\"KIRA_TEST03_PORTRAIT_EXPRESSION_V1\"],\"files\":[\"AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md\",\"AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md\",\"AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl\",\"AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json\",\"AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt\",\"AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt\"]}",
       "commit_hash": null,
       "created_at": "2026-07-07T12:42:03.410183+00:00"
+    },
+    {
+      "event_id": "EVT-20260707-124423-e66b992e",
+      "event_type": "COMMIT_RECORDED",
+      "subject_type": "commit",
+      "subject_id": "bb977ae8b226ec72f9510173a17c8345adc7f97f",
+      "summary": "Commit recorded: Backfill Kira prompt pipeline",
+      "payload_json": "{\"summary\": \"Normalized core prompt pipeline for KIRA (6 prompts).\"}",
+      "commit_hash": "bb977ae8b226ec72f9510173a17c8345adc7f97f",
+      "created_at": "2026-07-07T12:44:23.035510+00:00"
     }
   ]
 }
