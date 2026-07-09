@@ -677,3 +677,84 @@ KIRA becomes `CANON_READY_2D / PROMPT_PIPELINE_ACTIVE_CORE`.
 Next action:
 
 Backfill prompt pipeline for KIRA_ANDREY joint scenes, then prepare 3D reference packs when requested.
+
+---
+
+Дата:
+2026-07-09
+
+Decision ID:
+D-010
+
+Context:
+VNE Visual Bridge production contract deployment. Agent created 13 files for 9 characters across NCC. Post-deployment audit revealed naming and location violations.
+
+Decision:
+Fix agent folder discipline violation and standardize all files to NCC naming convention.
+
+Details:
+1. Agent created `AI_CHARACTERS/10_notes/GROUP_C_CANON_GENERATION_PROMPTS.md` — wrong location. `10_notes/` must be per-character only, never at `AI_CHARACTERS/` level.
+2. Agent did not follow `[CHARACTER]_CANON_GENERATION_PROMPTS.txt` naming convention for `06_prompts/` (used `.md` and group-level naming instead).
+3. Agent did not update `CHARACTER_REGISTRY.md`, `INVENTORY.md`, or `DECISIONS.md` during deployment — violating Voyage tracking protocol.
+4. Agent did not create per-character `IDENTITY.txt` or `CANON_INDEX.md` skeletons for Group C — violating AGENTS.md workflow for new characters.
+
+Fix:
+1. Removed `AI_CHARACTERS/10_notes/` folder entirely.
+2. Created 5 per-character `[CHARACTER]_CANON_GENERATION_PROMPTS.txt` files in `AI_CHARACTERS/[CHAR]/06_prompts/`.
+3. Updated `CHARACTER_REGISTRY.md`: EGOR/MAKSIM/MARINA/NIKA/SERGEY status → `TEXT_CANON_READY / CANON_PROMPTS_CREATED`.
+4. Created this `DECISIONS.md` entry.
+5. Regenerate `INVENTORY.md` (separate action).
+6. Per-character `IDENTITY.txt` and `CANON_INDEX.md` skeletons deferred to user approval.
+
+Affected files:
+* `AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt`
+* `AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_CANON_GENERATION_PROMPTS.txt`
+* `AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt`
+* `AI_CHARACTERS/NIKA/06_prompts/NIKA_CANON_GENERATION_PROMPTS.txt`
+* `AI_CHARACTERS/SERGEY/06_prompts/SERGEY_CANON_GENERATION_PROMPTS.txt`
+* `AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json`
+* `AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_APPROVAL_WORKSHEET.md`
+* `AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_APPROVAL_WORKSHEET.md`
+* `AI_CHARACTERS/OLGA/06_prompts/OLGA_POOL_SCENE_PROMPT.md`
+* `.voyage/CHARACTER_REGISTRY.md`
+* `.voyage/DECISIONS.md`
+
+Reason:
+Brings all 9 characters to consistent NCC naming convention, 10-subfolder structure, and Voyage tracking. Fixes the agent's folder discipline violation per `AGENTS.md` section 5.
+
+Result:
+Group A (OLGA, ANDREY_JUNIOR): production-ready with canonical JSON.
+Group B (ANDREY, KIRA): `TEXT_CANON_READY` with APPROVAL worksheets.
+Group C (EGOR, MAKSIM, MARINA, NIKA, SERGEY): `TEXT_CANON_READY` with generation prompts.
+
+Next action:
+Generate face/body canon images for Group C via DALL-E or RunPod, then create control tests. Per-character `IDENTITY.txt` and `CANON_INDEX.md` skeletons to be created before image generation begins.
+
+---
+
+Дата:
+2026-07-09
+
+Decision ID:
+D-011
+
+Context:
+DALL-E generation plan for 17 images across 8 characters (excluding ANDREY_JUNIOR from public_filtered).
+
+Decision:
+Create DALL-E ChatGPT Generation Plan v1.0 with 17 images, 4 phases, DCB blocks, and DECISION_001 protocol.
+
+Affected files:
+* `workspace/DALLE_GENERATION_PLAN_v1.0.md` (not committed to NCC — planning document only)
+
+Reason:
+DALL-E does not support IP-Adapter or reference image upload. Consistency achieved through repeated DALL-E Character Blocks (DCB) in every prompt. AJ excluded due to `public_filtered` backend restriction.
+
+Result:
+Ready to begin `OLGA-01` portrait generation.
+
+Next action:
+Execute DALL-E generation plan phase by phase with `DECISION_001` after each image.

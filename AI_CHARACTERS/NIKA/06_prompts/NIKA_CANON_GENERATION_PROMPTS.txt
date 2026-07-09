@@ -1,0 +1,129 @@
+# NIKA Canon Generation Prompts
+
+Status:
+PENDING / NOT_STARTED
+
+Important:
+These prompts are for reference and generation context only.
+Generation still requires explicit user request.
+
+Character:
+NIKA
+
+Active version:
+Base canon v1.0
+
+Identity anchor:
+Adult woman, lean athletic hourglass build, narrow waist, strong firm hips and glutes, long toned legs, graceful controlled posture. Dark chestnut near-black smooth hair shoulder-length with side part, high cheekbones, refined straight nose, defined feminine jawline, full natural lips, intense hazel dark brown eyes with cold observant gaze, fair-to-olive skin with natural texture, minimal makeup, minimal silver jewelry, elegant refined mysterious presence, understated luxury, powerful controlled sensuality.
+
+Prompt style rules:
+* Keep NIKA clearly an adult woman.
+* Use phrases like "adult woman", "lean athletic hourglass build", "realistic adult proportions", "elegant refined presence".
+* Avoid sexualized wording.
+* Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
+* Avoid exaggerating body proportions.
+* Avoid making her look too young or too old.
+* Preserve the intense hazel dark brown eyes with cold observant gaze.
+* Preserve the dark chestnut near-black smooth hair with side part.
+* Preserve the high cheekbones and refined straight nose.
+* Use photorealistic studio or cinematic bar lighting reference language.
+* Keep contexts elegant: portrait, bar, nightlife, formal, casual, outdoor.
+* Keep content tasteful and non-explicit per ROADMAP Priority 4.
+
+---
+
+## Face Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/NIKA/03_face_sheet/
+
+Target filename:
+NIKA_face_canon_v1_sheet_A.png
+
+Prompt:
+Photorealistic character face canon sheet of the same adult woman, neutral grey studio background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark, 2 rows x 4 columns layout, 8 consistent head-and-shoulders portraits.
+
+Adult woman with dark chestnut near-black smooth hair shoulder-length with side part, high cheekbones, refined straight nose, defined feminine jawline, full natural lips, intense hazel dark brown eyes with cold observant gaze, fair-to-olive skin with natural texture, minimal makeup, minimal silver jewelry, elegant controlled presence, refined sensuality without vulgarity.
+
+Expression range:
+1. neutral cold observant
+2. slight predatory smile
+3. controlled elegance
+4. distant evaluation
+5. mysterious allure
+6. commanding authority
+7. softening moment
+8. dominant presence
+
+Photorealistic, masterpiece, best quality, 8k uhd, cinematic studio lighting.
+
+---
+
+## Expression Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/NIKA/03_face_sheet/expressions/
+
+Target filename:
+NIKA_expressions_v1_sheet_A.png
+
+Prompt:
+Photorealistic character expression canon sheet of the same adult woman, neutral grey studio background, soft even lighting. 2 rows x 3 columns layout, 6 consistent head-and-shoulders portraits.
+
+Adult woman with dark chestnut near-black smooth hair shoulder-length with side part, high cheekbones, refined straight nose, defined feminine jawline, full natural lips, intense hazel dark brown eyes, fair-to-olive skin with natural texture, minimal makeup, minimal silver jewelry.
+
+Expression range:
+1. neutral cold observant
+2. slight predatory smile
+3. controlled elegance
+4. distant evaluation
+5. mysterious allure
+6. commanding authority
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+## Body Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/NIKA/04_body_sheet/
+
+Target filename:
+NIKA_body_canon_v1_sheet_A_front_side_back.png
+
+Prompt:
+Photorealistic full-body character canon sheet of the same adult woman, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
+
+Adult woman, lean athletic hourglass build, narrow waist, strong firm hips and glutes, long toned legs, graceful controlled posture, realistic adult proportions, dark chestnut near-black smooth hair shoulder-length with side part, intense hazel dark brown eyes, fair-to-olive skin, elegant refined presence, black asymmetrical cocktail dress with open shoulders, high heels, minimal silver jewelry.
+
+Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
+
+---
+
+## Body Pose Variations Prompt
+
+Target folder:
+AI_CHARACTERS/NIKA/04_body_sheet/
+
+Target filename:
+NIKA_body_canon_v1_sheet_B_pose_variations.png
+
+Prompt:
+Photorealistic full-body character pose sheet of the same adult woman, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
+
+Adult woman, lean athletic hourglass build, narrow waist, strong firm hips and glutes, long toned legs, graceful controlled posture, dark chestnut near-black smooth hair, intense hazel dark brown eyes, fair-to-olive skin, elegant refined presence, black asymmetrical cocktail dress with open shoulders, high heels, minimal silver jewelry.
+
+Pose range:
+1. Standing elegant, controlled posture
+2. Walking forward, graceful stride
+3. Seated on bar stool, legs crossed
+4. Leaning against bar counter, mysterious
+5. Formal pose, commanding presence
+6. Outdoor, wind in hair, confident gaze
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+*NIKA Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*

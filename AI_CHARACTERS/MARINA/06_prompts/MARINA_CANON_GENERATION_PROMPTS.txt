@@ -1,0 +1,127 @@
+# MARINA Canon Generation Prompts
+
+Status:
+PENDING / NOT_STARTED
+
+Important:
+These prompts are for reference and generation context only.
+Generation still requires explicit user request.
+
+Character:
+MARINA
+
+Active version:
+Base canon v1.0
+
+Identity anchor:
+Adult woman, soft gentle proportions, natural feminine build, medium scale. Natural light brown hair with soft texture, thoughtful blue eyes, soft gentle features, shy but warm smile, natural skin texture, minimal makeup, pastel warm clothing, gentle intimate warmth, natural soft lighting.
+
+Prompt style rules:
+* Keep MARINA clearly an adult woman.
+* Use phrases like "adult woman", "soft gentle proportions", "realistic adult proportions", "gentle feminine presence".
+* Avoid sexualized wording.
+* Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
+* Avoid exaggerating body proportions.
+* Avoid making her look too young or too old.
+* Preserve the thoughtful blue eyes and shy but warm smile.
+* Preserve the natural light brown hair with soft texture.
+* Use photorealistic studio or natural window light reference language.
+* Keep contexts gentle: portrait, home, street, casual, intimate, outdoor.
+
+---
+
+## Face Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/MARINA/03_face_sheet/
+
+Target filename:
+MARINA_face_canon_v1_sheet_A.png
+
+Prompt:
+Photorealistic character face canon sheet of the same adult woman, neutral grey studio background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark, 2 rows x 4 columns layout, 8 consistent head-and-shoulders portraits.
+
+Adult woman with natural light brown hair, soft texture, thoughtful blue eyes, soft gentle features, shy but warm smile, natural skin texture, minimal makeup, pastel warm sweater visible, gentle feminine presence, intimate warmth.
+
+Expression range:
+1. neutral gentle
+2. shy warm smile
+3. thoughtful contemplation
+4. soft laughter
+5. tender warmth
+6. slightly surprised
+7. peaceful calm
+8. gentle affection
+
+Photorealistic, masterpiece, best quality, 8k uhd, soft natural window lighting.
+
+---
+
+## Expression Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/MARINA/03_face_sheet/expressions/
+
+Target filename:
+MARINA_expressions_v1_sheet_A.png
+
+Prompt:
+Photorealistic character expression canon sheet of the same adult woman, neutral grey studio background, soft even lighting. 2 rows x 3 columns layout, 6 consistent head-and-shoulders portraits.
+
+Adult woman with natural light brown hair, soft texture, thoughtful blue eyes, soft gentle features, shy but warm smile, natural skin texture, minimal makeup.
+
+Expression range:
+1. neutral gentle
+2. shy warm smile
+3. thoughtful contemplation
+4. soft laughter
+5. tender warmth
+6. peaceful calm
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+## Body Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/MARINA/04_body_sheet/
+
+Target filename:
+MARINA_body_canon_v1_sheet_A_front_side_back.png
+
+Prompt:
+Photorealistic full-body character canon sheet of the same adult woman, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
+
+Adult woman, soft gentle proportions, natural feminine build, realistic adult proportions, natural light brown hair, thoughtful blue eyes, shy but warm expression, pastel warm clothing, gentle posture, natural soft lighting.
+
+Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
+
+---
+
+## Body Pose Variations Prompt
+
+Target folder:
+AI_CHARACTERS/MARINA/04_body_sheet/
+
+Target filename:
+MARINA_body_canon_v1_sheet_B_pose_variations.png
+
+Prompt:
+Photorealistic full-body character pose sheet of the same adult woman, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
+
+Adult woman, soft gentle proportions, natural feminine build, natural light brown hair, thoughtful blue eyes, shy but warm expression, pastel warm clothing.
+
+Pose range:
+1. Standing gentle, soft posture
+2. Walking forward, gentle stride
+3. Seated, shy smile looking down
+4. Casual relaxed, arms around self
+5. Formal pose, elegant standing
+6. Outdoor natural, wind in hair
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+*MARINA Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*

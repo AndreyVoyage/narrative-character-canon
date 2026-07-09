@@ -1,0 +1,128 @@
+# SERGEY Canon Generation Prompts
+
+Status:
+PENDING / NOT_STARTED
+
+Important:
+These prompts are for reference and generation context only.
+Generation still requires explicit user request.
+
+Character:
+SERGEY
+
+Active version:
+Base canon v1.0
+
+Identity anchor:
+Adult man, athletic build, confident posture, strong but not bulky. Short dark hair clean and neat, piercing grey eyes, masculine but approachable expression, natural skin texture, casual minimalist black t-shirt, protective guardian energy, natural lighting, confident calm presence.
+
+Prompt style rules:
+* Keep SERGEY clearly an adult man.
+* Use phrases like "adult man", "athletic build", "realistic adult proportions", "masculine but approachable presence".
+* Avoid sexualized wording.
+* Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
+* Avoid exaggerating body proportions.
+* Avoid bodybuilder drift.
+* Avoid making him look too young or too old.
+* Preserve the piercing grey eyes and calm confident expression.
+* Preserve the short dark hair clean and neat.
+* Use photorealistic studio or natural lighting reference language.
+* Keep contexts protective: portrait, street, gym, casual, guardian, outdoor.
+
+---
+
+## Face Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/SERGEY/03_face_sheet/
+
+Target filename:
+SERGEY_face_canon_v1_sheet_A.png
+
+Prompt:
+Photorealistic character face canon sheet of the same adult man, neutral grey studio background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark, 2 rows x 4 columns layout, 8 consistent head-and-shoulders portraits.
+
+Adult man with short dark hair, clean and neat, piercing grey eyes, masculine but approachable expression, natural skin texture, athletic build, broad shoulders partly visible, casual minimalist black t-shirt, confident calm posture, protective guardian energy.
+
+Expression range:
+1. neutral calm
+2. confident calm smile
+3. protective alertness
+4. intense focus
+5. relaxed trust
+6. commanding authority
+7. gentle reassurance
+8. guardian vigilance
+
+Photorealistic, masterpiece, best quality, 8k uhd, natural lighting.
+
+---
+
+## Expression Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/SERGEY/03_face_sheet/expressions/
+
+Target filename:
+SERGEY_expressions_v1_sheet_A.png
+
+Prompt:
+Photorealistic character expression canon sheet of the same adult man, neutral grey studio background, soft even lighting. 2 rows x 3 columns layout, 6 consistent head-and-shoulders portraits.
+
+Adult man with short dark hair, clean and neat, piercing grey eyes, masculine but approachable expression, natural skin texture, athletic build.
+
+Expression range:
+1. neutral calm
+2. confident calm smile
+3. protective alertness
+4. intense focus
+5. relaxed trust
+6. guardian vigilance
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+## Body Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/SERGEY/04_body_sheet/
+
+Target filename:
+SERGEY_body_canon_v1_sheet_A_front_side_back.png
+
+Prompt:
+Photorealistic full-body character canon sheet of the same adult man, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
+
+Adult man, athletic build, confident posture, realistic adult proportions, short dark hair, piercing grey eyes, masculine but approachable expression, casual minimalist black t-shirt, strong but not bulky, natural adult scale, protective guardian stance.
+
+Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
+
+---
+
+## Body Pose Variations Prompt
+
+Target folder:
+AI_CHARACTERS/SERGEY/04_body_sheet/
+
+Target filename:
+SERGEY_body_canon_v1_sheet_B_pose_variations.png
+
+Prompt:
+Photorealistic full-body character pose sheet of the same adult man, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
+
+Adult man, athletic build, confident posture, short dark hair, piercing grey eyes, masculine but approachable expression, casual minimalist black t-shirt, strong but not bulky.
+
+Pose range:
+1. Standing arms crossed, protective posture
+2. Walking forward, confident stride
+3. Seated, relaxed calm
+4. Sports/action stance, athletic power
+5. Guardian pose, watching over
+6. Casual relaxed, leaning against wall
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+*SERGEY Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*

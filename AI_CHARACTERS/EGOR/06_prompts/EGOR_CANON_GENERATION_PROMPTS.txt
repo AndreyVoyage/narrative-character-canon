@@ -1,0 +1,129 @@
+# EGOR Canon Generation Prompts
+
+Status:
+PENDING / NOT_STARTED
+
+Important:
+These prompts are for reference and generation context only.
+Generation still requires explicit user request.
+
+Character:
+EGOR
+
+Active version:
+Base canon v1.0
+
+Identity anchor:
+Adult man, tall athletic strong build, broad shoulders, narrow waist, visible muscle definition. Dark ash-blond short military cut hair with textured top, intense gray almond eyes with predatory calculating gaze and slight left eye squint, sharp angular jaw with visible clench muscles, high prominent cheekbones, slight asymmetrical smirk, defined cupid bow lips, light olive smooth skin, no facial hair, expensive watch on wrist, commanding wolf-like presence, elegant danger.
+
+Prompt style rules:
+* Keep EGOR clearly an adult man.
+* Use phrases like "adult man", "tall athletic build", "realistic adult proportions", "mature masculine presence".
+* Avoid sexualized wording.
+* Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
+* Avoid exaggerating body proportions.
+* Avoid bodybuilder drift.
+* Avoid making him look too young or too old.
+* Preserve the intense gray almond eyes and slight left eye squint.
+* Preserve the sharp angular jaw and high prominent cheekbones.
+* Preserve the dark ash-blond short military cut hair.
+* Use photorealistic studio or cinematic reference language.
+* Keep contexts mature: portrait, business, nightlife, gym, formal, outdoor.
+
+---
+
+## Face Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/EGOR/03_face_sheet/
+
+Target filename:
+EGOR_face_canon_v1_sheet_A.png
+
+Prompt:
+Photorealistic character face canon sheet of the same adult man, neutral grey studio background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark, 2 rows x 4 columns layout, 8 consistent head-and-shoulders portraits.
+
+Adult man with dark ash-blond short military cut hair with textured top, intense gray almond eyes with predatory calculating gaze and slight left eye squint, sharp angular jaw with visible clench muscles, high prominent cheekbones, slight asymmetrical smirk, defined cupid bow lips, light olive smooth skin, no facial hair, broad shoulders and thick muscular neck partly visible, expensive watch visible on wrist, blue dress shirt collar visible.
+
+Expression range:
+1. neutral calm predatory
+2. slight asymmetrical smirk
+3. intense focused gaze
+4. cold calculating evaluation
+5. dominant forward-leaning intensity
+6. relaxed but alert
+7. wolf-like alertness
+8. commanding authority
+
+Photorealistic, masterpiece, best quality, 8k uhd, cinematic studio lighting.
+
+---
+
+## Expression Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/EGOR/03_face_sheet/expressions/
+
+Target filename:
+EGOR_expressions_v1_sheet_A.png
+
+Prompt:
+Photorealistic character expression canon sheet of the same adult man, neutral grey studio background, soft even lighting. 2 rows x 3 columns layout, 6 consistent head-and-shoulders portraits.
+
+Adult man with dark ash-blond short military cut hair, intense gray almond eyes with slight left eye squint, sharp angular jaw, high prominent cheekbones, light olive smooth skin, no facial hair.
+
+Expression range:
+1. neutral cold predatory
+2. slight asymmetrical smirk
+3. intense focused gaze
+4. dominant commanding
+5. relaxed but alert
+6. wolf-like alertness
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+## Body Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/EGOR/04_body_sheet/
+
+Target filename:
+EGOR_body_canon_v1_sheet_A_front_side_back.png
+
+Prompt:
+Photorealistic full-body character canon sheet of the same adult man, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
+
+Adult man, tall athletic strong build, broad shoulders, narrow waist, visible muscle definition, realistic adult proportions, dark ash-blond short military cut hair, intense gray almond eyes, sharp angular jaw, high prominent cheekbones, light olive smooth skin, no facial hair, expensive watch on left wrist. Wearing fitted dark shirt and trousers, confident posture, commanding presence.
+
+Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
+
+---
+
+## Body Pose Variations Prompt
+
+Target folder:
+AI_CHARACTERS/EGOR/04_body_sheet/
+
+Target filename:
+EGOR_body_canon_v1_sheet_B_pose_variations.png
+
+Prompt:
+Photorealistic full-body character pose sheet of the same adult man, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
+
+Adult man, tall athletic strong build, broad shoulders, narrow waist, visible muscle definition, dark ash-blond short military cut hair, intense gray almond eyes, sharp angular jaw, light olive smooth skin, no facial hair, expensive watch. Wearing fitted dark shirt and trousers.
+
+Pose range:
+1. Standing arms crossed, dominant posture
+2. Walking forward, confident stride
+3. Seated, leaning forward with intensity
+4. Sports/action stance, athletic power
+5. Formal pose, elegant standing
+6. Casual relaxed, leaning against wall
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+*EGOR Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*

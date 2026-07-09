@@ -1,0 +1,128 @@
+# MAKSIM Canon Generation Prompts
+
+Status:
+PENDING / NOT_STARTED
+
+Important:
+These prompts are for reference and generation context only.
+Generation still requires explicit user request.
+
+Character:
+MAKSIM
+
+Active version:
+Base canon v1.0
+
+Identity anchor:
+Adult man, sporty fit build, athletic but not bulky, confident natural posture. Light brown hair with natural texture, warm hazel eyes, friendly open smile, approachable expression, natural skin texture, smart casual shirt with rolled sleeves, wrist watch and bracelet, natural daylight energy, approachable warmth.
+
+Prompt style rules:
+* Keep MAKSIM clearly an adult man.
+* Use phrases like "adult man", "sporty fit build", "realistic adult proportions", "friendly approachable presence".
+* Avoid sexualized wording.
+* Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
+* Avoid exaggerating body proportions.
+* Avoid bodybuilder drift.
+* Avoid making him look too young or too old.
+* Preserve the warm hazel eyes and friendly open smile.
+* Preserve the light brown hair with natural texture.
+* Use photorealistic studio or natural daylight reference language.
+* Keep contexts friendly: portrait, street, casual, sports, social, outdoor.
+
+---
+
+## Face Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/MAKSIM/03_face_sheet/
+
+Target filename:
+MAKSIM_face_canon_v1_sheet_A.png
+
+Prompt:
+Photorealistic character face canon sheet of the same adult man, neutral grey studio background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark, 2 rows x 4 columns layout, 8 consistent head-and-shoulders portraits.
+
+Adult man with light brown hair, natural texture, warm hazel eyes, friendly open smile, approachable expression, natural skin texture, sporty fit build, broad shoulders partly visible, smart casual shirt with rolled sleeves, wrist watch and bracelet visible.
+
+Expression range:
+1. neutral friendly
+2. warm open smile
+3. relaxed laughter
+4. thoughtful contemplation
+5. sporty energy
+6. gentle confidence
+7. approachable warmth
+8. natural candid
+
+Photorealistic, masterpiece, best quality, 8k uhd, natural daylight studio lighting.
+
+---
+
+## Expression Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/
+
+Target filename:
+MAKSIM_expressions_v1_sheet_A.png
+
+Prompt:
+Photorealistic character expression canon sheet of the same adult man, neutral grey studio background, soft even lighting. 2 rows x 3 columns layout, 6 consistent head-and-shoulders portraits.
+
+Adult man with light brown hair, natural texture, warm hazel eyes, friendly open smile, natural skin texture, sporty fit build.
+
+Expression range:
+1. neutral friendly
+2. warm open smile
+3. relaxed laughter
+4. thoughtful contemplation
+5. gentle confidence
+6. natural candid
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+## Body Canon Sheet Prompt
+
+Target folder:
+AI_CHARACTERS/MAKSIM/04_body_sheet/
+
+Target filename:
+MAKSIM_body_canon_v1_sheet_A_front_side_back.png
+
+Prompt:
+Photorealistic full-body character canon sheet of the same adult man, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
+
+Adult man, sporty fit build, athletic but not bulky, realistic adult proportions, light brown hair, warm hazel eyes, friendly expression, smart casual shirt with rolled sleeves, wrist watch and bracelet, confident natural posture, approachable energy.
+
+Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
+
+---
+
+## Body Pose Variations Prompt
+
+Target folder:
+AI_CHARACTERS/MAKSIM/04_body_sheet/
+
+Target filename:
+MAKSIM_body_canon_v1_sheet_B_pose_variations.png
+
+Prompt:
+Photorealistic full-body character pose sheet of the same adult man, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
+
+Adult man, sporty fit build, athletic but not bulky, light brown hair, warm hazel eyes, friendly expression, smart casual shirt with rolled sleeves, wrist watch and bracelet.
+
+Pose range:
+1. Standing natural, friendly posture
+2. Walking forward, casual stride
+3. Seated, relaxed smile
+4. Sports/action stance, athletic energy
+5. Formal pose, elegant standing
+6. Casual relaxed, hands in pockets
+
+Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
+
+---
+
+*MAKSIM Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*
