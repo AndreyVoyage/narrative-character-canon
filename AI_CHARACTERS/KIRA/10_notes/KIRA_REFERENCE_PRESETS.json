@@ -1,20 +1,30 @@
 {
   "character": "KIRA",
-  "version": "v1.0",
-  "last_updated": "2026-07-02",
-  "root": "AI_CHARACTERS/KIRA",
-  "prompt_pipeline": {
-    "status": "PROMPT_PIPELINE_ACTIVE_CORE",
-    "prompt_index": "AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md",
-    "working_scene_prompts": "AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md",
-    "prompt_run_log": "AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl"
+  "active_version": "kira_base_canon_v1.1",
+  "status": "PENDING_APPROVAL",
+  "last_updated": "2026-07-09",
+  "identity_summary": {
+    "role": "adult female character",
+    "height_direction": "medium-tall adult woman, around 168 cm",
+    "body_direction": "athletic slender feminine, former hurdler and track athlete, narrow waist, strong athletic legs, firm glutes, developed feminine hips, toned but not bulky, functional athletic beauty, graceful posture, natural medium-full bust proportional and natural",
+    "face_direction": "oval face with high cheekbones, slightly angular but feminine jawline, expressive brown almond eyes with warm amber undertones, double eyelids with natural crease, natural arched medium-thickness eyebrows, straight refined nose with rounded tip, full lower lip with defined cupid's bow, natural pink-peach lips, smooth skin with natural texture and light freckles across nose and cheekbones, small beauty mark above left side of upper lip, slightly asymmetrical smile with right corner lifting higher",
+    "hair_direction": "dark blonde / light brown shoulder-length natural wavy hair, soft volume around the face, warm highlights in cinematic light",
+    "style_direction": "warm, confident, athletic, feminine, emotionally expressive, independent, playful but not silly, soft but internally strong, steel butterfly energy, alive gaze, natural human expression"
   },
-  "text_sources": {
-    "identity": "AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt",
-    "canon_index": "AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt",
-    "base_prompt": "AI_CHARACTERS/KIRA/06_prompts/KIRA_BASE_PROMPT.txt",
-    "negative_prompt": "AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt"
+  "active_canon": {
+    "primary_face_reference": "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png",
+    "face_canon": "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png",
+    "expression_canon": "AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png",
+    "body_canon_a": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
+    "body_canon_b": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png"
   },
+  "planned_canon_paths": {
+    "face_canon": "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_APPROVED.png"
+  },
+  "control_tests": [],
   "scene_presets": {
     "portrait": {
       "description": "Face-focused portrait generation.",
@@ -38,8 +48,7 @@
       "description": "Gym, yoga, running, stretching scenes.",
       "reference_images": [
         "AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png",
-        "AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png",
-        "AI_CHARACTERS/KIRA/07_generated/canon_tests/02_sports_yoga/KIRA_test02_sports_yoga_v2_MAIN.png"
+        "AI_CHARACTERS/KIRA/05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png"
       ],
       "prompt_goal": "Generate Kira in athletic contexts preserving sports canon."
     },
@@ -47,8 +56,7 @@
       "description": "Bar, evening, embankment, romantic scenes.",
       "reference_images": [
         "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
-        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png",
-        "AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png"
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png"
       ],
       "prompt_goal": "Generate Kira in evening elegant scenes preserving evening canon."
     },
@@ -56,8 +64,7 @@
       "description": "Bar, lounge, warm evening conversation scenes.",
       "reference_images": [
         "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
-        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png",
-        "AI_CHARACTERS/KIRA/07_generated/canon_tests/03_portrait_expression/KIRA_test02_bar_romance_v1_APPROVED.png"
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png"
       ],
       "prompt_goal": "Generate Kira in an evening bar or lounge scene preserving face, expression, and elegant mood."
     },
@@ -76,10 +83,24 @@
       "reference_images": [
         "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png",
         "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
-        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
-        "AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png"
+        "AI_CHARACTERS/KIRA/05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png"
       ],
       "prompt_goal": "Generate Kira in outdoor cinematic scenes preserving face canon, body canon, and approved evening/outdoor visual consistency."
     }
-  }
+  },
+  "prompt_pipeline": {
+    "status": "PROMPT_PIPELINE_ACTIVE_CORE",
+    "prompt_index": "AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/KIRA/06_prompts/KIRA_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/KIRA/06_prompts/KIRA_PROMPT_RUN_LOG.jsonl"
+  },
+  "safety_rules": [
+    "fully adult character only",
+    "non-explicit generation contexts only",
+    "avoid nude, lingerie, transparent clothing, fetish framing, erotic posing",
+    "avoid exaggerated body proportions",
+    "avoid bodybuilder drift",
+    "avoid making the character look too young",
+    "record prompt_id, references, output path, verdict and notes for every generation"
+  ]
 }

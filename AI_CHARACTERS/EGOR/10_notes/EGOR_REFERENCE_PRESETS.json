@@ -1,13 +1,44 @@
 {
   "character": "EGOR",
-  "version": "v1.0",
-  "last_updated": "2026-07-01",
-  "root": "AI_CHARACTERS/EGOR",
-  "text_sources": {
-    "identity": null,
-    "canon_index": null,
-    "base_prompt": null,
-    "negative_prompt": null
+  "active_version": "egor_base_canon_v1.0",
+  "status": "PENDING_GENERATION",
+  "last_updated": "2026-07-09",
+  "identity_summary": {
+    "role": "adult male character",
+    "height_direction": "tall adult build, commanding presence",
+    "body_direction": "athletic strong build, broad shoulders, narrow waist, visible muscle definition, realistic adult proportions",
+    "face_direction": "intense gray almond eyes with predatory calculating gaze and slight left eye squint, sharp angular jaw with visible clench muscles, high prominent cheekbones, slight asymmetrical smirk, defined cupid bow lips, light olive smooth skin, no facial hair",
+    "hair_direction": "dark ash-blond short military cut with textured top",
+    "style_direction": "handsome, predatory, dominant, expensive, cinematic, wolf-like presence, elegant danger"
   },
-  "scene_presets": {}
+  "active_canon": {
+    "primary_face_reference": "PENDING_GENERATION",
+    "face_canon": "AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+  },
+  "planned_canon_paths": {
+    "face_canon": "AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+  },
+  "control_tests": [],
+  "scene_presets": {},
+  "prompt_pipeline": {
+    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "prompt_index": "AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/EGOR/06_prompts/EGOR_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_RUN_LOG.jsonl"
+  },
+  "safety_rules": [
+    "fully adult character only",
+    "non-explicit generation contexts only",
+    "avoid nude, lingerie, transparent clothing, fetish framing, erotic posing",
+    "avoid exaggerated body proportions",
+    "avoid bodybuilder drift",
+    "avoid making the character look too young",
+    "record prompt_id, references, output path, verdict and notes for every generation"
+  ]
 }

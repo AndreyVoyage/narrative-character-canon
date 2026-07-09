@@ -1,7 +1,8 @@
 {
   "character": "OLGA",
-  "active_version": "olga_base_canon_v1",
+  "active_version": "olga_base_canon_v1.1",
   "status": "CONTROL_TESTS_APPROVED",
+  "last_updated": "2026-07-09",
   "identity_summary": {
     "role": "mature adult woman character",
     "height_direction": "very tall, around 187 cm",
@@ -29,7 +30,8 @@
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/03_portrait_expression/OLGA_test03_portrait_expression_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png",
-    "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png"
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_meet_andrey_junior/OLGA_test07_pool_meet_andrey_junior_v1_APPROVED.png"
   ],
   "scene_presets": {
     "neutral_face_reference": {
@@ -93,6 +95,17 @@
         "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png"
       ],
       "prompt_goal": "Use for family-neutral indoor OLGA + ANDREY_JUNIOR conversation scenes; prefer calm mentoring body language and clear scale contrast."
+    },
+    "pool_meet_andrey_junior": {
+      "description": "Approved OLGA and ANDREY_JUNIOR indoor pool meeting scene.",
+      "reference_images": [
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_meet_andrey_junior/OLGA_test07_pool_meet_andrey_junior_v1_APPROVED.png",
+        "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/03_face_sheet/ANDREY_JUNIOR_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png"
+      ],
+      "prompt_goal": "Use for family-neutral indoor pool scenes with OLGA and ANDREY_JUNIOR; preserve tall-vs-compact scale contrast and both face identities."
     }
   },
   "prompt_pipeline": {

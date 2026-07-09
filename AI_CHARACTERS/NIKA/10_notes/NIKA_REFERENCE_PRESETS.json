@@ -1,13 +1,44 @@
 {
   "character": "NIKA",
-  "version": "v1.0",
-  "last_updated": "2026-07-01",
-  "root": "AI_CHARACTERS/NIKA",
-  "text_sources": {
-    "identity": null,
-    "canon_index": null,
-    "base_prompt": null,
-    "negative_prompt": null
+  "active_version": "nika_base_canon_v1.0",
+  "status": "PENDING_GENERATION",
+  "last_updated": "2026-07-09",
+  "identity_summary": {
+    "role": "adult female character",
+    "height_direction": "medium-tall, lean and graceful",
+    "body_direction": "lean athletic hourglass build, narrow waist, strong firm hips and glutes, long toned legs, graceful controlled posture, realistic adult proportions, elegant feminine strength",
+    "face_direction": "high cheekbones, refined straight nose, defined feminine jawline, full natural lips, intense hazel dark brown eyes with cold observant gaze, fair-to-olive skin with natural texture, minimal makeup",
+    "hair_direction": "dark chestnut near-black smooth hair shoulder-length with side part, sleek and controlled",
+    "style_direction": "elegant, dark, predatory, refined, controlled sensuality, nightlife fashion, understated luxury, mysterious, powerful"
   },
-  "scene_presets": {}
+  "active_canon": {
+    "primary_face_reference": "PENDING_GENERATION",
+    "face_canon": "AI_CHARACTERS/NIKA/03_face_sheet/NIKA_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/NIKA/03_face_sheet/expressions/NIKA_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+  },
+  "planned_canon_paths": {
+    "face_canon": "AI_CHARACTERS/NIKA/03_face_sheet/NIKA_face_canon_v1_sheet_A_APPROVED.png",
+    "expression_canon": "AI_CHARACTERS/NIKA/03_face_sheet/expressions/NIKA_expressions_v1_sheet_A_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_b": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+  },
+  "control_tests": [],
+  "scene_presets": {},
+  "prompt_pipeline": {
+    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "prompt_index": "AI_CHARACTERS/NIKA/06_prompts/NIKA_PROMPT_INDEX.md",
+    "working_scene_prompts": "AI_CHARACTERS/NIKA/06_prompts/NIKA_WORKING_SCENE_PROMPTS.md",
+    "prompt_run_log": "AI_CHARACTERS/NIKA/06_prompts/NIKA_PROMPT_RUN_LOG.jsonl"
+  },
+  "safety_rules": [
+    "fully adult character only",
+    "non-explicit generation contexts only",
+    "avoid nude, lingerie, transparent clothing, fetish framing, erotic posing",
+    "avoid exaggerated body proportions",
+    "avoid bodybuilder drift",
+    "avoid making the character look too young",
+    "record prompt_id, references, output path, verdict and notes for every generation"
+  ]
 }
