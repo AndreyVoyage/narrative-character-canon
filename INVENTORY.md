@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-10 12:33:36
+2026-07-10 15:26:47
 
 ---
 
@@ -614,8 +614,8 @@ Generated:
 │   │   │   │   │   ├── .gitkeep
 │   │   │   │   │   └── OLGA_test07_pool_wellness_solo_v1_APPROVED.png
 │   │   │   │   ├── 08_dalle_evening_embankment/
-│   │   │   │   │   ├── OLGA_test08_dalle_evening_embankment_v1_APPROVED.png
-│   │   │   │   │   └── utweb_installer.exe
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── OLGA_test08_dalle_evening_embankment_v1_APPROVED.png
 │   │   │   │   └── .gitkeep
 │   │   │   ├── drafts/
 │   │   │   │   └── .gitkeep
@@ -734,7 +734,7 @@ Generated:
 
 | Extension | Count |
 |---|---:|
-| (no extension) | 189 |
+| (no extension) | 190 |
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
@@ -764,7 +764,6 @@ Generated:
 | .backup_20260709_092657 | 4 |
 | .backup_20260709_101916 | 1 |
 | .backup_20260710_123336 | 1 |
-| .exe | 1 |
 | .jpg | 2 |
 | .json | 13 |
 | .jsonl | 5 |
@@ -791,7 +790,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 3154 | 2026-07-10 12:33:26 |
+| .voyage/CURRENT_TASK.md | 3570 | 2026-07-10 15:26:24 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -801,7 +800,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 39326 | 2026-07-10 12:33:26 |
+| .voyage/DECISIONS.md | 40319 | 2026-07-10 15:26:16 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -1139,9 +1138,9 @@ Generated:
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_POOL_SCENE_PROMPT.md | 5069 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md | 4106 | 2026-07-05 23:42:08 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md.backup_20260705_234153 | 3536 | 2026-07-05 23:41:53 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl | 7629 | 2026-07-10 12:33:01 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl | 8560 | 2026-07-10 15:25:16 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl.backup_20260705_234153 | 4930 | 2026-07-05 23:41:53 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md | 14973 | 2026-07-10 12:33:01 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md | 15437 | 2026-07-10 15:25:24 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md.backup_20260705_234153 | 11582 | 2026-07-05 23:41:53 |
 | AI_CHARACTERS/OLGA/07_generated/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/.gitkeep | 0 | 2026-07-04 16:04:15 |
@@ -1156,8 +1155,8 @@ Generated:
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png | 2063547 | 2026-07-05 21:43:27 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/.gitkeep | 0 | 2026-07-10 12:32:22 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png | 1921754 | 2026-07-10 01:39:03 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/.gitkeep | 0 | 2026-07-10 15:23:41 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png | 1927004 | 2026-07-09 13:32:08 |
-| AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/utweb_installer.exe | 2185960 | 2026-07-10 00:57:41 |
 | AI_CHARACTERS/OLGA/07_generated/drafts/.gitkeep | 0 | 2026-07-04 16:04:16 |
 | AI_CHARACTERS/OLGA/07_generated/rejected/.gitkeep | 0 | 2026-07-04 16:04:16 |
 | AI_CHARACTERS/OLGA/08_masks/.gitkeep | 0 | 2026-07-04 16:04:16 |
@@ -1171,11 +1170,11 @@ Generated:
 | AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md.backup_20260705_234259 | 1911 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md | 2379 | 2026-07-05 16:25:50 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md.backup_20260705_162431 | 2358 | 2026-07-05 16:24:31 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 8818 | 2026-07-10 12:33:01 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 9844 | 2026-07-10 15:26:00 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260705_162431 | 2127 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260705_234259 | 5317 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260709_092657 | 6792 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 2002 | 2026-07-10 12:33:01 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 2866 | 2026-07-10 15:25:05 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_162431 | 1146 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_234259 | 1360 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/SERGEY/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1205,7 +1204,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 16810 | 2026-07-09 12:28:29 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 79514 | 2026-07-09 10:22:45 |
+| INVENTORY.md | 82243 | 2026-07-10 12:33:36 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

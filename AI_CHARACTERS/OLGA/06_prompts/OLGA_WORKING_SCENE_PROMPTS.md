@@ -316,3 +316,21 @@ APPROVED_AS_TEST / repo-safe.
 - Use this v1 image as repo-tracked public-safe pool/wellness reference.
 - Do not use pair pool failed drafts.
 - Swimsuit v2/v3 variants are local-only unless human later allows repo deploy.
+
+---
+
+## OLGA_TEST08_DALLE_EVENING_EMBANKMENT_V1
+
+Purpose:
+DALL-E backend variant for OLGA evening embankment scene.
+
+Status:
+APPROVED_AS_TEST / repo-tracked ALT.
+
+Output:
+`AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png`
+
+Reference policy:
+Use as ALT/backend comparison reference for evening_embankment.
+Keep 01_evening_embankment as MAIN reference.
+Do not treat as private/local-only.

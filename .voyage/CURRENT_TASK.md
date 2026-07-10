@@ -77,3 +77,10 @@ After each image: user sends photo, I return DECISION_001 with APPROVED/REJECTED
 - Human decision: deploy only v1 athleisure/public-safe image to repo; keep v2/v3 local-only.
 - Repo files updated: `OLGA_TEST_RESULTS.md`, `OLGA_PROMPT_RUN_LOG.jsonl`, `OLGA_WORKING_SCENE_PROMPTS.md`, `OLGA_REFERENCE_PRESETS.json`, `DECISIONS.md`, `CURRENT_TASK.md`, `INVENTORY.md`.
 - Next generation should target remaining coverage gaps (formal/elegant, casual everyday, scale check, character poster) rather than follow the old blind 17-image list.
+
+## Progress Update — 2026-07-10 (OLGA DALL-E embankment)
+
+- OLGA `08_dalle_evening_embankment` deployed as repo-tracked ALT / DALL-E backend variant.
+- File: `AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png`.
+- `01_evening_embankment` remains MAIN reference; 08 is comparison/ALT only.
+- Does not revive the blind 17-image DALL-E plan.

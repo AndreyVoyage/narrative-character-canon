@@ -777,3 +777,22 @@ Affected files:
 Reason: Preserve repo as public-safe while keeping canon-correct swimsuit references in LOCAL_STORAGE.
 Result: v1 repo-tracked; v2/v3 local-only.
 Next action: Continue visual coverage based on actual missing targets.
+
+---
+
+Дата: 2026-07-10
+Decision ID: D-013
+Context: OLGA 08 DALL-E evening embankment image was initially questioned as local-only but human clarified it is an ordinary SFW photo.
+Decision: Keep and deploy as repo-tracked approved DALL-E ALT/backend variant.
+Reason: Preserve useful backend comparison reference and avoid losing approved visual work.
+Affected files:
+- `AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png`
+- `AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md`
+- `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
+- `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md`
+- `AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json`
+- `.voyage/DECISIONS.md`
+- `.voyage/CURRENT_TASK.md`
+- `INVENTORY.md`
+Result: OLGA 08 DALL-E evening embankment is repo-tracked ALT reference; 01_evening_embankment remains MAIN.
+Next action: Continue coverage-based generation and reference preset cleanup.

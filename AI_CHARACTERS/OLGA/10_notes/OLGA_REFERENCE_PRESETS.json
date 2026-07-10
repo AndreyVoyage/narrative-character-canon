@@ -2,7 +2,7 @@
   "character": "OLGA",
   "active_version": "olga_base_canon_v1.1",
   "status": "CONTROL_TESTS_APPROVED",
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-10",
   "identity_summary": {
     "role": "mature adult woman character",
     "height_direction": "very tall, around 187 cm",
@@ -31,7 +31,8 @@
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png",
-    "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_meet_andrey_junior/OLGA_test07_pool_meet_andrey_junior_v1_APPROVED.png"
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png"
   ],
   "scene_presets": {
     "neutral_face_reference": {
@@ -119,6 +120,20 @@
         "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png"
       ],
       "prompt_goal": "Generate public-safe OLGA solo pool/wellness scenes using repo-tracked references. For swimsuit variants, use LOCAL_STORAGE only unless human explicitly approves repo deployment."
+    },
+    "evening_embankment_dalle_alt": {
+      "description": "OLGA approved DALL-E evening embankment ALT/backend variant.",
+      "content_tier": "public_filtered",
+      "storage": "repo_tracked",
+      "image_references": [
+        "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png",
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png",
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Generate or compare OLGA evening embankment scenes using the DALL-E approved ALT while keeping 01_evening_embankment as MAIN canon test."
     }
   },
   "prompt_pipeline": {
