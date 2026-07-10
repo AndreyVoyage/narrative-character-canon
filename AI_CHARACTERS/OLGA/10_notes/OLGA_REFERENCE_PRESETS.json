@@ -106,6 +106,19 @@
         "AI_CHARACTERS/ANDREY_JUNIOR/04_body_sheet/ANDREY_JUNIOR_body_canon_v2_sheet_A_front_side_back_APPROVED.png"
       ],
       "prompt_goal": "Use for family-neutral indoor pool scenes with OLGA and ANDREY_JUNIOR; preserve tall-vs-compact scale contrast and both face identities."
+    },
+    "pool_wellness_solo_athleisure_safe": {
+      "description": "Public-safe OLGA solo indoor pool/wellness scene with fully clothed athleisure outfit.",
+      "content_tier": "public_filtered",
+      "storage": "repo_tracked",
+      "image_references": [
+        "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png",
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Generate public-safe OLGA solo pool/wellness scenes using repo-tracked references. For swimsuit variants, use LOCAL_STORAGE only unless human explicitly approves repo deployment."
     }
   },
   "prompt_pipeline": {

@@ -758,3 +758,22 @@ Ready to begin `OLGA-01` portrait generation.
 
 Next action:
 Execute DALL-E generation plan phase by phase with `DECISION_001` after each image.
+
+---
+
+Дата: 2026-07-10
+Decision ID: D-012
+Context: OLGA pool/wellness generation produced public-safe athleisure v1 and swimsuit v2/v3 variants.
+Decision: Human selected option B. Deploy only v1 athleisure/public-safe image to repo. Keep v2/v3 swimsuit variants local-only.
+Affected files:
+- `AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png`
+- `AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md`
+- `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
+- `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md`
+- `AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json`
+- `.voyage/DECISIONS.md`
+- `.voyage/CURRENT_TASK.md`
+- `INVENTORY.md`
+Reason: Preserve repo as public-safe while keeping canon-correct swimsuit references in LOCAL_STORAGE.
+Result: v1 repo-tracked; v2/v3 local-only.
+Next action: Continue visual coverage based on actual missing targets.

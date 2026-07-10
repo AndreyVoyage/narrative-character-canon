@@ -295,3 +295,24 @@ Photorealistic indoor lounge scene with the same mature adult woman and a shorte
 
 Result notes:
 Indoor lounge/office conversation with ANDREY_JUNIOR. Safe guiding contact via shoulder, calm mentor/guardian-like conversation, clear scale contrast, identities consistent.
+
+---
+
+## OLGA_TEST07_POOL_WELLNESS_SOLO_V1_SAFE
+
+**Purpose:**
+Public-safe indoor pool/wellness solo coverage for OLGA.
+
+**Status:**
+APPROVED_AS_TEST / repo-safe.
+
+**Output:**
+`AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png`
+
+**Reference policy:**
+- Use OLGA face canon.
+- Use OLGA expression sheet.
+- Use OLGA body canon A/B.
+- Use this v1 image as repo-tracked public-safe pool/wellness reference.
+- Do not use pair pool failed drafts.
+- Swimsuit v2/v3 variants are local-only unless human later allows repo deploy.

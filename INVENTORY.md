@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-07 15:42:14
+2026-07-10 12:33:36
 
 ---
 
@@ -192,6 +192,7 @@ Generated:
 │   │   ├── 09_blender/
 │   │   │   └── .gitkeep
 │   │   └── 10_notes/
+│   │       ├── ANDREY_CANON_APPROVAL_WORKSHEET.md
 │   │       ├── ANDREY_CANON_INDEX.md
 │   │       ├── ANDREY_CANON_INDEX.md.backup_20260630_085458
 │   │       ├── ANDREY_CANON_INDEX.md.backup_20260706_115144
@@ -199,6 +200,7 @@ Generated:
 │   │       ├── ANDREY_RAW_FILE_MAP.md
 │   │       ├── ANDREY_REFERENCE_PRESETS.json
 │   │       ├── ANDREY_REFERENCE_PRESETS.json.backup_20260706_115144
+│   │       ├── ANDREY_REFERENCE_PRESETS.json.backup_20260709_092657
 │   │       ├── ANDREY_TEST_RESULTS.md
 │   │       └── ANDREY_TEST_RESULTS.md.backup_20260706_115144
 │   ├── ANDREY_JUNIOR/
@@ -272,6 +274,7 @@ Generated:
 │   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json
 │   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260704_150852
 │   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260706_083029
+│   │   │   ├── ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260709_092657
 │   │   │   ├── ANDREY_JUNIOR_TEST_RESULTS.md
 │   │   │   ├── ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260704_150852
 │   │   │   └── ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260706_083029
@@ -301,7 +304,8 @@ Generated:
 │   │   │   └── sports_look/
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   └── EGOR_CANON_GENERATION_PROMPTS.txt
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -396,12 +400,14 @@ Generated:
 │   │   └── 10_notes/
 │   │       ├── KIRA_APPROVAL_CRITERIA.md.txt
 │   │       ├── KIRA_APPROVAL_CRITERIA_ENG.md.txt
+│   │       ├── KIRA_CANON_APPROVAL_WORKSHEET.md
 │   │       ├── KIRA_CANON_INDEX.md.txt
 │   │       ├── KIRA_CANON_INDEX.md.txt.backup_20260707_153909
 │   │       ├── KIRA_IDENTITY.txt.txt
 │   │       ├── KIRA_IDENTITY.txt.txt.backup_20260707_154006
 │   │       ├── KIRA_REFERENCE_PRESETS.json
 │   │       ├── KIRA_REFERENCE_PRESETS.json.backup_20260707_153832
+│   │       ├── KIRA_REFERENCE_PRESETS.json.backup_20260709_092657
 │   │       ├── KIRA_TEST_RESULTS.md.txt
 │   │       ├── KIRA_TEST_RESULTS.md.txt.backup_20260702_231620
 │   │       └── KIRA_TEST_RESULTS.md.txt.backup_20260707_153909
@@ -430,7 +436,8 @@ Generated:
 │   │   │   └── sports_look/
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   └── MAKSIM_CANON_GENERATION_PROMPTS.txt
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -475,7 +482,8 @@ Generated:
 │   │   │   └── sports_look/
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   └── MARINA_CANON_GENERATION_PROMPTS.txt
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -520,7 +528,8 @@ Generated:
 │   │   │   └── sports_look/
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   └── NIKA_CANON_GENERATION_PROMPTS.txt
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -577,6 +586,7 @@ Generated:
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
 │   │   │   ├── OLGA_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── OLGA_POOL_SCENE_PROMPT.md
 │   │   │   ├── OLGA_PROMPT_INDEX.md
 │   │   │   ├── OLGA_PROMPT_INDEX.md.backup_20260705_234153
 │   │   │   ├── OLGA_PROMPT_RUN_LOG.jsonl
@@ -600,6 +610,12 @@ Generated:
 │   │   │   │   │   └── OLGA_test05_business_interior_v1_APPROVED.png
 │   │   │   │   ├── 06_indoor_lounge_conversation_with_andrey_junior/
 │   │   │   │   │   └── OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png
+│   │   │   │   ├── 07_pool_wellness_solo/
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── OLGA_test07_pool_wellness_solo_v1_APPROVED.png
+│   │   │   │   ├── 08_dalle_evening_embankment/
+│   │   │   │   │   ├── OLGA_test08_dalle_evening_embankment_v1_APPROVED.png
+│   │   │   │   │   └── utweb_installer.exe
 │   │   │   │   └── .gitkeep
 │   │   │   ├── drafts/
 │   │   │   │   └── .gitkeep
@@ -625,6 +641,7 @@ Generated:
 │   │   │   ├── OLGA_REFERENCE_PRESETS.json
 │   │   │   ├── OLGA_REFERENCE_PRESETS.json.backup_20260705_162431
 │   │   │   ├── OLGA_REFERENCE_PRESETS.json.backup_20260705_234259
+│   │   │   ├── OLGA_REFERENCE_PRESETS.json.backup_20260709_092657
 │   │   │   ├── OLGA_TEST_RESULTS.md
 │   │   │   ├── OLGA_TEST_RESULTS.md.backup_20260705_162431
 │   │   │   └── OLGA_TEST_RESULTS.md.backup_20260705_234259
@@ -654,7 +671,8 @@ Generated:
 │       │   └── sports_look/
 │       │       └── .gitkeep
 │       ├── 06_prompts/
-│       │   └── .gitkeep
+│       │   ├── .gitkeep
+│       │   └── SERGEY_CANON_GENERATION_PROMPTS.txt
 │       ├── 07_generated/
 │       │   ├── canon_tests/
 │       │   │   ├── 01_evening_embankment/
@@ -676,6 +694,9 @@ Generated:
 │           └── SERGEY_REFERENCE_PRESETS.json
 ├── docs/
 │   ├── GITHUB_REFERENCE_PACK_WORKFLOW.md
+│   ├── NCC_DEPLOY_CHECKLIST.md
+│   ├── NCC_FOLDER_MAP.md
+│   ├── PROJECT_DOCUMENTATION_INDEX.md
 │   ├── VOYAGE_INTEGRATION_WORKFLOW.md
 │   └── VOYAGE_SQLITE_MEMORY_WORKFLOW.md
 ├── tools/
@@ -695,21 +716,25 @@ Generated:
 ├── INVENTORY.md.backup_20260704_151411
 ├── INVENTORY.md.backup_20260704_160831
 ├── INVENTORY.md.backup_20260705_163018
+├── INVENTORY.md.backup_20260709_101916
+├── INVENTORY.md.backup_20260710_123336
 ├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
 ├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
 ├── README.md
-└── ROADMAP.md
+├── repo_audit.txt
+├── ROADMAP.md
+└── UNIFIED_CANON_TESTS_TEMPLATE.md
 ```
 
 # Total file count
 
-425
+448
 
 # File type summary
 
 | Extension | Count |
 |---|---:|
-| (no extension) | 188 |
+| (no extension) | 189 |
 | .backup_20260630_085458 | 1 |
 | .backup_20260702_231620 | 1 |
 | .backup_20260702_231625 | 1 |
@@ -736,14 +761,18 @@ Generated:
 | .backup_20260707_153909 | 2 |
 | .backup_20260707_154006 | 1 |
 | .backup_20260707_154019 | 3 |
+| .backup_20260709_092657 | 4 |
+| .backup_20260709_101916 | 1 |
+| .backup_20260710_123336 | 1 |
+| .exe | 1 |
 | .jpg | 2 |
 | .json | 13 |
 | .jsonl | 5 |
-| .md | 39 |
-| .png | 81 |
+| .md | 46 |
+| .png | 83 |
 | .ps1 | 1 |
 | .py | 6 |
-| .txt | 20 |
+| .txt | 26 |
 
 # File list
 
@@ -751,7 +780,7 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 3367 | 2026-07-07 15:40:44 |
+| .voyage/CHARACTER_REGISTRY.md | 3599 | 2026-07-09 10:16:49 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -761,8 +790,8 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_083029 | 3219 | 2026-07-06 08:30:30 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
-| .voyage/CONTEXT_SNAPSHOT.md | 3104 | 2026-07-07 15:42:08 |
-| .voyage/CURRENT_TASK.md | 14901 | 2026-07-07 15:40:35 |
+| .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
+| .voyage/CURRENT_TASK.md | 3154 | 2026-07-10 12:33:26 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -772,7 +801,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 34677 | 2026-07-07 15:41:24 |
+| .voyage/DECISIONS.md | 39326 | 2026-07-10 12:33:26 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -783,14 +812,14 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260706_083029 | 24849 | 2026-07-06 08:30:30 |
 | .voyage/DECISIONS.md.backup_20260706_115144 | 27453 | 2026-07-06 11:51:44 |
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
-| .voyage/EVENTS_EXPORT.jsonl | 36404 | 2026-07-07 15:42:08 |
+| .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
 | .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
-| .voyage/SQLITE_MEMORY_STATUS.md | 4275 | 2026-07-06 12:12:44 |
-| .voyage/STATE_EXPORT.json | 93161 | 2026-07-07 15:42:08 |
-| .vscode/settings.json | 4 | 2026-07-06 08:21:01 |
+| .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
+| .voyage/STATE_EXPORT.json | 93915 | 2026-07-07 15:44:38 |
+| .vscode/settings.json | 4 | 2026-07-09 09:27:48 |
 | AGENTS.md | 13890 | 2026-07-02 09:58:18 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
@@ -878,13 +907,15 @@ Generated:
 | AI_CHARACTERS/ANDREY/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_APPROVAL_WORKSHEET.md | 5495 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md | 12170 | 2026-07-06 12:02:11 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260630_085458 | 9425 | 2026-06-30 08:48:46 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md.backup_20260706_115144 | 11601 | 2026-07-06 11:51:44 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_IDENTITY.txt | 9304 | 2026-06-30 08:23:04 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_RAW_FILE_MAP.md | 6599 | 2026-06-30 08:14:52 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 7562 | 2026-07-06 11:56:01 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 8220 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json.backup_20260706_115144 | 7232 | 2026-07-06 11:51:44 |
+| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json.backup_20260709_092657 | 7562 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md | 5038 | 2026-07-06 12:02:51 |
 | AI_CHARACTERS/ANDREY/10_notes/ANDREY_TEST_RESULTS.md.backup_20260706_115144 | 4739 | 2026-07-06 11:51:44 |
 | AI_CHARACTERS/ANDREY_JUNIOR/.gitkeep | 0 | 2026-07-03 15:55:31 |
@@ -932,9 +963,10 @@ Generated:
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md | 1656 | 2026-07-06 08:41:05 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md.backup_20260704_150852 | 1261 | 2026-07-04 15:08:52 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_IDENTITY_DRAFT.md.backup_20260706_083029 | 1508 | 2026-07-06 08:30:29 |
-| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json | 6755 | 2026-07-06 08:39:16 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json | 7603 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260704_150852 | 602 | 2026-07-04 15:08:52 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260706_083029 | 6295 | 2026-07-06 08:30:29 |
+| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json.backup_20260709_092657 | 6755 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md | 3515 | 2026-07-06 08:40:42 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260704_150852 | 903 | 2026-07-04 15:08:52 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260706_083029 | 2982 | 2026-07-06 08:30:29 |
@@ -949,6 +981,7 @@ Generated:
 | AI_CHARACTERS/EGOR/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt | 5282 | 2026-07-09 10:15:21 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -957,7 +990,7 @@ Generated:
 | AI_CHARACTERS/EGOR/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 259 | 2026-07-01 17:18:12 |
+| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 2594 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/KIRA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png | 2257262 | 2026-06-29 18:03:58 |
@@ -1007,12 +1040,14 @@ Generated:
 | AI_CHARACTERS/KIRA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_APPROVAL_CRITERIA.md.txt | 13560 | 2026-06-29 21:03:18 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_APPROVAL_CRITERIA_ENG.md.txt | 4209 | 2026-06-29 21:08:48 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10687 | 2026-07-07 15:39:38 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_APPROVAL_WORKSHEET.md | 5827 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt | 10703 | 2026-07-07 15:43:12 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_INDEX.md.txt.backup_20260707_153909 | 10102 | 2026-07-07 15:39:09 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt | 13272 | 2026-07-07 15:40:13 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_IDENTITY.txt.txt.backup_20260707_154006 | 13022 | 2026-07-07 15:40:06 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 4536 | 2026-07-07 15:38:43 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 6421 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json.backup_20260707_153832 | 4217 | 2026-07-07 15:38:32 |
+| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json.backup_20260709_092657 | 4536 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt | 3581 | 2026-07-07 15:39:57 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260702_231620 | 2916 | 2026-07-02 23:16:20 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260707_153909 | 2752 | 2026-07-07 15:39:09 |
@@ -1027,6 +1062,7 @@ Generated:
 | AI_CHARACTERS/MAKSIM/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_CANON_GENERATION_PROMPTS.txt | 4485 | 2026-07-09 10:15:21 |
 | AI_CHARACTERS/MAKSIM/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1035,7 +1071,7 @@ Generated:
 | AI_CHARACTERS/MAKSIM/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_REFERENCE_PRESETS.json | 263 | 2026-07-01 17:18:12 |
+| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_REFERENCE_PRESETS.json | 2402 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/MARINA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1047,6 +1083,7 @@ Generated:
 | AI_CHARACTERS/MARINA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt | 4387 | 2026-07-09 10:15:21 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1055,7 +1092,7 @@ Generated:
 | AI_CHARACTERS/MARINA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 263 | 2026-07-01 17:18:12 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 2426 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/NIKA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1067,6 +1104,7 @@ Generated:
 | AI_CHARACTERS/NIKA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/06_prompts/NIKA_CANON_GENERATION_PROMPTS.txt | 5441 | 2026-07-09 10:15:21 |
 | AI_CHARACTERS/NIKA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1075,7 +1113,7 @@ Generated:
 | AI_CHARACTERS/NIKA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/NIKA/10_notes/NIKA_REFERENCE_PRESETS.json | 259 | 2026-07-01 17:18:12 |
+| AI_CHARACTERS/NIKA/10_notes/NIKA_REFERENCE_PRESETS.json | 2670 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/OLGA/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/01_refs_raw/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/02_best_refs/.gitkeep | 0 | 2026-07-04 16:04:15 |
@@ -1098,11 +1136,12 @@ Generated:
 | AI_CHARACTERS/OLGA/05_outfits/sports_look/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/06_prompts/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_CANON_GENERATION_PROMPTS.txt | 4546 | 2026-07-05 16:24:20 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_POOL_SCENE_PROMPT.md | 5069 | 2026-07-09 09:26:57 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md | 4106 | 2026-07-05 23:42:08 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md.backup_20260705_234153 | 3536 | 2026-07-05 23:41:53 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl | 6821 | 2026-07-05 23:42:44 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl | 7629 | 2026-07-10 12:33:01 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl.backup_20260705_234153 | 4930 | 2026-07-05 23:41:53 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md | 14369 | 2026-07-05 23:42:26 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md | 14973 | 2026-07-10 12:33:01 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md.backup_20260705_234153 | 11582 | 2026-07-05 23:41:53 |
 | AI_CHARACTERS/OLGA/07_generated/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/.gitkeep | 0 | 2026-07-04 16:04:15 |
@@ -1115,6 +1154,10 @@ Generated:
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/04_outdoor_walk_with_andrey_junior/OLGA_test04_outdoor_walk_with_andrey_junior_v1_APPROVED.png | 2334617 | 2026-07-05 12:40:15 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png | 1791762 | 2026-07-05 22:25:54 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png | 2063547 | 2026-07-05 21:43:27 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/.gitkeep | 0 | 2026-07-10 12:32:22 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png | 1921754 | 2026-07-10 01:39:03 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png | 1927004 | 2026-07-09 13:32:08 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/utweb_installer.exe | 2185960 | 2026-07-10 00:57:41 |
 | AI_CHARACTERS/OLGA/07_generated/drafts/.gitkeep | 0 | 2026-07-04 16:04:16 |
 | AI_CHARACTERS/OLGA/07_generated/rejected/.gitkeep | 0 | 2026-07-04 16:04:16 |
 | AI_CHARACTERS/OLGA/08_masks/.gitkeep | 0 | 2026-07-04 16:04:16 |
@@ -1128,10 +1171,11 @@ Generated:
 | AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md.backup_20260705_234259 | 1911 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md | 2379 | 2026-07-05 16:25:50 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md.backup_20260705_162431 | 2358 | 2026-07-05 16:24:31 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 6792 | 2026-07-05 23:43:40 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 8818 | 2026-07-10 12:33:01 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260705_162431 | 2127 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260705_234259 | 5317 | 2026-07-05 23:42:59 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 1468 | 2026-07-05 23:43:19 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260709_092657 | 6792 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 2002 | 2026-07-10 12:33:01 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_162431 | 1146 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_234259 | 1360 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/SERGEY/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1145,6 +1189,7 @@ Generated:
 | AI_CHARACTERS/SERGEY/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_CANON_GENERATION_PROMPTS.txt | 4474 | 2026-07-09 10:15:21 |
 | AI_CHARACTERS/SERGEY/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1153,19 +1198,25 @@ Generated:
 | AI_CHARACTERS/SERGEY/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 263 | 2026-07-01 17:18:12 |
+| AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 2416 | 2026-07-09 09:26:57 |
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
+| docs/NCC_DEPLOY_CHECKLIST.md | 6840 | 2026-07-09 10:44:16 |
+| docs/NCC_FOLDER_MAP.md | 4729 | 2026-07-09 12:53:55 |
+| docs/PROJECT_DOCUMENTATION_INDEX.md | 16810 | 2026-07-09 12:28:29 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 75928 | 2026-07-06 12:09:34 |
+| INVENTORY.md | 79514 | 2026-07-09 10:22:45 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
 | INVENTORY.md.backup_20260704_160831 | 63538 | 2026-07-04 16:08:31 |
 | INVENTORY.md.backup_20260705_163018 | 65818 | 2026-07-05 16:30:18 |
+| INVENTORY.md.backup_20260709_101916 | 78346 | 2026-07-09 10:19:16 |
+| INVENTORY.md.backup_20260710_123336 | 79514 | 2026-07-10 12:33:36 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1352 | 2026-07-02 09:13:05 |
+| repo_audit.txt | 2384 | 2026-07-09 09:27:48 |
 | ROADMAP.md | 7084 | 2026-07-01 09:37:30 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
@@ -1174,15 +1225,4 @@ Generated:
 | tools/voyage_memory_init.py | 19032 | 2026-07-03 01:36:25 |
 | tools/voyage_memory_record.py | 17623 | 2026-07-03 01:54:56 |
 | tools/voyage_memory_status.py | 2099 | 2026-07-03 01:38:25 |
-| AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt | 5282 | 2026-07-09 10:15:21 |
-| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_CANON_GENERATION_PROMPTS.txt | 4485 | 2026-07-09 10:15:21 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt | 4387 | 2026-07-09 10:15:21 |
-| AI_CHARACTERS/NIKA/06_prompts/NIKA_CANON_GENERATION_PROMPTS.txt | 5441 | 2026-07-09 10:15:21 |
-| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_CANON_GENERATION_PROMPTS.txt | 4474 | 2026-07-09 10:15:21 |
-| AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_REFERENCE_PRESETS.json | 7603 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 7703 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json | 8220 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_REFERENCE_PRESETS.json | 6421 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_APPROVAL_WORKSHEET.md | 5495 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/KIRA/10_notes/KIRA_CANON_APPROVAL_WORKSHEET.md | 5827 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_POOL_SCENE_PROMPT.md | 5069 | 2026-07-09 09:26:57 |
+| UNIFIED_CANON_TESTS_TEMPLATE.md | 5156 | 2026-07-09 17:07:51 |

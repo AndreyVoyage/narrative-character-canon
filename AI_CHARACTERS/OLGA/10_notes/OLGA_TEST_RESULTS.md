@@ -21,3 +21,11 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 * Candidates without approval must not be treated as canon.
 * Rejected images go to `08_rejected` or remain outside active canon.
 * All approved generations must be recorded in `OLGA_PROMPT_RUN_LOG.jsonl`.
+
+## Test 07 — pool wellness solo (public-safe)
+
+| Test | Name | Status | Verdict | Notes |
+|---|---|---|---|---|
+| 07 | pool wellness solo | GENERATED | APPROVED_AS_TEST | Public-safe indoor pool/wellness solo coverage. Fully clothed athleisure version. Indoor pool/wellness environment visible. Approved as repo-safe visual coverage. Swimsuit variants v2/v3 are local-only and not repo-tracked. |
+
+**File:** `AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png`
