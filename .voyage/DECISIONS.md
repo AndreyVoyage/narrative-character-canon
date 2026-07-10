@@ -796,3 +796,18 @@ Affected files:
 - `INVENTORY.md`
 Result: OLGA 08 DALL-E evening embankment is repo-tracked ALT reference; 01_evening_embankment remains MAIN.
 Next action: Continue coverage-based generation and reference preset cleanup.
+
+---
+
+Date: 2026-07-10
+Decision ID: D-014
+Context: The original NCC-DALLE-17-GENERATION task produced duplicate-risk because existing coverage was not audited before generation.
+Decision: Close the old task as CLOSED_REDESIGNED. Adopt mandatory coverage-first and reference-first workflow. Open a new read-only preflight task for OLGA formal/elegant coverage.
+Affected files:
+- `.voyage/CURRENT_TASK.md`
+- `.voyage/DECISIONS.md`
+Reason: Prevent duplicate images, preserve exact character canon, and ensure future scenes use the best existing references and documented anchor rules.
+Results:
+- Completed OLGA pool/wellness and evening embankment records remain authoritative.
+- Future generation requires explicit reference selection before prompt creation.
+Next action: Run OLGA formal/elegant reference preflight only.

@@ -1,86 +1,79 @@
 # CURRENT_TASK
 
-## Task ID
-NCC-DALLE-17-GENERATION-2026-07-09
+## Previous task
 
-## Status
-IN_PROGRESS
+**Task ID:** `NCC-DALLE-17-GENERATION-2026-07-09`
 
-## Goal
-Generate 17 DALL-E images across 8 characters (OLGA ×5, ANDREY ×4, KIRA ×3, EGOR/MAKSIM/MARINA/NIKA/SERGEY ×1 each). AJ excluded from public_filtered.
+**Final status:** `CLOSED_REDESIGNED`
 
-## Scope (what I can do)
-1. Write generation prompts for DALL-E (ChatGPT)
-2. Review generated images and give APPROVED/REJECTED verdict
-3. Record prompt_id, output_path, reference_paths for APPROVED images
-4. After all 17 images collected — write Kimi Code deploy prompt for NCC
+**Closure reason:** The original blind 17-image generation list was found to duplicate existing approved visual coverage. It was replaced by a coverage-based workflow.
 
-## Forbidden Actions (CRITICAL)
-1. **NEVER invent folder paths.** Before suggesting any path, run `ls` on target directory
-2. **NEVER create new folder names** (like `dalle_tests/`). Use EXISTING subfolders only: `canon_tests/`, `drafts/`, `rejected/` under `07_generated/`
-3. **NEVER suggest paths outside `07_generated/`** for generated images
-4. **DO NOT** update `CHARACTER_REGISTRY.md` or `INVENTORY.md` during this task — deferred to final deploy step
-5. **DO NOT** write files to NCC repo — only planning documents in workspace
-6. **DO NOT** run git commands — deferred to final deploy
+### Completed results from the redesigned work
 
-## Folder Structure (read-only, verified 2026-07-09)
+- OLGA pool/wellness public-safe v1 deployed and pushed in commit `6229e0d`.
+- OLGA swimsuit pool/wellness v2/v3 retained in `LOCAL_STORAGE` by human decision B.
+- OLGA DALL-E evening embankment ALT deployed and pushed in commit `8e07904`.
+- `01_evening_embankment` remains MAIN.
+- `08_dalle_evening_embankment` is ALT / DALL-E backend variant.
+- Empty duplicate `09_yoga_studio` folder was removed.
 
-```
-AI_CHARACTERS/<CHAR>/07_generated/
-├── canon_tests/     ← APPROVED images go here (with numbered subfolders)
-├── drafts/          ← temporary / work-in-progress
-└── rejected/        ← REJECTED images
-```
+### Superseded rule
 
-**Naming convention for approved images:**
-```
-AI_CHARACTERS/<CHAR>/07_generated/canon_tests/<NN>_<scene_description>/
-  <CHAR>_test<NN>_<scene>_v<version>[_APPROVED].png
-```
+Do not continue the original 17-image count mechanically.
 
-## Local Storage (user-managed)
-```
-C:\DEV\Narrative\ФОТО\<Character in Russian>\
-```
-User manages local files. I only review and approve.
+### Active workflow rule
 
-## Character Mapping (English → Russian folder)
-| English | Russian Folder |
-|---------|---------------|
-| OLGA | Ольга |
-| ANDREY | Андрей старший |
-| KIRA | Кира |
-| EGOR | Егор |
-| MAKSIM | Максим |
-| MARINA | Марина |
-| NIKA | Ника |
-| SERGEY | Сергей |
+Before every future generation:
 
-## Next Expected Report
-After each image: user sends photo, I return DECISION_001 with APPROVED/REJECTED + prompt_id + notes.
-
-## Forbid List
-- No `dalle_tests/` folder creation
-- No `AI_CHARACTERS/10_notes/` at character level
-- No age numbers, no explicit content
-- No git operations during generation phase
+1. Audit existing visual coverage.
+2. Extract exact character anchors from repo canon files.
+3. Select explicit reference images.
+4. Prepare `prompt_id`, `reference_paths`, `output_path`, and storage tier.
+5. Generate only after the scene is confirmed missing.
+6. Record APPROVED / REJECTED / DRAFT result.
 
 ---
-*Created: 2026-07-09*
-*Task type: DALL-E generation + review*
-*Framework: Voyage-lite*
 
-## Progress Update — 2026-07-10
+## Active task
 
-- Original 17-image DALL-E plan has been redesigned based on actual OLGA coverage.
-- OLGA pool/wellness generation produced v1 (athleisure/public-safe), v2 (swimsuit-safe), and v3 (swimsuit canon) variants.
-- Human decision: deploy only v1 athleisure/public-safe image to repo; keep v2/v3 local-only.
-- Repo files updated: `OLGA_TEST_RESULTS.md`, `OLGA_PROMPT_RUN_LOG.jsonl`, `OLGA_WORKING_SCENE_PROMPTS.md`, `OLGA_REFERENCE_PRESETS.json`, `DECISIONS.md`, `CURRENT_TASK.md`, `INVENTORY.md`.
-- Next generation should target remaining coverage gaps (formal/elegant, casual everyday, scale check, character poster) rather than follow the old blind 17-image list.
+**Task ID:** `NCC-OLGA-FORMAL-ELEGANT-REFERENCE-PREFLIGHT-2026-07-10`
 
-## Progress Update — 2026-07-10 (OLGA DALL-E embankment)
+**Status:** `READY_FOR_READONLY_PREFLIGHT`
 
-- OLGA `08_dalle_evening_embankment` deployed as repo-tracked ALT / DALL-E backend variant.
-- File: `AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png`.
-- `01_evening_embankment` remains MAIN reference; 08 is comparison/ALT only.
-- Does not revive the blind 17-image DALL-E plan.
+### Goal
+
+Determine whether OLGA formal/elegant coverage is truly missing and prepare the exact reference selection and canon anchor pack before any generation.
+
+### Scope
+
+- Read OLGA canon files.
+- Inspect existing OLGA face/body/outfit/generated references.
+- Inspect existing formal/elegant or adjacent scenes.
+- Determine best reference images.
+- Extract prompt compensation rules.
+- Prepare recommended `prompt_id` and output path.
+- Do not generate yet.
+
+### Allowed next-step files to read
+
+- `AI_CHARACTERS/OLGA/02_best_refs/`
+- `AI_CHARACTERS/OLGA/02_refs_selected/`
+- `AI_CHARACTERS/OLGA/03_face_sheet/`
+- `AI_CHARACTERS/OLGA/04_body_sheet/`
+- `AI_CHARACTERS/OLGA/05_outfits/`
+- `AI_CHARACTERS/OLGA/06_prompts/`
+- `AI_CHARACTERS/OLGA/07_generated/canon_tests/`
+- `AI_CHARACTERS/OLGA/10_notes/`
+
+### Forbidden in the next task
+
+- No image generation.
+- No new output folder.
+- No repo asset deployment.
+- No prompt log append.
+- No `INVENTORY.md` update.
+- No commit until the preflight report is approved by the human.
+
+### Expected next report
+
+`=== NCC OLGA FORMAL ELEGANT REFERENCE PREFLIGHT RESULT ===`
