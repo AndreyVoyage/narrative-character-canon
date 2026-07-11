@@ -30,6 +30,8 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
   `AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png`
 * 06 indoor lounge conversation with ANDREY_JUNIOR:
   `AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png`
+* 09 formal/elegant cultural foyer — approved indoor full-body MAIN scene reference (`OLGA_TEST09_FORMAL_ELEGANT_V4`):
+  `AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png`
 
 ## Planned Future Tests
 
@@ -43,6 +45,7 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 
 * Prompt index: `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`
 * Working scene prompts: `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md`
+* Working scene prompts Volume 2: `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md`
 * Prompt run log: `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
 
 ## Notes

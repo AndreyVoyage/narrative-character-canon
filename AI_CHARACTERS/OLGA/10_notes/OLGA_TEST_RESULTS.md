@@ -13,7 +13,7 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 | 06 | indoor lounge conversation with ANDREY_JUNIOR | GENERATED | APPROVE | Approved indoor joint conversation; safe shoulder-guiding contact, scale contrast clear |
 | 07 | confident outdoor lifestyle | NOT GENERATED | PENDING | future natural lifestyle scene |
 | 08 | character poster | NOT GENERATED | PENDING | final poster-like reference |
-| 09 | interaction test | NOT GENERATED | PENDING | base canon approved; joint interaction may continue |
+| 09 | formal elegant cultural foyer | GENERATED | APPROVED_AS_TEST | Selected V4; indoor formal/elegant full-body MAIN scene reference |
 
 ## Approval Rules
 
@@ -53,3 +53,36 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 - Ordinary SFW evening embankment photo.
 - Use as DALL-E backend variant / comparison reference.
 - Does not replace 01_evening_embankment MAIN test.
+
+---
+
+## Test 09 — formal/elegant cultural foyer
+
+**Test ID:** `OLGA_TEST09_FORMAL_ELEGANT`
+
+**Selected Prompt ID:** `OLGA_TEST09_FORMAL_ELEGANT_V4`
+
+**Variant label:** `REFINED`
+
+**Scene ID:** `formal_elegant_cultural_foyer`
+
+**Selected filename:** `OLGA_test09_formal_elegant_v4_APPROVED.png`
+
+**Output path:** `AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png`
+
+**Verdict:** `APPROVED_AS_TEST`
+
+**Role:** Approved indoor formal/elegant full-body MAIN scene reference.
+
+**Coverage:** Solo OLGA in an upscale indoor cultural venue, full-body formal/elegant presentation, refined dark burgundy knee-length wrap-style dress, mature face, very tall presence, preserved full mature bust, proportionate hips, natural defined waist, and elegant commanding posture.
+
+**Difference from Test01:** Indoor cultural venue rather than outdoor evening embankment.
+
+**Difference from Test05:** Formal cultural/event styling rather than office/business interior.
+
+### Attempt history
+
+- V1 — `REJECTED_BODY_CANON`: bust/chest below canon; not deployed.
+- V2 — `REJECTED_PROPORTION_DRIFT`: hips and waist-to-hip contrast exaggerated; not deployed.
+- V3 — `ACCEPTABLE_CANDIDATE_SUPERSEDED`: acceptable candidate but superseded; not deployed.
+- V4 — `APPROVED_AS_TEST`: selected and approved for repo deployment.

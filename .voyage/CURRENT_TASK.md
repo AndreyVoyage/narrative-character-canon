@@ -34,46 +34,37 @@ Before every future generation:
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-OLGA-FORMAL-ELEGANT-REFERENCE-PREFLIGHT-2026-07-10`
 
-**Status:** `READY_FOR_READONLY_PREFLIGHT`
+**Final status:** `COMPLETED`
 
 ### Goal
 
-Determine whether OLGA formal/elegant coverage is truly missing and prepare the exact reference selection and canon anchor pack before any generation.
+Formal/elegant coverage was `PARTIALLY_COVERED`; dedicated indoor formal/elegant full-body coverage was missing.
 
-### Scope
+### Result
 
-- Read OLGA canon files.
-- Inspect existing OLGA face/body/outfit/generated references.
-- Inspect existing formal/elegant or adjacent scenes.
-- Determine best reference images.
-- Extract prompt compensation rules.
-- Prepare recommended `prompt_id` and output path.
-- Do not generate yet.
+- Attempts V1–V4 were reviewed.
+- V4 was selected as the approved formal/elegant indoor full-body result.
+- The canonical prompt is stored in `OLGA_WORKING_SCENE_PROMPTS_V2.md`.
+- The approved image is prepared for repo deployment.
 
-### Allowed next-step files to read
+---
 
-- `AI_CHARACTERS/OLGA/02_best_refs/`
-- `AI_CHARACTERS/OLGA/02_refs_selected/`
-- `AI_CHARACTERS/OLGA/03_face_sheet/`
-- `AI_CHARACTERS/OLGA/04_body_sheet/`
-- `AI_CHARACTERS/OLGA/05_outfits/`
-- `AI_CHARACTERS/OLGA/06_prompts/`
-- `AI_CHARACTERS/OLGA/07_generated/canon_tests/`
-- `AI_CHARACTERS/OLGA/10_notes/`
+## Active task
 
-### Forbidden in the next task
+**Task ID:** `NCC-OLGA-TEST09-FORMAL-ELEGANT-DEPLOY-2026-07-10`
 
-- No image generation.
-- No new output folder.
-- No repo asset deployment.
-- No prompt log append.
-- No `INVENTORY.md` update.
-- No commit until the preflight report is approved by the human.
+**Status:** `COMMITTED_AWAITING_PUSH`
 
-### Expected next report
+### Goal
 
-`=== NCC OLGA FORMAL ELEGANT REFERENCE PREFLIGHT RESULT ===`
+Verify the committed Test09 V4 deployment and push only after human approval.
+
+### Rules
+
+- Do not revive the old blind 17-image task.
+- Do not amend or create another deployment commit during verification.
+- Push only after the committed file scope and validations pass.

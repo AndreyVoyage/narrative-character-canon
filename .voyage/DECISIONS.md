@@ -811,3 +811,17 @@ Results:
 - Completed OLGA pool/wellness and evening embankment records remain authoritative.
 - Future generation requires explicit reference selection before prompt creation.
 Next action: Run OLGA formal/elegant reference preflight only.
+
+---
+
+Date: 2026-07-11
+Decision ID: D-015
+Context: Formal/elegant coverage was partial. Four controlled iterations were evaluated. The approved prompt was stored in an intentional Prompt Volume 2.
+Decision: Select `OLGA_TEST09_FORMAL_ELEGANT_V4`, variant label `REFINED`, as the approved Test09 indoor formal/elegant full-body MAIN scene reference. Accept `OLGA_WORKING_SCENE_PROMPTS_V2.md` as indexed Prompt Volume 2.
+Attempt outcomes:
+- V1 rejected for reduced bust volume.
+- V2 rejected for exaggerated hip width and waist-to-hip contrast.
+- V3 acceptable but superseded.
+- V4 approved.
+Reason: V4 provides the strongest overall mature identity, bust/waist/hip balance, refined outfit, tall presence, and cultural-venue distinction.
+Next action: Commit without push, then verify the commit before pushing.

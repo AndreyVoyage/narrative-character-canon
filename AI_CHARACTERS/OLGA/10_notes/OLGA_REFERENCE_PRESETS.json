@@ -32,7 +32,8 @@
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png",
     "AI_CHARACTERS/OLGA/07_generated/canon_tests/07_pool_wellness_solo/OLGA_test07_pool_wellness_solo_v1_APPROVED.png",
-    "AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png"
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png",
+    "AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png"
   ],
   "scene_presets": {
     "neutral_face_reference": {
@@ -134,11 +135,39 @@
         "AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png"
       ],
       "prompt_goal": "Generate or compare OLGA evening embankment scenes using the DALL-E approved ALT while keeping 01_evening_embankment as MAIN canon test."
+    },
+    "formal_elegant_cultural_foyer": {
+      "character_id": "OLGA",
+      "scene_id": "formal_elegant_cultural_foyer",
+      "status": "approved",
+      "storage": "repo_tracked",
+      "content_tier": "public_filtered",
+      "selected_prompt_id": "OLGA_TEST09_FORMAL_ELEGANT_V4",
+      "variant_label": "REFINED",
+      "selected_output": "AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png",
+      "role": "approved indoor formal/elegant full-body MAIN scene reference",
+      "prompt_source": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md",
+      "image_references": [
+        "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png",
+        "AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/OLGA_test01_evening_embankment_v1_APPROVED.png"
+      ],
+      "outfit_continuity": "Test01 remains OUTFIT_MAIN for the approved dark burgundy formal dress direction.",
+      "body_compensation": "Prompt approximately one visual size stronger using: full mature bust balanced naturally with her wide hips and athletic-curvy silhouette, realistic and not exaggerated. Never use numeric or cup sizing.",
+      "exclusions": [
+        "pool references",
+        "sports references",
+        "joint-scene references",
+        "local-only swimsuit references"
+      ]
     }
   },
   "prompt_pipeline": {
     "prompt_index": "AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md",
     "working_scene_prompts": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md",
+    "working_scene_prompts_v2": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md",
     "prompt_run_log": "AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl"
   },
   "safety_rules": [
