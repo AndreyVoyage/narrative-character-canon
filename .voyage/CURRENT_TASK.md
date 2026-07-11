@@ -53,18 +53,94 @@ Formal/elegant coverage was `PARTIALLY_COVERED`; dedicated indoor formal/elegant
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-OLGA-TEST09-FORMAL-ELEGANT-DEPLOY-2026-07-10`
 
-**Status:** `COMMITTED_AWAITING_PUSH`
+**Final status:** `COMPLETED_PUBLISHED`
+
+### Published result
+
+- Commit: `1f887dce3705546e356ff301554433063ed7ebcd`
+- Push result: `SUCCESS`
+- Published branch: `main`
+- HEAD equals origin/main: `YES`
+- Selected prompt: `OLGA_TEST09_FORMAL_ELEGANT_V4`
+- Variant: `REFINED`
+- Selected output: `AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png`
+- Formal/elegant indoor full-body coverage: `COMPLETED`
+- No deployment rerun required.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-OLGA-NEXT-COVERAGE-AUDIT-2026-07-11`
+
+**Status:** `READY_FOR_READONLY_AUDIT`
 
 ### Goal
 
-Verify the committed Test09 V4 deployment and push only after human approval.
+Audit all existing OLGA approved visual coverage and determine the next genuinely missing, non-duplicative scene or reference type before any new generation.
 
-### Rules
+### Audit candidates to evaluate, not automatically approve
 
-- Do not revive the old blind 17-image task.
-- Do not amend or create another deployment commit during verification.
-- Push only after the committed file scope and validations pass.
+- Casual everyday coverage.
+- Tall body-scale/environment comparison.
+- Formal character poster.
+- Outfit-specific coverage.
+- Close-up or expression coverage.
+- Any other actual gap discovered from repository evidence.
+
+The audit must not assume that one of these candidates is missing. It must compare them against actual approved images, canon files, presets, test results, prompt logs, and indexes.
+
+### Required audit workflow
+
+1. Read all current OLGA approved coverage.
+2. Build a coverage matrix.
+3. Identify duplicates and adjacent coverage.
+4. Rank genuinely missing coverage by canon value.
+5. Select one recommended next task.
+6. Identify exact reference pack and proposed IDs.
+7. Do not generate an image.
+8. Do not create a new output folder.
+9. Do not update prompt logs, presets, test results, or inventory.
+10. Return a human-review report first.
+
+### Expected next report
+
+`=== NCC OLGA NEXT COVERAGE AUDIT RESULT ===`
+
+Expected sections:
+
+1. Git state.
+2. Active-task verification.
+3. OLGA approved-test inventory.
+4. Existing coverage matrix.
+5. Duplicate-risk scenes.
+6. Missing coverage candidates.
+7. Candidate ranking.
+8. Recommended next coverage.
+9. Reason for recommendation.
+10. Existing adjacent references.
+11. Mandatory reference pack.
+12. Optional reference pack.
+13. Proposed prompt ID.
+14. Proposed scene ID.
+15. Proposed output folder.
+16. Proposed filename.
+17. Collision check.
+18. Unknowns requiring human approval.
+19. Repo files modified: `NONE`.
+20. Ready for human approval? `YES/NO`.
+
+### Forbidden during the next audit
+
+- Image generation or editing.
+- Creation of test folders.
+- Prompt-log append.
+- Preset, test-result, or canon-index update.
+- Voyage decision creation.
+- Inventory regeneration.
+- Commit or push.
+- Revival of the old blind 17-image task.
