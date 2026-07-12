@@ -21,6 +21,8 @@
 * `configs/visual_canon/pipeline_policy.json` — ACTIVE machine-readable policy.
 * `configs/visual_canon/prompt_record.schema.json` — ACTIVE JSON Schema для JSONL-реестра.
 * `configs/visual_canon/character_manifest.schema.json` — ACTIVE JSON Schema для per-character manifests.
+* `tools/validate_visual_canon_pipeline.py` — ACTIVE validator MVP (read-only, standard library, compatibility/strict modes).
+* `tests/visual_canon/` — ACTIVE standard-library `unittest` suite for the validator.
 * `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md` и `tools/build_scene_reference_pack.py` / `.ps1` — рабочий GitHub-first scene reference tool.
 * ANDREY: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE`; face/body/expression canons и control tests 01–06 опубликованы.
 * ANDREY_JUNIOR: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; son-version active; public_filtered only.
@@ -29,6 +31,7 @@
 * OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) approved как следующий coverage candidate, но deferred до готовности validator MVP и deploy-tool MVP.
 * MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
+* Validator MVP implemented and passing its own tests; awaiting independent read-only verification before deploy-tool MVP preflight.
 
 ---
 
@@ -44,4 +47,4 @@
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-2026-07-12`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-VERIFY-2026-07-12`.

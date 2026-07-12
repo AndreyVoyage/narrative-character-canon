@@ -90,12 +90,13 @@ C:\DEV\Narrative\narrative-character-canon\tools\
 Текущие инструменты:
 
 ```text
-tools\build_scene_reference_pack.py    — сборщик reference pack / SFW prompt
-tools\generate_inventory.py            — регенерация INVENTORY.md
-tools\voyage_memory_init.py            — init SQLite memory
-tools\voyage_memory_status.py          — статус SQLite memory
-tools\voyage_memory_record.py          — запись task/decision/event/artifacts
-tools\voyage_memory_export.py          — экспорт .voyage STATE/EVENTS/CONTEXT
+tools\build_scene_reference_pack.py           — сборщик reference pack / SFW prompt
+tools\validate_visual_canon_pipeline.py       — read-only валидатор visual-canon pipeline (MVP)
+tools\generate_inventory.py                   — регенерация INVENTORY.md
+tools\voyage_memory_init.py                   — init SQLite memory
+tools\voyage_memory_status.py                 — статус SQLite memory
+tools\voyage_memory_record.py                 — запись task/decision/event/artifacts
+tools\voyage_memory_export.py                 — экспорт .voyage STATE/EVENTS/CONTEXT
 ```
 
 Планируемые:

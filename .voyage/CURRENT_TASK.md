@@ -170,52 +170,73 @@ Proceed to validator MVP preflight.
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-2026-07-12`
 
-**Status:** `READY_FOR_IMPLEMENTATION_PREFLIGHT`
+**Final status:** `COMPLETED_LOCAL_AWAITING_VERIFICATION`
+
+### Goal
+
+Implement the minimum viable validator (`tools/validate_visual_canon_pipeline.py`) that enforces the universal pipeline policy and schemas before any future deploy operation.
+
+### Deliverables
+
+- `tools/validate_visual_canon_pipeline.py` — read-only validator MVP.
+  - CLI: `--repo-root`, `--mode {compatibility,strict}`, `--character`, `--json-report`, `--overwrite-report`, `--no-color`, `--version`.
+  - Exit codes: `0` pass, `1` validation errors, `2` CLI error, `3` internal failure, `4` repo preflight failure, `5` policy/schema load failure.
+  - 40+ check IDs (`VC-001`–`VC-041`) covering policy, JSONL parsing, IDs, references, outputs, roles, MAIN uniqueness, local-only leakage, authority, and SQLite-sync policy.
+- `tests/visual_canon/` — standard-library `unittest` suite.
+  - `test_validator_cli.py`
+  - `test_validator_prompt_records.py`
+  - `test_validator_legacy_compatibility.py`
+  - `fixtures/` with 11 required cases.
+- Documentation updates:
+  - `AGENTS.md` — validator invocation, test command, common agent tasks.
+  - `docs/NCC_VISUAL_CANON_WORKFLOW.md` — §24 validator responsibility updated for MVP.
+  - `docs/NCC_DEPLOY_CHECKLIST.md` — validator gate.
+  - `docs/PROJECT_DOCUMENTATION_INDEX.md` — tool listing.
+- `.voyage/CURRENT_TASK.md` and `.voyage/PROJECT_STATE.md` refreshed.
+
+### Constraints respected
+
+- Standard library only; no third-party dependencies.
+- No repository writes by the validator.
+- No SQLite writes.
+- No character JSONL/prompts/presets/images modified.
+- No `INVENTORY.md` regeneration required for tool-only change.
+- No per-character manifests created.
+- No OLGA Test10 folder or generation.
+- No push.
+
+### Verification command
+
+```powershell
+py -3 -m unittest discover -s tests/visual_canon -v
+py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
+```
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-VERIFY-2026-07-12`
+
+**Status:** `READY_FOR_READONLY_VERIFY`
 
 **Priority:** `P0`
 
 ### Goal
 
-Design and plan the minimum viable validator (`tools/validate_visual_canon_pipeline.py`) that enforces the universal pipeline policy and schemas before any future deploy operation.
+Independently verify the validator MVP against the real repository and edge cases; confirm no regressions; prepare for the deploy-tool MVP preflight.
 
-### Preflight questions
+### Scope
 
-1. Which checks can be implemented with the standard library only?
-2. How should the validator read `pipeline_policy.json` and the JSON schemas?
-3. How should it validate existing legacy records in compatibility mode vs strict mode?
-4. Which checks must be ERROR vs WARNING for the OLGA Test10 pilot?
-5. How should it report duplicate `prompt_id`, missing references, and ID mismatches?
-6. How should it integrate with the future deploy tool?
+- Run validator on the real repo in both `compatibility` and `strict` modes.
+- Review findings format and exit codes.
+- Confirm tests pass and coverage is sufficient.
+- Do not modify repo files during verification.
 
-### Expected next report
+### Next action after verify
 
-`=== NCC VISUAL CANON PIPELINE VALIDATOR MVP PREFLIGHT RESULT ===`
-
-Sections:
-1. Git state.
-2. Active-task verification.
-3. Required validation checks mapped to `docs/NCC_VISUAL_CANON_WORKFLOW.md` §24.
-4. Proposed CLI interface.
-5. Compatibility-mode vs strict-mode behavior.
-6. Legacy handling for existing prompt-run logs.
-7. Exit codes and report format.
-8. Exact files to create/modify.
-9. Files explicitly not to create.
-10. OLGA Test10 pilot validation plan.
-11. Risks and stop conditions.
-12. Repo files modified: `NONE`.
-13. Ready for human approval? `YES/NO`.
-
-### Forbidden during the preflight
-
-- No implementation or repo writes.
-- No validator-script creation.
-- No modification of `AGENTS.md`, workflow docs, or Voyage control files.
-- No SQLite write or export.
-- No image generation or Test10 folder.
-- No prompt-log append.
-- No commit or push.
+Proceed to deploy-tool MVP preflight or to OLGA Test10 pilot, depending on human control-room decision.

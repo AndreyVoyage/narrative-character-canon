@@ -79,7 +79,10 @@
 - [ ] If the deploy involves a new APPROVED image, reserve `prompt_id`, `test_id`, `scene_id`, and planned `output_path` before generation.
 - [ ] Confirm `reference_paths` exist and are Git-tracked.
 - [ ] Record selected MAIN / ALT role and storage/content tier.
-- [ ] Run the validator (`tools/validate_visual_canon_pipeline.py`) once it exists; until then perform manual checks from `docs/NCC_VISUAL_CANON_WORKFLOW.md` §24.
+- [ ] Run the validator and fix errors before commit:
+  ```powershell
+  py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
+  ```
 
 ### 4.3 DECISIONS.md
 - [ ] Создать запись `D-XXX` с:
@@ -165,7 +168,7 @@ AI_CHARACTERS/<CHAR>/
 Stop and ask the human control room if:
 
 - The operation is not authorized by `.voyage/CURRENT_TASK.md`.
-- The validator (when available) reports errors.
+- The validator reports errors.
 - A canonical `prompt_id` would include a variant label.
 - `MAIN` or `ALT` is required in the filename.
 - A local-only path would be committed.

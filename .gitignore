@@ -10,3 +10,4 @@ desktop.ini
 *.db
 LOCAL_STORAGE/
 voyage_memory/
+__pycache__/

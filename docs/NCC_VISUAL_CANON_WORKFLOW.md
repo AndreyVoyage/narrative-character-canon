@@ -303,26 +303,42 @@ Tracked binary formats (`.png`, `.jpg`, `.jpeg`, `.webp`, `.psd`, `.mp4`, `.mov`
 
 ## 24. Validator responsibility
 
-The validator (`tools/validate_visual_canon_pipeline.py`, Phase 2) will check:
+The validator `tools/validate_visual_canon_pipeline.py` is available as of Phase 1 (MVP). It is read-only and never modifies the repository. Run it before every commit that touches the visual-canon pipeline:
 
-- File existence and non-emptiness.
-- UTF-8 validity.
-- Duplicate prompt IDs.
-- Canonical-ID consistency across filename, folder, JSONL, index, preset, test results.
-- Variant label separation from prompt ID.
-- Reference-path existence and Git tracking.
-- Output-path rules per verdict and storage.
-- MAIN/ALT role uniqueness per `test_id`.
+```powershell
+py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
+py -3 tools\validate_visual_canon_pipeline.py --mode strict --no-color
+```
+
+MVP checks:
+
+- Policy and schema load.
+- UTF-8 validity and mojibake hints.
+- JSONL parseability.
+- Required fields (strict mode errors; compatibility mode warns on legacy deviations).
+- Duplicate `prompt_id` values.
+- Variant label separation from `prompt_id`.
+- `character_ids` / `primary_character_id` / `test_id` consistency.
+- `test_number` and `version` consistency.
+- `backend`, `verdict`, `role`, `storage`, `content_tier` against policy.
+- `prompt_source` existence and non-emptiness; local-only leakage detection.
+- `reference_paths` existence.
+- `output_path` rules per `storage` and `content_tier`.
+- Selected records require approved verdict and human-approval gate.
+- MAIN uniqueness per `test_id`.
+- Authority and SQLite-sync policy values.
+
+Checks not yet implemented (reserved for Phase 2/3):
+
+- Full canonical-ID consistency across filename, folder, index, preset, and test results.
 - Prompt-index linkage.
-- JSONL schema conformance.
 - Test-results, preset, and canon-index linkage.
-- Git LFS coverage.
-- Local-only path protection.
+- Git LFS coverage verification.
 - Voyage task-state validity.
 - Decision-ID uniqueness.
 - Git cleanliness and staged-scope validation.
 
-Validator must pass before commit.
+Validator must pass before commit. Stop if the validator reports errors.
 
 ---
 

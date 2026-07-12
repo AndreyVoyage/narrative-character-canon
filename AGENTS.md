@@ -124,13 +124,30 @@ Output files per scene pack:
 - `SCENE_PROMPT.txt`
 - `SCENE_PACK.json`
 
+### Run the visual-canon pipeline validator
+
+Read-only validator: `tools/validate_visual_canon_pipeline.py`. It checks prompt-run JSONL logs, policy/schema conformance, IDs, references, output paths, roles, and local-only path protection. It never modifies the repository.
+
+```powershell
+py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
+py -3 tools\validate_visual_canon_pipeline.py --mode strict --no-color
+```
+
+Tests are in `tests/visual_canon/` and use the standard-library `unittest` runner:
+
+```powershell
+py -3 -m unittest discover -s tests/visual_canon -v
+```
+
 ### Inventory regeneration
 
 `INVENTORY.md` is not regenerated automatically. When asked to update it, a script or agent should walk the `AI_CHARACTERS/` tree and rewrite `INVENTORY.md` with the current folder/file tree, file counts, extensions summary, and file list. Backup the old file first using the naming pattern `INVENTORY.md.backup_YYYYMMDD_HHMMSS`.
 
 ### Testing
 
-There is no automated test suite. "Tests" in this project are visual control tests: generating images and reviewing them for identity drift against the canon.
+The repository now has a standard-library `unittest` suite in `tests/visual_canon/` for the visual-canon pipeline validator. Run it whenever `tools/validate_visual_canon_pipeline.py` changes.
+
+"Tests" in the creative sense remain visual control tests: generating images and reviewing them for identity drift against the canon.
 
 When modifying scripts, verify by running them with realistic arguments and checking that:
 
@@ -138,6 +155,7 @@ When modifying scripts, verify by running them with realistic arguments and chec
 - JSON output is valid.
 - No new files are written inside the repository unless explicitly requested.
 - Generated markdown references only Git-tracked files.
+- `tools/validate_visual_canon_pipeline.py` still passes against the real repo and its own unit tests.
 
 ## 5. Code and documentation style guidelines
 
@@ -271,6 +289,8 @@ Rules for presets:
 | Update a preset | Edit `<CHARACTER>_REFERENCE_PRESETS.json`; verify every `reference_images` path exists and is tracked; do not add placeholders. |
 | Update canon index | Edit `<CHARACTER>_CANON_INDEX.md`; keep status fields, active file lists, and next steps accurate. |
 | Fix a script bug | Edit `tools/build_scene_reference_pack.py` or `.ps1`; run a test invocation; do not commit output packs. |
+| Validate pipeline state | Run `py -3 tools/validate_visual_canon_pipeline.py --no-color`; fix errors before commit. |
+| Maintain validator | Edit `tools/validate_visual_canon_pipeline.py`; add/update tests in `tests/visual_canon/`; run `py -3 -m unittest discover -s tests/visual_canon -v`. |
 | Apply universal visual-canon pipeline | Read `docs/NCC_VISUAL_CANON_WORKFLOW.md` first; follow ID reservation, reference-first, one-operation deploy, and validation rules. |
 | Prepare 3D reference pack | Create `<CHARACTER>_3D_REFERENCE_PACK.md` and `<CHARACTER>_3D_MODEL_SPEC.md` in `10_notes/`; collect refs in `09_blender/01_reference_pack/`. |
 
