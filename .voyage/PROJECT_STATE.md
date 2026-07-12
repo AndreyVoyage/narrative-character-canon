@@ -10,23 +10,38 @@
 
 **Purpose:** Единый источник правды для визуального канона персонажей Narrative / Voyage.
 
+---
+
 ## Подтверждённые факты (проверено по файлам, не со слов)
 
-* Repository foundation существует, `AI_CHARACTERS/` содержит 8 персонажей: ANDREY, KIRA, MARINA, NIKA, OLGA, SERGEY, MAKSIM, EGOR.
+* Repository foundation существует, `AI_CHARACTERS/` содержит 9 персонажей: ANDREY, ANDREY_JUNIOR, EGOR, KIRA, MAKSIM, MARINA, NIKA, OLGA, SERGEY; плюс `_JOINT_SCENES/KIRA_ANDREY`.
+* `AGENTS.md` tracked в Git и актуален (обновлён 2026-07-12 после D-017).
 * `ROADMAP.md`, `PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md`, `PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md` существуют в корне.
+* `docs/NCC_VISUAL_CANON_WORKFLOW.md` — ACTIVE universal workflow (создан 2026-07-12).
+* `configs/visual_canon/pipeline_policy.json` — ACTIVE machine-readable policy.
+* `configs/visual_canon/prompt_record.schema.json` — ACTIVE JSON Schema для JSONL-реестра.
+* `configs/visual_canon/character_manifest.schema.json` — ACTIVE JSON Schema для per-character manifests.
 * `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md` и `tools/build_scene_reference_pack.py` / `.ps1` — рабочий GitHub-first scene reference tool.
-* ANDREY: face canon Sheet A/B + expression Sheet C активны и tracked; `ANDREY_REFERENCE_PRESETS.json` заполнен (6 scene presets: portrait, body_canon, sports, formal, bar, sauna) и ссылается на существующие файлы. Body canon ещё не создан (нет файлов в `04_body_sheet/`, только `.gitkeep`).
-* KIRA: face canon Sheet A/B, body canon Sheet A/B, outfits (evening_dress, sports_look), несколько approved canon_tests и `KIRA_REFERENCE_PRESETS.json` заполнен (7 scene presets, включая `sauna`) — все referenced paths в preset существуют в репозитории. Preset обновлён 2026-07-02, statuses "needs repo verification" из ROADMAP/AGENTS.md устарели относительно текущего состояния файла.
-* OLGA: base canon + approved control tests 01–09, prompt pipeline active, DALL-E embankment ALT and formal/elegant Test09 published. Test10 neutral height-scale check is approved but deferred until the universal visual-canon pipeline standard is designed and implemented.
-* MARINA, NIKA, SERGEY, MAKSIM, EGOR: только структура папок (`.gitkeep`), `*_REFERENCE_PRESETS.json` присутствует, но с пустыми `scene_presets` и `text_sources: null` — это placeholder, не canon.
-* AGENTS.md существует в рабочей директории, но **не tracked в git** (untracked file) — не редактировать без явного запроса пользователя.
+* ANDREY: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE`; face/body/expression canons и control tests 01–06 опубликованы.
+* ANDREY_JUNIOR: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; son-version active; public_filtered only.
+* KIRA: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE_CORE`; face/body/outfit canons и control tests опубликованы.
+* KIRA_ANDREY: `JOINT_CONTROL_TESTS_APPROVED` / `DUO_SCENE_PACKS_APPROVED`.
+* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) approved как следующий coverage candidate, но deferred до готовности validator MVP и deploy-tool MVP.
+* MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
+* SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
 
-## Известная осторожность
+---
 
-Не путать example сцену с реальной generation task. См. [.voyage/SCENE_REQUEST_RULES.md](SCENE_REQUEST_RULES.md).
+## Активные ограничения
 
-Сцена "Кира и Андрей в сауне" (towel-covered conversation) использовалась как EXAMPLE / TOOL TEST IDEA при обсуждении reference-pack инструмента. Это не approved generation task — не генерировать, пока пользователь явно не попросит.
+* Только один write-capable agent одновременно.
+* Перед записью: clean tree, no staged files, expected HEAD match, target files re-read.
+* Любая генерация изображений требует предварительного `prompt_id`, `reference_paths`, и planned `output_path`.
+* OLGA Test10 не создавать, не генерировать и не деплоить до завершения validator MVP и deploy-tool MVP.
+* Local-only и private/adult outputs не коммитить; не ссылаться на них из repo-tracked presets/manifests.
+
+---
 
 ## Immediate next task
 
-См. [.voyage/CURRENT_TASK.md](CURRENT_TASK.md).
+См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-2026-07-12`.

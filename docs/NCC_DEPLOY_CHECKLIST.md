@@ -1,8 +1,8 @@
 # NCC DEPLOY CHECKLIST
 
 > **Назначение:** Контрольный список для любого деплоя файлов в `narrative-character-canon`.  
-> **Источник правил:** `AGENTS.md` разделы 5–6, `VOYAGE_INTEGRATION_WORKFLOW.md`.  
-> **Последнее обновление:** 2026-07-09 (после D-010 — agent folder discipline violation).  
+> **Источник правил:** `AGENTS.md` разделы 5–6, `VOYAGE_INTEGRATION_WORKFLOW.md`, `docs/NCC_VISUAL_CANON_WORKFLOW.md`, `configs/visual_canon/pipeline_policy.json`.  
+> **Последнее обновление:** 2026-07-12 (после D-017 — universal visual-canon pipeline adoption).  
 > **Статус:** ACTIVE — обязателен к применению.
 
 ---
@@ -13,6 +13,8 @@
 
 - [ ] Прочитать `AGENTS.md` раздел 5 — *File naming conventions*  
 - [ ] Прочитать `AGENTS.md` раздел 6 — *Workflow instructions*  
+- [ ] Прочитать `docs/NCC_VISUAL_CANON_WORKFLOW.md` — *Universal visual-canon pipeline*  
+- [ ] Прочитать `configs/visual_canon/pipeline_policy.json` — *Machine-readable policy*  
 - [ ] Прочитать `.voyage/VOYAGE_INTEGRATION_WORKFLOW.md` — *Статусы и фиксация решений*  
 - [ ] Проверить `.voyage/CURRENT_TASK.md` — есть ли активная задача?  
 - [ ] Проверить `.voyage/DECISIONS.md` — нет ли конфликтующих решений?
@@ -73,7 +75,13 @@
   - `EMPTY_STRUCTURE` → `RAW_BASED` → `TEXT_CANON_READY` → `FACE_CANON_ACTIVE` → `BODY_PENDING` → `CANON_READY_2D`
 - [ ] Не отмечать `preset-ready` пока `scene_presets` не содержит реальные tracked-файлы
 
-### 4.2 DECISIONS.md
+### 4.2 Pipeline compliance check
+- [ ] If the deploy involves a new APPROVED image, reserve `prompt_id`, `test_id`, `scene_id`, and planned `output_path` before generation.
+- [ ] Confirm `reference_paths` exist and are Git-tracked.
+- [ ] Record selected MAIN / ALT role and storage/content tier.
+- [ ] Run the validator (`tools/validate_visual_canon_pipeline.py`) once it exists; until then perform manual checks from `docs/NCC_VISUAL_CANON_WORKFLOW.md` §24.
+
+### 4.3 DECISIONS.md
 - [ ] Создать запись `D-XXX` с:
   - Дата
   - Decision ID
@@ -83,7 +91,7 @@
   - Reason
   - Next action
 
-### 4.3 INVENTORY.md
+### 4.4 INVENTORY.md
 - [ ] Backup: `cp INVENTORY.md INVENTORY.md.backup_YYYYMMDD_HHMMSS`
 - [ ] Добавить новые файлы в таблицу
 - [ ] Удалить записи о удалённых файлах
@@ -152,7 +160,20 @@ AI_CHARACTERS/<CHAR>/
 
 ---
 
-## 9. DECISION RECORD TEMPLATE
+## 9. Pipeline-specific stop conditions
+
+Stop and ask the human control room if:
+
+- The operation is not authorized by `.voyage/CURRENT_TASK.md`.
+- The validator (when available) reports errors.
+- A canonical `prompt_id` would include a variant label.
+- `MAIN` or `ALT` is required in the filename.
+- A local-only path would be committed.
+- `reference_paths` include untracked files or placeholders.
+
+---
+
+## 10. DECISION RECORD TEMPLATE
 
 ```markdown
 Дата: YYYY-MM-DD

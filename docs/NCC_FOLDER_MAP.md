@@ -98,6 +98,7 @@ C:\DEV\Narrative\ФОТО\
 | Identity/presets | `AI_CHARACTERS/<CHAR>/10_notes/` |
 | Локальные фото | `C:\DEV\Narrative\ФОТО\<Character>\` |
 | Документация | `docs/` |
+| Pipeline policy / schemas | `configs/visual_canon/` |
 | Скрипты | `tools/` |
 
 ---
@@ -123,4 +124,4 @@ C:\DEV\Narrative\ФОТО\
 
 ---
 
-*NCC FOLDER MAP | narrative-character-canon | 2026-07-09*
+*NCC FOLDER MAP | narrative-character-canon | 2026-07-12*

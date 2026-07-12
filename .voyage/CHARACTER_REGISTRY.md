@@ -10,7 +10,7 @@
 | NIKA | `AI_CHARACTERS/NIKA` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; base canon must stay tasteful/non-explicit per ROADMAP Priority 4 |
 | SERGEY | `AI_CHARACTERS/SERGEY` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; create control tests |
 | MAKSIM | `AI_CHARACTERS/MAKSIM` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; create control tests |
-| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY | WORKING — base canon + tests 01–06, prompt pipeline active, pool preset added v1.1 | Continue controlled scene testing with prompt_id logging; generate pool test 07 |
+| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–09 published) / PROMPT_PIPELINE_ACTIVE | WORKING — base canon + tests 01–09 (incl. DALL-E embankment ALT and formal/elegant Test09), prompt pipeline active | Test10 (`neutral_height_scale_check`) deferred until validator/deploy-tool MVP ready |
 | EGOR | `AI_CHARACTERS/EGOR` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; watch for drift into too-adult/muscular type per ROADMAP Priority 6 |
 
 ## Правило
@@ -18,6 +18,8 @@
 Не отмечать персонажа как preset-ready, пока его `REFERENCE_PRESETS.json` не содержит непустой `scene_presets` со ссылками на реально существующие tracked-файлы. Статус в этой таблице должен сверяться с фактическим содержимым JSON, а не переноситься автоматически из старых отчётов (`AGENTS.md`, `ROADMAP.md`).
 
 Статусы соответствуют определениям из [docs/VOYAGE_INTEGRATION_WORKFLOW.md](../docs/VOYAGE_INTEGRATION_WORKFLOW.md#6-статусы-персонажей).
+
+All future character status changes and approved outputs must follow the universal pipeline in `docs/NCC_VISUAL_CANON_WORKFLOW.md` and be recorded with a `prompt_id` in `AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_RUN_LOG.jsonl`.
 
 ## Voyage SQLite memory
 

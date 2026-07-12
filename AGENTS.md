@@ -14,6 +14,7 @@ The repository is the single source of truth for:
 - Control / canon test results.
 - 3D reference packs and model specs (planned).
 - Automation scripts for assembling scene reference packs.
+- Universal visual-canon pipeline policy, schemas, and workflow (see `docs/NCC_VISUAL_CANON_WORKFLOW.md` and `configs/visual_canon/`).
 
 All work is organised around per-character folders under `AI_CHARACTERS/`. Each character follows the same 10-subfolder layout so that tools, agents, and humans can navigate predictably.
 
@@ -21,14 +22,19 @@ All work is organised around per-character folders under `AI_CHARACTERS/`. Each 
 
 | Character | Status |
 |---|---|
-| ANDREY | Active work — face canon and expression canon approved, body canon pending |
-| KIRA | Canon-ready / reference presets verified 2026-07-02 (see `.voyage/CHARACTER_REGISTRY.md`) |
-| MARINA | Structure created, full canon pack pending |
-| NIKA | Structure created, full canon pack pending |
-| OLGA | Structure created, full canon pack pending |
-| SERGEY | Secondary — structure created, canon pending |
-| MAKSIM | Secondary — structure created, canon pending |
-| EGOR | Structure created, canon pending |
+| ANDREY | `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE` |
+| ANDREY_JUNIOR | `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE` — son-version of ANDREY Senior, public_filtered only |
+| KIRA | `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE_CORE` |
+| MARINA | `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED` |
+| NIKA | `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED` |
+| OLGA | `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE` |
+| SERGEY | `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED` — secondary |
+| MAKSIM | `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED` — secondary |
+| EGOR | `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED` — secondary |
+
+Joint pair: `KIRA + ANDREY` → `JOINT_CONTROL_TESTS_APPROVED` / `DUO_SCENE_PACKS_APPROVED`.
+
+All future generation, selection, and deployment of visual-canon outputs must follow the universal pipeline in `docs/NCC_VISUAL_CANON_WORKFLOW.md`.
 
 ### Overall project phases
 
@@ -48,11 +54,13 @@ Read `ROADMAP.md` for priorities, definition-of-done criteria, and immediate nex
 │       ├── 03_face_sheet/      # Face canon sheets; expressions/ subfolder
 │       ├── 04_body_sheet/      # Body canon sheets; candidates/ subfolder
 │       ├── 05_outfits/         # Outfit canons: casual, formal, evening_dress, sports_look, scene_outfits, candidates
-│       ├── 06_prompts/         # Prompt kits, negative prompts
+│       ├── 06_prompts/         # Prompt kits, negative prompts, prompt indexes, run logs
 │       ├── 07_generated/       # Generated images: canon_tests/, drafts/, rejected/
 │       ├── 08_masks/           # Segmentation masks / inpaint masks
 │       ├── 09_blender/         # Blender files, blockouts, reference packs (future)
 │       └── 10_notes/           # Canon index, identity, raw file map, test results, reference presets JSON
+├── configs/                    # Universal machine-readable policy and JSON schemas
+│   └── visual_canon/           # `pipeline_policy.json` + `prompt_record.schema.json` + `character_manifest.schema.json`
 ├── docs/                       # Additional workflow documentation
 ├── tools/                      # Python / PowerShell automation scripts
 ├── INVENTORY.md                # Auto-generated file/folder inventory
@@ -263,6 +271,7 @@ Rules for presets:
 | Update a preset | Edit `<CHARACTER>_REFERENCE_PRESETS.json`; verify every `reference_images` path exists and is tracked; do not add placeholders. |
 | Update canon index | Edit `<CHARACTER>_CANON_INDEX.md`; keep status fields, active file lists, and next steps accurate. |
 | Fix a script bug | Edit `tools/build_scene_reference_pack.py` or `.ps1`; run a test invocation; do not commit output packs. |
+| Apply universal visual-canon pipeline | Read `docs/NCC_VISUAL_CANON_WORKFLOW.md` first; follow ID reservation, reference-first, one-operation deploy, and validation rules. |
 | Prepare 3D reference pack | Create `<CHARACTER>_3D_REFERENCE_PACK.md` and `<CHARACTER>_3D_MODEL_SPEC.md` in `10_notes/`; collect refs in `09_blender/01_reference_pack/`. |
 
 ## 9. Key files to read for context
@@ -275,6 +284,10 @@ Rules for presets:
 | `PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md` | Future local AI/3D/video pipeline. |
 | `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md` | How the scene reference pack tool works. |
 | `INVENTORY.md` | Current file tree and asset inventory. |
+| `docs/NCC_VISUAL_CANON_WORKFLOW.md` | Universal visual-canon pipeline (generation, selection, deploy, validation, sync). |
+| `configs/visual_canon/pipeline_policy.json` | Machine-readable policy for IDs, verdicts, storage/content tiers, and concurrency. |
+| `configs/visual_canon/prompt_record.schema.json` | JSON Schema for one-record-per-prompt-ID JSONL entries. |
+| `configs/visual_canon/character_manifest.schema.json` | JSON Schema for durable per-character pipeline manifests. |
 | `AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md` | Example of a full canon index. |
 | `AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json` | Example of an active preset file. |
 

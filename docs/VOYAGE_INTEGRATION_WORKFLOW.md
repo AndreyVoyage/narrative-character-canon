@@ -1,5 +1,9 @@
 # Voyage Integration Workflow
 
+> **Scope:** Voyage-lite memory/control layer.
+> **Parent authority:** `docs/NCC_VISUAL_CANON_WORKFLOW.md` defines the universal visual-canon pipeline that all generation, selection, deployment, and validation must follow.
+> **Decision:** `D-017` adopted the universal authority hierarchy and schemas on 2026-07-12.
+
 ## 1. Цель
 
 Voyage-lite слой нужен для сохранения контекста проекта `narrative-character-canon` между сессиями, инструментами и агентами. Он помогает не путать:
@@ -139,7 +143,9 @@ ChatGPT используется как control room:
 
 ## 15. Immediate next workflow
 
-1. Зафиксировать Voyage-lite docs.
-2. Проверить KIRA_REFERENCE_PRESETS.json.
-3. Не генерировать KIRA + ANDREY sauna scene, пока пользователь явно не попросит.
-4. Продолжить развитие GitHub-first reference tool.
+1. Use `docs/NCC_VISUAL_CANON_WORKFLOW.md` for every new approved image.
+2. Reserve `prompt_id`, `test_id`, `scene_id`, and planned `output_path` before generation.
+3. Confirm Git-tracked references before building reference packs.
+4. Record selected MAIN / ALT role and storage/content tier in the JSONL prompt run log.
+5. Run the validator once `tools/validate_visual_canon_pipeline.py` is implemented.
+6. Do not generate the KIRA + ANDREY sauna scene unless the user explicitly requests it.

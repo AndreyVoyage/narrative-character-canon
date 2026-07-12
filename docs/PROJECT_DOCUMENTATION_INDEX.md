@@ -66,6 +66,8 @@ C:\DEV\Narrative\narrative-character-canon\docs\
 docs\GITHUB_REFERENCE_PACK_WORKFLOW.md
 docs\VOYAGE_INTEGRATION_WORKFLOW.md
 docs\NCC_DEPLOY_CHECKLIST.md              ← создан 2026-07-09 (D-010 fix)
+docs\NCC_FOLDER_MAP.md
+docs\NCC_VISUAL_CANON_WORKFLOW.md        ← создан 2026-07-12 (D-017)
 ```
 
 Планируемые:
@@ -111,7 +113,33 @@ tools\scene_workflow\policy_gate.py
 
 ---
 
-# 5. Планируемые configs
+# 5. configs
+
+## 5.1. Созданные configs/visual_canon
+
+Папка:
+
+```text
+C:\DEV\Narrative\narrative-character-canon\configs\visual_canon\
+```
+
+Файлы:
+
+```text
+configs\visual_canon\pipeline_policy.json
+configs\visual_canon\prompt_record.schema.json
+configs\visual_canon\character_manifest.schema.json
+```
+
+Назначение:
+
+* `pipeline_policy.json` — машиночитаемая политика: ID, вердикты, роли, storage/content tiers, human gates, concurrency.
+* `prompt_record.schema.json` — JSON Schema для JSONL-реестра попыток (одна запись на `prompt_id`).
+* `character_manifest.schema.json` — JSON Schema для durable per-character pipeline manifest.
+
+Источник: `D-017` — adoption of universal authority hierarchy and schemas.
+
+## 5.2. Планируемые configs/scene_workflow
 
 Папка (ещё не создана):
 
@@ -461,6 +489,8 @@ C:\DEV\Narrative\ФОТО\
 | Статусы персонажей | `.voyage/CHARACTER_REGISTRY.md` |
 | Текущая задача | `.voyage/CURRENT_TASK.md` |
 | Архитектурные решения | `.voyage/DECISIONS.md` |
+| Универсальный pipeline | `docs/NCC_VISUAL_CANON_WORKFLOW.md` |
+| Машиночитаемая политика | `configs/visual_canon/pipeline_policy.json` |
 | Правила деплоя | `docs/NCC_DEPLOY_CHECKLIST.md` |
 | Структура папок | Этот файл (раздел 1, 7–12) |
 | Prompt pipeline | `AI_CHARACTERS/<CHAR>/06_prompts/` |
@@ -614,4 +644,4 @@ Read-only only. No writes. No commit. No push.
 
 ---
 
-*PROJECT_DOCUMENTATION_INDEX | narrative-character-canon | 2026-07-09*
+*PROJECT_DOCUMENTATION_INDEX | narrative-character-canon | 2026-07-12*

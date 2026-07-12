@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrative-character-canon.local/schemas/character_manifest.schema.json",
+  "title": "NCC Visual Canon Per-Character Pipeline Manifest",
+  "description": "Durable character-specific pipeline configuration. Does not duplicate prompt history.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "character_id",
+    "canon_status",
+    "identity_anchors",
+    "default_exclusions",
+    "default_storage",
+    "default_content_tier",
+    "pipeline_file_paths"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "character_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]*$",
+      "description": "Stable repository character identifier."
+    },
+    "prompt_alias": {
+      "type": "string",
+      "description": "Neutral prompt-facing alias. May differ from repository character_id."
+    },
+    "canon_status": {
+      "type": "string",
+      "enum": [
+        "EMPTY_STRUCTURE",
+        "RAW_BASED",
+        "TEXT_CANON_READY",
+        "FACE_CANON_ACTIVE",
+        "BODY_PENDING",
+        "CANON_READY_2D",
+        "READY_FOR_3D_REFERENCE_PACK",
+        "READY_FOR_3D_MODEL"
+      ],
+      "description": "Voyage character status."
+    },
+    "identity_anchors": {
+      "type": "object",
+      "required": ["identity", "canon_index", "test_results"],
+      "properties": {
+        "identity": {
+          "type": "string",
+          "description": "Path to identity file."
+        },
+        "canon_index": {
+          "type": "string",
+          "description": "Path to canon index."
+        },
+        "test_results": {
+          "type": "string",
+          "description": "Path to test results."
+        },
+        "reference_presets": {
+          "type": "string",
+          "description": "Path to reference presets JSON."
+        },
+        "prompt_index": {
+          "type": "string",
+          "description": "Path to prompt index."
+        },
+        "prompt_run_log": {
+          "type": "string",
+          "description": "Path to JSONL prompt run log."
+        }
+      }
+    },
+    "face_main": {
+      "type": "string",
+      "description": "Path to approved main face canon."
+    },
+    "expression_alt": {
+      "type": "string",
+      "description": "Path to approved expression sheet."
+    },
+    "body_scale_main": {
+      "type": "string",
+      "description": "Path to approved main body/scale canon."
+    },
+    "body_pose_alt": {
+      "type": "string",
+      "description": "Path to approved body pose variation sheet."
+    },
+    "default_exclusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Scopes, themes, or references to exclude from prompts by default."
+    },
+    "prompt_forbidden_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Words or phrases not allowed inside image-generation prompts for this character."
+    },
+    "body_compensation_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target", "compensation", "approved_wording"],
+        "properties": {
+          "target": {
+            "type": "string"
+          },
+          "compensation": {
+            "type": "string"
+          },
+          "approved_wording": {
+            "type": "string"
+          },
+          "forbidden_wording": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": "Human-confirmed corrections for common model drift (e.g. OLGA bust rule)."
+    },
+    "appearance_drift_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["drift", "prevention"],
+        "properties": {
+          "drift": {
+            "type": "string"
+          },
+          "prevention": {
+            "type": "string"
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": "Rules for common identity/proportion drift (height, age, muscularity, etc.)."
+    },
+    "default_storage": {
+      "type": "string",
+      "enum": ["repo_tracked", "local_only"],
+      "description": "Default storage tier for new approved outputs."
+    },
+    "default_content_tier": {
+      "type": "string",
+      "enum": ["public_filtered", "adult_local", "private_local"],
+      "description": "Default content tier for new approved outputs."
+    },
+    "approved_main_scenes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "description": "Selected MAIN prompt_id for the scene."
+      },
+      "description": "Map of scene_id to selected MAIN prompt_id."
+    },
+    "approved_alt_scenes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": "Map of scene_id to list of selected ALT prompt_ids."
+    },
+    "prompt_volume_index": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Map of volume number to working-prompt file path."
+    },
+    "pipeline_file_paths": {
+      "type": "object",
+      "required": ["prompt_index", "working_prompt_volumes", "prompt_run_log", "reference_presets", "test_results", "canon_index"],
+      "properties": {
+        "prompt_index": {
+          "type": "string"
+        },
+        "working_prompt_volumes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prompt_run_log": {
+          "type": "string"
+        },
+        "reference_presets": {
+          "type": "string"
+        },
+        "test_results": {
+          "type": "string"
+        },
+        "canon_index": {
+          "type": "string"
+        }
+      }
+    },
+    "special_human_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate", "reason"],
+        "properties": {
+          "gate": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Extra human approvals required for this character."
+    },
+    "pair_scene_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pair_id", "reference_policy"],
+        "properties": {
+          "pair_id": {
+            "type": "string"
+          },
+          "reference_policy": {
+            "type": "string"
+          },
+          "forbidden_framing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": "Rules for pair scenes. Pair scenes reference separate character manifests."
+    },
+    "legacy_compatibility": {
+      "type": "object",
+      "description": "Legacy aliases, deprecated IDs, and migration notes."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Human-readable notes."
+    }
+  },
+  "additionalProperties": false,
+  "secrets_and_local_only_policy": {
+    "description": "Manifests must not contain secrets. Local-only image paths may only appear if explicitly marked local and excluded from repository deployment. Repo-tracked presets and manifests must reference only Git-tracked files."
+  }
+}

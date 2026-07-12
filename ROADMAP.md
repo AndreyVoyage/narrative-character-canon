@@ -85,12 +85,14 @@
 * repository foundation: DONE;
 * AI_CHARACTERS structure: DONE;
 * Git / Git LFS: DONE;
-* KIRA: canon-ready / needs repo verification;
-* ANDREY: active work / face canon active;
-* ANDREY Sheet A: committed;
-* ANDREY Sheet B: approved locally / pending commit;
-* ANDREY expression Sheet C: approved locally / pending commit;
-* next Andrey steps: commit Sheet B + Sheet C, update canon index, create body canon, prepare 3D reference pack.
+* Universal visual-canon pipeline: ADOPTED (`docs/NCC_VISUAL_CANON_WORKFLOW.md`, `configs/visual_canon/pipeline_policy.json`, schemas);
+* KIRA: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE_CORE`;
+* ANDREY: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE`;
+* ANDREY_JUNIOR: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE` (public_filtered only);
+* KIRA_ANDREY: `JOINT_CONTROL_TESTS_APPROVED` / `DUO_SCENE_PACKS_APPROVED`;
+* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`;
+* Group C (MARINA, NIKA, SERGEY, MAKSIM, EGOR): `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`;
+* Next steps: implement validator MVP and deploy-tool MVP; pilot on OLGA Test10.
 
 ## 6. Приоритеты
 
@@ -190,10 +192,9 @@
 
 ## 9. Immediate next actions
 
-1. Сохранить/проверить expression Sheet C.
-2. Commit Sheet B and expression Sheet C.
-3. Update ANDREY_CANON_INDEX.md.
-4. Create ANDREY_BODY_CANON_PROMPT.txt.
-5. Generate ANDREY body canon sheets.
-6. Create ANDREY_3D_REFERENCE_PACK.md.
-7. Create ANDREY_3D_MODEL_SPEC.md.
+1. Implement validator MVP (`tools/validate_visual_canon_pipeline.py`).
+2. Implement deploy-tool MVP (`tools/deploy_visual_canon_result.py`).
+3. Run OLGA Test10 (`neutral_height_scale_check`) as the first end-to-end pipeline pilot.
+4. Prepare ANDREY 3D reference pack and model spec when requested.
+5. Backfill KIRA_ANDREY joint prompt pipeline when requested.
+6. Continue Group C base canon generation only after per-character `IDENTITY.txt` and `CANON_INDEX.md` skeletons are created.

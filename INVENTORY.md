@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-11 08:43:40
+2026-07-12 18:30:37
 
 ---
 
@@ -695,10 +695,16 @@ Generated:
 │       └── 10_notes/
 │           ├── .gitkeep
 │           └── SERGEY_REFERENCE_PRESETS.json
+├── configs/
+│   └── visual_canon/
+│       ├── character_manifest.schema.json
+│       ├── pipeline_policy.json
+│       └── prompt_record.schema.json
 ├── docs/
 │   ├── GITHUB_REFERENCE_PACK_WORKFLOW.md
 │   ├── NCC_DEPLOY_CHECKLIST.md
 │   ├── NCC_FOLDER_MAP.md
+│   ├── NCC_VISUAL_CANON_WORKFLOW.md
 │   ├── PROJECT_DOCUMENTATION_INDEX.md
 │   ├── VOYAGE_INTEGRATION_WORKFLOW.md
 │   └── VOYAGE_SQLITE_MEMORY_WORKFLOW.md
@@ -723,6 +729,7 @@ Generated:
 ├── INVENTORY.md.backup_20260710_123336
 ├── INVENTORY.md.backup_20260710_152700
 ├── INVENTORY.md.backup_20260711_082946
+├── INVENTORY.md.backup_20260712_183037
 ├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
 ├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
 ├── README.md
@@ -733,7 +740,7 @@ Generated:
 
 # Total file count
 
-452
+457
 
 # File type summary
 
@@ -771,10 +778,11 @@ Generated:
 | .backup_20260710_123336 | 1 |
 | .backup_20260710_152700 | 1 |
 | .backup_20260711_082946 | 1 |
+| .backup_20260712_183037 | 1 |
 | .jpg | 2 |
-| .json | 13 |
+| .json | 16 |
 | .jsonl | 5 |
-| .md | 47 |
+| .md | 48 |
 | .png | 84 |
 | .ps1 | 1 |
 | .py | 6 |
@@ -786,7 +794,7 @@ Generated:
 |---|---:|---|
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 3599 | 2026-07-09 10:16:49 |
+| .voyage/CHARACTER_REGISTRY.md | 3912 | 2026-07-12 18:30:32 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -797,7 +805,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 2093 | 2026-07-11 08:26:17 |
+| .voyage/CURRENT_TASK.md | 7796 | 2026-07-12 18:29:37 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -807,7 +815,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 41948 | 2026-07-11 08:26:17 |
+| .voyage/DECISIONS.md | 46269 | 2026-07-12 18:29:53 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -820,13 +828,13 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 2824 | 2026-07-02 09:11:58 |
+| .voyage/PROJECT_STATE.md | 3465 | 2026-07-12 18:30:10 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
 | .voyage/STATE_EXPORT.json | 93915 | 2026-07-07 15:44:38 |
 | .vscode/settings.json | 4 | 2026-07-09 09:27:48 |
-| AGENTS.md | 13890 | 2026-07-02 09:58:18 |
+| AGENTS.md | 15368 | 2026-07-12 18:25:34 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png | 2148429 | 2026-07-03 00:05:04 |
@@ -1207,13 +1215,17 @@ Generated:
 | AI_CHARACTERS/SERGEY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 2416 | 2026-07-09 09:26:57 |
-| docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8425 | 2026-07-01 17:18:12 |
-| docs/NCC_DEPLOY_CHECKLIST.md | 6840 | 2026-07-09 10:44:16 |
-| docs/NCC_FOLDER_MAP.md | 4729 | 2026-07-09 12:53:55 |
-| docs/PROJECT_DOCUMENTATION_INDEX.md | 16810 | 2026-07-09 12:28:29 |
-| docs/VOYAGE_INTEGRATION_WORKFLOW.md | 6734 | 2026-07-02 09:08:20 |
-| docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 4606 | 2026-07-03 01:57:04 |
-| INVENTORY.md | 82945 | 2026-07-11 08:34:12 |
+| configs/visual_canon/character_manifest.schema.json | 7521 | 2026-07-12 18:22:17 |
+| configs/visual_canon/pipeline_policy.json | 5651 | 2026-07-12 18:19:59 |
+| configs/visual_canon/prompt_record.schema.json | 7040 | 2026-07-12 18:21:41 |
+| docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8871 | 2026-07-12 18:26:56 |
+| docs/NCC_DEPLOY_CHECKLIST.md | 8000 | 2026-07-12 18:27:12 |
+| docs/NCC_FOLDER_MAP.md | 4785 | 2026-07-12 18:27:22 |
+| docs/NCC_VISUAL_CANON_WORKFLOW.md | 14787 | 2026-07-12 18:18:23 |
+| docs/PROJECT_DOCUMENTATION_INDEX.md | 17920 | 2026-07-12 18:26:42 |
+| docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
+| docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
+| INVENTORY.md | 82945 | 2026-07-11 08:43:40 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
@@ -1223,11 +1235,12 @@ Generated:
 | INVENTORY.md.backup_20260710_123336 | 79514 | 2026-07-10 12:33:36 |
 | INVENTORY.md.backup_20260710_152700 | 82201 | 2026-07-10 15:27:15 |
 | INVENTORY.md.backup_20260711_082946 | 82201 | 2026-07-10 15:26:47 |
+| INVENTORY.md.backup_20260712_183037 | 82945 | 2026-07-12 18:30:37 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
-| README.md | 1352 | 2026-07-02 09:13:05 |
+| README.md | 1642 | 2026-07-12 18:28:43 |
 | repo_audit.txt | 2384 | 2026-07-09 09:27:48 |
-| ROADMAP.md | 7084 | 2026-07-01 09:37:30 |
+| ROADMAP.md | 7662 | 2026-07-12 18:29:00 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
 | tools/generate_inventory.py | 4231 | 2026-07-03 12:55:34 |

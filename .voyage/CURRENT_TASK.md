@@ -109,95 +109,112 @@ Test10 is approved as the next OLGA coverage candidate but deferred until the sh
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-PIPELINE-STANDARD-PREFLIGHT-2026-07-12`
 
-**Status:** `READY_FOR_READONLY_PREFLIGHT`
+**Final status:** `COMPLETED`
+
+### Result
+
+- Authority hierarchy defined: `AGENTS.md` → `docs/NCC_VISUAL_CANON_WORKFLOW.md` → `configs/visual_canon/pipeline_policy.json` + schemas → per-character manifest → prompt records → `.voyage` state → SQLite mirror.
+- Canonical ID model: `<CHARACTER_ID>_TEST<NN>_<SCENE_ID_UPPER>_V<VERSION>`; variant label separate; `MAIN`/`ALT` is metadata, not filename suffix.
+- Prompt-record schema: one JSONL record per `prompt_id`, mandatory fields for references, verdict, role, storage, content tier.
+- Character-manifest schema: durable per-character configuration without prompt-history duplication.
+- Phase 1 implementation plan approved: create workflow doc, policy, schemas; update `AGENTS.md` and workflow cross-references; update Voyage control files; regenerate inventory; commit.
+
+---
+
+## Completed task
+
+**Task ID:** `NCC-VISUAL-CANON-PIPELINE-PHASE1-IMPLEMENTATION-2026-07-12`
+
+**Final status:** `COMPLETED_PUBLISHED`
+
+### Goal
+
+Create the authoritative Phase 1 universal visual-canon pipeline artifacts and update all dependent documentation and Voyage control files.
+
+### Deliverables
+
+- `docs/NCC_VISUAL_CANON_WORKFLOW.md` — universal human-readable workflow.
+- `configs/visual_canon/pipeline_policy.json` — machine-readable policy.
+- `configs/visual_canon/prompt_record.schema.json` — JSON Schema for prompt attempt records.
+- `configs/visual_canon/character_manifest.schema.json` — JSON Schema for per-character manifests.
+- `AGENTS.md` updated: character statuses, pipeline authority, key files.
+- Cross-references updated in:
+  - `docs/PROJECT_DOCUMENTATION_INDEX.md`
+  - `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md`
+  - `docs/NCC_DEPLOY_CHECKLIST.md`
+  - `docs/NCC_FOLDER_MAP.md`
+  - `docs/VOYAGE_INTEGRATION_WORKFLOW.md`
+  - `docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md`
+  - `ROADMAP.md`
+  - `README.md`
+- `.voyage/DECISIONS.md` updated with `D-017`.
+- `.voyage/PROJECT_STATE.md` refreshed.
+- `.voyage/CHARACTER_REGISTRY.md` updated.
+- `INVENTORY.md` regenerated with backup.
+
+### Constraints respected
+
+- No validator script created.
+- No deploy tool created.
+- No per-character manifests created.
+- No OLGA Test10 folder or generation.
+- No SQLite writes or exports.
+
+### Next action
+
+Proceed to validator MVP preflight.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-2026-07-12`
+
+**Status:** `READY_FOR_IMPLEMENTATION_PREFLIGHT`
 
 **Priority:** `P0`
 
 ### Goal
 
-Audit the repository's existing visual-canon rules, schemas, indexes, tools, Voyage workflows, character-specific prompt pipelines, and local SQLite-memory workflow. Produce an implementation plan for a universal pipeline that prevents the long manual correction sequence experienced with OLGA Test09.
+Design and plan the minimum viable validator (`tools/validate_visual_canon_pipeline.py`) that enforces the universal pipeline policy and schemas before any future deploy operation.
 
 ### Preflight questions
 
-1. Which required rules already exist?
-2. Which rules are only implicit or character-specific?
-3. Which files should become authoritative?
-4. Which existing documents should be extended rather than duplicated?
-5. Which validator and schema files are genuinely missing?
-6. How should per-character manifests be structured?
-7. How should local Voyage SQLite memory be checked and synchronized?
-8. How should one approved image be deployed through one controlled operation?
-9. How will Test10 be used as the first pilot?
-10. How can other characters adopt the standard without repeating OLGA's technical debt?
-
-### Candidate files to evaluate, not automatically create
-
-- `docs/NCC_VISUAL_CANON_WORKFLOW.md`
-- `configs/visual_canon/pipeline_policy.json`
-- `configs/visual_canon/prompt_record.schema.json`
-- `tools/validate_visual_canon_pipeline.py`
-- `AI_CHARACTERS/<CHARACTER>/10_notes/<CHARACTER>_PIPELINE_MANIFEST.json`
-
-### Existing files to inspect first
-
-- `AGENTS.md`
-- `docs/NCC_DEPLOY_CHECKLIST.md`
-- `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md`
-- `docs/VOYAGE_INTEGRATION_WORKFLOW.md`
-- `docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md`
-- `docs/PROJECT_DOCUMENTATION_INDEX.md`
-- `docs/NCC_FOLDER_MAP.md`
-- `.voyage/SCENE_REQUEST_RULES.md`
-- `.voyage/CURRENT_TASK.md`
-- `.voyage/DECISIONS.md`
-- `.voyage/PROJECT_STATE.md`
-- Existing tools and validators.
-- All character prompt indexes, prompt-run logs, reference presets, and manifest-like files.
+1. Which checks can be implemented with the standard library only?
+2. How should the validator read `pipeline_policy.json` and the JSON schemas?
+3. How should it validate existing legacy records in compatibility mode vs strict mode?
+4. Which checks must be ERROR vs WARNING for the OLGA Test10 pilot?
+5. How should it report duplicate `prompt_id`, missing references, and ID mismatches?
+6. How should it integrate with the future deploy tool?
 
 ### Expected next report
 
-`=== NCC VISUAL CANON PIPELINE STANDARD PREFLIGHT RESULT ===`
+`=== NCC VISUAL CANON PIPELINE VALIDATOR MVP PREFLIGHT RESULT ===`
 
-Expected sections:
-
+Sections:
 1. Git state.
 2. Active-task verification.
-3. Existing authoritative workflow files.
-4. Existing character-specific pipeline structures.
-5. Rules already enforced.
-6. Rules documented but not enforced.
-7. Missing universal rules.
-8. Existing tools that can be reused.
-9. Duplicate-document risk.
-10. Proposed authority hierarchy.
-11. Proposed universal ID model.
-12. Proposed prompt-record schema.
-13. Proposed per-character manifest schema.
-14. Proposed validation checks.
-15. Proposed one-operation deployment workflow.
-16. Proposed SQLite-memory synchronization workflow.
-17. Exact files to create.
-18. Exact files to modify.
-19. Files explicitly not to create.
-20. Migration impact for OLGA.
-21. Migration impact for KIRA.
-22. Migration impact for ANDREY.
-23. Migration impact for other characters.
-24. Test10 pilot plan.
-25. Risks and stop conditions.
-26. Implementation phases.
-27. Repo files modified: `NONE`.
-28. Ready for human approval? `YES/NO`.
+3. Required validation checks mapped to `docs/NCC_VISUAL_CANON_WORKFLOW.md` §24.
+4. Proposed CLI interface.
+5. Compatibility-mode vs strict-mode behavior.
+6. Legacy handling for existing prompt-run logs.
+7. Exit codes and report format.
+8. Exact files to create/modify.
+9. Files explicitly not to create.
+10. OLGA Test10 pilot validation plan.
+11. Risks and stop conditions.
+12. Repo files modified: `NONE`.
+13. Ready for human approval? `YES/NO`.
 
 ### Forbidden during the preflight
 
 - No implementation or repo writes.
-- No schema-file or validator-script creation.
-- No modification of `AGENTS.md` or workflow documentation.
+- No validator-script creation.
+- No modification of `AGENTS.md`, workflow docs, or Voyage control files.
 - No SQLite write or export.
 - No image generation or Test10 folder.
 - No prompt-log append.

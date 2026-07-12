@@ -1,5 +1,8 @@
 # GitHub Reference Pack Workflow
 
+> **Scope:** Reference-pack generation for Phase 1 cloud generation.
+> **Parent authority:** `docs/NCC_VISUAL_CANON_WORKFLOW.md` — all future scene generation, selection, and deployment must follow the universal visual-canon pipeline.
+
 ## 1. Цель
 
 Этот workflow нужен для быстрого подбора нужных reference images и канонических текстовых описаний персонажей перед генерацией сцены. Он превращает короткий запрос сцены в готовый reference pack: какие изображения загрузить вручную, какие GitHub/raw links соответствуют этим файлам, какой prompt вставить в генератор и как назвать результат.
@@ -112,11 +115,12 @@ python .\tools\build_scene_reference_pack.py --characters KIRA,ANDREY --scene sa
 
 Current character preset coverage:
 
-* ANDREY — active GitHub-first presets with tracked face/expression/body/raw references.
+* ANDREY — active GitHub-first presets with tracked face/expression/body/control-test references.
+* ANDREY_JUNIOR — active son-version presets; public_filtered only.
 * KIRA — active GitHub-first presets with tracked face/body/outfit/test references.
+* OLGA — active presets with base canon, Tests 01–09, and DALL-E backend variant.
 * MARINA — preset file exists, scene presets pending tracked image references.
 * NIKA — preset file exists, scene presets pending tracked image references.
-* OLGA — preset file exists, scene presets pending tracked image references.
 * SERGEY — preset file exists, scene presets pending tracked image references.
 * MAKSIM — preset file exists, scene presets pending tracked image references.
 * EGOR — preset file exists, scene presets pending tracked image references.
@@ -134,8 +138,11 @@ Presets are GitHub-first and should only use tracked files available on GitHub. 
 
 ## 13. Immediate next step
 
-Сделать первый реальный рабочий сценарий через tool: KIRA + ANDREY / sauna / towel conversation, загрузить refs по raw links и сгенерировать тестовое изображение.
+Use the tool only for approved scenes. The sauna example below remains an **EXAMPLE / NOT REQUESTED** scene — see `.voyage/SCENE_REQUEST_RULES.md`.
+
+When a scene is approved, build the reference pack first, then follow `docs/NCC_VISUAL_CANON_WORKFLOW.md` for generation, selection, and deployment.
 
 ```powershell
+# Illustrative command only — do not treat as a generation request.
 python .\tools\build_scene_reference_pack.py --characters KIRA,ANDREY --scene sauna --description "Кира и Андрей в сауне разговаривают, укрытые по пояс полотенцем"
 ```

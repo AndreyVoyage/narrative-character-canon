@@ -847,3 +847,66 @@ Adopt:
 Pilot: OLGA Test10 neutral height-scale check will be the first end-to-end validation of the new standard.
 Reason: Prevent other characters from repeating OLGA's long technical-debt cleanup and reduce future workflows to audit → generate → select → single deploy → verify/push.
 Next action: Run the read-only pipeline-standard preflight.
+
+---
+
+Date: 2026-07-12
+Decision ID: D-017
+Context: OLGA Test09 exposed repeated manual failure modes: empty prompt file, mismatched prompt IDs, unindexed Prompt Volume 2, fragmented V1–V4 history, repeated deploy/verify/closeout steps, and uncertainty about whether universal rules were stored locally and in the repository. A read-only preflight identified the missing authority hierarchy, schemas, and policy needed to prevent other characters from repeating the same cleanup.
+
+Decision: Adopt a universal NCC visual-canon pipeline authority hierarchy and create the Phase 1 authoritative artifacts.
+
+Authority hierarchy (highest first):
+1. `AGENTS.md`
+2. `docs/NCC_VISUAL_CANON_WORKFLOW.md`
+3. `configs/visual_canon/pipeline_policy.json`
+4. `configs/visual_canon/prompt_record.schema.json`
+5. `configs/visual_canon/character_manifest.schema.json`
+6. `AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_PIPELINE_MANIFEST.json` (future)
+7. `AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_INDEX.md`
+8. `AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_WORKING_SCENE_PROMPTS*.md`
+9. `AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_RUN_LOG.jsonl`
+10. `AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_REFERENCE_PRESETS.json`
+11. `AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_TEST_RESULTS.md`
+12. `AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_CANON_INDEX.md`
+13. `.voyage/CURRENT_TASK.md`
+14. `.voyage/DECISIONS.md`
+15. `.voyage/PROJECT_STATE.md`
+16. `.voyage/CHARACTER_REGISTRY.md`
+17. Local SQLite mirror (non-authoritative)
+
+Key rules adopted:
+- Canonical prompt ID: `<CHARACTER_ID>_TEST<NN>_<SCENE_ID_UPPER>_V<VERSION>`. Variant label is separate and never part of the canonical ID.
+- MAIN/ALT is metadata (`role` field), not a required filename suffix. Approved filename: `<CHAR>_test<NN>_<scene_id>_v<version>_APPROVED.png`.
+- JSONL registry is authoritative: exactly one record per canonical `prompt_id`.
+- Git repository is the source of truth; SQLite is a mirror/index.
+- One write-capable agent at a time; stale-buffer overwrite is forbidden.
+- Validator MVP and deploy-tool MVP must be implemented before OLGA Test10 is generated or deployed.
+
+Affected files:
+- `docs/NCC_VISUAL_CANON_WORKFLOW.md`
+- `configs/visual_canon/pipeline_policy.json`
+- `configs/visual_canon/prompt_record.schema.json`
+- `configs/visual_canon/character_manifest.schema.json`
+- `AGENTS.md`
+- `docs/PROJECT_DOCUMENTATION_INDEX.md`
+- `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md`
+- `docs/NCC_DEPLOY_CHECKLIST.md`
+- `docs/NCC_FOLDER_MAP.md`
+- `docs/VOYAGE_INTEGRATION_WORKFLOW.md`
+- `docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md`
+- `ROADMAP.md`
+- `README.md`
+- `.voyage/CURRENT_TASK.md`
+- `.voyage/PROJECT_STATE.md`
+- `.voyage/CHARACTER_REGISTRY.md`
+- `INVENTORY.md`
+
+Reason: Prevent other characters from repeating OLGA's long technical-debt cleanup and reduce future workflows to audit → generate → select → single deploy → verify/push.
+
+Result:
+- Phase 1 pipeline artifacts published.
+- OLGA Test10 remains deferred until validator and deploy-tool MVPs are ready.
+- Next task: `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-2026-07-12`.
+
+Next action: Run validator MVP preflight, then implement `tools/validate_visual_canon_pipeline.py`.

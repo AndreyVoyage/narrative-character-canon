@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "ncc_visual_canon_pipeline_policy",
+  "authority": {
+    "source_of_truth": "git_repository",
+    "hierarchy": [
+      "AGENTS.md",
+      "docs/NCC_VISUAL_CANON_WORKFLOW.md",
+      "configs/visual_canon/pipeline_policy.json",
+      "configs/visual_canon/prompt_record.schema.json",
+      "configs/visual_canon/character_manifest.schema.json",
+      "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_PIPELINE_MANIFEST.json",
+      "AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_INDEX.md",
+      "AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_WORKING_SCENE_PROMPTS*.md",
+      "AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_RUN_LOG.jsonl",
+      "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_REFERENCE_PRESETS.json",
+      "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_TEST_RESULTS.md",
+      "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_CANON_INDEX.md",
+      ".voyage/CURRENT_TASK.md",
+      ".voyage/DECISIONS.md",
+      ".voyage/PROJECT_STATE.md",
+      ".voyage/CHARACTER_REGISTRY.md",
+      "LOCAL_SQLITE_MIRROR"
+    ],
+    "conflict_resolution": "published_git_state_wins"
+  },
+  "naming": {
+    "character_id": {
+      "format": "uppercase_ascii_underscore",
+      "examples": ["OLGA", "KIRA", "ANDREY", "ANDREY_JUNIOR"]
+    },
+    "scene_id": {
+      "format": "lowercase_snake_case",
+      "examples": ["neutral_height_scale_check", "formal_elegant_cultural_foyer"]
+    },
+    "test_id": {
+      "format": "<CHARACTER_ID>_TEST<NN>_<SCENE_ID_UPPER>",
+      "example": "OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK"
+    },
+    "prompt_id": {
+      "format": "<TEST_ID>_V<VERSION>",
+      "example": "OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1",
+      "variant_separate": true
+    },
+    "variant_label": {
+      "format": "uppercase_snake_case",
+      "separate_from_prompt_id": true,
+      "examples": ["REFINED"]
+    },
+    "approved_output_filename": {
+      "format": "<CHAR>_test<NN>_<scene_id>_v<version>_APPROVED.png",
+      "example": "OLGA_test10_neutral_height_scale_check_v1_APPROVED.png",
+      "role_in_filename": false
+    },
+    "output_folder": {
+      "format": "AI_CHARACTERS/<CHARACTER>/07_generated/canon_tests/<NN>_<scene_id>/",
+      "example": "AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/"
+    }
+  },
+  "allowed_verdicts": {
+    "machine_values": [
+      "DRAFT",
+      "CANDIDATE",
+      "SUPERSEDED",
+      "REJECTED",
+      "APPROVED_AS_TEST",
+      "APPROVED_AS_CANON",
+      "APPROVED_AS_LOCAL"
+    ],
+    "legacy_compatibility_map": {
+      "REJECTED_BODY_CANON": "REJECTED",
+      "REJECTED_PROPORTION_DRIFT": "REJECTED",
+      "ACCEPTABLE_CANDIDATE_SUPERSEDED": "SUPERSEDED",
+      "APPROVE": "APPROVED_AS_TEST",
+      "APPROVED": "APPROVED_AS_TEST"
+    },
+    "do_not_rewrite_historical_records": true
+  },
+  "allowed_roles": ["MAIN", "ALT", "REFERENCE_ONLY", "CANDIDATE"],
+  "allowed_storage_tiers": ["repo_tracked", "local_only"],
+  "allowed_content_tiers": ["public_filtered", "adult_local", "private_local"],
+  "required_human_gates": [
+    "scene_request_approved",
+    "coverage_recommendation_approved",
+    "reference_pack_approved",
+    "attempt_verdicts_reviewed",
+    "selection_and_role_approved",
+    "deploy_scope_approved",
+    "push_approved"
+  ],
+  "required_pipeline_files": {
+    "per_character": {
+      "prompt_index": "AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_INDEX.md",
+      "working_prompt_volumes": "AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_WORKING_SCENE_PROMPTS*.md",
+      "prompt_run_log": "AI_CHARACTERS/<CHAR>/06_prompts/<CHAR>_PROMPT_RUN_LOG.jsonl",
+      "reference_presets": "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_REFERENCE_PRESETS.json",
+      "test_results": "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_TEST_RESULTS.md",
+      "canon_index": "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_CANON_INDEX.md",
+      "pipeline_manifest": "AI_CHARACTERS/<CHAR>/10_notes/<CHAR>_PIPELINE_MANIFEST.json"
+    },
+    "project": {
+      "agents": "AGENTS.md",
+      "workflow": "docs/NCC_VISUAL_CANON_WORKFLOW.md",
+      "policy": "configs/visual_canon/pipeline_policy.json",
+      "prompt_record_schema": "configs/visual_canon/prompt_record.schema.json",
+      "character_manifest_schema": "configs/visual_canon/character_manifest.schema.json"
+    }
+  },
+  "validation": {
+    "strict_mode_default": false,
+    "strict_mode_per_character": [],
+    "validator_must_pass_before_commit": true,
+    "severity_levels": ["ERROR", "WARNING", "INFO"],
+    "stop_on_error": true,
+    "never_auto_fix": [
+      "prompt_id",
+      "test_id",
+      "scene_id",
+      "verdict",
+      "selected",
+      "role",
+      "human_approval",
+      "decision_id"
+    ]
+  },
+  "legacy_compatibility": {
+    "do_not_rename_historical_files": true,
+    "do_not_rewrite_valid_jsonl": true,
+    "support_legacy_fields": true,
+    "migration_is_explicit_and_per_character": true
+  },
+  "concurrency": {
+    "one_write_agent_at_a_time": true,
+    "requirements_before_write": [
+      "tracked_tree_clean",
+      "nothing_staged",
+      "expected_head_matches",
+      "target_files_reread",
+      "external_change_detected_reported_to_human"
+    ],
+    "stale_buffer_policy": "no_overwrite_without_human_comparison"
+  },
+  "sqlite_sync": {
+    "role": "local_mirror_and_index",
+    "not_authoritative": true,
+    "record_after_git_commit": true,
+    "detect_lag_before_push": true,
+    "do_not_silently_overwrite_voyage_md": true,
+    "export_targets_are_generated_snapshots": [
+      ".voyage/CONTEXT_SNAPSHOT.md",
+      ".voyage/STATE_EXPORT.json",
+      ".voyage/EVENTS_EXPORT.jsonl"
+    ],
+    "local_only_paths_and_secrets_stay_local": true,
+    "rebuild_from_repo_if_corrupt_or_lost": true
+  }
+}

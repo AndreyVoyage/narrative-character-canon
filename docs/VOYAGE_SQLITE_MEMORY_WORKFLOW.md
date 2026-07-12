@@ -1,5 +1,8 @@
 # VOYAGE_SQLITE_MEMORY_WORKFLOW
 
+> **Scope:** Local SQLite mirror/index for Voyage memory.
+> **Authority note:** Git repository is the source of truth. SQLite must never silently overwrite authoritative repo files. See `docs/NCC_VISUAL_CANON_WORKFLOW.md` §3 and §20 for the full source-of-truth and synchronization policy.
+
 ## Purpose
 
 Voyage-lite SQLite memory layer — это локальная runtime-память проекта `narrative-character-canon`. Она хранит структурированные факты о персонажах, approved/rejected outputs, decisions, commits и текущих задачах.
@@ -73,13 +76,16 @@ python .\tools\voyage_memory_export.py --repo-root . --db "C:\DEV\Narrative\LOCA
 
 ## Current project facts
 
-* KIRA = CANON_READY_2D
-* ANDREY = CANON_READY_2D
-* KIRA_ANDREY = JOINT_CONTROL_TESTS_APPROVED
+* KIRA = CANON_READY_2D / PROMPT_PIPELINE_ACTIVE_CORE
+* ANDREY = CANON_READY_2D / PROMPT_PIPELINE_ACTIVE
+* KIRA_ANDREY = JOINT_CONTROL_TESTS_APPROVED / DUO_SCENE_PACKS_APPROVED
+* ANDREY_JUNIOR = BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE (public_filtered only)
+* OLGA = BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–09 published) / PROMPT_PIPELINE_ACTIVE
 * Kira barefoot height remains 168 cm
 * Andrey height remains 180 cm
 * rejected/wrong-scene outputs must not be used as canon
 * Kira canon docs exist as `.md.txt`, not missing
+* Universal visual-canon pipeline adopted in `D-017`
 
 ## Record/update command
 
