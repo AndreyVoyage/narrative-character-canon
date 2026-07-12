@@ -1,8 +1,8 @@
 # NCC DEPLOY CHECKLIST
 
 > **Назначение:** Контрольный список для любого деплоя файлов в `narrative-character-canon`.  
-> **Источник правил:** `AGENTS.md` разделы 5–6, `VOYAGE_INTEGRATION_WORKFLOW.md`, `docs/NCC_VISUAL_CANON_WORKFLOW.md`, `configs/visual_canon/pipeline_policy.json`.  
-> **Последнее обновление:** 2026-07-12 (после D-017 — universal visual-canon pipeline adoption).  
+> **Источник правил:** `AGENTS.md` разделы 5–6, `VOYAGE_INTEGRATION_WORKFLOW.md`, `docs/NCC_VISUAL_CANON_WORKFLOW.md`, `configs/visual_canon/pipeline_policy.json`.
+> **Последнее обновление:** 2026-07-12 (после D-017 — universal visual-canon pipeline adoption).
 > **Статус:** ACTIVE — обязателен к применению.
 
 ---
@@ -13,8 +13,8 @@
 
 - [ ] Прочитать `AGENTS.md` раздел 5 — *File naming conventions*  
 - [ ] Прочитать `AGENTS.md` раздел 6 — *Workflow instructions*  
-- [ ] Прочитать `docs/NCC_VISUAL_CANON_WORKFLOW.md` — *Universal visual-canon pipeline*  
-- [ ] Прочитать `configs/visual_canon/pipeline_policy.json` — *Machine-readable policy*  
+- [ ] Прочитать `docs/NCC_VISUAL_CANON_WORKFLOW.md` — *Universal visual-canon pipeline*
+- [ ] Прочитать `configs/visual_canon/pipeline_policy.json` — *Machine-readable policy*
 - [ ] Прочитать `.voyage/VOYAGE_INTEGRATION_WORKFLOW.md` — *Статусы и фиксация решений*  
 - [ ] Проверить `.voyage/CURRENT_TASK.md` — есть ли активная задача?  
 - [ ] Проверить `.voyage/DECISIONS.md` — нет ли конфликтующих решений?

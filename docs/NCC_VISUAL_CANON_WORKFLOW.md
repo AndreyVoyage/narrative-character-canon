@@ -39,7 +39,7 @@ Read these sources in order before any write-capable operation:
 6. **Level 6 — `.voyage/CURRENT_TASK.md`, `.voyage/DECISIONS.md`, `.voyage/PROJECT_STATE.md`, `.voyage/CHARACTER_REGISTRY.md`** — Voyage operational state.
 7. **Level 7 — local SQLite memory mirror** — query/index layer and audit helper.
 
-If any source contradicts another, the higher-numbered (more specific) source wins, except that the Git repository is always the final source of truth for published facts.
+Read these sources from top to bottom. Lower-numbered levels are higher authority; more specific levels extend and clarify the levels above them. The Git repository — published commits, tracked files, and verified `.voyage` state — is the primary source of truth. `AGENTS.md` is the mandatory agent entry point, but it does not override this universal workflow, the machine-readable policy, the JSON schemas, or any verified repository state. Local SQLite memory is only a mirror/index and must never silently overwrite authoritative repository files. If any source contradicts verified Git state, the Git state wins.
 
 ---
 
