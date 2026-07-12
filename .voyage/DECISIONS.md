@@ -825,3 +825,25 @@ Attempt outcomes:
 - V4 approved.
 Reason: V4 provides the strongest overall mature identity, bust/waist/hip balance, refined outfit, tall presence, and cultural-venue distinction.
 Next action: Commit without push, then verify the commit before pushing.
+
+---
+
+Date: 2026-07-12
+Decision ID: D-016
+Context: OLGA Test09 exposed repeated manual failure modes: empty prompt file, mismatched prompt IDs, unindexed Prompt Volume 2, fragmented V1–V4 history, repeated deploy/verify/closeout steps, and uncertainty about whether universal rules were stored locally and in the repository.
+Decision: Defer OLGA Test10 generation until a universal NCC visual-canon pipeline standard is designed and implemented.
+Adopt:
+- Coverage-first workflow.
+- Reference-first workflow.
+- Canonical prompt IDs.
+- Explicit attempt history.
+- Exact reference paths.
+- Planned output paths before generation.
+- MAIN/ALT role assignment.
+- One controlled deployment operation.
+- Validator-backed enforcement.
+- Per-character pipeline manifests.
+- Local Voyage SQLite synchronization verification.
+Pilot: OLGA Test10 neutral height-scale check will be the first end-to-end validation of the new standard.
+Reason: Prevent other characters from repeating OLGA's long technical-debt cleanup and reduce future workflows to audit → generate → select → single deploy → verify/push.
+Next action: Run the read-only pipeline-standard preflight.

@@ -4,7 +4,7 @@
 
 **Status:** ACTIVE / CHARACTER CANON REPOSITORY
 
-**Last verified:** 2026-07-02
+**Last verified:** 2026-07-12
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
@@ -17,7 +17,8 @@
 * `docs/GITHUB_REFERENCE_PACK_WORKFLOW.md` и `tools/build_scene_reference_pack.py` / `.ps1` — рабочий GitHub-first scene reference tool.
 * ANDREY: face canon Sheet A/B + expression Sheet C активны и tracked; `ANDREY_REFERENCE_PRESETS.json` заполнен (6 scene presets: portrait, body_canon, sports, formal, bar, sauna) и ссылается на существующие файлы. Body canon ещё не создан (нет файлов в `04_body_sheet/`, только `.gitkeep`).
 * KIRA: face canon Sheet A/B, body canon Sheet A/B, outfits (evening_dress, sports_look), несколько approved canon_tests и `KIRA_REFERENCE_PRESETS.json` заполнен (7 scene presets, включая `sauna`) — все referenced paths в preset существуют в репозитории. Preset обновлён 2026-07-02, statuses "needs repo verification" из ROADMAP/AGENTS.md устарели относительно текущего состояния файла.
-* MARINA, NIKA, OLGA, SERGEY, MAKSIM, EGOR: только структура папок (`.gitkeep`), `*_REFERENCE_PRESETS.json` присутствует, но с пустыми `scene_presets` и `text_sources: null` — это placeholder, не canon.
+* OLGA: base canon + approved control tests 01–09, prompt pipeline active, DALL-E embankment ALT and formal/elegant Test09 published. Test10 neutral height-scale check is approved but deferred until the universal visual-canon pipeline standard is designed and implemented.
+* MARINA, NIKA, SERGEY, MAKSIM, EGOR: только структура папок (`.gitkeep`), `*_REFERENCE_PRESETS.json` присутствует, но с пустыми `scene_presets` и `text_sources: null` — это placeholder, не canon.
 * AGENTS.md существует в рабочей директории, но **не tracked в git** (untracked file) — не редактировать без явного запроса пользователя.
 
 ## Известная осторожность
