@@ -10,6 +10,7 @@ Phase 1 workflow and pipeline_policy.json without modifying the repository.
 Usage:
     python tools/validate_visual_canon_pipeline.py
     python tools/validate_visual_canon_pipeline.py --mode strict --json-report report.json
+    python tools/validate_visual_canon_pipeline.py --character OLGA
 """
 
 from __future__ import annotations
@@ -25,9 +26,11 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 DEFAULT_REPO_ROOT = Path("C:/DEV/Narrative/narrative-character-canon")
+
+REGISTRY_GLOB = "*_PROMPT_RUN_LOG.jsonl"
 
 EXIT_PASS = 0
 EXIT_VALIDATION_ERROR = 1
@@ -35,6 +38,52 @@ EXIT_CLI_ERROR = 2
 EXIT_INTERNAL_ERROR = 3
 EXIT_REPO_PREFLIGHT_FAIL = 4
 EXIT_POLICY_LOAD_FAIL = 5
+
+# Authoritative one-ID-one-meaning catalog. Entries marked "reserved" have no
+# current implementation (no per-field logic exists yet); they keep their slot
+# and description rather than being silently dropped or reassigned.
+CHECK_CATALOG: Dict[str, str] = {
+    "VC-001": "policy file load",
+    "VC-002": "prompt schema load",
+    "VC-003": "manifest schema load",
+    "VC-004": "JSON parse",
+    "VC-005": "JSONL parse",
+    "VC-006": "UTF-8 decode",
+    "VC-007": "mojibake detection",
+    "VC-008": "empty prompt source",
+    "VC-009": "duplicate canonical prompt ID",
+    "VC-010": "canonical prompt-ID format",
+    "VC-011": "variant-label separation",
+    "VC-012": "character-ID consistency",
+    "VC-013": "scene-ID format",  # reserved
+    "VC-014": "version consistency",
+    "VC-015": "prompt-source existence",
+    "VC-016": "reference-path existence",
+    "VC-017": "empty reference list",
+    "VC-018": "output-path state rules",
+    "VC-019": "selected/human-approval consistency",
+    "VC-020": "role consistency",
+    "VC-021": "selected MAIN uniqueness",
+    "VC-022": "storage-tier consistency",
+    "VC-023": "content-tier consistency",
+    "VC-024": "local-only leakage",
+    "VC-025": "Git LFS tracking",  # reserved
+    "VC-026": "prompt-index linkage",  # reserved
+    "VC-027": "prompt-volume indexing",  # reserved
+    "VC-028": "preset linkage",  # reserved
+    "VC-029": "Test Results linkage",  # reserved
+    "VC-030": "active Voyage task consistency",  # reserved
+    "VC-031": "Voyage decision-ID uniqueness",  # reserved
+    "VC-032": "Git tracked-tree stability",  # reserved
+    "VC-033": "manifest availability",  # reserved
+    "VC-034": "legacy filename pattern",
+    "VC-035": "legacy verdict mapping",  # reserved
+    "VC-036": "legacy schema-version absence",
+    "VC-037": "pair-namespace incompleteness",  # reserved
+    "VC-038": "empty pipeline",
+    "VC-039": "SQLite availability/freshness",  # reserved
+    "VC-040": "reserved/deferred-check notice",
+}
 
 REQUIRED_POLICY_KEYS = [
     ("authority", "source_of_truth"),
@@ -93,6 +142,18 @@ MOJIBAKE_MARKERS = [
 
 ROLE_WORDS = {"MAIN", "ALT", "REFERENCE_ONLY"}
 
+# Findings using these codes are downgraded from [ERROR] to [WARNING] in compatibility mode.
+COMPATIBILITY_DOWNGRADE_CODES = {"VC-012", "VC-014", "VC-018", "VC-034", "VC-036", "VC-040"}
+
+
+class CharacterScopeError(Exception):
+    """Raised when --character does not resolve to exactly one AI_CHARACTERS subdirectory."""
+
+    def __init__(self, name: str, ambiguous: bool = False) -> None:
+        self.name = name
+        self.ambiguous = ambiguous
+        super().__init__(name)
+
 
 class Finding:
     """Single validation finding."""
@@ -133,21 +194,28 @@ class Validator:
         self.policy: Dict[str, Any] = {}
         self.record_schema: Dict[str, Any] = {}
         self.manifest_schema: Dict[str, Any] = {}
-        self.registry_chars: set = set()
+        self._character_dir: Optional[Path] = None
+        self._records_scanned: int = 0
+        self._registries_scanned: int = 0
 
     def run(self) -> int:
         try:
             self._preflight_repo()
         except Exception as exc:
-            self._error("VC-001", None, None, f"Repo root preflight failed: {exc}")
-            self._print_findings()
+            print(f"[ERROR CLI-001] Repo root preflight failed: {exc}")
             return EXIT_REPO_PREFLIGHT_FAIL
+
+        try:
+            self._resolve_character_scope()
+        except CharacterScopeError as exc:
+            kind = "ambiguous" if exc.ambiguous else "unknown"
+            print(f"[ERROR CLI-002] {kind} --character '{exc.name}'")
+            return EXIT_CLI_ERROR
 
         try:
             self._load_policy_and_schemas()
         except Exception as exc:
-            self._error("VC-002", None, None, f"Policy/schema load failed: {exc}")
-            self._print_findings()
+            print(f"[ERROR INTERNAL] Policy/schema load failed: {exc}")
             return EXIT_POLICY_LOAD_FAIL
 
         if not self.policy:
@@ -155,15 +223,17 @@ class Validator:
             return EXIT_POLICY_LOAD_FAIL
 
         try:
-            self._load_registry()
             self._validate_policy_authority()
             self._discover_and_validate_logs()
             self._print_findings()
-            self._write_json_report()
         except Exception as exc:
-            self._error("VC-003", None, None, f"Internal validation failure: {exc}")
+            print(f"[ERROR INTERNAL] Internal validation failure: {exc}")
             self._print_findings()
             return EXIT_INTERNAL_ERROR
+
+        report_exit = self._write_json_report()
+        if report_exit is not None:
+            return report_exit
 
         if any(f.level == "[ERROR]" for f in self.findings):
             return EXIT_VALIDATION_ERROR
@@ -191,8 +261,7 @@ class Validator:
         if force_error:
             level = "[ERROR]"
         elif level == "[ERROR]" and self.mode == "compatibility":
-            # Some errors downgrade to warnings in compatibility mode based on code.
-            if code in {"VC-008", "VC-012", "VC-013", "VC-014", "VC-015", "VC-016", "VC-026", "VC-027", "VC-034"}:
+            if code in COMPATIBILITY_DOWNGRADE_CODES:
                 level = "[WARNING]"
         self.findings.append(Finding(level, code, path, line, message))
 
@@ -219,20 +288,38 @@ class Validator:
             if not p.exists():
                 raise FileNotFoundError(f"required path missing: {self._rel(p)}")
 
+    def _resolve_character_scope(self) -> None:
+        if not self.args.character:
+            return
+        ai_dir = self.repo_root / "AI_CHARACTERS"
+        candidates = [d for d in ai_dir.iterdir() if d.is_dir()]
+        # Joint/pair namespaces (e.g. KIRA_ANDREY) live one level deeper, under an
+        # underscore-prefixed container directory such as _JOINT_SCENES.
+        for child in list(candidates):
+            if child.name.startswith("_"):
+                candidates.extend(d for d in child.iterdir() if d.is_dir())
+        matches = sorted(
+            d for d in candidates
+            if d.name.upper() == self.args.character.upper()
+        )
+        if len(matches) != 1:
+            raise CharacterScopeError(self.args.character, ambiguous=len(matches) > 1)
+        self._character_dir = matches[0]
+
     def _load_policy_and_schemas(self) -> None:
         policy_path = self.repo_root / "configs" / "visual_canon" / "pipeline_policy.json"
         record_schema_path = self.repo_root / "configs" / "visual_canon" / "prompt_record.schema.json"
         manifest_schema_path = self.repo_root / "configs" / "visual_canon" / "character_manifest.schema.json"
 
-        self.policy = self._read_json(policy_path, "VC-002")
-        self.record_schema = self._read_json(record_schema_path, "VC-003", optional=True) or {}
-        self.manifest_schema = self._read_json(manifest_schema_path, "VC-004", optional=True) or {}
+        self.policy = self._read_json(policy_path, "VC-001")
+        self.record_schema = self._read_json(record_schema_path, "VC-002", optional=True) or {}
+        self.manifest_schema = self._read_json(manifest_schema_path, "VC-003", optional=True) or {}
 
         for key_path in REQUIRED_POLICY_KEYS:
             d = self.policy
             for k in key_path:
                 if not isinstance(d, dict) or k not in d:
-                    self._error("VC-005", self._rel(policy_path), None, f"missing policy key {'.'.join(key_path)}")
+                    self._error("VC-001", self._rel(policy_path), None, f"missing policy key {'.'.join(key_path)}")
                     break
                 d = d[k]
 
@@ -247,76 +334,80 @@ class Validator:
             with path.open("r", encoding="utf-8") as fh:
                 return json.load(fh)
         except json.JSONDecodeError as exc:
-            self._error(code, self._rel(path), exc.lineno, f"invalid JSON: {exc}")
+            self._error("VC-004", self._rel(path), exc.lineno, f"invalid JSON: {exc}")
         except UnicodeDecodeError as exc:
-            self._error(code, self._rel(path), None, f"not valid UTF-8: {exc}")
+            self._error("VC-006", self._rel(path), None, f"not valid UTF-8: {exc}")
         except Exception as exc:
             self._error(code, self._rel(path), None, f"could not read: {exc}")
         return None
 
-    def _load_registry(self) -> None:
-        registry_path = self.repo_root / ".voyage" / "CHARACTER_REGISTRY.md"
-        if not registry_path.exists():
-            self._warn("VC-041", self._rel(registry_path), None, "CHARACTER_REGISTRY.md not found")
-            return
-        try:
-            text = registry_path.read_text(encoding="utf-8")
-            for line in text.splitlines():
-                m = re.match(r"^\|\s*([A-Z][A-Z0-9_]*)\s*\|", line)
-                if m:
-                    cid = m.group(1)
-                    if cid not in {"Character", "CHARACTER"}:
-                        self.registry_chars.add(cid)
-        except Exception as exc:
-            self._warn("VC-041", self._rel(registry_path), None, f"could not read registry: {exc}")
-
     def _validate_policy_authority(self) -> None:
         source = self.policy.get("authority", {}).get("source_of_truth")
         if source != "git_repository":
-            self._error("VC-029", None, None, f"authority.source_of_truth must be 'git_repository', got {source!r}")
+            self._error("VC-001", None, None, f"authority.source_of_truth must be 'git_repository', got {source!r}")
         sqlite_role = self.policy.get("sqlite_sync", {}).get("role")
         if sqlite_role != "local_mirror_and_index":
-            self._error("VC-030", None, None, f"sqlite_sync.role must be 'local_mirror_and_index', got {sqlite_role!r}")
+            self._error("VC-001", None, None, f"sqlite_sync.role must be 'local_mirror_and_index', got {sqlite_role!r}")
         prompt_id_naming = self.policy.get("naming", {}).get("prompt_id", {})
         variant_naming = self.policy.get("naming", {}).get("variant_label", {})
         if not (prompt_id_naming.get("variant_separate") and variant_naming.get("separate_from_prompt_id")):
-            self._error("VC-031", None, None, "naming.prompt_id.variant_separate and naming.variant_label.separate_from_prompt_id must be true")
+            self._error("VC-001", None, None, "naming.prompt_id.variant_separate and naming.variant_label.separate_from_prompt_id must be true")
         if self.policy.get("naming", {}).get("approved_output_filename", {}).get("role_in_filename", True):
-            self._error("VC-025", None, None, "naming.approved_output_filename.role_in_filename must be false")
+            self._error("VC-001", None, None, "naming.approved_output_filename.role_in_filename must be false")
 
     def _discover_and_validate_logs(self) -> None:
-        pattern = str(self.repo_root / "AI_CHARACTERS" / "**" / "prompt_run_log.jsonl")
-        log_files = glob.glob(pattern, recursive=True)
-        if not log_files:
-            self._warn("VC-006", None, None, "no prompt_run_log.jsonl files found under AI_CHARACTERS")
-            return
-        self._info("VC-006", f"discovered {len(log_files)} prompt_run_log.jsonl file(s)")
-        for log_path in sorted(log_files):
-            self._validate_log_file(Path(log_path))
+        if self._character_dir is not None:
+            search_root = self._character_dir
+            scope_label = f"character '{self.args.character}'"
+        else:
+            search_root = self.repo_root / "AI_CHARACTERS"
+            scope_label = "AI_CHARACTERS"
 
-    def _validate_log_file(self, log_path: Path) -> None:
+        pattern = str(search_root / "**" / "06_prompts" / REGISTRY_GLOB)
+        log_files = sorted(Path(p) for p in glob.glob(pattern, recursive=True))
+
+        if not log_files:
+            self._warn("VC-038", None, None, f"no prompt registries found for {scope_label}")
+            return
+
+        print(f"Discovered {len(log_files)} registry file(s) for {scope_label}.")
+
+        all_records: List[Tuple[str, int, Dict[str, Any]]] = []
+        for log_path in log_files:
+            all_records.extend(self._validate_log_file_with_records(log_path))
+        self._perform_duplicate_and_main_checks(all_records)
+        self._records_scanned = len(all_records)
+        self._registries_scanned = len(log_files)
+
+    def _validate_log_file_with_records(self, log_path: Path) -> List[Tuple[str, int, Dict[str, Any]]]:
         rel = self._rel(log_path)
+        records: List[Tuple[str, int, Dict[str, Any]]] = []
         try:
             raw_bytes = log_path.read_bytes()
         except Exception as exc:
-            self._error("VC-007", rel, None, f"could not read log file: {exc}")
-            return
-
-        # UTF-8 / mojibake check
+            self._error("VC-005", rel, None, f"could not read log file: {exc}")
+            return records
         try:
             text = raw_bytes.decode("utf-8")
         except UnicodeDecodeError as exc:
-            self._error("VC-009", rel, None, f"log file is not valid UTF-8: {exc}")
-            return
-
+            self._error("VC-006", rel, None, f"log file is not valid UTF-8: {exc}")
+            return records
         if self._looks_like_mojibake(text):
-            self._warn("VC-009", rel, None, "possible mojibake detected (Windows-1252 artefacts)")
-
-        lines = text.splitlines()
-        for line_no, line in enumerate(lines, start=1):
+            self._warn("VC-007", rel, None, "possible mojibake detected (Windows-1252 artefacts)")
+        for line_no, line in enumerate(text.splitlines(), start=1):
             if not line.strip():
                 continue
-            self._validate_jsonl_line(rel, line_no, line)
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError as exc:
+                self._error("VC-005", rel, line_no, f"invalid JSONL line: {exc}")
+                continue
+            if not isinstance(record, dict):
+                self._error("VC-005", rel, line_no, "JSONL line is not a JSON object")
+                continue
+            self._validate_record(rel, line_no, record)
+            records.append((rel, line_no, record))
+        return records
 
     def _looks_like_mojibake(self, text: str) -> bool:
         for marker in MOJIBAKE_MARKERS:
@@ -324,28 +415,17 @@ class Validator:
                 return True
         return False
 
-    def _validate_jsonl_line(self, rel: str, line_no: int, line: str) -> None:
-        try:
-            record = json.loads(line)
-        except json.JSONDecodeError as exc:
-            self._error("VC-007", rel, line_no, f"invalid JSONL line: {exc}")
-            return
-        if not isinstance(record, dict):
-            self._error("VC-007", rel, line_no, "JSONL line is not a JSON object")
-            return
-        self._validate_record(rel, line_no, record)
-
     def _validate_record(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         # Required fields
         missing = [f for f in REQUIRED_FIELDS_STRICT if f not in record]
         if missing:
             if "schema_version" not in record:
                 if self.mode == "strict":
-                    self._error("VC-026", rel, line_no, f"legacy record without schema_version (missing {', '.join(missing)})")
+                    self._error("VC-036", rel, line_no, f"legacy record without schema_version (missing {', '.join(missing)})")
                 else:
-                    self._warn("VC-026", rel, line_no, f"legacy record without schema_version (missing {', '.join(missing)})")
+                    self._warn("VC-036", rel, line_no, f"legacy record without schema_version (missing {', '.join(missing)})")
             else:
-                self._add("[ERROR]", "VC-008", rel, line_no, f"missing required fields: {', '.join(missing)}")
+                self._add("[ERROR]", "VC-040", rel, line_no, f"missing required fields: {', '.join(missing)}")
 
         # Unknown fields
         known = set(REQUIRED_FIELDS_STRICT) | set(OPTIONAL_FIELDS)
@@ -376,7 +456,7 @@ class Validator:
             self._error("VC-010", rel, line_no, "prompt_id must be a string")
             return
         if not re.fullmatch(r"[A-Z][A-Z0-9_]*", prompt_id):
-            self._error("VC-033", rel, line_no, f"prompt_id '{prompt_id}' must be uppercase IDs/underscores only")
+            self._error("VC-010", rel, line_no, f"prompt_id '{prompt_id}' must be uppercase IDs/underscores only")
         variant_label = record.get("variant_label")
         if variant_label:
             # Variant label must not appear inside prompt_id.
@@ -388,11 +468,11 @@ class Validator:
         cids = record.get("character_ids")
         primary = record.get("primary_character_id")
         if cids is not None and not isinstance(cids, list):
-            self._error("VC-013", rel, line_no, "character_ids must be a list")
+            self._error("VC-012", rel, line_no, "character_ids must be a list")
             return
         if isinstance(cids, list) and primary is not None:
             if primary not in cids:
-                self._error("VC-013", rel, line_no, f"primary_character_id '{primary}' not in character_ids {cids}")
+                self._error("VC-012", rel, line_no, f"primary_character_id '{primary}' not in character_ids {cids}")
         # Test_id should begin with primary character id if both present.
         test_id = record.get("test_id")
         if test_id and primary:
@@ -405,7 +485,7 @@ class Validator:
         if tn is None:
             return
         if not isinstance(tn, int) or tn < 1:
-            self._error("VC-014", rel, line_no, f"test_number must be a positive integer, got {tn!r}")
+            self._error("VC-040", rel, line_no, f"test_number must be a positive integer, got {tn!r}")
 
     def _validate_version(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         version = record.get("version")
@@ -413,7 +493,7 @@ class Validator:
         if version and prompt_id:
             expected = f"_{str(version).upper()}"
             if not str(prompt_id).endswith(expected):
-                self._error("VC-015", rel, line_no, f"prompt_id '{prompt_id}' does not end with version '{version}'")
+                self._error("VC-014", rel, line_no, f"prompt_id '{prompt_id}' does not end with version '{version}'")
 
     def _validate_backend(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         backend = record.get("backend")
@@ -421,28 +501,28 @@ class Validator:
             return
         allowed = set(self.policy.get("allowed_backends", [])) | ALLOWED_BACKENDS
         if backend not in allowed:
-            self._warn("VC-016", rel, line_no, f"backend '{backend}' not in allowed_backends policy")
+            self._warn("VC-040", rel, line_no, f"backend '{backend}' not in allowed_backends policy")
 
     def _validate_prompt_source(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         source = record.get("prompt_source")
         if source is None:
             return
         if not isinstance(source, str) or not source.strip():
-            self._error("VC-017", rel, line_no, "prompt_source must be a non-empty string")
+            self._error("VC-015", rel, line_no, "prompt_source must be a non-empty string")
             return
         if source.strip().lower() == "exact_user_visible_prompt":
             return
         src_path = self.repo_root / source.replace("/", os.sep)
         if "LOCAL_STORAGE" in source.upper():
-            self._error("VC-022", rel, line_no, f"prompt_source points to LOCAL_STORAGE: {source}")
+            self._error("VC-024", rel, line_no, f"prompt_source points to LOCAL_STORAGE: {source}")
         if not src_path.exists():
-            self._warn("VC-017", rel, line_no, f"prompt_source file not found: {source}")
+            self._warn("VC-015", rel, line_no, f"prompt_source file not found: {source}")
         else:
             size = src_path.stat().st_size
             if size == 0:
-                self._error("VC-017", rel, line_no, f"prompt_source file is empty: {source}")
+                self._error("VC-008", rel, line_no, f"prompt_source file is empty: {source}")
             elif self._has_deprecated_suffix(source):
-                self._warn("VC-027", rel, line_no, f"prompt_source uses deprecated filename suffix: {source}")
+                self._warn("VC-034", rel, line_no, f"prompt_source uses deprecated filename suffix: {source}")
 
     def _has_deprecated_suffix(self, path: str) -> bool:
         lower = path.lower()
@@ -453,33 +533,33 @@ class Validator:
         if refs is None:
             return
         if not isinstance(refs, list):
-            self._error("VC-018", rel, line_no, "reference_paths must be a list")
+            self._error("VC-017", rel, line_no, "reference_paths must be a list")
             return
         for ref in refs:
             if not isinstance(ref, str) or not ref.strip():
-                self._error("VC-018", rel, line_no, "reference_paths entries must be non-empty strings")
+                self._error("VC-017", rel, line_no, "reference_paths entries must be non-empty strings")
                 continue
             ref_path = self.repo_root / ref.replace("/", os.sep)
             if not ref_path.exists():
-                self._error("VC-018", rel, line_no, f"reference path does not exist: {ref}")
+                self._error("VC-016", rel, line_no, f"reference path does not exist: {ref}")
             elif self._has_deprecated_suffix(ref):
-                self._warn("VC-027", rel, line_no, f"reference path uses deprecated suffix: {ref}")
+                self._warn("VC-034", rel, line_no, f"reference path uses deprecated suffix: {ref}")
 
     def _validate_output_path(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         out = record.get("output_path")
         if not out:
             return
         if not isinstance(out, str) or not out.strip():
-            self._error("VC-034", rel, line_no, "output_path must be a non-empty string")
+            self._error("VC-018", rel, line_no, "output_path must be a non-empty string")
             return
         storage = record.get("storage")
         upper = out.upper()
         if storage == "repo_tracked" and "LOCAL_STORAGE" in upper:
-            self._error("VC-022", rel, line_no, f"storage=repo_tracked but output_path is in LOCAL_STORAGE: {out}")
+            self._error("VC-024", rel, line_no, f"storage=repo_tracked but output_path is in LOCAL_STORAGE: {out}")
         if storage == "local_only" and "LOCAL_STORAGE" not in upper:
-            self._warn("VC-039", rel, line_no, f"storage=local_only but output_path is not in LOCAL_STORAGE: {out}")
+            self._warn("VC-024", rel, line_no, f"storage=local_only but output_path is not in LOCAL_STORAGE: {out}")
         if storage == "repo_tracked" and not upper.startswith("AI_CHARACTERS/"):
-            self._warn("VC-034", rel, line_no, f"repo_tracked output_path should start with AI_CHARACTERS/: {out}")
+            self._warn("VC-018", rel, line_no, f"repo_tracked output_path should start with AI_CHARACTERS/: {out}")
         # Role must not appear in filename for approved outputs.
         basename = Path(out).name
         name_no_ext = Path(basename).stem.upper()
@@ -487,9 +567,9 @@ class Validator:
         if self.policy.get("approved_output_filename", {}).get("role_in_filename", True) is False:
             if parts & ROLE_WORDS:
                 offending = sorted(parts & ROLE_WORDS)
-                self._error("VC-035", rel, line_no, f"approved output filename contains role/status words {offending}: {out}")
+                self._error("VC-018", rel, line_no, f"approved output filename contains role/status words {offending}: {out}")
         if self._has_deprecated_suffix(out):
-            self._warn("VC-027", rel, line_no, f"output_path uses deprecated suffix: {out}")
+            self._warn("VC-034", rel, line_no, f"output_path uses deprecated suffix: {out}")
 
     def _validate_verdict(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         verdict = record.get("verdict")
@@ -497,33 +577,33 @@ class Validator:
             return
         allowed = set(self.policy.get("allowed_verdicts", {}).get("machine_values", [])) | ALLOWED_VERDICTS
         if verdict not in allowed:
-            self._warn("VC-032", rel, line_no, f"verdict '{verdict}' not in policy allowed list")
+            self._warn("VC-019", rel, line_no, f"verdict '{verdict}' not in policy allowed list")
 
     def _validate_selection(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         selected = record.get("selected")
         if selected is None:
             return
         if not isinstance(selected, bool):
-            self._error("VC-020", rel, line_no, f"selected must be boolean, got {selected!r}")
+            self._error("VC-019", rel, line_no, f"selected must be boolean, got {selected!r}")
             return
         verdict = record.get("verdict")
         human = record.get("human_approval")
         if selected:
             if verdict not in {"APPROVED_AS_TEST", "APPROVED_AS_CANON", "LEGACY_APPROVED"}:
-                self._error("VC-020", rel, line_no, f"selected=true requires approved verdict, got {verdict!r}")
+                self._error("VC-019", rel, line_no, f"selected=true requires approved verdict, got {verdict!r}")
             if human not in {True, "owner"} and not (isinstance(human, str) and human.startswith("owner_")):
-                self._error("VC-024", rel, line_no, f"selected=true requires human_approval gate, got {human!r}")
+                self._error("VC-019", rel, line_no, f"selected=true requires human_approval gate, got {human!r}")
         else:
             role = record.get("role")
             if role == "MAIN":
-                self._error("VC-038", rel, line_no, "selected=false cannot have role=MAIN")
+                self._error("VC-020", rel, line_no, "selected=false cannot have role=MAIN")
 
     def _validate_role(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         role = record.get("role")
         if role is None:
             return
         if role not in ALLOWED_ROLES:
-            self._error("VC-036", rel, line_no, f"role '{role}' not in allowed roles {ALLOWED_ROLES}")
+            self._error("VC-020", rel, line_no, f"role '{role}' not in allowed roles {ALLOWED_ROLES}")
 
     def _validate_storage(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         storage = record.get("storage")
@@ -531,7 +611,7 @@ class Validator:
             return
         allowed = set(self.policy.get("allowed_storage_tiers", [])) | ALLOWED_STORAGE
         if storage not in allowed:
-            self._warn("VC-037", rel, line_no, f"storage '{storage}' not in allowed storage list")
+            self._warn("VC-022", rel, line_no, f"storage '{storage}' not in allowed storage list")
 
     def _validate_content_tier(self, rel: str, line_no: int, record: Dict[str, Any]) -> None:
         tier = record.get("content_tier")
@@ -547,13 +627,13 @@ class Validator:
             return
         if isinstance(ha, bool):
             if ha is False and record.get("selected") is True:
-                self._error("VC-024", rel, line_no, "selected=true with human_approval=false is forbidden")
+                self._error("VC-019", rel, line_no, "selected=true with human_approval=false is forbidden")
             return
         if isinstance(ha, str):
             if not (ha == "owner" or ha.startswith("owner_")):
-                self._warn("VC-024", rel, line_no, f"unrecognized human_approval value '{ha}'")
+                self._warn("VC-019", rel, line_no, f"unrecognized human_approval value '{ha}'")
             return
-        self._warn("VC-024", rel, line_no, f"human_approval should be bool or owner string, got {ha!r}")
+        self._warn("VC-019", rel, line_no, f"human_approval should be bool or owner string, got {ha!r}")
 
     # ------------------------------------------------------------------ post-line checks
     def _perform_duplicate_and_main_checks(self, all_records: List[Tuple[str, int, Dict[str, Any]]]) -> None:
@@ -572,44 +652,11 @@ class Validator:
         for pid, locations in ids.items():
             if len(locations) > 1:
                 for rel, line_no in locations:
-                    self._error("VC-010", rel, line_no, f"duplicate prompt_id '{pid}' across {len(locations)} record(s)")
+                    self._error("VC-009", rel, line_no, f"duplicate prompt_id '{pid}' across {len(locations)} record(s)")
         for key, locations in main_keys.items():
             if len(locations) > 1:
                 for rel, line_no, pid in locations:
                     self._error("VC-021", rel, line_no, f"multiple selected MAIN records for {key}: {pid}")
-
-    # Overridden inside _discover_and_validate_logs after refactor below.
-    def _validate_log_file_with_records(self, log_path: Path) -> List[Tuple[str, int, Dict[str, Any]]]:
-        rel = self._rel(log_path)
-        records: List[Tuple[str, int, Dict[str, Any]]] = []
-        try:
-            raw_bytes = log_path.read_bytes()
-        except Exception as exc:
-            self._error("VC-007", rel, None, f"could not read log file: {exc}")
-            return records
-        try:
-            text = raw_bytes.decode("utf-8")
-        except UnicodeDecodeError as exc:
-            self._error("VC-009", rel, None, f"log file is not valid UTF-8: {exc}")
-            return records
-        if self._looks_like_mojibake(text):
-            self._warn("VC-009", rel, None, "possible mojibake detected (Windows-1252 artefacts)")
-        for line_no, line in enumerate(text.splitlines(), start=1):
-            if not line.strip():
-                continue
-            try:
-                record = json.loads(line)
-            except json.JSONDecodeError as exc:
-                self._error("VC-007", rel, line_no, f"invalid JSONL line: {exc}")
-                continue
-            if not isinstance(record, dict):
-                self._error("VC-007", rel, line_no, "JSONL line is not a JSON object")
-                continue
-            self._validate_record(rel, line_no, record)
-            records.append((rel, line_no, record))
-        return records
-
-    # We need to rewire _discover_and_validate_logs to collect records.
 
     # ------------------------------------------------------------------ output
     def _print_findings(self) -> None:
@@ -621,23 +668,29 @@ class Validator:
         print()
         print(self._color(f"Summary: {errors} error(s), {warnings} warning(s), {infos} info message(s)", "[INFO]"))
 
-    def _write_json_report(self) -> None:
+    def _write_json_report(self) -> Optional[int]:
         if not self.args.json_report:
-            return
+            return None
         report_path = Path(self.args.json_report)
+        if not report_path.parent.exists():
+            print(f"[ERROR CLI-004] Report parent directory does not exist: {report_path.parent}")
+            return EXIT_CLI_ERROR
         if report_path.exists() and not self.args.overwrite_report:
-            print(f"[ERROR VC-003] Report file already exists: {report_path}")
-            return
+            print(f"[ERROR CLI-003] Report file already exists: {report_path}")
+            return EXIT_CLI_ERROR
         report = {
             "tool": "validate_visual_canon_pipeline",
             "version": __version__,
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),
             "repo_root": str(self.repo_root),
             "mode": self.mode,
+            "character": self.args.character,
             "summary": {
                 "errors": sum(1 for f in self.findings if f.level == "[ERROR]"),
                 "warnings": sum(1 for f in self.findings if f.level == "[WARNING]"),
                 "infos": sum(1 for f in self.findings if f.level == "[INFO]"),
+                "registries_scanned": self._registries_scanned,
+                "records_scanned": self._records_scanned,
             },
             "findings": [
                 {
@@ -650,28 +703,11 @@ class Validator:
                 for f in self.findings
             ],
         }
-        report_path.parent.mkdir(parents=True, exist_ok=True)
         with report_path.open("w", encoding="utf-8") as fh:
             json.dump(report, fh, ensure_ascii=False, indent=2)
             fh.write("\n")
-        self._info("VC-003", f"JSON report written to {self._rel(report_path) if report_path.is_relative_to(self.repo_root) else str(report_path)}")
-
-
-# Patch _discover_and_validate_logs after class definition to collect all records for post checks.
-def _patched_discover(self: Validator) -> None:
-    pattern = str(self.repo_root / "AI_CHARACTERS" / "**" / "prompt_run_log.jsonl")
-    log_files = glob.glob(pattern, recursive=True)
-    if not log_files:
-        self._warn("VC-006", None, None, "no prompt_run_log.jsonl files found under AI_CHARACTERS")
-        return
-    self._info("VC-006", f"discovered {len(log_files)} prompt_run_log.jsonl file(s)")
-    all_records: List[Tuple[str, int, Dict[str, Any]]] = []
-    for log_path in sorted(log_files):
-        all_records.extend(self._validate_log_file_with_records(Path(log_path)))
-    self._perform_duplicate_and_main_checks(all_records)
-
-
-Validator._discover_and_validate_logs = _patched_discover
+        print(f"JSON report written to {report_path}")
+        return None
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -693,7 +729,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--character",
         default=None,
-        help="Limit validation to a single character folder (not yet implemented in MVP).",
+        help="Limit validation to a single character/namespace folder under AI_CHARACTERS (case-insensitive).",
     )
     parser.add_argument(
         "--json-report",

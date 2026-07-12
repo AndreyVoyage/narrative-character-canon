@@ -218,9 +218,85 @@ py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-VERIFY-2026-07-12`
+
+**Final status:** `COMPLETED_NEEDS_IMPLEMENTATION_CORRECTION`
+
+### Audit result
+
+A read-only audit of commit `5589fcb` found the validator MVP never discovered any real character
+registry:
+
+- Discovery used the literal filename `prompt_run_log.jsonl`; real registries are named
+  `<CHARACTER>_PROMPT_RUN_LOG.jsonl`, so 0 real registries were ever found.
+- Both `compatibility` and `strict` modes scanned 0 files / 0 records against the real repo.
+- `--character` was a documented no-op.
+- The `VC-` check-ID catalog had collisions (`VC-003`, `VC-006`, `VC-009` each covered multiple
+  unrelated findings) and an undocumented `VC-041`.
+- JSON-report overwrite refusal returned exit code `0` instead of a CLI failure code.
+- Architecture remained fully read-only and repairable; no push occurred.
+
+Commit `5589fcb` was left unamended and unpushed.
+
+---
+
+## Completed task
+
+**Task ID:** `NCC-VISUAL-CANON-VALIDATOR-MVP-DISCOVERY-CORRECTION-2026-07-12`
+
+**Final status:** `COMPLETED_LOCAL_AWAITING_REVERIFY`
+
+### Goal
+
+Correct the validator MVP so it discovers and validates the repository's real character prompt
+registries, implements functional `--character` scoping, stabilizes the `VC-001`–`VC-040` check
+catalog, and adds realistic integration coverage — in a narrow follow-up commit on top of `5589fcb`.
+
+### Result
+
+- Discovery now matches `AI_CHARACTERS/<CHAR>/06_prompts/*_PROMPT_RUN_LOG.jsonl`; the real repo's 4
+  registries (ANDREY, ANDREY_JUNIOR, KIRA, OLGA — 46 records total) are found and scanned.
+- `--character <NAME>` resolves case-insensitively against `AI_CHARACTERS/` (including joint/pair
+  namespaces one level under an underscore-prefixed container such as `_JOINT_SCENES`); unknown or
+  ambiguous names exit `2` under a new `CLI-002` code, separate from the `VC-` catalog.
+- `CHECK_CATALOG` (module-level, `VC-001`–`VC-040`, no `VC-041`) is now the single source of truth;
+  every `_error`/`_warn` call site was remapped to it; fatal/CLI-level failures moved to `CLI-001`
+  (repo-root preflight), `CLI-003`/`CLI-004` (JSON-report failures), and `INTERNAL`.
+- JSON-report overwrite-refusal and missing-parent-directory failures now exit `2` (were `0`); the
+  parent directory is never auto-created.
+- 13 new tests added in `tests/visual_canon/test_validator_discovery.py`; the 3 existing test files
+  updated to realistic `<CHAR>_PROMPT_RUN_LOG.jsonl` naming under `06_prompts/` and the new VC-code
+  mapping. All 32 tests pass.
+
+### Known pre-existing data gap (not fixed by this commit — validator-only scope)
+
+Running the corrected validator against the real repo surfaces one genuine finding: OLGA's legacy
+`OLGA_TEST09_FORMAL_ELEGANT_V4` record (`AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`,
+line 16 — already published/deployed per this file's `NCC-OLGA-TEST09-FORMAL-ELEGANT-DEPLOY-2026-07-10`
+entry, commit `1f887dc`) has `selected: true` / `deployed: true` but no `human_approval` field, so it
+trips `VC-019` as a hard error. Compatibility mode against the real repo therefore exits `1`, not `0`.
+This is a real, pre-existing data-completeness gap the validator now correctly surfaces — not a
+validator bug. Character data was intentionally left untouched by this commit; backfilling
+`human_approval` on that record is separate follow-up work, not yet scheduled.
+
+### Constraints respected
+
+- No amend of `5589fcb`; no push.
+- Changed files limited to `tools/validate_visual_canon_pipeline.py`, the three existing
+  `tests/visual_canon/test_validator_*.py` files, the new `tests/visual_canon/test_validator_discovery.py`,
+  and this file.
+- No character JSONL/prompts/presets/images modified.
+- No `.gitignore`, `AGENTS.md`, `docs/**`, `configs/visual_canon/**`, `.voyage/PROJECT_STATE.md`, or
+  `.voyage/DECISIONS.md` changes.
+- No manifests, SQLite, deploy tool, or OLGA Test10 work.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-VALIDATOR-MVP-REVERIFY-2026-07-12`
 
 **Status:** `READY_FOR_READONLY_VERIFY`
 
@@ -228,15 +304,21 @@ py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
 
 ### Goal
 
-Independently verify the validator MVP against the real repository and edge cases; confirm no regressions; prepare for the deploy-tool MVP preflight.
+Verify the two-commit validator implementation chain (`5589fcb` → discovery-correction commit): real
+registry discovery, `--character` scoping, the stabilized check-ID catalog, tests, and JSON-report exit
+behavior — before push.
 
 ### Scope
 
-- Run validator on the real repo in both `compatibility` and `strict` modes.
-- Review findings format and exit codes.
+- Run validator on the real repo in both `compatibility` and `strict` modes; confirm nonzero
+  registries/records scanned.
+- Confirm `--character OLGA` / `--character KIRA` each scan exactly one registry with nonzero records,
+  and an unknown character exits `2`.
+- Confirm the `VC-001`–`VC-040` catalog and the known OLGA `VC-019` gap noted above.
 - Confirm tests pass and coverage is sufficient.
 - Do not modify repo files during verification.
 
 ### Next action after verify
 
-Proceed to deploy-tool MVP preflight or to OLGA Test10 pilot, depending on human control-room decision.
+Push both local commits to `origin/main`, then proceed to the deploy-tool MVP preflight or the OLGA
+Test10 pilot, depending on human control-room decision.

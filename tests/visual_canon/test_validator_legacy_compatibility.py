@@ -43,10 +43,10 @@ def _run_validator(repo_root, mode="compatibility"):
 def _build_repo(fixture_name):
     tmp = tempfile.mkdtemp(prefix="ncc_validator_")
     root = Path(tmp)
-    char_dir = root / "AI_CHARACTERS" / "TESTB" / "10_notes"
+    char_dir = root / "AI_CHARACTERS" / "TESTB" / "06_prompts"
     char_dir.mkdir(parents=True)
     log_src = FIXTURES / fixture_name / "prompt_run_log.jsonl"
-    log_dst = char_dir / "prompt_run_log.jsonl"
+    log_dst = char_dir / "TESTB_PROMPT_RUN_LOG.jsonl"
     shutil.copy2(log_src, log_dst)
 
     policy_dir = root / "configs" / "visual_canon"
@@ -60,7 +60,7 @@ def _build_repo(fixture_name):
     ref.parent.mkdir(parents=True)
     ref.write_bytes(b"\x89PNG\r\n\x1a\n")
     prompt = root / "AI_CHARACTERS" / "TESTB" / "06_prompts" / "TESTB_IDENTITY.md.txt"
-    prompt.parent.mkdir(parents=True)
+    prompt.parent.mkdir(parents=True, exist_ok=True)
     prompt.write_text("legacy prompt file", encoding="utf-8")
 
     return root
@@ -72,8 +72,8 @@ class TestLegacyCompatibility(unittest.TestCase):
         try:
             result = _run_validator(root, mode="compatibility")
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-            self.assertIn("VC-026", result.stdout)
-            self.assertIn("VC-027", result.stdout)
+            self.assertIn("VC-036", result.stdout)
+            self.assertIn("VC-034", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -82,7 +82,7 @@ class TestLegacyCompatibility(unittest.TestCase):
         try:
             result = _run_validator(root, mode="strict")
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-026", result.stdout)
+            self.assertIn("VC-036", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 

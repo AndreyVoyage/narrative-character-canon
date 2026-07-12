@@ -40,10 +40,10 @@ def _build_repo(fixture_name, refs_to_create=None, prompts=None):
     prompts = prompts or {}
     tmp = tempfile.mkdtemp(prefix="ncc_validator_")
     root = Path(tmp)
-    char_dir = root / "AI_CHARACTERS" / "TESTX" / "10_notes"
+    char_dir = root / "AI_CHARACTERS" / "TESTX" / "06_prompts"
     char_dir.mkdir(parents=True)
     log_src = FIXTURES / fixture_name / "prompt_run_log.jsonl"
-    log_dst = char_dir / "prompt_run_log.jsonl"
+    log_dst = char_dir / "TESTX_PROMPT_RUN_LOG.jsonl"
     shutil.copy2(log_src, log_dst)
 
     policy_dir = root / "configs" / "visual_canon"
@@ -82,7 +82,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-007", result.stdout)
+            self.assertIn("VC-005", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -92,7 +92,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-010", result.stdout)
+            self.assertIn("VC-009", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -112,7 +112,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-018", result.stdout)
+            self.assertIn("VC-016", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -122,7 +122,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-024", result.stdout)
+            self.assertIn("VC-019", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -132,7 +132,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-022", result.stdout)
+            self.assertIn("VC-024", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -153,7 +153,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 1)
-            self.assertIn("VC-017", result.stdout)
+            self.assertIn("VC-008", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
@@ -163,7 +163,7 @@ class TestPromptRecordValidation(unittest.TestCase):
         try:
             result = _run_validator(root)
             self.assertEqual(result.returncode, 0)
-            self.assertIn("VC-009", result.stdout)
+            self.assertIn("VC-007", result.stdout)
             self.assertIn("[WARNING]", result.stdout)
         finally:
             shutil.rmtree(root, ignore_errors=True)
