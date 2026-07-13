@@ -61,11 +61,16 @@ Read these sources from top to bottom. Lower-numbered levels are higher authorit
 5. **Generation attempts** — human generates images outside the repository.
 6. **Attempt verdicts** — human labels each version: `DRAFT`, `CANDIDATE`, `SUPERSEDED`, `REJECTED`, `APPROVED_AS_TEST`, `APPROVED_AS_CANON`, `APPROVED_AS_LOCAL`.
 7. **Selection and role** — human selects one MAIN per `test_id`; optional ALT records allowed.
-8. **One-operation deploy** — deployment tool performs all repository updates atomically.
-9. **Validator pass** — validator checks IDs, paths, records, and Git state.
-10. **Commit** — human verifies staged scope; tool commits.
-11. **Verify and push** — human final audit; pushes.
-12. **SQLite sync** — record verified facts to local SQLite and export snapshots.
+8. **One-operation deploy** — the deployment tool defaults to read-only dry-run; explicit `--apply`
+   copies one already selected output and updates only the approved MVP record/linkage scope.
+9. **Validator pass** — compatibility validation runs before and after apply; failed post-validation
+   triggers rollback.
+10. **Inventory and diff review** — a separate human-controlled step refreshes inventory if required
+    and reviews unstaged changes.
+11. **Stage and commit** — a separate controlled task stages exact files and creates the commit.
+12. **Verify and push** — a separate human-controlled audit verifies and pushes the commit.
+13. **Voyage closeout and SQLite sync** — separate approved workflows close the task and later
+    synchronize the non-authoritative local mirror.
 
 ---
 
@@ -145,7 +150,7 @@ Rules:
 | Reference pack | Human control room | Approved references before generation |
 | Attempt verdict | Human reviewer | Label per version |
 | Selection and role | Human reviewer | Selected MAIN / ALT |
-| Deploy scope | Human reviewer | Staged files and commit message |
+| Deploy scope | Human reviewer | Approved request, exact dry-run plan, source image and target hashes |
 | Push | Human reviewer | Final verification and push |
 
 Canonical IDs, verdicts, selected results, and decision IDs are never auto-approved or auto-fixed.
@@ -265,7 +270,8 @@ Tracked binary formats (`.png`, `.jpg`, `.jpeg`, `.webp`, `.psd`, `.mp4`, `.mov`
 - SQLite records verified repository facts **after** Git commit.
 - Exports (`CONTEXT_SNAPSHOT.md`, `STATE_EXPORT.json`, `EVENTS_EXPORT.jsonl`) are generated from SQLite and may be committed as generated snapshots.
 - SQLite must not silently overwrite authoritative `.voyage/*.md` files.
-- If SQLite lags behind the repo, the validator reports it and the next deploy operation synchronizes the DB from verified repo facts.
+- If SQLite lags behind the repo, the validator reports it; synchronization from verified repository
+  facts remains a separate approved post-publication workflow and is never performed by the deploy tool.
 - Local-only paths and secrets never enter tracked exports.
 
 ---
@@ -344,22 +350,31 @@ Validator must pass before commit. Stop if the validator reports errors.
 
 ## 25. Deployment-tool responsibility
 
-The deployment tool (`tools/deploy_visual_canon_result.py`, Phase 3) will:
+The deployment tool (`tools/deploy_visual_canon_result.py`, Phase 3) is read-only by default. Apply
+requires an explicit `--apply` flag and handles exactly one already registered, already generated,
+already human-selected and human-approved prompt attempt.
 
-- Reserve IDs and paths.
-- Move the selected image into the repo folder.
-- Update JSONL registry for all attempts (rejected + selected).
-- Update prompt index and working prompt volumes.
-- Update test results.
-- Update reference preset.
-- Conditionally update canon index.
-- Update Voyage task/decision/state files.
-- Regenerate inventory with backup.
-- Run validator.
-- Stage allowed files.
-- Produce a human-review report.
+The MVP will:
 
-The tool never commits or pushes without human approval.
+- require an existing canonical prompt record, prompt text, prompt heading and Prompt Index entry;
+- validate Prompt Index and working-prompt-volume linkage without editing either file;
+- copy (never move or delete) the explicitly supplied selected source image to the explicit,
+  collision-free repository destination;
+- update exactly one existing prompt-run JSONL record;
+- update Test Results and Reference Presets;
+- update Canon Index only when the explicit verdict is `APPROVED_AS_CANON`;
+- run full and character-scoped compatibility validation before apply and after apply;
+- use external transaction files, expected HEAD and SHA-256 target hashes, and reverse-order rollback
+  when apply or post-validation fails;
+- leave all successful changes unstaged for human review.
+
+The MVP will not create prompt/test IDs or prompt records, edit prompt text, Prompt Index or working
+prompt volumes, select an image, infer approval, overwrite a destination, or deploy local/private
+content. It will not modify Voyage files, Decisions, Inventory, manifests, policy or schemas. It will
+not access SQLite, stage, commit, push, force, clean or reset Git state.
+
+Inventory refresh, diff review, staging, commit, push verification, Voyage closeout and SQLite
+synchronization are separate human-controlled tasks.
 
 ---
 
@@ -389,11 +404,11 @@ For a new approved scene:
 2. Agent reserves IDs and builds reference pack.
 3. Human approves reference pack.
 4. Human generates attempts and selects MAIN/ALT.
-5. Agent runs deploy tool; validator passes.
-6. Human verifies staged scope.
-7. Tool commits.
-8. Human verifies commit and pushes.
-9. Agent records to SQLite and exports snapshots.
+5. Human reviews the deterministic deploy-tool dry-run plan.
+6. Agent runs explicit `--apply`; validator passes before and after, and changes remain unstaged.
+7. Human performs any required separate inventory refresh and reviews `git diff`.
+8. Separate controlled tasks stage, commit, verify and push.
+9. Separate Voyage closeout and SQLite synchronization tasks record published facts.
 
 ---
 

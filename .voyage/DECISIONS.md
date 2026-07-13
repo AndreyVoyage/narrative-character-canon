@@ -910,3 +910,43 @@ Result:
 - Next task: `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-2026-07-12`.
 
 Next action: Run validator MVP preflight, then implement `tools/validate_visual_canon_pipeline.py`.
+
+---
+
+Date: 2026-07-14
+Decision ID: D-018
+Context: The deploy-tool MVP preflight found that the published workflow assigned the future tool responsibility for Decisions, Inventory, staging, commit, and publication state. This conflicted with the approved narrow, auditable, existing-record-only MVP.
+
+Decision: Adopt a non-publishing deploy-tool boundary.
+
+- Default mode is read-only dry-run; apply requires explicit `--apply`.
+- One operation handles one existing registered, generated, human-selected and human-approved attempt.
+- The tool copies the selected source output and never moves or deletes it.
+- The tool may update exactly one existing prompt registry record, Test Results, Reference Presets,
+  and Canon Index only when the explicit verdict is `APPROVED_AS_CANON`.
+- Prompt Index, prompt source, prompt heading and working prompt volume must already exist; the tool
+  validates their linkage without editing them.
+- The tool does not modify Voyage files, Decisions, Inventory, manifests, policy or schemas.
+- The tool does not stage, commit, amend, push, force, clean or reset.
+- The tool performs no SQLite read, write, export, migration or rebuild.
+- Failed post-validation requires rollback.
+
+Human workflow owns inventory refresh, diff review, staging, commit, push verification, Voyage
+closeout and SQLite synchronization.
+
+Affected files:
+- `docs/NCC_VISUAL_CANON_WORKFLOW.md`
+- `docs/NCC_DEPLOY_CHECKLIST.md`
+- `configs/visual_canon/pipeline_policy.json`
+- `.voyage/CURRENT_TASK.md`
+- `.voyage/PROJECT_STATE.md`
+- `.voyage/DECISIONS.md`
+
+Reason: Keep the deploy operation deterministic, reversible and reviewable while preserving human
+authority over project history and Git publication.
+
+Result: OLGA Test10 remains deferred until the deploy-tool implementation is tested, independently
+verified and published.
+
+Next action: Implement the deploy-tool MVP under the corrected authority, then verify and publish it
+before starting the OLGA Test10 pilot.

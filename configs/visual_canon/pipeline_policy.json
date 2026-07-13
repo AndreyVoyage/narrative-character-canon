@@ -140,6 +140,38 @@
     ],
     "stale_buffer_policy": "no_overwrite_without_human_comparison"
   },
+  "deployment_tool_mvp": {
+    "default_mode": "dry_run",
+    "apply_requires_explicit_flag": true,
+    "deployment_unit": "one_existing_human_approved_prompt_attempt",
+    "existing_prompt_record_required": true,
+    "may_create_prompt_record": false,
+    "prompt_source_and_index_must_preexist": true,
+    "may_edit_prompt_source": false,
+    "may_edit_prompt_index": false,
+    "may_copy_selected_output": true,
+    "may_move_source_output": false,
+    "destination_collision_allowed": false,
+    "may_update_prompt_registry": true,
+    "may_update_test_results": true,
+    "may_update_reference_presets": true,
+    "may_update_canon_index": {
+      "conditional_on_verdict": "APPROVED_AS_CANON"
+    },
+    "may_update_voyage": false,
+    "may_update_decisions": false,
+    "may_update_inventory": false,
+    "may_stage": false,
+    "may_commit": false,
+    "may_push": false,
+    "may_access_sqlite": false,
+    "local_private_deployment_allowed": false,
+    "validator_precheck_required": true,
+    "validator_postcheck_required": true,
+    "rollback_required": true,
+    "expected_head_required": true,
+    "expected_file_hashes_required": true
+  },
   "sqlite_sync": {
     "role": "local_mirror_and_index",
     "not_authoritative": true,

@@ -4,7 +4,7 @@
 
 **Status:** ACTIVE / CHARACTER CANON REPOSITORY
 
-**Last verified:** 2026-07-13
+**Last verified:** 2026-07-14
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
@@ -32,7 +32,8 @@
 * MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 46 records with 0 errors.
-* Deploy-tool MVP is not implemented; its strict read-only implementation preflight is now P0.
+* Deploy-tool preflight completed with `NEEDS_POLICY_CORRECTION`; the narrow non-publishing authority correction is committed locally.
+* Deploy-tool MVP is still not implemented; implementation under the corrected authority is the next P0 task.
 
 ---
 
@@ -48,4 +49,4 @@
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PREFLIGHT-2026-07-13`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-IMPLEMENTATION-2026-07-14`.

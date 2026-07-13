@@ -7,19 +7,19 @@
 
 ---
 
-## 0. BEFORE YOU START — Read-Only Audit
+## 0. A — Before deploy-tool dry-run
 
-**Никогда не начинай деплой без аудита.**
+**Никогда не начинай deploy без read-only аудита.**
 
-- [ ] Прочитать `AGENTS.md` раздел 5 — *File naming conventions*  
-- [ ] Прочитать `AGENTS.md` раздел 6 — *Workflow instructions*  
-- [ ] Прочитать `docs/NCC_VISUAL_CANON_WORKFLOW.md` — *Universal visual-canon pipeline*
-- [ ] Прочитать `configs/visual_canon/pipeline_policy.json` — *Machine-readable policy*
-- [ ] Прочитать `.voyage/VOYAGE_INTEGRATION_WORKFLOW.md` — *Статусы и фиксация решений*  
-- [ ] Проверить `.voyage/CURRENT_TASK.md` — есть ли активная задача?  
-- [ ] Проверить `.voyage/DECISIONS.md` — нет ли конфликтующих решений?
+- [ ] Прочитать `AGENTS.md`, `docs/NCC_VISUAL_CANON_WORKFLOW.md` и
+  `configs/visual_canon/pipeline_policy.json`.
+- [ ] Проверить `.voyage/CURRENT_TASK.md` и отсутствие конфликтующего human-authored решения.
+- [ ] Убедиться, что prompt attempt уже зарегистрирован, сгенерирован, выбран и одобрен человеком.
+- [ ] Убедиться, что prompt source, точный heading и Prompt Index entry уже существуют.
+- [ ] Подготовить declarative request с exact source/destination, expected HEAD и SHA-256 всех targets.
+- [ ] Проверить clean tracked tree и пустой Git index.
 
-**Stop condition:** Если `CURRENT_TASK.md` запрещает редактировать целевые файлы — STOP.
+**Stop condition:** deploy tool не создаёт prompt/ID/record и не исправляет незавершённую подготовку.
 
 ---
 
@@ -49,84 +49,73 @@
 
 ---
 
-## 2. BACKUP
+## 2. B — Deploy-tool dry-run
 
-- [ ] Если файл **существует** и будет перезаписан — создать backup  
-  Pattern: `<FILENAME>.backup_YYYYMMDD_HHMMSS`
-- [ ] Если файл **новый** — backup не нужен
-- [ ] Никогда не удалять существующие файлы (только переименовывать в backup)
-
----
-
-## 3. COPY / CREATE
-
-- [ ] Скопировать файл в target папку
-- [ ] Проверить что файл не пустой (`wc -c` > 0)
-- [ ] Проверить что файл readable (`head -5`)
-- [ ] Убедиться что путь не содержит `AI_CHARACTERS/10_notes/` (общая)
+- [ ] Запустить tool без `--apply`; default mode обязан быть read-only.
+- [ ] Проверить existing JSONL target record, prompt/index linkage, references и approval evidence.
+- [ ] Проверить отсутствие destination collision и Git LFS attribute.
+- [ ] Запустить full и character-scoped compatibility validator prechecks.
+- [ ] Проверить deterministic plan: action, path, before state, planned change, validation status.
+- [ ] Dry-run не должен изменять repo, Git index, Inventory, Voyage или SQLite.
 
 ---
 
-## 4. VOYAGE TRACKING — Обязательно!
+## 3. C — Human approval to apply
 
-### 4.1 CHARACTER_REGISTRY.md
-- [ ] Если статус персонажа изменился — обновить `.voyage/CHARACTER_REGISTRY.md`
-- [ ] Статусы по `VOYAGE_INTEGRATION_WORKFLOW.md`:
-  - `EMPTY_STRUCTURE` → `RAW_BASED` → `TEXT_CANON_READY` → `FACE_CANON_ACTIVE` → `BODY_PENDING` → `CANON_READY_2D`
-- [ ] Не отмечать `preset-ready` пока `scene_presets` не содержит реальные tracked-файлы
-
-### 4.2 Pipeline compliance check
-- [ ] If the deploy involves a new APPROVED image, reserve `prompt_id`, `test_id`, `scene_id`, and planned `output_path` before generation.
-- [ ] Confirm `reference_paths` exist and are Git-tracked.
-- [ ] Record selected MAIN / ALT role and storage/content tier.
-- [ ] Run the validator and fix errors before commit:
-  ```powershell
-  py -3 tools\validate_visual_canon_pipeline.py --mode compatibility --no-color
-  ```
-
-### 4.3 DECISIONS.md
-- [ ] Создать запись `D-XXX` с:
-  - Дата
-  - Decision ID
-  - Context
-  - Decision
-  - Affected files
-  - Reason
-  - Next action
-
-### 4.4 INVENTORY.md
-- [ ] Backup: `cp INVENTORY.md INVENTORY.md.backup_YYYYMMDD_HHMMSS`
-- [ ] Добавить новые файлы в таблицу
-- [ ] Удалить записи о удалённых файлах
+- [ ] Human reviewer подтверждает exact dry-run plan.
+- [ ] Request содержит `selected: true`, `human_approval: true`, approval evidence, exact source,
+  exact destination, expected HEAD и target hashes.
+- [ ] Apply разрешается только явным `--apply`; скрытых interactive defaults нет.
 
 ---
 
-## 5. GIT
+## 4. D — Deploy-tool apply
 
-- [ ] `git status` — проверить что изменения корректны
-- [ ] `git add` — только нужные файлы
-- [ ] `git diff --cached` — финальная проверка
-- [ ] `git commit` с детальным сообщением:
-  ```
-  <TYPE>: <summary>
-  
-  - What changed
-  - Why
-  - Affected characters/files
-  - Refs: D-XXX
-  ```
-- [ ] `git push origin main`
-- [ ] Если push failed — STOP, не делать force push
+- [ ] Tool повторяет все dry-run checks и rechecks HEAD/status/hashes непосредственно перед write.
+- [ ] Source image копируется; source никогда не перемещается и не удаляется.
+- [ ] Tool обновляет ровно одну existing JSONL record, Test Results, Presets и, только для
+  `APPROVED_AS_CANON`, Canon Index.
+- [ ] Prompt source, Working Prompt Volume и Prompt Index только валидируются и не редактируются.
+- [ ] Temporary copies и recovery manifest находятся вне repo; post-validation failure запускает rollback.
+- [ ] После apply запускаются character-scoped и full compatibility validators.
+- [ ] Изменения остаются unstaged.
 
 ---
 
-## 6. POST-DEPLOY VERIFICATION
+## 5. E — Human post-apply review
 
-- [ ] Проверить что файлы на GitHub (remote) совпадают с local
-- [ ] Проверить что `CHARACTER_REGISTRY.md` актуален
-- [ ] Проверить что `DECISIONS.md` содержит запись
-- [ ] Проверить что `INVENTORY.md` содержит новые записи
-- [ ] Если деплойил Kimi Code — проверить его report
+- [ ] Проверить `git status --short`, `git diff`, exact changed-file scope и validator output.
+- [ ] Проверить новый binary, JSON/JSONL, UTF-8, references и LFS coverage.
+- [ ] При неожиданном diff — STOP; deploy tool не исправляет scope через reset/clean.
+
+---
+
+## 6. F–J — Separate human-controlled tasks
+
+### F. Separate inventory step
+
+- [ ] Если Inventory требуется, отдельная approved задача создаёт backup и regenerates it.
+- [ ] Inventory не является частью deploy-tool transaction.
+
+### G. Separate staging and commit verification
+
+- [ ] Human/controlled task stages exact files, verifies LFS pointer and cached diff, then commits.
+- [ ] Deploy tool не выполняет `git add`, commit, amend, reset или clean.
+
+### H. Separate push verification
+
+- [ ] Отдельный read-only audit проверяет commit и выполняет только normal push после human approval.
+- [ ] Deploy tool никогда не push/force-push.
+
+### I. Separate Voyage closeout
+
+- [ ] Human-authored task обновляет Voyage state после доказанного commit/push.
+- [ ] Decisions остаются human-authored; deploy tool не меняет `.voyage/**`.
+
+### J. Separate SQLite synchronization
+
+- [ ] SQLite sync/export выполняется только отдельной approved задачей после publication.
+- [ ] Deploy tool не читает и не пишет SQLite.
 
 ---
 
@@ -137,8 +126,8 @@
 | `AI_CHARACTERS/10_notes/` created | D-010 | `10_notes/` is per-character ONLY |
 | Group-level naming | D-010 | Use `[CHAR]_TYPE.ext`, not `GROUP_*` |
 | No CHARACTER_REGISTRY update | D-010 | Always update registry on status change |
-| No DECISIONS entry | D-010 | Every deploy needs D-XXX |
-| No INVENTORY update | D-010 | Inventory must reflect actual state |
+| No required human-authored DECISIONS entry | D-010 | Architectural decisions are recorded separately; deploy tool never writes them |
+| No required Inventory update | D-010 | Refresh Inventory in a separate controlled step; deploy tool never writes it |
 | Overwrite without backup | — | Always backup existing files |
 
 ---
