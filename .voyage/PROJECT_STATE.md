@@ -4,7 +4,7 @@
 
 **Status:** ACTIVE / CHARACTER CANON REPOSITORY
 
-**Last verified:** 2026-07-12
+**Last verified:** 2026-07-13
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
@@ -31,7 +31,8 @@
 * OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) approved как следующий coverage candidate, но deferred до готовности validator MVP и deploy-tool MVP.
 * MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
-* Validator MVP implemented and passing its own tests; awaiting independent read-only verification before deploy-tool MVP preflight.
+* Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 46 records with 0 errors.
+* Deploy-tool MVP is not implemented; its strict read-only implementation preflight is now P0.
 
 ---
 
@@ -47,4 +48,4 @@
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-PIPELINE-VALIDATOR-MVP-VERIFY-2026-07-12`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PREFLIGHT-2026-07-13`.

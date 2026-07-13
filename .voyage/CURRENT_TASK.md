@@ -349,23 +349,145 @@ validator bug. Character data was intentionally left untouched by this commit; b
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-VALIDATOR-MVP-THREE-COMMIT-PUSH-VERIFY-2026-07-12`
 
-**Status:** `READY_FOR_READONLY_VERIFY`
+**Final status:** `COMPLETED_PUBLISHED`
+
+**Priority:** `P0`
+
+### Published result
+
+- Push succeeded.
+- HEAD equals origin/main at `78da93a6c77c4b36e88d49f032b271cb12ad1c83`.
+- Validator MVP commit `5589fcb` is published.
+- Discovery/check-catalog correction commit `0498407` is published.
+- OLGA Test09 human-approval metadata backfill commit `78da93a` is published.
+- Validator tests: 32/32 pass.
+- Compatibility mode scans 4 registries and 46 records.
+- Compatibility mode exits 0 with zero errors.
+- Strict mode remains diagnostic for known legacy migration gaps.
+- Validator remains read-only; its only optional write is an explicit JSON report.
+- OLGA Test10 remains deferred.
+- SQLite lag remains unresolved and unsynchronized.
+- Deploy tool remains unimplemented.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PREFLIGHT-2026-07-13`
+
+**Status:** `READY_FOR_READONLY_PREFLIGHT`
 
 **Priority:** `P0`
 
 ### Goal
 
-Verify and push the three-commit chain:
+Perform a strict read-only implementation preflight for
+`tools/deploy_visual_canon_result.py`: design a narrow, safe, validator-backed deployment operation
+for one human-approved visual-canon result.
 
-1. `5589fcb` — validator MVP
-2. `0498407` — discovery/check-catalog correction
-3. metadata-backfill commit — OLGA Test09 human approval
+### Required design scope
 
-### Next action after verify
+The preflight must determine:
 
-Push all three commits to `origin/main`, then proceed to the deploy-tool MVP preflight or the OLGA
-Test10 pilot, depending on human control-room decision.
+1. Exact CLI and input contract.
+2. Dry-run versus apply behavior.
+3. Human approval requirements.
+4. Exact files the tool may update.
+5. Prompt-record update behavior.
+6. Prompt Index linkage.
+7. Working Prompt Volume linkage.
+8. Test Results linkage.
+9. Reference Preset linkage.
+10. Conditional Canon Index linkage.
+11. Voyage task/status transitions.
+12. Inventory behavior.
+13. Git LFS checks.
+14. Validator invocation before and after apply.
+15. Atomicity and rollback behavior.
+16. Backups and temporary-file handling.
+17. Concurrent-agent and stale-file detection.
+18. SQLite synchronization boundary.
+19. Git staging boundary.
+20. Whether commit creation remains human-controlled.
+21. Whether push always remains outside the tool.
+22. Test and fixture strategy.
+23. OLGA Test10 pilot contract.
+24. Legacy compatibility boundary.
+
+### Mandatory design principles
+
+- Git repository content remains authoritative.
+- The tool must never push or silently select an image.
+- Human selection must already exist before apply.
+- The tool must not invent prompt IDs, output paths, verdicts, timestamps, or approval.
+- Default behavior is dry-run; apply requires an explicit flag.
+- Validator must run before and after changes; failed validation prevents staging.
+- The MVP must not write SQLite unless separately approved.
+- The tool must not modify local-only/private outputs or automatically rename historical records.
+- The tool must detect files changed externally since read.
+- Only one write-capable agent may operate at a time.
+- Commit creation remains human-controlled; push always remains outside the tool.
+- OLGA Test10 remains deferred until deploy-tool implementation and verification succeed.
+
+### Read-only preflight constraints
+
+- Do not implement the deploy tool.
+- Do not modify schemas, policy, validator, tests, fixtures, or character records.
+- Do not create manifests or the OLGA Test10 folder.
+- Do not write SQLite or regenerate inventory.
+- Do not commit or push.
+
+### Expected report
+
+`=== NCC VISUAL CANON DEPLOY TOOL MVP PREFLIGHT RESULT ===`
+
+Required report sections:
+
+1. Git state.
+2. Active-task verification.
+3. Published validator verification.
+4. Existing deploy workflow.
+5. Existing tools that can be reused.
+6. Exact deployment inputs.
+7. Proposed CLI.
+8. Default dry-run behavior.
+9. Apply-mode behavior.
+10. Human approval gates.
+11. Allowed mutation scope.
+12. Forbidden mutation scope.
+13. Prompt-record update rules.
+14. Prompt-source linkage.
+15. Test Results update rules.
+16. Preset update rules.
+17. Canon Index conditional rules.
+18. Voyage transition rules.
+19. Inventory strategy.
+20. Git LFS strategy.
+21. Validator integration.
+22. Atomic-write strategy.
+23. Rollback strategy.
+24. Concurrent-edit detection.
+25. SQLite boundary.
+26. Git staging boundary.
+27. Commit boundary.
+28. Push boundary.
+29. JSON input schema or argument model.
+30. Test strategy.
+31. Fixture strategy.
+32. Legacy compatibility.
+33. OLGA Test10 pilot plan.
+34. Exact implementation files.
+35. Files explicitly forbidden.
+36. Acceptance criteria.
+37. Main risks.
+38. Stop conditions.
+39. Repo files modified: NONE.
+40. Git status after.
+41. Handoff path.
+42. Clipboard result.
+43. Final recommendation: `READY_FOR_IMPLEMENTATION`, `NEEDS_POLICY_CORRECTION`, or
+    `STOP_ARCHITECTURE_CONFLICT`.
