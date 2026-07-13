@@ -294,9 +294,64 @@ validator bug. Character data was intentionally left untouched by this commit; b
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-VALIDATOR-MVP-REVERIFY-2026-07-12`
+
+**Final status:** `COMPLETED_VALIDATOR_SAFE_METADATA_GAP_CONFIRMED`
+
+### Re-verification result
+
+- Validator implementation chain (`5589fcb` → `0498407`) confirmed safe: single discovery
+  implementation, no monkey-patching, discovery pattern
+  `AI_CHARACTERS/**/06_prompts/*_PROMPT_RUN_LOG.jsonl`, deterministic sort, real `--character` scoping
+  (including joint namespaces), unknown/ambiguous character exits `2`, no repository writes except the
+  opt-in JSON report.
+- Real registry discovery and character scoping independently verified against the real repo: 4
+  registries / 46 records; `--character OLGA` → 1/16; `--character KIRA` → 1/6, 0 errors;
+  `--character DOES_NOT_EXIST` → exit 2.
+- 32/32 tests passed.
+- Compatibility mode had exactly one pre-existing error: OLGA's `OLGA_TEST09_FORMAL_ELEGANT_V4` record
+  missing `human_approval` (`VC-019`). Evidence review (`.voyage/DECISIONS.md` D-015, `OLGA_TEST_RESULTS.md`,
+  `OLGA_CANON_INDEX.md`, deploy commit `1f887dc`, closeout commit `da1a8ce`) showed clear, unambiguous
+  human selection and publication — a metadata-completeness gap, not a real approval gap.
+- Metadata verdict: `SAFE_FOR_NARROW_METADATA_BACKFILL`.
+- Nothing was pushed during re-verification.
+
+---
+
+## Completed task
+
+**Task ID:** `NCC-OLGA-TEST09-HUMAN-APPROVAL-METADATA-BACKFILL-2026-07-12`
+
+**Final status:** `COMPLETED_LOCAL_AWAITING_PUSH_VERIFY`
+
+### Result
+
+- Added only `"human_approval": true` to the `OLGA_TEST09_FORMAL_ELEGANT_V4` record in
+  `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl` (line 16 of 16). No `approved_at` was
+  invented; `role`, `verdict`, `selected`, `deployed`, `output_path`, `reference_paths`, and all other
+  15 records were left untouched (confirmed via a single-line `git diff`).
+- Compatibility mode against the real repo now exits `0` with 0 errors (153 warnings), same 4
+  registries / 46 records as before. `--character OLGA` exits `0` with 0 errors. Strict mode's error
+  count dropped from 47 to 46 (the one fixed finding), no crash.
+- `tests/visual_canon/test_validator_cli.py`'s three assertions that had been set to expect exit `1`
+  specifically because of this known gap were reverted to their normal exit-`0` expectations in the same
+  commit (scope was widened by explicit user decision after the backfill made those assertions stale) —
+  32/32 tests pass.
+
+### Constraints respected
+
+- No `approved_at` invented.
+- No other OLGA record or character artifact changed.
+- No amend of `5589fcb` or `0498407`; no push.
+- No `.voyage/DECISIONS.md` or `.voyage/PROJECT_STATE.md` changes.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-VALIDATOR-MVP-THREE-COMMIT-PUSH-VERIFY-2026-07-12`
 
 **Status:** `READY_FOR_READONLY_VERIFY`
 
@@ -304,21 +359,13 @@ validator bug. Character data was intentionally left untouched by this commit; b
 
 ### Goal
 
-Verify the two-commit validator implementation chain (`5589fcb` → discovery-correction commit): real
-registry discovery, `--character` scoping, the stabilized check-ID catalog, tests, and JSON-report exit
-behavior — before push.
+Verify and push the three-commit chain:
 
-### Scope
-
-- Run validator on the real repo in both `compatibility` and `strict` modes; confirm nonzero
-  registries/records scanned.
-- Confirm `--character OLGA` / `--character KIRA` each scan exactly one registry with nonzero records,
-  and an unknown character exits `2`.
-- Confirm the `VC-001`–`VC-040` catalog and the known OLGA `VC-019` gap noted above.
-- Confirm tests pass and coverage is sufficient.
-- Do not modify repo files during verification.
+1. `5589fcb` — validator MVP
+2. `0498407` — discovery/check-catalog correction
+3. metadata-backfill commit — OLGA Test09 human approval
 
 ### Next action after verify
 
-Push both local commits to `origin/main`, then proceed to the deploy-tool MVP preflight or the OLGA
+Push all three commits to `origin/main`, then proceed to the deploy-tool MVP preflight or the OLGA
 Test10 pilot, depending on human control-room decision.
