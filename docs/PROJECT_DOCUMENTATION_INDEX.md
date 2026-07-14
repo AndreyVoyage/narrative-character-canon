@@ -92,6 +92,7 @@ C:\DEV\Narrative\narrative-character-canon\tools\
 ```text
 tools\build_scene_reference_pack.py           — сборщик reference pack / SFW prompt
 tools\validate_visual_canon_pipeline.py       — read-only валидатор visual-canon pipeline (MVP)
+tools\deploy_visual_canon_result.py           — dry-run-first deploy tool for one existing human-approved result (MVP)
 tools\generate_inventory.py                   — регенерация INVENTORY.md
 tools\voyage_memory_init.py                   — init SQLite memory
 tools\voyage_memory_status.py                 — статус SQLite memory
@@ -130,6 +131,7 @@ C:\DEV\Narrative\narrative-character-canon\configs\visual_canon\
 configs\visual_canon\pipeline_policy.json
 configs\visual_canon\prompt_record.schema.json
 configs\visual_canon\character_manifest.schema.json
+configs\visual_canon\deployment_request.schema.json
 ```
 
 Назначение:
@@ -137,6 +139,10 @@ configs\visual_canon\character_manifest.schema.json
 * `pipeline_policy.json` — машиночитаемая политика: ID, вердикты, роли, storage/content tiers, human gates, concurrency.
 * `prompt_record.schema.json` — JSON Schema для JSONL-реестра попыток (одна запись на `prompt_id`).
 * `character_manifest.schema.json` — JSON Schema для durable per-character pipeline manifest.
+* `deployment_request.schema.json` — declarative existing-record-only deploy request contract.
+
+Deploy-tool tests are under `tests/visual_canon/test_deploy_visual_canon_*.py` and use temporary Git
+repositories; they do not deploy real character data.
 
 Источник: `D-017` — adoption of universal authority hierarchy and schemas.
 

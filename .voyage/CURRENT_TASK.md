@@ -442,7 +442,7 @@ The preflight must determine:
 
 **Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-AUTHORITY-CORRECTION-2026-07-14`
 
-**Final status:** `COMPLETED_LOCAL_AWAITING_VERIFY`
+**Final status:** `COMPLETED_PUBLISHED_POST_PUSH_VERIFIED`
 
 **Priority:** `P0`
 
@@ -459,11 +459,11 @@ The preflight must determine:
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-IMPLEMENTATION-2026-07-14`
 
-**Status:** `READY_FOR_IMPLEMENTATION`
+**Final status:** `COMPLETED_LOCAL_AWAITING_READONLY_VERIFY`
 
 **Priority:** `P0`
 
@@ -486,6 +486,34 @@ Implement the deploy-tool MVP under corrected authority:
 
 `=== NCC VISUAL CANON DEPLOY TOOL MVP IMPLEMENTATION RESULT ===`
 
-### Current-task boundary
+### Implementation result
 
-This implementation task is open but was not executed during the authority-correction task.
+- `tools/deploy_visual_canon_result.py` and the declarative deployment-request schema were created.
+- Default mode is dry-run; apply requires explicit `--apply`.
+- MVP updates one existing registered and human-approved attempt only.
+- Prompt source and Prompt Index remain validation-only.
+- Transaction data is external; stale-file checks and reverse-order rollback are implemented.
+- 33 new deploy tests use temporary Git repositories; total visual-canon suite: 65 tests, all pass.
+- Real compatibility validator: 4 registries, 46 records, 0 errors.
+- No production apply, character change, Test10, Inventory or SQLite operation occurred.
+- Local implementation commit awaits independent read-only verification and was not pushed.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-VERIFY-2026-07-14`
+
+**Status:** `READY_FOR_READONLY_VERIFY`
+
+**Priority:** `P0`
+
+### Goal
+
+Independently verify implementation scope, D-018 compliance, request schema, dry-run safety, apply
+transaction, rollback, concurrency detection, tests, documentation and the local implementation
+commit before push.
+
+### Expected report
+
+`=== NCC VISUAL CANON DEPLOY TOOL MVP VERIFY RESULT ===`

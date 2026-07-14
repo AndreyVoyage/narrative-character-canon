@@ -51,6 +51,7 @@
 
 ## 2. B — Deploy-tool dry-run
 
+- [ ] Run: `py -3 tools\deploy_visual_canon_result.py --request <external-request.json>`.
 - [ ] Запустить tool без `--apply`; default mode обязан быть read-only.
 - [ ] Проверить existing JSONL target record, prompt/index linkage, references и approval evidence.
 - [ ] Проверить отсутствие destination collision и Git LFS attribute.
@@ -71,6 +72,7 @@
 
 ## 4. D — Deploy-tool apply
 
+- [ ] After human approval run: `py -3 tools\deploy_visual_canon_result.py --request <external-request.json> --apply`.
 - [ ] Tool повторяет все dry-run checks и rechecks HEAD/status/hashes непосредственно перед write.
 - [ ] Source image копируется; source никогда не перемещается и не удаляется.
 - [ ] Tool обновляет ровно одну existing JSONL record, Test Results, Presets и, только для
@@ -84,6 +86,7 @@
 
 ## 5. E — Human post-apply review
 
+- [ ] Run `git status --short` and `git diff --check`; inspect `git diff` before any separate Inventory or staging task.
 - [ ] Проверить `git status --short`, `git diff`, exact changed-file scope и validator output.
 - [ ] Проверить новый binary, JSON/JSONL, UTF-8, references и LFS coverage.
 - [ ] При неожиданном diff — STOP; deploy tool не исправляет scope через reset/clean.

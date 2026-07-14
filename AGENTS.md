@@ -139,6 +139,19 @@ Tests are in `tests/visual_canon/` and use the standard-library `unittest` runne
 py -3 -m unittest discover -s tests/visual_canon -v
 ```
 
+### Run the visual-canon deploy tool
+
+Always run the deploy tool in its default dry-run mode first. Use explicit `--apply` only after
+human approval of the request and deterministic plan:
+
+```powershell
+py -3 tools\deploy_visual_canon_result.py --request <external-request.json>
+py -3 tools\deploy_visual_canon_result.py --request <external-request.json> --apply
+```
+
+The tool leaves validated changes unstaged. It never modifies Voyage, Decisions, Inventory or
+SQLite, and it never stages, commits or pushes.
+
 ### Inventory regeneration
 
 `INVENTORY.md` is not regenerated automatically. When asked to update it, a script or agent should walk the `AI_CHARACTERS/` tree and rewrite `INVENTORY.md` with the current folder/file tree, file counts, extensions summary, and file list. Backup the old file first using the naming pattern `INVENTORY.md.backup_YYYYMMDD_HHMMSS`.

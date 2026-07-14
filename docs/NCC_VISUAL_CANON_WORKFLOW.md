@@ -350,9 +350,15 @@ Validator must pass before commit. Stop if the validator reports errors.
 
 ## 25. Deployment-tool responsibility
 
-The deployment tool (`tools/deploy_visual_canon_result.py`, Phase 3) is read-only by default. Apply
+The deployment tool (`tools/deploy_visual_canon_result.py`, MVP 1.0) is implemented. Its declarative
+request contract is `configs/visual_canon/deployment_request.schema.json`. It is read-only by default. Apply
 requires an explicit `--apply` flag and handles exactly one already registered, already generated,
 already human-selected and human-approved prompt attempt.
+
+```powershell
+py -3 tools\deploy_visual_canon_result.py --request <external-request.json>
+py -3 tools\deploy_visual_canon_result.py --request <external-request.json> --apply
+```
 
 The MVP will:
 
@@ -375,6 +381,10 @@ not access SQLite, stage, commit, push, force, clean or reset Git state.
 
 Inventory refresh, diff review, staging, commit, push verification, Voyage closeout and SQLite
 synchronization are separate human-controlled tasks.
+
+Apply uses an external transaction directory, deterministic replacement order, SHA-256 stale-file
+checks and reverse-order rollback. OLGA Test10 remains deferred until this MVP is independently
+verified and published and the pilot is separately authorized.
 
 ---
 
