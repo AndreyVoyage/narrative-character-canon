@@ -1,13 +1,124 @@
-import copy, unittest
-from deploy_test_support import Repo, load_tool
+import unittest
+
+from deploy_test_support import Repo, load_tool, run, sha
+
+
 class Concurrency(unittest.TestCase):
- def setUp(self): self.m=load_tool(); self.r=Repo()
- def tearDown(self): self.r.close()
- def test_dirty_tracked(self): self.r.index.write_text("dirty"); self.assertRaises(self.m.DeployError,self.m.git_check,self.r.root,self.r.request["expected_git_head"])
- def test_stale_target_hash(self): self.r.results.write_text("changed"); self.assertRaises(self.m.DeployError,self.m.expected_hashes,self.r.root,self.r.request)
- def test_source_hash_change(self): self.r.source.write_bytes(b"\x89PNG\r\n\x1a\nchanged"); self.assertRaises(self.m.DeployError,self.m.source_file,self.r.request)
- def test_unsafe_traversal(self): self.assertRaises(self.m.DeployError,self.m.relative,"../escape")
- def test_local_storage_forbidden(self): self.assertRaises(self.m.DeployError,self.m.relative,"LOCAL_STORAGE/private.png")
- def test_unsupported_record_field(self):
-  q=copy.deepcopy(self.r.request); q["updates"]["prompt_record"]["set_fields"]["prompt_id"]="bad"
-  self.assertRaises(self.m.DeployError,self.m.validate_request,q)
+    def setUp(self):
+        self.module = load_tool()
+        self.repo = Repo()
+
+    def tearDown(self):
+        self.repo.close()
+
+    def prepared(self):
+        contract = self.module.resolve_contract(self.repo.root, self.repo.request)
+        hashes = self.module.exact_hashes(self.repo.root, self.repo.request, contract)
+        changes, _ = self.module.prepare(self.repo.root, self.repo.request, self.repo.source, contract)
+        return contract, hashes, changes
+
+    def transaction_with_hook(self, hook):
+        contract, hashes, changes = self.prepared()
+        return self.module.transaction(
+            self.repo.root, self.repo.request, changes, hashes, self.repo.source, contract,
+            post_validator=lambda *_: None, event_hook=hook,
+        )
+
+    def test_head_change_before_transaction(self):
+        def hook(event, _rel):
+            if event == "before_second_preconditions":
+                self.repo.index.write_text("changed", encoding="utf-8")
+                run(["git", "add", self.repo.rel(self.repo.index)], self.repo.root)
+                run(["git", "commit", "-m", "concurrent"], self.repo.root)
+        with self.assertRaises(self.module.DeployError) as caught:
+            self.transaction_with_hook(hook)
+        self.assertEqual(caught.exception.code, "DEPLOY-GIT-007")
+        self.assertFalse((self.repo.root / self.repo.out).exists())
+
+    def test_tracked_change_before_transaction(self):
+        def hook(event, _rel):
+            if event == "before_second_preconditions":
+                self.repo.results.write_text("changed", encoding="utf-8")
+        with self.assertRaises(self.module.DeployError) as caught:
+            self.transaction_with_hook(hook)
+        self.assertEqual(caught.exception.code, "DEPLOY-GIT-010")
+
+    def test_staged_change_before_transaction(self):
+        def hook(event, _rel):
+            if event == "before_second_preconditions":
+                self.repo.results.write_text("changed", encoding="utf-8")
+                run(["git", "add", self.repo.rel(self.repo.results)], self.repo.root)
+        with self.assertRaises(self.module.DeployError) as caught:
+            self.transaction_with_hook(hook)
+        self.assertEqual(caught.exception.code, "DEPLOY-GIT-009")
+
+    def test_registry_hash_change_before_mutation(self):
+        def hook(event, _rel):
+            if event == "before_first_mutation":
+                self.repo.registry.write_text("changed", encoding="utf-8")
+        with self.assertRaises(self.module.DeployError):
+            self.transaction_with_hook(hook)
+        self.assertFalse((self.repo.root / self.repo.out).exists())
+
+    def test_prompt_index_hash_change_before_mutation(self):
+        def hook(event, _rel):
+            if event == "before_first_mutation":
+                self.repo.index.write_text("changed", encoding="utf-8")
+        with self.assertRaises(self.module.DeployError):
+            self.transaction_with_hook(hook)
+        self.assertFalse((self.repo.root / self.repo.out).exists())
+
+    def test_prompt_source_hash_change_before_mutation(self):
+        def hook(event, _rel):
+            if event == "before_first_mutation":
+                self.repo.prompt.write_text("changed", encoding="utf-8")
+        with self.assertRaises(self.module.DeployError):
+            self.transaction_with_hook(hook)
+        self.assertFalse((self.repo.root / self.repo.out).exists())
+
+    def test_source_hash_change_before_mutation(self):
+        def hook(event, _rel):
+            if event == "before_first_mutation":
+                self.repo.source.write_bytes(b"\x89PNG\r\n\x1a\nchanged")
+        with self.assertRaises(self.module.DeployError) as caught:
+            self.transaction_with_hook(hook)
+        self.assertEqual(caught.exception.code, "DEPLOY-GIT-012")
+
+    def test_destination_appears_before_mutation(self):
+        def hook(event, _rel):
+            if event == "before_first_mutation":
+                path = self.repo.root / self.repo.out
+                path.parent.mkdir(parents=True)
+                path.write_bytes(b"other")
+        with self.assertRaises(self.module.DeployError) as caught:
+            self.transaction_with_hook(hook)
+        self.assertEqual(caught.exception.code, "DEPLOY-GIT-015")
+
+    def test_results_change_immediately_before_replacement(self):
+        result_rel = self.repo.rel(self.repo.results)
+        external = b"external late edit\n"
+
+        def hook(event, rel):
+            if event == "before_replace" and rel == result_rel:
+                self.repo.results.write_bytes(external)
+        with self.assertRaises(self.module.DeployError) as caught:
+            self.transaction_with_hook(hook)
+        self.assertEqual(caught.exception.status, 4)
+        self.assertEqual(self.repo.results.read_bytes(), external)
+        self.assertFalse((self.repo.root / self.repo.out).exists())
+
+    def test_presets_change_immediately_before_replacement(self):
+        presets_rel = self.repo.rel(self.repo.presets)
+        external = b'{"external": true}\n'
+
+        def hook(event, rel):
+            if event == "before_replace" and rel == presets_rel:
+                self.repo.presets.write_bytes(external)
+        with self.assertRaises(self.module.DeployError):
+            self.transaction_with_hook(hook)
+        self.assertEqual(self.repo.presets.read_bytes(), external)
+        self.assertFalse((self.repo.root / self.repo.out).exists())
+
+
+if __name__ == "__main__":
+    unittest.main()
