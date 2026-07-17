@@ -253,3 +253,167 @@ Avoid:
 - logos
 - collage layout
 ```
+
+---
+
+## OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1
+
+### Metadata
+
+- Character ID: `OLGA`
+- Scene ID: `neutral_height_scale_check`
+- Test number: `10`
+- Version: `1`
+- Generation state: `NOT STARTED`
+- Candidate status: `READY_FOR_GENERATION`
+- Deployment state: `NOT REGISTERED / NOT DEPLOYED`
+- Prompt-run record: does not exist yet
+- Source image: does not exist yet
+- Planned future destination only:
+  `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/OLGA_test10_neutral_height_scale_check_v1_APPROVED.png`
+
+The planned future destination is metadata only. It must not be created or treated as an existing
+result before human generation, selection, approval, and controlled registration.
+
+### Purpose
+
+Verify OLGA’s full-body height impression, mature body proportions, face consistency, and realistic
+scale without low-angle or perspective distortion.
+
+### Verified reference pack
+
+#### FACE_CANON — priority 1
+
+- Path: `AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png`
+- SHA-256: `460ae9b9412c6ce06306cff222f90b33cd1adcd0a37c2ff298e54d7c7165f785`
+- Format and dimensions: PNG, 1448×1086
+
+#### BODY_REFERENCE_A — priority 2
+
+- Path: `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png`
+- SHA-256: `669c87cd5f752c2cbef7e21abd030e909a30a4d65e56103058f77b29d2f675ac`
+- Format and dimensions: PNG, 1254×1254
+
+#### BODY_REFERENCE_B — priority 3
+
+- Path: `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png`
+- SHA-256: `916fbf57a628b1d183cd9a595f7a75e92d17adf0ffc6fc8b7f01468ed077f31c`
+- Format and dimensions: PNG, 1254×1254
+
+#### Optional Test05 support
+
+Not selected for this generation preparation. Although Test05 is approved, omitting it avoids
+introducing office-style bias into the neutral height/scale check.
+
+### Canonical generation prompt
+
+```text
+Reference-first instruction:
+
+Use these exact approved OLGA references in this priority order:
+
+1. Face identity:
+   AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png
+2. Full-body height, scale, and front/side/back proportions:
+   AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png
+3. Natural posture and mature athletic-curvy body balance:
+   AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png
+
+Do not substitute other characters or unapproved references. Preserve the same adult OLGA identity
+and the same grounded face/body proportions across the entire image.
+
+Create a photorealistic vertical full-body portrait of OLGA. She is the same mature adult woman from
+the approved references, with a very tall appearance of approximately 187 cm, an athletic-curvy,
+strong but feminine mature build, and realistic adult proportions.
+
+Preserve OLGA’s approved facial identity precisely: defined cheekbones, a strong feminine jawline,
+dark-brown eyes, a small beauty mark above the left side of the upper lip, long straight dark-brown
+hair, and natural mature facial texture. Do not de-age her or make her look teenage or youthful.
+
+Preserve a full mature bust balanced naturally with her wide hips and athletic-curvy silhouette,
+realistic and not exaggerated. Keep the torso, shoulders, waist, hips, and legs proportionate and
+anatomically believable. Her height must read through realistic scale cues, not through stretched
+limbs or optical distortion.
+
+Clothing:
+
+- neutral tailored dark blouse;
+- tailored straight dark trousers;
+- flat shoes or minimal low shoes, never high heels;
+- modest, non-sexualized, unbranded styling.
+
+Pose and anatomy:
+
+- relaxed neutral standing pose;
+- upright but natural posture;
+- both feet fully visible and resting naturally on the floor;
+- arms and hands clearly visible;
+- hands relaxed and anatomically correct;
+- realistic fingers, joints, shoulders, torso, hips, knees, ankles, and feet;
+- no glamour pose and no exaggerated fashion stance.
+
+Environment:
+
+Use a neutral, spacious, realistic setting with stable vertical and horizontal scale cues. Suitable
+settings include a refined minimalist studio, a quiet modern gallery, or a neutral architectural
+interior. Door frames, wall panels, columns, floor seams, or similarly ordinary architectural
+elements may provide believable scale. The setting must remain understated and must not overpower
+the character. No visible text, branding, logos, crowds, or distracting décor.
+
+Camera and perspective:
+
+- vertical full-body composition;
+- camera approximately at OLGA’s upper-torso or chest height;
+- natural portrait-lens perspective;
+- level camera with no extreme tilt;
+- no low-angle view;
+- no wide-angle distortion;
+- no exaggerated leg length or artificial gigantism;
+- realistic head-to-body, torso-to-leg, and shoulder-to-hip proportions.
+
+Framing:
+
+- OLGA’s head and both shoes fully inside the frame;
+- enough clear space above her head and beneath her shoes;
+- both feet uncropped;
+- full arms and hands visible;
+- realistic adult scale and a clean readable silhouette.
+
+Lighting and finish:
+
+Use soft natural or controlled studio-quality light with realistic skin texture, believable fabric,
+clean anatomical detail, neutral colour balance, and high-end photographic realism. Keep OLGA’s face,
+beauty mark, hands, clothing silhouette, and shoes clearly readable.
+
+Avoid / negative requirements:
+
+- short or average-height appearance;
+- petite body;
+- teenage, youthful, or de-aged appearance;
+- distorted perspective;
+- low-angle gigantism;
+- wide-angle distortion;
+- oversized or undersized head;
+- compressed or shortened torso;
+- excessively long or stretched legs;
+- exaggerated bust or artificial chest proportions;
+- narrow hips inconsistent with OLGA’s canon;
+- doll-like, plastic, or airbrushed skin;
+- wrong hair colour or shortened hair;
+- missing beauty mark;
+- cropped feet or missing shoes;
+- high heels;
+- glamour, pin-up, or sexualized posing;
+- transparent, lingerie-like, or fetish styling;
+- malformed hands, fused fingers, or extra fingers;
+- distorted limbs, joints, feet, or anatomy;
+- text, captions, watermark, branding, or logos;
+- illustration, cartoon, CGI, or stylized rendering.
+```
+
+### Generation handling
+
+- Generation has not started.
+- Generated candidates must remain outside the planned final canon destination until human review.
+- Do not create a JSONL attempt record until a real generated attempt exists.
+- Do not register, select, approve, or deploy an image automatically.

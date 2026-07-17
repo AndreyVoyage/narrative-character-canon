@@ -20,7 +20,7 @@ This folder stores prompt templates, working scene prompts, reference maps, and 
 | Volume | File | Status | Contents |
 |---|---|---|---|
 | Volume 1 | `OLGA_WORKING_SCENE_PROMPTS.md` | RETAINED | Existing registered OLGA prompt IDs through Test08 |
-| Volume 2 | `OLGA_WORKING_SCENE_PROMPTS_V2.md` | ACTIVE | `OLGA_TEST09_FORMAL_ELEGANT_V4` (`REFINED`), scene `formal_elegant_cultural_foyer`; selected output `AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png` |
+| Volume 2 | `OLGA_WORKING_SCENE_PROMPTS_V2.md` | ACTIVE | Selected Test09 V4 prompt plus the indexed Test10 generation-ready prompt; Test10 generation remains not started |
 
 ## Active Prompt IDs
 
@@ -37,6 +37,7 @@ This folder stores prompt templates, working scene prompts, reference maps, and 
 | OLGA_TEST05_BUSINESS_INTERIOR_V1 | business interior | APPROVED | reconstructed_from_conversation_and_approved_result | `AI_CHARACTERS/OLGA/07_generated/canon_tests/05_business_interior/OLGA_test05_business_interior_v1_APPROVED.png` |
 | OLGA_TEST06_INDOOR_LOUNGE_CONVERSATION_AJ_V1 | indoor lounge conversation with ANDREY_JUNIOR | APPROVED | reconstructed_from_conversation_and_approved_result | `AI_CHARACTERS/OLGA/07_generated/canon_tests/06_indoor_lounge_conversation_with_andrey_junior/OLGA_test06_indoor_lounge_conversation_with_andrey_junior_v1_APPROVED.png` |
 | OLGA_TEST09_FORMAL_ELEGANT_V4 | formal/elegant cultural foyer | APPROVED_AS_TEST / SELECTED | `OLGA_WORKING_SCENE_PROMPTS_V2.md` → `## OLGA_TEST09_FORMAL_ELEGANT_V4` | `AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png` |
+| OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1 | neutral height/scale full-body check | NOT STARTED / READY_FOR_GENERATION | [Test10 H2 heading](OLGA_WORKING_SCENE_PROMPTS_V2.md#olga_test10_neutral_height_scale_check_v1) | No source image; no JSONL record; NOT REGISTERED / NOT DEPLOYED |
 
 ## Test09 Attempt History
 

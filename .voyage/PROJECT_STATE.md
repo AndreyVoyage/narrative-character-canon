@@ -8,7 +8,7 @@
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
-**Published HEAD / origin/main:** `50e56c663b4ee776799eb4a88c5a3f6362486dd3`
+**Deploy-tool publication verification HEAD:** `50e56c663b4ee776799eb4a88c5a3f6362486dd3`
 
 **Deploy tool state:** `PUBLISHED_POST_PUSH_VERIFIED`
 
@@ -34,7 +34,7 @@
 * ANDREY_JUNIOR: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; son-version active; public_filtered only.
 * KIRA: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE_CORE`; face/body/outfit canons и control tests опубликованы.
 * KIRA_ANDREY: `JOINT_CONTROL_TESTS_APPROVED` / `DUO_SCENE_PACKS_APPROVED`.
-* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) approved as the next deployment candidate, but is not deployed; its source image and prompt record still require read-only preflight verification.
+* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) canonical generation prompt and Prompt Index linkage are prepared; human image generation has not started.
 * MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 46 records with 0 errors.
@@ -42,8 +42,11 @@
 * Deploy tool state: `PUBLISHED_POST_PUSH_VERIFIED`; version: `1.0.1`.
 * Technical validation: 112 tests passed at the verified implementation commit; validator baseline is 4 registries / 46 records / 0 errors / 153 legacy warnings.
 * The original authority/Inventory exploit is blocked; rollback and concurrency behavior were independently verified.
-* OLGA Test10 is not deployed. Read-only inspection confirmed that its planned destination folder and file do not exist yet.
-* No Test10 deployment request has been applied, and no production deploy `--apply` occurred.
+* OLGA Test10 generation state: `NOT STARTED`; candidate state: `READY_FOR_GENERATION`; no source image and no prompt-run JSONL record exist yet.
+* Test10 prompt source: `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md`; Prompt Index: `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`.
+* Mandatory OLGA face canon and body references A/B are verified and recorded in the Test10 prompt source; optional Test05 support was omitted to avoid office-style bias.
+* OLGA Test10 is not deployed. Its planned final destination folder and file remain absent.
+* No Test10 deployment request has been created or applied, and no production deploy `--apply` occurred.
 * Inventory and character files were unchanged by publication; SQLite remains unsynchronised; D-018 remains unchanged.
 
 ---
@@ -53,15 +56,15 @@
 * Только один write-capable agent одновременно.
 * Перед записью: clean tree, no staged files, expected HEAD match, target files re-read.
 * Любая генерация изображений требует предварительного `prompt_id`, `reference_paths`, и planned `output_path`.
-* OLGA Test10 не создавать, не копировать и не деплоить до завершения read-only deployment preflight и отдельной человеческой проверки dry-run.
+* Test10 generation candidates must remain outside the final canon destination until human selection; do not create JSONL registration or deploy before a real approved attempt exists.
 * Local-only и private/adult outputs не коммитить; не ссылаться на них из repo-tracked presets/manifests.
 
 ---
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-OLGA-TEST10-IMAGE-GENERATION-2026-07-17`.
 
-**Status:** `READY_FOR_READONLY_PREFLIGHT`
+**Status:** `READY_FOR_HUMAN_GENERATION`
 
 **Priority:** `P0`

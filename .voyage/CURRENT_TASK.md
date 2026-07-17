@@ -607,34 +607,70 @@ Independent read-only re-verification completed 2026-07-17.
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`
 
-**Status:** `READY_FOR_READONLY_PREFLIGHT`
+**Final status:** `COMPLETED_BLOCKED_GENERATION_NOT_STARTED`
+
+**Priority:** `P0`
+
+### Preflight result
+
+- Primary verdict: `BLOCKED_EXISTING_RECORD_REQUIRED`.
+- Exact Test10 prompt-run record count: `0`.
+- No generated Test10 source image was found.
+- Prompt Index and prompt-source linkage did not exist before generation preparation.
+- Planned final destination directory and file were absent.
+- Direct deployment was correctly blocked because generation had not started.
+- The read-only preflight modified no repository file.
+- No deployment request, deploy dry-run, or deploy `--apply` was created or run.
+
+### Generation-preparation transition
+
+- Canonical generation prompt added to
+  `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md`.
+- Prompt Index linkage added to `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`.
+- Mandatory face canon and body references A/B were verified by path, SHA-256, dimensions, format,
+  tracking state, and OLGA namespace.
+- Test05 was intentionally not selected to avoid office-style bias.
+- Generation remains `NOT STARTED`; no source image or JSONL record exists.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-OLGA-TEST10-IMAGE-GENERATION-2026-07-17`
+
+**Status:** `READY_FOR_HUMAN_GENERATION`
 
 **Priority:** `P0`
 
 ### Goal
 
-Verify the approved OLGA Test10 source image, canonical references, existing prompt record, prompt
-linkage, planned destination, and required deployment-request inputs before any dry-run or apply.
+Generate Test10 from the committed canonical prompt and approved OLGA references, then return the
+generated candidates for human selection.
 
-### Expected candidate
+### Canonical generation inputs
 
 - Prompt ID: `OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
-- Scene: `neutral_height_scale_check`
-- Planned folder:
-  `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/`
-- Planned filename: `OLGA_test10_neutral_height_scale_check_v1_APPROVED.png`
+- Prompt source:
+  `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md`
+- Exact heading: `## OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
+- Prompt Index: `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`
+- Face canon:
+  `AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png`
+- Body reference A:
+  `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png`
+- Body reference B:
+  `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png`
 
-### Constraints
+### Generation state
 
-- Read-only preflight only.
-- Do not create the Test10 folder.
-- Do not copy or rename any image.
-- Do not modify JSONL, Test Results, Reference Presets, or Canon Index.
-- Do not run a deploy dry-run yet.
-- Do not run deploy `--apply`.
-- Verify all source paths and hashes first.
+- Generation: `NOT STARTED`.
+- Candidate state: `READY_FOR_GENERATION`.
+- Generated output must remain outside the planned final canon destination until human approval.
+- Do not create a JSONL record before a real generated attempt exists.
+- Do not deploy before human selection, approval, and controlled registration.
+- Do not create the final Test10 destination folder during generation.
 - SQLite remains unsynchronised.
