@@ -43,6 +43,41 @@ All future generation, selection, and deployment of visual-canon outputs must fo
 
 Read `ROADMAP.md` for priorities, definition-of-done criteria, and immediate next steps.
 
+### Character-data source hierarchy, conflicts, and project boundary
+
+This hierarchy governs **character facts used by this repository**; it is separate from the
+repository-document authority order in `docs/NCC_VISUAL_CANON_WORKFLOW.md`:
+
+1. **L1 — NCC repository visual canon.** `narrative-character-canon` is the primary source of truth
+   for visual appearance, identity anchors, proportions, outfits, approved references, and visual
+   prompt constraints.
+2. **L2 — VNE/persona narrative sources.** `voyage-narrative-engine` or persona-style narrative
+   sources are secondary. As fallback sources, they may be used only when the exact fact is absent in NCC.
+   A known NCC/VNE contradiction is handled separately by the domain conflict rule below. The source
+   must be explicitly provided or authorized; do not switch projects or continue foreign-project
+   implementation during an NCC task.
+3. **L3 — approved local photo/reference archives.** Use only approved local archives as tertiary
+   visual support and only when the task boundary explicitly allows access.
+4. **L4 — approved prompts, handoffs, or chat-derived facts.** Use only as reconstructed sources;
+   label them honestly as reconstructed rather than exact primary canon.
+
+If the fact is absent at every allowed level, record `unknown_requires_user_confirmation`; do not
+guess. Resolve conflicts by domain:
+
+- Visual appearance conflict: NCC wins.
+- Biography, narrative-role, or relationship conflict: VNE/persona narrative authority wins.
+- Unresolved or cross-domain contradiction: human confirmation is required; do not silently choose.
+
+**Project boundary:** while working in `narrative-character-canon`, operate only on this project. If
+a report or implementation task from another project appears, treat it as
+cross-project contamination, stop, warn the user, and do not continue that foreign development here.
+
+Internal factual values may be translated into safe visual prompt wording without changing the
+underlying canon. For OLGA, preserve the approved generation-compensation rule: because generation
+tends to reduce chest volume, prompt her bust about one visual size fuller than the intended final
+result. This is prompt-surface compensation, not a canon change; avoid numeric measurements or cup
+sizing.
+
 ## 2. Repository structure
 
 ```text

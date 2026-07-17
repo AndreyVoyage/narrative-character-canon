@@ -950,3 +950,66 @@ verified and published.
 
 Next action: Implement the deploy-tool MVP under the corrected authority, then verify and publish it
 before starting the OLGA Test10 pilot.
+
+---
+
+Date: 2026-07-17
+Decision ID: D-019
+Context: Character work could ambiguously mix NCC visual canon, narrative-engine/persona facts,
+local photo archives, and reconstructed prompt or handoff material. The project also lacked an
+explicit stop rule for foreign-project implementation reports appearing in an NCC session.
+
+Decision: Adopt a domain-aware character-data source hierarchy, fallback, and project boundary.
+
+SOURCE HIERARCHY:
+
+1. L1 — `narrative-character-canon` repository visual canon is primary for visual appearance,
+   identity anchors, proportions, outfits, approved references, and visual prompt constraints.
+2. L2 — `voyage-narrative-engine` or persona-style narrative sources are secondary. As fallback
+   sources, they may be used only when the exact fact is absent in NCC. A known NCC/VNE contradiction
+   is handled separately by the domain conflict rules below. The source must be explicitly provided
+   or authorized for the NCC task.
+3. L3 — approved local photo/reference archives are tertiary visual support and require explicit
+   task-boundary access.
+4. L4 — approved prompts, handoffs, and chat-derived facts are reconstructed sources only and must
+   be labeled honestly as reconstructed.
+
+Fallback: if the exact fact is absent from every allowed level, use
+`unknown_requires_user_confirmation` and require user confirmation instead of guessing.
+
+CONFLICT RESOLUTION:
+
+- Visual appearance conflict: NCC wins.
+- Biography, narrative-role, or relationship conflict: VNE/persona narrative authority wins.
+- Any unresolved or cross-domain contradiction requires human confirmation; no silent choice is
+  permitted.
+
+PROJECT BOUNDARY:
+
+- Work performed in `narrative-character-canon` remains limited to this project.
+- VNE/persona facts may be consumed only as explicitly provided or authorized source input; they do
+  not authorize foreign-repository implementation.
+- If a report or implementation task from another project appears, treat it as
+  cross-project contamination, stop, warn the user, and do not continue that foreign development here.
+
+PROMPT SURFACE:
+
+- Internal factual values may be translated into safe visual prompt wording without changing the
+  underlying canon.
+- For OLGA, preserve the approved compensation rule: because generation tends to reduce chest
+  volume, describe her bust about one visual size fuller than the intended final result. This is a
+  prompt-surface correction, not a body-canon change; do not use numeric measurements or cup sizing.
+
+Affected files:
+- `.voyage/DECISIONS.md`
+- `AGENTS.md`
+- `docs/NCC_VISUAL_CANON_WORKFLOW.md`
+
+Reason: Make fact provenance, domain authority, honest reconstruction, unknown fallback, and project
+boundaries deterministic for future character work.
+
+Result: Future NCC work has one explicit hierarchy for visual and narrative facts, one fallback for
+missing data, and a mandatory stop rule for unresolved conflicts or foreign-project contamination.
+
+Next action: Apply this hierarchy during future character audits, prompt preparation, generation,
+and deployment verification.

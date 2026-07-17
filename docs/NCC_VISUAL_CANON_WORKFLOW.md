@@ -52,6 +52,53 @@ Read these sources from top to bottom. Lower-numbered levels are higher authorit
 
 ---
 
+## 3.1 Character-data source hierarchy and fallback
+
+The repository-document authority hierarchy in section 2 controls NCC governance. The following
+separate hierarchy controls which **character facts** may be used when constructing or validating
+visual canon:
+
+1. **L1 — NCC repository visual canon.** `narrative-character-canon` is authoritative for visual
+   appearance, identity anchors, proportions, outfits, approved images, reference roles, and visual
+   prompt constraints.
+2. **L2 — VNE/persona narrative sources.** `voyage-narrative-engine` or persona-style narrative
+   sources are secondary. As fallback sources, they may be used only when the exact fact is absent in NCC.
+   A known NCC/VNE contradiction is handled separately by the domain conflict rules below. The source
+   must be explicitly provided or authorized for the NCC task.
+3. **L3 — approved local photo/reference archives.** Approved local archives are tertiary visual
+   support. Access them only when the task boundary explicitly allows it, and never promote an
+   unapproved local image to canon by inference.
+4. **L4 — approved prompts, handoffs, and chat-derived facts.** These may be used only as
+   reconstructed sources and must be labeled honestly; they are not exact primary canon evidence.
+
+If the exact fact is absent from every allowed level, use
+`unknown_requires_user_confirmation`. Never invent or silently normalize a missing fact.
+
+### Domain conflict resolution
+
+- Visual appearance conflict: NCC wins.
+- Biography, narrative-role, or relationship conflict: VNE/persona narrative authority wins.
+- Unresolved or cross-domain contradiction: stop and require human confirmation; do not silently
+  choose a convenient value.
+
+### Project boundary and cross-project contamination
+
+When working in `narrative-character-canon`, operate only on this project. A VNE/persona fact may be
+consumed only as explicitly provided or authorized source input; it does not authorize switching
+repositories or implementing another project. If a report or implementation task from another
+project appears in the session, treat it as
+cross-project contamination, stop, warn the user, and do not continue the foreign development here.
+
+### Prompt-surface translation
+
+Internal factual values may be translated into safe visual prompt wording appropriate for production
+without changing the underlying canon or falsifying the source. For OLGA, preserve the approved
+generation-compensation rule: because image generation tends to reduce chest volume, describe her
+bust about one visual size fuller than the intended final result. This is a prompt-surface correction,
+not a change to OLGA's body canon; do not use numeric measurements or cup sizing.
+
+---
+
 ## 4. Universal lifecycle
 
 1. **Coverage audit** — confirm the scene/reference type is genuinely missing and non-duplicative.
