@@ -8,6 +8,12 @@
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
+**Published HEAD / origin/main:** `50e56c663b4ee776799eb4a88c5a3f6362486dd3`
+
+**Deploy tool state:** `PUBLISHED_POST_PUSH_VERIFIED`
+
+**Deploy tool version:** `1.0.1`
+
 **Purpose:** Единый источник правды для визуального канона персонажей Narrative / Voyage.
 
 ---
@@ -28,18 +34,17 @@
 * ANDREY_JUNIOR: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; son-version active; public_filtered only.
 * KIRA: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE_CORE`; face/body/outfit canons и control tests опубликованы.
 * KIRA_ANDREY: `JOINT_CONTROL_TESTS_APPROVED` / `DUO_SCENE_PACKS_APPROVED`.
-* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) approved как следующий coverage candidate, но deferred до готовности validator MVP и deploy-tool MVP.
+* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) approved as the next deployment candidate, but is not deployed; its source image and prompt record still require read-only preflight verification.
 * MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 46 records with 0 errors.
-* Deploy-tool preflight completed with `NEEDS_POLICY_CORRECTION`; the narrow non-publishing authority correction is committed locally.
-* Deploy-tool MVP is implemented locally under D-018 (`d15b43c`).
-* Authority enforcement correction committed locally (`2d808a9`); Inventory exploit blocked.
-* Independent re-verification completed 2026-07-17: SAFE_TO_PUSH.
-* 112 tests pass (0 failures, 0 errors); validator: 4 registries / 46 records / 0 errors / 153 legacy warnings.
-* Deploy tool is NOT published yet; push remains a separate human-authorised task.
-* No production `--apply` occurred; OLGA Test10 remains deferred; SQLite remains unsynchronised; D-018 unchanged.
-* Inventory unchanged; character files unchanged.
+* Deploy-tool MVP (`d15b43c`) and authority-enforcement correction (`2d808a9`) are published; post-push convergence was verified at `50e56c663b4ee776799eb4a88c5a3f6362486dd3`.
+* Deploy tool state: `PUBLISHED_POST_PUSH_VERIFIED`; version: `1.0.1`.
+* Technical validation: 112 tests passed at the verified implementation commit; validator baseline is 4 registries / 46 records / 0 errors / 153 legacy warnings.
+* The original authority/Inventory exploit is blocked; rollback and concurrency behavior were independently verified.
+* OLGA Test10 is not deployed. Read-only inspection confirmed that its planned destination folder and file do not exist yet.
+* No Test10 deployment request has been applied, and no production deploy `--apply` occurred.
+* Inventory and character files were unchanged by publication; SQLite remains unsynchronised; D-018 remains unchanged.
 
 ---
 
@@ -48,11 +53,15 @@
 * Только один write-capable agent одновременно.
 * Перед записью: clean tree, no staged files, expected HEAD match, target files re-read.
 * Любая генерация изображений требует предварительного `prompt_id`, `reference_paths`, и planned `output_path`.
-* OLGA Test10 не создавать, не генерировать и не деплоить до завершения validator MVP и deploy-tool MVP.
+* OLGA Test10 не создавать, не копировать и не деплоить до завершения read-only deployment preflight и отдельной человеческой проверки dry-run.
 * Local-only и private/adult outputs не коммитить; не ссылаться на них из repo-tracked presets/manifests.
 
 ---
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PUBLISH-2026-07-17`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`.
+
+**Status:** `READY_FOR_READONLY_PREFLIGHT`
+
+**Priority:** `P0`

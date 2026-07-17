@@ -581,30 +581,60 @@ Independent read-only re-verification completed 2026-07-17.
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PUBLISH-2026-07-17`
 
-**Status:** `READY_FOR_CONTROLLED_PUSH`
+**Final status:** `COMPLETED_PUBLISHED_POST_PUSH_VERIFIED`
+
+**Priority:** `P0`
+
+### Publication result
+
+- Normal fast-forward push completed on 2026-07-17.
+- Remote `main` moved from `618de33067d15d81fe15609a44c7dcf2213cc016` to
+  `50e56c663b4ee776799eb4a88c5a3f6362486dd3`.
+- `HEAD`, local `origin/main`, and remote `main` converged at `50e56c6`.
+- Ahead/behind after push: `0/0`.
+- Deploy-tool MVP commit `d15b43c`, authority-enforcement correction `2d808a9`, and Voyage closeout
+  `50e56c6` are all ancestors of `origin/main`.
+- Validator baseline: 4 registries / 46 records / 0 errors / 153 legacy warnings.
+- Tracked worktree remained clean; nothing was staged by the publication workflow.
+- Character files and `INVENTORY.md` remained unchanged.
+- SQLite remained unchanged and unsynchronised.
+- OLGA Test10 was not created or deployed.
+- No production deploy `--apply` was performed.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`
+
+**Status:** `READY_FOR_READONLY_PREFLIGHT`
 
 **Priority:** `P0`
 
 ### Goal
 
-Publish the verified three-commit local chain to `origin/main` and perform
-post-push verification before authorising OLGA Test10 deployment.
+Verify the approved OLGA Test10 source image, canonical references, existing prompt record, prompt
+linkage, planned destination, and required deployment-request inputs before any dry-run or apply.
 
-### Expected local chain after this closeout
+### Expected candidate
 
-- Voyage closeout commit
-- `2d808a9` — authority enforcement correction
-- `d15b43c` — deploy tool MVP
-- `618de33` — origin/main
+- Prompt ID: `OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
+- Scene: `neutral_height_scale_check`
+- Planned folder:
+  `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/`
+- Planned filename: `OLGA_test10_neutral_height_scale_check_v1_APPROVED.png`
 
 ### Constraints
 
-- Push remains a separate human-authorised task.
-- Test10 remains deferred.
-- No deploy `--apply` before publication verification.
+- Read-only preflight only.
+- Do not create the Test10 folder.
+- Do not copy or rename any image.
+- Do not modify JSONL, Test Results, Reference Presets, or Canon Index.
+- Do not run a deploy dry-run yet.
+- Do not run deploy `--apply`.
+- Verify all source paths and hashes first.
 - SQLite remains unsynchronised.
-- Protected untracked paths remain untouched.
