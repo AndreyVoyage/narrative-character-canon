@@ -4,7 +4,7 @@
 
 **Status:** ACTIVE / CHARACTER CANON REPOSITORY
 
-**Last verified:** 2026-07-14
+**Last verified:** 2026-07-17
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
@@ -33,8 +33,13 @@
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 46 records with 0 errors.
 * Deploy-tool preflight completed with `NEEDS_POLICY_CORRECTION`; the narrow non-publishing authority correction is committed locally.
-* Deploy-tool MVP is implemented locally under D-018 and awaits independent read-only verification; it is not published yet.
-* No production deployment was performed; OLGA Test10 remains deferred and SQLite remains unsynchronized.
+* Deploy-tool MVP is implemented locally under D-018 (`d15b43c`).
+* Authority enforcement correction committed locally (`2d808a9`); Inventory exploit blocked.
+* Independent re-verification completed 2026-07-17: SAFE_TO_PUSH.
+* 112 tests pass (0 failures, 0 errors); validator: 4 registries / 46 records / 0 errors / 153 legacy warnings.
+* Deploy tool is NOT published yet; push remains a separate human-authorised task.
+* No production `--apply` occurred; OLGA Test10 remains deferred; SQLite remains unsynchronised; D-018 unchanged.
+* Inventory unchanged; character files unchanged.
 
 ---
 
@@ -50,4 +55,4 @@
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-VERIFY-2026-07-14`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PUBLISH-2026-07-17`.

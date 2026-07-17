@@ -500,20 +500,111 @@ Implement the deploy-tool MVP under corrected authority:
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-VERIFY-2026-07-14`
 
-**Status:** `READY_FOR_READONLY_VERIFY`
+**Final status:** `COMPLETED_NEEDS_IMPLEMENTATION_CORRECTION`
+
+**Priority:** `P0`
+
+### Result
+
+Independent verification found a critical semantic-path authority defect:
+
+- `updates.test_results.path` could target `INVENTORY.md`.
+- The deploy tool accepted any character-relative path as a mutation target
+  without enforcing exact semantic-path classes (registry, Test Results,
+  Presets, Canon Index, destination).
+- Implementation commit `d15b43c` remained unpublished.
+- Correction was required before push.
+- No production deployment occurred.
+- No character, Inventory or SQLite change occurred.
+
+### Expected correction
+
+Enforce exact positive semantic-path rules per artifact class
+(`require_exact`), lock the hash contract to the exact mutation set,
+and add authority-specific tests.
+
+---
+
+## Completed task
+
+**Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-AUTHORITY-ENFORCEMENT-CORRECTION-2026-07-14`
+
+**Final status:** `COMPLETED_LOCAL_AWAITING_REVERIFY`
+
+**Priority:** `P0`
+
+### Result
+
+- Correction commit: `2d808a9e7ecebd48315bc8c8ed81e6c66df2a053`
+- Parent: `d15b43c6f9b084680e841196a5ff9c5a0a49e835`
+- Exact positive semantic-path classes implemented:
+  `require_exact` for registry, Test Results, Presets, Canon Index, Prompt Index.
+- `DEPLOY-AUTH-001` through `DEPLOY-AUTH-007` enforce character-scoped,
+  single-role artifact boundaries.
+- Inventory exploit blocked (`DEPLOY-AUTH-001`).
+- Complete hash coverage implemented (exact contract set).
+- Approval evidence and immutable identity strengthened.
+- Rollback and concurrency tests expanded.
+- 112 tests pass (0 failures, 0 errors).
+- Correction commit contains exactly 9 files (8 modified + 1 new authority test).
+- No Voyage files were modified by this commit.
+- No push performed at correction closeout.
+
+---
+
+## Completed task
+
+**Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-REVERIFY-2026-07-16`
+
+**Final status:** `COMPLETED_SAFE_TO_PUSH`
+
+**Priority:** `P0`
+
+### Result
+
+Independent read-only re-verification completed 2026-07-17.
+
+**Verdict: SAFE_TO_PUSH**
+
+- Commit chain: `618de33` → `d15b43c` → `2d808a9`.
+- Correction commit contains exactly 9 files (8 modified + 1 new).
+- 112 tests pass (0 failures, 0 errors).
+- Validator: 4 registries / 46 records / 0 errors.
+- Original Inventory exploit and all other semantic-path aliases are blocked.
+- Rollback and concurrency behaviour verified.
+- Real repository was not modified by verification.
+- Production `--apply` on real repository: NO.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-VISUAL-CANON-DEPLOY-TOOL-MVP-PUBLISH-2026-07-17`
+
+**Status:** `READY_FOR_CONTROLLED_PUSH`
 
 **Priority:** `P0`
 
 ### Goal
 
-Independently verify implementation scope, D-018 compliance, request schema, dry-run safety, apply
-transaction, rollback, concurrency detection, tests, documentation and the local implementation
-commit before push.
+Publish the verified three-commit local chain to `origin/main` and perform
+post-push verification before authorising OLGA Test10 deployment.
 
-### Expected report
+### Expected local chain after this closeout
 
-`=== NCC VISUAL CANON DEPLOY TOOL MVP VERIFY RESULT ===`
+- Voyage closeout commit
+- `2d808a9` — authority enforcement correction
+- `d15b43c` — deploy tool MVP
+- `618de33` — origin/main
+
+### Constraints
+
+- Push remains a separate human-authorised task.
+- Test10 remains deferred.
+- No deploy `--apply` before publication verification.
+- SQLite remains unsynchronised.
+- Protected untracked paths remain untouched.
