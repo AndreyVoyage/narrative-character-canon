@@ -34,7 +34,7 @@
 * ANDREY_JUNIOR: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; son-version active; public_filtered only.
 * KIRA: `CANON_READY_2D` / `PROMPT_PIPELINE_ACTIVE_CORE`; face/body/outfit canons и control tests опубликованы.
 * KIRA_ANDREY: `JOINT_CONTROL_TESTS_APPROVED` / `DUO_SCENE_PACKS_APPROVED`.
-* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) canonical generation prompt and Prompt Index linkage are prepared; human image generation has not started.
+* OLGA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` (Tests 01–09 published, Test10 registered not deployed) / `PROMPT_PIPELINE_ACTIVE`. Test10 (`neutral_height_scale_check`) candidate 02 is HUMAN_APPROVED with future deployment role MAIN; candidate 01 rejected; one pre-deploy JSONL holding record exists; image remains in external LOCAL_STORAGE; no deployment has occurred; destination folder remains absent.
 * MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена до Phase 7 / отдельного задачи. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 46 records with 0 errors.
@@ -42,12 +42,19 @@
 * Deploy tool state: `PUBLISHED_POST_PUSH_VERIFIED`; version: `1.0.1`.
 * Technical validation: 112 tests passed at the verified implementation commit; validator baseline is 4 registries / 46 records / 0 errors / 153 legacy warnings.
 * The original authority/Inventory exploit is blocked; rollback and concurrency behavior were independently verified.
-* OLGA Test10 generation state: `NOT STARTED`; candidate state: `READY_FOR_GENERATION`; no source image and no prompt-run JSONL record exist yet.
+* OLGA Test10 registration state: candidate 02 HUMAN_APPROVED; future deployment role MAIN confirmed; candidate 01 rejected; one pre-deploy JSONL holding record appended (`verdict=CANDIDATE`, `selected=false`, `deployed=false`); role, output_path, storage, and content_tier absent.
+* Approved candidate exists externally: `LOCAL_STORAGE/narrative-character-canon/generation_candidates/OLGA/Test10/OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1_candidate_02_HUMAN_APPROVED.png`.
+* Candidate SHA-256: `1717cd17dc43cdbf019cd269752ca183cbf8a21bc618da6f8bd123c406708757`; dimensions: `1122 × 1402`; Generation ID: `24a30d17-42db-422b-8eff-0d99f8607410`.
+* Approval record SHA-256: `4f5d479ba64a5bb3b9bf3ad2282110a0ebd5a851cdd212d9fe32c6a6c70bf120`.
 * Test10 prompt source: `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md`; Prompt Index: `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md`.
-* Mandatory OLGA face canon and body references A/B are verified and recorded in the Test10 prompt source; optional Test05 support was omitted to avoid office-style bias.
-* OLGA Test10 is not deployed. Its planned final destination folder and file remain absent.
-* No Test10 deployment request has been created or applied, and no production deploy `--apply` occurred.
-* Inventory and character files were unchanged by publication; SQLite remains unsynchronised; D-018 remains unchanged.
+* Mandatory OLGA face canon and body references A/B are verified; optional Test05 omitted.
+* No image has been copied into the repository.
+* Test10 deployment destination `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/` remains absent.
+* No deployment has occurred. No deploy-tool dry-run or apply has been run.
+* Registration commit contains exactly four files (JSONL holding record, D-020, CURRENT_TASK, PROJECT_STATE), not pushed.
+* Inventory and SQLite remain unchanged.
+* Active next step: `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17` (`READY_FOR_READONLY_DEPLOYMENT_PREFLIGHT`).
+* Decision D-020 recorded.
 
 ---
 
@@ -63,8 +70,8 @@
 
 ## Immediate next task
 
-См. `.voyage/CURRENT_TASK.md` — `NCC-OLGA-TEST10-IMAGE-GENERATION-2026-07-17`.
+См. `.voyage/CURRENT_TASK.md` — `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`.
 
-**Status:** `READY_FOR_HUMAN_GENERATION`
+**Status:** `READY_FOR_READONLY_DEPLOYMENT_PREFLIGHT`
 
 **Priority:** `P0`

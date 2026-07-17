@@ -638,18 +638,18 @@ Independent read-only re-verification completed 2026-07-17.
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-OLGA-TEST10-IMAGE-GENERATION-2026-07-17`
 
-**Status:** `READY_FOR_HUMAN_GENERATION`
+**Status:** `COMPLETED_HUMAN_APPROVED_REGISTERED_NOT_DEPLOYED`
 
 **Priority:** `P0`
 
 ### Goal
 
-Generate Test10 from the committed canonical prompt and approved OLGA references, then return the
-generated candidates for human selection.
+Generate Test10 from the committed canonical prompt and approved OLGA references, present
+candidates for human selection, and register the approved candidate.
 
 ### Canonical generation inputs
 
@@ -665,12 +665,66 @@ generated candidates for human selection.
 - Body reference B:
   `AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png`
 
-### Generation state
+### Completed result
 
-- Generation: `NOT STARTED`.
-- Candidate state: `READY_FOR_GENERATION`.
-- Generated output must remain outside the planned final canon destination until human approval.
-- Do not create a JSONL record before a real generated attempt exists.
-- Do not deploy before human selection, approval, and controlled registration.
-- Do not create the final Test10 destination folder during generation.
-- SQLite remains unsynchronised.
+- Two candidates were generated externally from the canonical prompt.
+- Candidate 02 was human-reviewed and approved.
+- Candidate 01 was rejected due to body canon drift.
+- Human owner explicitly confirmed future deployment role MAIN.
+- Approved image remains in external LOCAL_STORAGE:
+  `LOCAL_STORAGE/narrative-character-canon/generation_candidates/OLGA/Test10/OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1_candidate_02_HUMAN_APPROVED.png`
+- Image SHA-256: `1717cd17dc43cdbf019cd269752ca183cbf8a21bc618da6f8bd123c406708757`
+- Dimensions: `1122 × 1402`
+- Generation ID: `24a30d17-42db-422b-8eff-0d99f8607410`
+- Approval record: `LOCAL_STORAGE/narrative-character-canon/generation_candidates/OLGA/Test10/OLGA_TEST10_APPROVAL_RECORD_2026-07-17.md`
+- Approval record SHA-256: `4f5d479ba64a5bb3b9bf3ad2282110a0ebd5a851cdd212d9fe32c6a6c70bf120`
+
+### Registration state
+
+- One pre-deploy JSONL holding record appended to `OLGA_PROMPT_RUN_LOG.jsonl`.
+- Holding state: `CANDIDATE`, `selected=false`, `deployed=false`.
+- Forbidden deployment fields absent: `role`, `output_path`, `storage`, `content_tier`.
+- Future role MAIN preserved in `human_approval` and `notes`.
+- No image was copied into the repository.
+- Test10 destination `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/` remains absent.
+- No deployment has occurred.
+- Registration does not make Test10 repository canon.
+- Inventory and SQLite remain unchanged.
+- Decision D-020 recorded in `.voyage/DECISIONS.md`.
+
+---
+
+## Active task
+
+**Task ID:** `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`
+
+**Status:** `READY_FOR_READONLY_DEPLOYMENT_PREFLIGHT`
+
+**Priority:** `P0`
+
+### Goal
+
+Run a strict read-only preflight to verify all deployment prerequisites before any deploy-tool
+dry-run or apply operation.
+
+### Preflight scope
+
+- Verify exactly one Test10 JSONL holding record exists with correct state.
+- Verify Prompt Index and prompt-source linkage.
+- Verify external approval candidate and approval-record hashes match.
+- Verify deploy-tool input contract, semantic-path constraints, and rollback readiness.
+- Verify destination folder remains absent.
+- Verify no image exists in the repository for Test10.
+- Verify Inventory and SQLite are unchanged.
+- Verify the registration commit is present.
+- Determine whether deployment is ready for dry-run review.
+- Do not deploy. Do not create a deployment request JSON. Do not apply.
+
+### Constraints
+
+- Read-only; no repository file may be modified by the preflight.
+- No deploy-tool dry-run or apply is executed.
+- No image is copied.
+- No JSONL record is modified.
+- No push.
+- Deployment requires separate explicit authorization after the preflight passes.

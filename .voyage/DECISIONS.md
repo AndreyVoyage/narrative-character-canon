@@ -1013,3 +1013,87 @@ missing data, and a mandatory stop rule for unresolved conflicts or foreign-proj
 
 Next action: Apply this hierarchy during future character audits, prompt preparation, generation,
 and deployment verification.
+
+---
+
+Date: 2026-07-17
+Decision ID: D-020
+Context: OLGA Test10 (neutral height scale check) was generated externally with two candidates.
+Candidate 02 was human-reviewed and approved as the future MAIN result. The approved image and
+approval record reside in external LOCAL_STORAGE and have not been copied into the repository. A
+pre-deploy JSONL holding record has been registered in the OLGA prompt run log.
+
+Decision: Accept candidate 02 as HUMAN_APPROVED with future deployment role MAIN, explicitly
+confirmed by the human owner. The current pre-deploy JSONL holding record preserves
+verdict=CANDIDATE, selected=false, deployed=false — no role, output_path, storage, or
+content_tier. Candidate 01 remains rejected and must not be deployed. Registration does not
+copy the image and does not make Test10 repository canon. The deploy tool must later perform
+the atomic machine-state transition from the registered holding state into the deployed
+repository state.
+
+Human candidate selection and future role decision:
+- Approved candidate: candidate 02.
+- Human decision: APPROVED.
+- Future deployment role: MAIN, explicitly confirmed by human owner.
+- Candidate 01 is REJECTED and must not be deployed.
+- Approved image external logical path:
+  `LOCAL_STORAGE/narrative-character-canon/generation_candidates/OLGA/Test10/OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1_candidate_02_HUMAN_APPROVED.png`
+- Image SHA-256: `1717cd17dc43cdbf019cd269752ca183cbf8a21bc618da6f8bd123c406708757`
+- Dimensions: 1122 × 1402.
+- Generation ID: `24a30d17-42db-422b-8eff-0d99f8607410`
+- Approval record external logical path:
+  `LOCAL_STORAGE/narrative-character-canon/generation_candidates/OLGA/Test10/OLGA_TEST10_APPROVAL_RECORD_2026-07-17.md`
+- Approval record SHA-256: `4f5d479ba64a5bb3b9bf3ad2282110a0ebd5a851cdd212d9fe32c6a6c70bf120`
+
+Current registered-not-deployed machine holding state:
+- Prompt ID: `OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
+- Prompt source: `AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md`
+- Prompt heading: `## OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
+- One pre-deploy JSONL holding record appended to `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl`
+- verdict=CANDIDATE, selected=false, deployed=false.
+- role, output_path, storage, and content_tier are absent (deploy-tool must add them atomically).
+- human_approval and notes fields preserve the future MAIN role decision.
+- The approved image has not been copied into the repository.
+- Test10 deployment destination `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/` remains absent.
+- No deployment has occurred.
+- Registration does not make Test10 repository canon.
+
+Planned future deployed repository state:
+- verdict=APPROVED_AS_TEST
+- selected=true
+- role=MAIN
+- storage=repo_tracked
+- content_tier=public_filtered
+- deployed=true
+- output_path populated
+- Test10 is approved as a control test, not APPROVED_AS_CANON.
+- Canon Index must remain unchanged during the later test deployment.
+
+Deployment still requires:
+- Read-only deployment preflight.
+- Deploy-tool dry-run review.
+- Explicit apply authorization.
+- Independent verification.
+- Local commit.
+- Push.
+- Later controlled Inventory/SQLite synchronization.
+
+Affected files:
+- `AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl` (one holding record appended)
+- `.voyage/DECISIONS.md`
+- `.voyage/CURRENT_TASK.md`
+- `.voyage/PROJECT_STATE.md`
+
+Reason: Record the human candidate approval, future MAIN role decision, current holding state,
+and planned transition under the universal pipeline authority (D-016, D-017, D-018, D-019) so
+every agent and tool can determine the exact state without ambiguity and without silently
+re-registering or deploying.
+
+Result:
+- OLGA Test10 registration is committed locally (not pushed).
+- Deployment-preflight task becomes the next active read-only preflight.
+- Inventory and SQLite remain unchanged.
+- No image was copied into the repository.
+
+Next action: Run OLGA Test10 deployment read-only preflight; do not deploy without explicit
+apply authorization.
