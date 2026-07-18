@@ -79,4 +79,119 @@ Adult woman, 155 cm, 45 kg, petite slender feminine build, compact realistic pro
 
 ---
 
+## Prompt Section — MARINA_EXPRESSIONS_V1_B
+
+- **Prompt ID:** `MARINA_EXPRESSIONS_V1_B`
+- **Status:** APPROVED
+- **Role:** SUPPORT
+- **Output path:** `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_B_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + C
+- **Reconstruction guidance:** SUPPORT expression reference sheet B. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT expression variant. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_EXPRESSIONS_V1_C
+
+- **Prompt ID:** `MARINA_EXPRESSIONS_V1_C`
+- **Status:** APPROVED
+- **Role:** SUPPORT
+- **Output path:** `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_C_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + C
+- **Reconstruction guidance:** SUPPORT expression reference sheet C. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT expression variant. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_EXPRESSIONS_V1_D
+
+- **Prompt ID:** `MARINA_EXPRESSIONS_V1_D`
+- **Status:** APPROVED
+- **Role:** SUPPORT
+- **Output path:** `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_D_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + C
+- **Reconstruction guidance:** SUPPORT expression reference sheet D. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT expression variant. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_EXPRESSIONS_V1_E
+
+- **Prompt ID:** `MARINA_EXPRESSIONS_V1_E`
+- **Status:** APPROVED
+- **Role:** SUPPORT
+- **Output path:** `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_E_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + C
+- **Reconstruction guidance:** SUPPORT expression reference sheet E. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT expression variant. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_EXPRESSIONS_V1_F
+
+- **Prompt ID:** `MARINA_EXPRESSIONS_V1_F`
+- **Status:** APPROVED
+- **Role:** SUPPORT
+- **Output path:** `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_F_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + C
+- **Reconstruction guidance:** SUPPORT expression reference sheet F. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT expression variant. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_OUTFIT_EVENING_PEACH_V1_A
+
+- **Prompt ID:** `MARINA_OUTFIT_EVENING_PEACH_V1_A`
+- **Status:** APPROVED
+- **Role:** MAIN OUTFIT REFERENCE
+- **Outfit category:** evening_dress
+- **Output path:** `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_sheet_A_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + B
+- **Reconstruction guidance:** MAIN evening outfit reference — peach dress. Human-approved import. A full exact generation prompt is not stored.
+- **Result notes:** Active MAIN evening outfit canon. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_OUTFIT_EVENING_PEACH_V1_B
+
+- **Prompt ID:** `MARINA_OUTFIT_EVENING_PEACH_V1_B`
+- **Status:** APPROVED
+- **Role:** SUPPORT OUTFIT REFERENCE
+- **Outfit category:** evening_dress
+- **Output path:** `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_portrait_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + peach sheet A
+- **Reconstruction guidance:** SUPPORT portrait for peach evening outfit. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT outfit variant. Imported from existing AI-generated assets.
+
+---
+
+## Prompt Section — MARINA_OUTFIT_WARM_EVENING_V1_A
+
+- **Prompt ID:** `MARINA_OUTFIT_WARM_EVENING_V1_A`
+- **Status:** APPROVED
+- **Role:** SUPPORT OUTFIT REFERENCE
+- **Outfit category:** evening_dress
+- **Output path:** `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_warm_evening_v1_portrait_SUPPORT.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Source files used:** `MARINA_CANON_GENERATION_PROMPTS.txt`
+- **Reference map:** A + peach sheet A
+- **Reconstruction guidance:** SUPPORT portrait for warm evening outfit. Human-approved import. Not an active MAIN reference. A full exact generation prompt is not stored.
+- **Result notes:** SUPPORT outfit variant. Imported from existing AI-generated assets.
+
+---
+
 *MARINA Working Scene Prompts | NCC Repository | 2026-07-18*

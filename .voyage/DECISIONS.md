@@ -1143,3 +1143,51 @@ Preserve the approved 155 cm / 45 kg physical canon.
 
 Next action: MARINA control tests remain PENDING; no generation is authorized until
 human owner explicitly selects MARINA as the next visual target.
+
+---
+
+## DECISION-0026 — MARINA support expressions and outfits published
+
+Date: 2026-07-18
+
+Context:
+Eight additional MARINA images — five expression support sheets (B–F), one MAIN evening
+peach outfit sheet, and two SUPPORT outfit portraits (peach and warm evening) — were
+human-selected from existing AI-generated assets and imported into the repository as
+untracked files. Exact per-image generation prompts are not available. MARINA already
+had a full normalized prompt pipeline (index, working prompts, JSONL log) from the
+base-canon closeout (DECISION-0021).
+
+Decision:
+Perform a metadata-only closeout and selective commit/push. Add 8 new prompt IDs to
+the MARINA prompt pipeline. Mark all as `unknown_requires_manual_input`. Expression
+B–F are SUPPORT references (not active MAIN). Peach sheet A is the active MAIN evening
+outfit. Peach portrait and warm-evening portrait are SUPPORT. Do not touch test results.
+Do not change character status. Regenerate inventory. Validate SHA-256, JSON, JSONL,
+and validator before staging.
+
+Character status remains: BASE_CANON_APPROVED / CONTROL_TESTS_PENDING / PROMPT_PIPELINE_ACTIVE.
+
+Affected files:
+- `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_B_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_C_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_D_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_E_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_F_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_sheet_A_APPROVED.png` (imported)
+- `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_portrait_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_warm_evening_v1_portrait_SUPPORT.png` (imported)
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md` (modified)
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md` (modified)
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl` (modified)
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md` (modified)
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json` (modified)
+- `.voyage/DECISIONS.md` (modified)
+- `INVENTORY.md` (regenerated)
+
+Reason:
+Publish human-approved support and outfit assets with full metadata traceability,
+while keeping the existing core canon stable and unchanged.
+
+Next action:
+Seven narrative scene images remain for separate review and test decisions.

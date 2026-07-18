@@ -31,6 +31,24 @@ This folder stores prompt templates, working scene prompts, and prompt run logs 
 | `MARINA_EXPRESSIONS_V1_A` | expression sheet A | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_A_APPROVED.png` |
 | `MARINA_BODY_CANON_V1_A` | body canon sheet A | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_APPROVED.png` |
 
+## Support Expression References
+
+| Prompt ID | Target | Status | Source | Output |
+|---|---|---|---|---|
+| `MARINA_EXPRESSIONS_V1_B` | expression sheet B SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_B_SUPPORT.png` |
+| `MARINA_EXPRESSIONS_V1_C` | expression sheet C SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_C_SUPPORT.png` |
+| `MARINA_EXPRESSIONS_V1_D` | expression sheet D SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_D_SUPPORT.png` |
+| `MARINA_EXPRESSIONS_V1_E` | expression sheet E SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_E_SUPPORT.png` |
+| `MARINA_EXPRESSIONS_V1_F` | expression sheet F SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_F_SUPPORT.png` |
+
+## Outfit References
+
+| Prompt ID | Target | Status | Source | Output |
+|---|---|---|---|---|
+| `MARINA_OUTFIT_EVENING_PEACH_V1_A` | evening peach dress sheet A MAIN | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_sheet_A_APPROVED.png` |
+| `MARINA_OUTFIT_EVENING_PEACH_V1_B` | evening peach portrait SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_portrait_SUPPORT.png` |
+| `MARINA_OUTFIT_WARM_EVENING_V1_A` | warm evening portrait SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_warm_evening_v1_portrait_SUPPORT.png` |
+
 ## Known Deferred Issues
 
 - Exact per-image generation prompts for base canon sheets are unavailable; records are marked `unknown_requires_manual_input`.

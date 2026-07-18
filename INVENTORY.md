@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-18 19:32:02
+2026-07-18 22:49:03
 
 ---
 
@@ -467,7 +467,12 @@ Generated:
 │   │   ├── 03_face_sheet/
 │   │   │   ├── expressions/
 │   │   │   │   ├── .gitkeep
-│   │   │   │   └── MARINA_expressions_v1_sheet_A_APPROVED.png
+│   │   │   │   ├── MARINA_expressions_v1_sheet_A_APPROVED.png
+│   │   │   │   ├── MARINA_expressions_v1_sheet_B_SUPPORT.png
+│   │   │   │   ├── MARINA_expressions_v1_sheet_C_SUPPORT.png
+│   │   │   │   ├── MARINA_expressions_v1_sheet_D_SUPPORT.png
+│   │   │   │   ├── MARINA_expressions_v1_sheet_E_SUPPORT.png
+│   │   │   │   └── MARINA_expressions_v1_sheet_F_SUPPORT.png
 │   │   │   └── MARINA_face_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 04_body_sheet/
 │   │   │   ├── candidates/
@@ -484,8 +489,11 @@ Generated:
 │   │   │   │   └── .gitkeep
 │   │   │   ├── scene_outfits/
 │   │   │   │   └── .gitkeep
-│   │   │   └── sports_look/
-│   │   │       └── .gitkeep
+│   │   │   ├── sports_look/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── MARINA_outfit_evening_peach_v1_portrait_SUPPORT.png
+│   │   │   ├── MARINA_outfit_evening_peach_v1_sheet_A_APPROVED.png
+│   │   │   └── MARINA_outfit_warm_evening_v1_portrait_SUPPORT.png
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
 │   │   │   ├── MARINA_CANON_GENERATION_PROMPTS.txt
@@ -806,7 +814,7 @@ Generated:
 
 # Total file count
 
-505
+513
 
 # File type summary
 
@@ -849,7 +857,7 @@ Generated:
 | .json | 18 |
 | .jsonl | 17 |
 | .md | 52 |
-| .png | 88 |
+| .png | 96 |
 | .ps1 | 1 |
 | .py | 19 |
 | .pyc | 13 |
@@ -883,7 +891,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 58043 | 2026-07-18 19:28:54 |
+| .voyage/DECISIONS.md | 60693 | 2026-07-18 22:36:23 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -1158,6 +1166,11 @@ Generated:
 | AI_CHARACTERS/MARINA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_A_APPROVED.png | 2793679 | 2026-06-24 12:16:13 |
+| AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_B_SUPPORT.png | 2507724 | 2026-06-24 13:21:29 |
+| AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_C_SUPPORT.png | 2609441 | 2026-06-24 13:08:17 |
+| AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_D_SUPPORT.png | 2492855 | 2026-06-24 13:26:07 |
+| AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_E_SUPPORT.png | 2393971 | 2026-06-24 12:46:29 |
+| AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_F_SUPPORT.png | 2461808 | 2026-06-24 12:22:38 |
 | AI_CHARACTERS/MARINA/03_face_sheet/MARINA_face_canon_v1_sheet_A_APPROVED.png | 2300259 | 2026-06-20 10:26:04 |
 | AI_CHARACTERS/MARINA/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_APPROVED.png | 1964738 | 2026-06-24 10:15:32 |
@@ -1165,13 +1178,16 @@ Generated:
 | AI_CHARACTERS/MARINA/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/formal/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_portrait_SUPPORT.png | 1983655 | 2026-06-20 10:25:54 |
+| AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_sheet_A_APPROVED.png | 2045753 | 2026-06-24 08:16:29 |
+| AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_warm_evening_v1_portrait_SUPPORT.png | 1899586 | 2026-06-24 11:54:11 |
 | AI_CHARACTERS/MARINA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt | 4923 | 2026-07-18 13:39:06 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md | 2575 | 2026-07-18 19:26:21 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl | 1894 | 2026-07-18 19:31:41 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md | 4897 | 2026-07-18 19:26:44 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md | 4394 | 2026-07-18 22:34:35 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl | 7624 | 2026-07-18 22:34:13 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md | 10435 | 2026-07-18 22:35:05 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1180,8 +1196,8 @@ Generated:
 | AI_CHARACTERS/MARINA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md | 2709 | 2026-07-18 19:27:05 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 2574 | 2026-07-18 19:28:00 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md | 5183 | 2026-07-18 22:35:30 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 3448 | 2026-07-18 22:35:55 |
 | AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md | 1867 | 2026-07-18 19:27:23 |
 | AI_CHARACTERS/NIKA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1303,7 +1319,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 18495 | 2026-07-14 06:16:13 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 92085 | 2026-07-18 19:29:35 |
+| INVENTORY.md | 93707 | 2026-07-18 22:36:35 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
