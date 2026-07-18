@@ -14,11 +14,11 @@ Active version:
 Base canon v1.0
 
 Identity anchor:
-Adult woman, soft gentle proportions, natural feminine build, medium scale. Natural light brown hair with soft texture, thoughtful blue eyes, soft gentle features, shy but warm smile, natural skin texture, minimal makeup, pastel warm clothing, gentle intimate warmth, natural soft lighting.
+Adult woman, 155 cm, 45 kg, petite slender feminine build, compact realistic proportions, narrow shoulders, small defined waist, soft proportionate hips, naturally medium-full bust approximately Russian size 3, firm rounded and naturally lifted, proportionate to her petite frame, not exaggerated. Natural light brown hair with soft texture, thoughtful blue eyes, soft gentle features, shy but warm smile, natural skin texture, minimal makeup, pastel warm clothing, gentle intimate warmth, natural soft lighting.
 
 Prompt style rules:
 * Keep MARINA clearly an adult woman.
-* Use phrases like "adult woman", "soft gentle proportions", "realistic adult proportions", "gentle feminine presence".
+* Use phrases like "adult woman", "petite slender build", "compact proportions", "naturally medium-full bust proportionate to petite frame", "gentle feminine presence".
 * Avoid sexualized wording.
 * Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
 * Avoid exaggerating body proportions.
@@ -93,7 +93,7 @@ MARINA_body_canon_v1_sheet_A_front_side_back.png
 Prompt:
 Photorealistic full-body character canon sheet of the same adult woman, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
 
-Adult woman, soft gentle proportions, natural feminine build, realistic adult proportions, natural light brown hair, thoughtful blue eyes, shy but warm expression, pastel warm clothing, gentle posture, natural soft lighting.
+Adult woman, 155 cm, petite slender build, compact realistic proportions, narrow shoulders, small defined waist, soft proportionate hips, naturally medium-full bust approximately Russian size 3, firm rounded and naturally lifted, proportionate to her petite frame, not exaggerated, natural light brown hair, thoughtful blue eyes, shy but warm expression, pastel warm clothing, gentle posture, natural soft lighting.
 
 Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
 
@@ -110,7 +110,7 @@ MARINA_body_canon_v1_sheet_B_pose_variations.png
 Prompt:
 Photorealistic full-body character pose sheet of the same adult woman, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
 
-Adult woman, soft gentle proportions, natural feminine build, natural light brown hair, thoughtful blue eyes, shy but warm expression, pastel warm clothing.
+Adult woman, 155 cm, petite slender build, compact realistic proportions, naturally medium-full bust proportionate to her petite frame, natural light brown hair, thoughtful blue eyes, shy but warm expression, pastel warm clothing.
 
 Pose range:
 1. Standing gentle, soft posture
