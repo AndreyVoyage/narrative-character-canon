@@ -162,6 +162,30 @@
         "joint-scene references",
         "local-only swimsuit references"
       ]
+    },
+    "neutral_height_scale_check": {
+      "character_id": "OLGA",
+      "scene_id": "neutral_height_scale_check",
+      "status": "approved",
+      "storage": "repo_tracked",
+      "content_tier": "public_filtered",
+      "selected_prompt_id": "OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1",
+      "selected_output": "AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/OLGA_test10_neutral_height_scale_check_v1_APPROVED.png",
+      "role": "neutral full-body height/scale check MAIN scene reference",
+      "prompt_source": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md",
+      "image_references": [
+        "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+      ],
+      "outfit_continuity": "Neutral tailored dark blouse and straight dark trousers; flat shoes or minimal low heels; neutral camera height.",
+      "exclusions": [
+        "evening/formal styling",
+        "office/business styling",
+        "sports/yoga scenes",
+        "pool scenes",
+        "joint-scene references"
+      ]
     }
   },
   "prompt_pipeline": {

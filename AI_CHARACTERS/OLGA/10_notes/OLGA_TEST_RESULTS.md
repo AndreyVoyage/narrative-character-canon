@@ -58,6 +58,25 @@ BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED_LOCALLY
 
 ## Test 09 — formal/elegant cultural foyer
 
+## Test 10 — neutral height scale check
+
+**Test ID:** `OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
+
+**Scene ID:** `neutral_height_scale_check`
+
+**Filename:** `OLGA_test10_neutral_height_scale_check_v1_APPROVED.png`
+
+**Path:** `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/OLGA_test10_neutral_height_scale_check_v1_APPROVED.png`
+
+**Verdict:** `APPROVED_AS_TEST`
+
+**Role:** Approved neutral full-body height/scale check MAIN scene reference.
+
+**Coverage:** Solo OLGA full-body neutral height/environment scale check; neutral tailored dark blouse, straight dark trousers, flat shoes or minimal low heels, neutral camera.
+
+**Difference from Test01/Test09:** Neutral full-body height calibration without evening/formal context.
+
+
 **Test ID:** `OLGA_TEST09_FORMAL_ELEGANT`
 
 **Selected Prompt ID:** `OLGA_TEST09_FORMAL_ELEGANT_V4`
