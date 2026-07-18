@@ -1,8 +1,8 @@
 {
   "character": "MARINA",
   "active_version": "marina_base_canon_v1.0",
-  "status": "PENDING_GENERATION",
-  "last_updated": "2026-07-09",
+  "status": "BASE_CANON_APPROVED",
+  "last_updated": "2026-07-18",
   "identity_summary": {
     "role": "adult female character",
     "height_cm": 155,
@@ -14,22 +14,21 @@
     "style_direction": "soft, gentle, shy, warm, pastel colors, intimate atmosphere, natural light"
   },
   "active_canon": {
-    "primary_face_reference": "PENDING_GENERATION",
+    "primary_face_reference": "AI_CHARACTERS/MARINA/03_face_sheet/MARINA_face_canon_v1_sheet_A_APPROVED.png",
     "face_canon": "AI_CHARACTERS/MARINA/03_face_sheet/MARINA_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
-    "body_canon_b": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+    "body_canon_a": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_APPROVED.png"
   },
   "planned_canon_paths": {
     "face_canon": "AI_CHARACTERS/MARINA/03_face_sheet/MARINA_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "body_canon_a": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_APPROVED.png",
     "body_canon_b": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
   "control_tests": [],
   "scene_presets": {},
   "prompt_pipeline": {
-    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "status": "PROMPT_PIPELINE_ACTIVE",
     "prompt_index": "AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md",
     "working_scene_prompts": "AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md",
     "prompt_run_log": "AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl"

@@ -1097,3 +1097,49 @@ Result:
 
 Next action: Run OLGA Test10 deployment read-only preflight; do not deploy without explicit
 apply authorization.
+
+## DECISION-0021 — MARINA base canon imported and metadata closeout
+
+Date: 2026-07-18
+
+Context: Three MARINA base-canon images (face, expressions, body) already existed untracked
+in the repository. They were generated from AI tools outside the repository with exact
+per-image prompts unavailable. MARINA's character folder already had the full 10-subfolder
+layout, `MARINA_CANON_GENERATION_PROMPTS.txt`, and `MARINA_REFERENCE_PRESETS.json` with
+planned paths, but no prompt-run log, prompt index, working scene prompts, canon index,
+or test results.
+
+Decision: Complete a text/metadata-only closeout of MARINA base canon. Do not open or
+analyze image pixels. Do not copy, rename, move, delete, regenerate, or modify images.
+Create the five missing metadata files (`MARINA_PROMPT_INDEX.md`,
+`MARINA_WORKING_SCENE_PROMPTS.md`, `MARINA_PROMPT_RUN_LOG.jsonl`, `MARINA_CANON_INDEX.md`,
+`MARINA_TEST_RESULTS.md`) using existing repository patterns (KIRA for `unknown_requires_manual_input`
+source provenance, ANDREY_JUNIOR for canon index/test results layout). Update
+`MARINA_REFERENCE_PRESETS.json` to reflect the three approved images and promote
+`primary_face_reference` from `PENDING_GENERATION` to the actual face canon path. Update
+Voyage tracking files and regenerate inventory. Do not commit or push.
+
+MARINA new status: BASE_CANON_APPROVED / CONTROL_TESTS_PENDING / PROMPT_PIPELINE_ACTIVE.
+
+Affected files:
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md` (created)
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md` (created)
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl` (created)
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md` (created)
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md` (created)
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json` (modified)
+- `.voyage/CHARACTER_REGISTRY.md` (modified)
+- `.voyage/DECISIONS.md` (modified)
+- `.voyage/CURRENT_TASK.md` (modified)
+- `.voyage/PROJECT_STATE.md` (modified)
+- `INVENTORY.md` (regenerated)
+
+Reason: Bring MARINA metadata to parity with other BASE_CANON_APPROVED characters
+(ANDREY_JUNIOR, OLGA) so the universal pipeline validator can discover and validate
+her records, and so agents can reference her prompt IDs and working prompts during
+future generation and control tests. Use the exact same source-honesty marker
+`unknown_requires_manual_input` already established by KIRA base-canon records.
+Preserve the approved 155 cm / 45 kg physical canon.
+
+Next action: MARINA control tests remain PENDING; no generation is authorized until
+human owner explicitly selects MARINA as the next visual target.

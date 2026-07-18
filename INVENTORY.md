@@ -6,13 +6,15 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-12 18:30:37
+2026-07-18 19:32:02
 
 ---
 
 # Folder and file tree
 
 ```text
+├── .claude/
+│   └── settings.json
 ├── .voyage/
 │   ├── CHARACTER_REGISTRY.md
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_124946
@@ -463,11 +465,14 @@ Generated:
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
-│   │   │   └── expressions/
-│   │   │       └── .gitkeep
+│   │   │   ├── expressions/
+│   │   │   │   ├── .gitkeep
+│   │   │   │   └── MARINA_expressions_v1_sheet_A_APPROVED.png
+│   │   │   └── MARINA_face_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 04_body_sheet/
-│   │   │   └── candidates/
-│   │   │       └── .gitkeep
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   └── MARINA_body_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 05_outfits/
 │   │   │   ├── candidates/
 │   │   │   │   └── .gitkeep
@@ -483,7 +488,10 @@ Generated:
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
-│   │   │   └── MARINA_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── MARINA_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── MARINA_PROMPT_INDEX.md
+│   │   │   ├── MARINA_PROMPT_RUN_LOG.jsonl
+│   │   │   └── MARINA_WORKING_SCENE_PROMPTS.md
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -502,7 +510,9 @@ Generated:
 │   │   │   └── .gitkeep
 │   │   └── 10_notes/
 │   │       ├── .gitkeep
-│   │       └── MARINA_REFERENCE_PRESETS.json
+│   │       ├── MARINA_CANON_INDEX.md
+│   │       ├── MARINA_REFERENCE_PRESETS.json
+│   │       └── MARINA_TEST_RESULTS.md
 │   ├── NIKA/
 │   │   ├── 01_refs_raw/
 │   │   │   └── .gitkeep
@@ -619,6 +629,8 @@ Generated:
 │   │   │   │   │   └── OLGA_test08_dalle_evening_embankment_v1_APPROVED.png
 │   │   │   │   ├── 09_formal_elegant/
 │   │   │   │   │   └── OLGA_test09_formal_elegant_v4_APPROVED.png
+│   │   │   │   ├── 10_neutral_height_scale_check/
+│   │   │   │   │   └── OLGA_test10_neutral_height_scale_check_v1_APPROVED.png
 │   │   │   │   └── .gitkeep
 │   │   │   ├── drafts/
 │   │   │   │   └── .gitkeep
@@ -698,6 +710,7 @@ Generated:
 ├── configs/
 │   └── visual_canon/
 │       ├── character_manifest.schema.json
+│       ├── deployment_request.schema.json
 │       ├── pipeline_policy.json
 │       └── prompt_record.schema.json
 ├── docs/
@@ -708,10 +721,63 @@ Generated:
 │   ├── PROJECT_DOCUMENTATION_INDEX.md
 │   ├── VOYAGE_INTEGRATION_WORKFLOW.md
 │   └── VOYAGE_SQLITE_MEMORY_WORKFLOW.md
+├── tests/
+│   └── visual_canon/
+│       ├── __pycache__/
+│       │   ├── deploy_test_support.cpython-314.pyc
+│       │   ├── test_deploy_visual_canon_apply.cpython-314.pyc
+│       │   ├── test_deploy_visual_canon_authority.cpython-314.pyc
+│       │   ├── test_deploy_visual_canon_cli.cpython-314.pyc
+│       │   ├── test_deploy_visual_canon_concurrency.cpython-314.pyc
+│       │   ├── test_deploy_visual_canon_dry_run.cpython-314.pyc
+│       │   ├── test_deploy_visual_canon_rollback.cpython-314.pyc
+│       │   ├── test_validator_cli.cpython-314.pyc
+│       │   ├── test_validator_discovery.cpython-314.pyc
+│       │   ├── test_validator_legacy_compatibility.cpython-314.pyc
+│       │   └── test_validator_prompt_records.cpython-314.pyc
+│       ├── fixtures/
+│       │   ├── invalid_duplicate_id/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_empty_prompt/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_jsonl/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_local_only_leak/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_missing_reference/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_mojibake/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_multiple_main/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_selected_without_approval/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── invalid_variant_in_id/
+│       │   │   └── prompt_run_log.jsonl
+│       │   ├── valid_legacy/
+│       │   │   └── prompt_run_log.jsonl
+│       │   └── valid_strict/
+│       │       └── prompt_run_log.jsonl
+│       ├── deploy_test_support.py
+│       ├── test_deploy_visual_canon_apply.py
+│       ├── test_deploy_visual_canon_authority.py
+│       ├── test_deploy_visual_canon_cli.py
+│       ├── test_deploy_visual_canon_concurrency.py
+│       ├── test_deploy_visual_canon_dry_run.py
+│       ├── test_deploy_visual_canon_rollback.py
+│       ├── test_validator_cli.py
+│       ├── test_validator_discovery.py
+│       ├── test_validator_legacy_compatibility.py
+│       └── test_validator_prompt_records.py
 ├── tools/
+│   ├── __pycache__/
+│   │   ├── deploy_visual_canon_result.cpython-314.pyc
+│   │   └── validate_visual_canon_pipeline.cpython-314.pyc
 │   ├── build_scene_reference_pack.ps1
 │   ├── build_scene_reference_pack.py
+│   ├── deploy_visual_canon_result.py
 │   ├── generate_inventory.py
+│   ├── validate_visual_canon_pipeline.py
 │   ├── voyage_memory_export.py
 │   ├── voyage_memory_init.py
 │   ├── voyage_memory_record.py
@@ -740,7 +806,7 @@ Generated:
 
 # Total file count
 
-457
+505
 
 # File type summary
 
@@ -780,21 +846,23 @@ Generated:
 | .backup_20260711_082946 | 1 |
 | .backup_20260712_183037 | 1 |
 | .jpg | 2 |
-| .json | 16 |
-| .jsonl | 5 |
-| .md | 48 |
-| .png | 84 |
+| .json | 18 |
+| .jsonl | 17 |
+| .md | 52 |
+| .png | 88 |
 | .ps1 | 1 |
-| .py | 6 |
+| .py | 19 |
+| .pyc | 13 |
 | .txt | 26 |
 
 # File list
 
 | Path | Size bytes | Modified |
 |---|---:|---|
+| .claude/settings.json | 157 | 2026-07-13 23:03:10 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
-| .gitignore | 134 | 2026-07-03 01:35:10 |
-| .voyage/CHARACTER_REGISTRY.md | 3912 | 2026-07-12 18:30:32 |
+| .gitignore | 147 | 2026-07-12 22:06:08 |
+| .voyage/CHARACTER_REGISTRY.md | 4014 | 2026-07-18 19:28:25 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -805,7 +873,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 7796 | 2026-07-12 18:29:37 |
+| .voyage/CURRENT_TASK.md | 32814 | 2026-07-18 19:29:27 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -815,7 +883,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 46269 | 2026-07-12 18:29:53 |
+| .voyage/DECISIONS.md | 58043 | 2026-07-18 19:28:54 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -828,13 +896,13 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 3465 | 2026-07-12 18:30:10 |
+| .voyage/PROJECT_STATE.md | 5827 | 2026-07-18 19:29:07 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
 | .voyage/STATE_EXPORT.json | 93915 | 2026-07-07 15:44:38 |
 | .vscode/settings.json | 4 | 2026-07-09 09:27:48 |
-| AGENTS.md | 15368 | 2026-07-12 18:25:34 |
+| AGENTS.md | 19342 | 2026-07-17 17:32:45 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png | 2148429 | 2026-07-03 00:05:04 |
@@ -1089,7 +1157,10 @@ Generated:
 | AI_CHARACTERS/MARINA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/MARINA/03_face_sheet/expressions/MARINA_expressions_v1_sheet_A_APPROVED.png | 2793679 | 2026-06-24 12:16:13 |
+| AI_CHARACTERS/MARINA/03_face_sheet/MARINA_face_canon_v1_sheet_A_APPROVED.png | 2300259 | 2026-06-20 10:26:04 |
 | AI_CHARACTERS/MARINA/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_APPROVED.png | 1964738 | 2026-06-24 10:15:32 |
 | AI_CHARACTERS/MARINA/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1097,7 +1168,10 @@ Generated:
 | AI_CHARACTERS/MARINA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt | 4387 | 2026-07-09 10:15:21 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt | 4923 | 2026-07-18 13:39:06 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md | 2575 | 2026-07-18 19:26:21 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl | 1894 | 2026-07-18 19:31:41 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md | 4897 | 2026-07-18 19:26:44 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1106,7 +1180,9 @@ Generated:
 | AI_CHARACTERS/MARINA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 2426 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md | 2709 | 2026-07-18 19:27:05 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 2574 | 2026-07-18 19:28:00 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md | 1867 | 2026-07-18 19:27:23 |
 | AI_CHARACTERS/NIKA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1151,13 +1227,13 @@ Generated:
 | AI_CHARACTERS/OLGA/06_prompts/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_CANON_GENERATION_PROMPTS.txt | 4546 | 2026-07-05 16:24:20 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_POOL_SCENE_PROMPT.md | 5069 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md | 5587 | 2026-07-11 08:33:14 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md | 5779 | 2026-07-17 14:08:29 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_INDEX.md.backup_20260705_234153 | 3536 | 2026-07-05 23:41:53 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl | 10894 | 2026-07-11 08:25:21 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl | 12865 | 2026-07-18 06:28:08 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_PROMPT_RUN_LOG.jsonl.backup_20260705_234153 | 4930 | 2026-07-05 23:41:53 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md | 15437 | 2026-07-10 15:25:24 |
 | AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS.md.backup_20260705_234153 | 11582 | 2026-07-05 23:41:53 |
-| AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md | 11032 | 2026-07-11 08:42:52 |
+| AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md | 17552 | 2026-07-17 14:07:52 |
 | AI_CHARACTERS/OLGA/07_generated/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-07-04 16:04:16 |
@@ -1174,6 +1250,7 @@ Generated:
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/.gitkeep | 0 | 2026-07-10 15:23:41 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/08_dalle_evening_embankment/OLGA_test08_dalle_evening_embankment_v1_APPROVED.png | 1927004 | 2026-07-09 13:32:08 |
 | AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png | 3164983 | 2026-07-10 21:11:44 |
+| AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/OLGA_test10_neutral_height_scale_check_v1_APPROVED.png | 1669083 | 2026-07-18 06:28:08 |
 | AI_CHARACTERS/OLGA/07_generated/drafts/.gitkeep | 0 | 2026-07-04 16:04:16 |
 | AI_CHARACTERS/OLGA/07_generated/rejected/.gitkeep | 0 | 2026-07-04 16:04:16 |
 | AI_CHARACTERS/OLGA/08_masks/.gitkeep | 0 | 2026-07-04 16:04:16 |
@@ -1187,11 +1264,11 @@ Generated:
 | AI_CHARACTERS/OLGA/10_notes/OLGA_CANON_INDEX.md.backup_20260705_234259 | 1911 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md | 2379 | 2026-07-05 16:25:50 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_IDENTITY_DRAFT.md.backup_20260705_162431 | 2358 | 2026-07-05 16:24:31 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 11727 | 2026-07-11 08:26:17 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json | 12992 | 2026-07-18 06:28:08 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260705_162431 | 2127 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260705_234259 | 5317 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_REFERENCE_PRESETS.json.backup_20260709_092657 | 6792 | 2026-07-09 09:26:57 |
-| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 4259 | 2026-07-11 08:25:21 |
+| AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md | 5014 | 2026-07-18 06:28:08 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_162431 | 1146 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_234259 | 1360 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/SERGEY/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1216,16 +1293,17 @@ Generated:
 | AI_CHARACTERS/SERGEY/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 2416 | 2026-07-09 09:26:57 |
 | configs/visual_canon/character_manifest.schema.json | 7521 | 2026-07-12 18:22:17 |
-| configs/visual_canon/pipeline_policy.json | 5651 | 2026-07-12 18:19:59 |
+| configs/visual_canon/deployment_request.schema.json | 7648 | 2026-07-14 08:57:39 |
+| configs/visual_canon/pipeline_policy.json | 6807 | 2026-07-14 00:27:13 |
 | configs/visual_canon/prompt_record.schema.json | 7040 | 2026-07-12 18:21:41 |
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8871 | 2026-07-12 18:26:56 |
-| docs/NCC_DEPLOY_CHECKLIST.md | 8000 | 2026-07-12 18:27:12 |
+| docs/NCC_DEPLOY_CHECKLIST.md | 8924 | 2026-07-14 06:16:13 |
 | docs/NCC_FOLDER_MAP.md | 4785 | 2026-07-12 18:27:22 |
-| docs/NCC_VISUAL_CANON_WORKFLOW.md | 14787 | 2026-07-12 18:18:23 |
-| docs/PROJECT_DOCUMENTATION_INDEX.md | 17920 | 2026-07-12 18:26:42 |
+| docs/NCC_VISUAL_CANON_WORKFLOW.md | 21133 | 2026-07-17 17:32:18 |
+| docs/PROJECT_DOCUMENTATION_INDEX.md | 18495 | 2026-07-14 06:16:13 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 82945 | 2026-07-11 08:43:40 |
+| INVENTORY.md | 92085 | 2026-07-18 19:29:35 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
@@ -1241,9 +1319,46 @@ Generated:
 | README.md | 1642 | 2026-07-12 18:28:43 |
 | repo_audit.txt | 2384 | 2026-07-09 09:27:48 |
 | ROADMAP.md | 7662 | 2026-07-12 18:29:00 |
+| tests/visual_canon/__pycache__/deploy_test_support.cpython-314.pyc | 13896 | 2026-07-14 09:02:40 |
+| tests/visual_canon/__pycache__/test_deploy_visual_canon_apply.cpython-314.pyc | 8403 | 2026-07-14 09:01:37 |
+| tests/visual_canon/__pycache__/test_deploy_visual_canon_authority.cpython-314.pyc | 20813 | 2026-07-14 23:26:58 |
+| tests/visual_canon/__pycache__/test_deploy_visual_canon_cli.cpython-314.pyc | 10637 | 2026-07-14 09:01:37 |
+| tests/visual_canon/__pycache__/test_deploy_visual_canon_concurrency.cpython-314.pyc | 14200 | 2026-07-14 09:01:37 |
+| tests/visual_canon/__pycache__/test_deploy_visual_canon_dry_run.cpython-314.pyc | 8778 | 2026-07-14 23:26:58 |
+| tests/visual_canon/__pycache__/test_deploy_visual_canon_rollback.cpython-314.pyc | 11555 | 2026-07-14 09:01:37 |
+| tests/visual_canon/__pycache__/test_validator_cli.cpython-314.pyc | 8451 | 2026-07-14 06:20:04 |
+| tests/visual_canon/__pycache__/test_validator_discovery.cpython-314.pyc | 20157 | 2026-07-14 06:20:04 |
+| tests/visual_canon/__pycache__/test_validator_legacy_compatibility.cpython-314.pyc | 5784 | 2026-07-14 06:20:04 |
+| tests/visual_canon/__pycache__/test_validator_prompt_records.cpython-314.pyc | 11314 | 2026-07-14 06:20:04 |
+| tests/visual_canon/deploy_test_support.py | 9025 | 2026-07-14 09:02:34 |
+| tests/visual_canon/fixtures/invalid_duplicate_id/prompt_run_log.jsonl | 1079 | 2026-07-12 21:54:03 |
+| tests/visual_canon/fixtures/invalid_empty_prompt/prompt_run_log.jsonl | 599 | 2026-07-12 21:54:18 |
+| tests/visual_canon/fixtures/invalid_jsonl/prompt_run_log.jsonl | 110 | 2026-07-12 21:53:59 |
+| tests/visual_canon/fixtures/invalid_local_only_leak/prompt_run_log.jsonl | 522 | 2026-07-12 21:54:12 |
+| tests/visual_canon/fixtures/invalid_missing_reference/prompt_run_log.jsonl | 586 | 2026-07-12 21:54:07 |
+| tests/visual_canon/fixtures/invalid_mojibake/prompt_run_log.jsonl | 606 | 2026-07-12 21:56:59 |
+| tests/visual_canon/fixtures/invalid_multiple_main/prompt_run_log.jsonl | 1156 | 2026-07-12 21:54:16 |
+| tests/visual_canon/fixtures/invalid_selected_without_approval/prompt_run_log.jsonl | 579 | 2026-07-12 21:54:10 |
+| tests/visual_canon/fixtures/invalid_variant_in_id/prompt_run_log.jsonl | 612 | 2026-07-12 21:54:05 |
+| tests/visual_canon/fixtures/valid_legacy/prompt_run_log.jsonl | 392 | 2026-07-12 21:57:22 |
+| tests/visual_canon/fixtures/valid_strict/prompt_run_log.jsonl | 646 | 2026-07-12 21:53:57 |
+| tests/visual_canon/test_deploy_visual_canon_apply.py | 3210 | 2026-07-14 08:59:52 |
+| tests/visual_canon/test_deploy_visual_canon_authority.py | 11613 | 2026-07-14 23:22:57 |
+| tests/visual_canon/test_deploy_visual_canon_cli.py | 4987 | 2026-07-14 08:59:18 |
+| tests/visual_canon/test_deploy_visual_canon_concurrency.py | 5592 | 2026-07-14 09:00:39 |
+| tests/visual_canon/test_deploy_visual_canon_dry_run.py | 3448 | 2026-07-14 23:26:25 |
+| tests/visual_canon/test_deploy_visual_canon_rollback.py | 4810 | 2026-07-14 09:00:15 |
+| tests/visual_canon/test_validator_cli.py | 4247 | 2026-07-13 10:46:16 |
+| tests/visual_canon/test_validator_discovery.py | 11681 | 2026-07-12 23:00:14 |
+| tests/visual_canon/test_validator_legacy_compatibility.py | 3480 | 2026-07-12 22:59:59 |
+| tests/visual_canon/test_validator_prompt_records.py | 7043 | 2026-07-12 22:45:31 |
+| tools/__pycache__/deploy_visual_canon_result.cpython-314.pyc | 74220 | 2026-07-17 11:22:24 |
+| tools/__pycache__/validate_visual_canon_pipeline.cpython-314.pyc | 53195 | 2026-07-12 22:59:15 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
+| tools/deploy_visual_canon_result.py | 45384 | 2026-07-14 08:58:35 |
 | tools/generate_inventory.py | 4231 | 2026-07-03 12:55:34 |
+| tools/validate_visual_canon_pipeline.py | 33204 | 2026-07-12 22:58:07 |
 | tools/voyage_memory_export.py | 5803 | 2026-07-03 01:36:48 |
 | tools/voyage_memory_init.py | 19032 | 2026-07-03 01:36:25 |
 | tools/voyage_memory_record.py | 17623 | 2026-07-03 01:54:56 |

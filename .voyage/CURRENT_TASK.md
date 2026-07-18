@@ -729,6 +729,58 @@ dry-run or apply operation. The preflight passed and the full deployment chain c
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-MARINA-BASE-CANON-METADATA-CLOSEOUT-2026-07-18`
+
+**Final status:** `COMPLETED_LOCAL_METADATA_ONLY`
+
+**Priority:** `P0`
+
+### Goal
+
+Complete a text/metadata-only closeout of MARINA base canon using three human-approved,
+pre-existing untracked images. Do not touch images, do not inspect external photo sources,
+and do not invent exact generation prompts.
+
+### Result
+
+Five metadata files created, one updated, four Voyage tracking files updated:
+
+**Created:**
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md`
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md`
+- `AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl` (3 records)
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md`
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md`
+
+**Modified:**
+- `AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json` — active canon paths and prompt pipeline status updated
+- `.voyage/CHARACTER_REGISTRY.md` — MARINA row updated
+- `.voyage/DECISIONS.md` — D-021 recorded
+- `.voyage/CURRENT_TASK.md` — this entry
+- `.voyage/PROJECT_STATE.md` — MARINA status updated
+- `INVENTORY.md` — regenerated
+
+**Three approved prompt IDs:**
+- `MARINA_FACE_CANON_V1_A`
+- `MARINA_EXPRESSIONS_V1_A`
+- `MARINA_BODY_CANON_V1_A`
+
+**MARINA new status:** `BASE_CANON_APPROVED / CONTROL_TESTS_PENDING / PROMPT_PIPELINE_ACTIVE`
+
+### Constraints respected
+
+- No image pixel analysis.
+- No `C:\DEV\Narrative\ФОТО` inspection.
+- No image copy, rename, move, delete, or regeneration.
+- Only MARINA touched; no other character modified.
+- Protected untracked paths untouched: `.claude/`, `.vscode/`, `UNIFIED_CANON_TESTS_TEMPLATE.md`, `repo_audit.txt`.
+- Exact prompt text not fabricated; `unknown_requires_manual_input` used (same pattern as KIRA).
+- No commit, no push, no SQLite.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`

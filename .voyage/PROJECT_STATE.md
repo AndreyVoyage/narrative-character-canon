@@ -45,7 +45,8 @@
   * Canon Index correctly remained unchanged because Test10 is `APPROVED_AS_TEST`, not `APPROVED_AS_CANON`.
   * Inventory refresh remains pending as a separate optional task.
   * SQLite synchronization remains pending as a separate optional task.
-* MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
+* MARINA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_PENDING` / `PROMPT_PIPELINE_ACTIVE`; 3 base-canon images approved (face, expressions, body), prompt pipeline active, metadata closeout completed 2026-07-18.
+* NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена как отдельная задача. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 47 records with 0 errors.
 * Deploy-tool MVP (`d15b43c`) and authority-enforcement correction (`2d808a9`) are published; post-push convergence was verified at `50e56c663b4ee776799eb4a88c5a3f6362486dd3`.
