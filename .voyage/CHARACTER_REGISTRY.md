@@ -10,7 +10,7 @@
 | NIKA | `AI_CHARACTERS/NIKA` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; base canon must stay tasteful/non-explicit per ROADMAP Priority 4 |
 | SERGEY | `AI_CHARACTERS/SERGEY` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; create control tests |
 | MAKSIM | `AI_CHARACTERS/MAKSIM` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; create control tests |
-| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–09 published) / PROMPT_PIPELINE_ACTIVE | WORKING — base canon + tests 01–09 (incl. DALL-E embankment ALT and formal/elegant Test09), prompt pipeline active | Test10 (`neutral_height_scale_check`) deferred until validator/deploy-tool MVP ready |
+| OLGA | `AI_CHARACTERS/OLGA` | BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–10 published) / PROMPT_PIPELINE_ACTIVE | WORKING — base canon + tests 01–10 published (incl. DALL-E embankment ALT, formal/elegant Test09, height scale check Test10), prompt pipeline active | Awaiting human selection of the next character/scene; Test10 published at b5556f8 |
 | EGOR | `AI_CHARACTERS/EGOR` | TEXT_CANON_READY / CANON_PROMPTS_CREATED | IDENTITY_SUMMARY + CANON_GENERATION_PROMPTS created, no images yet | Generate face canon + body canon via DALL-E or RunPod; watch for drift into too-adult/muscular type per ROADMAP Priority 6 |
 
 ## Правило

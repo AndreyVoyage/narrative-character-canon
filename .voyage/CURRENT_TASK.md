@@ -694,37 +694,67 @@ candidates for human selection, and register the approved candidate.
 
 ---
 
-## Active task
+## Completed task
 
 **Task ID:** `NCC-OLGA-TEST10-DEPLOYMENT-PREFLIGHT-2026-07-17`
 
-**Status:** `READY_FOR_READONLY_DEPLOYMENT_PREFLIGHT`
+**Final status:** `COMPLETED_PUBLISHED`
 
 **Priority:** `P0`
 
 ### Goal
 
 Run a strict read-only preflight to verify all deployment prerequisites before any deploy-tool
-dry-run or apply operation.
+dry-run or apply operation. The preflight passed and the full deployment chain completed.
 
-### Preflight scope
+### Deploy-sequence results
 
-- Verify exactly one Test10 JSONL holding record exists with correct state.
-- Verify Prompt Index and prompt-source linkage.
-- Verify external approval candidate and approval-record hashes match.
-- Verify deploy-tool input contract, semantic-path constraints, and rollback readiness.
-- Verify destination folder remains absent.
-- Verify no image exists in the repository for Test10.
-- Verify Inventory and SQLite are unchanged.
-- Verify the registration commit is present.
-- Determine whether deployment is ready for dry-run review.
-- Do not deploy. Do not create a deployment request JSON. Do not apply.
+- `NCC-OLGA-TEST10-DEPLOY-DRY-RUN-2026-07-18` — `COMPLETED_DRY_RUN_VALID`
+- `NCC-OLGA-TEST10-DEPLOY-APPLY-2026-07-18` — `COMPLETED_APPLIED`
+- `NCC-OLGA-TEST10-DEPLOY-APPLY-VERIFY-2026-07-18` — `COMPLETED_VERIFIED`
+- `NCC-OLGA-TEST10-DEPLOY-COMMIT-2026-07-18` — `COMPLETED_COMMITTED`
+- `NCC-OLGA-TEST10-DEPLOY-COMMIT-VERIFY-2026-07-18` — `COMPLETED_VERIFIED`
+- `NCC-OLGA-TEST10-DEPLOY-PUSH-2026-07-18` — `COMPLETED_PUBLISHED`
+
+### Final published Test10 facts
+
+- Prompt ID: `OLGA_TEST10_NEUTRAL_HEIGHT_SCALE_CHECK_V1`
+- Published commit: `b5556f8a0d94b6a4f6478c92d0175900afe4ecda`
+- PNG path: `AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/OLGA_test10_neutral_height_scale_check_v1_APPROVED.png`
+- PNG SHA-256: `1717cd17dc43cdbf019cd269752ca183cbf8a21bc618da6f8bd123c406708757`
+- Final deployed state: `APPROVED_AS_TEST` / `MAIN` / `selected=true` / `deployed=true`
+- Test10 is not `APPROVED_AS_CANON`; Canon Index correctly remained unchanged.
+- Inventory refresh not performed (remains a separate optional task).
+- SQLite synchronization not performed (remains a separate optional task).
+
+---
+
+## Active task
+
+**Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`
+
+**Status:** `AWAITING_HUMAN_SELECTION`
+
+**Priority:** `P0`
+
+### Purpose
+
+Human owner must select the next character and scene before a new generation task may be opened.
+
+No character or scene is selected automatically. No new image generation is authorized until the
+human owner explicitly chooses the next visual target and scene.
+
+### Existing candidates (for reference only — not selected)
+
+- MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY / CANON_PROMPTS_CREATED` — no images yet.
+- ANDREY Senior: `CANON_READY_2D` — 3D reference pack pending.
+- KIRA: `CANON_READY_2D` — 3D reference pack pending.
+- ANDREY_JUNIOR: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED` — further scene testing pending.
+- OLGA: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–10 published)` — next visual
+  coverage to be determined.
 
 ### Constraints
 
-- Read-only; no repository file may be modified by the preflight.
-- No deploy-tool dry-run or apply is executed.
-- No image is copied.
-- No JSONL record is modified.
-- No push.
-- Deployment requires separate explicit authorization after the preflight passes.
+- Do not start generation without an explicit human selection.
+- Do not create prompt IDs, output paths, or scene folders without authorization.
+- Do not select a target automatically.
