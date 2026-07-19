@@ -1340,3 +1340,58 @@ default until visual review.
 
 Next action: User-provided visual reference review for EGOR; no generation authorized without
 explicit human approval.
+
+---
+
+## D-029 — Add Cline control layer (rules + reference-import skill)
+
+Date: 2026-07-19
+Decision ID: D-029
+Task ID: `NCC-CLINE-CONTROL-LAYER-IMPLEMENTATION-2026-07-19`
+
+Context:
+Repeated long monolithic prompts were being used to brief Cline (and other coding agents) on NCC
+project boundaries, Git safety, visual-asset handling, and task discipline for every new task. Cline's
+current conventions support persistent project rules (`.clinerules/`) and on-demand project skills
+(`.cline/skills/`), which can replace ad-hoc prompt repetition with durable, versioned instructions.
+
+Decision:
+Add a small, project-specific Cline control layer: four persistent rule files under `.clinerules/`
+and one deterministic, standard-library-only reference-import skill under
+`.cline/skills/ncc-reference-import/`. The skill wraps a copy-only, SHA-256-verified import of
+owner-selected external reference images into an existing character's `AI_CHARACTERS/<CHAR>/`
+namespace. It is dry-run by default, requires explicit approval before `--apply`, never edits
+metadata (the MVP requires `authorized_metadata_files` to stay empty), never stages, commits, or
+pushes, and never touches SQLite.
+
+Created files:
+- `.clinerules/00-ncc-project-boundary.md`
+- `.clinerules/10-ncc-git-safety.md`
+- `.clinerules/20-ncc-visual-assets.md`
+- `.clinerules/30-ncc-task-discipline.md`
+- `.cline/skills/ncc-reference-import/SKILL.md`
+- `.cline/skills/ncc-reference-import/templates/reference-import-task.example.json`
+- `.cline/skills/ncc-reference-import/scripts/import_references.py`
+- `tests/visual_canon/test_cline_reference_import_skill.py` (23 tests using temporary Git repositories)
+
+Updated files:
+- `AGENTS.md` — Cline added to control-room tools list; new common-agent-task row; new key-files
+  rows; new "Run the Cline reference-import skill" subsection under §4.
+- `docs/NCC_VISUAL_CANON_WORKFLOW.md` — §1 scope notes the skill as a pre-generation, copy-only
+  operation outside the generation lifecycle.
+- `docs/PROJECT_DOCUMENTATION_INDEX.md` — new §4.1 listing the control-layer files.
+- `INVENTORY.md` — regenerated.
+
+Reason:
+Reduces reliance on long one-off prompts for recurring NCC operational rules, and gives reference
+import the same dry-run-first, SHA-verified, atomic-rollback discipline already established by
+`tools/bootstrap_character.py` and `tools/deploy_visual_canon_result.py`.
+
+Result:
+Cline control layer is implemented and locally committed. No character data, images, or SQLite were
+touched. No production reference import ran during implementation.
+
+Next action:
+Use the skill only via dry-run first, with explicit human approval before any `--apply`. Metadata
+closeout (canon index / reference presets linkage after an import) remains a separate, unimplemented
+follow-up phase, consistent with the MVP's `authorized_metadata_files` restriction.

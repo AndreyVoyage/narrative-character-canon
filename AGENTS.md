@@ -116,7 +116,7 @@ sizing.
 - **Version control:** Git with Git LFS for binary visual assets.
 - **Tracked binary formats (LFS):** `.png`, `.jpg`, `.jpeg`, `.webp`, `.psd`, `.mp4`, `.mov`.
 - **Scripting:** Python 3 (standard library only) and PowerShell 5+ / PowerShell Core.
-- **Editors / control-room tools used by the owner:** VS Code, ChatGPT, Kimi Code / Codex, XnView MP, Krita, Blender, PureRef, Upscayl, ComfyUI (Phase 2).
+- **Editors / control-room tools used by the owner:** VS Code, ChatGPT, Kimi Code / Codex, Cline, XnView MP, Krita, Blender, PureRef, Upscayl, ComfyUI (Phase 2).
 - **No package manager files:** There is no `pyproject.toml`, `requirements.txt`, `package.json`, `Cargo.toml`, or similar. Python scripts intentionally use only the standard library.
 
 ## 4. Build, run, and test commands
@@ -186,6 +186,22 @@ py -3 tools\deploy_visual_canon_result.py --request <external-request.json> --ap
 
 The tool leaves validated changes unstaged. It never modifies Voyage, Decisions, Inventory or
 SQLite, and it never stages, commits or pushes.
+
+### Run the Cline reference-import skill
+
+Copy-only import of owner-selected external visual references into an existing
+character's `AI_CHARACTERS/<CHARACTER_ID>/` namespace, driven by a SHA-256-verified
+JSON task spec (`.cline/skills/ncc-reference-import/templates/reference-import-task.example.json`
+shows the contract). Standard library only, dry-run by default:
+
+```powershell
+py -3 .cline\skills\ncc-reference-import\scripts\import_references.py --repo-root <repo> --task-spec <task-spec.json>
+py -3 .cline\skills\ncc-reference-import\scripts\import_references.py --repo-root <repo> --task-spec <task-spec.json> --apply
+```
+
+It never edits image pixels, never touches metadata files (the MVP requires
+`authorized_metadata_files` to be empty), never stages, commits, or pushes, and
+never touches SQLite. Governed by `.clinerules/20-ncc-visual-assets.md`.
 
 ### Inventory regeneration
 
@@ -342,6 +358,7 @@ Rules for presets:
 | Maintain validator | Edit `tools/validate_visual_canon_pipeline.py`; add/update tests in `tests/visual_canon/`; run `py -3 -m unittest discover -s tests/visual_canon -v`. |
 | Apply universal visual-canon pipeline | Read `docs/NCC_VISUAL_CANON_WORKFLOW.md` first; follow ID reservation, reference-first, one-operation deploy, and validation rules. |
 | Prepare 3D reference pack | Create `<CHARACTER>_3D_REFERENCE_PACK.md` and `<CHARACTER>_3D_MODEL_SPEC.md` in `10_notes/`; collect refs in `09_blender/01_reference_pack/`. |
+| Import owner-selected external references | Use the Cline skill `.cline/skills/ncc-reference-import` (or run `.cline/skills/ncc-reference-import/scripts/import_references.py` directly) with a SHA-256-verified JSON task spec; dry-run first, `--apply` only after explicit human approval; never edits metadata; always stops uncommitted. |
 
 ## 9. Key files to read for context
 
@@ -359,6 +376,8 @@ Rules for presets:
 | `configs/visual_canon/character_manifest.schema.json` | JSON Schema for durable per-character pipeline manifests. |
 | `AI_CHARACTERS/ANDREY/10_notes/ANDREY_CANON_INDEX.md` | Example of a full canon index. |
 | `AI_CHARACTERS/ANDREY/10_notes/ANDREY_REFERENCE_PRESETS.json` | Example of an active preset file. |
+| `.clinerules/` | Persistent Cline project rules: project boundary, Git safety, visual-asset handling, task discipline. |
+| `.cline/skills/ncc-reference-import/SKILL.md` | Cline skill for SHA-verified, copy-only import of owner-selected external references into a character namespace. |
 
 ## 10. Contact / ownership
 

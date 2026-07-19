@@ -101,6 +101,27 @@ tools\voyage_memory_record.py                 — запись task/decision/eve
 tools\voyage_memory_export.py                 — экспорт .voyage STATE/EVENTS/CONTEXT
 ```
 
+## 4.1. Cline control layer (`.clinerules/` + `.cline/skills/`)
+
+Добавлено 2026-07-19 (D-029).
+
+```text
+.clinerules\00-ncc-project-boundary.md
+.clinerules\10-ncc-git-safety.md
+.clinerules\20-ncc-visual-assets.md
+.clinerules\30-ncc-task-discipline.md
+
+.cline\skills\ncc-reference-import\SKILL.md
+.cline\skills\ncc-reference-import\templates\reference-import-task.example.json
+.cline\skills\ncc-reference-import\scripts\import_references.py
+```
+
+Назначение: постоянные project rules для Cline (границы проекта, git safety,
+visual-asset правила, task discipline) плюс единственный skill —
+SHA-verified copy-only импорт внешних референсов в `AI_CHARACTERS/<CHAR>/`,
+dry-run по умолчанию, всегда stop uncommitted. Тесты:
+`tests/visual_canon/test_cline_reference_import_skill.py`.
+
 Планируемые:
 
 ```text

@@ -880,6 +880,46 @@ EGOR status unchanged: `TEXT_CANON_READY / CANON_PROMPTS_CREATED`.
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-CLINE-CONTROL-LAYER-IMPLEMENTATION-2026-07-19`
+
+**Final status:** `COMPLETED_LOCAL`
+
+**Priority:** `P0`
+
+### Goal
+
+Implement a small Cline control layer for `narrative-character-canon`: persistent project rules in
+`.clinerules/` and a single deterministic, dry-run-first reference-import skill in
+`.cline/skills/ncc-reference-import/`, replacing dependence on long monolithic implementation prompts.
+
+### Result
+
+- Four rule files created: `.clinerules/00-ncc-project-boundary.md`,
+  `10-ncc-git-safety.md`, `20-ncc-visual-assets.md`, `30-ncc-task-discipline.md`.
+- One skill created: `.cline/skills/ncc-reference-import/SKILL.md`, with an example task-spec
+  template and a standard-library Python script (`scripts/import_references.py`) implementing the
+  full SHA-256-verified, copy-only, dry-run/apply, atomic-rollback contract.
+- 23 new tests in `tests/visual_canon/test_cline_reference_import_skill.py` (all pass) using
+  temporary Git repositories; no real repository data touched.
+- `AGENTS.md`, `docs/NCC_VISUAL_CANON_WORKFLOW.md`, `docs/PROJECT_DOCUMENTATION_INDEX.md` updated
+  with cross-references.
+- `INVENTORY.md` regenerated.
+- Decision `D-029` recorded.
+
+### Constraints respected
+
+- No `AI_CHARACTERS/**` changes; no images generated, inspected, copied, or deployed.
+- No existing validator/deploy/bootstrap tool implementation modified.
+- No SQLite operations.
+- No `.gitignore` changes.
+- Protected untracked paths (`.claude/`, `.vscode/`, `UNIFIED_CANON_TESTS_TEMPLATE.md`,
+  `repo_audit.txt`) untouched.
+- No staging, no commit beyond the one authorized local commit for this task, no push.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`

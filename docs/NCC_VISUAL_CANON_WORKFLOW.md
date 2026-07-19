@@ -25,6 +25,7 @@ It does not apply to:
 - Tool development (those follow normal software-engineering workflow).
 - SQLite-memory tooling outside the synchronization rules below.
 - Automated namespace bootstrapping (handled by `tools/bootstrap_character.py` with an owner-authored JSON spec; images are never created by the bootstrap tool).
+- Copy-only import of owner-selected external reference images into `01_refs_raw/` or similar pre-canon locations (handled by the Cline skill `.cline/skills/ncc-reference-import` from a SHA-256-verified JSON task spec; it never generates, selects, or approves anything and always stops uncommitted — it only stages raw material for the coverage-first and reference-first gates below).
 
 ---
 

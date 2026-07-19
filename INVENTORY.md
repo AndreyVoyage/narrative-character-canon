@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-19 10:47:01
+2026-07-19 14:12:09
 
 ---
 
@@ -15,6 +15,21 @@ Generated:
 ```text
 ├── .claude/
 │   └── settings.json
+├── .cline/
+│   └── skills/
+│       └── ncc-reference-import/
+│           ├── scripts/
+│           │   ├── __pycache__/
+│           │   │   └── import_references.cpython-314.pyc
+│           │   └── import_references.py
+│           ├── templates/
+│           │   └── reference-import-task.example.json
+│           └── SKILL.md
+├── .clinerules/
+│   ├── 00-ncc-project-boundary.md
+│   ├── 10-ncc-git-safety.md
+│   ├── 20-ncc-visual-assets.md
+│   └── 30-ncc-task-discipline.md
 ├── .voyage/
 │   ├── CHARACTER_REGISTRY.md
 │   ├── CHARACTER_REGISTRY.md.backup_20260703_124946
@@ -742,6 +757,7 @@ Generated:
 │       ├── __pycache__/
 │       │   ├── deploy_test_support.cpython-314.pyc
 │       │   ├── test_bootstrap_character.cpython-314.pyc
+│       │   ├── test_cline_reference_import_skill.cpython-314.pyc
 │       │   ├── test_deploy_visual_canon_apply.cpython-314.pyc
 │       │   ├── test_deploy_visual_canon_authority.cpython-314.pyc
 │       │   ├── test_deploy_visual_canon_cli.cpython-314.pyc
@@ -777,6 +793,7 @@ Generated:
 │       │       └── prompt_run_log.jsonl
 │       ├── deploy_test_support.py
 │       ├── test_bootstrap_character.py
+│       ├── test_cline_reference_import_skill.py
 │       ├── test_deploy_visual_canon_apply.py
 │       ├── test_deploy_visual_canon_authority.py
 │       ├── test_deploy_visual_canon_cli.py
@@ -816,6 +833,7 @@ Generated:
 ├── INVENTORY.md.backup_20260710_152700
 ├── INVENTORY.md.backup_20260711_082946
 ├── INVENTORY.md.backup_20260712_183037
+├── INVENTORY.md.backup_20260719_141209
 ├── PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md
 ├── PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md
 ├── README.md
@@ -826,7 +844,7 @@ Generated:
 
 # Total file count
 
-525
+536
 
 # File type summary
 
@@ -865,14 +883,15 @@ Generated:
 | .backup_20260710_152700 | 1 |
 | .backup_20260711_082946 | 1 |
 | .backup_20260712_183037 | 1 |
+| .backup_20260719_141209 | 1 |
 | .jpg | 2 |
-| .json | 19 |
+| .json | 20 |
 | .jsonl | 17 |
-| .md | 52 |
+| .md | 57 |
 | .png | 103 |
 | .ps1 | 1 |
-| .py | 21 |
-| .pyc | 15 |
+| .py | 23 |
+| .pyc | 17 |
 | .txt | 26 |
 
 # File list
@@ -880,6 +899,14 @@ Generated:
 | Path | Size bytes | Modified |
 |---|---:|---|
 | .claude/settings.json | 157 | 2026-07-13 23:03:10 |
+| .cline/skills/ncc-reference-import/scripts/__pycache__/import_references.cpython-314.pyc | 28524 | 2026-07-19 14:05:12 |
+| .cline/skills/ncc-reference-import/scripts/import_references.py | 18790 | 2026-07-19 14:04:58 |
+| .cline/skills/ncc-reference-import/SKILL.md | 2968 | 2026-07-19 14:03:41 |
+| .cline/skills/ncc-reference-import/templates/reference-import-task.example.json | 770 | 2026-07-19 14:05:35 |
+| .clinerules/00-ncc-project-boundary.md | 1176 | 2026-07-19 14:02:49 |
+| .clinerules/10-ncc-git-safety.md | 1388 | 2026-07-19 14:02:58 |
+| .clinerules/20-ncc-visual-assets.md | 1518 | 2026-07-19 14:03:08 |
+| .clinerules/30-ncc-task-discipline.md | 1165 | 2026-07-19 14:03:16 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
 | .voyage/CHARACTER_REGISTRY.md | 4101 | 2026-07-19 10:46:50 |
@@ -893,7 +920,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 34692 | 2026-07-19 10:45:38 |
+| .voyage/CURRENT_TASK.md | 36348 | 2026-07-19 14:11:32 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -903,7 +930,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 68306 | 2026-07-19 10:44:50 |
+| .voyage/DECISIONS.md | 71173 | 2026-07-19 14:11:20 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -916,13 +943,13 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 6474 | 2026-07-19 10:46:34 |
+| .voyage/PROJECT_STATE.md | 6921 | 2026-07-19 14:11:49 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
 | .voyage/STATE_EXPORT.json | 93915 | 2026-07-07 15:44:38 |
 | .vscode/settings.json | 4 | 2026-07-09 09:27:48 |
-| AGENTS.md | 19549 | 2026-07-19 09:07:20 |
+| AGENTS.md | 21043 | 2026-07-19 14:10:35 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png | 2148429 | 2026-07-03 00:05:04 |
@@ -1335,11 +1362,11 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8871 | 2026-07-12 18:26:56 |
 | docs/NCC_DEPLOY_CHECKLIST.md | 8924 | 2026-07-14 06:16:13 |
 | docs/NCC_FOLDER_MAP.md | 4785 | 2026-07-12 18:27:22 |
-| docs/NCC_VISUAL_CANON_WORKFLOW.md | 21371 | 2026-07-19 09:09:17 |
-| docs/PROJECT_DOCUMENTATION_INDEX.md | 18806 | 2026-07-19 09:08:44 |
+| docs/NCC_VISUAL_CANON_WORKFLOW.md | 21758 | 2026-07-19 14:11:00 |
+| docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 95899 | 2026-07-19 09:09:24 |
+| INVENTORY.md | 95899 | 2026-07-19 10:47:01 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
@@ -1350,6 +1377,7 @@ Generated:
 | INVENTORY.md.backup_20260710_152700 | 82201 | 2026-07-10 15:27:15 |
 | INVENTORY.md.backup_20260711_082946 | 82201 | 2026-07-10 15:26:47 |
 | INVENTORY.md.backup_20260712_183037 | 82945 | 2026-07-12 18:30:37 |
+| INVENTORY.md.backup_20260719_141209 | 95899 | 2026-07-19 14:12:09 |
 | PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md | 9830 | 2026-07-01 09:37:30 |
 | PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md | 11411 | 2026-07-01 09:37:30 |
 | README.md | 1642 | 2026-07-12 18:28:43 |
@@ -1357,6 +1385,7 @@ Generated:
 | ROADMAP.md | 7662 | 2026-07-12 18:29:00 |
 | tests/visual_canon/__pycache__/deploy_test_support.cpython-314.pyc | 13896 | 2026-07-14 09:02:40 |
 | tests/visual_canon/__pycache__/test_bootstrap_character.cpython-314.pyc | 40746 | 2026-07-19 08:57:53 |
+| tests/visual_canon/__pycache__/test_cline_reference_import_skill.cpython-314.pyc | 33199 | 2026-07-19 14:09:01 |
 | tests/visual_canon/__pycache__/test_deploy_visual_canon_apply.cpython-314.pyc | 8403 | 2026-07-14 09:01:37 |
 | tests/visual_canon/__pycache__/test_deploy_visual_canon_authority.cpython-314.pyc | 20813 | 2026-07-14 23:26:58 |
 | tests/visual_canon/__pycache__/test_deploy_visual_canon_cli.cpython-314.pyc | 10637 | 2026-07-14 09:01:37 |
@@ -1380,6 +1409,7 @@ Generated:
 | tests/visual_canon/fixtures/valid_legacy/prompt_run_log.jsonl | 392 | 2026-07-12 21:57:22 |
 | tests/visual_canon/fixtures/valid_strict/prompt_run_log.jsonl | 646 | 2026-07-12 21:53:57 |
 | tests/visual_canon/test_bootstrap_character.py | 30251 | 2026-07-19 08:57:42 |
+| tests/visual_canon/test_cline_reference_import_skill.py | 21771 | 2026-07-19 14:08:53 |
 | tests/visual_canon/test_deploy_visual_canon_apply.py | 3210 | 2026-07-14 08:59:52 |
 | tests/visual_canon/test_deploy_visual_canon_authority.py | 11613 | 2026-07-14 23:22:57 |
 | tests/visual_canon/test_deploy_visual_canon_cli.py | 4987 | 2026-07-14 08:59:18 |

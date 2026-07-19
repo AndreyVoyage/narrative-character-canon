@@ -4,7 +4,7 @@
 
 **Status:** ACTIVE / CHARACTER CANON REPOSITORY
 
-**Last verified:** 2026-07-18
+**Last verified:** 2026-07-19
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
@@ -21,6 +21,8 @@
 ## Подтверждённые факты (проверено по файлам, не со слов)
 
 * Bootstrap character tool MVP is implemented: `tools/bootstrap_character.py` with JSON schema contract at `configs/visual_canon/character_bootstrap.schema.json` and 30 tests at `tests/visual_canon/test_bootstrap_character.py`. Decision D-022 recorded.
+
+* Cline control layer is implemented: `.clinerules/` (4 rule files) and `.cline/skills/ncc-reference-import/` (SKILL.md, example task-spec template, `scripts/import_references.py`). The skill is a dry-run-first, SHA-256-verified, copy-only reference importer with atomic rollback; it never edits metadata, stages, commits, pushes, or touches SQLite. 23 tests at `tests/visual_canon/test_cline_reference_import_skill.py`. Decision D-029 recorded.
 
 * Repository foundation существует, `AI_CHARACTERS/` содержит 9 персонажей: ANDREY, ANDREY_JUNIOR, EGOR, KIRA, MAKSIM, MARINA, NIKA, OLGA, SERGEY; плюс `_JOINT_SCENES/KIRA_ANDREY`.
 * `AGENTS.md` tracked в Git и актуален (обновлён 2026-07-12 после D-017).

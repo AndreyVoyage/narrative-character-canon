@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "task_id": "NCC-EGOR-REFERENCE-IMPORT-EXAMPLE",
+  "character_id": "EGOR",
+  "expected_head": "432fc151d949561f659ff93f6e07b081cefe4be1",
+  "source_files": [
+    {
+      "path": "C:\\DEV\\Narrative\\ФОТО\\Егор\\egor_face_ref_01.jpg",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "target_relative_path": "01_refs_raw/EGOR_RAW_01_face_reference.jpg",
+      "role": "FACE_MAIN",
+      "secondary_roles": [],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Example entry only. Replace path, sha256, and target before real use."
+    }
+  ],
+  "authorized_metadata_files": [],
+  "regenerate_inventory": false,
+  "run_validator": true,
+  "stop_uncommitted": true
+}
