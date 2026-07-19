@@ -90,6 +90,7 @@ C:\DEV\Narrative\narrative-character-canon\tools\
 Текущие инструменты:
 
 ```text
+tools\bootstrap_character.py                  — dry-run-first character bootstrap from owner-authored JSON spec (MVP)
 tools\build_scene_reference_pack.py           — сборщик reference pack / SFW prompt
 tools\validate_visual_canon_pipeline.py       — read-only валидатор visual-canon pipeline (MVP)
 tools\deploy_visual_canon_result.py           — dry-run-first deploy tool for one existing human-approved result (MVP)
@@ -132,6 +133,7 @@ configs\visual_canon\pipeline_policy.json
 configs\visual_canon\prompt_record.schema.json
 configs\visual_canon\character_manifest.schema.json
 configs\visual_canon\deployment_request.schema.json
+configs\visual_canon\character_bootstrap.schema.json
 ```
 
 Назначение:
@@ -140,6 +142,7 @@ configs\visual_canon\deployment_request.schema.json
 * `prompt_record.schema.json` — JSON Schema для JSONL-реестра попыток (одна запись на `prompt_id`).
 * `character_manifest.schema.json` — JSON Schema для durable per-character pipeline manifest.
 * `deployment_request.schema.json` — declarative existing-record-only deploy request contract.
+* `character_bootstrap.schema.json` — JSON Schema for owner-authored character bootstrap spec (used by `tools/bootstrap_character.py`).
 
 Deploy-tool tests are under `tests/visual_canon/test_deploy_visual_canon_*.py` and use temporary Git
 repositories; they do not deploy real character data.

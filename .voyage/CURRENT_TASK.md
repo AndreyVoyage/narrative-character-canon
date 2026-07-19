@@ -804,6 +804,39 @@ Five metadata files created, one updated, four Voyage tracking files updated:
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-BOOTSTRAP-CHARACTER-MVP-IMPLEMENTATION-2026-07-19`
+
+**Final status:** `COMPLETED_LOCAL`
+
+### Goal
+
+Implement a reusable, standard-library-only character bootstrap tool (`tools/bootstrap_character.py`)
+with dry-run-first behavior, JSON schema contract, 30 tests using temporary Git repos, and Voyage
+documentation updates.
+
+### Result
+
+- `configs/visual_canon/character_bootstrap.schema.json` — owner-authored JSON spec contract.
+- `tools/bootstrap_character.py` — standard-library Python tool (dry-run by default, `--apply` for writes).
+- `tests/visual_canon/test_bootstrap_character.py` — 30 tests (all pass).
+- 142 total tests pass across full visual-canon test suite.
+- Validator baseline: 5 registries, 0 errors, 234 legacy warnings.
+- No production character bootstrapped during implementation.
+- No AI_CHARACTERS/** changes.
+- Protected untracked paths untouched.
+- Decision D-022 recorded.
+
+### Constraints respected
+
+- No real character data created, modified, or deployed.
+- No images generated or inspected.
+- No staging, commit, or push during implementation.
+- No SQLite operations.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`

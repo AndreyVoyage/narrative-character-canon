@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrative-character-canon/configs/visual_canon/character_bootstrap.schema.json",
+  "title": "NCC Character Bootstrap Spec",
+  "description": "Owner-authored JSON spec for bootstrapping a new NCC character namespace. The bootstrap tool creates folders, base files, and metadata — never images.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "character_id",
+    "display_name",
+    "prompt_subject",
+    "identity_anchor",
+    "style_direction",
+    "safety_rules",
+    "next_step",
+    "current_status",
+    "reference_preset_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Contract version for this spec file.",
+      "enum": ["1.0"]
+    },
+    "character_id": {
+      "type": "string",
+      "description": "UPPER_SNAKE_CASE character identifier. Must match ^[A-Z][A-Z0-9_]*$ and not start with _.",
+      "pattern": "^[A-Z][A-Z0-9_]*$"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-readable display name.",
+      "minLength": 1
+    },
+    "prompt_subject": {
+      "type": "string",
+      "description": "Neutral prompt-facing alias used in generation prompts.",
+      "minLength": 1
+    },
+    "identity_anchor": {
+      "type": "string",
+      "description": "Owner-approved identity text used in CANON_GENERATION_PROMPTS and IDENTITY_DRAFT.",
+      "minLength": 1
+    },
+    "style_direction": {
+      "type": "string",
+      "description": "Owner-approved visual direction for prompt style rules.",
+      "minLength": 1
+    },
+    "safety_rules": {
+      "type": "array",
+      "description": "Non-empty list of safety rules for generation contexts.",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "next_step": {
+      "type": "string",
+      "description": "Owner-approved next action for the character.",
+      "minLength": 1
+    },
+    "current_status": {
+      "type": "string",
+      "description": "Initial status value.",
+      "enum": [
+        "TEXT_CANON_READY",
+        "CANON_PROMPTS_CREATED"
+      ]
+    },
+    "reference_preset_status": {
+      "type": "string",
+      "description": "Human-readable reference preset status.",
+      "minLength": 1
+    }
+  }
+}

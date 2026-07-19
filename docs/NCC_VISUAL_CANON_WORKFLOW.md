@@ -13,7 +13,7 @@ This document defines the single universal pipeline that every character, scene,
 
 The pipeline applies to:
 
-- New character canon creation.
+- New character canon creation (see `tools/bootstrap_character.py` for automated namespace initialization).
 - Control tests and scene tests.
 - MAIN and ALT reference outputs.
 - Pair / joint scenes.
@@ -24,6 +24,7 @@ It does not apply to:
 - Administrative documentation updates without generation.
 - Tool development (those follow normal software-engineering workflow).
 - SQLite-memory tooling outside the synchronization rules below.
+- Automated namespace bootstrapping (handled by `tools/bootstrap_character.py` with an owner-authored JSON spec; images are never created by the bootstrap tool).
 
 ---
 

@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-19 06:42:00
+2026-07-19 09:09:24
 
 ---
 
@@ -724,6 +724,7 @@ Generated:
 │           └── SERGEY_REFERENCE_PRESETS.json
 ├── configs/
 │   └── visual_canon/
+│       ├── character_bootstrap.schema.json
 │       ├── character_manifest.schema.json
 │       ├── deployment_request.schema.json
 │       ├── pipeline_policy.json
@@ -740,6 +741,7 @@ Generated:
 │   └── visual_canon/
 │       ├── __pycache__/
 │       │   ├── deploy_test_support.cpython-314.pyc
+│       │   ├── test_bootstrap_character.cpython-314.pyc
 │       │   ├── test_deploy_visual_canon_apply.cpython-314.pyc
 │       │   ├── test_deploy_visual_canon_authority.cpython-314.pyc
 │       │   ├── test_deploy_visual_canon_cli.cpython-314.pyc
@@ -774,6 +776,7 @@ Generated:
 │       │   └── valid_strict/
 │       │       └── prompt_run_log.jsonl
 │       ├── deploy_test_support.py
+│       ├── test_bootstrap_character.py
 │       ├── test_deploy_visual_canon_apply.py
 │       ├── test_deploy_visual_canon_authority.py
 │       ├── test_deploy_visual_canon_cli.py
@@ -786,8 +789,10 @@ Generated:
 │       └── test_validator_prompt_records.py
 ├── tools/
 │   ├── __pycache__/
+│   │   ├── bootstrap_character.cpython-314.pyc
 │   │   ├── deploy_visual_canon_result.cpython-314.pyc
 │   │   └── validate_visual_canon_pipeline.cpython-314.pyc
+│   ├── bootstrap_character.py
 │   ├── build_scene_reference_pack.ps1
 │   ├── build_scene_reference_pack.py
 │   ├── deploy_visual_canon_result.py
@@ -821,7 +826,7 @@ Generated:
 
 # Total file count
 
-520
+525
 
 # File type summary
 
@@ -861,13 +866,13 @@ Generated:
 | .backup_20260711_082946 | 1 |
 | .backup_20260712_183037 | 1 |
 | .jpg | 2 |
-| .json | 18 |
+| .json | 19 |
 | .jsonl | 17 |
 | .md | 52 |
 | .png | 103 |
 | .ps1 | 1 |
-| .py | 19 |
-| .pyc | 13 |
+| .py | 21 |
+| .pyc | 15 |
 | .txt | 26 |
 
 # File list
@@ -917,7 +922,7 @@ Generated:
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
 | .voyage/STATE_EXPORT.json | 93915 | 2026-07-07 15:44:38 |
 | .vscode/settings.json | 4 | 2026-07-09 09:27:48 |
-| AGENTS.md | 19342 | 2026-07-17 17:32:45 |
+| AGENTS.md | 19549 | 2026-07-19 09:07:20 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/06_prompts/KIRA_ANDREY_DUO_SCENE_PACK_PROMPTS.txt | 7932 | 2026-07-03 02:16:30 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/.gitkeep | 0 | 2026-07-02 22:42:54 |
 | AI_CHARACTERS/_JOINT_SCENES/KIRA_ANDREY/07_generated/canon_tests/01_neutral_studio_duo/KIRA_ANDREY_joint_test01_neutral_studio_duo_v2_APPROVED.png | 2148429 | 2026-07-03 00:05:04 |
@@ -1322,6 +1327,7 @@ Generated:
 | AI_CHARACTERS/SERGEY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 2416 | 2026-07-09 09:26:57 |
+| configs/visual_canon/character_bootstrap.schema.json | 2438 | 2026-07-19 08:50:49 |
 | configs/visual_canon/character_manifest.schema.json | 7521 | 2026-07-12 18:22:17 |
 | configs/visual_canon/deployment_request.schema.json | 7648 | 2026-07-14 08:57:39 |
 | configs/visual_canon/pipeline_policy.json | 6807 | 2026-07-14 00:27:13 |
@@ -1329,11 +1335,11 @@ Generated:
 | docs/GITHUB_REFERENCE_PACK_WORKFLOW.md | 8871 | 2026-07-12 18:26:56 |
 | docs/NCC_DEPLOY_CHECKLIST.md | 8924 | 2026-07-14 06:16:13 |
 | docs/NCC_FOLDER_MAP.md | 4785 | 2026-07-12 18:27:22 |
-| docs/NCC_VISUAL_CANON_WORKFLOW.md | 21133 | 2026-07-17 17:32:18 |
-| docs/PROJECT_DOCUMENTATION_INDEX.md | 18495 | 2026-07-14 06:16:13 |
+| docs/NCC_VISUAL_CANON_WORKFLOW.md | 21371 | 2026-07-19 09:09:17 |
+| docs/PROJECT_DOCUMENTATION_INDEX.md | 18806 | 2026-07-19 09:08:44 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 93707 | 2026-07-18 22:49:03 |
+| INVENTORY.md | 95201 | 2026-07-19 06:42:00 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
@@ -1350,6 +1356,7 @@ Generated:
 | repo_audit.txt | 2384 | 2026-07-09 09:27:48 |
 | ROADMAP.md | 7662 | 2026-07-12 18:29:00 |
 | tests/visual_canon/__pycache__/deploy_test_support.cpython-314.pyc | 13896 | 2026-07-14 09:02:40 |
+| tests/visual_canon/__pycache__/test_bootstrap_character.cpython-314.pyc | 40746 | 2026-07-19 08:57:53 |
 | tests/visual_canon/__pycache__/test_deploy_visual_canon_apply.cpython-314.pyc | 8403 | 2026-07-14 09:01:37 |
 | tests/visual_canon/__pycache__/test_deploy_visual_canon_authority.cpython-314.pyc | 20813 | 2026-07-14 23:26:58 |
 | tests/visual_canon/__pycache__/test_deploy_visual_canon_cli.cpython-314.pyc | 10637 | 2026-07-14 09:01:37 |
@@ -1372,6 +1379,7 @@ Generated:
 | tests/visual_canon/fixtures/invalid_variant_in_id/prompt_run_log.jsonl | 612 | 2026-07-12 21:54:05 |
 | tests/visual_canon/fixtures/valid_legacy/prompt_run_log.jsonl | 392 | 2026-07-12 21:57:22 |
 | tests/visual_canon/fixtures/valid_strict/prompt_run_log.jsonl | 646 | 2026-07-12 21:53:57 |
+| tests/visual_canon/test_bootstrap_character.py | 30251 | 2026-07-19 08:57:42 |
 | tests/visual_canon/test_deploy_visual_canon_apply.py | 3210 | 2026-07-14 08:59:52 |
 | tests/visual_canon/test_deploy_visual_canon_authority.py | 11613 | 2026-07-14 23:22:57 |
 | tests/visual_canon/test_deploy_visual_canon_cli.py | 4987 | 2026-07-14 08:59:18 |
@@ -1382,8 +1390,10 @@ Generated:
 | tests/visual_canon/test_validator_discovery.py | 11681 | 2026-07-12 23:00:14 |
 | tests/visual_canon/test_validator_legacy_compatibility.py | 3480 | 2026-07-12 22:59:59 |
 | tests/visual_canon/test_validator_prompt_records.py | 7043 | 2026-07-12 22:45:31 |
+| tools/__pycache__/bootstrap_character.cpython-314.pyc | 54908 | 2026-07-19 08:57:56 |
 | tools/__pycache__/deploy_visual_canon_result.cpython-314.pyc | 74220 | 2026-07-17 11:22:24 |
 | tools/__pycache__/validate_visual_canon_pipeline.cpython-314.pyc | 53195 | 2026-07-12 22:59:15 |
+| tools/bootstrap_character.py | 42313 | 2026-07-19 08:56:26 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
 | tools/deploy_visual_canon_result.py | 45384 | 2026-07-14 08:58:35 |

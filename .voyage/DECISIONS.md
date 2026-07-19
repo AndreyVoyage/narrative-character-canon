@@ -337,6 +337,48 @@ ANDREY_JUNIOR becomes BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED.
 Important:
 ANDREY_JUNIOR is the son-version of ANDREY Senior: short compact build, about 47 kg, slim youthful physique, fair skin, bright blue eyes, light blonde / dark blonde messy hair, soft oval youthful face, gentle narrow jawline, clean-shaven, natural pinkness in cheeks. Keep prompts family-neutral, non-sexual and age-appropriate. Avoid explicit age numbers and avoid writing “Andrey Junior” inside image prompts when possible.
 
+## D-022 — Bootstrap character tool MVP
+
+Date: 2026-07-19
+Decision ID: D-022
+
+Context:
+Adding a new character to NCC requires repetitive manual folder creation, base-file
+generation, Voyage registration, and validator pass. Automating this with a standard-library,
+dry-run-first tool reduces errors and ensures consistency.
+
+Decision:
+Create a reusable character bootstrap tool (`tools/bootstrap_character.py`) that reads an
+owner-authored JSON spec and initializes a complete text-only character namespace: canonical
+10-subfolder structure, prompt files, reference presets, empty JSONL registry, identity draft,
+canon index, test results, and Voyage registration.
+
+The tool never generates, inspects, selects, approves, copies, renames, or deploys images.
+
+Created files:
+- `configs/visual_canon/character_bootstrap.schema.json` — JSON Schema for the bootstrap spec.
+- `tools/bootstrap_character.py` — standard-library Python tool (dry-run by default, `--apply` for writes).
+- `tests/visual_canon/test_bootstrap_character.py` — 30 tests using temporary Git repositories.
+
+Updated docs:
+- `AGENTS.md` — added bootstrap task to common agent tasks.
+- `docs/NCC_VISUAL_CANON_WORKFLOW.md` — §1 references the bootstrap tool.
+- `docs/PROJECT_DOCUMENTATION_INDEX.md` — tool and schema listings updated.
+- `INVENTORY.md` — regenerated.
+
+Reason:
+Prevents manual errors during character initialization and gives every character a consistent,
+validator-compatible starting point.
+
+Result:
+NCC now has an automated character bootstrap. All production bootstrap operations must use
+`--apply` only after explicit human approval and dry-run review.
+
+Next action:
+Use only `--apply` after human dry-run review. No production character bootstrapped during implementation.
+
+---
+
 ## DECISION-0020 — Start OLGA canon setup
 
 Date: 2026-07-04

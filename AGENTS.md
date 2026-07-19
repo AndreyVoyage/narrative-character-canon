@@ -333,7 +333,8 @@ Rules for presets:
 | Task | What to do |
 |---|---|
 | Update inventory | Walk `AI_CHARACTERS/`, rewrite `INVENTORY.md`, backup old file, commit. |
-| Add a new character | Create folder structure, `.gitkeep` files, preset JSON, identity + canon index skeletons, update README/ROADMAP, regenerate inventory, commit. |
+| Bootstrap a new character | Use `tools/bootstrap_character.py` with an owner-authored JSON spec; dry-run first, then `--apply`. Never run apply on the real repo without explicit human approval. |
+| Add a new character (manual) | Create folder structure, `.gitkeep` files, preset JSON, identity + canon index skeletons, update README/ROADMAP, regenerate inventory, commit. |
 | Update a preset | Edit `<CHARACTER>_REFERENCE_PRESETS.json`; verify every `reference_images` path exists and is tracked; do not add placeholders. |
 | Update canon index | Edit `<CHARACTER>_CANON_INDEX.md`; keep status fields, active file lists, and next steps accurate. |
 | Fix a script bug | Edit `tools/build_scene_reference_pack.py` or `.ps1`; run a test invocation; do not commit output packs. |

@@ -20,6 +20,8 @@
 
 ## Подтверждённые факты (проверено по файлам, не со слов)
 
+* Bootstrap character tool MVP is implemented: `tools/bootstrap_character.py` with JSON schema contract at `configs/visual_canon/character_bootstrap.schema.json` and 30 tests at `tests/visual_canon/test_bootstrap_character.py`. Decision D-022 recorded.
+
 * Repository foundation существует, `AI_CHARACTERS/` содержит 9 персонажей: ANDREY, ANDREY_JUNIOR, EGOR, KIRA, MAKSIM, MARINA, NIKA, OLGA, SERGEY; плюс `_JOINT_SCENES/KIRA_ANDREY`.
 * `AGENTS.md` tracked в Git и актуален (обновлён 2026-07-12 после D-017).
 * `ROADMAP.md`, `PHASE_1_CURRENT_LAPTOP_CLOUD_PIPELINE.md`, `PHASE_2_LOCAL_AI_WORKSTATION_PIPELINE.md` существуют в корне.
