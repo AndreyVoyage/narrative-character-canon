@@ -1395,3 +1395,51 @@ Next action:
 Use the skill only via dry-run first, with explicit human approval before any `--apply`. Metadata
 closeout (canon index / reference presets linkage after an import) remains a separate, unimplemented
 follow-up phase, consistent with the MVP's `authorized_metadata_files` restriction.
+
+## DECISION-0030 — EGOR visual reference metadata closeout
+
+Date: 2026-07-19
+
+Context:
+Five owner-classified EGOR visual references were imported to `AI_CHARACTERS/EGOR/01_refs_raw/`
+(FACE_MAIN, BODY_MAIN, 3× DUO_SUPPORT) via the NCC reference-import skill. The task requested
+registration of these five references in existing EGOR metadata without creating new prompt IDs,
+JSONL records, prompt attempts, or generation tests.
+
+Decision:
+- Register all five references in `EGOR_REFERENCE_PRESETS.json` under a new `raw_references` array
+  with SHA-256, primary_role, secondary_roles, classification_status, and notes.
+- Update `active_canon.primary_face_reference` from `PENDING_GENERATION` to point at
+  `EGOR_RAW_02_face_bar_burgundy.jpg`.
+- Update `last_updated` to `2026-07-19`.
+- Update `.voyage/CHARACTER_REGISTRY.md` EGOR row: new status `VISUAL_REFERENCES_IMPORTED` prepended
+  to existing status, next step reflects "await human approval".
+- Update `.voyage/CURRENT_TASK.md`, `.voyage/PROJECT_STATE.md`.
+- Record D-030.
+- EGOR status remains non-approved: no `BASE_CANON_APPROVED`, `CONTROL_TESTS_APPROVED`, or
+  `CANON_READY_2D`. Active facial-hair canon remains clean-shaven (stubble deferred).
+- The woman in the three duo images is scene support only and must not become part of EGOR identity canon.
+- No prompt IDs, JSONL records, prompt attempts, or generation tests were created.
+- No image copy, move, or pixel editing occurred.
+- No commit, no push, no SQLite.
+
+Affected files:
+- `AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json`
+- `.voyage/CHARACTER_REGISTRY.md`
+- `.voyage/CURRENT_TASK.md`
+- `.voyage/PROJECT_STATE.md`
+- `.voyage/DECISIONS.md`
+- `INVENTORY.md` (regenerated)
+
+Reason:
+Established repository convention: after reference import, existing metadata files that track
+references must be updated. The `raw_references` array follows the OLGA/MARINA pattern of
+structured reference tracking in presets.
+
+Result:
+Five EGOR visual references are registered, classified, and tracked in metadata. Everything
+remains unstaged and uncommitted for human review.
+
+Next action:
+Human review of the imported references and metadata closeout. Generation must not start until
+human approval.

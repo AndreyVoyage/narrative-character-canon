@@ -2,7 +2,7 @@
   "character": "EGOR",
   "active_version": "egor_base_canon_v1.0",
   "status": "PENDING_GENERATION",
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-19",
   "identity_summary": {
     "role": "adult male character",
     "height_direction": "180 cm, athletic strong build, commanding presence",
@@ -12,7 +12,7 @@
     "style_direction": "handsome, predatory, dominant, expensive, cinematic, wolf-like presence, elegant danger"
   },
   "active_canon": {
-    "primary_face_reference": "PENDING_GENERATION",
+    "primary_face_reference": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_02_face_bar_burgundy.jpg",
     "face_canon": "AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png",
     "body_canon_a": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -24,6 +24,48 @@
     "body_canon_a": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
     "body_canon_b": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
+  "raw_references": [
+    {
+      "path": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_01_body_multiangle_burgundy.png",
+      "sha256": "a2325d313cc1cdfb97152b55424cb3752b18f5d830a31182dd8d61d6cfab4d4f",
+      "primary_role": "BODY_MAIN",
+      "secondary_roles": ["FACE_STRUCTURE_SUPPORT", "PROFILE_SUPPORT", "BACK_VIEW_SUPPORT"],
+      "classification_status": "owner_classified",
+      "notes": "Body main reference — multi-angle burgundy outfit. The woman visible in this image is scene support only and must not become part of EGOR identity canon."
+    },
+    {
+      "path": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_02_face_bar_burgundy.jpg",
+      "sha256": "40e23196288aecf6addee5a221dc9d6f3269f3b148006be956a6cb6671c208c4",
+      "primary_role": "FACE_MAIN",
+      "secondary_roles": ["HAIR_SUPPORT", "FORMAL_STYLE_SUPPORT"],
+      "classification_status": "owner_classified",
+      "notes": "Face main reference — bar setting, burgundy. Active facial-hair canon remains clean-shaven; stubble remains deferred."
+    },
+    {
+      "path": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_03_duo_couch.png",
+      "sha256": "cdeb743bf11a7426716401c0fbf81f6751a06bc1c7733b02093aa434fe647053",
+      "primary_role": "DUO_SUPPORT",
+      "secondary_roles": ["FORMAL_SCENE_SUPPORT"],
+      "classification_status": "owner_classified",
+      "notes": "Duo support reference — couch scene with red dress. The woman in this image is scene support only and must not become part of EGOR identity canon."
+    },
+    {
+      "path": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_04_duo_pillar.png",
+      "sha256": "55378fd10b7cd02691983238f90860553003c12956bd5b04a0d0f2388040b049",
+      "primary_role": "DUO_SUPPORT",
+      "secondary_roles": ["FORMAL_SCENE_SUPPORT"],
+      "classification_status": "owner_classified",
+      "notes": "Duo support reference — pillar scene with red dress. The woman in this image is scene support only and must not become part of EGOR identity canon."
+    },
+    {
+      "path": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_05_duo_close.png",
+      "sha256": "115801179aa671c69d5bbd32e54de202036974d979ece000ba1aeec7e6d997bd",
+      "primary_role": "DUO_SUPPORT",
+      "secondary_roles": ["FORMAL_SCENE_SUPPORT", "FACE_ANGLE_SUPPORT"],
+      "classification_status": "owner_classified",
+      "notes": "Duo support reference — close-up with red dress. The woman in this image is scene support only and must not become part of EGOR identity canon."
+    }
+  ],
   "control_tests": [],
   "scene_presets": {},
   "prompt_pipeline": {

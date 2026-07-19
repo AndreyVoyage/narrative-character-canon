@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-19 14:12:09
+2026-07-19 20:03:25
 
 ---
 
@@ -298,7 +298,12 @@ Generated:
 │   │   └── .gitkeep
 │   ├── EGOR/
 │   │   ├── 01_refs_raw/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   ├── EGOR_RAW_01_body_multiangle_burgundy.png
+│   │   │   ├── EGOR_RAW_02_face_bar_burgundy.jpg
+│   │   │   ├── EGOR_RAW_03_duo_couch.png
+│   │   │   ├── EGOR_RAW_04_duo_pillar.png
+│   │   │   └── EGOR_RAW_05_duo_close.png
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
@@ -844,7 +849,7 @@ Generated:
 
 # Total file count
 
-536
+541
 
 # File type summary
 
@@ -884,11 +889,11 @@ Generated:
 | .backup_20260711_082946 | 1 |
 | .backup_20260712_183037 | 1 |
 | .backup_20260719_141209 | 1 |
-| .jpg | 2 |
+| .jpg | 3 |
 | .json | 20 |
 | .jsonl | 17 |
 | .md | 57 |
-| .png | 103 |
+| .png | 107 |
 | .ps1 | 1 |
 | .py | 23 |
 | .pyc | 17 |
@@ -899,7 +904,7 @@ Generated:
 | Path | Size bytes | Modified |
 |---|---:|---|
 | .claude/settings.json | 157 | 2026-07-13 23:03:10 |
-| .cline/skills/ncc-reference-import/scripts/__pycache__/import_references.cpython-314.pyc | 28524 | 2026-07-19 14:05:12 |
+| .cline/skills/ncc-reference-import/scripts/__pycache__/import_references.cpython-314.pyc | 28524 | 2026-07-19 14:14:56 |
 | .cline/skills/ncc-reference-import/scripts/import_references.py | 18790 | 2026-07-19 14:04:58 |
 | .cline/skills/ncc-reference-import/SKILL.md | 2968 | 2026-07-19 14:03:41 |
 | .cline/skills/ncc-reference-import/templates/reference-import-task.example.json | 770 | 2026-07-19 14:05:35 |
@@ -909,7 +914,7 @@ Generated:
 | .clinerules/30-ncc-task-discipline.md | 1165 | 2026-07-19 14:03:16 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
-| .voyage/CHARACTER_REGISTRY.md | 4101 | 2026-07-19 10:46:50 |
+| .voyage/CHARACTER_REGISTRY.md | 4243 | 2026-07-19 20:01:04 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -920,7 +925,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 36348 | 2026-07-19 14:11:32 |
+| .voyage/CURRENT_TASK.md | 38565 | 2026-07-19 20:02:54 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -930,7 +935,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 71173 | 2026-07-19 14:11:20 |
+| .voyage/DECISIONS.md | 73392 | 2026-07-19 20:02:22 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -943,7 +948,7 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 6921 | 2026-07-19 14:11:49 |
+| .voyage/PROJECT_STATE.md | 7137 | 2026-07-19 20:03:14 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
@@ -1100,6 +1105,11 @@ Generated:
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260704_150852 | 903 | 2026-07-04 15:08:52 |
 | AI_CHARACTERS/ANDREY_JUNIOR/10_notes/ANDREY_JUNIOR_TEST_RESULTS.md.backup_20260706_083029 | 2982 | 2026-07-06 08:30:29 |
 | AI_CHARACTERS/EGOR/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_01_body_multiangle_burgundy.png | 2590598 | 2026-07-19 19:20:10 |
+| AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_02_face_bar_burgundy.jpg | 83723 | 2026-07-19 19:20:10 |
+| AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_03_duo_couch.png | 3068480 | 2026-07-19 19:20:10 |
+| AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_04_duo_pillar.png | 2666182 | 2026-07-19 19:20:10 |
+| AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_05_duo_close.png | 2998637 | 2026-07-19 19:20:10 |
 | AI_CHARACTERS/EGOR/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1119,7 +1129,7 @@ Generated:
 | AI_CHARACTERS/EGOR/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 2702 | 2026-07-19 10:44:09 |
+| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 5230 | 2026-07-19 20:00:32 |
 | AI_CHARACTERS/KIRA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png | 2257262 | 2026-06-29 18:03:58 |
@@ -1366,7 +1376,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 95899 | 2026-07-19 10:47:01 |
+| INVENTORY.md | 97702 | 2026-07-19 14:12:09 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

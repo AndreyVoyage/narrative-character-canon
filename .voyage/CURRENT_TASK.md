@@ -920,6 +920,55 @@ Implement a small Cline control layer for `narrative-character-canon`: persisten
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-EGOR-VISUAL-REFERENCE-METADATA-CLOSEOUT-2026-07-19`
+
+**Final status:** `COMPLETED_LOCAL_METADATA_ONLY`
+
+**Priority:** `P0`
+
+### Goal
+
+Register five owner-classified EGOR visual references imported to `01_refs_raw/` in existing
+EGOR metadata files, update Voyage control files, regenerate inventory, and validate — without
+creating prompt IDs, JSONL records, prompt attempts, or generation tests.
+
+### Result
+
+One EGOR metadata file modified, four Voyage tracking files updated:
+
+**Modified:**
+- `AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json` — five entries in new `raw_references` array with SHA-256, primary_role, secondary_roles, classification_status, and notes; `primary_face_reference` updated; `last_updated` set to 2026-07-19
+- `.voyage/CHARACTER_REGISTRY.md` — EGOR row updated: status now `VISUAL_REFERENCES_IMPORTED / TEXT_CANON_READY / CANON_PROMPTS_CREATED`
+- `.voyage/DECISIONS.md` — D-030 recorded
+- `.voyage/CURRENT_TASK.md` — this entry
+- `.voyage/PROJECT_STATE.md` — EGOR status updated
+- `INVENTORY.md` — regenerated
+
+**Five owner-classified references:**
+- `EGOR_RAW_01_body_multiangle_burgundy.png` — BODY_MAIN + FACE_STRUCTURE_SUPPORT, PROFILE_SUPPORT, BACK_VIEW_SUPPORT
+- `EGOR_RAW_02_face_bar_burgundy.jpg` — FACE_MAIN + HAIR_SUPPORT, FORMAL_STYLE_SUPPORT
+- `EGOR_RAW_03_duo_couch.png` — DUO_SUPPORT + FORMAL_SCENE_SUPPORT
+- `EGOR_RAW_04_duo_pillar.png` — DUO_SUPPORT + FORMAL_SCENE_SUPPORT
+- `EGOR_RAW_05_duo_close.png` — DUO_SUPPORT + FORMAL_SCENE_SUPPORT, FACE_ANGLE_SUPPORT
+
+**EGOR status unchanged:** no `BASE_CANON_APPROVED`, `CONTROL_TESTS_APPROVED`, or `CANON_READY_2D`.
+Active facial-hair canon remains clean-shaven (stubble deferred).
+
+### Constraints respected
+
+- No prompt IDs or JSONL records created.
+- No EGOR_CANON_INDEX.md, EGOR_IDENTITY.txt, or other new EGOR files.
+- No image copy, move, or pixel editing.
+- No image generation.
+- Only EGOR namespace touched (plus Voyage control files and INVENTORY.md).
+- The woman in the three duo images is scene support only and not part of EGOR identity canon.
+- No commit, no push, no SQLite.
+- Protected untracked paths untouched.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`
@@ -936,5 +985,5 @@ without explicit human approval.
 
 ### EGOR note
 
-EGOR VNE text canon sync is complete (D-028). Four missing physical anchors added.
-Next action for EGOR: user-provided visual reference review before any generation.
+EGOR VNE text canon sync is complete (D-028). Five visual references imported and classified
+(D-030). Next action for EGOR: human review of imported visual references before any generation.
