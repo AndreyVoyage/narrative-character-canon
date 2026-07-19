@@ -837,6 +837,49 @@ documentation updates.
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-EGOR-VNE-TEXT-CANON-SYNC-2026-07-19`
+
+**Final status:** `COMPLETED_LOCAL`
+
+**Priority:** `P0`
+
+### Goal
+
+Synchronize NCC EGOR text canon with VNE physical identity anchors identified in the read-only
+audit `NCC_EGOR_VNE_TEXT_CANON_SYNC_AUDIT_2026-07-19.md`. Add missing height, weight,
+cleft chin, and aquiline nose. Resolve VNE facial-hair inconsistency by keeping NCC at `no facial hair`
+with stubble deferred until visual review.
+
+### Result
+
+Two existing EGOR text files modified:
+
+- `AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt` — identity anchor and all 4 prompt blocks updated with height (180 cm), weight (83 kg), cleft chin, and aquiline nose.
+- `AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json` — identity_summary face/body/height directions updated.
+
+Four Voyage tracking files updated:
+- `.voyage/DECISIONS.md` — D-028 recorded.
+- `.voyage/CURRENT_TASK.md` — this entry.
+- `.voyage/PROJECT_STATE.md` — EGOR sync noted.
+- `INVENTORY.md` — regenerated.
+
+No new files created, no prompt IDs, no JSONL records, no scene presets, no images.
+EGOR status unchanged: `TEXT_CANON_READY / CANON_PROMPTS_CREATED`.
+
+### Constraints respected
+
+- No images generated or inspected.
+- No prompt IDs or JSONL records created.
+- No scene presets populated.
+- No new EGOR files created.
+- EGOR status unchanged.
+- No SQLite operations.
+- Protected untracked paths untouched.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`
@@ -850,3 +893,8 @@ documentation updates.
 Human owner selects the next character or missing visual-coverage target.
 No target is selected automatically and no new generation is authorized
 without explicit human approval.
+
+### EGOR note
+
+EGOR VNE text canon sync is complete (D-028). Four missing physical anchors added.
+Next action for EGOR: user-provided visual reference review before any generation.

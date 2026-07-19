@@ -48,7 +48,7 @@
   * Inventory refresh remains pending as a separate optional task.
   * SQLite synchronization remains pending as a separate optional task.
 * MARINA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; 3 base-canon images, 5 support expression sheets, 3 outfit references, and Control Tests 01–07 are published; prompt pipeline contains 18 unique records and scene presets are active.
-* NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
+* NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет. EGOR VNE text canon sync complete (D-028): height (180 cm), weight (83 kg), cleft chin, aquiline nose added; stubble deferred; next step is user visual reference review.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена как отдельная задача. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 validator tests pass. After MARINA Test01–Test07 registration, compatibility mode discovers 5 character registries / 65 aggregate records.
 * Deploy-tool MVP (`d15b43c`) and authority-enforcement correction (`2d808a9`) are published; post-push convergence was verified at `50e56c663b4ee776799eb4a88c5a3f6362486dd3`.

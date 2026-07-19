@@ -1265,3 +1265,78 @@ Constraints respected:
 - Exact original prompts/backends were not fabricated.
 
 Next action: Await human selection of the next character or missing visual-coverage target.
+
+---
+
+## DECISION-0028 — EGOR VNE text canon sync
+
+Date: 2026-07-19
+
+Context:
+A read-only audit (`NCC_EGOR_VNE_TEXT_CANON_SYNC_AUDIT_2026-07-19.md`) compared NCC EGOR text canon
+against VNE physical identity sources (IDENTITY.json, VISUAL_ANCHORS.json). The audit found no
+direct conflicts but identified four material physical anchors missing from NCC:
+
+1. Height: 180 cm (NCC used "tall")
+2. Weight: 83 kg (NCC not mentioned)
+3. Strong chin with a subtle cleft (NCC not mentioned)
+4. Straight strong nose with a slightly aquiline profile (NCC not mentioned)
+
+VNE also contains an internal inconsistency on facial hair:
+- `IDENTITY.json` variables.facial_hair = `"none"`
+- `IDENTITY.json` anatomic_anchor.hair.facial_hair = `"none_or_3day_stubble"`
+- `VISUAL_ANCHORS.json` prompt_base uses `"no facial hair"`
+
+Decision:
+Synchronize the NCC EGOR text canon by adding the four missing physical anchors to the two
+existing EGOR text files (`EGOR_CANON_GENERATION_PROMPTS.txt` and `EGOR_REFERENCE_PRESETS.json`).
+Keep `no facial hair` as the active text canon. Record that three-day stubble is deferred
+until visual review; do not add stubble to active generation prompts. Do not create new files,
+prompt IDs, JSONL records, or scene presets. Do not change EGOR status from
+`TEXT_CANON_READY / CANON_PROMPTS_CREATED`.
+
+Normalized physical anchor adopted:
+> Adult male character, 180 cm and 83 kg, athletic build with broad shoulders, narrow waist,
+> and visible but realistic muscle definition. Angular oval masculine face, strong defined jaw,
+> prominent cheekbones, strong chin with a subtle cleft, straight strong nose with a slightly
+> aquiline profile, medium-thin defined lips, and a characteristic asymmetrical smirk with the
+> left corner slightly higher. Gray almond-shaped eyes with slightly heavy upper lids and a
+> focused, observant expression. Short dark ash-blond hair in a clean military-inspired cut with
+> a textured top. Light olive healthy skin. No facial hair in the active text canon. Expensive
+> understated wristwatch as a recurring accessory. Confident controlled posture and restrained
+> elegant wardrobe.
+
+Facial-hair decision for NCC:
+- Active text canon: `no facial hair`
+- Three-day stubble: deferred until visual review
+- Stubble must not appear in active generation prompts
+
+VNE source HEAD: `015f53126ba10f78f73414b1c9ed8376e179fa14`
+Audit verdict: `TEXT_SYNC_REQUIRED_BEFORE_VISUAL`
+
+Affected files:
+- `AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt` (modified — identity anchor and all 4 prompt blocks)
+- `AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json` (modified — identity_summary face/body/height directions)
+- `.voyage/DECISIONS.md` (modified — this decision)
+- `.voyage/CURRENT_TASK.md` (modified)
+- `.voyage/PROJECT_STATE.md` (modified)
+- `INVENTORY.md` (regenerated)
+
+Constraints respected:
+- No images generated or inspected.
+- No prompt IDs or JSONL records created.
+- No scene presets populated.
+- No new EGOR files created.
+- EGOR status unchanged: `TEXT_CANON_READY / CANON_PROMPTS_CREATED`.
+- No SQLite operations.
+- Protective untracked paths untouched.
+
+Reason:
+Bring the NCC EGOR text canon into alignment with VNE physical identity anchors before any visual
+generation begins. The cleft chin and aquiline nose are structural facial features that materially
+affect generation output. Height and weight provide precision for body-sheet generation prompts.
+The facial-hair decision resolves the VNE internal inconsistency by keeping NCC at the conservative
+default until visual review.
+
+Next action: User-provided visual reference review for EGOR; no generation authorized without
+explicit human approval.

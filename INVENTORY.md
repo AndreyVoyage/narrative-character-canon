@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-19 09:09:24
+2026-07-19 10:47:01
 
 ---
 
@@ -882,7 +882,7 @@ Generated:
 | .claude/settings.json | 157 | 2026-07-13 23:03:10 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
-| .voyage/CHARACTER_REGISTRY.md | 4026 | 2026-07-19 06:42:00 |
+| .voyage/CHARACTER_REGISTRY.md | 4101 | 2026-07-19 10:46:50 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -893,7 +893,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 31915 | 2026-07-19 06:42:00 |
+| .voyage/CURRENT_TASK.md | 34692 | 2026-07-19 10:45:38 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -903,7 +903,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 62841 | 2026-07-19 06:42:00 |
+| .voyage/DECISIONS.md | 68306 | 2026-07-19 10:44:50 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -916,7 +916,7 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 6050 | 2026-07-19 06:42:00 |
+| .voyage/PROJECT_STATE.md | 6474 | 2026-07-19 10:46:34 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
@@ -1083,7 +1083,7 @@ Generated:
 | AI_CHARACTERS/EGOR/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt | 5282 | 2026-07-09 10:15:21 |
+| AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt | 5768 | 2026-07-19 10:43:49 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1092,7 +1092,7 @@ Generated:
 | AI_CHARACTERS/EGOR/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 2594 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 2702 | 2026-07-19 10:44:09 |
 | AI_CHARACTERS/KIRA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png | 2257262 | 2026-06-29 18:03:58 |
@@ -1339,7 +1339,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 18806 | 2026-07-19 09:08:44 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 95201 | 2026-07-19 06:42:00 |
+| INVENTORY.md | 95899 | 2026-07-19 09:09:24 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
@@ -1390,7 +1390,7 @@ Generated:
 | tests/visual_canon/test_validator_discovery.py | 11681 | 2026-07-12 23:00:14 |
 | tests/visual_canon/test_validator_legacy_compatibility.py | 3480 | 2026-07-12 22:59:59 |
 | tests/visual_canon/test_validator_prompt_records.py | 7043 | 2026-07-12 22:45:31 |
-| tools/__pycache__/bootstrap_character.cpython-314.pyc | 54908 | 2026-07-19 08:57:56 |
+| tools/__pycache__/bootstrap_character.cpython-314.pyc | 54865 | 2026-07-19 09:28:32 |
 | tools/__pycache__/deploy_visual_canon_result.cpython-314.pyc | 74220 | 2026-07-17 11:22:24 |
 | tools/__pycache__/validate_visual_canon_pipeline.cpython-314.pyc | 53195 | 2026-07-12 22:59:15 |
 | tools/bootstrap_character.py | 42313 | 2026-07-19 08:56:26 |
