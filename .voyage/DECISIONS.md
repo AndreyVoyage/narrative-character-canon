@@ -1191,3 +1191,35 @@ while keeping the existing core canon stable and unchanged.
 
 Next action:
 Seven narrative scene images remain for separate review and test decisions.
+
+---
+
+## DECISION-0027 — MARINA Control Tests 01–07 published
+
+Date: 2026-07-18
+
+Context:
+Seven narrative MARINA scene images were human-reviewed and approved as control tests, copied into `AI_CHARACTERS/MARINA/07_generated/canon_tests/`, and verified against their recorded SHA-256 values.
+
+Decision:
+Register the seven images as MARINA Test01–Test07 with canonical prompt IDs, `APPROVED_AS_TEST` verdict, `MAIN` role, `repo_tracked` storage, `public_filtered` content tier, explicit human approval, and honest `unknown_requires_manual_input` prompt provenance. Populate Reference Presets control tests and scene presets, update Test Results, Canon Index, Prompt Index, working prompt metadata, Voyage state, and Inventory.
+
+Approved tests:
+- `MARINA_TEST01_RAINY_CAFE_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png`
+- `MARINA_TEST02_THEATER_MELANCHOLY_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png`
+- `MARINA_TEST03_EVENING_CITY_BALCONY_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png`
+- `MARINA_TEST04_AUTUMN_STREET_PORTRAIT_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png`
+- `MARINA_TEST05_MORNING_PAJAMAS_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png`
+- `MARINA_TEST06_WHITE_GARDEN_FORMAL_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png`
+- `MARINA_TEST07_POOL_SUNSET_V1` → `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png`
+
+Character status becomes: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE`.
+
+Constraints respected:
+- No image generation or pixel modification.
+- Original local source images remain unchanged.
+- No SQLite operation.
+- Protected untracked paths remain untouched.
+- Exact original prompts/backends were not fabricated.
+
+Next action: Await human selection of the next character or missing visual-coverage target.

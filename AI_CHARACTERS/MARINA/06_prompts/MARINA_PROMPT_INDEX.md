@@ -49,10 +49,22 @@ This folder stores prompt templates, working scene prompts, and prompt run logs 
 | `MARINA_OUTFIT_EVENING_PEACH_V1_B` | evening peach portrait SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_evening_peach_v1_portrait_SUPPORT.png` |
 | `MARINA_OUTFIT_WARM_EVENING_V1_A` | warm evening portrait SUPPORT | APPROVED | `unknown_requires_manual_input` | `AI_CHARACTERS/MARINA/05_outfits/MARINA_outfit_warm_evening_v1_portrait_SUPPORT.png` |
 
+## Approved Control Tests
+
+| Prompt ID | Test | Scene | Verdict | Role | Output |
+|---|---:|---|---|---|---|
+| `MARINA_TEST01_RAINY_CAFE_V1` | 01 | rainy_cafe | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png` |
+| `MARINA_TEST02_THEATER_MELANCHOLY_V1` | 02 | theater_melancholy | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png` |
+| `MARINA_TEST03_EVENING_CITY_BALCONY_V1` | 03 | evening_city_balcony | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png` |
+| `MARINA_TEST04_AUTUMN_STREET_PORTRAIT_V1` | 04 | autumn_street_portrait | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png` |
+| `MARINA_TEST05_MORNING_PAJAMAS_V1` | 05 | morning_pajamas | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png` |
+| `MARINA_TEST06_WHITE_GARDEN_FORMAL_V1` | 06 | white_garden_formal | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png` |
+| `MARINA_TEST07_POOL_SUNSET_V1` | 07 | pool_sunset | APPROVED_AS_TEST | MAIN | `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png` |
+
 ## Known Deferred Issues
 
 - Exact per-image generation prompts for base canon sheets are unavailable; records are marked `unknown_requires_manual_input`.
-- Control tests remain PENDING; no generated test images exist yet.
+- Control Tests 01–07 are human-approved and published as MAIN control-test outputs; exact original generation prompts and backends remain unavailable.
 - `MARINA_CANON_GENERATION_PROMPTS.txt` contains template prompts for planned future generation but may not match the exact prompts that produced the three approved base-canon images.
 
 ## Prompt Logging Rules

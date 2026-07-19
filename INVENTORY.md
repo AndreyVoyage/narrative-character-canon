@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-18 22:49:03
+2026-07-19 06:42:00
 
 ---
 
@@ -506,8 +506,15 @@ Generated:
 │   │   │   │   │   └── .gitkeep
 │   │   │   │   ├── 02_sports_yoga/
 │   │   │   │   │   └── .gitkeep
-│   │   │   │   └── 03_portrait_expression/
-│   │   │   │       └── .gitkeep
+│   │   │   │   ├── 03_portrait_expression/
+│   │   │   │   │   └── .gitkeep
+│   │   │   │   ├── MARINA_test01_rainy_cafe_v1_APPROVED.png
+│   │   │   │   ├── MARINA_test02_theater_melancholy_v1_APPROVED.png
+│   │   │   │   ├── MARINA_test03_evening_city_balcony_v1_APPROVED.png
+│   │   │   │   ├── MARINA_test04_autumn_street_portrait_v1_APPROVED.png
+│   │   │   │   ├── MARINA_test05_morning_pajamas_v1_APPROVED.png
+│   │   │   │   ├── MARINA_test06_white_garden_formal_v1_APPROVED.png
+│   │   │   │   └── MARINA_test07_pool_sunset_v1_APPROVED.png
 │   │   │   ├── drafts/
 │   │   │   │   └── .gitkeep
 │   │   │   └── rejected/
@@ -814,7 +821,7 @@ Generated:
 
 # Total file count
 
-513
+520
 
 # File type summary
 
@@ -857,7 +864,7 @@ Generated:
 | .json | 18 |
 | .jsonl | 17 |
 | .md | 52 |
-| .png | 96 |
+| .png | 103 |
 | .ps1 | 1 |
 | .py | 19 |
 | .pyc | 13 |
@@ -870,7 +877,7 @@ Generated:
 | .claude/settings.json | 157 | 2026-07-13 23:03:10 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
-| .voyage/CHARACTER_REGISTRY.md | 4014 | 2026-07-18 19:28:25 |
+| .voyage/CHARACTER_REGISTRY.md | 4026 | 2026-07-19 06:42:00 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -881,7 +888,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 32814 | 2026-07-18 19:29:27 |
+| .voyage/CURRENT_TASK.md | 31915 | 2026-07-19 06:42:00 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -891,7 +898,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 60693 | 2026-07-18 22:36:23 |
+| .voyage/DECISIONS.md | 62841 | 2026-07-19 06:42:00 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -904,7 +911,7 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 5827 | 2026-07-18 19:29:07 |
+| .voyage/PROJECT_STATE.md | 6050 | 2026-07-19 06:42:00 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
@@ -1185,20 +1192,27 @@ Generated:
 | AI_CHARACTERS/MARINA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/06_prompts/MARINA_CANON_GENERATION_PROMPTS.txt | 4923 | 2026-07-18 13:39:06 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md | 4394 | 2026-07-18 22:34:35 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl | 7624 | 2026-07-18 22:34:13 |
-| AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md | 10435 | 2026-07-18 22:35:05 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md | 5842 | 2026-07-19 06:42:00 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_RUN_LOG.jsonl | 15056 | 2026-07-19 06:42:00 |
+| AI_CHARACTERS/MARINA/06_prompts/MARINA_WORKING_SCENE_PROMPTS.md | 16149 | 2026-07-19 06:42:00 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png | 2244661 | 2026-06-24 11:00:14 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png | 1742251 | 2026-06-24 11:08:00 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png | 1768025 | 2026-06-24 10:55:19 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png | 2172369 | 2026-06-20 10:25:58 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png | 1970323 | 2026-06-24 11:21:46 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png | 2294626 | 2026-06-24 10:42:02 |
+| AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png | 2020204 | 2026-06-24 11:17:34 |
 | AI_CHARACTERS/MARINA/07_generated/drafts/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/MARINA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md | 5183 | 2026-07-18 22:35:30 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 3448 | 2026-07-18 22:35:55 |
-| AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md | 1867 | 2026-07-18 19:27:23 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_CANON_INDEX.md | 7339 | 2026-07-19 06:42:00 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 5053 | 2026-07-19 06:42:00 |
+| AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md | 5359 | 2026-07-19 06:42:00 |
 | AI_CHARACTERS/NIKA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1319,7 +1333,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 18495 | 2026-07-14 06:16:13 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 93707 | 2026-07-18 22:36:35 |
+| INVENTORY.md | 93707 | 2026-07-18 22:49:03 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

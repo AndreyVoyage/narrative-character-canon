@@ -39,8 +39,24 @@
     "body_canon_a": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_A_APPROVED.png",
     "body_canon_b": "AI_CHARACTERS/MARINA/04_body_sheet/MARINA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
-  "control_tests": [],
-  "scene_presets": {},
+  "control_tests": [
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png",
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png",
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png",
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png",
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png",
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png",
+    "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png"
+  ],
+  "scene_presets": {
+    "rainy_cafe": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png",
+    "theater_melancholy": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png",
+    "evening_city_balcony": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png",
+    "autumn_street_portrait": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png",
+    "morning_pajamas": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png",
+    "white_garden_formal": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png",
+    "pool_sunset": "AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png"
+  },
   "prompt_pipeline": {
     "status": "PROMPT_PIPELINE_ACTIVE",
     "prompt_index": "AI_CHARACTERS/MARINA/06_prompts/MARINA_PROMPT_INDEX.md",
@@ -55,5 +71,6 @@
     "avoid bodybuilder drift",
     "avoid making the character look too young",
     "record prompt_id, references, output path, verdict and notes for every generation"
-  ]
+  ],
+  "control_test_status": "CONTROL_TESTS_APPROVED"
 }

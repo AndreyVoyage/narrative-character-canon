@@ -1,7 +1,7 @@
 # MARINA Canon Index
 
 ## Status
-BASE_CANON_APPROVED / CONTROL_TESTS_PENDING / PROMPT_PIPELINE_ACTIVE
+BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE
 
 ## Character
 MARINA
@@ -56,7 +56,7 @@ Adult woman, 155 cm, 45 kg, petite slender feminine build, compact realistic pro
 
 The three base-canon images were human-selected from existing AI-generated assets and imported into the repository without modifying the local source files. Exact per-image generation prompts are not available; records are marked `unknown_requires_manual_input` following the same pattern as KIRA base-canon records.
 
-Control tests remain PENDING. No generated test images exist yet.
+Control Tests 01–07 are human-approved and registered as MAIN control-test outputs. They validate MARINA across indoor, outdoor, casual, formal, emotional, and poolside scene contexts.
 
 ## Support expression references (SUPPORT)
 
@@ -110,9 +110,59 @@ Control tests remain PENDING. No generated test images exist yet.
   * Role: SUPPORT OUTFIT REFERENCE
   * SHA-256: `ac00afe3e921d74a6c7b49bbd740e3e736bdaed127c0adacc8d729b2d47b89d8`
 
+## Approved control tests
+
+* Test01 — Rainy cafe:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST01_RAINY_CAFE_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `6f49909b313785eb0a663b5517f03cb65030d98e864d70658217a9c64b6d4b5e`
+
+* Test02 — Theater melancholy:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST02_THEATER_MELANCHOLY_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `a743b3e994be35f954bb4e61749dc774f46b8461a714c178617e150e76ff2faf`
+
+* Test03 — Evening city balcony:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST03_EVENING_CITY_BALCONY_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `19fc949a03568500e7e23bcdf3e63ce15549c79d72d22941bbdefec2a3565492`
+
+* Test04 — Autumn street portrait:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST04_AUTUMN_STREET_PORTRAIT_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `e813e1826b8e4fca99415f6c82fec4a335fa3acfd720fcd92c51e05f307bd927`
+
+* Test05 — Morning pajamas:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST05_MORNING_PAJAMAS_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `cdd6d6f0a4883947856661b58eca5957518c4e930a528fbb7b0273c046e632ed`
+
+* Test06 — White garden formal:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST06_WHITE_GARDEN_FORMAL_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `e7e7a11693324d4312dfc9718e3eee11827443b84bf99086c832cf92c3346d90`
+
+* Test07 — Pool sunset:
+  `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png`
+  * Prompt ID: `MARINA_TEST07_POOL_SUNSET_V1`
+  * Verdict: `APPROVED_AS_TEST`
+  * Role: `MAIN`
+  * SHA-256: `7739db6e04c6253371531972bbefbfabaa7ce7ebdbdcbe6774dc5ad7a868ee79`
 ## Next action
 
-Awaiting human selection for the next character/scene generation target. Seven narrative scene images remain for separate review and test decisions.
+MARINA Test01–Test07 are complete. Awaiting human selection of the next character or coverage target.
 
 ---
 

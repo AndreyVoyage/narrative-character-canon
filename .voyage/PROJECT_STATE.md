@@ -45,17 +45,17 @@
   * Canon Index correctly remained unchanged because Test10 is `APPROVED_AS_TEST`, not `APPROVED_AS_CANON`.
   * Inventory refresh remains pending as a separate optional task.
   * SQLite synchronization remains pending as a separate optional task.
-* MARINA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_PENDING` / `PROMPT_PIPELINE_ACTIVE`; 3 base-canon images approved (face, expressions, body), prompt pipeline active, metadata closeout completed 2026-07-18.
+* MARINA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; 3 base-canon images, 5 support expression sheets, 3 outfit references, and Control Tests 01–07 are published; prompt pipeline contains 18 unique records and scene presets are active.
 * NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена как отдельная задача. Репозиторий остаётся авторитетным источником правды.
-* Validator MVP is published at `78da93a`; 32/32 tests pass, and compatibility mode scans 4 registries / 47 records with 0 errors.
+* Validator MVP is published at `78da93a`; 32/32 validator tests pass. After MARINA Test01–Test07 registration, compatibility mode discovers 5 character registries / 65 aggregate records.
 * Deploy-tool MVP (`d15b43c`) and authority-enforcement correction (`2d808a9`) are published; post-push convergence was verified at `50e56c663b4ee776799eb4a88c5a3f6362486dd3`.
 * Deploy tool state: `PUBLISHED_POST_PUSH_VERIFIED`; version: `1.0.1`.
 * Technical validation: 112 tests passed at the verified implementation commit.
-* Current validator baseline: 4 registries, 47 aggregate records, 0 errors, 155 warnings.
+* Current validator baseline after MARINA Test01–Test07: 5 registries, 65 aggregate records, 0 errors; legacy warnings are non-blocking in compatibility mode.
 * The original authority/Inventory exploit is blocked; rollback and concurrency behavior were independently verified.
 * OLGA Test10 is fully published and deployed. The complete deploy-sequence chain (dry-run, apply, verify, commit-verify, push) was executed and all steps completed successfully.
-* HEAD, origin/main, and remote main are synchronized at `b5556f8a0d94b6a4f6478c92d0175900afe4ecda` before the closeout commit.
+* HEAD, origin/main, and remote main were synchronized at `ea8591c60e792470d0eea2653564a4138424439c` before the MARINA Test01–Test07 publication commit.
 * Decision D-020 recorded.
 
 ---

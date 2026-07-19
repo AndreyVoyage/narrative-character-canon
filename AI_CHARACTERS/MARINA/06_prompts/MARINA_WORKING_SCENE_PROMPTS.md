@@ -8,7 +8,7 @@ PROMPT_PIPELINE_ACTIVE
 
 - This file stores the exact reusable prompt-kit source from `MARINA_CANON_GENERATION_PROMPTS.txt` and prompt reconstructions.
 - Base canon sheet entries do **not** have an exact per-image generation prompt stored anywhere in the repository. They are marked `unknown_requires_manual_input` and only reconstruction guidance is provided.
-- Future control test entries will be best-effort reconstructions built from the prompt-kit files, canon docs, and test-result notes. They will be marked `reconstructed_from_conversation_and_approved_result`.
+- Imported control tests whose exact original prompts are unavailable are marked `unknown_requires_manual_input`. Reference paths document current canon anchors for future reuse and are not represented as original generation inputs.
 - Do not treat reconstructed text as a verbatim generation log.
 
 ---
@@ -194,4 +194,115 @@ Adult woman, 155 cm, 45 kg, petite slender feminine build, compact realistic pro
 
 ---
 
+## Prompt Section — MARINA_TEST01_RAINY_CAFE_V1
+
+- **Prompt ID:** `MARINA_TEST01_RAINY_CAFE_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `01`
+- **Scene ID:** `rainy_cafe`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test01_rainy_cafe_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test01 (Rainy cafe); MAIN control-test output.
+
+---
+
+## Prompt Section — MARINA_TEST02_THEATER_MELANCHOLY_V1
+
+- **Prompt ID:** `MARINA_TEST02_THEATER_MELANCHOLY_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `02`
+- **Scene ID:** `theater_melancholy`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test02_theater_melancholy_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test02 (Theater melancholy); MAIN control-test output.
+
+---
+
+## Prompt Section — MARINA_TEST03_EVENING_CITY_BALCONY_V1
+
+- **Prompt ID:** `MARINA_TEST03_EVENING_CITY_BALCONY_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `03`
+- **Scene ID:** `evening_city_balcony`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test03_evening_city_balcony_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test03 (Evening city balcony); MAIN control-test output.
+
+---
+
+## Prompt Section — MARINA_TEST04_AUTUMN_STREET_PORTRAIT_V1
+
+- **Prompt ID:** `MARINA_TEST04_AUTUMN_STREET_PORTRAIT_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `04`
+- **Scene ID:** `autumn_street_portrait`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test04_autumn_street_portrait_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test04 (Autumn street portrait); MAIN control-test output.
+
+---
+
+## Prompt Section — MARINA_TEST05_MORNING_PAJAMAS_V1
+
+- **Prompt ID:** `MARINA_TEST05_MORNING_PAJAMAS_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `05`
+- **Scene ID:** `morning_pajamas`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test05_morning_pajamas_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test05 (Morning pajamas); MAIN control-test output.
+
+---
+
+## Prompt Section — MARINA_TEST06_WHITE_GARDEN_FORMAL_V1
+
+- **Prompt ID:** `MARINA_TEST06_WHITE_GARDEN_FORMAL_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `06`
+- **Scene ID:** `white_garden_formal`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test06_white_garden_formal_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test06 (White garden formal); MAIN control-test output.
+
+---
+
+## Prompt Section — MARINA_TEST07_POOL_SUNSET_V1
+
+- **Prompt ID:** `MARINA_TEST07_POOL_SUNSET_V1`
+- **Status:** APPROVED
+- **Role:** MAIN
+- **Verdict:** APPROVED_AS_TEST
+- **Test number:** `07`
+- **Scene ID:** `pool_sunset`
+- **Output path:** `AI_CHARACTERS/MARINA/07_generated/canon_tests/MARINA_test07_pool_sunset_v1_APPROVED.png`
+- **Prompt source:** `unknown_requires_manual_input`
+- **Reference map:** active MARINA face canon + expression canon + body canon
+- **Source honesty:** The exact original generation prompt and backend are unavailable. The active canon references are recorded as present-day validation anchors, not as a claim about the original generation inputs.
+- **Result notes:** Human-approved existing scene image registered as MARINA Test07 (Pool sunset); MAIN control-test output.
+
+---
 *MARINA Working Scene Prompts | NCC Repository | 2026-07-18*

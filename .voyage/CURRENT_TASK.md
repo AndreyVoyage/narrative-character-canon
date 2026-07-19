@@ -781,6 +781,29 @@ Five metadata files created, one updated, four Voyage tracking files updated:
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-MARINA-TEST01-TEST07-PUBLISH-2026-07-18`
+
+**Final status:** `COMPLETED_PUBLISHED`
+
+**Priority:** `P0`
+
+### Result
+
+- Seven MARINA narrative scene images are registered as Control Tests 01–07.
+- All seven outputs are `APPROVED_AS_TEST`, role `MAIN`, storage `repo_tracked`,
+  content tier `public_filtered`, selected and deployed with human approval.
+- MARINA prompt-run log contains 18 unique records.
+- Reference Presets contain seven control-test paths and seven scene presets.
+- MARINA status is now
+  `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE`.
+- Inventory regenerated.
+- SQLite unchanged.
+- Protected untracked paths untouched.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`
@@ -791,22 +814,6 @@ Five metadata files created, one updated, four Voyage tracking files updated:
 
 ### Purpose
 
-Human owner must select the next character and scene before a new generation task may be opened.
-
-No character or scene is selected automatically. No new image generation is authorized until the
-human owner explicitly chooses the next visual target and scene.
-
-### Existing candidates (for reference only — not selected)
-
-- MARINA, NIKA, SERGEY, MAKSIM, EGOR: `TEXT_CANON_READY / CANON_PROMPTS_CREATED` — no images yet.
-- ANDREY Senior: `CANON_READY_2D` — 3D reference pack pending.
-- KIRA: `CANON_READY_2D` — 3D reference pack pending.
-- ANDREY_JUNIOR: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED` — further scene testing pending.
-- OLGA: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–10 published)` — next visual
-  coverage to be determined.
-
-### Constraints
-
-- Do not start generation without an explicit human selection.
-- Do not create prompt IDs, output paths, or scene folders without authorization.
-- Do not select a target automatically.
+Human owner selects the next character or missing visual-coverage target.
+No target is selected automatically and no new generation is authorized
+without explicit human approval.
