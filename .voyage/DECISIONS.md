@@ -1498,3 +1498,41 @@ Reason: Completes EGOR control test phase with three approved, human-reviewed te
 EGOR status promoted to BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED.
 
 Next action: Human may authorize body canon B generation or scene-level testing.
+
+## DECISION-0033 — EGOR metadata closeout (prompt pipeline normalized)
+
+Date: 2026-07-20
+
+Context: After publication of EGOR base canon (3 sheets) and control tests (3 tests),
+EGOR's metadata was incomplete relative to completed CONTROL_TESTS_APPROVED characters
+(OLGA, MARINA, ANDREY_JUNIOR). The presets status was still "BASE_CANON_APPROVED", and
+four required pipeline/notes files were absent: canon index, test results, prompt index,
+and working scene prompts.
+
+Decision: Promote presets status to CONTROL_TESTS_APPROVED, create the four missing
+metadata files populated from existing published EGOR facts only (reference presets,
+generation prompts, JSONL run log, published image paths, Voyage status records), and
+add PROMPT_PIPELINE_ACTIVE to CHARACTER_REGISTRY and PROJECT_STATE to match the OLGA/
+MARINA/ANDREY_JUNIOR convention. No images, JSONL records, or prompt IDs were created
+or modified. No SQLite operations.
+
+Affected files:
+- AI_CHARACTERS/EGOR/10_notes/EGOR_CANON_INDEX.md (created)
+- AI_CHARACTERS/EGOR/10_notes/EGOR_TEST_RESULTS.md (created)
+- AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_INDEX.md (created)
+- AI_CHARACTERS/EGOR/06_prompts/EGOR_WORKING_SCENE_PROMPTS.md (created)
+- AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json (status field)
+- AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt (status header)
+- `.voyage/CHARACTER_REGISTRY.md`
+- `.voyage/PROJECT_STATE.md`
+- `.voyage/DECISIONS.md`
+- `.voyage/CURRENT_TASK.md`
+- `INVENTORY.md` (regenerated)
+
+Reason: Bring EGOR metadata to parity with OLGA/MARINA/ANDREY_JUNIOR convention for
+a CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE character. TEST03 minor notes
+(preserved) do not block closeout. Body canon B deferral does not block closeout.
+
+Result: EGOR is metadata-complete for the CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE
+phase. Next action is human selection of the next coverage target for EGOR (body canon B
+or scene-level testing).

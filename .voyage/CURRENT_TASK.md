@@ -1050,10 +1050,22 @@ Imported and registered as canon tests 01–03 with prompt IDs EGOR_TEST01_NEUTR
 EGOR_TEST02_EVENING_EMBANKMENT_V1, EGOR_TEST03_SPORTS_YOGA_V1. EGOR status promoted to
 BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–03 published). D-032 recorded.
 
+### Completed task
+
+**Task ID:** `NCC-EGOR-METADATA-CLOSEOUT-2026-07-20`
+
+**Final status:** `COMPLETED_LOCAL_UNCOMMITTED`
+
+**Closure reason:** EGOR metadata normalized to OLGA/MARINA/ANDREY_JUNIOR convention. Four missing
+pipeline/notes files created (canon index, test results, prompt index, working scene prompts).
+Presets status promoted to CONTROL_TESTS_APPROVED. PROMPT_PIPELINE_ACTIVE added to
+CHARACTER_REGISTRY and PROJECT_STATE. D-033 recorded. No images, JSONL records, or prompt IDs
+modified.
+
 ### EGOR note
 
-EGOR base canon is complete: VNE text canon sync (D-028), 5 owner-classified visual references
-(D-030), base canon sheets imported and registered (D-031), 3 control tests published (D-032).
-Prompt pipeline contains 6 records. Body canon B (pose variations) remains in planned_canon_paths.
-Stubble deferred. Next action for EGOR: human review to authorize body canon B generation or
-further scene-level testing.
+EGOR is metadata-complete at CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE. Base canon: 3 sheets
+(D-031). Control tests: 3 published (D-032). Prompt pipeline: 6 records, fully normalized (D-033).
+5 owner-classified visual references in 01_refs_raw/ (D-030). VNE text canon synced (D-028).
+Body canon B (pose variations) remains in planned_canon_paths. Stubble deferred. Next action:
+human selection of the next EGOR coverage target (body canon B or scene-level testing).

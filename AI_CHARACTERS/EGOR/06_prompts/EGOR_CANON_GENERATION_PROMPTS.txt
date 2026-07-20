@@ -1,7 +1,7 @@
 # EGOR Canon Generation Prompts
 
 Status:
-BASE_CANON_APPROVED
+CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE
 
 Important:
 These prompts are for reference and generation context only.
