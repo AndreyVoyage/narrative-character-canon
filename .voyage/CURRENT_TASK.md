@@ -969,6 +969,62 @@ Active facial-hair canon remains clean-shaven (stubble deferred).
 
 ---
 
+## Completed task
+
+**Task ID:** `NCC-EGOR-BASE-CANON-IMPORT-2026-07-20`
+
+**Final status:** `COMPLETED_LOCAL_UNCOMMITTED`
+
+**Priority:** `P0`
+
+### Goal
+
+Import three human-approved EGOR base-canon images (face canon, expression canon, body canon A front/side/back) from external source, register them with canonical prompt IDs, create prompt-run JSONL log, update metadata, and validate — without staging, committing, or pushing.
+
+### Result
+
+Three base-canon images imported via byte-copy with SHA-256 verification:
+
+- `AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png`
+  - SHA-256: `d3954e7c47bb03061f2fb6273230c4d9b058aab037f8b4504917d47ee79cdd69`
+- `AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png`
+  - SHA-256: `34e5c2f10c95ed0570b4dd589c98fb7811fbd6ede95ea2d09ad1e0161517151e`
+- `AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png`
+  - SHA-256: `3f24bccd2efd65878c01bff7f3bd8f5fc133bf5a698575ac256954faef4d5278`
+
+Three canonical prompt IDs registered:
+
+- `EGOR_FACE_CANON_V1` — face canon, verdict APPROVED
+- `EGOR_EXPRESSIONS_V1` — expression sheet, verdict APPROVED (human review: APPROVED_WITH_MINOR_NOTES)
+- `EGOR_BODY_CANON_V1` — body canon front/side/back, verdict APPROVED (human review: APPROVED_WITH_MINOR_NOTES)
+
+Metadata files modified:
+- `AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_RUN_LOG.jsonl` (created, 3 records)
+- `AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json` (status → BASE_CANON_APPROVED)
+- `AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt` (status updated)
+
+Voyage control files updated:
+- `.voyage/CHARACTER_REGISTRY.md` — EGOR status → BASE_CANON_APPROVED
+- `.voyage/DECISIONS.md` — D-031 recorded
+- `.voyage/CURRENT_TASK.md` — this entry
+- `.voyage/PROJECT_STATE.md` — EGOR status updated
+- `INVENTORY.md` — regenerated
+
+EGOR new status: BASE_CANON_APPROVED.
+Body canon B (pose variations) remains in planned_canon_paths for future generation/import.
+
+### Constraints respected
+
+- Byte-identical image copies with SHA-256 verification.
+- No image pixel editing.
+- No SQLite operations.
+- Protected untracked paths untouched.
+- Canonical prompt IDs exclude variant labels (EGOR_FACE_CANON_V1, not EGOR_FACE_CANON_V1_A).
+- Human review verdicts preserved in notes.
+- No staging, commit, or push.
+
+---
+
 ## Active task
 
 **Task ID:** `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18`

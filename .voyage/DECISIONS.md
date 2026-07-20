@@ -1443,3 +1443,30 @@ remains unstaged and uncommitted for human review.
 Next action:
 Human review of the imported references and metadata closeout. Generation must not start until
 human approval.
+
+## DECISION-0031 — EGOR base canon imported and registered
+
+Date: 2026-07-20
+
+Context: Three externally generated EGOR base-canon images (face canon, expression canon,
+body canon A front/side/back) were human-reviewed and approved. The images existed outside
+the repository and needed to be imported and registered as EGOR visual base canon.
+
+Decision: Import the three APPROVED images via byte-copy, register them with canonical
+prompt IDs (EGOR_FACE_CANON_V1, EGOR_EXPRESSIONS_V1, EGOR_BODY_CANON_V1), remove body_canon_b
+from active_canon (not yet imported), and record all three prompt-attempt JSONL records.
+Human review verdicts: face canon APPROVED, expressions APPROVED_WITH_MINOR_NOTES, body canon
+APPROVED_WITH_MINOR_NOTES — all stored as APPROVED in JSONL with review details preserved in notes.
+
+Affected files:
+- AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png
+- AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png
+- AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png
+- AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_RUN_LOG.jsonl (created, 3 records)
+- AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json (status → BASE_CANON_APPROVED)
+- AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt (status updated)
+
+Reason: Completes EGOR Phase 1 base canon with three approved, human-reviewed images.
+Body canon B (pose variations) remains in planned_canon_paths for future generation/import.
+
+Next action: Human may authorize EGOR control tests or body canon B generation.

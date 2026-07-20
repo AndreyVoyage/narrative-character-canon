@@ -1,8 +1,8 @@
 {
   "character": "EGOR",
   "active_version": "egor_base_canon_v1.0",
-  "status": "PENDING_GENERATION",
-  "last_updated": "2026-07-19",
+  "status": "BASE_CANON_APPROVED",
+  "last_updated": "2026-07-20",
   "identity_summary": {
     "role": "adult male character",
     "height_direction": "180 cm, athletic strong build, commanding presence",
@@ -15,8 +15,7 @@
     "primary_face_reference": "AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_02_face_bar_burgundy.jpg",
     "face_canon": "AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
-    "body_canon_b": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+    "body_canon_a": "AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png"
   },
   "planned_canon_paths": {
     "face_canon": "AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png",
@@ -69,7 +68,7 @@
   "control_tests": [],
   "scene_presets": {},
   "prompt_pipeline": {
-    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "status": "PROMPT_PIPELINE_ACTIVE",
     "prompt_index": "AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_INDEX.md",
     "working_scene_prompts": "AI_CHARACTERS/EGOR/06_prompts/EGOR_WORKING_SCENE_PROMPTS.md",
     "prompt_run_log": "AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_RUN_LOG.jsonl"

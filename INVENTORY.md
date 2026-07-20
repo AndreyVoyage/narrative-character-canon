@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-19 20:03:25
+2026-07-20 18:17:51
 
 ---
 
@@ -307,11 +307,14 @@ Generated:
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
-│   │   │   └── expressions/
-│   │   │       └── .gitkeep
+│   │   │   ├── expressions/
+│   │   │   │   ├── .gitkeep
+│   │   │   │   └── EGOR_expressions_v1_sheet_A_APPROVED.png
+│   │   │   └── EGOR_face_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 04_body_sheet/
-│   │   │   └── candidates/
-│   │   │       └── .gitkeep
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   └── EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png
 │   │   ├── 05_outfits/
 │   │   │   ├── candidates/
 │   │   │   │   └── .gitkeep
@@ -327,7 +330,8 @@ Generated:
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
-│   │   │   └── EGOR_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── EGOR_CANON_GENERATION_PROMPTS.txt
+│   │   │   └── EGOR_PROMPT_RUN_LOG.jsonl
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -849,7 +853,7 @@ Generated:
 
 # Total file count
 
-541
+545
 
 # File type summary
 
@@ -891,9 +895,9 @@ Generated:
 | .backup_20260719_141209 | 1 |
 | .jpg | 3 |
 | .json | 20 |
-| .jsonl | 17 |
+| .jsonl | 18 |
 | .md | 57 |
-| .png | 107 |
+| .png | 110 |
 | .ps1 | 1 |
 | .py | 23 |
 | .pyc | 17 |
@@ -914,7 +918,7 @@ Generated:
 | .clinerules/30-ncc-task-discipline.md | 1165 | 2026-07-19 14:03:16 |
 | .gitattributes | 303 | 2026-06-30 21:38:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
-| .voyage/CHARACTER_REGISTRY.md | 4243 | 2026-07-19 20:01:04 |
+| .voyage/CHARACTER_REGISTRY.md | 4282 | 2026-07-20 18:15:38 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -925,7 +929,7 @@ Generated:
 | .voyage/CHARACTER_REGISTRY.md.backup_20260706_115144 | 3268 | 2026-07-06 11:51:44 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260707_154019 | 3312 | 2026-07-07 15:40:19 |
 | .voyage/CONTEXT_SNAPSHOT.md | 3182 | 2026-07-07 15:44:38 |
-| .voyage/CURRENT_TASK.md | 38565 | 2026-07-19 20:02:54 |
+| .voyage/CURRENT_TASK.md | 40943 | 2026-07-20 18:17:06 |
 | .voyage/CURRENT_TASK.md.backup_20260703_124946 | 6168 | 2026-07-03 12:49:47 |
 | .voyage/CURRENT_TASK.md.backup_20260703_155641 | 6572 | 2026-07-03 15:56:41 |
 | .voyage/CURRENT_TASK.md.backup_20260704_151046 | 7311 | 2026-07-04 15:10:46 |
@@ -935,7 +939,7 @@ Generated:
 | .voyage/CURRENT_TASK.md.backup_20260706_083029 | 11000 | 2026-07-06 08:30:29 |
 | .voyage/CURRENT_TASK.md.backup_20260706_115144 | 12381 | 2026-07-06 11:51:44 |
 | .voyage/CURRENT_TASK.md.backup_20260707_154019 | 13548 | 2026-07-07 15:40:19 |
-| .voyage/DECISIONS.md | 73392 | 2026-07-19 20:02:22 |
+| .voyage/DECISIONS.md | 74988 | 2026-07-20 18:16:29 |
 | .voyage/DECISIONS.md.backup_20260702_231625 | 9474 | 2026-07-02 23:16:26 |
 | .voyage/DECISIONS.md.backup_20260703_124946 | 14008 | 2026-07-03 12:49:47 |
 | .voyage/DECISIONS.md.backup_20260703_155641 | 15978 | 2026-07-03 15:56:41 |
@@ -948,7 +952,7 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 7137 | 2026-07-19 20:03:14 |
+| .voyage/PROJECT_STATE.md | 7241 | 2026-07-20 18:17:38 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
@@ -1111,8 +1115,11 @@ Generated:
 | AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_04_duo_pillar.png | 2666182 | 2026-07-19 19:20:10 |
 | AI_CHARACTERS/EGOR/01_refs_raw/EGOR_RAW_05_duo_close.png | 2998637 | 2026-07-19 19:20:10 |
 | AI_CHARACTERS/EGOR/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/EGOR/03_face_sheet/EGOR_face_canon_v1_sheet_A_APPROVED.png | 2138235 | 2026-07-20 17:54:13 |
 | AI_CHARACTERS/EGOR/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/EGOR/03_face_sheet/expressions/EGOR_expressions_v1_sheet_A_APPROVED.png | 2224466 | 2026-07-20 17:56:59 |
 | AI_CHARACTERS/EGOR/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/EGOR/04_body_sheet/EGOR_body_canon_v1_sheet_A_front_side_back_APPROVED.png | 1807653 | 2026-07-20 17:57:52 |
 | AI_CHARACTERS/EGOR/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1120,7 +1127,8 @@ Generated:
 | AI_CHARACTERS/EGOR/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt | 5768 | 2026-07-19 10:43:49 |
+| AI_CHARACTERS/EGOR/06_prompts/EGOR_CANON_GENERATION_PROMPTS.txt | 5766 | 2026-07-20 18:15:13 |
+| AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_RUN_LOG.jsonl | 1580 | 2026-07-20 18:14:35 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1129,7 +1137,7 @@ Generated:
 | AI_CHARACTERS/EGOR/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/EGOR/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 5230 | 2026-07-19 20:00:32 |
+| AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json | 5114 | 2026-07-20 18:14:57 |
 | AI_CHARACTERS/KIRA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png | 2257262 | 2026-06-29 18:03:58 |
@@ -1376,7 +1384,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 97702 | 2026-07-19 14:12:09 |
+| INVENTORY.md | 98493 | 2026-07-19 20:03:25 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

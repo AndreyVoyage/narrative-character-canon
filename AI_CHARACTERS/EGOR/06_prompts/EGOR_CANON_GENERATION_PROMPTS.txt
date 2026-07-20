@@ -1,7 +1,7 @@
 # EGOR Canon Generation Prompts
 
 Status:
-PENDING / NOT_STARTED
+BASE_CANON_APPROVED
 
 Important:
 These prompts are for reference and generation context only.
