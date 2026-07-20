@@ -65,7 +65,11 @@
       "notes": "Duo support reference — close-up with red dress. The woman in this image is scene support only and must not become part of EGOR identity canon."
     }
   ],
-  "control_tests": [],
+  "control_tests": [
+    "AI_CHARACTERS/EGOR/07_generated/canon_tests/03_portrait_expression/EGOR_test01_neutral_portrait_v1_APPROVED.png",
+    "AI_CHARACTERS/EGOR/07_generated/canon_tests/01_evening_embankment/EGOR_test02_evening_embankment_v1_APPROVED.png",
+    "AI_CHARACTERS/EGOR/07_generated/canon_tests/02_sports_yoga/EGOR_test03_sports_yoga_v1_APPROVED.png"
+  ],
   "scene_presets": {},
   "prompt_pipeline": {
     "status": "PROMPT_PIPELINE_ACTIVE",

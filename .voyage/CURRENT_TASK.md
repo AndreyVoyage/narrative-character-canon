@@ -1039,7 +1039,21 @@ Human owner selects the next character or missing visual-coverage target.
 No target is selected automatically and no new generation is authorized
 without explicit human approval.
 
+### Completed task
+
+**Task ID:** `NCC-EGOR-CANON-TESTS-2026-07-20`
+
+**Final status:** `LOCAL_COMMITTED`
+
+**Closure reason:** Three EGOR control tests were externally generated, human-reviewed, and approved.
+Imported and registered as canon tests 01–03 with prompt IDs EGOR_TEST01_NEUTRAL_PORTRAIT_V1,
+EGOR_TEST02_EVENING_EMBANKMENT_V1, EGOR_TEST03_SPORTS_YOGA_V1. EGOR status promoted to
+BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–03 published). D-032 recorded.
+
 ### EGOR note
 
-EGOR VNE text canon sync is complete (D-028). Five visual references imported and classified
-(D-030). Next action for EGOR: human review of imported visual references before any generation.
+EGOR base canon is complete: VNE text canon sync (D-028), 5 owner-classified visual references
+(D-030), base canon sheets imported and registered (D-031), 3 control tests published (D-032).
+Prompt pipeline contains 6 records. Body canon B (pose variations) remains in planned_canon_paths.
+Stubble deferred. Next action for EGOR: human review to authorize body canon B generation or
+further scene-level testing.

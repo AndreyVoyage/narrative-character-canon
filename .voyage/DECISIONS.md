@@ -1470,3 +1470,31 @@ Reason: Completes EGOR Phase 1 base canon with three approved, human-reviewed im
 Body canon B (pose variations) remains in planned_canon_paths for future generation/import.
 
 Next action: Human may authorize EGOR control tests or body canon B generation.
+
+## DECISION-0032 — EGOR canon tests 01–03 approved and registered
+
+Date: 2026-07-20
+
+Context: Three EGOR control tests were externally generated, human-reviewed, and approved.
+The images existed outside the repository and needed to be imported and registered as
+approved control tests.
+
+Decision: Import the three APPROVED test images via byte-copy and register them with
+canonical prompt IDs (EGOR_TEST01_NEUTRAL_PORTRAIT_V1, EGOR_TEST02_EVENING_EMBANKMENT_V1,
+EGOR_TEST03_SPORTS_YOGA_V1). Human review verdicts: Test01 APPROVED, Test02 APPROVED,
+Test03 APPROVED_WITH_MINOR_NOTES (extended hand closed into fist; supporting arm slightly
+posed; face slightly harder and more massive than face canon; drift minor and acceptable).
+All verdicts stored as APPROVED in JSONL with full human notes preserved.
+Test03 review notes: extended hand is closed into a fist; supporting arm position is
+slightly posed; face is slightly harder and more massive than the face canon; drift
+remains minor and acceptable.
+
+Affected files:
+- AI_CHARACTERS/EGOR/06_prompts/EGOR_PROMPT_RUN_LOG.jsonl (3 new records, 6 total)
+- AI_CHARACTERS/EGOR/10_notes/EGOR_REFERENCE_PRESETS.json (control_tests array populated)
+- AI_CHARACTERS/EGOR/07_generated/canon_tests/ (3 new approved images in canonical subfolders)
+
+Reason: Completes EGOR control test phase with three approved, human-reviewed tests.
+EGOR status promoted to BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED.
+
+Next action: Human may authorize body canon B generation or scene-level testing.
