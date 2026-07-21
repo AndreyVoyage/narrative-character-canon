@@ -1,8 +1,8 @@
 {
   "character": "NIKA",
   "active_version": "nika_base_canon_v1.0",
-  "status": "PENDING_GENERATION",
-  "last_updated": "2026-07-09",
+  "status": "REFERENCE_IMPORT_READY",
+  "last_updated": "2026-07-21",
   "identity_summary": {
     "role": "adult female character",
     "height_direction": "medium-tall, lean and graceful",
@@ -12,7 +12,7 @@
     "style_direction": "elegant, dark, predatory, refined, controlled sensuality, nightlife fashion, understated luxury, mysterious, powerful"
   },
   "active_canon": {
-    "primary_face_reference": "PENDING_GENERATION",
+    "primary_face_reference": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_01_face_main_burgundy_expressions.png",
     "face_canon": "AI_CHARACTERS/NIKA/03_face_sheet/NIKA_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/NIKA/03_face_sheet/expressions/NIKA_expressions_v1_sheet_A_APPROVED.png",
     "body_canon_a": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -24,6 +24,56 @@
     "body_canon_a": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
     "body_canon_b": "AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
+  "raw_references": [
+    {
+      "path": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_01_face_main_burgundy_expressions.png",
+      "sha256": "6e0b797601640b23e4a654fc115c74a3fdec568d0fc39880f9733ea78995e690",
+      "primary_role": "FACE_MAIN",
+      "secondary_roles": ["EXPRESSION_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Sheet containing eight close-up/head-and-shoulders portraits; dark burgundy off-shoulder dress; dark background; multiple controlled facial expressions."
+    },
+    {
+      "path": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_02_body_main_burgundy_multiview.png",
+      "sha256": "ea62743219de2ff019de38213e2d6c17abb33d57d355fbd5fc765b89e038fdc5",
+      "primary_role": "BODY_MAIN",
+      "secondary_roles": ["FACE_SUPPORT", "FORMAL_STYLE_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Burgundy off-shoulder dress; multi-panel sheet; top row includes front, side and clear back full-body views; lower row includes close face views and one full-body view."
+    },
+    {
+      "path": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_03_body_support_gym_multiview.png",
+      "sha256": "0c34c3bd0ed433185e7ed6d9fffdc13b045729633021a19e03dd10051149d663",
+      "primary_role": "BODY_SUPPORT",
+      "secondary_roles": ["SPORTS_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Six-panel fitness-gym sheet; burgundy sports bra and burgundy shorts; white sports shoes; front, side, back and additional standing poses."
+    },
+    {
+      "path": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_04_style_main_burgundy_bar.png",
+      "sha256": "bd3fc97b26f780fd1689031861b9100a7c3460b666b39d2c39d45da6a1247c0a",
+      "primary_role": "FORMAL_STYLE_MAIN",
+      "secondary_roles": ["NIGHTLIFE_SUPPORT", "BODY_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Single full-body image; burgundy off-shoulder evening dress with leg slit; dark elegant bar or lounge interior; black high-heeled sandals."
+    },
+    {
+      "path": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_05_formal_support_burgundy_sheet.png",
+      "sha256": "701e5ef874024a6052ce7c7e89e0dfacce39155129a065f3a81f8f93086c2a07",
+      "primary_role": "FACE_SUPPORT",
+      "secondary_roles": ["BODY_SUPPORT", "FORMAL_STYLE_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Burgundy evening-dress multi-panel sheet; four full-body fashion poses across the upper row; close portraits and a full-body view below."
+    },
+    {
+      "path": "AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_06_sports_support_gym_leggings.png",
+      "sha256": "0646e25fa01a61c9699592a47091b6ed4e38eee8c23a791537c2a530ce509197",
+      "primary_role": "SPORTS_OUTFIT_SUPPORT",
+      "secondary_roles": ["BODY_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Single full-body fitness-gym image; burgundy sports bra; full-length burgundy leggings; white sports shoes."
+    }
+  ],
   "control_tests": [],
   "scene_presets": {},
   "prompt_pipeline": {
