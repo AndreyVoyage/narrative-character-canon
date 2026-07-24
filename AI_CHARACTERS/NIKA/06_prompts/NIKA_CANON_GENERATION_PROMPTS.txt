@@ -1,7 +1,7 @@
 # NIKA Canon Generation Prompts
 
 Status:
-PENDING / NOT_STARTED
+BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE
 
 Important:
 These prompts are for reference and generation context only.
@@ -126,4 +126,41 @@ Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
 
 ---
 
-*NIKA Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*
+## TEST01 — Neutral Portrait (APPROVED_WITH_MINOR_NOTES)
+
+Prompt ID: NIKA_TEST01_NEUTRAL_PORTRAIT_V1
+Attempt: 01
+Scene: neutral_portrait
+Target: AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/NIKA_test01_neutral_portrait_v1_APPROVED.png
+
+Full prompt recorded in NIKA_WORKING_SCENE_PROMPTS.md and NIKA_PROMPT_RUN_LOG.jsonl.
+
+---
+
+---
+
+## TEST02 — Evening Embankment (APPROVED_WITH_MINOR_NOTES)
+
+Prompt ID: NIKA_TEST02_EVENING_EMBANKMENT_V1
+Attempt: 01
+Variant: MAIN
+Scene: evening_embankment
+Target: AI_CHARACTERS/NIKA/07_generated/canon_tests/01_evening_embankment/NIKA_test02_evening_embankment_v1_APPROVED.png
+Generation ID: 4024945a-c982-4a61-b45b-825a0564ce03
+SHA-256: 1f8e882cf015a249b5ffe90d75ae7d46362186bb15a889f5a2d93287938b1929
+
+---
+
+## TEST03 — Sports Yoga (APPROVED_WITH_MINOR_NOTES)
+
+Prompt ID: NIKA_TEST03_SPORTS_YOGA_V1
+Attempt: 01
+Variant: MAIN
+Scene: sports_yoga
+Target: AI_CHARACTERS/NIKA/07_generated/canon_tests/02_sports_yoga/NIKA_test03_sports_yoga_v1_APPROVED.png
+Generation ID: 59854696-a32b-47ec-a80e-67ce6a828e69
+SHA-256: 5f81ce40563a27acc267b95ee95f23cc26aab928d661a27aa49a24bf359d30aa
+
+---
+
+*NIKA Canon Generation Prompts | VNE Visual Bridge | 2026-07-24*

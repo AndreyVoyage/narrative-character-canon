@@ -1,8 +1,8 @@
 {
   "character": "NIKA",
   "active_version": "nika_base_canon_v1.0",
-  "status": "REFERENCE_IMPORT_READY",
-  "last_updated": "2026-07-21",
+  "status": "BASE_CANON_APPROVED",
+  "last_updated": "2026-07-24",
   "identity_summary": {
     "role": "adult female character",
     "height_direction": "medium-tall, lean and graceful",
@@ -74,10 +74,63 @@
       "notes": "Single full-body fitness-gym image; burgundy sports bra; full-length burgundy leggings; white sports shoes."
     }
   ],
-  "control_tests": [],
+  "control_tests": [
+    {
+      "prompt_id": "NIKA_TEST01_NEUTRAL_PORTRAIT_V1",
+      "test": 1,
+      "scene": "neutral_portrait",
+      "variant": "MAIN",
+      "attempt": "01",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "role": "MAIN",
+      "generation_id": "49a4561b-d44e-4361-9dda-34e890360a46",
+      "output": "AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/NIKA_test01_neutral_portrait_v1_APPROVED.png",
+      "sha256": "dda90b7d13a0abed5d82aabd92cc3b621813ec337fc5ec0407d66a5b6aad9fca",
+      "notes": "Approved neutral controlled studio portrait. Identity and approved body proportions stable. Wrap-style dress draws bust slightly toward center; accepted as MAIN."
+    },
+    {
+      "prompt_id": "NIKA_TEST01_NEUTRAL_PORTRAIT_V1",
+      "test": 1,
+      "scene": "neutral_portrait",
+      "variant": "ALT",
+      "attempt": "03",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "role": "ALT",
+      "generation_id": "c79a2186-f655-4a3b-a512-189d3323e4ca",
+      "output": "AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/NIKA_test01_neutral_portrait_v2_APPROVED.png",
+      "sha256": "6ff42de5962b71ecad8c694c1c09c6a256c0b90fb36f981541e462eac88c59d6",
+      "notes": "Relaxed deep-V dress preserves approved bust volume with wider natural separation. Deeper neckline is more sensual than MAIN but remains accepted."
+    },
+    {
+      "prompt_id": "NIKA_TEST02_EVENING_EMBANKMENT_V1",
+      "test": 2,
+      "scene": "evening_embankment",
+      "variant": "MAIN",
+      "attempt": "01",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "role": "MAIN",
+      "generation_id": "4024945a-c982-4a61-b45b-825a0564ce03",
+      "output": "AI_CHARACTERS/NIKA/07_generated/canon_tests/01_evening_embankment/NIKA_test02_evening_embankment_v1_APPROVED.png",
+      "sha256": "1f8e882cf015a249b5ffe90d75ae7d46362186bb15a889f5a2d93287938b1929",
+      "notes": "Approved NIKA identity and elongated silhouette in blue-hour waterfront. Walking step slightly runway-like; wrap neckline draws bust toward center; acceptable."
+    },
+    {
+      "prompt_id": "NIKA_TEST03_SPORTS_YOGA_V1",
+      "test": 3,
+      "scene": "sports_yoga",
+      "variant": "MAIN",
+      "attempt": "01",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "role": "MAIN",
+      "generation_id": "59854696-a32b-47ec-a80e-67ce6a828e69",
+      "output": "AI_CHARACTERS/NIKA/07_generated/canon_tests/02_sports_yoga/NIKA_test03_sports_yoga_v1_APPROVED.png",
+      "sha256": "5f81ce40563a27acc267b95ee95f23cc26aab928d661a27aa49a24bf359d30aa",
+      "notes": "Approved NIKA identity and elongated athletic silhouette in fitness-studio. Supporting hand on wrist; shoulder/ab definition slightly stronger than canon; accepted."
+    }
+  ],
   "scene_presets": {},
   "prompt_pipeline": {
-    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "status": "PROMPT_PIPELINE_ACTIVE",
     "prompt_index": "AI_CHARACTERS/NIKA/06_prompts/NIKA_PROMPT_INDEX.md",
     "working_scene_prompts": "AI_CHARACTERS/NIKA/06_prompts/NIKA_WORKING_SCENE_PROMPTS.md",
     "prompt_run_log": "AI_CHARACTERS/NIKA/06_prompts/NIKA_PROMPT_RUN_LOG.jsonl"

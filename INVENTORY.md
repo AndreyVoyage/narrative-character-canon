@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-20 21:39:16
+2026-07-24 14:00:07
 
 ---
 
@@ -561,15 +561,26 @@ Generated:
 │   │       └── MARINA_TEST_RESULTS.md
 │   ├── NIKA/
 │   │   ├── 01_refs_raw/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   ├── NIKA_RAW_01_face_main_burgundy_expressions.png
+│   │   │   ├── NIKA_RAW_02_body_main_burgundy_multiview.png
+│   │   │   ├── NIKA_RAW_03_body_support_gym_multiview.png
+│   │   │   ├── NIKA_RAW_04_style_main_burgundy_bar.png
+│   │   │   ├── NIKA_RAW_05_formal_support_burgundy_sheet.png
+│   │   │   └── NIKA_RAW_06_sports_support_gym_leggings.png
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
-│   │   │   └── expressions/
-│   │   │       └── .gitkeep
+│   │   │   ├── expressions/
+│   │   │   │   ├── .gitkeep
+│   │   │   │   ├── NIKA_expressions_v1_sheet_A_APPROVED.png
+│   │   │   │   └── NIKA_expressions_v1_sheet_A_attempt03_REVISE.png
+│   │   │   └── NIKA_face_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 04_body_sheet/
-│   │   │   └── candidates/
-│   │   │       └── .gitkeep
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── NIKA_body_canon_v1_sheet_A_front_side_back_APPROVED.png
+│   │   │   └── NIKA_body_canon_v1_sheet_B_pose_variations_APPROVED.png
 │   │   ├── 05_outfits/
 │   │   │   ├── candidates/
 │   │   │   │   └── .gitkeep
@@ -585,17 +596,26 @@ Generated:
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
-│   │   │   └── NIKA_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── NIKA_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── NIKA_PROMPT_INDEX.md
+│   │   │   ├── NIKA_PROMPT_RUN_LOG.jsonl
+│   │   │   └── NIKA_WORKING_SCENE_PROMPTS.md
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── NIKA_test02_evening_embankment_v1_APPROVED.png
 │   │   │   │   ├── 02_sports_yoga/
-│   │   │   │   │   └── .gitkeep
+│   │   │   │   │   ├── .gitkeep
+│   │   │   │   │   └── NIKA_test03_sports_yoga_v1_APPROVED.png
 │   │   │   │   └── 03_portrait_expression/
-│   │   │   │       └── .gitkeep
+│   │   │   │       ├── .gitkeep
+│   │   │   │       ├── NIKA_test01_neutral_portrait_v1_APPROVED.png
+│   │   │   │       └── NIKA_test01_neutral_portrait_v2_APPROVED.png
 │   │   │   ├── drafts/
-│   │   │   │   └── .gitkeep
+│   │   │   │   ├── .gitkeep
+│   │   │   │   ├── NIKA_body_canon_v1_attempt01_REVISE.png
+│   │   │   │   └── NIKA_body_canon_v1_attempt02_REVISE.png
 │   │   │   └── rejected/
 │   │   │       └── .gitkeep
 │   │   ├── 08_masks/
@@ -604,7 +624,9 @@ Generated:
 │   │   │   └── .gitkeep
 │   │   └── 10_notes/
 │   │       ├── .gitkeep
-│   │       └── NIKA_REFERENCE_PRESETS.json
+│   │       ├── NIKA_CANON_INDEX.md
+│   │       ├── NIKA_REFERENCE_PRESETS.json
+│   │       └── NIKA_TEST_RESULTS.md
 │   ├── OLGA/
 │   │   ├── 01_refs_raw/
 │   │   │   └── .gitkeep
@@ -860,7 +882,7 @@ Generated:
 
 # Total file count
 
-552
+574
 
 # File type summary
 
@@ -902,9 +924,9 @@ Generated:
 | .backup_20260719_141209 | 1 |
 | .jpg | 3 |
 | .json | 20 |
-| .jsonl | 18 |
-| .md | 61 |
-| .png | 113 |
+| .jsonl | 19 |
+| .md | 65 |
+| .png | 130 |
 | .ps1 | 1 |
 | .py | 23 |
 | .pyc | 17 |
@@ -923,9 +945,9 @@ Generated:
 | .clinerules/10-ncc-git-safety.md | 1388 | 2026-07-19 14:02:58 |
 | .clinerules/20-ncc-visual-assets.md | 1518 | 2026-07-19 14:03:08 |
 | .clinerules/30-ncc-task-discipline.md | 1165 | 2026-07-19 14:03:16 |
-| .gitattributes | 303 | 2026-06-30 21:38:06 |
+| .gitattributes | 303 | 2026-07-21 18:18:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
-| .voyage/CHARACTER_REGISTRY.md | 4194 | 2026-07-20 21:38:09 |
+| .voyage/CHARACTER_REGISTRY.md | 4410 | 2026-07-24 13:58:57 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -959,7 +981,7 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 7471 | 2026-07-20 21:38:15 |
+| .voyage/PROJECT_STATE.md | 7946 | 2026-07-24 13:59:12 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
@@ -1278,9 +1300,20 @@ Generated:
 | AI_CHARACTERS/MARINA/10_notes/MARINA_REFERENCE_PRESETS.json | 5053 | 2026-07-19 06:42:00 |
 | AI_CHARACTERS/MARINA/10_notes/MARINA_TEST_RESULTS.md | 5359 | 2026-07-19 06:42:00 |
 | AI_CHARACTERS/NIKA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_01_face_main_burgundy_expressions.png | 2066529 | 2026-07-21 18:15:44 |
+| AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_02_body_main_burgundy_multiview.png | 1935430 | 2026-07-21 18:15:44 |
+| AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_03_body_support_gym_multiview.png | 2177150 | 2026-07-21 18:15:44 |
+| AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_04_style_main_burgundy_bar.png | 1639183 | 2026-07-21 18:15:44 |
+| AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_05_formal_support_burgundy_sheet.png | 1927825 | 2026-07-21 18:15:44 |
+| AI_CHARACTERS/NIKA/01_refs_raw/NIKA_RAW_06_sports_support_gym_leggings.png | 1805654 | 2026-07-21 18:15:44 |
 | AI_CHARACTERS/NIKA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/03_face_sheet/expressions/NIKA_expressions_v1_sheet_A_APPROVED.png | 2258718 | 2026-07-22 09:04:34 |
+| AI_CHARACTERS/NIKA/03_face_sheet/expressions/NIKA_expressions_v1_sheet_A_attempt03_REVISE.png | 2314676 | 2026-07-22 08:00:32 |
+| AI_CHARACTERS/NIKA/03_face_sheet/NIKA_face_canon_v1_sheet_A_APPROVED.png | 2258699 | 2026-07-21 21:17:17 |
 | AI_CHARACTERS/NIKA/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_A_front_side_back_APPROVED.png | 1809583 | 2026-07-22 11:24:25 |
+| AI_CHARACTERS/NIKA/04_body_sheet/NIKA_body_canon_v1_sheet_B_pose_variations_APPROVED.png | 1871552 | 2026-07-22 12:20:31 |
 | AI_CHARACTERS/NIKA/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1288,16 +1321,27 @@ Generated:
 | AI_CHARACTERS/NIKA/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/NIKA/06_prompts/NIKA_CANON_GENERATION_PROMPTS.txt | 5441 | 2026-07-09 10:15:21 |
+| AI_CHARACTERS/NIKA/06_prompts/NIKA_CANON_GENERATION_PROMPTS.txt | 6634 | 2026-07-24 13:58:02 |
+| AI_CHARACTERS/NIKA/06_prompts/NIKA_PROMPT_INDEX.md | 3162 | 2026-07-24 13:56:27 |
+| AI_CHARACTERS/NIKA/06_prompts/NIKA_PROMPT_RUN_LOG.jsonl | 6691 | 2026-07-24 13:57:07 |
+| AI_CHARACTERS/NIKA/06_prompts/NIKA_WORKING_SCENE_PROMPTS.md | 6706 | 2026-07-24 13:57:40 |
 | AI_CHARACTERS/NIKA/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/07_generated/canon_tests/01_evening_embankment/NIKA_test02_evening_embankment_v1_APPROVED.png | 2084220 | 2026-07-22 15:20:28 |
 | AI_CHARACTERS/NIKA/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/07_generated/canon_tests/02_sports_yoga/NIKA_test03_sports_yoga_v1_APPROVED.png | 1965291 | 2026-07-24 08:32:14 |
 | AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/NIKA_test01_neutral_portrait_v1_APPROVED.png | 1763077 | 2026-07-22 13:05:11 |
+| AI_CHARACTERS/NIKA/07_generated/canon_tests/03_portrait_expression/NIKA_test01_neutral_portrait_v2_APPROVED.png | 1800546 | 2026-07-22 14:41:44 |
 | AI_CHARACTERS/NIKA/07_generated/drafts/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/NIKA/07_generated/drafts/NIKA_body_canon_v1_attempt01_REVISE.png | 1906582 | 2026-07-22 10:02:33 |
+| AI_CHARACTERS/NIKA/07_generated/drafts/NIKA_body_canon_v1_attempt02_REVISE.png | 1876834 | 2026-07-22 10:21:27 |
 | AI_CHARACTERS/NIKA/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/NIKA/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/NIKA/10_notes/NIKA_REFERENCE_PRESETS.json | 2670 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/NIKA/10_notes/NIKA_CANON_INDEX.md | 2987 | 2026-07-24 13:55:38 |
+| AI_CHARACTERS/NIKA/10_notes/NIKA_REFERENCE_PRESETS.json | 8511 | 2026-07-24 13:58:40 |
+| AI_CHARACTERS/NIKA/10_notes/NIKA_TEST_RESULTS.md | 3131 | 2026-07-24 13:56:00 |
 | AI_CHARACTERS/OLGA/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/01_refs_raw/.gitkeep | 0 | 2026-07-04 16:04:15 |
 | AI_CHARACTERS/OLGA/02_best_refs/.gitkeep | 0 | 2026-07-04 16:04:15 |
@@ -1398,7 +1442,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 99919 | 2026-07-20 20:55:55 |
+| INVENTORY.md | 100467 | 2026-07-20 21:39:16 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

@@ -4,7 +4,7 @@
 
 **Status:** ACTIVE / CHARACTER CANON REPOSITORY
 
-**Last verified:** 2026-07-20
+**Last verified:** 2026-07-24
 
 **Repository:** `C:\DEV\Narrative\narrative-character-canon`
 
@@ -50,7 +50,8 @@
   * Inventory refresh remains pending as a separate optional task.
   * SQLite synchronization remains pending as a separate optional task.
 * MARINA: `BASE_CANON_APPROVED` / `CONTROL_TESTS_APPROVED` / `PROMPT_PIPELINE_ACTIVE`; 3 base-canon images, 5 support expression sheets, 3 outfit references, and Control Tests 01–07 are published; prompt pipeline contains 18 unique records and scene presets are active.
-* NIKA, SERGEY, MAKSIM: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
+* NIKA: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–03 published, incl. TEST01 MAIN + ALT) / PROMPT_PIPELINE_ACTIVE`; 6 imported raw references (D-034); 4 approved canon sheets (face, expressions, body A, body B poses); 4 control-test images (TEST01 MAIN + ALT, TEST02, TEST03); 8 prompt-run records in NIKA_PROMPT_RUN_LOG.jsonl; canon index, test results, and prompt infrastructure published. Beach photo rejected; 2 held-local images remain outside deployed canon.
+* SERGEY, MAKSIM: `TEXT_CANON_READY` / `CANON_PROMPTS_CREATED`; папки структуры и generation prompts есть, изображений пока нет.
 * EGOR: `BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED (Tests 01–03 published) / PROMPT_PIPELINE_ACTIVE`; VNE text canon sync complete (D-028): height (180 cm), weight (83 kg), cleft chin, aquiline nose added; 5 owner-classified visual references in 01_refs_raw/ (FACE_MAIN, BODY_MAIN, 3× DUO_SUPPORT) — D-030; face canon, expression canon, and body canon A (front/side/back) imported and registered (D-031); 3 control tests published (D-032): neutral portrait, evening embankment, sports yoga; 6 prompt-run records in EGOR_PROMPT_RUN_LOG.jsonl; prompt pipeline normalized with index, working prompts, canon index, and test results (D-033); body canon B (pose variations) remains in planned_canon_paths; stubble deferred.
 * SQLite DB отстаёт от репозитория (последнее обновление 2026-07-07); синхронизация отложена как отдельная задача. Репозиторий остаётся авторитетным источником правды.
 * Validator MVP is published at `78da93a`; 32/32 validator tests pass. After MARINA Test01–Test07 registration, compatibility mode discovers 5 character registries / 65 aggregate records.
