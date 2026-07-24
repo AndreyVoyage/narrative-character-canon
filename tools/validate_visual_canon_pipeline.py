@@ -637,22 +637,31 @@ class Validator:
 
     # ------------------------------------------------------------------ post-line checks
     def _perform_duplicate_and_main_checks(self, all_records: List[Tuple[str, int, Dict[str, Any]]]) -> None:
-        ids: Dict[str, List[Tuple[str, int]]] = {}
+        # Composite dedup: (prompt_id, attempt, variant, output_path).
+        # Canonical prompt_id may be shared across distinct attempts, variants,
+        # or deployed output paths.  Only records that are indistinguishable on
+        # all four axes are treated as accidental duplicates.
+        comp: Dict[Tuple, List[Tuple[str, int]]] = {}
         main_keys: Dict[Tuple[str, str, str], List[Tuple[str, int, str]]] = {}
         for rel, line_no, record in all_records:
             pid = record.get("prompt_id")
             if pid:
-                ids.setdefault(pid, []).append((rel, line_no))
+                attempt = record.get("attempt")
+                variant = record.get("variant")
+                output = record.get("output_path", "")
+                key = (pid, attempt, variant, output)
+                comp.setdefault(key, []).append((rel, line_no))
             if record.get("role") == "MAIN" and record.get("selected") is True:
                 test_id = record.get("test_id")
                 scene_id = record.get("scene_id")
                 primary = record.get("primary_character_id")
                 key = (primary, test_id, scene_id)
                 main_keys.setdefault(key, []).append((rel, line_no, pid or ""))
-        for pid, locations in ids.items():
+        for key, locations in comp.items():
             if len(locations) > 1:
+                pid = key[0]
                 for rel, line_no in locations:
-                    self._error("VC-009", rel, line_no, f"duplicate prompt_id '{pid}' across {len(locations)} record(s)")
+                    self._error("VC-009", rel, line_no, f"duplicate record for prompt_id '{pid}': same attempt, variant and output_path across {len(locations)} record(s)")
         for key, locations in main_keys.items():
             if len(locations) > 1:
                 for rel, line_no, pid in locations:

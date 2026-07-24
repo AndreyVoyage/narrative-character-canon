@@ -96,6 +96,17 @@ class TestPromptRecordValidation(unittest.TestCase):
         finally:
             shutil.rmtree(root, ignore_errors=True)
 
+    def test_shared_prompt_id_with_different_variant_passes(self):
+        """Same canonical prompt_id with different attempt/variant/output is allowed."""
+        refs = ["AI_CHARACTERS/TESTV/03_face_sheet/TESTV_face.png"]
+        root = _build_repo("valid_variant_shared_id", refs_to_create=refs)
+        try:
+            result = _run_validator(root)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertNotIn("VC-009", result.stdout)
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
+
     def test_variant_label_in_prompt_id_fails(self):
         refs = ["AI_CHARACTERS/TESTE/03_face_sheet/TESTE_face.png"]
         root = _build_repo("invalid_variant_in_id", refs_to_create=refs)
