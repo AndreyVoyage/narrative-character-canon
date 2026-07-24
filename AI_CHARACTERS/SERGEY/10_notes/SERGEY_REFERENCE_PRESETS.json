@@ -1,8 +1,8 @@
 {
   "character": "SERGEY",
   "active_version": "sergey_base_canon_v1.0",
-  "status": "PENDING_GENERATION",
-  "last_updated": "2026-07-09",
+  "status": "REFERENCE_PACK_IMPORTED",
+  "last_updated": "2026-07-24",
   "identity_summary": {
     "role": "adult male character",
     "height_direction": "medium-tall, athletic build",
@@ -12,7 +12,7 @@
     "style_direction": "casual minimalist, confident, masculine but approachable, protective, guardian energy"
   },
   "active_canon": {
-    "primary_face_reference": "PENDING_GENERATION",
+    "primary_face_reference": "AI_CHARACTERS/SERGEY/01_refs_raw/SERGEY_RAW_01_face_main_bar.jpg",
     "face_canon": "AI_CHARACTERS/SERGEY/03_face_sheet/SERGEY_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/SERGEY/03_face_sheet/expressions/SERGEY_expressions_v1_sheet_A_APPROVED.png",
     "body_canon_a": "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -25,6 +25,24 @@
     "body_canon_b": "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
   "control_tests": [],
+  "raw_references": [
+    {
+      "path": "AI_CHARACTERS/SERGEY/01_refs_raw/SERGEY_RAW_01_face_main_bar.jpg",
+      "sha256": "2168c12d7ffcce64947d32d9b4c0619314d7bfb945157eebf320792326484bdc",
+      "primary_role": "FACE_MAIN",
+      "secondary_roles": [],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Vertical bar portrait, 731x1280. Primary facial-identity reference. Blue/grey eyes, short styled ash-blond hair, trimmed stubble, angular masculine face, dark elegant styling, wristwatch. Source: photo_2026-06-20_19-56-41.jpg"
+    },
+    {
+      "path": "AI_CHARACTERS/SERGEY/01_refs_raw/SERGEY_RAW_02_body_main_navy_suit_multiview.png",
+      "sha256": "13f72d3792955f1cddb87f79dec24922a8a373ad077d86237ee390b335a706b3",
+      "primary_role": "BODY_MAIN",
+      "secondary_roles": ["FACE_SUPPORT", "STYLE_SUPPORT"],
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Horizontal multi-panel navy-suit reference sheet, 1535x1024. Full-body front, side, back, three-quarter views, close facial views. Primary body/proportion reference. Source: c7570fbc-8735-4581-a5f0-5f0d5a400ee4.png"
+    }
+  ],
   "scene_presets": {},
   "prompt_pipeline": {
     "status": "PROMPT_PIPELINE_NOT_STARTED",
