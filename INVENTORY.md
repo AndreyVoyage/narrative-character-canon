@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-25 09:48:32
+2026-07-25 18:17:41
 
 ---
 
@@ -446,7 +446,8 @@ Generated:
 │   │       └── KIRA_TEST_RESULTS.md.txt.backup_20260707_153909
 │   ├── MAKSIM/
 │   │   ├── 01_refs_raw/
-│   │   │   └── .gitkeep
+│   │   │   ├── .gitkeep
+│   │   │   └── MAKSIM_RAW_01_body_face_multiview_black_suit.png
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
@@ -898,7 +899,7 @@ Generated:
 
 # Total file count
 
-589
+590
 
 # File type summary
 
@@ -942,7 +943,7 @@ Generated:
 | .json | 20 |
 | .jsonl | 21 |
 | .md | 69 |
-| .png | 138 |
+| .png | 139 |
 | .ps1 | 1 |
 | .py | 23 |
 | .pyc | 17 |
@@ -1251,6 +1252,7 @@ Generated:
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260702_231620 | 2916 | 2026-07-02 23:16:20 |
 | AI_CHARACTERS/KIRA/10_notes/KIRA_TEST_RESULTS.md.txt.backup_20260707_153909 | 2752 | 2026-07-07 15:39:09 |
 | AI_CHARACTERS/MAKSIM/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/MAKSIM/01_refs_raw/MAKSIM_RAW_01_body_face_multiview_black_suit.png | 1884072 | 2026-07-25 16:37:05 |
 | AI_CHARACTERS/MAKSIM/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
@@ -1270,7 +1272,7 @@ Generated:
 | AI_CHARACTERS/MAKSIM/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_REFERENCE_PRESETS.json | 2402 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_REFERENCE_PRESETS.json | 3979 | 2026-07-25 18:17:26 |
 | AI_CHARACTERS/MARINA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1472,7 +1474,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 104595 | 2026-07-24 14:00:07 |
+| INVENTORY.md | 107394 | 2026-07-25 09:48:32 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |

@@ -1,18 +1,18 @@
 {
   "character": "MAKSIM",
   "active_version": "maksim_base_canon_v1.0",
-  "status": "PENDING_GENERATION",
-  "last_updated": "2026-07-09",
+  "status": "REFERENCE_PACK_READY",
+  "last_updated": "2026-07-25",
   "identity_summary": {
     "role": "adult male character",
     "height_direction": "medium build, approachable scale",
-    "body_direction": "sporty fit build, athletic but not bulky, realistic adult proportions",
-    "face_direction": "friendly open smile, warm hazel eyes, approachable expression, natural skin texture",
-    "hair_direction": "light brown hair, natural texture",
-    "style_direction": "friendly, sporty, smart casual, approachable, warm, natural daylight energy"
+    "body_direction": "lean elegant adult build, realistic adult proportions",
+    "face_direction": "mature elongated masculine face, defined cheekbones and jaw, controlled short stubble, composed restrained presence",
+    "hair_direction": "dark medium-length naturally wavy hair",
+    "style_direction": "formal tailored dark suit, composed elegant presence"
   },
   "active_canon": {
-    "primary_face_reference": "PENDING_GENERATION",
+    "primary_face_reference": "AI_CHARACTERS/MAKSIM/01_refs_raw/MAKSIM_RAW_01_body_face_multiview_black_suit.png",
     "face_canon": "AI_CHARACTERS/MAKSIM/03_face_sheet/MAKSIM_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/MAKSIM_expressions_v1_sheet_A_APPROVED.png",
     "body_canon_a": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -25,6 +25,30 @@
     "body_canon_b": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
   "control_tests": [],
+  "raw_references": [
+    {
+      "path": "AI_CHARACTERS/MAKSIM/01_refs_raw/MAKSIM_RAW_01_body_face_multiview_black_suit.png",
+      "sha256": "e9cc2ed6a2476c0efde63a128618cb78435c49fafef5ffe674196dc6812146bd",
+      "file_size_bytes": 1884072,
+      "primary_role": "BODY_MAIN",
+      "secondary_roles": [
+        "FACE_MAIN",
+        "FACE_SUPPORT",
+        "PROFILE_SUPPORT",
+        "POSTURE_SUPPORT",
+        "HAIR_SUPPORT",
+        "STYLE_SUPPORT"
+      ],
+      "source_type": "composite_multiview",
+      "owner_verdict": "APPROVED_AS_RAW_REFERENCE",
+      "identity_status": "approved raw reference",
+      "standalone_face_image": "absent",
+      "face_main_basis": "two large lower facial portraits within the same composite",
+      "body_main_basis": "front, profile, back and three-quarter full-body views",
+      "classification_status": "owner_selected_unclassified",
+      "notes": "Composite multiview reference sheet: full-body front, side, back, three-quarter standing views, walking/relaxed poses, two close facial portraits, dark tailored suit. Multifunctional approved raw reference."
+    }
+  ],
   "scene_presets": {},
   "prompt_pipeline": {
     "status": "PROMPT_PIPELINE_NOT_STARTED",
@@ -32,6 +56,21 @@
     "working_scene_prompts": "AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_WORKING_SCENE_PROMPTS.md",
     "prompt_run_log": "AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_PROMPT_RUN_LOG.jsonl"
   },
+  "identity_uncertain_traits": [
+    "exact eye color",
+    "exact hair-color terminology",
+    "height",
+    "weight",
+    "age"
+  ],
+  "identity_observed_traits": [
+    "dark medium-length naturally wavy hair",
+    "mature elongated masculine face",
+    "defined cheekbones and jaw",
+    "controlled short stubble",
+    "lean elegant adult build",
+    "composed restrained visual presence"
+  ],
   "safety_rules": [
     "fully adult character only",
     "non-explicit generation contexts only",
