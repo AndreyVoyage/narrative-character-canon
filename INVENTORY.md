@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-24 14:00:07
+2026-07-25 09:48:32
 
 ---
 
@@ -731,15 +731,21 @@ Generated:
 │   │   └── .gitkeep
 │   └── SERGEY/
 │       ├── 01_refs_raw/
-│       │   └── .gitkeep
+│       │   ├── .gitkeep
+│       │   ├── SERGEY_RAW_01_face_main_bar.jpg
+│       │   └── SERGEY_RAW_02_body_main_navy_suit_multiview.png
 │       ├── 02_best_refs/
 │       │   └── .gitkeep
 │       ├── 03_face_sheet/
-│       │   └── expressions/
-│       │       └── .gitkeep
+│       │   ├── expressions/
+│       │   │   ├── .gitkeep
+│       │   │   └── SERGEY_expressions_v1_sheet_A_APPROVED.png
+│       │   └── SERGEY_face_canon_v1_sheet_A_APPROVED.png
 │       ├── 04_body_sheet/
-│       │   └── candidates/
-│       │       └── .gitkeep
+│       │   ├── candidates/
+│       │   │   └── .gitkeep
+│       │   ├── SERGEY_body_canon_v1_sheet_A_front_side_back_APPROVED.png
+│       │   └── SERGEY_body_canon_v1_sheet_B_pose_variations_APPROVED.png
 │       ├── 05_outfits/
 │       │   ├── candidates/
 │       │   │   └── .gitkeep
@@ -755,15 +761,21 @@ Generated:
 │       │       └── .gitkeep
 │       ├── 06_prompts/
 │       │   ├── .gitkeep
-│       │   └── SERGEY_CANON_GENERATION_PROMPTS.txt
+│       │   ├── SERGEY_CANON_GENERATION_PROMPTS.txt
+│       │   ├── SERGEY_PROMPT_INDEX.md
+│       │   ├── SERGEY_PROMPT_RUN_LOG.jsonl
+│       │   └── SERGEY_WORKING_SCENE_PROMPTS.md
 │       ├── 07_generated/
 │       │   ├── canon_tests/
 │       │   │   ├── 01_evening_embankment/
-│       │   │   │   └── .gitkeep
+│       │   │   │   ├── .gitkeep
+│       │   │   │   └── SERGEY_test02_evening_embankment_v1_APPROVED.png
 │       │   │   ├── 02_sports_yoga/
-│       │   │   │   └── .gitkeep
+│       │   │   │   ├── .gitkeep
+│       │   │   │   └── SERGEY_test03_sports_yoga_v1_APPROVED.png
 │       │   │   └── 03_portrait_expression/
-│       │   │       └── .gitkeep
+│       │   │       ├── .gitkeep
+│       │   │       └── SERGEY_test01_neutral_portrait_v1_APPROVED.png
 │       │   ├── drafts/
 │       │   │   └── .gitkeep
 │       │   └── rejected/
@@ -774,7 +786,9 @@ Generated:
 │       │   └── .gitkeep
 │       └── 10_notes/
 │           ├── .gitkeep
-│           └── SERGEY_REFERENCE_PRESETS.json
+│           ├── SERGEY_CANON_INDEX.md
+│           ├── SERGEY_REFERENCE_PRESETS.json
+│           └── SERGEY_TEST_RESULTS.md
 ├── configs/
 │   └── visual_canon/
 │       ├── character_bootstrap.schema.json
@@ -827,7 +841,9 @@ Generated:
 │       │   │   └── prompt_run_log.jsonl
 │       │   ├── valid_legacy/
 │       │   │   └── prompt_run_log.jsonl
-│       │   └── valid_strict/
+│       │   ├── valid_strict/
+│       │   │   └── prompt_run_log.jsonl
+│       │   └── valid_variant_shared_id/
 │       │       └── prompt_run_log.jsonl
 │       ├── deploy_test_support.py
 │       ├── test_bootstrap_character.py
@@ -882,7 +898,7 @@ Generated:
 
 # Total file count
 
-574
+589
 
 # File type summary
 
@@ -922,11 +938,11 @@ Generated:
 | .backup_20260711_082946 | 1 |
 | .backup_20260712_183037 | 1 |
 | .backup_20260719_141209 | 1 |
-| .jpg | 3 |
+| .jpg | 4 |
 | .json | 20 |
-| .jsonl | 19 |
-| .md | 65 |
-| .png | 130 |
+| .jsonl | 21 |
+| .md | 69 |
+| .png | 138 |
 | .ps1 | 1 |
 | .py | 23 |
 | .pyc | 17 |
@@ -1410,9 +1426,15 @@ Generated:
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_162431 | 1146 | 2026-07-05 16:24:31 |
 | AI_CHARACTERS/OLGA/10_notes/OLGA_TEST_RESULTS.md.backup_20260705_234259 | 1360 | 2026-07-05 23:42:59 |
 | AI_CHARACTERS/SERGEY/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/01_refs_raw/SERGEY_RAW_01_face_main_bar.jpg | 111816 | 2026-07-24 17:01:39 |
+| AI_CHARACTERS/SERGEY/01_refs_raw/SERGEY_RAW_02_body_main_navy_suit_multiview.png | 1939737 | 2026-07-24 17:01:39 |
 | AI_CHARACTERS/SERGEY/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/03_face_sheet/expressions/SERGEY_expressions_v1_sheet_A_APPROVED.png | 2107757 | 2026-07-24 18:54:50 |
+| AI_CHARACTERS/SERGEY/03_face_sheet/SERGEY_face_canon_v1_sheet_A_APPROVED.png | 2144177 | 2026-07-24 18:33:45 |
 | AI_CHARACTERS/SERGEY/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_A_front_side_back_APPROVED.png | 1777455 | 2026-07-24 19:08:24 |
+| AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_B_pose_variations_APPROVED.png | 1734651 | 2026-07-24 20:15:16 |
 | AI_CHARACTERS/SERGEY/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1420,16 +1442,24 @@ Generated:
 | AI_CHARACTERS/SERGEY/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_CANON_GENERATION_PROMPTS.txt | 4474 | 2026-07-09 10:15:21 |
+| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_CANON_GENERATION_PROMPTS.txt | 4683 | 2026-07-25 09:46:50 |
+| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_PROMPT_INDEX.md | 2963 | 2026-07-25 09:46:15 |
+| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_PROMPT_RUN_LOG.jsonl | 6670 | 2026-07-25 09:45:52 |
+| AI_CHARACTERS/SERGEY/06_prompts/SERGEY_WORKING_SCENE_PROMPTS.md | 2494 | 2026-07-25 09:46:37 |
 | AI_CHARACTERS/SERGEY/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/07_generated/canon_tests/01_evening_embankment/SERGEY_test02_evening_embankment_v1_APPROVED.png | 2140275 | 2026-07-24 23:56:17 |
 | AI_CHARACTERS/SERGEY/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/07_generated/canon_tests/02_sports_yoga/SERGEY_test03_sports_yoga_v1_APPROVED.png | 1919590 | 2026-07-25 09:25:56 |
 | AI_CHARACTERS/SERGEY/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:53 |
+| AI_CHARACTERS/SERGEY/07_generated/canon_tests/03_portrait_expression/SERGEY_test01_neutral_portrait_v1_APPROVED.png | 1863971 | 2026-07-24 23:49:00 |
 | AI_CHARACTERS/SERGEY/07_generated/drafts/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/08_masks/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/09_blender/.gitkeep | 0 | 2026-06-30 20:37:53 |
 | AI_CHARACTERS/SERGEY/10_notes/.gitkeep | 0 | 2026-06-30 20:37:53 |
-| AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 2416 | 2026-07-09 09:26:57 |
+| AI_CHARACTERS/SERGEY/10_notes/SERGEY_CANON_INDEX.md | 1987 | 2026-07-25 09:48:05 |
+| AI_CHARACTERS/SERGEY/10_notes/SERGEY_REFERENCE_PRESETS.json | 4551 | 2026-07-25 09:47:44 |
+| AI_CHARACTERS/SERGEY/10_notes/SERGEY_TEST_RESULTS.md | 3241 | 2026-07-25 09:47:15 |
 | configs/visual_canon/character_bootstrap.schema.json | 2438 | 2026-07-19 08:50:49 |
 | configs/visual_canon/character_manifest.schema.json | 7521 | 2026-07-12 18:22:17 |
 | configs/visual_canon/deployment_request.schema.json | 7648 | 2026-07-14 08:57:39 |
@@ -1442,7 +1472,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 100467 | 2026-07-20 21:39:16 |
+| INVENTORY.md | 104595 | 2026-07-24 14:00:07 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
@@ -1471,9 +1501,9 @@ Generated:
 | tests/visual_canon/__pycache__/test_validator_cli.cpython-314.pyc | 8451 | 2026-07-14 06:20:04 |
 | tests/visual_canon/__pycache__/test_validator_discovery.cpython-314.pyc | 20157 | 2026-07-14 06:20:04 |
 | tests/visual_canon/__pycache__/test_validator_legacy_compatibility.cpython-314.pyc | 5784 | 2026-07-14 06:20:04 |
-| tests/visual_canon/__pycache__/test_validator_prompt_records.cpython-314.pyc | 11314 | 2026-07-14 06:20:04 |
+| tests/visual_canon/__pycache__/test_validator_prompt_records.cpython-314.pyc | 12200 | 2026-07-24 14:39:43 |
 | tests/visual_canon/deploy_test_support.py | 9025 | 2026-07-14 09:02:34 |
-| tests/visual_canon/fixtures/invalid_duplicate_id/prompt_run_log.jsonl | 1079 | 2026-07-12 21:54:03 |
+| tests/visual_canon/fixtures/invalid_duplicate_id/prompt_run_log.jsonl | 1220 | 2026-07-24 14:38:25 |
 | tests/visual_canon/fixtures/invalid_empty_prompt/prompt_run_log.jsonl | 599 | 2026-07-12 21:54:18 |
 | tests/visual_canon/fixtures/invalid_jsonl/prompt_run_log.jsonl | 110 | 2026-07-12 21:53:59 |
 | tests/visual_canon/fixtures/invalid_local_only_leak/prompt_run_log.jsonl | 522 | 2026-07-12 21:54:12 |
@@ -1484,6 +1514,7 @@ Generated:
 | tests/visual_canon/fixtures/invalid_variant_in_id/prompt_run_log.jsonl | 612 | 2026-07-12 21:54:05 |
 | tests/visual_canon/fixtures/valid_legacy/prompt_run_log.jsonl | 392 | 2026-07-12 21:57:22 |
 | tests/visual_canon/fixtures/valid_strict/prompt_run_log.jsonl | 646 | 2026-07-12 21:53:57 |
+| tests/visual_canon/fixtures/valid_variant_shared_id/prompt_run_log.jsonl | 1254 | 2026-07-24 14:38:39 |
 | tests/visual_canon/test_bootstrap_character.py | 30251 | 2026-07-19 08:57:42 |
 | tests/visual_canon/test_cline_reference_import_skill.py | 21771 | 2026-07-19 14:08:53 |
 | tests/visual_canon/test_deploy_visual_canon_apply.py | 3210 | 2026-07-14 08:59:52 |
@@ -1495,16 +1526,16 @@ Generated:
 | tests/visual_canon/test_validator_cli.py | 4247 | 2026-07-13 10:46:16 |
 | tests/visual_canon/test_validator_discovery.py | 11681 | 2026-07-12 23:00:14 |
 | tests/visual_canon/test_validator_legacy_compatibility.py | 3480 | 2026-07-12 22:59:59 |
-| tests/visual_canon/test_validator_prompt_records.py | 7043 | 2026-07-12 22:45:31 |
+| tests/visual_canon/test_validator_prompt_records.py | 7603 | 2026-07-24 14:38:54 |
 | tools/__pycache__/bootstrap_character.cpython-314.pyc | 54865 | 2026-07-19 09:28:32 |
 | tools/__pycache__/deploy_visual_canon_result.cpython-314.pyc | 74220 | 2026-07-17 11:22:24 |
-| tools/__pycache__/validate_visual_canon_pipeline.cpython-314.pyc | 53195 | 2026-07-12 22:59:15 |
+| tools/__pycache__/validate_visual_canon_pipeline.cpython-314.pyc | 53521 | 2026-07-24 14:44:42 |
 | tools/bootstrap_character.py | 42313 | 2026-07-19 08:56:26 |
 | tools/build_scene_reference_pack.ps1 | 1037 | 2026-07-01 11:04:26 |
 | tools/build_scene_reference_pack.py | 16889 | 2026-07-01 17:18:12 |
 | tools/deploy_visual_canon_result.py | 45384 | 2026-07-14 08:58:35 |
 | tools/generate_inventory.py | 4231 | 2026-07-03 12:55:34 |
-| tools/validate_visual_canon_pipeline.py | 33204 | 2026-07-12 22:58:07 |
+| tools/validate_visual_canon_pipeline.py | 33786 | 2026-07-24 14:37:45 |
 | tools/voyage_memory_export.py | 5803 | 2026-07-03 01:36:48 |
 | tools/voyage_memory_init.py | 19032 | 2026-07-03 01:36:25 |
 | tools/voyage_memory_record.py | 17623 | 2026-07-03 01:54:56 |

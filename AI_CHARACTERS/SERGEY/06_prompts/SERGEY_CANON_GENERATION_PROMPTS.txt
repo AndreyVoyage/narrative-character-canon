@@ -1,7 +1,11 @@
 # SERGEY Canon Generation Prompts
 
 Status:
-PENDING / NOT_STARTED
+COMPLETED
+
+Base canon: all four sheets generated and approved (face, expressions, body A, body B poses).
+Control tests: all three tests generated and approved.
+Prompt pipeline: ACTIVE with 7 records in SERGEY_PROMPT_RUN_LOG.jsonl.
 
 Important:
 These prompts are for reference and generation context only.

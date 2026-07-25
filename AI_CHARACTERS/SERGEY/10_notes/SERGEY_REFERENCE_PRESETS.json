@@ -1,8 +1,8 @@
 {
   "character": "SERGEY",
   "active_version": "sergey_base_canon_v1.0",
-  "status": "REFERENCE_PACK_IMPORTED",
-  "last_updated": "2026-07-24",
+  "status": "BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE",
+  "last_updated": "2026-07-25",
   "identity_summary": {
     "role": "adult male character",
     "height_direction": "medium-tall, athletic build",
@@ -18,13 +18,37 @@
     "body_canon_a": "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
     "body_canon_b": "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
   },
-  "planned_canon_paths": {
-    "face_canon": "AI_CHARACTERS/SERGEY/03_face_sheet/SERGEY_face_canon_v1_sheet_A_APPROVED.png",
-    "expression_canon": "AI_CHARACTERS/SERGEY/03_face_sheet/expressions/SERGEY_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
-    "body_canon_b": "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
-  },
-  "control_tests": [],
+  "control_tests": [
+    {
+      "prompt_id": "SERGEY_TEST01_NEUTRAL_PORTRAIT_V1",
+      "test": "01",
+      "scene": "neutral_portrait",
+      "variant": "MAIN",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "output_path": "AI_CHARACTERS/SERGEY/07_generated/canon_tests/03_portrait_expression/SERGEY_test01_neutral_portrait_v1_APPROVED.png",
+      "sha256": "423f4228467dfabca51296f52d6ce2d14199939de68d2e946737aa7beb8c36e1"
+    },
+    {
+      "prompt_id": "SERGEY_TEST02_EVENING_EMBANKMENT_V1",
+      "test": "02",
+      "scene": "evening_embankment",
+      "variant": "MAIN",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "output_path": "AI_CHARACTERS/SERGEY/07_generated/canon_tests/01_evening_embankment/SERGEY_test02_evening_embankment_v1_APPROVED.png",
+      "sha256": "f209b11ca797723aa184d99c7a94d71baf438343ebbff006f9c4b79f09a3c1c2",
+      "generation_id": "bf4f8662-8199-414d-9658-e31bd89df1c7"
+    },
+    {
+      "prompt_id": "SERGEY_TEST03_SPORTS_YOGA_V1",
+      "test": "03",
+      "scene": "sports_yoga",
+      "variant": "MAIN",
+      "verdict": "APPROVED_WITH_MINOR_NOTES",
+      "output_path": "AI_CHARACTERS/SERGEY/07_generated/canon_tests/02_sports_yoga/SERGEY_test03_sports_yoga_v1_APPROVED.png",
+      "sha256": "e5676ad3f723598071201c6f161ea517c65f5902914f4d9fb45d0e0f6412da7f",
+      "generation_id": "974980f5-719e-446a-b509-740a9a393e59"
+    }
+  ],
   "raw_references": [
     {
       "path": "AI_CHARACTERS/SERGEY/01_refs_raw/SERGEY_RAW_01_face_main_bar.jpg",
@@ -45,7 +69,7 @@
   ],
   "scene_presets": {},
   "prompt_pipeline": {
-    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "status": "PROMPT_PIPELINE_ACTIVE",
     "prompt_index": "AI_CHARACTERS/SERGEY/06_prompts/SERGEY_PROMPT_INDEX.md",
     "working_scene_prompts": "AI_CHARACTERS/SERGEY/06_prompts/SERGEY_WORKING_SCENE_PROMPTS.md",
     "prompt_run_log": "AI_CHARACTERS/SERGEY/06_prompts/SERGEY_PROMPT_RUN_LOG.jsonl"
