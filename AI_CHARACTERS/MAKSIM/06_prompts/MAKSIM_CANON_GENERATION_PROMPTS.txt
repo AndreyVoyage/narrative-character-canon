@@ -1,7 +1,7 @@
 # MAKSIM Canon Generation Prompts
 
 Status:
-PENDING / NOT_STARTED
+GENERATION_COMPLETE / CANON_UPDATED
 
 Important:
 These prompts are for reference and generation context only.
@@ -11,23 +11,53 @@ Character:
 MAKSIM
 
 Active version:
-Base canon v1.0
+Base canon v1.0 (body direction updated 2026-07-29)
 
 Identity anchor:
-Adult man, sporty fit build, athletic but not bulky, confident natural posture. Light brown hair with natural texture, warm hazel eyes, friendly open smile, approachable expression, natural skin texture, smart casual shirt with rolled sleeves, wrist watch and bracelet, natural daylight energy, approachable warmth.
+Adult man, tall classic golden-era bodybuilder, 188 cm, approximately 115 kg,
+very wide shoulders, deep massive chest, pronounced V-taper, powerful back,
+large arms and forearms, controlled waist, flat non-protruding abdomen,
+massive thighs, legs and calves. Dark-brown medium-length naturally wavy hair
+swept back, short neat stubble, light subdued gray or gray-green eyes.
+Full warm good-natured masculine face, calm approachable gaze.
+Strength without aggression, emotionally stable and reliable presence.
+Stage form may be competition-dry; everyday form remains tall, large, and athletic.
 
 Prompt style rules:
 * Keep MAKSIM clearly an adult man.
-* Use phrases like "adult man", "sporty fit build", "realistic adult proportions", "friendly approachable presence".
+* Use phrases like "adult man", "tall classic golden-era bodybuilder",
+  "very wide shoulders", "controlled flat abdomen", "calm approachable presence".
 * Avoid sexualized wording.
 * Avoid nude, lingerie, transparent clothing, fetish framing, or erotic staging.
-* Avoid exaggerating body proportions.
-* Avoid bodybuilder drift.
+* Preserve golden-era bodybuilder identity while avoiding IFBB mass-monster extremes.
+* Avoid extreme vascularity or competition-level dryness outside stage scenes.
+* Maintain controlled flat abdomen.
+* Maintain tall proportions.
 * Avoid making him look too young or too old.
-* Preserve the warm hazel eyes and friendly open smile.
-* Preserve the light brown hair with natural texture.
+* Preserve light subdued gray or gray-green eyes.
+* Preserve dark-brown medium-length naturally wavy hair swept back.
+* Preserve short neat stubble.
 * Use photorealistic studio or natural daylight reference language.
-* Keep contexts friendly: portrait, street, casual, sports, social, outdoor.
+* Keep contexts friendly: portrait, street, casual, sports, formal, stage, outdoor.
+
+---
+SUPERSEDED directions (DO NOT USE):
+
+The following historical directions are SUPERSEDED and must NOT appear
+in future prompts:
+
+- sporty fit build
+- athletic but not bulky
+- lean elegant adult build
+- medium build / approachable scale
+- avoid bodybuilder drift (replaced by: preserve golden-era bodybuilder identity
+  while avoiding IFBB mass-monster extremes)
+- warm hazel eyes (replaced by: light subdued gray or gray-green eyes)
+- light brown hair (replaced by: dark-brown medium-length wavy hair)
+- protruding belly / moderate natural belly
+- non-bodybuilder / не бодибилдер
+- smart casual shirt with rolled sleeves, wrist watch and bracelet
+  (outfit-specific, not identity canon)
 
 ---
 
@@ -37,12 +67,18 @@ Target folder:
 AI_CHARACTERS/MAKSIM/03_face_sheet/
 
 Target filename:
-MAKSIM_face_canon_v1_sheet_A.png
+MAKSIM_face_canon_v1_sheet_A_APPROVED.png
 
-Prompt:
-Photorealistic character face canon sheet of the same adult man, neutral grey studio background, soft even studio lighting, no dramatic shadows, no text labels, no numbers, no watermark, 2 rows x 4 columns layout, 8 consistent head-and-shoulders portraits.
+Prompt (reconstructed from approved result — not verbatim historical prompt):
+Photorealistic character face canon sheet of the same adult man, neutral grey
+studio background, soft even studio lighting, no dramatic shadows,
+no text labels, no numbers, no watermark, 2 rows x 4 columns layout,
+8 consistent head-and-shoulders portraits.
 
-Adult man with light brown hair, natural texture, warm hazel eyes, friendly open smile, approachable expression, natural skin texture, sporty fit build, broad shoulders partly visible, smart casual shirt with rolled sleeves, wrist watch and bracelet visible.
+Adult man with dark-brown medium-length naturally wavy hair swept back,
+light subdued gray or gray-green eyes, short neat stubble, full warm
+good-natured masculine face, calm approachable gaze, natural skin texture,
+tall classic golden-era bodybuilder build, very wide shoulders partly visible.
 
 Expression range:
 1. neutral friendly
@@ -64,12 +100,17 @@ Target folder:
 AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/
 
 Target filename:
-MAKSIM_expressions_v1_sheet_A.png
+MAKSIM_expressions_v1_sheet_A_APPROVED.png
 
-Prompt:
-Photorealistic character expression canon sheet of the same adult man, neutral grey studio background, soft even lighting. 2 rows x 3 columns layout, 6 consistent head-and-shoulders portraits.
+Prompt (reconstructed from approved result — not verbatim historical prompt):
+Photorealistic character expression canon sheet of the same adult man,
+neutral grey studio background, soft even lighting. 2 rows x 3 columns layout,
+6 consistent head-and-shoulders portraits.
 
-Adult man with light brown hair, natural texture, warm hazel eyes, friendly open smile, natural skin texture, sporty fit build.
+Adult man with dark-brown medium-length wavy hair swept back,
+light subdued gray or gray-green eyes, short neat stubble,
+full warm good-natured masculine face, calm approachable gaze,
+natural skin texture, tall classic golden-era bodybuilder build.
 
 Expression range:
 1. neutral friendly
@@ -89,14 +130,21 @@ Target folder:
 AI_CHARACTERS/MAKSIM/04_body_sheet/
 
 Target filename:
-MAKSIM_body_canon_v1_sheet_A_front_side_back.png
+MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png
 
-Prompt:
-Photorealistic full-body character canon sheet of the same adult man, 3-panel layout: front view, side profile, back view, neutral grey studio background, soft even lighting, realistic anatomy, natural proportions.
+Prompt (reconstructed from approved result — not verbatim historical prompt):
+Photorealistic full-body character canon sheet of the same adult man,
+3-panel layout: front view, side profile, back view, neutral grey studio
+background, soft even lighting, realistic anatomy.
 
-Adult man, sporty fit build, athletic but not bulky, realistic adult proportions, light brown hair, warm hazel eyes, friendly expression, smart casual shirt with rolled sleeves, wrist watch and bracelet, confident natural posture, approachable energy.
+Adult man, tall classic golden-era bodybuilder, 188 cm, approximately 115 kg,
+very wide shoulders, deep massive chest, pronounced V-taper, powerful back,
+large arms and forearms, controlled waist, flat non-protruding abdomen,
+massive thighs, legs and calves. Dark-brown medium-length wavy hair swept back,
+short neat stubble, light subdued gray or gray-green eyes, calm composed expression.
 
-Same identity across all panels. No text, no numbers, no watermark. Photorealistic, masterpiece, best quality, 8k uhd.
+Same identity across all panels. No text, no numbers, no watermark.
+Photorealistic, masterpiece, best quality, 8k uhd.
 
 ---
 
@@ -106,23 +154,32 @@ Target folder:
 AI_CHARACTERS/MAKSIM/04_body_sheet/
 
 Target filename:
-MAKSIM_body_canon_v1_sheet_B_pose_variations.png
+MAKSIM_body_canon_v1_sheet_B_pose_variations_APPROVED.png
 
-Prompt:
-Photorealistic full-body character pose sheet of the same adult man, 2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background, soft even lighting.
+NOTE: This file was planned but not generated. The following prompt block
+is maintained as a planned reference only.
 
-Adult man, sporty fit build, athletic but not bulky, light brown hair, warm hazel eyes, friendly expression, smart casual shirt with rolled sleeves, wrist watch and bracelet.
+Prompt (planned — NOT generated):
+Photorealistic full-body character pose sheet of the same adult man,
+2 rows x 3 columns layout, 6 dynamic poses, neutral grey studio background,
+soft even lighting.
+
+Adult man, tall classic golden-era bodybuilder, 188 cm, approximately 115 kg,
+very wide shoulders, deep massive chest, pronounced V-taper, large arms and
+forearms, controlled waist, flat abdomen, massive thighs and calves.
+Dark-brown wavy hair swept back, short neat stubble, light subdued gray or
+gray-green eyes, calm confident expression.
 
 Pose range:
-1. Standing natural, friendly posture
-2. Walking forward, casual stride
-3. Seated, relaxed smile
-4. Sports/action stance, athletic energy
-5. Formal pose, elegant standing
-6. Casual relaxed, hands in pockets
+1. Standing natural, confident posture
+2. Walking forward, powerful stride
+3. Seated, calm expression
+4. Athletic stance, controlled energy
+5. Formal standing, elegant presence
+6. Casual relaxed, natural power
 
 Same identity across all panels. Photorealistic, 8k uhd, studio lighting.
 
 ---
 
-*MAKSIM Canon Generation Prompts | VNE Visual Bridge | 2026-07-09*
+*MAKSIM Canon Generation Prompts | NCC Visual Canon Pipeline | 2026-07-29*

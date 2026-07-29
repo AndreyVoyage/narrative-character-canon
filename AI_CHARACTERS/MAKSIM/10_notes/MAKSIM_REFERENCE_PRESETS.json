@@ -1,30 +1,30 @@
 {
   "character": "MAKSIM",
   "active_version": "maksim_base_canon_v1.0",
-  "status": "REFERENCE_PACK_READY",
-  "last_updated": "2026-07-25",
+  "status": "VISUAL_CANON_COMPLETE_METADATA_NORMALIZED",
+  "last_updated": "2026-07-29",
   "identity_summary": {
     "role": "adult male character",
-    "height_direction": "medium build, approachable scale",
-    "body_direction": "lean elegant adult build, realistic adult proportions",
-    "face_direction": "mature elongated masculine face, defined cheekbones and jaw, controlled short stubble, composed restrained presence",
-    "hair_direction": "dark medium-length naturally wavy hair",
+    "height": "188 cm",
+    "height_status": "OWNER_APPROVED_CANON",
+    "weight_direction": "approximately 115 kg",
+    "body_direction": "tall classic golden-era bodybuilder, very wide shoulders, deep massive chest, pronounced V-taper, powerful back, large arms and forearms, controlled waist, flat non-protruding abdomen, massive thighs, legs and calves",
+    "face_direction": "full warm good-natured masculine face, calm approachable gaze, light subdued gray or gray-green eyes, dark-brown medium-length naturally wavy hair swept back, short neat stubble",
+    "hair_direction": "dark-brown medium-length naturally wavy hair, swept back",
     "style_direction": "formal tailored dark suit, composed elegant presence"
   },
   "active_canon": {
     "primary_face_reference": "AI_CHARACTERS/MAKSIM/01_refs_raw/MAKSIM_RAW_01_body_face_multiview_black_suit.png",
     "face_canon": "AI_CHARACTERS/MAKSIM/03_face_sheet/MAKSIM_face_canon_v1_sheet_A_APPROVED.png",
     "expression_canon": "AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/MAKSIM_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
-    "body_canon_b": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
+    "body_canon": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+    "clothed_body_reference": "AI_CHARACTERS/MAKSIM/04_body_sheet/clothed_references/MAKSIM_everyday_clothed_turnaround_v1_sheet_A_APPROVED.png",
+    "natural_motion_reference": "AI_CHARACTERS/MAKSIM/04_body_sheet/motion_references/MAKSIM_natural_motion_v1_six_pose_sheet_A_APPROVED.png",
+    "stage_primary_reference": "AI_CHARACTERS/MAKSIM/04_body_sheet/stage_references/MAKSIM_mr_olympia_stage_v1_attempt03_six_pose_PRIMARY_REFERENCE.png",
+    "stage_secondary_reference": "AI_CHARACTERS/MAKSIM/04_body_sheet/stage_references/MAKSIM_mr_olympia_stage_v1_attempt02_secondary_REFERENCE.png",
+    "wardrobe_reference": "AI_CHARACTERS/MAKSIM/05_outfits/scene_outfits/MAKSIM_outfit_variants_v1_six_looks_sheet_A_APPROVED.png",
+    "scene_outfit_reference": "AI_CHARACTERS/MAKSIM/05_outfits/scene_outfits/MAKSIM_scene_outfits_v1_six_locations_sheet_A_APPROVED.png"
   },
-  "planned_canon_paths": {
-    "face_canon": "AI_CHARACTERS/MAKSIM/03_face_sheet/MAKSIM_face_canon_v1_sheet_A_APPROVED.png",
-    "expression_canon": "AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/MAKSIM_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
-    "body_canon_b": "AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_B_pose_variations_APPROVED.png"
-  },
-  "control_tests": [],
   "raw_references": [
     {
       "path": "AI_CHARACTERS/MAKSIM/01_refs_raw/MAKSIM_RAW_01_body_face_multiview_black_suit.png",
@@ -51,33 +51,56 @@
   ],
   "scene_presets": {},
   "prompt_pipeline": {
-    "status": "PROMPT_PIPELINE_NOT_STARTED",
+    "status": "PROMPT_PIPELINE_CREATED",
     "prompt_index": "AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_PROMPT_INDEX.md",
     "working_scene_prompts": "AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_WORKING_SCENE_PROMPTS.md",
     "prompt_run_log": "AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_PROMPT_RUN_LOG.jsonl"
   },
+  "identity_confirmed_traits": [
+    "height: 188 cm",
+    "weight direction: approximately 115 kg",
+    "tall classic golden-era bodybuilder",
+    "very wide shoulders",
+    "deep massive chest",
+    "pronounced V-taper",
+    "powerful back",
+    "large arms and forearms",
+    "controlled waist",
+    "flat non-protruding abdomen",
+    "massive thighs, legs and calves",
+    "dark-brown medium-length naturally wavy hair",
+    "light subdued gray or gray-green eyes",
+    "short neat stubble",
+    "full warm good-natured masculine face",
+    "calm approachable gaze"
+  ],
   "identity_uncertain_traits": [
     "exact eye color",
     "exact hair-color terminology",
-    "height",
-    "weight",
     "age"
   ],
   "identity_observed_traits": [
-    "dark medium-length naturally wavy hair",
-    "mature elongated masculine face",
-    "defined cheekbones and jaw",
-    "controlled short stubble",
-    "lean elegant adult build",
-    "composed restrained visual presence"
+    "dark-brown medium-length naturally wavy hair swept back",
+    "full warm good-natured masculine face",
+    "tall classic golden-era bodybuilder physique",
+    "short neat stubble",
+    "light subdued gray or gray-green eyes",
+    "calm emotionally stable presence"
   ],
   "safety_rules": [
     "fully adult character only",
     "non-explicit generation contexts only",
     "avoid nude, lingerie, transparent clothing, fetish framing, erotic posing",
-    "avoid exaggerated body proportions",
-    "avoid bodybuilder drift",
+    "preserve tall golden-era bodybuilder proportions while avoiding IFBB mass-monster extremes",
+    "preserve bodybuilder identity while avoiding extreme vascularity or competition-level dryness outside stage scenes",
+    "maintain controlled flat abdomen",
+    "maintain tall proportions",
     "avoid making the character look too young",
     "record prompt_id, references, output path, verdict and notes for every generation"
-  ]
+  ],
+  "removed_stale_references": {
+    "body_canon_b": "removed — file never existed (MAKSIM_body_canon_v1_sheet_B_pose_variations_APPROVED.png was planned but not generated)",
+    "planned_canon_paths_body_canon_b": "removed — same reason",
+    "duplicate_attempt06": "removed 2026-07-29 — exact hash duplicate of approved natural motion sheet (SHA-256: 06dfc2fd6696edd4882b42d07ff30b42db1206305aa335c005e1c0d3b08ba2f8)"
+  }
 }

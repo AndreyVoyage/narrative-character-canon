@@ -6,7 +6,7 @@ C:\DEV\Narrative\narrative-character-canon
 
 Generated:
 
-2026-07-25 18:17:41
+2026-07-29 17:15:52
 
 ---
 
@@ -451,11 +451,21 @@ Generated:
 │   │   ├── 02_best_refs/
 │   │   │   └── .gitkeep
 │   │   ├── 03_face_sheet/
-│   │   │   └── expressions/
-│   │   │       └── .gitkeep
+│   │   │   ├── expressions/
+│   │   │   │   ├── .gitkeep
+│   │   │   │   └── MAKSIM_expressions_v1_sheet_A_APPROVED.png
+│   │   │   └── MAKSIM_face_canon_v1_sheet_A_APPROVED.png
 │   │   ├── 04_body_sheet/
-│   │   │   └── candidates/
-│   │   │       └── .gitkeep
+│   │   │   ├── candidates/
+│   │   │   │   └── .gitkeep
+│   │   │   ├── clothed_references/
+│   │   │   │   └── MAKSIM_everyday_clothed_turnaround_v1_sheet_A_APPROVED.png
+│   │   │   ├── motion_references/
+│   │   │   │   └── MAKSIM_natural_motion_v1_six_pose_sheet_A_APPROVED.png
+│   │   │   ├── stage_references/
+│   │   │   │   ├── MAKSIM_mr_olympia_stage_v1_attempt02_secondary_REFERENCE.png
+│   │   │   │   └── MAKSIM_mr_olympia_stage_v1_attempt03_six_pose_PRIMARY_REFERENCE.png
+│   │   │   └── MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png
 │   │   ├── 05_outfits/
 │   │   │   ├── candidates/
 │   │   │   │   └── .gitkeep
@@ -466,12 +476,17 @@ Generated:
 │   │   │   ├── formal/
 │   │   │   │   └── .gitkeep
 │   │   │   ├── scene_outfits/
-│   │   │   │   └── .gitkeep
+│   │   │   │   ├── .gitkeep
+│   │   │   │   ├── MAKSIM_outfit_variants_v1_six_looks_sheet_A_APPROVED.png
+│   │   │   │   └── MAKSIM_scene_outfits_v1_six_locations_sheet_A_APPROVED.png
 │   │   │   └── sports_look/
 │   │   │       └── .gitkeep
 │   │   ├── 06_prompts/
 │   │   │   ├── .gitkeep
-│   │   │   └── MAKSIM_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── MAKSIM_CANON_GENERATION_PROMPTS.txt
+│   │   │   ├── MAKSIM_PROMPT_INDEX.md
+│   │   │   ├── MAKSIM_PROMPT_RUN_LOG.jsonl
+│   │   │   └── MAKSIM_WORKING_SCENE_PROMPTS.md
 │   │   ├── 07_generated/
 │   │   │   ├── canon_tests/
 │   │   │   │   ├── 01_evening_embankment/
@@ -481,7 +496,13 @@ Generated:
 │   │   │   │   └── 03_portrait_expression/
 │   │   │   │       └── .gitkeep
 │   │   │   ├── drafts/
-│   │   │   │   └── .gitkeep
+│   │   │   │   ├── .gitkeep
+│   │   │   │   ├── MAKSIM_body_canon_v1_sheet_A_attempt01_REVISE.png
+│   │   │   │   ├── MAKSIM_body_canon_v1_sheet_A_attempt02_REVISE.png
+│   │   │   │   ├── MAKSIM_expressions_supplement_v1_attempt01_DUPLICATE_REJECT.png
+│   │   │   │   ├── MAKSIM_expressions_v1_sheet_A_attempt02_REVISE.png
+│   │   │   │   ├── MAKSIM_face_canon_v1_sheet_A_attempt01_REVISE.png
+│   │   │   │   └── MAKSIM_mr_olympia_stage_v1_attempt01_PHYSIQUE_REFERENCE.png
 │   │   │   └── rejected/
 │   │   │       └── .gitkeep
 │   │   ├── 08_masks/
@@ -490,6 +511,7 @@ Generated:
 │   │   │   └── .gitkeep
 │   │   └── 10_notes/
 │   │       ├── .gitkeep
+│   │       ├── MAKSIM_CANON_INDEX.md
 │   │       └── MAKSIM_REFERENCE_PRESETS.json
 │   ├── MARINA/
 │   │   ├── 01_refs_raw/
@@ -899,7 +921,7 @@ Generated:
 
 # Total file count
 
-590
+609
 
 # File type summary
 
@@ -941,9 +963,9 @@ Generated:
 | .backup_20260719_141209 | 1 |
 | .jpg | 4 |
 | .json | 20 |
-| .jsonl | 21 |
-| .md | 69 |
-| .png | 139 |
+| .jsonl | 22 |
+| .md | 72 |
+| .png | 154 |
 | .ps1 | 1 |
 | .py | 23 |
 | .pyc | 17 |
@@ -964,7 +986,7 @@ Generated:
 | .clinerules/30-ncc-task-discipline.md | 1165 | 2026-07-19 14:03:16 |
 | .gitattributes | 303 | 2026-07-21 18:18:06 |
 | .gitignore | 147 | 2026-07-12 22:06:08 |
-| .voyage/CHARACTER_REGISTRY.md | 4410 | 2026-07-24 13:58:57 |
+| .voyage/CHARACTER_REGISTRY.md | 4724 | 2026-07-29 17:15:26 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_124946 | 2920 | 2026-07-03 12:49:47 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260703_155641 | 2956 | 2026-07-03 15:56:41 |
 | .voyage/CHARACTER_REGISTRY.md.backup_20260704_151046 | 3142 | 2026-07-04 15:10:46 |
@@ -998,7 +1020,7 @@ Generated:
 | .voyage/DECISIONS.md.backup_20260707_154019 | 30636 | 2026-07-07 15:40:19 |
 | .voyage/EVENTS_EXPORT.jsonl | 36829 | 2026-07-07 15:44:38 |
 | .voyage/LOCATION_REGISTRY.md | 871 | 2026-07-02 09:08:58 |
-| .voyage/PROJECT_STATE.md | 7946 | 2026-07-24 13:59:12 |
+| .voyage/PROJECT_STATE.md | 8217 | 2026-07-29 17:15:40 |
 | .voyage/README.md | 1635 | 2026-07-02 09:08:52 |
 | .voyage/SCENE_REQUEST_RULES.md | 2099 | 2026-07-02 09:08:54 |
 | .voyage/SQLITE_MEMORY_STATUS.md | 4577 | 2026-07-07 15:44:38 |
@@ -1255,24 +1277,43 @@ Generated:
 | AI_CHARACTERS/MAKSIM/01_refs_raw/MAKSIM_RAW_01_body_face_multiview_black_suit.png | 1884072 | 2026-07-25 16:37:05 |
 | AI_CHARACTERS/MAKSIM/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/MAKSIM/03_face_sheet/expressions/MAKSIM_expressions_v1_sheet_A_APPROVED.png | 2278115 | 2026-07-29 10:03:37 |
+| AI_CHARACTERS/MAKSIM/03_face_sheet/MAKSIM_face_canon_v1_sheet_A_APPROVED.png | 2357706 | 2026-07-28 16:28:31 |
 | AI_CHARACTERS/MAKSIM/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/MAKSIM/04_body_sheet/clothed_references/MAKSIM_everyday_clothed_turnaround_v1_sheet_A_APPROVED.png | 1725879 | 2026-07-29 17:09:17 |
+| AI_CHARACTERS/MAKSIM/04_body_sheet/MAKSIM_body_canon_v1_sheet_A_front_side_back_APPROVED.png | 1934001 | 2026-07-29 13:51:04 |
+| AI_CHARACTERS/MAKSIM/04_body_sheet/motion_references/MAKSIM_natural_motion_v1_six_pose_sheet_A_APPROVED.png | 1739335 | 2026-07-29 13:30:10 |
+| AI_CHARACTERS/MAKSIM/04_body_sheet/stage_references/MAKSIM_mr_olympia_stage_v1_attempt02_secondary_REFERENCE.png | 2414782 | 2026-07-29 12:41:00 |
+| AI_CHARACTERS/MAKSIM/04_body_sheet/stage_references/MAKSIM_mr_olympia_stage_v1_attempt03_six_pose_PRIMARY_REFERENCE.png | 1929719 | 2026-07-29 12:41:25 |
 | AI_CHARACTERS/MAKSIM/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/05_outfits/evening_dress/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/05_outfits/formal/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/05_outfits/scene_outfits/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/MAKSIM/05_outfits/scene_outfits/MAKSIM_outfit_variants_v1_six_looks_sheet_A_APPROVED.png | 1963113 | 2026-07-29 14:03:22 |
+| AI_CHARACTERS/MAKSIM/05_outfits/scene_outfits/MAKSIM_scene_outfits_v1_six_locations_sheet_A_APPROVED.png | 2102035 | 2026-07-29 14:18:42 |
 | AI_CHARACTERS/MAKSIM/05_outfits/sports_look/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/06_prompts/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_CANON_GENERATION_PROMPTS.txt | 4485 | 2026-07-09 10:15:21 |
+| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_CANON_GENERATION_PROMPTS.txt | 6611 | 2026-07-29 17:14:42 |
+| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_PROMPT_INDEX.md | 4480 | 2026-07-29 17:12:14 |
+| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_PROMPT_RUN_LOG.jsonl | 6923 | 2026-07-29 17:11:43 |
+| AI_CHARACTERS/MAKSIM/06_prompts/MAKSIM_WORKING_SCENE_PROMPTS.md | 7766 | 2026-07-29 17:12:57 |
 | AI_CHARACTERS/MAKSIM/07_generated/canon_tests/01_evening_embankment/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/07_generated/canon_tests/02_sports_yoga/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/07_generated/canon_tests/03_portrait_expression/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/07_generated/drafts/.gitkeep | 0 | 2026-06-30 20:37:52 |
+| AI_CHARACTERS/MAKSIM/07_generated/drafts/MAKSIM_body_canon_v1_sheet_A_attempt01_REVISE.png | 1757882 | 2026-07-28 16:02:39 |
+| AI_CHARACTERS/MAKSIM/07_generated/drafts/MAKSIM_body_canon_v1_sheet_A_attempt02_REVISE.png | 1904095 | 2026-07-29 10:12:36 |
+| AI_CHARACTERS/MAKSIM/07_generated/drafts/MAKSIM_expressions_supplement_v1_attempt01_DUPLICATE_REJECT.png | 2376978 | 2026-07-29 14:14:15 |
+| AI_CHARACTERS/MAKSIM/07_generated/drafts/MAKSIM_expressions_v1_sheet_A_attempt02_REVISE.png | 1830027 | 2026-07-28 17:26:04 |
+| AI_CHARACTERS/MAKSIM/07_generated/drafts/MAKSIM_face_canon_v1_sheet_A_attempt01_REVISE.png | 2051157 | 2026-07-25 19:51:22 |
+| AI_CHARACTERS/MAKSIM/07_generated/drafts/MAKSIM_mr_olympia_stage_v1_attempt01_PHYSIQUE_REFERENCE.png | 2550811 | 2026-07-29 11:50:09 |
 | AI_CHARACTERS/MAKSIM/07_generated/rejected/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/08_masks/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/09_blender/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MAKSIM/10_notes/.gitkeep | 0 | 2026-06-30 20:37:52 |
-| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_REFERENCE_PRESETS.json | 3979 | 2026-07-25 18:17:26 |
+| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_CANON_INDEX.md | 7282 | 2026-07-29 17:13:38 |
+| AI_CHARACTERS/MAKSIM/10_notes/MAKSIM_REFERENCE_PRESETS.json | 5781 | 2026-07-29 17:14:10 |
 | AI_CHARACTERS/MARINA/01_refs_raw/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/02_best_refs/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/MARINA/03_face_sheet/expressions/.gitkeep | 0 | 2026-06-30 20:37:53 |
@@ -1474,7 +1515,7 @@ Generated:
 | docs/PROJECT_DOCUMENTATION_INDEX.md | 19699 | 2026-07-19 14:10:50 |
 | docs/VOYAGE_INTEGRATION_WORKFLOW.md | 7250 | 2026-07-12 18:27:37 |
 | docs/VOYAGE_SQLITE_MEMORY_WORKFLOW.md | 5250 | 2026-07-12 18:27:46 |
-| INVENTORY.md | 107394 | 2026-07-25 09:48:32 |
+| INVENTORY.md | 107591 | 2026-07-25 18:17:41 |
 | INVENTORY.md.backup_20260703_125505 | 47598 | 2026-07-03 12:55:05 |
 | INVENTORY.md.backup_20260703_160011 | 53201 | 2026-07-03 16:00:11 |
 | INVENTORY.md.backup_20260704_151411 | 58158 | 2026-07-04 15:14:11 |
