@@ -8,7 +8,7 @@
 ## Character Identity
 
 - Character ID: MAKSIM
-- Status: VISUAL_CANON_COMPLETE_METADATA_NORMALIZED (2026-07-29)
+- Status: PUBLISHED_AND_VERIFIED / VISUAL_CANON_COMPLETE_METADATA_NORMALIZED (2026-07-29)
 - Height: 188 cm (OWNER_APPROVED_CANON)
 - Weight direction: approximately 115 kg (OWNER_APPROVED_CANON)
 - Role: adult male character
@@ -161,11 +161,28 @@ authoritative source of truth.
 
 ---
 
+## Publication status
+
+- Status: `PUBLISHED_AND_VERIFIED`
+- Publication date: `2026-07-29`
+- Remote branch: `origin/main`
+- Raw-reference normalization commit: `16a850c04afebf154ffa908e94c509cbaa5ff2f8`
+- Final visual-canon commit: `e33403712e60dc2cdc2e89d7801a41f49dbd8764`
+- Remote verified HEAD: `e33403712e60dc2cdc2e89d7801a41f49dbd8764`
+- Divergence after publication: `ahead 0 / behind 0`
+- Independent QA: `PASS — 23/23 gates`
+- Active canon conflicts: `0`
+- Active missing paths: `0`
+- Task lifecycle: `CLOSED`
+- Next MAKSIM generation action: `NONE`
+
+---
+
 ## Last Normalized
 
-2026-07-29 — METADATA_NORMALIZED / VISUAL_CANON_COMPLETE
+2026-07-29 — METADATA_NORMALIZED / VISUAL_CANON_COMPLETE / PUBLISHED_AND_VERIFIED
 
-Files remain uncommitted; next step is controlled path-scoped commit QA.
+Publication verified; next MAKSIM generation action: NONE.
 
 ---
 

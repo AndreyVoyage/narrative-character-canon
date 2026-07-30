@@ -1069,3 +1069,35 @@ EGOR is metadata-complete at CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE. Ba
 5 owner-classified visual references in 01_refs_raw/ (D-030). VNE text canon synced (D-028).
 Body canon B (pose variations) remains in planned_canon_paths. Stubble deferred. Next action:
 human selection of the next EGOR coverage target (body canon B or scene-level testing).
+
+---
+
+## Completed task
+
+**Task ID:** `NCC-MAKSIM-VISUAL-CANON-DOCUMENTATION-CLOSEOUT-2026-07-29`
+
+**Final status:** `COMPLETED_PUBLISHED_AND_VERIFIED`
+
+**Closed date:** `2026-07-29`
+
+### Result
+
+- MAKSIM visual canon is complete.
+- Metadata normalization and prompt-pipeline completion are confirmed.
+- Independent QA passed: `23/23` gates.
+- Supporting raw-reference normalization commit: `16a850c04afebf154ffa908e94c509cbaa5ff2f8`.
+- Published visual-canon commit: `e33403712e60dc2cdc2e89d7801a41f49dbd8764`.
+- Verified `origin/main` HEAD: `e33403712e60dc2cdc2e89d7801a41f49dbd8764`.
+- Post-publication divergence: `ahead 0 / behind 0`.
+- Publication status: `PUBLISHED_AND_VERIFIED`.
+- Remaining MAKSIM generation work: `NONE`.
+- Next task selected by owner: `NO`.
+- Existing active task `NCC-NEXT-VISUAL-TARGET-SELECTION-2026-07-18` remains unchanged.
+
+### Constraints respected
+
+- Images modified: NO.
+- Prompt pipeline modified: NO.
+- SQLite modified: NO.
+- Protected items inspected or modified: NO.
+- Unrelated character data modified: NO.
