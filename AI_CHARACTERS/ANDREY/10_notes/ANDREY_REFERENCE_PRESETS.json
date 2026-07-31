@@ -2,7 +2,7 @@
   "character": "ANDREY",
   "active_version": "andrey_base_canon_v1.2",
   "status": "PENDING_APPROVAL",
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-31",
   "identity_summary": {
     "role": "mature adult male character",
     "height_direction": "tall adult man, around 180 cm",
@@ -16,7 +16,9 @@
     "face_canon": "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_basic.png",
     "expression_canon": "AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png",
     "body_canon_a": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png",
-    "body_canon_b": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png"
+    "body_canon_b": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png",
+    "3d_reference_apose_turnaround": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_3D_reference_v1_sheet_A_apose_turnaround.png",
+    "3d_reference_hands": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_3D_reference_v1_sheet_B_hands.png"
   },
   "planned_canon_paths": {
     "face_canon": "AI_CHARACTERS/ANDREY/03_face_sheet/ANDREY_face_canon_v1_sheet_A_APPROVED.png",
@@ -32,6 +34,32 @@
     "AI_CHARACTERS/ANDREY/07_generated/canon_tests/05_sports_gym_identity/ANDREY_test05_sports_gym_identity_v1.png",
     "AI_CHARACTERS/ANDREY/07_generated/canon_tests/06_sea_yacht_mood/ANDREY_test06_sea_yacht_mood_scene_v1.png"
   ],
+  "_3d_references": {
+    "B4_apose_turnaround": {
+      "path": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_3D_reference_v1_sheet_A_apose_turnaround.png",
+      "role": "BODY_SUPPORT_3D_REFERENCE",
+      "sha_256": "5b94f25d724966c8d5abcee9510a5aaeb76015960f74fafa335e77f71aa4cde4",
+      "dimensions": "1672x941",
+      "owner_approval": true,
+      "selected": true,
+      "deployed": false,
+      "gap_id": "GAP-002",
+      "gap_status": "CLOSED_READY",
+      "notes": "A-pose turnaround for 3D blockout. Grey technical clothing is NOT outfit canon. Secondary to B1/B2 body canon."
+    },
+    "H1_hands": {
+      "path": "AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_3D_reference_v1_sheet_B_hands.png",
+      "role": "HAND_SUPPORT_3D_REFERENCE",
+      "sha_256": "ffb62b3d4e9f62d24edc1ee1d86d7317ca9f4e1579f6a88bdb53db02d1cbbff0",
+      "dimensions": "1448x1086",
+      "owner_approval": true,
+      "selected": true,
+      "deployed": false,
+      "gap_id": "GAP-001",
+      "gap_status": "CLOSED_READY",
+      "notes": "Hands reference for 3D blockout. Exact physical hand scale not established."
+    }
+  },
   "scene_presets": {
     "portrait": {
       "description": "Face-focused portrait generation.",

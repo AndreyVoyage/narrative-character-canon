@@ -1078,6 +1078,8 @@ Generated:
 | AI_CHARACTERS/ANDREY/03_face_sheet/expressions/ANDREY_expressions_v1_sheet_C_refined.png | 2372255 | 2026-07-01 12:36:42 |
 | AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_A_front_side_back.png | 1752758 | 2026-07-02 13:49:29 |
 | AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_body_canon_v1_sheet_B_pose_variations.png | 1807220 | 2026-07-02 14:00:01 |
+| AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_3D_reference_v1_sheet_A_apose_turnaround.png | 1855815 | 2026-07-31 11:53 | BODY_SUPPORT_3D_REFERENCE / APPROVED_WITH_MINOR_NOTES / GAP-002 CLOSED_READY / 1672x941 |
+| AI_CHARACTERS/ANDREY/04_body_sheet/ANDREY_3D_reference_v1_sheet_B_hands.png | 1899416 | 2026-07-31 13:04 | HAND_SUPPORT_3D_REFERENCE / APPROVED_WITH_MINOR_NOTES / GAP-001 CLOSED_READY / 1448x1086 |
 | AI_CHARACTERS/ANDREY/04_body_sheet/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/05_outfits/candidates/.gitkeep | 0 | 2026-06-30 20:37:52 |
 | AI_CHARACTERS/ANDREY/05_outfits/casual/.gitkeep | 0 | 2026-06-30 20:37:52 |
