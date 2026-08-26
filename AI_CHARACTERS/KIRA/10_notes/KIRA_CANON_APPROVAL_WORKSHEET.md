@@ -14,15 +14,15 @@
 ### Face Canon
 | File | Path | Status | Notes |
 |------|------|--------|-------|
-| Sheet A | `AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png` | ❌ NOT APPROVED | Primary face reference |
-| Sheet B | `AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_B.png` | ❌ NOT APPROVED | Secondary angles |
-| Sheet C Emotional | `AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png` | ❌ NOT APPROVED | Expression range |
+| Sheet A | `AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_A.png` | ✅ APPROVED | Primary face reference |
+| Sheet B | `AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_sheet_B.png` | ✅ APPROVED | Secondary angles |
+| Sheet C Emotional | `AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png` | ✅ APPROVED | Expression range |
 
 ### Body Canon
 | File | Path | Status | Notes |
 |------|------|--------|-------|
-| Sheet A 4views | `AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png` | ❌ NOT APPROVED | 4-view body reference |
-| Sheet B 4views | `AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png` | ❌ NOT APPROVED | 4-view body reference |
+| Sheet A 4views | `AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png` | ✅ APPROVED | 4-view body reference |
+| Sheet B 4views | `AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png` | ✅ APPROVED | 4-view body reference |
 
 ### Outfits
 | File | Path | Notes |
