@@ -1,7 +1,7 @@
 {
   "character": "OLGA",
   "active_version": "olga_base_canon_v1.1",
-  "status": "CONTROL_TESTS_APPROVED",
+  "status": "APPROVED_AS_TEST",
   "last_updated": "2026-07-10",
   "identity_summary": {
     "role": "mature adult woman character",
@@ -113,7 +113,7 @@
       "description": "Public-safe OLGA solo indoor pool/wellness scene with fully clothed athleisure outfit.",
       "content_tier": "public_filtered",
       "storage": "repo_tracked",
-      "image_references": [
+      "reference_images": [
         "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -126,7 +126,7 @@
       "description": "OLGA approved DALL-E evening embankment ALT/backend variant.",
       "content_tier": "public_filtered",
       "storage": "repo_tracked",
-      "image_references": [
+      "reference_images": [
         "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -147,7 +147,7 @@
       "selected_output": "AI_CHARACTERS/OLGA/07_generated/canon_tests/09_formal_elegant/OLGA_test09_formal_elegant_v4_APPROVED.png",
       "role": "approved indoor formal/elegant full-body MAIN scene reference",
       "prompt_source": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md",
-      "image_references": [
+      "reference_images": [
         "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/03_face_sheet/expressions/OLGA_expressions_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
@@ -173,7 +173,7 @@
       "selected_output": "AI_CHARACTERS/OLGA/07_generated/canon_tests/10_neutral_height_scale_check/OLGA_test10_neutral_height_scale_check_v1_APPROVED.png",
       "role": "neutral full-body height/scale check MAIN scene reference",
       "prompt_source": "AI_CHARACTERS/OLGA/06_prompts/OLGA_WORKING_SCENE_PROMPTS_V2.md",
-      "image_references": [
+      "reference_images": [
         "AI_CHARACTERS/OLGA/03_face_sheet/OLGA_face_canon_v1_sheet_A_APPROVED.png",
         "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
         "AI_CHARACTERS/OLGA/04_body_sheet/OLGA_body_canon_v1_sheet_B_pose_variations_APPROVED.png"

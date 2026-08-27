@@ -1,7 +1,7 @@
 {
   "character": "SERGEY",
   "active_version": "sergey_base_canon_v1.0",
-  "status": "BASE_CANON_APPROVED / CONTROL_TESTS_APPROVED / PROMPT_PIPELINE_ACTIVE",
+  "status": "APPROVED_AS_TEST",
   "last_updated": "2026-07-25",
   "identity_summary": {
     "role": "adult male character",
@@ -67,7 +67,19 @@
       "notes": "Horizontal multi-panel navy-suit reference sheet, 1535x1024. Full-body front, side, back, three-quarter views, close facial views. Primary body/proportion reference. Source: c7570fbc-8735-4581-a5f0-5f0d5a400ee4.png"
     }
   ],
-  "scene_presets": {},
+  "scene_presets": {
+    "sports": {
+      "description": "SERGEY sports/gym scene reference preset using approved visual canon and approved sports_yoga control-test reference.",
+      "reference_images": [
+        "AI_CHARACTERS/SERGEY/03_face_sheet/SERGEY_face_canon_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/SERGEY/03_face_sheet/expressions/SERGEY_expressions_v1_sheet_A_APPROVED.png",
+        "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_A_front_side_back_APPROVED.png",
+        "AI_CHARACTERS/SERGEY/04_body_sheet/SERGEY_body_canon_v1_sheet_B_pose_variations_APPROVED.png",
+        "AI_CHARACTERS/SERGEY/07_generated/canon_tests/02_sports_yoga/SERGEY_test03_sports_yoga_v1_APPROVED.png"
+      ],
+      "prompt_goal": "Preserve SERGEY identity, facial structure, body proportions, expression canon, and approved sports appearance in athletic/gym scene generation."
+    }
+  },
   "prompt_pipeline": {
     "status": "PROMPT_PIPELINE_ACTIVE",
     "prompt_index": "AI_CHARACTERS/SERGEY/06_prompts/SERGEY_PROMPT_INDEX.md",

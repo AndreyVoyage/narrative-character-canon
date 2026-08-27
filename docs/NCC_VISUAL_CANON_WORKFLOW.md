@@ -477,3 +477,37 @@ For a new approved scene:
 - It must not be created, generated, or deployed until Phase 4.
 - Phase 4 requires validator MVP and deploy-tool MVP to exist and be approved.
 - The planned IDs and references may be documented in planning materials, but no filesystem entries may be created in Phase 1.
+
+---
+
+## 29. Legacy workflow status → machine status migration
+
+The character reference preset `status` field holds the **machine status**. Legacy single-character
+presets historically embedded workflow-progress labels in that field. Those legacy labels are
+workflow/progress labels, not machine status values, and must not be presented as the canonical
+machine status enum.
+
+**Legacy workflow-progress labels** (not machine status values):
+
+- `BASE_CANON_APPROVED`
+- `CONTROL_TESTS_APPROVED`
+- `PROMPT_PIPELINE_ACTIVE`
+- `VISUAL_CANON_COMPLETE_METADATA_NORMALIZED`
+
+**Legacy workflow status → machine status migration** (single-character preset `status` field):
+
+- **M1** — a legacy state containing `CONTROL_TESTS_APPROVED` and having no separately-proven
+  production approval maps to `APPROVED_AS_TEST`.
+- **M2** — `BASE_CANON_APPROVED` without `CONTROL_TESTS_APPROVED` maps to `PENDING_APPROVAL`.
+- **M3** — `VISUAL_CANON_COMPLETE_METADATA_NORMALIZED` without separately-proven production
+  approval maps to `PENDING_APPROVAL`.
+- **M4** — an existing valid `PENDING_APPROVAL` stays unchanged.
+- **M5** — an existing valid `APPROVED_AS_CANON` stays unchanged.
+- **M6** — `APPROVED_AS_CANON` is not assigned through this migration. It requires a separate
+  explicit human/owner production-approval decision.
+
+This mapping applies to legacy status normalization only:
+
+- `APPROVED_AS_TEST` is not production approval.
+- Production eligibility is determined only by the already-existing production status rules.
+- The canonical machine status enum is unchanged; this migration adds no new enum values.
