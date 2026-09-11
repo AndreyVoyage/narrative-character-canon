@@ -102,5 +102,17 @@
     "avoid bodybuilder drift",
     "avoid making the character look too young",
     "record prompt_id, references, output path, verdict and notes for every generation"
-  ]
+  ],
+  "standing_identity": {
+    "preservation_rules": {
+      "source_refs": [
+        "AI_CHARACTERS/KIRA/06_prompts/KIRA_STANDING_IDENTITY_PRESERVATION.txt"
+      ]
+    },
+    "negative_constraints": {
+      "source_refs": [
+        "AI_CHARACTERS/KIRA/06_prompts/KIRA_NEGATIVE_PROMPT.txt"
+      ]
+    }
+  }
 }
