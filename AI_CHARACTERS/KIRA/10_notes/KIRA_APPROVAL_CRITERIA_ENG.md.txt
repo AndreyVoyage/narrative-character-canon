@@ -176,11 +176,11 @@ Bad result. Store only in 07_generated if needed.
 
 Sheet A candidate:
 
-C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\candidates\KIRA_evening_dress_v2_sheet_A_fullbody_4plus_candidate.png
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\KIRA_evening_dress_FINAL_sheet_A_fullbody.png
 
 Sheet B candidate:
 
-C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\candidates\KIRA_evening_dress_v2_sheet_B_portraits_4plus_candidate.png
+C:\DEV\Narrative\AI_CHARACTERS\KIRA\05_outfits\evening_dress\KIRA_evening_dress_FINAL_sheet_B_portraits.png
 
 Status:
 APPROVED CANDIDATES
