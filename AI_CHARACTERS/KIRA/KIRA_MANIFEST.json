@@ -1,0 +1,170 @@
+{
+  "schema": "KIRA_CANON_MANIFEST_V1",
+  "character_id": "kira",
+  "display_name": "KIRA",
+  "canon_status": "APPROVED_AS_CANON",
+  "owner_ratification": {
+    "status": "APPROVED_AS_CANON",
+    "date": "2026-09-17",
+    "authority": "OWNER"
+  },
+  "canonical_assets": {
+    "face": {
+      "primary": {
+        "role": "FACE_CANON_PRIMARY",
+        "relative_path": "03_face_sheet/KIRA_face_canon_sheet_A.png",
+        "sha256": "cb4c70bf9bf5194bb76918499ea4d4234d88d9b285362de4353ef4849f669690",
+        "file_size_bytes": 2445177
+      },
+      "secondary": {
+        "role": "FACE_CANON_SECONDARY",
+        "relative_path": "03_face_sheet/KIRA_face_canon_sheet_B.png",
+        "sha256": "ad0af204d0963e581cb68e2d4652ebc73433671423a72a2da0ccec2eab402f28",
+        "file_size_bytes": 2272821
+      }
+    },
+    "expressions": {
+      "sheet_a": {
+        "role": "EXPRESSION_CANON",
+        "relative_path": "03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_emotional.png",
+        "sha256": "b8f15421d94f1bbc7e24b89862e25bd9e3dd4b2f2c2c94b8f8b4f8cced32837f",
+        "file_size_bytes": 2257262
+      },
+      "sheet_b": {
+        "role": "EXPRESSION_CANON",
+        "relative_path": "03_face_sheet/expressions/KIRA_expressions_v1_sheet_B_emotional.png",
+        "sha256": "b040a9592ebca011066c98dce4a3bbb4011bcdddc3b1a6b4372767d142592660",
+        "file_size_bytes": 2251489
+      }
+    },
+    "body": {
+      "primary": {
+        "role": "BODY_CANON_PRIMARY",
+        "relative_path": "04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
+        "sha256": "76d8162542af4db3cbe58fb9aee71f5d7a9760a5f3e5a602a9384ba8a0cbae90",
+        "file_size_bytes": 1768955
+      },
+      "secondary": {
+        "role": "BODY_CANON_SECONDARY",
+        "relative_path": "04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png",
+        "sha256": "e266e22d3e29ad490ab7f0ed6b12808c87602bb2a988b933c879d1c56b21c36a",
+        "file_size_bytes": 1911966
+      }
+    },
+    "outfits": {
+      "evening_dress": [
+        {
+          "role": "OUTFIT_CANON_EVENING_FULLBODY",
+          "relative_path": "05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_A_fullbody.png",
+          "sha256": "205a4f444a5f112323dc4a116363747aee96f5fc97460bd8b510f2c4c2cfed18",
+          "file_size_bytes": 2000189
+        },
+        {
+          "role": "OUTFIT_CANON_EVENING_PORTRAITS",
+          "relative_path": "05_outfits/evening_dress/KIRA_evening_dress_FINAL_sheet_B_portraits.png",
+          "sha256": "3e5c5e62fdc35643c75debf89f1968441a99b41536a0a73773197f49c594a323",
+          "file_size_bytes": 2563239
+        }
+      ],
+      "sports_look": [
+        {
+          "role": "OUTFIT_CANON_SPORTS_FRONT_SIDE_BACK",
+          "relative_path": "05_outfits/sports_look/KIRA_sports_look_v1_sheet_A_front_side_back.png",
+          "sha256": "d78250738160839b79ded788480cc991cfb9fced9e67b7886e151718cfbb2672",
+          "file_size_bytes": 1912030
+        },
+        {
+          "role": "OUTFIT_CANON_SPORTS_ACTION_PORTRAIT",
+          "relative_path": "05_outfits/sports_look/KIRA_sports_look_v1_sheet_B_3q_action_portrait.png",
+          "sha256": "1758522633eb94666093e8442f399b497459466155b239a42afbb090c29e43d5",
+          "file_size_bytes": 2072557
+        }
+      ]
+    }
+  },
+  "text_identity": {
+    "primary": {
+      "role": "TEXT_IDENTITY_PRIMARY",
+      "relative_path": "10_notes/KIRA_IDENTITY.txt.txt",
+      "sha256": "a973343d51c0d13b1247652fe332f5635276f8df6374f97ad0ebff53826864eb",
+      "file_size_bytes": 13272
+    }
+  },
+  "prompt_anchors": {
+    "base_prompt": {
+      "relative_path": "06_prompts/KIRA_BASE_PROMPT.txt",
+      "sha256": "21917c9d85805328f493dd55553bd340359b7dd88048ed9d6a20c3ed4e25cf9f",
+      "file_size_bytes": 1845
+    },
+    "evening_scene_prompt": {
+      "relative_path": "06_prompts/KIRA_EVENING_SCENE_PROMPT.txt",
+      "sha256": "a849569595a0b8b56655bab116851c572cd300ea00d20aa52f353ce91afc63ed",
+      "file_size_bytes": 1756
+    },
+    "sports_scene_prompt": {
+      "relative_path": "06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt",
+      "sha256": "49953860105f5c0ea5f1cdda82e6e42c8555ebd0ffa3ab383d71ef63cffd639f",
+      "file_size_bytes": 1616
+    },
+    "negative_prompt": {
+      "relative_path": "06_prompts/KIRA_NEGATIVE_PROMPT.txt",
+      "sha256": "2f964ddb2a977bc176e49276f534dd1c5e5464872ac0e22a99cf2f2f256023fb",
+      "file_size_bytes": 1836
+    },
+    "prompt_index": {
+      "relative_path": "06_prompts/KIRA_PROMPT_INDEX.md",
+      "sha256": "000670d09016b5386a602f9f7c127855b67747b86ce5435ac23cb90d07be50c2",
+      "file_size_bytes": 3732
+    },
+    "prompt_run_log": {
+      "relative_path": "06_prompts/KIRA_PROMPT_RUN_LOG.jsonl",
+      "sha256": "5cf3fa5dd251ff871ef10f58467955165fe8b3d7aededb9509e273a2bb9c69b2",
+      "file_size_bytes": 4323
+    }
+  },
+  "control_tests": [
+    {
+      "id": "KIRA_TEST01_EVENING_EMBANKMENT_V1_MAIN",
+      "scene": "evening_embankment",
+      "result": "PASS",
+      "relative_path": "07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png",
+      "sha256": "a8b58a604d13d6633595494e4488be83f453c4ed4a9533fe57c4aea58e4bb7e8",
+      "file_size_bytes": 1949984
+    },
+    {
+      "id": "KIRA_TEST02_SPORTS_YOGA_V1_MAIN",
+      "scene": "sports_yoga",
+      "result": "PASS",
+      "relative_path": "07_generated/canon_tests/02_sports_yoga/KIRA_test02_sports_yoga_v2_MAIN.png",
+      "sha256": "0503d225e10009f8dbe7342476a85adee7891e9b2c4107676d1e41127b274b80",
+      "file_size_bytes": 2021939
+    },
+    {
+      "id": "KIRA_TEST03_PORTRAIT_EXPRESSION_V1",
+      "scene": "portrait_expression",
+      "result": "PASS",
+      "relative_path": "07_generated/canon_tests/03_portrait_expression/KIRA_test02_bar_romance_v1_APPROVED.png",
+      "sha256": "09770c23cf1562406f44e6caa67eb972d2466e23eaf8402da6e4961e2964a5bc",
+      "file_size_bytes": 2185958
+    }
+  ],
+  "approval_evidence": {
+    "canon_index": "10_notes/KIRA_CANON_INDEX.md.txt",
+    "test_results": "10_notes/KIRA_TEST_RESULTS.md.txt",
+    "reference_presets": "10_notes/KIRA_REFERENCE_PRESETS.json",
+    "prompt_index": "06_prompts/KIRA_PROMPT_INDEX.md",
+    "prompt_run_log": "06_prompts/KIRA_PROMPT_RUN_LOG.jsonl"
+  },
+  "historical_documents": {
+    "approval_worksheet": {
+      "relative_path": "10_notes/KIRA_CANON_APPROVAL_WORKSHEET.md",
+      "status": "SUPERSEDED",
+      "note": "Unfinished pre-ratification checklist (no checklist items were ever checked and no verdict was ever selected in its own DECISION_001 table). Its earlier 'PENDING APPROVAL' / \"0 control tests exist\" statements are superseded by owner_ratification above and by the 3/3 PASS control tests recorded in control_tests above."
+    }
+  },
+  "notes": {
+    "path_convention": "All relative_path values are relative to this manifest's own folder (AI_CHARACTERS/KIRA/). This manifest references existing files only; it does not duplicate, move, or rename any asset.",
+    "corrected_input_typo": "The implementing task's asset list named 03_face_sheet/expressions/KIRA_expressions_v1_sheet_B.png. That exact filename does not exist on disk. The actual existing file -- confirmed by direct filesystem check and independently corroborated by KIRA_CANON_INDEX.md.txt, KIRA_PROMPT_INDEX.md, and KIRA_REFERENCE_PRESETS.json, which all name the same file -- is 03_face_sheet/expressions/KIRA_expressions_v1_sheet_B_emotional.png. That file is used above; this is a typo correction against converging established inventory, not a substitution of a different canonical choice.",
+    "cleanup_deferred": "Backup files (*.backup_*), empty pipeline placeholder folders (01_refs_raw, 02_best_refs, 08_masks, 09_blender, and several empty 05_outfits/04_body_sheet subfolders), and the byte-identical evening-dress candidate duplicates under 05_outfits/evening_dress/candidates/ are intentionally left untouched. A separate, later, explicitly authorized cleanup task should handle them now that this manifest exists to prove which files are actually referenced as canonical."
+  }
+}

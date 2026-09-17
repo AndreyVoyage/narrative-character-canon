@@ -18,13 +18,12 @@
     "body_canon_a": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_4views.png",
     "body_canon_b": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_4views.png"
   },
-  "planned_canon_paths": {
-    "face_canon": "AI_CHARACTERS/KIRA/03_face_sheet/KIRA_face_canon_v1_sheet_A_APPROVED.png",
-    "expression_canon": "AI_CHARACTERS/KIRA/03_face_sheet/expressions/KIRA_expressions_v1_sheet_A_APPROVED.png",
-    "body_canon_a": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_A_APPROVED.png",
-    "body_canon_b": "AI_CHARACTERS/KIRA/04_body_sheet/KIRA_BODY_CANON_v4_sheet_B_APPROVED.png"
-  },
-  "control_tests": [],
+  "planned_canon_paths": {},
+  "control_tests": [
+    "AI_CHARACTERS/KIRA/07_generated/canon_tests/01_evening_embankment/KIRA_test01_evening_embankment_v2_MAIN.png",
+    "AI_CHARACTERS/KIRA/07_generated/canon_tests/02_sports_yoga/KIRA_test02_sports_yoga_v2_MAIN.png",
+    "AI_CHARACTERS/KIRA/07_generated/canon_tests/03_portrait_expression/KIRA_test02_bar_romance_v1_APPROVED.png"
+  ],
   "scene_presets": {
     "portrait": {
       "description": "Face-focused portrait generation.",

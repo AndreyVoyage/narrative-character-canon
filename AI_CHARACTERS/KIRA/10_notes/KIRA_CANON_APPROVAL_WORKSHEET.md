@@ -1,3 +1,21 @@
+# ⚠️ SUPERSEDED — SEE OWNER RATIFICATION
+
+**STATUS:** SUPERSEDED
+
+**FINAL OWNER STATUS:** APPROVED_AS_CANON
+
+**OWNER RATIFICATION DATE:** 2026-09-17
+
+**CANONICAL STATUS SOURCE:** `../KIRA_MANIFEST.json`
+
+**NOTE:** This worksheet is retained as historical workflow material. Its
+earlier PENDING APPROVAL / "0 control tests" statements are superseded by
+the owner ratification and the verified control-test evidence. Everything
+below this banner is preserved byte-for-byte from the original worksheet,
+unchecked boxes and all, for the historical record.
+
+---
+
 # KIRA — Canon Approval Worksheet
 
 > **Status:** PENDING APPROVAL
