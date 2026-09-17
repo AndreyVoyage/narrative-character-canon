@@ -86,30 +86,30 @@
     "primary": {
       "role": "TEXT_IDENTITY_PRIMARY",
       "relative_path": "10_notes/KIRA_IDENTITY.txt.txt",
-      "sha256": "a973343d51c0d13b1247652fe332f5635276f8df6374f97ad0ebff53826864eb",
-      "file_size_bytes": 13272
+      "sha256": "86eb23c3c34b6e8899e6abe3f47ecb62bc60c7a63038ea0b14da99d5251bf3e7",
+      "file_size_bytes": 12850
     }
   },
   "prompt_anchors": {
     "base_prompt": {
       "relative_path": "06_prompts/KIRA_BASE_PROMPT.txt",
-      "sha256": "21917c9d85805328f493dd55553bd340359b7dd88048ed9d6a20c3ed4e25cf9f",
-      "file_size_bytes": 1845
+      "sha256": "bc416d0a2a3e788a6003ea951cb63e7ae4481f3024519268c12f3696489c1871",
+      "file_size_bytes": 1844
     },
     "evening_scene_prompt": {
       "relative_path": "06_prompts/KIRA_EVENING_SCENE_PROMPT.txt",
-      "sha256": "a849569595a0b8b56655bab116851c572cd300ea00d20aa52f353ce91afc63ed",
-      "file_size_bytes": 1756
+      "sha256": "c6490517a7b98d1d2a67f58a76d833cb4bcafe26bd8713f32cdbec97da37ce47",
+      "file_size_bytes": 1755
     },
     "sports_scene_prompt": {
       "relative_path": "06_prompts/KIRA_SPORTS_SCENE_PROMPT.txt",
-      "sha256": "49953860105f5c0ea5f1cdda82e6e42c8555ebd0ffa3ab383d71ef63cffd639f",
-      "file_size_bytes": 1616
+      "sha256": "3ff5c90e028553f85e65339a5d96179b4729783f1b4e6e788ba66eaa43109988",
+      "file_size_bytes": 1615
     },
     "negative_prompt": {
       "relative_path": "06_prompts/KIRA_NEGATIVE_PROMPT.txt",
-      "sha256": "2f964ddb2a977bc176e49276f534dd1c5e5464872ac0e22a99cf2f2f256023fb",
-      "file_size_bytes": 1836
+      "sha256": "61d40eebb78b695ee4208eea41b396407ed6574a8574116e0110b52506ae2ffb",
+      "file_size_bytes": 1835
     },
     "prompt_index": {
       "relative_path": "06_prompts/KIRA_PROMPT_INDEX.md",
